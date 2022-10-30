@@ -1,0 +1,43 @@
+je_martial_law_pl = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	possible = {
+		c:POL = root
+		is_subject_of = c:RUS
+	}
+	
+	complete = {
+		has_law = law_type:law_autocracy
+		has_law = law_type:law_censorship
+		has_law = law_type:law_dedicated_police
+		has_law = law_type:law_secret_police
+		NOT = { has_law = law_type:law_peasant_levies }
+	}
+
+	on_complete = {
+		remove_modifier = state_of_war_pl
+	}
+
+	timeout = 7300
+
+	on_timeout = {
+		remove_modifier = state_of_war_pl
+	}
+
+	current_value = {
+		value = var:state_of_war_pl
+	}
+
+	invalid = {
+		NOT = { is_subject_of = c:RUS }
+	}
+	
+	goal_add_value = {
+		add = 4
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
