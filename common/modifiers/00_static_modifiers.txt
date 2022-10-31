@@ -42,7 +42,12 @@ base_values = {
 }
 
 discrimination = {
-	state_political_strength_from_discrimination_mult = -0.9
+	state_political_strength_from_discrimination_mult = -0.95
+	state_radicals_from_sol_change_mult = 0.25
+	state_dependent_wage_mult = 2.5
+	state_radicals_from_discrimination_mult = 0.75
+	country_radicals_from_conquest_mult = 0.5
+	building_minimum_wage_mult = -0.75
 }
 
 coastal_state = {
