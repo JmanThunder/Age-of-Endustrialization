@@ -6,5 +6,6 @@ tags={
 	"Gameplay" 
 	"Map"
 }
+picture="thumbnail.png"
 name="Age of Industrialization"
 path="mod/Age of Industrialization/"
