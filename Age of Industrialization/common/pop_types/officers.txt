@@ -67,6 +67,15 @@
 				}
 			}
 		}
+		if = {
+			limit = {
+				culture_accepted = no
+			}
+			multiply = {
+				value = 0.35
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
 		else_if = {
 			limit = {
 				is_peasant_under_serfdom = yes 

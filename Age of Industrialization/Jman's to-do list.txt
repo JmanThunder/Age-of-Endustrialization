@@ -1,7 +1,7 @@
 Jman's todo list:
 	1.) Miscellaneous
-		-Lighten the modifier of discrimination 
-		-Nerf qualifications(+ buff discrimination's effect on that)
+		-Lighten the modifier of discrimination{DONE}
+		-Nerf qualifications(+ buff discrimination's effect on that){DONE}
 		-Remove Standard of Living buff to litteracy
 		-Recolor Nations/Cultures to V2 and EU4 colors
 		-Look into Religous conversions and migrations 
