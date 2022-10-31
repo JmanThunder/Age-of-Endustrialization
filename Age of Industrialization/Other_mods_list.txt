@@ -1,0 +1,3 @@
+VFM(map)
+"Revenge of the Political Map Mode"(Graphics zoomed in)
+"sensible map"(Graphics zoomed in)
