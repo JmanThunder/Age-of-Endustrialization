@@ -182,8 +182,6 @@ pm_patent_stills = {
 
 pm_manual_dough_processing = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
-	
-	ai_value = 0
 }
 
 pm_automated_bakery = {
@@ -204,8 +202,6 @@ pm_automated_bakery = {
 			building_employment_laborers_add = -2500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_merchant_guilds_building_food_industry = {
@@ -289,6 +285,7 @@ pm_government_run_building_food_industry = {
 	
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -310,6 +307,10 @@ pm_worker_cooperative_building_food_industry = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -474,8 +475,6 @@ pm_elastics = {
 
 pm_traditional_looms = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
-	
-	ai_value = 0
 }
 
 pm_mechanized_looms = {
@@ -496,8 +495,6 @@ pm_mechanized_looms = {
 			building_employment_laborers_add = -1500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_automatic_power_looms = {
@@ -519,8 +516,6 @@ pm_automatic_power_looms = {
 			building_employment_laborers_add = -2500
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_merchant_guilds_building_textile_mills = {
@@ -608,6 +603,7 @@ pm_government_run_building_textile_mills = {
 	
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -631,6 +627,10 @@ pm_worker_cooperative_building_textile_mills = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -771,8 +771,6 @@ pm_precision_tools = {
 
 pm_automation_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
-	
-	ai_value = 0
 }
 
 pm_watertube_boiler_building_furniture_manufacturies = {
@@ -795,8 +793,6 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 			building_employment_laborers_add = -1500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rotary_valve_engine_building_furniture_manufacturies = {
@@ -819,8 +815,6 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 			building_employment_laborers_add = -2000
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_assembly_lines_building_furniture_manufacturies = {
@@ -928,6 +922,7 @@ pm_government_run_building_furniture_manufacturies = {
 	
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -950,6 +945,10 @@ pm_worker_cooperative_building_furniture_manufacturies = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1214,6 +1213,7 @@ pm_government_run_building_glassworks = {
 	
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1237,6 +1237,10 @@ pm_worker_cooperative_building_glassworks = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1334,8 +1338,6 @@ pm_watertube_boiler_building_tooling_workshops = {
 			building_employment_laborers_add = -1500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rotary_valve_engine_building_tooling_workshops = {
@@ -1356,8 +1358,6 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 			building_employment_laborers_add = -2000
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_assembly_lines_building_tooling_workshops = {
@@ -1463,6 +1463,7 @@ pm_government_run_building_tooling_workshops = {
 	
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1485,6 +1486,10 @@ pm_worker_cooperative_building_tooling_workshops = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1589,8 +1594,6 @@ pm_watertube_boiler_building_paper_mills = {
 			building_employment_laborers_add = -1500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rotary_valve_engine_building_paper_mills = {
@@ -1613,8 +1616,6 @@ pm_rotary_valve_engine_building_paper_mills = {
 			building_employment_laborers_add = -2000
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_merchant_guilds_building_paper_mills = {
@@ -1699,6 +1700,7 @@ pm_government_run_building_paper_mills = {
 	
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1721,6 +1723,10 @@ pm_worker_cooperative_building_paper_mills = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+	
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1939,6 +1945,7 @@ pm_government_run_industry = {
 
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1956,6 +1963,10 @@ pm_worker_cooperative_industry = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -2152,8 +2163,6 @@ pm_watertube_boiler_building_steel_mills = {
 			building_employment_laborers_add = -1500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rotary_valve_engine_building_steel_mills = {
@@ -2176,8 +2185,6 @@ pm_rotary_valve_engine_building_steel_mills = {
 			building_employment_laborers_add = -2000
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_steam_engines = {
@@ -2306,8 +2313,6 @@ pm_watertube_boiler_building_motor_industry = {
 			building_employment_machinists_add = -500
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rotary_valve_engine_building_motor_industry = {
@@ -2331,8 +2336,6 @@ pm_rotary_valve_engine_building_motor_industry = {
 			building_employment_machinists_add = -500
 		}
 	}
-	
-	ai_value = 100000
 }
 
 pm_assembly_lines_building_motor_industry = {
@@ -2621,6 +2624,7 @@ pm_government_run_building_shipyards = {
 
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -2644,6 +2648,10 @@ pm_worker_cooperative_building_shipyards = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -3017,6 +3025,7 @@ pm_government_run_building_arms_industry = {
 
 	unlocking_laws = {
 		law_command_economy
+		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -3042,6 +3051,10 @@ pm_worker_cooperative_building_arms_industry = {
 		law_council_republic
 	}
 
+	disallowing_laws = {
+		law_centrally_planned_economy
+	}
+	
 	building_modifiers = {
 		level_scaled = {
 			building_employment_laborers_add = 100

@@ -1,8 +1,8 @@
-﻿ideology_republican_paternalistic = {
+﻿ideology_republican_paternalistic = { #USA, replaces Paternalistic #changed
 	icon = "gfx/interface/icons/ideology_icons/republican_paternalistic.dds"
 	
 	lawgroup_governance_principles = {		
-		law_presidential_republic = approve
+		law_presidential_republic = strongly_approve #approve
 		law_parliamentary_republic = approve
 		law_monarchy = neutral
 		law_council_republic = disapprove
@@ -29,10 +29,22 @@
 		law_dedicated_police = neutral
 		law_militarized_police = neutral
 		law_no_police = disapprove
+	}	
+	
+	lawgroup_migration = { #added
+		law_migration_controls = approve
+		law_closed_borders = neutral
+		law_no_migration_controls = disapprove
+	}
+	
+	lawgroup_church_and_state = { #added
+		law_state_religion = disapprove
+		law_total_separation = neutral
+		law_freedom_of_conscience = approve
 	}
 }
 
-ideology_scholar_paternalistic = {
+ideology_scholar_paternalistic = { #Qing, replaces Paternalistic #changed
 	icon = "gfx/interface/icons/ideology_icons/scholar_paternalistic.dds"
 	
 	lawgroup_governance_principles = {
@@ -65,9 +77,21 @@ ideology_scholar_paternalistic = {
 		law_militarized_police = neutral
 		law_no_police = disapprove
 	}
+	
+	lawgroup_migration = { #added
+		law_migration_controls = strongly_approve
+		law_closed_borders = approve
+		law_no_migration_controls = strongly_disapprove
+	}
+	
+	lawgroup_church_and_state = { #added
+		law_total_separation = strongly_disapprove
+		law_freedom_of_conscience = neutral
+		law_state_religion = strongly_approve
+	}
 }
 
-ideology_junker_paternalistic = {
+ideology_junker_paternalistic = { #Prussia, replaces Paternalistic #changed
 	icon = "gfx/interface/icons/ideology_icons/junker_paternalistic.dds"
 	
 	lawgroup_governance_principles = {
@@ -100,9 +124,21 @@ ideology_junker_paternalistic = {
 		law_militarized_police = neutral
 		law_no_police = disapprove
 	}
+	
+	lawgroup_migration = { #added
+		law_migration_controls = approve
+		law_closed_borders = neutral
+		law_no_migration_controls = disapprove
+	}
+	
+	lawgroup_church_and_state = { #added
+		law_total_separation = strongly_disapprove
+		law_freedom_of_conscience = approve
+		law_state_religion = strongly_approve
+	}
 }
 
-ideology_papal_paternalistic = {
+ideology_papal_paternalistic = { #Papalstate, replaces Paternalistic #changed
 	icon = "gfx/interface/icons/ideology_icons/papal_paternalistic.dds"
 	
 	lawgroup_governance_principles = {
@@ -135,9 +171,21 @@ ideology_papal_paternalistic = {
 		law_militarized_police = neutral
 		law_no_police = disapprove
 	}
+	
+	lawgroup_migration = { #added
+		law_migration_controls = approve
+		law_closed_borders = neutral
+		law_no_migration_controls = disapprove
+	}
+	
+	lawgroup_church_and_state = { #added
+		law_total_separation = strongly_disapprove
+		law_freedom_of_conscience = disapprove
+		law_state_religion = strongly_approve
+	}
 }
 
-ideology_confucian = {
+ideology_confucian = { #Qing, replaces Pious and Moralist #changed
 	icon = "gfx/interface/icons/ideology_icons/confucian.dds"
 	
 	lawgroup_church_and_state = {
@@ -160,9 +208,23 @@ ideology_confucian = {
 		law_right_of_assembly = neutral
 		law_protected_speech = disapprove
 	}
+	
+	lawgroup_health_system = { #added
+		law_charitable_health_system = approve
+		law_public_health_insurance = neutral
+		law_no_health_system = neutral
+		law_private_health_insurance = disapprove 
+	}
+	
+	lawgroup_education_system = { #added
+		law_religious_schools = strongly_approve 
+		law_public_schools = neutral
+		law_no_schools = neutral
+		law_private_schools = strongly_disapprove		
+	}
 }
 
-ideology_bakufu = {
+ideology_bakufu = { #Japan, just added to Armed Forces
 	icon = "gfx/interface/icons/ideology_icons/bakufu.dds"
 
 	lawgroup_governance_principles = {
@@ -191,7 +253,7 @@ ideology_bakufu = {
 	}
 }
 
-ideology_shinto_moralist = {
+ideology_shinto_moralist = { #Japan, replaces Moralist #changed
 	icon = "gfx/interface/icons/ideology_icons/shinto_moralist.dds"
 	
 	lawgroup_governance_principles = {
@@ -208,13 +270,13 @@ ideology_shinto_moralist = {
 		law_total_separation = strongly_disapprove
 	}
 	
-	lawgroup_citizenship = {
-		law_ethnostate = approve
-		law_national_supremacy = approve
-		law_racial_segregation = neutral
-		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
-	}
+	#lawgroup_citizenship = { #-> Patriarchal
+	#	law_ethnostate = approve
+	#	law_national_supremacy = approve
+	#	law_racial_segregation = neutral
+	#	law_cultural_exclusion = disapprove
+	#	law_multicultural = strongly_disapprove	
+	#}
 
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
@@ -227,7 +289,7 @@ ideology_shinto_moralist = {
 	}
 }
 
-ideology_caudillismo = {
+ideology_caudillismo = { #Armed Forces AND Landowner, replaces Paternalistic in Landowner #changed
 	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
 	
 	lawgroup_governance_principles = {
@@ -259,22 +321,42 @@ ideology_caudillismo = {
 		law_dedicated_police = neutral
 		law_militarized_police = neutral
 		law_no_police = disapprove
+	}	
+	
+	lawgroup_migration = { #added
+		law_closed_borders = approve
+		law_migration_controls = neutral
+		law_no_migration_controls = disapprove
+	}
+	
+	lawgroup_church_and_state = { #added
+		law_total_separation = strongly_disapprove
+		law_freedom_of_conscience = neutral
+		law_state_religion = approve
 	}
 }
 
-ideology_austrian_hegemony = {
+ideology_austrian_hegemony = { #Austria, just added #changed
 	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
 	
-	lawgroup_citizenship = {
-		law_ethnostate = approve
-		law_national_supremacy = strongly_approve
-		law_racial_segregation = disapprove
-		law_cultural_exclusion = strongly_disapprove
+	#lawgroup_citizenship = {
+	#	law_ethnostate = approve
+	#	law_national_supremacy = strongly_approve
+	#	law_racial_segregation = disapprove
+	#	law_cultural_exclusion = strongly_disapprove
+	#	law_multicultural = strongly_disapprove	
+	#}
+	
+	lawgroup_citizenship = { #added, just take normal Patriarchal-Lawset
+		law_ethnostate = neutral
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
 		law_multicultural = strongly_disapprove	
 	}
 }
 
-ideology_russian_patriarch = {
+ideology_russian_patriarch = { #Russia, replaces Patriarchal for Devout #changed
 	icon = "gfx/interface/icons/ideology_icons/russian_patriarch.dds" 
 
 	lawgroup_distribution_of_power = {
@@ -307,9 +389,23 @@ ideology_russian_patriarch = {
 		law_regulatory_bodies = disapprove
 		law_worker_protections = disapprove
 	} 
+	
+	lawgroup_childrens_rights = { #added
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+	}
+
+	lawgroup_citizenship = { #added
+		law_ethnostate = neutral
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove	
+	}
 }
 
-ideology_orthodox_patriarch = {
+ideology_orthodox_patriarch = { #replaces Patriarchal #changed
 	icon = "gfx/interface/icons/ideology_icons/orthodox_patriarch.dds"
 
 	lawgroup_distribution_of_power = {
@@ -335,9 +431,15 @@ ideology_orthodox_patriarch = {
 		law_right_of_assembly = neutral
 		law_protected_speech = disapprove
 	}
+	
+	lawgroup_childrens_rights = { #added
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+	}
 }
 
-ideology_buddhist_moralist = {
+ideology_buddhist_moralist = { #replaces Moralist #changed
 	icon = "gfx/interface/icons/ideology_icons/buddhist_moralist.dds"
 	
 	lawgroup_governance_principles = {
@@ -354,16 +456,16 @@ ideology_buddhist_moralist = {
 		law_total_separation = strongly_disapprove
 	}
 
-	lawgroup_citizenship = {
-		law_ethnostate = neutral
-		law_national_supremacy = approve
-		law_racial_segregation = neutral
-		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
-	}
+	#lawgroup_citizenship = { #->Patriarchal
+	#	law_ethnostate = neutral
+	#	law_national_supremacy = approve
+	#	law_racial_segregation = neutral
+	#	law_cultural_exclusion = disapprove
+	#	law_multicultural = strongly_disapprove	
+	#}
 }
 
-ideology_hindu_moralist = {
+ideology_hindu_moralist = { #just added! #changed
 	icon = "gfx/interface/icons/ideology_icons/hindu_moralist.dds"
 	
 	lawgroup_governance_principles = {
@@ -380,13 +482,13 @@ ideology_hindu_moralist = {
 		law_total_separation = strongly_disapprove
 	}
 
-	lawgroup_citizenship = {
-		law_ethnostate = neutral
-		law_national_supremacy = approve
-		law_racial_segregation = neutral
-		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
-	}
+	#lawgroup_citizenship = { #->Patriarchal
+	#	law_ethnostate = neutral
+	#	law_national_supremacy = approve
+	#	law_racial_segregation = neutral
+	#	law_cultural_exclusion = disapprove
+	#	law_multicultural = strongly_disapprove	
+	#}
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
@@ -395,7 +497,7 @@ ideology_hindu_moralist = {
 	}
 }
 
-ideology_sikh_moralist = {
+ideology_sikh_moralist = { #replaces Moralist #changed
 	icon = "gfx/interface/icons/ideology_icons/sikh_moralist.dds" 
 	
 	lawgroup_governance_principles = {
@@ -412,13 +514,13 @@ ideology_sikh_moralist = {
 		law_total_separation = strongly_disapprove
 	}
 
-	lawgroup_citizenship = {
-		law_ethnostate = neutral
-		law_national_supremacy = approve
-		law_racial_segregation = neutral
-		law_cultural_exclusion = disapprove
-		law_multicultural = strongly_disapprove	
-	}
+	#lawgroup_citizenship = { #->Patriarchal
+	#	law_ethnostate = neutral
+	#	law_national_supremacy = approve
+	#	law_racial_segregation = neutral
+	#	law_cultural_exclusion = disapprove
+	#	law_multicultural = strongly_disapprove	
+	#}
 	
 	lawgroup_army_model = {
 		law_national_militia = strongly_approve
@@ -428,7 +530,7 @@ ideology_sikh_moralist = {
 	}
 }
 
-ideology_oriental_orthodox_patriarch = {
+ideology_oriental_orthodox_patriarch = { #replaces Patriarchal #changed
 	icon = "gfx/interface/icons/ideology_icons/coptic_patriarch.dds"
 
 	lawgroup_distribution_of_power = {
@@ -460,97 +562,14 @@ ideology_oriental_orthodox_patriarch = {
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = approve
 	}
-}
 
-ideology_russian_military = {
-	icon = "gfx/interface/icons/ideology_icons/russian_military.dds"
-	lawgroup_distribution_of_power = {
-		law_autocracy = strongly_approve
-		law_oligarchy = disapprove
-		law_landed_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
+	lawgroup_citizenship = { #added
+		law_ethnostate = neutral
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove	
 	}
-	
-	lawgroup_policing = {
-		law_militarized_police = strongly_approve
-		law_dedicated_police = approve
-		law_local_police = neutral
-		law_no_police = disapprove
-	}	
-
-	lawgroup_internal_security = {
-		law_secret_police = approve
-		law_national_guard = approve
-		law_no_home_affairs = disapprove
-		law_guaranteed_liberties = strongly_disapprove
-	}	
-	
-	lawgroup_free_speech = {
-		law_outlawed_dissent = strongly_approve
-		law_censorship = approve
-		law_right_of_assembly = neutral
-		law_protected_speech = disapprove
-	}	
-}
-
-ideology_polish_parlamentarism = {
-	icon = "gfx/interface/icons/ideology_icons/polish_parlamentarism.dds"
-
-	lawgroup_governance_principles = {
-		law_monarchy = strongly_approve
-		law_theocracy = approve			
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
-		law_council_republic = strongly_disapprove
-	}
-	
-	lawgroup_distribution_of_power = {
-		law_autocracy = strongly_disapprove
-		law_oligarchy = approve
-		law_landed_voting = strongly_approve
-		law_wealth_voting = neutral
-		law_census_voting = disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
-	}
-	
-	lawgroup_bureaucracy = {
-		law_hereditary_bureaucrats = approve
-		law_appointed_bureaucrats = neutral
-		law_elected_bureaucrats = disapprove
-	}
-	
-	lawgroup_free_speech = {
-		law_outlawed_dissent = disapprove
-		law_censorship = disapprove
-		law_right_of_assembly = strongly_approve
-		law_protected_speech = neutral
-	}
-	
-	lawgroup_policing = {
-		law_local_police = approve
-		law_dedicated_police = neutral
-		law_militarized_police = neutral
-		law_no_police = disapprove
-	}
-	
-	lawgroup_economic_system = {		
-		law_traditionalism = strongly_approve
-		law_agrarianism = approve
-		law_interventionism = neutral
-		law_laissez_faire = disapprove
-		law_command_economy = strongly_disapprove
-	}
-	
-	lawgroup_trade_policy = {		
-		law_isolationism = approve
-		law_mercantilism = approve
-		law_protectionism = neutral
-		law_free_trade = disapprove
-	}	
 }
 
 ideology_isolationist_expansionism = {

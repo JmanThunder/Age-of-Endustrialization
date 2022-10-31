@@ -14,3 +14,5 @@ Mods includes in part or in whole:
 "Improved Automation"(Economy)
 "Merge Subject"(Diplo)
 "Diplomatic Recognition"(Diplo)
+"Real Command Economy"(Economy/Politics)
+"Politics and Policies"(Politics)

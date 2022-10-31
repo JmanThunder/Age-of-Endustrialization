@@ -148,8 +148,6 @@ pm_dynamite_building_coal_mine = {
 
 pm_no_steam_automation = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
-	
-	ai_value = 0
 }
 
 pm_steam_donkey_building_coal_mine = {
@@ -171,14 +169,10 @@ pm_steam_donkey_building_coal_mine = {
 			building_employment_laborers_add = -1000
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_road_carts = {
 	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
-	
-	ai_value = 0
 }
 
 pm_merchant_guilds_building_coal_mine = {
@@ -562,6 +556,7 @@ pm_government_run_building_coal_mine = {
 	
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -585,6 +580,7 @@ pm_government_run_building_iron_mine = {
 
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -608,6 +604,7 @@ pm_government_run_building_lead_mine = {
 
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -631,6 +628,7 @@ pm_government_run_building_sulfur_mine = {
 
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -654,6 +652,7 @@ pm_government_run_building_gold_mine = {
 
 	unlocking_laws = {
 		law_command_economy
+        law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -678,6 +677,10 @@ pm_worker_cooperative_building_coal_mine = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -705,6 +708,10 @@ pm_worker_cooperative_building_iron_mine = {
 		law_council_republic
 	}
 
+	disallowing_laws = {
+		law_centrally_planned_economy
+	}
+
 	building_modifiers = {
 		level_scaled = {
 			building_employment_laborers_add = 100
@@ -728,6 +735,10 @@ pm_worker_cooperative_building_lead_mine = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -755,6 +766,10 @@ pm_worker_cooperative_building_sulfur_mine = {
 		law_council_republic
 	}
 
+	disallowing_laws = {
+		law_centrally_planned_economy
+	}
+
 	building_modifiers = {
 		level_scaled = {
 			building_employment_laborers_add = 100
@@ -778,6 +793,10 @@ pm_worker_cooperative_building_gold_mine = {
 
 	unlocking_laws = {
 		law_council_republic
+	}
+
+	disallowing_laws = {
+		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -957,8 +976,6 @@ pm_steam_donkey_mine = {
 			building_employment_laborers_add = -1000
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_rail_transport_mine = {
@@ -979,8 +996,6 @@ pm_rail_transport_mine = {
 			building_employment_laborers_add = -1000
 		}
 	}
-	
-	ai_value = 50000
 }
 
 pm_picks_and_shovels_building_lead_mine = {

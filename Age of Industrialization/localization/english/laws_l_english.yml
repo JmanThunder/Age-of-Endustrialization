@@ -160,12 +160,6 @@
 
  ideology_caudillismo:0 "Caudillismo"
  ideology_caudillismo_desc:0 "#lore This group tends to support strongman leaders with military backgrounds over constitutional rule of law.#!"
- 
- ideology_russian_military:0 "Russian Military"
- ideology_russian_military_desc:0 "#lore Instead of looking out for our nation's best intrest, this group looks out for Russian intrests only.#!"
- 
- ideology_polish_parlamentarism:0 "Polish Parlamentarism"
- ideology_polish_parlamentarism_desc:0 "#lore This group would preferto see the country ruled by a parliament comprised of people from the upper class.#!"
 
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
@@ -310,12 +304,14 @@
  law_traditionalism_desc:0 "Pre-industrial subsistence economy with little central control."
  law_agrarianism:0 "Agrarianism"
  law_agrarianism_desc:0 "A rural economy emphasizing agricultural development and community."
- law_command_economy:0 "Command Economy"
- law_command_economy_desc:0 "An inward-focused interventionist economy where the government directly manages most aspects of production."
+ law_command_economy:0 "Biurocratic Command Economy"
+ law_command_economy_desc:0 "An inward-focused interventionist economy where the government directly manages most aspects of production with the wealth being distributed among the biurocrats."
  law_laissez_faire:0 "Laissez-Faire"
  law_laissez_faire_desc:0 "A liberal economy founded on the principles of comparative advantage and that fewer government interventions means greater growth"
  law_interventionism:0 "Interventionism"
  law_interventionism_desc:0 "To ensure the stability of our nation, government must curb the worst excesses of private businesses."
+ law_centrally_planned_economy:0 "Centrally Planned Economy"
+ law_centrally_planned_economy_desc:0 "A goverment run economy with business profits directly contributing to state budget."
 
  # Trade Policy group
  lawgroup_trade_policy:0 "Trade Policy"
