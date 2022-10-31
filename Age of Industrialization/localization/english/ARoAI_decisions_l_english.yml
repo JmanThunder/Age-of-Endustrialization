@@ -1,0 +1,5 @@
+﻿l_english:
+ ec_enable_autobuild:0 "Enable Autobuild"
+ ec_enable_autobuild_desc:0 "Buildings will be constructed automatically in your country. You will still be able to queue buildings yourself too."
+ ec_disable_autobuild:0 "Disable Autobuild"
+ ec_disable_autobuild_desc:0 "Stop automatic construction of buildings in your country."

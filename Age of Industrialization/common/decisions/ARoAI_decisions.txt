@@ -1,0 +1,31 @@
+﻿ec_enable_autobuild = {
+	is_shown = {
+		is_player = yes
+		NOT = {
+			has_variable = ec_autobuild
+		}
+	}
+	
+	when_taken = {
+		set_variable = ec_autobuild
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
+
+ec_disable_autobuild = {
+	is_shown = {
+		is_player = yes
+		has_variable = ec_autobuild
+	}
+	
+	when_taken = {
+		remove_variable = ec_autobuild
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
