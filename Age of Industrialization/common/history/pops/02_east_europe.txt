@@ -459,10 +459,10 @@
 		}
 	}
 	s:STATE_LATVIA = {
-		region_state:RUS = {
+		region_state:UBD = {
 			create_pop = {
 				culture = latvian
-				size = 1047496
+				size = 8047496
 			}
 			create_pop = {
 				culture = north_german
@@ -490,6 +490,12 @@
 				size = 21000
 			}
 		}
+		region_state:RUS = {
+			create_pop = {
+				culture = latvian
+				size = 27496
+			}
+		}
 	}
 	s:STATE_LITHUANIA = {
 		region_state:RUS = {
@@ -514,6 +520,17 @@
 				size = 8000
 			}
 		}
+		region_state:POL = {
+			create_pop = {
+				culture = lithuanian
+				size = 37496
+			}
+			create_pop = {
+				culture = polish
+				size = 11796
+			}
+		}
+
 	}
 	s:STATE_MAZOVIA = {
 		region_state:POL = {
