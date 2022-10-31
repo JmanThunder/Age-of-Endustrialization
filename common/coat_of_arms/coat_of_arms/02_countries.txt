@@ -8661,8 +8661,13 @@ HAI_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
+	textured_emblem = {
+		texture = "te_coa_haiti.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
 	colored_emblem = {
-		texture = "ce_bicolor_right.dds"
+		texture = "ce_bicolor_bottom.dds"
 		color1 = "red"
 		color2 = "red"
 	}
@@ -8699,17 +8704,10 @@ HAI_absolute_monarchy = {
 HAI_communist = { 
 	pattern = "pattern_solid.tga"
 	color1 = "red"
-				
-	colored_emblem = {
-		texture = "ce_bicolor_right.dds"
-		color1 = "blue"
-		color2 = "blue"		
-	}
-	colored_emblem = {
-		texture = "ce_star_05.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { scale = { 0.5 0.5 } position = { 0.25 0.5 } }
+	
+	textured_emblem = {
+		texture = "te_coa_haiti_liberte"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}		
 }
 HAI_subject = {
@@ -17110,20 +17108,6 @@ POL_absolute_monarchy = {
         instance = { scale = { 1 1 }  }
     }	
 }
-POL_subject_RUS = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	colored_emblem = {
-		texture = "ce_saltire_fimbriated.dds"
-		color1 = "white"
-		color2 = "blue"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }		
-	}
-	textured_emblem = {
-		texture = "te_coa_poland.dds"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 POL_dictatorship = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -20997,17 +20981,6 @@ UBD = {
 		texture = "ce_cross_finland.dds"
 		color1 = color2
 		color2 = color2
-	}
-}
-
-UBD_subject_RUS = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "green"
-		color2 = "white"
 	}
 }
 

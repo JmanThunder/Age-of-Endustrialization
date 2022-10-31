@@ -10,7 +10,7 @@
 }
 
 GBR = {
-	color = { 153  0 0 }
+	color = hsv{ 0.99  0.7  0.9 }
 
 	country_type = recognized
 
@@ -32,7 +32,7 @@ SCA = {
 }
 
 RUS = {
-	color = { 0 86 63 }
+	color = { 47 91 18 }
 
 	country_type = recognized
 
@@ -43,7 +43,7 @@ RUS = {
 }
 
 FRA = {
-	color = { 0  34  255 }
+	color = { 20  50  210 }
 
 	country_type = recognized
 
@@ -100,7 +100,7 @@ AUS = {
 }
 
 USA = {
-	color = { 69  157  208 }
+	color = { 66  94  193 }
 	
 	country_type = colonial
 	
@@ -253,7 +253,7 @@ NOR = {
 }
 
 SWE = {
-	color = { 0 127 229 }
+	color = { 87  130  199 }
 	
 	country_type = recognized
 
@@ -703,7 +703,7 @@ PRA = { #Gao-Para
 }
 
 SAR = {
-	color = { 97 209 251 }
+	color = { 117  146  167 }
 	
 	country_type = recognized
 
@@ -715,7 +715,7 @@ SAR = {
 }
 
 SIC = {
-	color = { 160  30  154 }
+	color = { 73  152  76 }
 	
 	country_type = recognized
 
@@ -1764,7 +1764,7 @@ CAM = {
 }
 
 CHI = {
-	color = { 237  152  18 }
+	color = { 252 185 61 }
 	
 	country_type = unrecognized
 	
@@ -2070,18 +2070,18 @@ ALT = {
 }
 
 HAI = {
-	color = { 139  179  207 }
+	color = { 60  119  246 }
 	
 	country_type = colonial
 	
 	tier = principality
 	
-	cultures = { afro_antillean caribeno afro_caribeno }
+	cultures = { mulatto afro_antillean cajun polish }
 	capital = STATE_HAITI
 }
 
 MEX = {
-	color = { 173  242  175 }
+	color = { 56 143 53 }
 	
 	country_type = colonial
 	
