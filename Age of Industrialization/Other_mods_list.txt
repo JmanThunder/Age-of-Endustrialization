@@ -1,3 +1,6 @@
+Mods includes in part or in whole:
 VFM(map)
 "Revenge of the Political Map Mode"(Graphics zoomed in)
-"sensible map"(Graphics zoomed in)
+"sensible map"(Graphics zoomed out - paritally)
+"Better Flags Mod"(Flags in eras we haven't done)
+"Remove Overlord Border on Flag Mod" (Flag fix)

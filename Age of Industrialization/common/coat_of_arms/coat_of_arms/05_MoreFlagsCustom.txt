@@ -1,0 +1,65 @@
+﻿KUK_monarchy = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "red"
+	color3 = "white"
+	color4 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color1
+
+		mask = { 1 }
+	}
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color4
+
+		mask = { 2 }
+	}
+
+    textured_emblem = {
+		texture = "te_AUS_charge.tga"
+		instance = { scale = { 0.25 0.6 } position = { 0.25 0.39 } }
+	}
+
+    textured_emblem = {
+		texture = "te_HUN_charge.tga"
+		instance = { scale = { 0.25 0.6 } position = { 0.75 0.39 } }
+	}
+}
+
+ITA = { # Italy
+	# Until 1946
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+
+ITA_monarchy = { # Default italy in vanilla
+	# Until 1946
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_italia.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.62 } }
+	}	
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.25 } }
+	}	
+}

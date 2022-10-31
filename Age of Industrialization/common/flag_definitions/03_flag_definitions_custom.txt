@@ -1,0 +1,213 @@
+﻿AUS = { # Austria
+	flag_definition = {
+		coa = AUS
+		subject_canton = AUS		
+		allow_overlord_canton = yes
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = AUS_absolute_monarchy
+		subject_canton = AUS_absolute_monarchy
+		coa_with_overlord_canton = AUS_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.337 0.337 }			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_republic
+		subject_canton = AUS_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AUS_dictatorship
+		subject_canton = AUS_dictatorship
+		priority = 20
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_theocracy
+		subject_canton = AUS_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = KUK
+		subject_canton = KUK
+		priority = 100
+		trigger = { 
+			scope:actor = { country_has_primary_culture = cu:hungarian }
+		}
+	}
+
+    flag_definition = {
+		coa = KUK_monarchy
+		subject_canton = KUK_monarchy
+		priority = 1000
+		trigger = { 
+            coa_def_monarchy_flag_trigger = yes
+			scope:actor = { country_has_primary_culture = cu:hungarian }
+		}
+	}
+
+	flag_definition = {
+		coa = AUS_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AUS_fascist
+		subject_canton = AUS_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}			
+}
+
+
+NET = { # Netherlands
+	flag_definition = {
+		coa = NET
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NET_subject		
+		priority = 1
+	}
+	flag_definition = {
+		coa = NET_princes_flag
+		priority = 5
+		trigger = { 
+			coa_def_autocracy_flag_trigger = yes
+		}
+	}
+	#flag_definition = {
+	#	coa = NET_republic
+	#	subject_canton = NET_republic
+	#	priority = 10
+	#	trigger = { 
+	#		coa_def_republic_flag_trigger = yes
+	#	}
+	#}	
+	flag_definition = { # Replaced flag 	
+		coa = NET_princes_flag
+		subject_canton = NET_princes_flag
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = NET_fascist
+		subject_canton = NET_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}			
+}
+
+ITA = {
+	flag_definition = {
+		coa = ITA_LUC
+		subject_canton = ITA_LUC
+		priority = 100
+		trigger = {
+			coa_def_started_LUC_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_MOD
+		subject_canton = ITA_MOD
+		priority = 100
+		trigger = {
+			coa_def_started_MOD_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_PAP
+		subject_canton = ITA_PAP
+		priority = 100
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_PAR
+		subject_canton = ITA_PAR
+		priority = 100
+		trigger = {
+			coa_def_started_PAR_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_SIC
+		subject_canton = ITA_SIC
+		priority = 100
+		trigger = {
+			coa_def_started_SIC_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_TUS
+		subject_canton = ITA_TUS
+		priority = 100
+		trigger = {
+			coa_def_started_TUS_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_republic
+		subject_canton = ITA_republic
+		priority = 1
+	}
+	flag_definition = {
+		coa = ITA_monarchy
+		subject_canton = ITA_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ITA_dictatorship
+		subject_canton = ITA_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ITA_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ITA_fascist
+		subject_canton = ITA_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}
