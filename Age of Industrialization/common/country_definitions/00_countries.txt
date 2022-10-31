@@ -144,13 +144,13 @@ ASA = {
 }
 
 LOU = {
-	color = { 53 52 144 }
+	color = { 35  27  120 }
 	
 	country_type = colonial
 	
 	tier = principality
 	
-	cultures = { cajun afro_antillean }
+	cultures = { cajun afro_antillean mulatto }
 	capital = STATE_LOUISIANA
 }
 
@@ -749,7 +749,7 @@ TUS = {
 }
 
 VEN = {
-	color = { 180 12 1 }
+	color = { 54  167  156 }
 	
 	country_type = recognized
 
@@ -854,7 +854,7 @@ POL = {
 }
 
 GAL = {
-	color = { 13  81  130 }
+	color = { 160  170  190 }
 	
 	country_type = recognized
 
@@ -920,7 +920,7 @@ CZH = {
 }
 
 ALB = {
-	color = { 181  72  106 }
+	color = { 180  70  105 }
 	
 	country_type = recognized
 
@@ -944,7 +944,7 @@ BOS = {
 }
 
 BUL = {
-	color = { 116  107  140 }
+	color = { 60 125 100 }
 	
 	country_type = recognized
 
@@ -1038,7 +1038,7 @@ MON = {
 }
 
 ROM = {
-	color = { 21  96  178 }
+	color = { 200  190  126 }
 	
 	country_type = recognized
 
@@ -1049,7 +1049,7 @@ ROM = {
 }
 
 SER = {
-	color = { 166  72  57 }
+	color = { 140 0 0 }
 	
 	country_type = recognized
 
@@ -1188,7 +1188,7 @@ GEO = {
 }
 
 HDJ = {
-	color = { 121  229  215 }
+	color = { 201  107  119 }
 	
 	country_type = unrecognized
 	
@@ -1233,7 +1233,7 @@ KOK = {
 }
 
 KAZ = {
-	color = { 60 80 140 }
+	color = { 0  175  202 }
 	
 	country_type = decentralized
 	
@@ -1255,7 +1255,7 @@ MUG = {
 }
 
 NEJ = {
-	color = { 209 219 116}
+	color = { 255  251  198 }
 	
 	country_type = unrecognized
 	
@@ -1280,7 +1280,7 @@ OMA = {
 }
 
 PER = {
-	color = { 229  170  87 }
+	color = { 21 31 142 } #{ 229  170  87 }
 	
 	country_type = unrecognized
 	
@@ -1291,7 +1291,7 @@ PER = {
 }
 
 JAB = {
-	color = { 183  62  62 }
+	color = { 153 148 87 }
 	
 	country_type = unrecognized
 	
@@ -1314,7 +1314,7 @@ YEM = {
 }
 
 MAH = {
-	color = { 0  153  76 }
+	color = { 47  140  0 }
 	
 	country_type = unrecognized
 	
@@ -1325,7 +1325,7 @@ MAH = {
 }
 
 KAT = {
-	color = { 79  152  64 }
+	color = { 204  191  6 }
 	
 	country_type = unrecognized
 	
@@ -1336,7 +1336,7 @@ KAT = {
 }
 
 ZAI = {
-	color = { 153  76  0 }
+	color = { 98 49 0 }
 	
 	country_type = unrecognized
 	
@@ -1348,7 +1348,7 @@ ZAI = {
 }
 
 LAH = {
-	color = { 209  41  41 }
+	color = { 246  134  59 }
 	
 	country_type = unrecognized
 	
@@ -1360,7 +1360,7 @@ LAH = {
 }
 
 BHN = {
-	color = { 169  51  51 }
+	color = { 113  112  96 }
 	
 	country_type = unrecognized
 	
@@ -1371,7 +1371,7 @@ BHN = {
 }
 
 HND = {
-	color = { 150 77 240 }
+	color = { 33  96  48 }
 	
 	country_type = unrecognized
 	
@@ -1899,7 +1899,7 @@ TIB = {
 }
 
 MGL = {
-	color = { 255  224  124 }
+	color = { 08  153  65 }
 	
 	country_type = unrecognized
 	
@@ -1910,7 +1910,7 @@ MGL = {
 }
 
 XIN = {
-	color = { 255  234  174 }
+	color = { 121  229  215 }
 	
 	country_type = unrecognized
 	
@@ -1988,7 +1988,7 @@ COL = {
 }
 
 COS = {
-	color = { 207 72 60 }
+	color = { 18 93 135 }
 	
 	country_type = colonial
 	
@@ -2000,7 +2000,7 @@ COS = {
 }
 
 CUB = {
-	color = { 87  192  204 }
+	color = { 152  130  191 }
 	
 	country_type = colonial
 	
@@ -2070,7 +2070,7 @@ ALT = {
 }
 
 HAI = {
-	color = { 60  119  246 }
+	color = { 57  113  228 }
 	
 	country_type = colonial
 	
@@ -2081,7 +2081,7 @@ HAI = {
 }
 
 MEX = {
-	color = { 173  242  175 }
+	color = { 104  152  83 }
 	
 	country_type = colonial
 	
@@ -2106,7 +2106,7 @@ MTC = {
 }
 
 HON = {
-	color = { 235 240 247 }
+	color = { 152  130  191 }
 	
 	country_type = colonial
 	
@@ -2246,7 +2246,7 @@ UCA = {
 }
 
 ARG = {
-	color = { 101  102  163 }
+	color = { 89 155 217 }
 	
 	country_type = colonial
 	
@@ -2257,7 +2257,7 @@ ARG = {
 }
 
 BOL = {
-	color = { 219  182  182 }
+	color = { 255  180  136 }
 	
 	country_type = colonial
 	
@@ -2313,7 +2313,7 @@ ECU = {
 }
 
 PEU = {
-	color = { 124  140  162 }
+	color = { 218 18 26 }
 	
 	country_type = colonial
 	
@@ -2370,7 +2370,7 @@ ISR = {
 }
 
 BYZ = {
-	color = { 147  82  173 }
+	color = hsv{ 0.9 1 0.3 }#{ 147  82  173 }
 	
 	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
 	
@@ -2428,7 +2428,7 @@ BYE = {
 }
 
 PLC = {
-	color = { 219  31  62 }
+	color = { 205 35 69 }#{ 219  31  62 }
 	
 	country_type = recognized
 
@@ -2439,7 +2439,7 @@ PLC = {
 }
 
 GCO = {
-	color = { 255  244  100 }
+	color = { 255  221  43 }#{ 255  244  100 }
 	
 	country_type = recognized
 
@@ -2671,7 +2671,7 @@ IRC = {
 }
 
 JAM = {
-	color = hsv360{ 88  87  33 }
+	color = { 50  160  50 } #hsv360{ 88  87  33 }
 	
 	country_type = colonial
 	
@@ -2776,7 +2776,7 @@ SMI = { # Sapmi
 }
 
 MLT = { # Malta
-	color = { 28 146 136 }
+	color = { 106  127  183 } #{ 28 146 136 }
 	
 	country_type = recognized
 	
@@ -3420,7 +3420,7 @@ DON = {
 }
 
 SYR = {
-	color = { 241 245 240 }
+	color = { 125  110  225 } #{ 241 245 240 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { mashriqi }
@@ -3537,7 +3537,7 @@ GNI = {
 }
 
 KUR = {
-	color = { 192 245 71 }
+	color = { 254 189 17 }
 	
 	country_type = unrecognized
 	
@@ -3703,7 +3703,7 @@ WLD = {
 
 # India
 BHT = {
-	color = { 255  140  0 }
+	color = { 247 155 53 }
 	
 	country_type = recognized
 
@@ -3753,7 +3753,7 @@ CHC = {
 
 # Assyria
 ASS = {
-	color = { 111 56 200 }
+	color = { 27 130 137 }
 	
 	country_type = recognized
 	
