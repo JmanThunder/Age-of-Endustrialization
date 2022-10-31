@@ -17108,6 +17108,20 @@ POL_absolute_monarchy = {
         instance = { scale = { 1 1 }  }
     }	
 }
+POL_subject_RUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated.dds"
+		color1 = "white"
+		color2 = "blue"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }		
+	}
+	textured_emblem = {
+		texture = "te_coa_poland.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
 POL_dictatorship = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
@@ -20981,6 +20995,17 @@ UBD = {
 		texture = "ce_cross_finland.dds"
 		color1 = color2
 		color2 = color2
+	}
+}
+
+UBD_subject_RUS = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "green"
+		color2 = "white"
 	}
 }
 
