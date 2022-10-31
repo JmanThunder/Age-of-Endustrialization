@@ -20,7 +20,7 @@ base_values = {
 
 	country_revolution_secession_speed_add = 0.1
 	
-	state_education_access_wealth_add = 0.02
+	state_education_access_wealth_add = 0.0075
 	
 	country_minting_add = 250
 
@@ -44,9 +44,9 @@ base_values = {
 discrimination = {
 	state_political_strength_from_discrimination_mult = -0.95
 	state_radicals_from_sol_change_mult = 0.05
-	state_dependent_wage_mult = 0.5
-	state_radicals_from_discrimination_mult = 0.15
-	country_radicals_from_conquest_mult = 0.1
+	state_dependent_wage_mult = 0.05
+	state_radicals_from_discrimination_mult = 0.075
+	country_radicals_from_conquest_mult = 0.025
 	building_minimum_wage_mult = -0.05
 }
 
