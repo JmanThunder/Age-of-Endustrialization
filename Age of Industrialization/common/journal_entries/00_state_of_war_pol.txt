@@ -22,11 +22,15 @@ je_martial_law_pl = {
 
 	on_timeout = {
 		remove_modifier = state_of_war_pl
+		trigger_event = {
+			id = POL_flv_events.1
+		}
 	}
 
 	current_value = {
 		value = var:state_of_war_pl
 	}
+	
 
 	invalid = {
 		NOT = { is_subject_of = c:RUS }

@@ -2116,3 +2116,6 @@
 
  country_default:0 "In $concept_default$"
  country_default_desc:0 "Country is in [concept_default]"
+ 
+ state_of_war_pl:0 "Martial Law"
+ state_of_war_pl_desc:0 "The Country is under Martial Law"
