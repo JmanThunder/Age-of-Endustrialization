@@ -1,0 +1,191 @@
+﻿namespace = marx_events
+
+# Marx Spawns
+marx_events.1 = {
+	type = country_event
+
+	title = marx_events.1.t
+	desc = marx_events.1.d
+	flavor = marx_events.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		has_technology_researched = socialism
+		NOT = { has_global_variable = marx_happened }
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = marx_happened
+		}
+	}
+
+	option = { #support socialism not marx
+		name = marx_events.1.a
+		default_option = yes
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = modifier_supported_marx
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	option = { #promote him / marxista porque me va la marxa
+		name = marx_events.1.b
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = modifier_promoted_marx
+				months = normal_modifier_time
+			}
+		}
+				create_character = {
+					first_name = Karl_Heinrich
+					last_name = Marx
+					culture = cu:north_german
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					dna = dna_karl_marx
+					ideology = ideology_communist
+					religion = rel:protestant
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}
+
+	option = { #get rid of this man
+		name = marx_events.1.c
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = modifier_ditched_marx
+				months = normal_modifier_time
+			}
+		}
+	}
+	
+	option = { #mario and luigi
+		name = marx_events.1.e
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = modifier_promoted_marx
+				months = normal_modifier_time
+			}
+		}
+				create_character = {
+					first_name = Karl_Heinrich
+					last_name = Marx
+					culture = cu:north_german
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					dna = dna_karl_marx
+					ideology = ideology_communist
+					religion = rel:protestant
+					traits = {
+						direct
+						persistent
+					}
+				}
+				create_character = {
+					first_name = Friedrich
+					last_name = Engels
+					culture = cu:north_german
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_industrialists
+					female = no
+					ideology = ideology_communist
+					religion = rel:protestant
+					traits = {
+						direct
+						persistent
+			}
+		}
+	}
+	option = { #peach and daisy
+		name = marx_events.1.g
+		ig:ig_trade_unions = {
+			add_modifier = {
+				name = modifier_promoted_marx
+				months = normal_modifier_time
+					}
+				}
+				create_character = { #Karla Marx
+					first_name = Karla
+					last_name = Marx
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = yes
+					ideology = ideology_communist
+					traits = {
+						direct
+						persistent
+					}
+				}
+				create_character = {
+					first_name = Freda
+					last_name = Engels
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_industrialists
+					female = yes
+					ideology = ideology_communist
+					traits = {
+						direct
+						persistent
+				}
+			}
+		}
+	option = { #complete anarchy
+		name = bakunin_events.1.test
+				create_character = {
+					first_name = Mikhail
+					last_name = Bakunin
+					culture = cu:russian
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					ideology = ideology_anarchist
+					religion = rel:orthodox
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}
+	option = { #baguette anarchy
+		name = proudhon_events.1.a
+				create_character = {
+					first_name = Pierre-Joseph
+					last_name = Proudhon
+					culture = cu:french
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					ideology = ideology_anarchist
+					religion = rel:protestant
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}				
+}

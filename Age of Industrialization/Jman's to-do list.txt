@@ -7,7 +7,7 @@ Jman's todo list:
 		-Look into Religous conversions and migrations{DONE} 
 
 	2.) Mapping
-		-Attempt to fix, the Netherlands, Vancouver and Prussia
+		-Attempt to fix, the Netherlands, Vancouver and Prussia{MOSTLY DONE}
 		-Add PLC Borders if MaTi wants it 
 		-Map rework (states, politcal borders, and pops):
 			+ Canada (Light)
@@ -32,3 +32,5 @@ Jman's todo list:
 		-French population stagnation 
 		-World wide culture rework(suffering)
 		-Finish Haitian Flavor
+
+	4.) Senate system?

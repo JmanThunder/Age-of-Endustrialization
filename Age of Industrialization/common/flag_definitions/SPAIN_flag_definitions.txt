@@ -1,0 +1,150 @@
+﻿
+
+SPA = { # Spain
+	flag_definition = {
+		coa = SPA
+		subject_canton = SPA
+		coa_with_overlord_canton = SPA_subject
+		allow_overlord_canton = yes
+	}
+	flag_definition = {
+		coa = SPA_republic
+		subject_canton = SPA_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_absolute_monarchy
+		subject_canton = SPA_absolute_monarchy	
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_dictatorship
+		subject_canton = SPA_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_communist
+		subject_canton = SPA_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_anarchy
+		priority = 1600
+		trigger = {
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_theocracy
+		subject_canton = SPA_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SPA_subject_GBR
+		allow_overlord_canton = yes		
+		priority = 50
+		trigger = { 
+			coa_def_british_ensign_trigger = yes
+		}
+	}		
+}
+
+CAT = { # Catalonia
+	flag_definition = {
+		coa = CAT
+		coa_with_overlord_canton = CAT
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[1/9*4] }
+	}
+	flag_definition = {
+		coa = CAT_coa
+		priority = 10
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_republic
+		coa_with_overlord_canton = CAT
+		allow_overlord_canton = yes
+		overlord_canton_scale = { 0.5 @[1/9*4] }
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_theocracy
+		priority = 1000
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAT_anarchy
+		priority = 1000
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+}
+
+GLI = { # Galicia Spain
+	flag_definition = {
+		coa = GLI_monarchy
+		priority = 2000
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GLI_theocracy
+		priority = 2100
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GLI_dictatorship
+		priority = 2200
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GLI_anarchy
+		priority = 1600
+		trigger = {
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GLI_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+}

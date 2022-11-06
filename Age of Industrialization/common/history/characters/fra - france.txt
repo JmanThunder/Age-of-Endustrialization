@@ -1,0 +1,206 @@
+﻿CHARACTERS = {
+	c:FRA = {
+		create_character = {
+			first_name = Louis-Philippe
+			last_name = d_Orleans
+			ruler = yes
+			birth_date = 1773.10.6
+			dna = dna_king_louis_philippe_01
+			interest_group = ig_industrialists
+			ideology = ideology_royalist
+			traits = {
+				tactful
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {
+			first_name = "Ferdinand_Philippe"
+			last_name = d_Orleans
+			heir = yes
+			birth_date = 1810.9.3
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				reserved
+			}
+		}
+
+		create_character = {
+			first_name = "Victor"
+			last_name = "de_Broglie"
+			birth_date = 1785.11.28
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_reformer
+			traits = {
+				tactful
+			}
+		}
+
+		create_character = {
+			first_name = "Adolphe"
+			last_name = "Thiers"
+			birth_date = 1797.4.15
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				charismatic
+			}
+		}
+
+		create_character = {
+			first_name = "Jacques"
+			last_name = "Laffitte"
+			birth_date = 1767.10.24
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_reformer
+			traits = {
+				reckless
+			}
+		}
+
+		create_character = {
+			first_name = "Jean-de-Dieu"
+			last_name = "Soult"
+			birth_date = 1769.3.29
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+			}
+		}
+		
+		create_character = {
+			first_name = "Antoine"
+			last_name = "d_Argout"
+			birth_date = 1782.8.28
+			dna = dna_antoine_argout
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_market_liberal
+			traits = {
+				meticulous
+			}
+		}
+		
+		create_character = {
+			first_name = "Hyacinthe-Louis"
+			last_name = "de_Quelen"
+			birth_date = 1778.10.8
+			dna = dna_de_quelen
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+			}
+		}
+		
+		create_character = {
+			first_name = "Francois-Vincent"
+			last_name = "Raspail"
+			birth_date = 1794.1.29
+			dna = dna_francois_raspail
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_radical
+			traits = {
+				bandit
+			}
+		}
+		
+		create_character = {
+			first_name = "Mathieu"
+			last_name = "Mole"
+			birth_date = 1781.1.24
+			dna = dna_mathieu_mole
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				basic_diplomat
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Thomas
+			last_name = Bugeaud
+			birth_date = 1784.10.15
+			hq = region_rhine
+			interest_group = ig_rural_folk
+			traits = {
+				ambitious
+			}
+			# Known for supressing riots and winning a duel
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Bertrand
+			last_name = Clausel
+			birth_date = 1772.12.12
+			hq = region_north_africa
+			interest_group = ig_armed_forces
+			traits = {
+				wrathful
+			}
+		}
+		
+
+		create_character = { # Sea
+		 	is_admiral = yes
+			first_name = Guy-Victor
+			last_name = Duperre
+			birth_date = 1775.2.20
+			hq = region_france
+			commander_rank = commander_rank_3
+			traits = {
+				experienced_naval_commander
+			}
+
+		}
+		
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = Charles
+			last_name = Baudin
+			birth_date = 1784.7.21
+			hq = region_occitania
+			commander_rank = commander_rank_3
+			traits = {
+				experienced_naval_commander
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Honore_Charles
+			last_name = Reille
+			age = 61
+			hq = region_occitania
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+				resupply_commander
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Guillaume_Dode
+			last_name = de_la_Brunerie
+			age = 61
+			hq = region_france
+			commander_rank = commander_rank_3
+			traits = {
+				trench_rat
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+popneed_intoxicants = {
+	default = liquor
+
+	entry = {
+		goods = liquor
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = tobacco
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = opium
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = slaves1
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+}

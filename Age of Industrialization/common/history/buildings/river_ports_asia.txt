@@ -1,0 +1,273 @@
+﻿BUILDINGS={
+	s:STATE_PUNJAB={
+		region_state:PAN={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_SINDH={
+		region_state:SIN={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_DELHI={
+		region_state:BIC={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_AWADH={
+		region_state:BIC={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_NORTH_BENGAL={
+		region_state:BIC={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_SOUTH_BENGAL={
+		region_state:BIC={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_GUANGDONG={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=4
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_GUANGXI={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=4
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_SICHUAN={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_GUIZHOU={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_HUNAN={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_CHONGQING={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=4
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_WESTERN_HUBEI={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_EASTERN_HUBEI={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_JIANGXI={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_SOUTHERN_ANHUI={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=6
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_NANJING={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=8
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_HENAN={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=2
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+	s:STATE_SHANDONG={
+		region_state:CHI={
+			create_building={
+				building="building_ia_river_port"
+				level=4
+				activate_production_methods={ "pm_ia_rp_small_dock" }
+			}		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

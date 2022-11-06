@@ -1,0 +1,22 @@
+﻿############ RIVER PORTS
+building_ia_river_port = {
+	building_group = bg_ia_river_port
+	texture = "gfx/interface/icons/building_icons/building_port.dds"
+
+	has_max_level = yes
+
+	unlocking_technologies = { navigation }
+
+	production_method_groups = {
+		pmg_base_building_ia_river_port
+	}
+
+	required_construction = construction_cost_very_low
+
+	can_build = {
+		error_check = {
+			severity = fail
+			ia_rp_on_river = yes
+		}
+	}
+}

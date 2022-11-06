@@ -1,0 +1,33 @@
+﻿advance_assault = {
+    texture = "gfx/interface/icons/commander_order_icons/unused/assault.dds"
+	
+	military_type = army
+
+    possible = {
+        error_check = {
+			severity = invalid
+			has_role = general
+		}
+		error_check = {
+            severity = fail
+            is_mobilized = yes
+        }
+		owner = { has_technology_researched = logistics }
+    }
+
+    modifier = {
+        character_attrition_risk_add = 0.5
+        front_advancement_speed_add = 25
+		unit_offense_mult = 0.1
+		unit_defense_mult = -0.05
+    }
+
+	experience = 0.05 # This much experience per week while executing Order
+	
+    allows_advance = yes
+    causes_general_travel = yes
+    map_interaction = advance
+	clicksound = "event:/SFX/UI/Military/order_general_front_advance"
+	
+	ai_order_type = offensive
+}

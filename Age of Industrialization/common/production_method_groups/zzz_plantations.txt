@@ -1,0 +1,32 @@
+﻿pmg_base_building_southern_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_building_cotton1_plantation
+		default_building_cotton2_plantation
+	}
+}
+
+pmg_options_southern_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_slave01
+		pm_slave02
+		pm_slave03
+	}
+}
+
+pmg_options2_southern_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_slave04
+		pm_slave05
+	}
+}
+
+pmg_options3_southern_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_slave06
+		pm_slave07
+	}
+}

@@ -1,0 +1,335 @@
+﻿namespace = napoleonic_flavor
+namespace = bourbon_restauration
+
+napoleonic_flavor.1 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	title = napoleonic_flavor.1.t
+	desc = napoleonic_flavor.1.d
+	flavor = napoleonic_flavor.1.f
+
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+        exists = c:FRA
+        c:FRA = ROOT
+		has_law = law_type:law_monarchy
+		NOT = { has_variable = french_empire_created }
+		OR = {
+			is_enacting_law = law_type:law_presidential_republic
+			is_enacting_law = law_type:law_parliamentary_republic
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = napoleonic_flavor.1.a
+		hidden_effect = {
+			create_character = {
+				first_name = Louis-Napoleon
+				last_name = Bonaparte
+				ig_leader = yes
+				interest_group = ig_armed_forces
+				female = no
+				birth_date = 1808.4.20
+				dna = dna_emperor_napoleon_03
+				ideology = ideology_moderate
+				traits = {
+					ambitious
+					demagogue
+				}
+				on_created = {
+					set_variable = is_louis_napoleon
+				}
+			}
+		}
+	}
+}
+
+napoleonic_flavor.2 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	title = napoleonic_flavor.2.t
+	desc = napoleonic_flavor.2.d
+	flavor = napoleonic_flavor.2.f
+
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+        exists = c:FRA
+        c:FRA = ROOT
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+		}
+		OR = {
+			is_enacting_law = law_type:law_oligarchy
+			is_enacting_law = law_type:law_autocracy
+		}
+		ruler = {
+			has_variable = is_louis_napoleon
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = napoleonic_flavor.2.a
+		hidden_effect = {
+			set_variable = fra_presidential_dictatorship
+			create_character = {
+				first_name = Louis-Napoleon
+				last_name = Bonaparte
+				ruler = yes
+				birth_date = 1808.4.20
+				dna = dna_emperor_napoleon_03
+				interest_group = ig_armed_forces
+				ideology = ideology_royalist
+				traits = {
+					ambitious demagogue
+				}
+				on_created = {
+					set_variable = is_louis_napoleon
+				}
+			}
+		}
+	}
+}
+
+napoleonic_flavor.3 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	title = napoleonic_flavor.3.t
+	desc = napoleonic_flavor.3.d
+	flavor = napoleonic_flavor.3.f
+
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+        exists = c:FRA
+        c:FRA = ROOT
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+		}
+		OR = {
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_autocracy
+		}
+		is_enacting_law = law_type:law_monarchy
+		ruler = {
+			has_variable = is_louis_napoleon
+		}
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = napoleonic_flavor.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_ALSACE_LORRAINE
+				}
+				set_variable = french_empire_alsace_lorraine
+			}
+			remove_variable = fra_presidential_dictatorship
+			set_variable = french_empire_created
+			create_character = {
+				first_name = Louis-Napoleon
+				last_name = Bonaparte
+				ruler = yes
+				birth_date = 1808.4.20
+				dna = dna_emperor_napoleon_03
+				interest_group = ig_armed_forces
+				ideology = ideology_royalist
+				traits = {
+					ambitious demagogue
+				}
+				on_created = {
+					set_variable = is_louis_napoleon
+				}
+			}
+		}
+	}
+}
+
+napoleonic_flavor.4 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	title = napoleonic_flavor.4.t
+	desc = napoleonic_flavor.4.d
+	flavor = napoleonic_flavor.4.f
+
+	duration = 3
+	
+	trigger = {
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = napoleonic_flavor.4.a
+		hidden_effect = {
+			remove_variable = french_empire_created
+			remove_variable = french_empire_alsace_lorraine
+			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_universal_suffrage
+		}
+	}
+}
+
+napoleonic_flavor.5 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	title = napoleonic_flavor.4.t
+	desc = napoleonic_flavor.4.d
+	flavor = napoleonic_flavor.4.f
+
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+        exists = c:FRA
+        c:FRA = ROOT
+		has_law = law_type:law_monarchy
+		OR = {
+			is_enacting_law = law_type:law_presidential_republic
+			is_enacting_law = law_type:law_parliamentary_republic
+			is_enacting_law = law_type:law_council_republic
+		}
+		has_variable = french_empire_created
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = napoleonic_flavor.4.a
+		hidden_effect = {
+			remove_variable = french_empire_created
+			remove_variable = french_empire_alsace_lorraine
+		}
+	}
+}
+
+bourbon_restauration.1 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	title = bourbon_restauration.1.t
+	desc = bourbon_restauration.1.d
+	flavor = bourbon_restauration.1.f
+
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+        exists = c:FRA
+        c:FRA = ROOT
+		has_law = law_type:law_monarchy
+		OR = {
+			is_enacting_law = law_type:law_oligarchy
+			is_enacting_law = law_type:law_autocracy
+		}
+		ruler = { has_variable = is_orleanist }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = bourbon_restauration.1.a
+		hidden_effect = {
+			set_variable = bourbon_restauration
+			heir = { kill_character = yes }
+			create_character = {
+				first_name = "Henri"
+				last_name = "de_BorbO_n"
+				ruler = yes
+				birth_date = 1820.9.29
+				dna = dna_king_henry_05
+				interest_group = ig_landowners
+				ideology = ideology_royalist
+				traits = {
+					reserved
+				}
+				on_created = {
+					set_variable = is_married
+				}
+			}
+		}
+	}
+}

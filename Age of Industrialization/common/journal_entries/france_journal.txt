@@ -1,0 +1,26 @@
+fall_of_french_empire = {
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	is_shown_when_inactive = {
+        exists = c:FRA
+        c:FRA = ROOT
+		has_variable = french_empire_created
+		has_variable = french_empire_alsace_lorraine
+		has_law = law_type:law_monarchy
+		NOT = { owns_entire_state_region = STATE_ALSACE_LORRAINE }
+	}
+	
+	complete = {
+		has_law = law_type:law_monarchy
+		NOT = { owns_entire_state_region = STATE_ALSACE_LORRAINE }
+    }
+
+	immediate = {
+		trigger_event = { id = napoleonic_flavor.4 popup = yes }
+	}
+	
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

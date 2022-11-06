@@ -3,12 +3,6 @@
 	
 	type = administrative
 
-	wanted_construction_ratio = 2000000 # 1 level of construction sector per 2 million incorporated population
-
-	desired_tax_level = very_high
-	max_tax_level = very_high
-	min_tax_level = very_low
-
 	building_group_weights = {
 		bg_agriculture = 2.0
 		bg_ranching = 2.0
@@ -106,12 +100,6 @@ ai_strategy_plantation_economy = {
 	icon = "gfx/interface/icons/ai_strategy_icons/agricultural_expansion.dds"
 	
 	type = administrative
-
-	wanted_construction_ratio = 2000000 # 1 level of construction sector per 2 million incorporated population
-
-	desired_tax_level = very_high
-	max_tax_level = very_high
-	min_tax_level = very_low
 	
 	goods_stances = {
 		fruit = { stance = wants_export }
@@ -178,12 +166,6 @@ ai_strategy_resource_expansion = {
 	icon = "gfx/interface/icons/ai_strategy_icons/resource_expansion.dds"
 	
 	type = administrative	
-
-	wanted_construction_ratio = 1500000 # 1 level of construction sector per 1.5 million incorporated population
-
-	desired_tax_level = very_high
-	max_tax_level = very_high
-	min_tax_level = very_low
 	
 	building_group_weights = {
 		bg_rubber = 1.5
@@ -282,15 +264,6 @@ ai_strategy_industrial_expansion = {
 	
 	type = administrative
 	
-	wanted_construction_ratio = 1000000 # 1 level of construction sector per 1 million incorporated population
-
-	desired_tax_level = very_high
-	max_tax_level = very_high
-	min_tax_level = very_low
-	
-	#desired_tax_level = very_high
-	#max_tax_level = very_high
-	
 	#subsidies = {
 	#	building_motor_industry = wants_to_have
 	#	building_tooling_workshops = wants_to_have
@@ -382,16 +355,6 @@ ai_strategy_placate_population = {
 	icon = "gfx/interface/icons/ai_strategy_icons/placate_population.dds"
 	
 	type = administrative
-
-	wanted_construction_ratio = 10000000 # 1 level of construction sector per 10 million incorporated population
-
-	desired_tax_level = very_high
-	max_tax_level = very_high
-	min_tax_level = very_low
-	
-	#desired_tax_level = low
-	#max_tax_level = medium
-	#min_tax_level = very_low
 
 	building_group_weights = {
 		bg_agriculture = 2.0

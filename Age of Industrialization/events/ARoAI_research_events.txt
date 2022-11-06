@@ -335,6 +335,27 @@ ARoAI_research_events.1 = {
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
+			
+			# Pumpjacks
+			
+			else_if = {
+				limit = {
+					has_technology_researched = steam_donkey
+					has_technology_researched = dynamite
+					NOT = {
+						has_technology_researched = pumpjacks
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_researching_technology = pumpjacks
+						}
+					}
+					rs_add_points_to_pumpjacks = yes
+					add_modifier = { name = rs_innovation_redirection months = 2 }
+				}
+			}
 		}
 	}
 }

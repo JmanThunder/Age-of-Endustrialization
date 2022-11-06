@@ -1,0 +1,4 @@
+﻿NPolitics = {
+	IG_APPROVAL_FROM_LAW_STRONG_STANCE = 3 #2 		# IG approval/disapproval for laws that are strongly for/against their ideologies
+	IG_POWERFUL_IN_OPPOSITION_APPROVAL = -5 #-1 # Added if powerful IG in opposition
+}

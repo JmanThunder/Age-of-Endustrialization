@@ -1,52 +1,4 @@
 ﻿
-ec_can_cut_government_wages = {
-	OR = {
-		NOT = {
-			exists = ig:ig_intelligentsia
-		}
-		AND = {
-			exists = ig:ig_intelligentsia
-			ig:ig_intelligentsia = {
-				OR = {
-					AND = {
-						is_in_government = yes
-						ig_approval > -1
-					}
-					AND = {
-						is_in_government = no
-						ig_approval > -6
-					}
-					is_marginal = yes
-				}
-			}
-		}
-	}
-}
-
-ec_can_cut_military_wages = {
-	OR = {
-		NOT = {
-			exists = ig:ig_armed_forces
-		}
-		AND = {
-			exists = ig:ig_armed_forces
-			ig:ig_armed_forces = {
-				OR = {
-					AND = {
-						is_in_government = yes
-						ig_approval > -1
-					}
-					AND = {
-						is_in_government = no
-						ig_approval > -6
-					}
-					is_marginal = yes
-				}
-			}
-		}
-	}
-}
-
 ### ENTRY REQUIREMENTS FOR MAJOR PARTS OF THE SCRIPT
 
 # Requirements of the script as a whole and specifically for collecting population and budget data
@@ -59,7 +11,7 @@ ec_country_allowed = {
 # Requirements for downsizing government funded buildings which is mostly a budget balancing thing
 
 ec_downsizing_allowed = {
-	has_variable = ec_country_weekly_income
+	has_variable = ec_country_weekly_surplus
 	has_variable = ec_incorporated_population
 	has_revolution = no
 	is_revolutionary = no
@@ -69,13 +21,13 @@ ec_downsizing_allowed = {
 # Requirements for constructing both special and standard buildings
 
 ec_building_allowed = {
-	has_variable = ec_country_weekly_income
+	has_variable = ec_country_weekly_surplus
 	has_variable = ec_incorporated_population
 	has_revolution = no
 	is_revolutionary = no
 	ec_identifying_object_list_is_correct = yes
 	ec_invalid_objects_in_building_priority_lists = no
-	scaled_debt < 0.60
+	scaled_debt < 0.50
 	OR = {
 		is_player = no
 		AND = {
@@ -404,7 +356,7 @@ ec_budget_health = {
 			$level$ = -4
 			OR = {
 				scaled_debt < 0.875
-				ec_country_weekly_income >= ec_10_percent_proficit
+				ec_country_weekly_surplus >= ec_10_percent_proficit
 			}
 		}
 		AND = {
@@ -412,7 +364,7 @@ ec_budget_health = {
 			OR = {
 				scaled_debt < 0.750
 				AND = {
-					ec_country_weekly_income >= ec_10_percent_proficit
+					ec_country_weekly_surplus >= ec_10_percent_proficit
 					scaled_debt < 0.875
 				}
 			}
@@ -422,7 +374,7 @@ ec_budget_health = {
 			OR = {
 				scaled_debt < 0.500
 				AND = {
-					ec_country_weekly_income >= ec_10_percent_proficit
+					ec_country_weekly_surplus >= ec_10_percent_proficit
 					scaled_debt < 0.625
 				}
 			}
@@ -432,7 +384,7 @@ ec_budget_health = {
 			OR = {
 				scaled_debt < 0.250
 				AND = {
-					ec_country_weekly_income >= ec_10_percent_proficit
+					ec_country_weekly_surplus >= ec_10_percent_proficit
 					scaled_debt < 0.375
 				}
 			}
@@ -441,42 +393,150 @@ ec_budget_health = {
 			$level$ = 0
 			OR = {
 				AND = {
-					ec_country_weekly_income >= 0
+					ec_country_weekly_surplus >= 0
 					scaled_debt <= 0
 				}
 				AND = {
-					ec_country_weekly_income >= ec_10_percent_proficit
+					ec_country_weekly_surplus >= ec_10_percent_proficit
 					scaled_debt < 0.125
 				}
 				AND = {
-					ec_country_weekly_income < 0
-					ec_weeks_of_reserves >= 156
+					ec_country_weekly_surplus < 0
+					ec_weeks_of_reserves >= 208
 				}
 			}
 			NOT = {
-				ec_country_weekly_income <= ec_15_percent_deficit
+				ec_country_weekly_surplus <= ec_15_percent_deficit
 			}
 		}
 		AND = {
 			$level$ = 1
 			OR = {
 				AND = {
-					ec_country_weekly_income >= ec_20_percent_proficit
+					ec_country_weekly_surplus >= ec_20_percent_proficit
 					scaled_debt <= 0
 				}
 				AND = {
-					ec_country_weekly_income >= ec_15_percent_proficit
+					ec_country_weekly_surplus >= ec_15_percent_proficit
 					ec_gold_reserves_percent >= 0.25
 				}
 				AND = {
-					ec_country_weekly_income >= ec_10_percent_proficit
+					ec_country_weekly_surplus >= ec_10_percent_proficit
 					ec_gold_reserves_percent >= 0.50
 				}
 				AND = {
-					ec_country_weekly_income >= ec_5_percent_proficit
+					ec_country_weekly_surplus >= ec_5_percent_proficit
 					ec_gold_reserves_percent >= 0.75
 				}
 			}
+		}
+	}
+}
+
+### IS IT ALLOWED TO CUT BUDGET WAGES
+
+ec_can_cut_government_wages = {
+	AND = {
+		OR = {
+			NOT = {
+				exists = ig:ig_intelligentsia
+			}
+			AND = {
+				exists = ig:ig_intelligentsia
+				ig:ig_intelligentsia = {
+					OR = {
+						root = {
+							NOT = {
+								ec_budget_health = {
+									level = -2
+								}
+							}
+						}
+						AND = {
+							is_in_government = yes
+							ig_approval > -1
+						}
+						AND = {
+							is_in_government = no
+							ig_approval > -6
+						}
+						is_marginal = yes
+					}
+				}
+			}
+		}
+		OR = {
+			NOT = {
+				exists = ig:ig_petty_bourgeoisie
+			}
+			AND = {
+				exists = ig:ig_petty_bourgeoisie
+				ig:ig_petty_bourgeoisie = {
+					OR = {
+						root = {
+							NOT = {
+								ec_budget_health = {
+									level = -2
+								}
+							}
+						}
+						AND = {
+							is_in_government = yes
+							ig_approval > -1
+						}
+						AND = {
+							is_in_government = no
+							ig_approval > -6
+						}
+						is_marginal = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+ec_can_cut_military_wages = {
+	ec_is_using_military_forces = no
+	OR = {
+		NOT = {
+			exists = ig:ig_armed_forces
+		}
+		AND = {
+			exists = ig:ig_armed_forces
+			ig:ig_armed_forces = {
+				OR = {
+					root = {
+						NOT = {
+							ec_budget_health = {
+								level = -2
+							}
+						}
+					}
+					AND = {
+						is_in_government = yes
+						ig_approval > -1
+					}
+					AND = {
+						is_in_government = no
+						ig_approval > -6
+					}
+					is_marginal = yes
+				}
+			}
+		}
+	}
+}
+
+ec_is_using_military_forces = {
+	OR = {
+		is_at_war = yes
+		is_diplomatic_play_committed_participant = yes
+		any_scope_general = {
+			is_mobilized = yes
+		}
+		any_scope_admiral = {
+			is_mobilized = yes
 		}
 	}
 }
@@ -1669,14 +1729,14 @@ ec_building_can_be_expanded = {
 
 ### IS POSSIBLE = STATE SUITS BASIC REQUIREMENTS FOR THE BUILDING TO BE CONSTRUCTED [used mainly in allocate]
 
-# Condition: 0 = new and expanding, 1 = only new, 2 = only expanding
+# conditions: 0 = new and expanding, 1 = only new, 2 = only expanding
 
 # Government buildings
 
-ec_government_is_possible = {
+ec_sanction_government = {
 	OR = {
 		AND = {
-			$condition$ = 0
+			$conditions$ = 0
 			OR = {
 				NOT = {
 					any_scope_building = {
@@ -1694,7 +1754,7 @@ ec_government_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 1
+			$conditions$ = 1
 			NOT = {
 				any_scope_building = {
 					is_building_type = $building$
@@ -1706,7 +1766,7 @@ ec_government_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 2
+			$conditions$ = 2
 			any_scope_building = {
 				is_building_type = $building$
 				ec_building_can_be_expanded = { shortage = $shortage$ profitability = $profitability$ }
@@ -1717,10 +1777,10 @@ ec_government_is_possible = {
 
 # Infrastructure buildings
 
-ec_infrastructure_is_possible = {
+ec_sanction_infrastructure = {
 	OR = {
 		AND = {
-			$condition$ = 0
+			$conditions$ = 0
 			OR = {
 				NOT = {
 					any_scope_building = {
@@ -1738,7 +1798,7 @@ ec_infrastructure_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 1
+			$conditions$ = 1
 			NOT = {
 				any_scope_building = {
 					is_building_type = $building$
@@ -1750,7 +1810,7 @@ ec_infrastructure_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 2
+			$conditions$ = 2
 			any_scope_building = {
 				is_building_type = $building$
 				ec_building_can_be_expanded = { shortage = $shortage$ profitability = $profitability$ }
@@ -1761,10 +1821,16 @@ ec_infrastructure_is_possible = {
 
 # Resource buildings
 
-ec_resource_is_possible = {
+ec_sanction_resource = {
+	state_region = {
+		remaining_undepleted = {
+			type = $resource$
+			amount > 0
+		}
+	}
 	OR = {
 		AND = {
-			$condition$ = 0
+			$conditions$ = 0
 			OR = {
 				AND = {
 					NOT = {
@@ -1785,7 +1851,7 @@ ec_resource_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 1
+			$conditions$ = 1
 			NOT = {
 				any_scope_building = {
 					is_building_type = $building$
@@ -1798,7 +1864,7 @@ ec_resource_is_possible = {
 			has_potential_resource = $resource$
 		}
 		AND = {
-			$condition$ = 2
+			$conditions$ = 2
 			any_scope_building = {
 				is_building_type = $building$
 				ec_building_can_be_expanded = { shortage = $shortage$ profitability = $profitability$ }
@@ -1809,7 +1875,7 @@ ec_resource_is_possible = {
 
 # Arable buildings
 
-ec_arable_is_possible = {
+ec_sanction_arable = {
 	free_arable_land > 0
 	OR = {
 		free_arable_land > root.ec_building_limit_ceiling
@@ -1837,8 +1903,12 @@ ec_arable_is_possible = {
 		}
 	}
 	OR = {
+		always = yes
+		has_potential_resource = $resource$
+	}
+	OR = {
 		AND = {
-			$condition$ = 0
+			$conditions$ = 0
 			OR = {
 				AND = {
 					NOT = {
@@ -1850,13 +1920,7 @@ ec_arable_is_possible = {
 							}
 						}
 					}
-					#state_region = {
-					#	is_target_in_global_variable_list = {
-					#		name = $resource$
-					#		target = this
-					#	}
-					#}
-					has_potential_resource = $resource$
+					ec_check_arable_resource = { cipher = $cipher$ }
 				}
 				any_scope_building = {
 					is_building_type = $building$
@@ -1865,7 +1929,7 @@ ec_arable_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 1
+			$conditions$ = 1
 			NOT = {
 				any_scope_building = {
 					is_building_type = $building$
@@ -1875,16 +1939,10 @@ ec_arable_is_possible = {
 					}
 				}
 			}
-			#state_region = {
-			#	is_target_in_global_variable_list = {
-			#		name = $resource$
-			#		target = this
-			#	}
-			#}
-			has_potential_resource = $resource$
+			ec_check_arable_resource = { cipher = $cipher$ }
 		}
 		AND = {
-			$condition$ = 2
+			$conditions$ = 2
 			any_scope_building = {
 				is_building_type = $building$
 				ec_building_can_be_expanded = { shortage = $shortage$ profitability = $profitability$ }
@@ -1893,12 +1951,56 @@ ec_arable_is_possible = {
 	}
 }
 
-# Industry buildings
-
-ec_industry_is_possible = {
+ec_check_arable_resource = {
 	OR = {
 		AND = {
-			$condition$ = 0
+			$cipher$ < 10
+			var:ecpar6 = $cipher$
+		}
+		AND = {
+			$cipher$ < 100
+			OR = {
+				var:ecpar5 = $cipher$
+				var:ecpar5 >= 30
+			}
+		}
+		AND = {
+			$cipher$ < 1000
+			OR = {
+				var:ecpar4 = $cipher$
+				var:ecpar4 >= 300
+			}
+		}
+		AND = {
+			$cipher$ < 10000
+			OR = {
+				var:ecpar3 = $cipher$
+				var:ecpar3 >= 3000
+			}
+		}
+		AND = {
+			$cipher$ < 100000
+			OR = {
+				var:ecpar2 = $cipher$
+				var:ecpar2 >= 30000
+			}
+		}
+		AND = {
+			$cipher$ < 1000000
+			OR = {
+				var:ecpar1 = $cipher$
+				var:ecpar1 >= 300000
+			}
+		}
+	}
+}
+
+# Industry buildings
+
+ec_sanction_industry = {
+	OR = {
+		AND = {
+			$conditions$ = 0
 			OR = {
 				NOT = {
 					any_scope_building = {
@@ -1916,7 +2018,7 @@ ec_industry_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 1
+			$conditions$ = 1
 			NOT = {
 				any_scope_building = {
 					is_building_type = $building$
@@ -1928,7 +2030,7 @@ ec_industry_is_possible = {
 			}
 		}
 		AND = {
-			$condition$ = 2
+			$conditions$ = 2
 			any_scope_building = {
 				is_building_type = $building$
 				ec_building_can_be_expanded = { shortage = $shortage$ profitability = $profitability$ }
@@ -1937,48 +2039,11 @@ ec_industry_is_possible = {
 	}
 }
 
-### ALLOCATE = CHECKS IF STATE SUPPORTS CONSTRUCTION OF THIS BUILDING AND HOW MUCH SHOULD BE PRIORITIZE THE STATE
-
-# Government buildings
-
-ec_allocate_government = {
-	ec_government_is_possible = {
-		building = $building$
-		condition = 0
-		shortage = $shortage$
-		profitability = $profitability$
-	}
-	OR = {
-		always = yes
-		$priority$ = 1
-	}
-}
-
-# Infrastructure buildings
-
-ec_allocate_infrastructure = {
-	ec_infrastructure_is_possible = {
-		building = $building$
-		condition = 0
-		shortage = $shortage$
-		profitability = $profitability$
-	}
-	OR = {
-		always = yes
-		$priority$ = 1
-	}
-}
+### ALLOCATE = CHECKS HOW MUCH SHOULD WE PRIORITIZE THE STATE
 
 # Resource buildings – priorities based on resource importance
 
 ec_allocate_resource = {
-	ec_resource_is_possible = {
-		building = $building$
-		resource = $resource$
-		condition = 0
-		shortage = $shortage$
-		profitability = $profitability$
-	}
 	OR = {
 		AND = {
 			$priority$ = 1
@@ -1988,12 +2053,14 @@ ec_allocate_resource = {
 				$good$ = g:coal
 				$good$ = g:iron
 				$good$ = g:sulfur
+				$good$ = g:gold
 				NOR = {
 					has_potential_resource = bg_rubber
 					has_potential_resource = bg_oil_extraction
 					has_potential_resource = bg_coal_mining
 					has_potential_resource = bg_iron_mining
 					has_potential_resource = bg_sulfur_mining
+					has_potential_resource = bg_gold_mining
 				}
 			}
 		}
@@ -2005,6 +2072,7 @@ ec_allocate_resource = {
 				$good$ = g:coal
 				$good$ = g:iron
 				$good$ = g:sulfur
+				$good$ = g:gold
 			}
 			OR = {
 				has_potential_resource = bg_rubber
@@ -2012,6 +2080,7 @@ ec_allocate_resource = {
 				has_potential_resource = bg_coal_mining
 				has_potential_resource = bg_iron_mining
 				has_potential_resource = bg_sulfur_mining
+				has_potential_resource = bg_gold_mining
 			}
 		}
 	}
@@ -2020,13 +2089,6 @@ ec_allocate_resource = {
 # Arable buildings – priorities based on resource importance
 
 ec_allocate_arable = {
-	ec_arable_is_possible = {
-		building = $building$
-		resource = $resource$
-		condition = 0
-		shortage = $shortage$
-		profitability = $profitability$
-	}
 	OR = {
 		AND = {
 			$priority$ = 1
@@ -2039,13 +2101,13 @@ ec_allocate_arable = {
 				$good$ = g:sugar
 				$good$ = g:silk
 				NOR = {
-					has_potential_resource = bg_tea_plantations
-					has_potential_resource = bg_coffee_plantations
-					has_potential_resource = bg_dye_plantations
-					has_potential_resource = bg_tobacco_plantations
-					has_potential_resource = bg_opium_plantations
-					has_potential_resource = bg_sugar_plantations
-					has_potential_resource = bg_silk_plantations
+					ec_check_arable_resource = { cipher = 100 } # dye
+					ec_check_arable_resource = { cipher = 200 } # silk
+					ec_check_arable_resource = { cipher = 2000 } # sugar
+					ec_check_arable_resource = { cipher = 10000 } # tea
+					ec_check_arable_resource = { cipher = 20000 } # coffee
+					ec_check_arable_resource = { cipher = 100000 } # tobacco
+					ec_check_arable_resource = { cipher = 200000 } # opium
 				}
 			}
 		}
@@ -2061,30 +2123,15 @@ ec_allocate_arable = {
 				$good$ = g:silk
 			}
 			OR = {
-				has_potential_resource = bg_tea_plantations
-				has_potential_resource = bg_coffee_plantations
-				has_potential_resource = bg_dye_plantations
-				has_potential_resource = bg_tobacco_plantations
-				has_potential_resource = bg_opium_plantations
-				has_potential_resource = bg_sugar_plantations
-				has_potential_resource = bg_silk_plantations
+				ec_check_arable_resource = { cipher = 100 } # dye
+				ec_check_arable_resource = { cipher = 200 } # silk
+				ec_check_arable_resource = { cipher = 2000 } # sugar
+				ec_check_arable_resource = { cipher = 10000 } # tea
+				ec_check_arable_resource = { cipher = 20000 } # coffee
+				ec_check_arable_resource = { cipher = 100000 } # tobacco
+				ec_check_arable_resource = { cipher = 200000 } # opium
 			}
 		}
-	}
-}
-
-# Industry buildings
-
-ec_allocate_industry = {
-	ec_industry_is_possible = {
-		building = $building$
-		condition = 0
-		shortage = $shortage$
-		profitability = $profitability$
-	}
-	OR = {
-		always = yes
-		$priority$ = 1
 	}
 }
 
@@ -2172,8 +2219,8 @@ ec_consider_government_administration = {
 	OR = {
 		bureaucracy < ec_bureaucracy_1
 		AND = {
-			bureaucracy < ec_bureaucracy_ceiling
-			ec_government_costs_value < ec_government_costs_limit
+			bureaucracy < ec_bureaucracy_excess
+			ec_government_costs_value < ec_government_costs_target
 		}
 	}
 }
@@ -2186,63 +2233,23 @@ ec_evaluate_government_administration = {
 		}
 		AND = {
 			$priority$ = 2
-			any_scope_state = {
-				ec_tax_capacity_load_percent < ec_tax_capacity_2
-				ec_allocate_government = {
-					building = building_government_administration
-					priority = $priority$
-					shortage = 0
-					profitability = 0
-				}
-			}
+			var:ec_lowest_tax_capacity < ec_tax_capacity_2
 		}
 		AND = {
 			$priority$ = 3
-			any_scope_state = {
-				ec_tax_capacity_load_percent < ec_tax_capacity_3
-				ec_allocate_government = {
-					building = building_government_administration
-					priority = $priority$
-					shortage = 0
-					profitability = 0
-				}
-			}
+			var:ec_lowest_tax_capacity < ec_tax_capacity_3
 		}
 		AND = {
 			$priority$ = 4
-			any_scope_state = {
-				ec_tax_capacity_load_percent < ec_tax_capacity_4
-				ec_allocate_government = {
-					building = building_government_administration
-					priority = $priority$
-					shortage = 0
-					profitability = 0
-				}
-			}
+			var:ec_lowest_tax_capacity < ec_tax_capacity_4
 		}
 		AND = {
 			$priority$ = 5
-			any_scope_state = {
-				ec_tax_capacity_load_percent < ec_tax_capacity_5
-				ec_allocate_government = {
-					building = building_government_administration
-					priority = $priority$
-					shortage = 0
-					profitability = 0
-				}
-			}
+			var:ec_lowest_tax_capacity < ec_tax_capacity_5
 		}
 		AND = {
 			$priority$ = 6
-			any_scope_state = {
-				ec_tax_capacity_load_percent < ec_tax_capacity_6
-				ec_allocate_government = {
-					building = building_government_administration
-					priority = $priority$
-					shortage = 0
-					profitability = 0
-				}
-			}
+			var:ec_lowest_tax_capacity < ec_tax_capacity_6
 		}
 		AND = {
 			$priority$ = 7
@@ -2268,6 +2275,15 @@ ec_evaluate_government_administration = {
 			$priority$ >= 11
 			always = no
 		}
+	}
+}
+
+ec_sanction_government_administration = {
+	ec_sanction_government = {
+		building = building_government_administration
+		conditions = 0
+		shortage = 0
+		profitability = 0
 	}
 }
 
@@ -2298,12 +2314,6 @@ ec_allocate_government_administration = {
 			ec_tax_capacity_load_percent >= ec_tax_capacity_6
 		}
 	}
-	ec_allocate_government = {
-		building = building_government_administration
-		priority = $priority$
-		shortage = 0
-		profitability = 0
-	}
 }
 
 ### CONSTRUCTION SECTOR
@@ -2315,9 +2325,15 @@ ec_consider_construction_sector = {
 		shortage = 1
 		profitability = 0
 	}
-	ec_construction_costs_value < ec_construction_costs_limit
-	ec_budget_health = {
-		level = -1
+	ec_construction_costs_value < ec_construction_costs_target
+	OR = {
+		ec_budget_health = {
+			level = 0
+		}
+		OR = {
+			tax_level = very_low
+			tax_level = low
+		}
 	}
 }
 
@@ -2374,11 +2390,11 @@ ec_evaluate_construction_sector = {
 	}
 }
 
-ec_allocate_construction_sector = {
+ec_sanction_construction_sector = {
 	var:ec_construction_sector_level < ec_state_construction_sector_limit
-	ec_allocate_government = {
+	ec_sanction_government = {
 		building = building_construction_sector 
-		priority = $priority$
+		conditions = 0
 		shortage = 1
 		profitability = 0
 	}
@@ -2388,15 +2404,21 @@ ec_allocate_construction_sector = {
 
 ec_consider_university = {
 	has_technology_researched = academia
-	ec_budget_health = {
-		level = -1
+	OR = {
+		ec_budget_health = {
+			level = 0
+		}
+		OR = {
+			tax_level = very_low
+			tax_level = low
+		}
 	}
 	ec_consider_building = {
 		building = building_university
 		shortage = 1
 		profitability = 0
 	}
-	ec_government_costs_value < ec_government_costs_limit_and_a_half
+	ec_government_costs_value < ec_government_costs_excess
 }
 
 ec_evaluate_university = {
@@ -2484,8 +2506,10 @@ ec_evaluate_university = {
 	}
 }
 
-ec_allocate_university = {
-	ec_allocate_government = { priority = $priority$ building = building_university 
+ec_sanction_university = {
+	ec_sanction_government = {
+		building = building_university 
+		conditions = 0
 		shortage = 1
 		profitability = 0
 	}
@@ -2496,28 +2520,39 @@ ec_allocate_university = {
 ec_consider_railway = {
 	has_technology_researched = railways
 	ec_budget_health = {
-		level = -3
-	}
-	ec_consider_building = {
-		building = building_railway
-		shortage = 1
-		profitability = 0
+		level = -2
 	}
 }
 
 ec_evaluate_railway = {
 	OR = {
 		AND = {
-			$priority$ = 1
-			any_scope_state = {
-				infrastructure < ec_infrastructure_4
-				ec_allocate_infrastructure = {
-					building = building_railway 
-					priority = $priority$
-					shortage = 1
-					profitability = 0
-				}
+			OR = {
+				$priority$ = 1
+				$priority$ = 5
 			}
+			ec_consider_building = {
+				building = building_railway
+				shortage = 1
+				profitability = 0
+			}
+		}
+		AND = {
+			OR = {
+				$priority$ = 9
+				$priority$ = 16
+			}
+			ec_consider_building = {
+				building = building_railway
+				shortage = 1
+				profitability = 1
+			}
+		}
+	}
+	OR = {
+		AND = {
+			$priority$ = 1
+			var:ec_lowest_infrastructure < ec_infrastructure_4
 		}
 		AND = {
 			$priority$ >= 2
@@ -2526,35 +2561,31 @@ ec_evaluate_railway = {
 		}
 		AND = {
 			$priority$ = 5
-			any_scope_state = {
-				infrastructure < ec_infrastructure_5
-				ec_allocate_infrastructure = {
-					building = building_railway 
-					priority = $priority$
-					shortage = 1
-					profitability = 0
-				}
-			}
+			var:ec_lowest_infrastructure < ec_infrastructure_5
 		}
 		AND = {
 			$priority$ >= 6
+			$priority$ <= 8
+			always = no
+		}
+		AND = {
+			$priority$ = 9
+			ec_requirements_floor = {
+				market_good = mg:transportation
+				priority = 5
+				offset = 0
+			}
+		}
+		AND = {
+			$priority$ >= 10
 			$priority$ <= 15
 			always = no
 		}
 		AND = {
 			$priority$ = 16
-			any_scope_state = {
-				infrastructure < ec_infrastructure_6
-				ec_allocate_infrastructure = {
-					building = building_railway 
-					priority = $priority$
-					shortage = 1
-					profitability = 0
-				}
-			}
 			ec_requirements_floor = {
 				market_good = mg:transportation
-				priority = 11
+				priority = 9
 				offset = 0
 			}
 		}
@@ -2565,44 +2596,56 @@ ec_evaluate_railway = {
 	}
 }
 
+ec_sanction_railway = {
+	ec_sanction_infrastructure = {
+		building = building_railway 
+		conditions = 0
+		shortage = 1
+		profitability = 0
+	}
+}
+
 ec_allocate_railway = {
 	OR = {
 		AND = {
 			$priority$ = 1
-			infrastructure < ec_infrastructure_1
+			ec_infrastructure_load_percent < ec_infrastructure_1
 		}
 		AND = {
 			$priority$ = 2
-			infrastructure < ec_infrastructure_2
+			ec_infrastructure_load_percent < ec_infrastructure_2
 		}
 		AND = {
 			$priority$ = 3
-			infrastructure < ec_infrastructure_3
+			ec_infrastructure_load_percent < ec_infrastructure_3
 		}
 		AND = {
 			$priority$ = 4
-			infrastructure < ec_infrastructure_4
+			ec_infrastructure_load_percent < ec_infrastructure_4
 		}
 		AND = {
 			$priority$ = 5
-			infrastructure < ec_infrastructure_5
+			ec_infrastructure_load_percent < ec_infrastructure_5
 			root = {
 				var:cber4 >= 5
 			}
 		}
 		AND = {
 			$priority$ = 6
-			infrastructure < ec_infrastructure_6
+			ec_infrastructure_load_percent >= ec_infrastructure_5
+			ec_infrastructure_load_value < 10
+			root = {
+				var:cber4 >= 9
+			}
+		}
+		AND = {
+			$priority$ = 7
+			ec_infrastructure_load_percent >= ec_infrastructure_5
+			ec_infrastructure_load_value < 20
 			root = {
 				var:cber4 >= 16
 			}
 		}
-	}
-	ec_allocate_infrastructure = {
-		building = building_railway 
-		priority = 1
-		shortage = 1
-		profitability = 0
 	}
 }
 
@@ -2611,19 +2654,30 @@ ec_allocate_railway = {
 ec_consider_port = {
 	has_technology_researched = navigation
 	ec_budget_health = {
-		level = -1
+		level = -2
 	}
 	any_scope_state = {
 		is_coastal = yes
 	}
-	ec_government_costs_value < ec_government_costs_limit_and_a_half
-	ec_convoys_current < ec_convoys_ceiling
 }
 
 ec_evaluate_port = {
 	OR = {
+		$priority$ <= 2
 		AND = {
-			$priority$ <= 1
+			$priority$ = 3
+			ec_government_costs_value < ec_government_costs_ceiling
+			ec_convoys_current < ec_convoys_ceiling
+		}
+		AND = {
+			$priority$ >= 4
+			ec_government_costs_value < ec_government_costs_excess
+			ec_convoys_current < ec_convoys_target
+		}
+	}
+	OR = {
+		AND = {
+			$priority$ <= 2
 			ec_consider_building = {
 				building = building_port
 				shortage = 0
@@ -2631,7 +2685,7 @@ ec_evaluate_port = {
 			}
 		}
 		AND = {
-			$priority$ >= 2
+			$priority$ >= 3
 			ec_consider_building = {
 				building = building_port
 				shortage = 1
@@ -2642,18 +2696,47 @@ ec_evaluate_port = {
 	OR = {
 		AND = {
 			$priority$ = 1
+			has_variable_list = ec_coastline_of_market_capital
+			variable_list_size = {
+				name = ec_coastline_of_market_capital
+				value > 0
+			}
+			OR = {
+				AND = {
+					has_variable_list = ec_coastline_of_outer_lands
+					variable_list_size = {
+						name = ec_coastline_of_outer_lands
+						value > 0
+					}
+				}
+				any_country = {
+					market.owner = root
+					any_scope_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			NOT = {
+				any_in_list = {
+					variable = ec_coastline_of_market_capital
+					has_building = building_port
+				}
+			}
+		}
+		AND = {
+			$priority$ = 2
 			any_scope_state = {
 				is_isolated_from_market = yes
-				ec_infrastructure_is_possible = {
+				ec_sanction_infrastructure = {
 					building = building_port
-					condition = 1
+					conditions = 1
 					shortage = 0
 					profitability = 0
 				}
 			}
 		}
 		AND = {
-			$priority$ = 2
+			$priority$ = 3
 			any_country = {
 				exists = market
 				market = {
@@ -2661,7 +2744,7 @@ ec_evaluate_port = {
 					owner = root
 				}
 				any_scope_state = {
-					is_coastal = yes 
+					is_coastal = yes
 					infrastructure >= infrastructure_usage
 					market_access < 1
 					NOT = {
@@ -2674,24 +2757,20 @@ ec_evaluate_port = {
 			}
 		}
 		AND = {
-			$priority$ = 3
+			$priority$ = 4
 			OR = {
-				ec_convoys_current < ec_convoys_3
+				ec_convoys_current < ec_convoys_4
 				any_scope_state = {
 					is_coastal = yes
-					infrastructure < ec_infrastructure_5
-					ec_allocate_infrastructure = {
+					ec_infrastructure_load_percent < ec_infrastructure_5
+					ec_sanction_infrastructure = {
 						building = building_port
-						priority = $priority$
+						conditions = 0
 						shortage = 1
 						profitability = 0
 					}
 				}
 			}
-		}
-		AND = {
-			$priority$ = 4
-			ec_convoys_current < ec_convoys_4
 		}
 		AND = {
 			$priority$ = 5
@@ -2728,27 +2807,40 @@ ec_evaluate_port = {
 	}
 }
 
-ec_allocate_port = {
+ec_sanction_port = {
 	is_coastal = yes
 	var:ec_port_level < ec_state_port_limit
+}
+
+ec_allocate_port = {
 	OR = {
 		AND = {
 			$priority$ = 1
+			root = {
+				var:cber5 = 1
+				is_target_in_variable_list = {
+					name = ec_coastline_of_market_capital
+					target = prev
+				}
+			}
+		}
+		AND = {
+			$priority$ = 2
 			is_isolated_from_market = yes
-			ec_infrastructure_is_possible = {
+			ec_sanction_infrastructure = {
 				building = building_port
-				condition = 1
+				conditions = 1
 				shortage = 0
 				profitability = 0
 			}
 		}
 		AND = {
-			$priority$ = 2
+			$priority$ = 3
 			root = {
-				var:cber5 >= 2
+				var:cber5 >= 3
 			}
 			OR = {
-				infrastructure < ec_infrastructure_5
+				ec_infrastructure_load_percent < ec_infrastructure_5
 				NOT = {
 					any_scope_building = {
 						is_building_type = building_port
@@ -2757,9 +2849,9 @@ ec_allocate_port = {
 					}
 				}
 			}
-			ec_allocate_infrastructure = {
+			ec_sanction_infrastructure = {
 				building = building_port 
-				priority = $priority$
+				conditions = 0
 				shortage = 1
 				profitability = 0
 			}
@@ -2782,12 +2874,13 @@ ec_consider_barracks = {
 	OR = {
 		var:ec_barracks_count < ec_battalions_threshold
 		AND = {
-			ec_military_costs_value < ec_military_costs_limit
+			ec_military_costs_value < ec_military_costs_target
 			any_country = {
 				NOT = {
 					this = root
 				}
 				OR = {
+					has_diplomatic_relevance = root
 					has_war_with = root
 					has_diplomatic_pact = {
 						who = root
@@ -2799,9 +2892,21 @@ ec_consider_barracks = {
 							type = rivalry
 						}
 					}
-					has_diplomatic_relevance = root
+					any_scope_ally = {
+						has_war_with = root
+						has_diplomatic_pact = {
+							who = root
+							type = rivalry
+						}
+						root = {
+							has_diplomatic_pact = {
+								who = prev
+								type = rivalry
+							}
+						}
+					}
 				}
-				ec_army_power_projection >= root.ec_80_percent_of_army_power_projection
+				ec_133_percent_of_army_power_projection >= root.ec_army_power_projection
 			}
 		}
 	}
@@ -2860,28 +2965,25 @@ ec_evaluate_barracks = {
 	}
 }
 
-ec_allocate_barracks = {
+ec_sanction_barracks = {
 	var:ec_barracks_level < ec_state_barracks_limit
+	ec_sanction_infrastructure = {
+		building = building_barracks
+		conditions = 0
+		shortage = 1
+		profitability = 0
+	}
+}
+
+ec_allocate_barracks = {
 	OR = {
 		AND = {
 			$priority$ = 1
 			ec_has_non_discriminated_homelanders = yes
-			ec_allocate_infrastructure = {
-				building = building_barracks
-				priority = $priority$
-				shortage = 1
-				profitability = 0
-			}
 		}
 		AND = {
 			$priority$ = 2
 			ec_has_non_discriminated_homelanders = no
-			ec_allocate_infrastructure = {
-				building = building_barracks
-				priority = $priority$
-				shortage = 1
-				profitability = 0
-			}
 		}
 	}
 }
@@ -2904,12 +3006,13 @@ ec_consider_naval_base = {
 	OR = {
 		navy_size < ec_flotillas_threshold
 		AND = {
-			ec_military_costs_value < ec_military_costs_limit
+			ec_military_costs_value < ec_military_costs_target
 			any_country = {
 				NOT = {
 					this = root
 				}
 				OR = {
+					has_diplomatic_relevance = root
 					has_war_with = root
 					has_diplomatic_pact = {
 						who = root
@@ -2921,13 +3024,21 @@ ec_consider_naval_base = {
 							type = rivalry
 						}
 					}
-					any_scope_state = {
-						any_neighbouring_state = {
-							owner = root
+					any_scope_ally = {
+						has_war_with = root
+						has_diplomatic_pact = {
+							who = root
+							type = rivalry
+						}
+						root = {
+							has_diplomatic_pact = {
+								who = prev
+								type = rivalry
+							}
 						}
 					}
 				}
-				ec_navy_power_projection >= root.ec_80_percent_of_navy_power_projection
+				ec_133_percent_of_navy_power_projection >= root.ec_navy_power_projection
 			}
 		}
 	}
@@ -2986,29 +3097,26 @@ ec_evaluate_naval_base = {
 	}
 }
 
-ec_allocate_naval_base = {
+ec_sanction_naval_base = {
 	is_coastal = yes
 	var:ec_naval_base_level < ec_state_naval_base_limit
+	ec_sanction_infrastructure = {
+		building = building_naval_base
+		conditions = 0
+		shortage = 1
+		profitability = 0
+	}
+}
+
+ec_allocate_naval_base = {
 	OR = {
 		AND = {
 			$priority$ = 1
 			ec_has_non_discriminated_homelanders = yes
-			ec_allocate_infrastructure = {
-				building = building_naval_base
-				priority = $priority$
-				shortage = 1
-				profitability = 0
-			}
 		}
 		AND = {
 			$priority$ = 2
 			ec_has_non_discriminated_homelanders = no
-			ec_allocate_infrastructure = {
-				building = building_naval_base
-				priority = $priority$
-				shortage = 1
-				profitability = 0
-			}
 		}
 	}
 }
@@ -3052,10 +3160,20 @@ ec_evaluate_logging_camp = {
 	}
 }
 
-ec_allocate_logging_camp = {
-	ec_allocate_resource = { priority = $priority$ building = building_logging_camp resource = bg_logging good = g:wood 
+ec_sanction_logging_camp = {
+	ec_sanction_resource = {
+		building = building_logging_camp
+		resource = bg_logging
+		conditions = 0
 		shortage = 0
 		profitability = 1
+	}
+}
+
+ec_allocate_logging_camp = {
+	ec_allocate_resource = {
+		good = g:wood
+		priority = $priority$
 	}
 }
 
@@ -3079,10 +3197,20 @@ ec_evaluate_fishing_wharf = {
 	}
 }
 
-ec_allocate_fishing_wharf = {
-	ec_allocate_resource = { priority = $priority$ building = building_fishing_wharf resource = bg_fishing good = g:fish 
+ec_sanction_fishing_wharf = {
+	ec_sanction_resource = {
+		building = building_fishing_wharf
+		resource = bg_fishing
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_fishing_wharf = {
+	ec_allocate_resource = {
+		good = g:fish 
+		priority = $priority$
 	}
 }
 
@@ -3119,14 +3247,20 @@ ec_evaluate_whaling_station = {
 	}
 }
 
-ec_allocate_whaling_station = {
-	ec_allocate_resource = {
+ec_sanction_whaling_station = {
+	ec_sanction_resource = {
 		building = building_whaling_station
-		priority = $priority$
 		resource = bg_whaling
-		good = g:oil 
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_whaling_station = {
+	ec_allocate_resource = {
+		good = g:oil
+		priority = $priority$
 	}
 }
 
@@ -3145,10 +3279,20 @@ ec_evaluate_coal_mine = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:coal }
 }
 
-ec_allocate_coal_mine = {
-	ec_allocate_resource = { priority = $priority$ building = building_coal_mine resource = bg_coal_mining good = g:coal 
+ec_sanction_coal_mine = {
+	ec_sanction_resource = {
+		building = building_coal_mine
+		resource = bg_coal_mining
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_coal_mine = {
+	ec_allocate_resource = {
+		good = g:coal
+		priority = $priority$
 	}
 }
 
@@ -3167,10 +3311,20 @@ ec_evaluate_iron_mine = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:iron }
 }
 
-ec_allocate_iron_mine = {
-	ec_allocate_resource = { priority = $priority$ building = building_iron_mine resource = bg_iron_mining good = g:iron 
+ec_sanction_iron_mine = {
+	ec_sanction_resource = {
+		building = building_iron_mine
+		resource = bg_iron_mining
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_iron_mine = {
+	ec_allocate_resource = {
+		good = g:iron
+		priority = $priority$
 	}
 }
 
@@ -3189,10 +3343,20 @@ ec_evaluate_lead_mine = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:lead }
 }
 
-ec_allocate_lead_mine = {
-	ec_allocate_resource = { priority = $priority$ building = building_lead_mine resource = bg_lead_mining good = g:lead 
+ec_sanction_lead_mine = {
+	ec_sanction_resource = {
+		building = building_lead_mine
+		resource = bg_lead_mining
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_lead_mine = {
+	ec_allocate_resource = {
+		good = g:lead
+		priority = $priority$
 	}
 }
 
@@ -3211,10 +3375,20 @@ ec_evaluate_sulfur_mine = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:sulfur }
 }
 
-ec_allocate_sulfur_mine = {
-	ec_allocate_resource = { priority = $priority$ building = building_sulfur_mine resource = bg_sulfur_mining good = g:sulfur 
+ec_sanction_sulfur_mine = {
+	ec_sanction_resource = {
+		building = building_sulfur_mine
+		resource = bg_sulfur_mining
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_sulfur_mine = {
+	ec_allocate_resource = {
+		good = g:sulfur
+		priority = $priority$
 	}
 }
 
@@ -3246,20 +3420,20 @@ ec_evaluate_gold_mine = {
 	}
 }
 
-ec_allocate_gold_mine = {
-	state_region = {
-		remaining_undepleted = {
-			type = bg_gold_mining
-			amount > 0
-		}
-	}
-	ec_allocate_resource = {
+ec_sanction_gold_mine = {
+	ec_sanction_resource = {
 		building = building_gold_mine
 		resource = bg_gold_mining
-		good = g:gold
-		priority = $priority$
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_gold_mine = {
+	ec_allocate_resource = {
+		good = g:gold
+		priority = $priority$
 	}
 }
 
@@ -3278,10 +3452,20 @@ ec_evaluate_rubber_plantation = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:rubber }
 }
 
-ec_allocate_rubber_plantation = {
-	ec_allocate_resource = { priority = $priority$ building = building_rubber_plantation resource = bg_rubber good = g:rubber 
+ec_sanction_rubber_plantation = {
+	ec_sanction_resource = {
+		building = building_rubber_plantation
+		resource = bg_rubber
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_rubber_plantation = {
+	ec_allocate_resource = {
+		good = g:rubber
+		priority = $priority$
 	}
 }
 
@@ -3300,10 +3484,20 @@ ec_evaluate_oil_rig = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:oil }
 }
 
-ec_allocate_oil_rig = {
-	ec_allocate_resource = { priority = $priority$ building = building_oil_rig resource = bg_oil_extraction good = g:oil 
+ec_sanction_oil_rig = {
+	ec_sanction_resource = {
+		building = building_oil_rig
+		resource = bg_oil_extraction
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_oil_rig = {
+	ec_allocate_resource = {
+		good = g:oil
+		priority = $priority$
 	}
 }
 
@@ -3322,10 +3516,21 @@ ec_evaluate_wheat_farm = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:grain }
 }
 
-ec_allocate_wheat_farm = {
-	ec_allocate_arable = { priority = $priority$ building = building_wheat_farm resource = bg_wheat_farms good = g:grain 
+ec_sanction_wheat_farm = {
+	ec_sanction_arable = {
+		building = building_wheat_farm
+		resource = bg_wheat_farms
+		cipher = 1
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_wheat_farm = {
+	ec_allocate_arable = {
+		good = g:grain
+		priority = $priority$
 	}
 }
 
@@ -3344,10 +3549,21 @@ ec_evaluate_rye_farm = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:grain }
 }
 
-ec_allocate_rye_farm = {
-	ec_allocate_arable = { priority = $priority$ building = building_rye_farm resource = bg_rye_farms good = g:grain 
+ec_sanction_rye_farm = {
+	ec_sanction_arable = {
+		building = building_rye_farm
+		resource = bg_rye_farms
+		cipher = 2
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_rye_farm = {
+	ec_allocate_arable = {
+		good = g:grain
+		priority = $priority$
 	}
 }
 
@@ -3366,10 +3582,21 @@ ec_evaluate_rice_farm = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:grain }
 }
 
-ec_allocate_rice_farm = {
-	ec_allocate_arable = { priority = $priority$ building = building_rice_farm resource = bg_rice_farms good = g:grain 
+ec_sanction_rice_farm = {
+	ec_sanction_arable = {
+		building = building_rice_farm
+		resource = bg_rice_farms
+		cipher = 3
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_rice_farm = {
+	ec_allocate_arable = {
+		good = g:grain
+		priority = $priority$
 	}
 }
 
@@ -3388,10 +3615,21 @@ ec_evaluate_maize_farm = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:grain }
 }
 
-ec_allocate_maize_farm = {
-	ec_allocate_arable = { priority = $priority$ building = building_maize_farm resource = bg_maize_farms good = g:grain 
+ec_sanction_maize_farm = {
+	ec_sanction_arable = {
+		building = building_maize_farm
+		resource = bg_maize_farms
+		cipher = 4
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_maize_farm = {
+	ec_allocate_arable = {
+		good = g:grain
+		priority = $priority$
 	}
 }
 
@@ -3410,10 +3648,21 @@ ec_evaluate_millet_farm = {
 	ec_requirements_exact = { priority = $priority$ offset = 1 market_good = mg:grain }
 }
 
-ec_allocate_millet_farm = {
-	ec_allocate_arable = { priority = $priority$ building = building_millet_farm resource = bg_millet_farms good = g:grain 
+ec_sanction_millet_farm = {
+	ec_sanction_arable = {
+		building = building_millet_farm
+		resource = bg_millet_farms
+		cipher = 5
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_millet_farm = {
+	ec_allocate_arable = {
+		good = g:grain
+		priority = $priority$
 	}
 }
 
@@ -3441,10 +3690,21 @@ ec_evaluate_livestock_ranch = {
 	}
 }
 
-ec_allocate_livestock_ranch = {
-	ec_allocate_arable = { priority = $priority$ building = building_livestock_ranch resource = bg_livestock_ranches good = g:fabric 
+ec_sanction_livestock_ranch = {
+	ec_sanction_arable = {
+		building = building_livestock_ranch
+		resource = bg_livestock_ranches
+		cipher = 10
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_livestock_ranch = {
+	ec_allocate_arable = {
+		good = g:fabric
+		priority = $priority$
 	}
 }
 
@@ -3463,10 +3723,21 @@ ec_evaluate_cotton_plantation = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:fabric }
 }
 
-ec_allocate_cotton_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_cotton_plantation resource = bg_cotton_plantations good = g:fabric 
+ec_sanction_cotton_plantation = {
+	ec_sanction_arable = {
+		building = building_cotton_plantation
+		resource = bg_cotton_plantations
+		cipher = 20
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_cotton_plantation = {
+	ec_allocate_arable = {
+		good = g:fabric
+		priority = $priority$
 	}
 }
 
@@ -3485,10 +3756,21 @@ ec_evaluate_dye_plantation = {
 	ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:dye }
 }
 
-ec_allocate_dye_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_dye_plantation resource = bg_dye_plantations good = g:dye 
+ec_sanction_dye_plantation = {
+	ec_sanction_arable = {
+		building = building_dye_plantation
+		resource = bg_dye_plantations
+		cipher = 100
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_dye_plantation = {
+	ec_allocate_arable = {
+		good = g:dye
+		priority = $priority$
 	}
 }
 
@@ -3507,10 +3789,21 @@ ec_evaluate_silk_plantation = {
 	ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:silk }
 }
 
-ec_allocate_silk_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_silk_plantation resource = bg_silk_plantations good = g:silk 
+ec_sanction_silk_plantation = {
+	ec_sanction_arable = {
+		building = building_silk_plantation
+		resource = bg_silk_plantations
+		cipher = 200
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_silk_plantation = {
+	ec_allocate_arable = {
+		good = g:silk
+		priority = $priority$
 	}
 }
 
@@ -3535,10 +3828,21 @@ ec_evaluate_banana_plantation = {
 	}
 }
 
-ec_allocate_banana_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_banana_plantation resource = bg_banana_plantations good = g:fruit 
+ec_sanction_banana_plantation = {
+	ec_sanction_arable = {
+		building = building_banana_plantation
+		resource = bg_banana_plantations
+		cipher = 1000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_banana_plantation = {
+	ec_allocate_arable = {
+		good = g:fruit
+		priority = $priority$
 	}
 }
 
@@ -3557,10 +3861,21 @@ ec_evaluate_sugar_plantation = {
 	ec_requirements_exact = { priority = $priority$ offset = 3 market_good = mg:sugar }
 }
 
-ec_allocate_sugar_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_sugar_plantation resource = bg_sugar_plantations good = g:sugar 
+ec_sanction_sugar_plantation = {
+	ec_sanction_arable = {
+		building = building_sugar_plantation
+		resource = bg_sugar_plantations
+		cipher = 2000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_sugar_plantation = {
+	ec_allocate_arable = {
+		good = g:sugar
+		priority = $priority$
 	}
 }
 
@@ -3588,10 +3903,21 @@ ec_evaluate_tea_plantation = {
 	}
 }
 
-ec_allocate_tea_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_tea_plantation resource = bg_tea_plantations good = g:tea 
+ec_sanction_tea_plantation = {
+	ec_sanction_arable = {
+		building = building_tea_plantation
+		resource = bg_tea_plantations
+		cipher = 10000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_tea_plantation = {
+	ec_allocate_arable = {
+		good = g:tea
+		priority = $priority$
 	}
 }
 
@@ -3619,10 +3945,21 @@ ec_evaluate_coffee_plantation = {
 	}
 }
 
-ec_allocate_coffee_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_coffee_plantation resource = bg_coffee_plantations good = g:coffee 
+ec_sanction_coffee_plantation = {
+	ec_sanction_arable = {
+		building = building_coffee_plantation
+		resource = bg_coffee_plantations
+		cipher = 20000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_coffee_plantation = {
+	ec_allocate_arable = {
+		good = g:coffee
+		priority = $priority$
 	}
 }
 
@@ -3655,10 +3992,21 @@ ec_evaluate_tobacco_plantation = {
 	}
 }
 
-ec_allocate_tobacco_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_tobacco_plantation resource = bg_tobacco_plantations good = g:tobacco 
+ec_sanction_tobacco_plantation = {
+	ec_sanction_arable = {
+		building = building_tobacco_plantation
+		resource = bg_tobacco_plantations
+		cipher = 100000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_tobacco_plantation = {
+	ec_allocate_arable = {
+		good = g:tobacco
+		priority = $priority$
 	}
 }
 
@@ -3689,10 +4037,21 @@ ec_evaluate_opium_plantation = {
 	}
 }
 
-ec_allocate_opium_plantation = {
-	ec_allocate_arable = { priority = $priority$ building = building_opium_plantation resource = bg_opium_plantations good = g:opium 
+ec_sanction_opium_plantation = {
+	ec_sanction_arable = {
+		building = building_opium_plantation
+		resource = bg_opium_plantations
+		cipher = 200000
+		conditions = 0
 		shortage = 1
 		profitability = 1
+	}
+}
+
+ec_allocate_opium_plantation = {
+	ec_allocate_arable = {
+		good = g:opium
+		priority = $priority$
 	}
 }
 
@@ -3731,8 +4090,10 @@ ec_evaluate_food_industry = {
 	}
 }
 
-ec_allocate_food_industry = {
-	ec_allocate_industry = { priority = $priority$ building = building_food_industry 
+ec_sanction_food_industry = {
+	ec_sanction_industry = {
+		building = building_food_industry
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3753,8 +4114,10 @@ ec_evaluate_arts_academy = {
 	ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:fine_art }
 }
 
-ec_allocate_arts_academy = {
-	ec_allocate_industry = { priority = $priority$ building = building_arts_academy 
+ec_sanction_arts_academy = {
+	ec_sanction_industry = {
+		building = building_arts_academy
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3778,8 +4141,10 @@ ec_evaluate_textile_mills = {
 	}
 }
 
-ec_allocate_textile_mills = {
-	ec_allocate_industry = { priority = $priority$ building = building_textile_mills 
+ec_sanction_textile_mills = {
+	ec_sanction_industry = {
+		building = building_textile_mills
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3803,8 +4168,10 @@ ec_evaluate_furniture_manufacturies = {
 	}
 }
 
-ec_allocate_furniture_manufacturies = {
-	ec_allocate_industry = { priority = $priority$ building = building_furniture_manufacturies 
+ec_sanction_furniture_manufacturies = {
+	ec_sanction_industry = {
+		building = building_furniture_manufacturies
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3825,8 +4192,10 @@ ec_evaluate_glassworks = {
 	ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:glass }
 }
 
-ec_allocate_glassworks = {
-	ec_allocate_industry = { priority = $priority$ building = building_glassworks 
+ec_sanction_glassworks = {
+	ec_sanction_industry = {
+		building = building_glassworks
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3847,8 +4216,10 @@ ec_evaluate_tooling_workshops = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:tools }
 }
 
-ec_allocate_tooling_workshops = {
-	ec_allocate_industry = { priority = $priority$ building = building_tooling_workshops
+ec_sanction_tooling_workshops = {
+	ec_sanction_industry = {
+		building = building_tooling_workshops
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3869,8 +4240,10 @@ ec_evaluate_paper_mills = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:paper }
 }
 
-ec_allocate_paper_mills = {
-	ec_allocate_industry = { priority = $priority$ building = building_paper_mills 
+ec_sanction_paper_mills = {
+	ec_sanction_industry = {
+		building = building_paper_mills 
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3894,8 +4267,10 @@ ec_evaluate_chemical_plants = {
 	}
 }
 
-ec_allocate_chemical_plants = {
-	ec_allocate_industry = { priority = $priority$ building = building_chemical_plants 
+ec_sanction_chemical_plants = {
+	ec_sanction_industry = {
+		building = building_chemical_plants
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3916,8 +4291,10 @@ ec_evaluate_synthetics_plants = {
 	ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:dye }
 }
 
-ec_allocate_synthetics_plants = {
-	ec_allocate_industry = { priority = $priority$ building = building_synthetics_plants 
+ec_sanction_synthetics_plants = {
+	ec_sanction_industry = {
+		building = building_synthetics_plants
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3938,8 +4315,10 @@ ec_evaluate_steel_mills = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:steel }
 }
 
-ec_allocate_steel_mills = {
-	ec_allocate_industry = { priority = $priority$ building = building_steel_mills 
+ec_sanction_steel_mills = {
+	ec_sanction_industry = {
+		building = building_steel_mills
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3960,8 +4339,10 @@ ec_evaluate_motor_industry = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:engines }
 }
 
-ec_allocate_motor_industry = {
-	ec_allocate_industry = { priority = $priority$ building = building_motor_industry 
+ec_sanction_motor_industry = {
+	ec_sanction_industry = {
+		building = building_motor_industry
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -3982,8 +4363,10 @@ ec_evaluate_power_plant = {
 	ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:electricity }
 }
 
-ec_allocate_power_plant = {
-	ec_allocate_industry = { priority = $priority$ building = building_power_plant 
+ec_sanction_power_plant = {
+	ec_sanction_industry = {
+		building = building_power_plant
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -4005,26 +4388,43 @@ ec_consider_shipyards = {
 
 ec_evaluate_shipyards = {
 	OR = {
-		ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:clippers }
 		AND = {
-			ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:manowars }
 			OR = {
-				is_at_war = no
-				ec_requirements_floor = {
-					market_good = mg:manowars
-					priority = 6
-					offset = 0
+				ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:clippers }
+				AND = {
+					ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:manowars }
+					OR = {
+						ec_is_using_military_forces = no
+						ec_requirements_floor = {
+							market_good = mg:manowars
+							priority = 6
+							offset = 0
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = {
+					any_scope_building = {
+						is_building_type = building_shipyards
+					}
+				}
+				any_scope_building = {
+					is_building_type = building_shipyards
+					OR = {
+						has_active_production_method = pm_basic_shipbuilding
+						has_active_production_method = pm_complex_shipbuilding
+					}
 				}
 			}
 		}
 		AND = {
-			has_technology_researched = ironclad_tech
 			OR = {
 				ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:steamers }
 				AND = {
 					ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:ironclads }
 					OR = {
-						is_at_war = no
+						ec_is_using_military_forces = no
 						ec_requirements_floor = {
 							market_good = mg:ironclads
 							priority = 6
@@ -4033,13 +4433,29 @@ ec_evaluate_shipyards = {
 					}
 				}
 			}
+			OR = {
+				NOT = {
+					any_scope_building = {
+						is_building_type = building_shipyards
+					}
+				}
+				any_scope_building = {
+					is_building_type = building_shipyards
+					OR = {
+						has_active_production_method = pm_metal_shipbuilding
+						has_active_production_method = pm_arc_welding_shipbuilding
+					}
+				}
+			}
 		}
 	}
 }
 
-ec_allocate_shipyards = {
+ec_sanction_shipyards = {
 	is_coastal = yes
-	ec_allocate_industry = { priority = $priority$ building = building_shipyards 
+	ec_sanction_industry = {
+		building = building_shipyards
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -4061,7 +4477,7 @@ ec_evaluate_arms_industry = {
 		AND = {
 			ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:small_arms }
 			OR = {
-				is_at_war = no
+				ec_is_using_military_forces = no
 				ec_requirements_floor = {
 					market_good = mg:small_arms
 					priority = 6
@@ -4073,7 +4489,7 @@ ec_evaluate_arms_industry = {
 			has_technology_researched = artillery
 			ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:artillery }
 			OR = {
-				is_at_war = no
+				ec_is_using_military_forces = no
 				ec_requirements_floor = {
 					market_good = mg:artillery
 					priority = 6
@@ -4084,8 +4500,10 @@ ec_evaluate_arms_industry = {
 	}
 }
 
-ec_allocate_arms_industry = {
-	ec_allocate_industry = { priority = $priority$ building = building_arms_industry 
+ec_sanction_arms_industry = {
+	ec_sanction_industry = {
+		building = building_arms_industry
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -4105,7 +4523,7 @@ ec_consider_munition_plants = {
 ec_evaluate_munition_plants = {
 	ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:ammunition }
 	OR = {
-		is_at_war = no
+		ec_is_using_military_forces = no
 		ec_requirements_floor = {
 			market_good = mg:ammunition
 			priority = 6
@@ -4114,8 +4532,10 @@ ec_evaluate_munition_plants = {
 	}
 }
 
-ec_allocate_munition_plants = {
-	ec_allocate_industry = { priority = $priority$ building = building_munition_plants 
+ec_sanction_munition_plants = {
+	ec_sanction_industry = {
+		building = building_munition_plants 
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -4142,8 +4562,10 @@ ec_evaluate_electrics_industry = {
 	}
 }
 
-ec_allocate_electrics_industry = {
-	ec_allocate_industry = { priority = $priority$ building = building_electrics_industry 
+ec_sanction_electrics_industry = {
+	ec_sanction_industry = {
+		building = building_electrics_industry
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}
@@ -4165,7 +4587,7 @@ ec_evaluate_war_machine_industry = {
 		AND = {
 			ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:aeroplanes }
 			OR = {
-				is_at_war = no
+				ec_is_using_military_forces = no
 				ec_requirements_floor = {
 					market_good = mg:aeroplanes
 					priority = 6
@@ -4177,7 +4599,7 @@ ec_evaluate_war_machine_industry = {
 			has_technology_researched = mobile_armor
 			ec_requirements_exact = { priority = $priority$ offset = 2 market_good = mg:tanks }
 			OR = {
-				is_at_war = no
+				ec_is_using_military_forces = no
 				ec_requirements_floor = {
 					market_good = mg:tanks
 					priority = 6
@@ -4188,8 +4610,10 @@ ec_evaluate_war_machine_industry = {
 	}
 }
 
-ec_allocate_war_machine_industry = {
-	ec_allocate_industry = { priority = $priority$ building = building_war_machine_industry 
+ec_sanction_war_machine_industry = {
+	ec_sanction_industry = {
+		building = building_war_machine_industry
+		conditions = 0
 		shortage = 1
 		profitability = 1
 	}

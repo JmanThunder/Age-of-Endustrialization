@@ -1,0 +1,10 @@
+﻿l_japanese:
+ rule_si_automation_method:0 "Improved Automation: Automation Rules"
+ setting_si_economic_system_automation:0 "Dependant On Economic System"
+ setting_si_economic_system_automation_desc:0 "DEFAULT: Auto Expand will have different rules for expansion when your economy is Laissez Faire, Command, or Interventionist. This mode will make different Economies feel different."
+ setting_si_laissez_faire_automation:0 "Laissez Faire Logic"
+ setting_si_laissez_faire_automation_desc:0 "Auto Expand will use the Laissez Faire rules for auto expansion, checking if the current building has enough money, has a net income, and any other building specific modifiers."
+ setting_si_command_economy_automation:0 "Command Economy Logic"
+ setting_si_command_economy_automation_desc:0 "Auto Expand will use the Command Economy rules for auto expansion, checking only if the building has subsidation, and any other building specific modifiers."
+ setting_si_interventionism_automation:0 "Interventionism Logic"
+ setting_si_interventionism_automation_desc:0 "Auto Expand will use the Interventionism rules for auto expansion, checking if the current building has enough money or is subsidized, has a net income, and any other building specific modifiers."

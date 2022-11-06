@@ -1,4 +1,10 @@
 ﻿NAI = {
+	TICKS_FOR_FULL_SPENDING_UPDATE = 84 # The higher this is, the less often AIs will update their spending priorities
+	
+	MIN_AVAILABLE_LABOR_FOR_NEW_BUILDING = 5000000		# If state has less than this in available labor, don't bother building anything (multiplied by 1 + number of ongoing constructions)
+	
+	CONSCRIPTION_ESTIMATED_MILITARY_POWER_MULT = 0.75 		# AI multiplies the value of conscriptable battalions by this to estimate potential combat power
+	
 	RAISE_TAX_TO_DESIRED_INCOME_THRESHOLD = 0.03
 	RAISE_TAX_ABOVE_DESIRED_INCOME_NO_DEBT_THRESHOLD = 0.01
 	RAISE_TAX_ABOVE_DESIRED_INCOME_WITH_DEBT_THRESHOLD = 0.02
@@ -14,13 +20,13 @@
 	CONSTRUCTION_MAX_NUM_GOVERNMENT_CONSTRUCTIONS_SCALED_MAX = 0.01 # CONSTRUCTION_MAX_NUM_GOVERNMENT_CONSTRUCTIONS_SCALED can't be higher than this	
 	#CONSTRUCTION_WANTED_SUPPLY_OF_CONSTRUCTION_GOODS = 1.0 # Try to import construction goods if supply-to-demand ratio is below this
 	CONSTRUCTION_RESERVES_NEW_CONSTRUCTIONS = 666.6 # If gold reserves are less than this after adding the cost of a new construction, don't queue it
-	CONSTRUCTION_DEBT_RESUME = 0.60 # If constructions are paused, resume once debt is this low relative to ceiling
-	CONSTRUCTION_DEBT_PAUSE = 0.65 # If in this much relative debt to debt ceiling, pause all non-critical constructions 	
-	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.60 # If critical constructions are paused, resume once debt is this low relative to ceiling
-	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 0.65 # If in this much relative debt to debt ceiling, pause all critical constructions 	
+	CONSTRUCTION_DEBT_RESUME = 0.50 # If constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE = 0.55 # If in this much relative debt to debt ceiling, pause all non-critical constructions 	
+	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.50 # If critical constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 6.66 # If in this much relative debt to debt ceiling, pause all critical constructions 	
 	
 	# Below data is used to calculate how much weight the AI places on different things it can spend its weekly money income on
-	MONEY_SPENDING_RANDOM_FACTOR = 2.0 # The higher this is, the more random new AI money spending will be
+	#MONEY_SPENDING_RANDOM_FACTOR = 2.0 # The higher this is, the more random new AI money spending will be
 	MONEY_SPENDING_MAX_RATIO_TO_REMOVE_SHOULD_HAVE = 0.01 # How low of a income-to-expenses ratio does the AI need to have to consider reducing spending on a 'should-have'
 	MONEY_SPENDING_MAX_RATIO_TO_REMOVE_WANTS_TO_HAVE = 0.02 # How low of a income-to-expenses ratio does the AI need to have to consider reducing spending on a 'wants-to-have'
 	MONEY_SPENDING_MAX_RATIO_TO_REMOVE_NICE_TO_HAVE = 0.03 # How low of a income-to-expenses ratio does the AI need to have to consider reducing spending on a 'nice-to-have'

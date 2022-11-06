@@ -1,0 +1,202 @@
+GER_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ger_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.8 0.9 } position = { 0.5 0.45 } }
+	}	
+}
+
+NGF_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ger_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.8 0.9 } position = { 0.5 0.45 } }
+	}	
+}
+
+SGF_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ger_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.8 0.9 } position = { 0.5 0.45 } }
+	}	
+}
+
+PRU_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ger_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.8 0.9 } position = { 0.5 0.45 } }
+	}	
+}
+
+FRA_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "fra_com.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 0.9 1.0 } position = { 0.5 0.45 } }
+	}	
+}
+
+SPA_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "spa_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.9 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+
+SAR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ita_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.9 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+
+ITA_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ita_com.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.9 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+
+GBR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "gbr_com.dds"
+		color1 = "yellow"
+		color2 = { 135 0 0 }
+		instance = { scale = { 1.1 1.1 } position = { 0.475 0.375 } }
+	}	
+}
+
+ENG_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "eng_com.dds"
+		color1 = "black"
+		color2 = "white"
+		instance = { scale = { 0.6 0.7 } position = { 0.5 0.475 } }
+	}	
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "yellow"
+		color2 = "white"
+		instance = { scale = { 1.1 1.1 } position = { 0.5 0.5 } }
+	}
+}
+
+IRE_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "ire_com.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.9 1.0 } position = { 0.5 0.55 } }
+	}	
+}
+
+SWE_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	
+	colored_emblem = {
+		texture = "swe_com.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+	}	
+}
+
+TUR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "TUR_com.dds"
+		color1 = { 135 0 0 }
+		color2 = "yellow"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}	
+}
+
+AUS_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	colored_emblem = {
+		texture = "AUS_com.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 } }
+	}	
+}
+
+KUK_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = { 135 0 0 }
+	colored_emblem = {
+		texture = "kuk_com.dds"
+		color1 = "white"
+		color2 = "green"
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 } }
+	}	
+}
+
+GRE_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "GRE_com.dds"
+		color1 = { 135 0 0 }
+		color2 = "blue"
+		color3 = "white"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}	
+}

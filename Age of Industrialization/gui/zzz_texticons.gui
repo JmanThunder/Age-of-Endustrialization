@@ -1,0 +1,19 @@
+texticon = {
+	icon = cotton
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/cotton.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = slaves1
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/slaves.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

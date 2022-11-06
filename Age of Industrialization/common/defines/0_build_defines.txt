@@ -1,0 +1,3 @@
+﻿NEconomy = {
+	MAX_WEEKLY_CONSTRUCTION_PROGRESS = 30				# Max construction progress per week on a single project
+}

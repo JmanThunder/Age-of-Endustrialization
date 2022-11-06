@@ -12,6 +12,7 @@ ARoAI_economy_events.1 = {
 		# Purely technical stuff not dependant on the country
 		
 		ec_check_identifying_object_list = yes
+		ec_check_arable_resources = yes
 		
 		# Perform script if country is allowed or clear country variables otherwise
 		
@@ -246,7 +247,6 @@ ARoAI_economy_events.5 = {
 	trigger = {}
 	
 	immediate = {
-		
 		if = {
 			limit = {
 				ec_country_allowed = yes
@@ -255,6 +255,58 @@ ARoAI_economy_events.5 = {
 		}
 		else = {
 			ec_clear_country_variables = yes
+		}
+	}
+}
+
+ARoAI_economy_events.300 = {
+	type = country_event
+	hidden = yes
+	
+	trigger = {}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_global_variable = ec_checked_arable_resources
+				global_var:ec_checked_arable_resources < 2
+			}
+			set_global_variable = {
+				name = ec_checked_arable_resources
+				value = 2
+			}
+			ec_finish_arable_resources_check = yes
+		}
+		trigger_event = {
+			id = ARoAI_economy_events.301
+			days = 1
+		}
+	}
+}
+
+ARoAI_economy_events.301 = {
+	type = country_event
+	hidden = yes
+	
+	trigger = {}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_global_variable = ec_checked_arable_resources
+				global_var:ec_checked_arable_resources < 3
+			}
+			set_global_variable = {
+				name = ec_checked_arable_resources
+				value = 3
+			}
+			every_country = {
+				every_scope_state = {
+					state_region = {
+						remove_variable = eccar
+					}
+				}
+			}
 		}
 	}
 }

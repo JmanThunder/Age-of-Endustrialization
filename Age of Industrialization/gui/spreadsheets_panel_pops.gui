@@ -1,0 +1,134 @@
+@secondary_icon_size = 25
+@line_height = 35
+@item_height = 32
+@item_right_margin_inside = 8
+@item_right_margin_outside = 12
+
+types spreadsheets_panel_types
+{
+    type spreadsheets_panel_pops = vbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		background = {
+			using = light_bg
+			alpha = 0.65
+
+			modify_texture = {
+				texture = "gfx/interface/masks/fade_vertical_center.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 0 0 }
+				blend_mode = alphamultiply
+			}
+			modify_texture = {
+				texture = "gfx/interface/masks/fade_horizontal_less_left.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 0 0 }
+				blend_mode = alphamultiply
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { 20 10 }
+			spacing = 10
+
+			### SORTING BUTTONS
+			hbox = {
+				layoutpolicy_horizontal = expanding
+
+				# Name
+				sort_button = {
+					layoutstretchfactor_horizontal = 2.2
+					layoutpolicy_horizontal = expanding
+					size = { 0 @item_height }
+					onclick = "[AccessPlayer.SortStates('name')]"
+
+					text = "STATE_TITLE"
+					align = left|nobaseline
+
+					tooltip = STATE_EXPLAINER
+				}
+
+				### POPULATION STUFF
+				# Population
+				sort_button = {
+					layoutstretchfactor_horizontal = 1
+					layoutpolicy_horizontal = expanding
+					size = { 0 @item_height }
+					enabled = no
+
+					icon = {
+						texture = "gfx/interface/icons/generic_icons/population.dds"
+						size = { @secondary_icon_size @secondary_icon_size }
+						parentanchor = vcenter
+					}
+
+					text = "MS_POP"
+					align = right|nobaseline
+				}
+
+
+
+			}
+
+			vbox = {
+				spacing = 10
+				size = { 100 @item_height }
+				layoutpolicy_horizontal = expanding
+				datamodel = "[PopList.AccessPopList]"
+
+				item = {
+					vbox = {
+						datacontext = "[PopListItem.GetPopType]"
+						layoutpolicy_horizontal = expanding
+						#datacontext = "[PopListItem.GetPopType]"
+						# Only show slaves drawer if country has slavery. `IsValid` check just for safety, should be always valid in the context of buildings.
+						#visible = "[Or(Or( Not( PopListItem.GetPopType.IsSlave ), Not(IsDataModelEmpty(PopListItem.GetPops))), Or( Not( PopListItem.GetCountry.IsValid ), PopListItem.GetCountry.HasAnySlavery ) )]"
+
+						textbox = {
+							size = { 100 @item_height }
+							text = "[PopListItem.GetAverageSoL]"
+						}
+						#datamodel = "[PopListItem.GetPops]"
+						#item = {
+							#button = {
+								#using = clean_button
+								#layoutpolicy_horizontal = expanding
+								#size = { 100 @line_height }
+								#onclick = "[GetVariableSystem.Clear('more_spreadsheets')]"
+								#onclick = "[InformationPanelBar.OpenPopDetailsPanel(Pop.AccessSelf)]"
+								#alwaystransparent = no
+#
+								#hbox = {
+									#layoutpolicy_horizontal = expanding
+#
+									## Name
+									#textbox = {
+										#layoutstretchfactor_horizontal = 2
+										#layoutpolicy_horizontal = expanding
+										#size = { 100 @item_height }
+										#margin_left = @item_right_margin_outside
+#
+										#align = left|nobaseline
+										#text = "[Pop.GetTotalSize|Dv]"
+#
+										#tooltipwidget = {
+											#FancyTooltip_Pop = {}
+										#}
+									#}
+								#}
+							#}
+						#}
+					}
+				}
+			}
+		}
+
+		# Push everything up
+		widget = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+		}
+	}
+}
