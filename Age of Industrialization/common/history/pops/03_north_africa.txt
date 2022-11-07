@@ -375,7 +375,7 @@
 		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
-				size = 686700
+				size = 1686700
 			}
 			create_pop = {
 				culture = sephardic
@@ -383,12 +383,12 @@
 			}
 			create_pop = {
 				culture = berber
-				size = 243996
+				size = 543996
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
-				size = 56000
+				size = 156000
 			}
 		}
 	}
@@ -396,11 +396,11 @@
 		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
-				size = 878696
+				size = 1678696
 			}
 			create_pop = {
 				culture = berber
-				size = 116004
+				size = 216004
 			}
 			create_pop = {
 				culture = sephardic
@@ -409,7 +409,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = bambara
-				size = 62000
+				size = 162000
 			}
 		}
 	}
