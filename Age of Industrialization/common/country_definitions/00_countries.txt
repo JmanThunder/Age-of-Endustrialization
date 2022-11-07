@@ -220,7 +220,7 @@ KUK = {
 }
 
 DEN = {
-	color = hsv{ 1.01  0.8  0.5 }
+	color = { 155 0 90 }
 	
 	country_type = recognized
 
@@ -647,7 +647,7 @@ LOM = {
 }
 
 LUC = {
-	color = { 114  171  184 }
+	color = { 146 108 146 }
 	
 	country_type = recognized
 
@@ -658,7 +658,7 @@ LUC = {
 }
 
 MOD = {
-	color = { 241  252  151 }
+	color = { 241 252 151 }
 	
 	country_type = recognized
 
@@ -737,7 +737,7 @@ TRE = {
 }
 
 TUS = {
-	color = { 84  96  136 }
+	color = { 216 30 5 }
 	
 	country_type = recognized
 
