@@ -3332,7 +3332,7 @@ BLH = {
 }
 
 NGF = {
-	color = {41 37 37}
+	color = { 143  168  154 }
 	
 	country_type = recognized
 
@@ -3343,7 +3343,7 @@ NGF = {
 }
 
 SGF = {
-	color = { 176 18 7}
+	color = { 142  201  208 }
 	
 	country_type = recognized
 
