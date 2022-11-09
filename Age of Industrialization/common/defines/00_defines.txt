@@ -1462,10 +1462,10 @@ NPops = {
 	RADICALS_MONTHLY_FROM_LOW_SOL = 0.001		# Scales by delta between SoL and expected min SoL
 	RADICALS_MONTHLY_FROM_DISCRIMINATION = 0.005 # Scales by literacy	
 
-	ASSIMILATION_RATE = 0.002					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
-	MIN_ASSIMILATION = 10						# If there is any assmiliation at least this many people will assimilate
-	CONVERSION_RATE = 0.002						# Percentage of pops who will Convert into a different Religion each month, if eligible
-	MIN_CONVERSION = 10							# If there is any conversion at least this many people will convert
+	ASSIMILATION_RATE = 0.001					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
+	MIN_ASSIMILATION = 500						# If there is any assmiliation at least this many people will assimilate
+	CONVERSION_RATE = 0.0005						# Percentage of pops who will Convert into a different Religion each month, if eligible
+	MIN_CONVERSION = 500							# If there is any conversion at least this many people will convert
 	
 	OBSESSION_DEMAND_MIN = 1.0					# The minimum relative demand of an obsession (overrides min demand in buy package goods categories)
 	OBSESSION_DEMAND_MULT = 2.0					# Demand of an obsession is multiplied by this
@@ -1607,13 +1607,13 @@ NTechnology = {
 
 NCharacters = {
 	RULER_MIN_AGE_FOR_HEIR = 20 # Before this age, don't randomly generate heirs for rulers
-	RULER_AGE_FOR_HEIR_CHANCE_BOOST = 30 # A year after this age start boosting chance of heir generation
+	RULER_AGE_FOR_HEIR_CHANCE_BOOST = 22 # A year after this age start boosting chance of heir generation
 	RULER_HEIR_GENERATION_CHANCE = 0.001 # Per day
 	RULER_HEIR_CHANCE_BOOST_SCALE = 0.001 # Added to RULER_HEIR_CHANCE_BOOST for each year after RULER_AGE_FOR_HEIR_CHANCE_BOOST
 	AGE_GENERATION_STARTVAL = 20
 	AGE_GENERATION_DICE_ROLL_MAGNITUDE = 6
 	AGE_GENERATION_NUM_DICE_ROLLS = 5
-	DEATH_CHECKS_YEAR_BEGIN = 60		# first year to start checking for death by natural causes
+	DEATH_CHECKS_YEAR_BEGIN = 38		# first year to start checking for death by natural causes
 	DEATH_CHECKS_YEAR_END = 100			# definately dead by this year
 	RECRUIT_COMMANDER_NUM_OPTIONS = 2
 	RECRUIT_COMMANDER_POOL_SIZE = 3
