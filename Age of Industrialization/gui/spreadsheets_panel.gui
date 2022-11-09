@@ -65,22 +65,22 @@ types spreadsheets_panel_types
 					text = "MS_MARKET"
 				}
 
-				#blockoverride "third_button" {
-					#text = "MS_POPS"
-				#}
-				#blockoverride "third_button_click" {
-					#onclick = "[GetVariableSystem.Set('more_spreadsheets', 'pops')]"
-					#onclick = "[GetVariableSystem.Set('ms_last_tab', 'pops')]"
-				#}
-				#blockoverride "third_button_visibility" {
-					#visible = "[GetVariableSystem.HasValue('more_spreadsheets', 'pops')]"
-				#}
-				#blockoverride "third_button_visibility_checked" {
-					#visible = "[Not( GetVariableSystem.HasValue('more_spreadsheets', 'pops') )]"
-				#}
-				#blockoverride "third_button_selected" {
-					#text = "MS_POPS"
-				#}
+				blockoverride "third_button" {
+					text = "MS_POPS"
+				}
+				blockoverride "third_button_click" {
+					onclick = "[GetVariableSystem.Set('more_spreadsheets', 'pops')]"
+					onclick = "[GetVariableSystem.Set('ms_last_tab', 'pops')]"
+				}
+				blockoverride "third_button_visibility" {
+					visible = "[GetVariableSystem.HasValue('more_spreadsheets', 'pops')]"
+				}
+				blockoverride "third_button_visibility_checked" {
+					visible = "[Not( GetVariableSystem.HasValue('more_spreadsheets', 'pops') )]"
+				}
+				blockoverride "third_button_selected" {
+					text = "MS_POPS"
+				}
 			}
 		}
 
@@ -103,14 +103,14 @@ types spreadsheets_panel_types
 				}
 			}
 
-			#fullscreen_scrollarea = {
-				#visible = "[GetVariableSystem.HasValue('more_spreadsheets', 'pops')]"
-#
-				#blockoverride "scrollarea_content" {
-					#spreadsheets_panel_pops = {
-					#}
-				#}
-			#}
+			fullscreen_scrollarea = {
+				visible = "[GetVariableSystem.HasValue('more_spreadsheets', 'pops')]"
+
+				blockoverride "scrollarea_content" {
+					spreadsheets_panel_pops = {
+					}
+				}
+			}
 		}
 	}
 

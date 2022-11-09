@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_braz_por:
   MS_BTN: "Spreadsheets"
   MS_TOOLTIP: "Shows more spreadsheets"
   MS_PANEL_HEADER: "More Spreadsheets"
@@ -10,7 +10,7 @@
   MS_UNEMP: "Unempl."
   MS_RADICAL: "Radical"
   MS_LOYALIST: "Loyal"
-  MS_LITERACY: "Lit."
+  MS_LITERACY: "Literacy"
   MS_INFRA: "Infra."
   MS_TAXCAP: "Tax C."
   MS_TURMOIL: "Turmoil"
@@ -22,7 +22,7 @@
   MS_TRAITS: "Traits"
   MS_URBANIZATION: "Urban."
   MS_ARABLE: "Arable"
-  MS_QUALIFICATIONS: "Q"
+  MS_QUALIFICATIONS: "Q."
   MS_STAPLE: "#title Staple Goods#!"
   MS_INDUSTRIAL: "#title Industrial Goods#!"
   MS_LUXURY: "#title Luxury Goods#!"

@@ -45,17 +45,17 @@ types spreadsheets_panel_types
 			textbox = {
 				autoresize = yes
 				using = fontsize_mega
-				text = "Missing Market Goods?"
+				text = "MS_WARNING_1"
 			}
 			textbox = {
 				autoresize = yes
 				using = fontsize_large
-				text = "For some reason Paradox only exposes goods filtered by the Market tab filters."
+				text = "MS_WARNING_2"
 			}
 			textbox = {
 				autoresize = yes
 				using = fontsize_large
-				text = "How to fix: Head to the Market tab and deselect the filter."
+				text = "MS_WARNING_3"
 			}
 		}
 
@@ -118,14 +118,26 @@ types spreadsheets_panel_types
 			}
 
 			# MILITARY
-			spreadsheets_panel_market_category = {
-				blockoverride "heading" {
-					text = "MS_MILITARY"
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				spreadsheets_panel_market_category = {
+					blockoverride "heading" {
+						text = "MS_MILITARY"
+					}
+
+					blockoverride "visible_filter" {
+						visible = "[EqualTo_string(GetString_CVector4f(Goods.GetCategoryColor), '(0.290000, 0.160000, 0.170000, ')]"
+					}
+
+					blockoverride "supply_info" {
+						expand = {}
+						ms_supply_network_information = {
+						}
+					}
 				}
 
-				blockoverride "visible_filter" {
-					visible = "[EqualTo_string(GetString_CVector4f(Goods.GetCategoryColor), '(0.290000, 0.160000, 0.170000, ')]"
-				}
 			}
 		}
 	}
@@ -169,7 +181,7 @@ types spreadsheets_panel_types
 			sort_button = {
 				layoutpolicy_horizontal = expanding
 				align = hcenter|nobaseline
-				text = "[concept_sell_orders]"
+				text = "MS_SELL_ORDERS"
 				size = { 0 20 }
 				onclick = "[Market.Sort('sell')]"
 				onclick = "[Market.RestoreSort]"
@@ -180,7 +192,7 @@ types spreadsheets_panel_types
 				layoutpolicy_horizontal = expanding
 				name = "tutorial_highlight_market_details_panel_buy_orders"
 				align = hcenter|nobaseline
-				text = "[concept_buy_orders]"
+				text = "MS_BUY_ORDERS"
 				size = { 0 20 }
 				onclick = "[Market.Sort('buy')]"
 				onclick = "[Market.RestoreSort]"
@@ -271,6 +283,9 @@ types spreadsheets_panel_types
 					}
 				}
 			}
+		}
+
+		block "supply_info" {
 		}
 
 		expand = {
@@ -590,7 +605,7 @@ types spreadsheets_panel_types
 				margin = { 0 -10 }
 			}
 			icon = {
-				tooltip = "There are trade routes for this good that are owned by you"
+				tooltip = "MS_TRADE_ROUTE_TOOLTIP"
 				size = { @secondary_icon_size @secondary_icon_size }
 				texture = "gfx/interface/icons/lens_toolbar_icons/trade_agreement.dds"
 				visible = "[Not(IsDataModelEmpty(MarketGoods.AccessPlayerTradeRoutes))]"
@@ -762,15 +777,32 @@ types spreadsheets_panel_types
 			textbox = {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
-				align = left|nobaseline
+				align = right|nobaseline
 				text = "@money! #v [TradeRoute.CalcProductivity|1=+]#!"
 				tooltip = "[TradeRoute.GetRevenueAfterTariffDesc]"
+			}
+
+			textbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				align = right|nobaseline
+				text = "@bur! [TradeRoute.CalcCost]"
+				tooltip = "TRADE_ROUTE_TOOLTIP"
+			}
+
+			widget = {
+				size = { 10 0 }
 			}
 
 			button_icon_cancel = {
 				size = { 25 25 }
 				onclick = "[Execute( TradeRoute.Cancel )]"
 				visible = "[IsValid( TradeRoute.Cancel )]"
+			}
+
+			widget = {
+				size = { 25 25 }
+				visible = "[Not(IsValid( TradeRoute.Cancel ))]"
 			}
 		}
 	}
@@ -785,7 +817,7 @@ types spreadsheets_panel_types
 				texture = "gfx/interface/icons/trade_icons/import_focused.dds"
 			}
 			blockoverride "click" {
-				#enabled = "[And(IsValid( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
+				enabled = "[Goods.GetMarket.GetOwner.IsPlayer]"
 				onclick = "[Execute( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) )]"
 			}
 			blockoverride "setvisible" {
@@ -805,7 +837,7 @@ types spreadsheets_panel_types
 				texture = "gfx/interface/icons/trade_icons/unfocused.dds"
 			}
 			blockoverride "click" {
-				#enabled = "[And(IsValid( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
+				enabled = "[Goods.GetMarket.GetOwner.IsPlayer]"
 				onclick = "[Execute( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) )]"
 			}
 			blockoverride "setvisible" {
@@ -825,7 +857,7 @@ types spreadsheets_panel_types
 				texture = "gfx/interface/icons/trade_icons/export_focused.dds"
 			}
 			blockoverride "click" {
-				#enabled = "[And(IsValid( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
+				enabled = "[Goods.GetMarket.GetOwner.IsPlayer]"
 				onclick = "[Execute( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) )]"
 			}
 			blockoverride "setvisible" {
@@ -834,6 +866,174 @@ types spreadsheets_panel_types
 			blockoverride "setvisible_2" {
 				visible = "[IsValid( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) )]"
 			}
+		}
+	}
+
+	type ms_supply_network_information = vbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		minimumsize = {0 170}
+		maximumsize = {-1 200}
+		alwaystransparent = no
+
+		datacontext = "[AccessPlayer.AccessFirstMarket.GetOwner]"
+
+		default_header_2texts = {
+			blockoverride "size" {
+				layoutpolicy_horizontal = expanding
+				size = { 0 44 }
+			}
+			blockoverride "text1" {
+				text = "SUPPLY_NETWORK_HEADER"
+			}
+		}
+
+		widget = { size = { 1 5 }}
+
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			vbox = {
+				layoutstretchfactor_horizontal = 1
+				visible = "[GreaterThan_int32(Country.GetSupplyNetworkNumSeaNodes, '(int32)0')]"
+				alwaystransparent = no
+				spacing = 5
+				margin_left = 10
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					size = {0 35}
+					text = "NUM_CONVOYS_NO_DAMAGE"
+					tooltip = "NUM_CONVOYS_TOOLTIP"
+					visible = "[Not(Country.HasDamagedConvoys)]"
+					align = left|nobaseline
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					size = {0 35}
+					text = "NUM_CONVOYS_DAMAGE"
+					tooltip = "NUM_CONVOYS_TOOLTIP"
+					visible = "[Country.HasDamagedConvoys]"
+					align = left|nobaseline
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					size = {0 35}
+					text = "USED_CONVOYS"
+					tooltip = "USED_CONVOYS_TOOLTIP"
+					align = left|nobaseline
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					size = {0 35}
+					text = "NUM_SEA_NODES"
+					tooltip = "NUM_SEA_NODES_TOOLTIP"
+					align = left|nobaseline
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					size = {0 35}
+					text = "SUPPLY_NETWORK_STRENGTH"
+					tooltip = "SUPPLY_NETWORK_STRENGTH_TOOLTIP"
+					align = left|nobaseline
+				}
+			}
+
+			vbox = {
+				layoutstretchfactor_horizontal = 1
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				button = {
+					using = default_button
+					size = { 180 70 }
+					datacontext = "[GetBuildingType('building_port')]"
+					onclick = "[InformationPanelBar.OpenPanelTab('production_methods', 'development')]"
+					using = shimmer
+
+					tooltipwidget = {
+						FancyTooltip_BuildingType = {}
+					}
+
+					icon = {
+						texture = "gfx/interface/icons/production_method_icons/anchorage.dds"
+						size = { 60 60 }
+						position = { 5 0 }
+						parentanchor = left|vcenter
+					}
+					textbox = {
+						text = "MS_GOTO_PORT"
+						size = { 100% 50 }
+						parentanchor = vcenter
+						margin = { 10 0 }
+						elide = right
+						align = right|nobaseline
+					}
+				}
+
+				button = {
+					using = default_button
+					size = { 180 70 }
+					datacontext = "[GetBuildingType('building_port')]"
+					onclick = "[BuildingType.ActivateExpansionLens]"
+					using = shimmer
+
+					tooltipwidget = {
+						FancyTooltip_BuildingType = {}
+					}
+
+					icon = {
+						texture = "gfx/interface/icons/building_icons/building_port.dds"
+						size = { 60 60 }
+						position = { 5 0 }
+						parentanchor = left|vcenter
+					}
+					textbox = {
+						text = "MS_BUILD_PORT"
+						size = { 100% 50 }
+						parentanchor = vcenter
+						margin = { 10 0 }
+						elide = right
+						align = right|nobaseline
+					}
+					textbox = {
+						text = "#BOLD [BuildingType.GetNumAvailableStatesForBuilding|+]#!"
+						align = hcenter|nobaseline
+						parentanchor = left
+						using = fontsize_large
+						autoresize = yes
+						position = { 10 3 }
+
+						background = {
+							using = blurry_dark_background
+							margin = { 10 10 }
+						}
+					}
+				}
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			visible = "[Not(GreaterThan_int32(Country.GetSupplyNetworkNumSeaNodes, '(int32)0'))]"
+			spacing = 40
+
+			textbox = {
+				layoutpolicy_horizontal = expanding
+				text = "SUPPLY_NETWORK_EMPTY_STATE"
+				size = {0 @line_height}
+				align = nobaseline
+			}
+		}
+
+		widget = {
+			size = {0 15}
 		}
 	}
 }
