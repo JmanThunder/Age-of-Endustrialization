@@ -31,11 +31,6 @@ je_martial_law_pl = {
 		value = var:state_of_war_pl
 	}
 	
-
-	invalid = {
-		NOT = { is_subject_of = c:RUS }
-	}
-	
 	goal_add_value = {
 		add = 4
 	}
@@ -43,5 +38,24 @@ je_martial_law_pl = {
 	progressbar = yes
 
 	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_january_uprising = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	possible = {
+		c:POL = root
+		is_subject_of = c:RUS
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = POL_flv_events.2
+		}
+	}
+	
+	timeout = 1825
+	progressbar = yes
 	should_be_pinned_by_default = yes
 }

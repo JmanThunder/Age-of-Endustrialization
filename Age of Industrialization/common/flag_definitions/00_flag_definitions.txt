@@ -6563,7 +6563,16 @@ POL = { # Poland
 		trigger = { 
 			coa_def_russian_ensign_trigger = yes
 		}
-	}	
+	}
+	flag_definition = {
+		coa = POL_dictatorship_uprising
+		allow_overlord_canton = no		
+		subject_canton = POL
+		priority = 51
+		trigger = { 
+			scope:actor = { has_variable = pol_uprising }
+		}
+	}
 	flag_definition = {
 		coa = POL_absolute_monarchy
 		subject_canton = POL_absolute_monarchy

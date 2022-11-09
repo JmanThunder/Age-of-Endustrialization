@@ -367,7 +367,7 @@ je_sick_man_bureaucracy = {
 		custom_tooltip = je_sick_man_advance
 		change_variable = {
 			name = sick_man_var
-			add = 1
+			value = 1
 		}
 		remove_modifier = outmoded_bureaucracy
 	}
