@@ -3,7 +3,7 @@ Jman's todo list:
 		-Lighten the modifier of discrimination{DONE}
 		-Nerf qualifications(+ buff discrimination's effect on that){DONE}
 		-Remove Standard of Living buff to litteracy{DONE}
-		-Recolor Nations/Cultures to V2 and EU4 colors
+		-Recolor Nations/Cultures to V2 and EU4 colors(Cultures left)
 		-Look into Religous conversions and migrations{DONE} 
 
 	2.) Mapping

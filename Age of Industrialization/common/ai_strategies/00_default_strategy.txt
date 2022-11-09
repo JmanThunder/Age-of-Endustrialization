@@ -178,17 +178,9 @@ ai_strategy_default = {
 	
 	# Bravery multiplies the AI's estimation of its own strength, so at bravery 2 it believes its forces to be twice as strong as they actually are
 	# The AI wants to have at least parity in what it believes its own forces to be and what the enemy forces are, so at bravery 2 it's OK with only having 50% of the enemy strength
-	
-	bravery = { 
+	bravery = {
 		value = 1
 		
-		if = { ##Bravery Variable NFM
-			limit = {
-					has_variable = add_bravery_variable
-				}
-			add = 1000
-		}
-
 		# Braver against pariah countries
 		if = {
 			limit = {
@@ -251,24 +243,24 @@ ai_strategy_default = {
 		}
 
 		# USA should be confident against owners of their Manifest Destiny states
-	#	if = {
-	#		limit = {
-	#			has_journal_entry = je_manifest_destiny_mexico
-	#			scope:target_country = {
-	#				any_scope_state = {
-	#					OR = {
-	#						state_region = s:STATE_CALIFORNIA
-	#						state_region = s:STATE_NEVADA
-	#						state_region = s:STATE_UTAH
-	#						state_region = s:STATE_ARIZONA
-	#						state_region = s:STATE_NEW_MEXICO
-		#					state_region = s:STATE_TEXAS
-	#					}
-		#			}
-		#		}
-	#		}
-		#	add = 1
-	#	}		
+		if = {
+			limit = {
+				has_journal_entry = je_manifest_destiny_mexico
+				scope:target_country = {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_CALIFORNIA
+							state_region = s:STATE_NEVADA
+							state_region = s:STATE_UTAH
+							state_region = s:STATE_ARIZONA
+							state_region = s:STATE_NEW_MEXICO
+							state_region = s:STATE_TEXAS
+						}
+					}
+				}
+			}
+			add = 1
+		}		
 
 		# Ethiopian Thunderdome
 		if = {
@@ -375,25 +367,24 @@ ai_strategy_default = {
 		}
 
 		# USA should be extremely aggressive against owners of their Manifest Destiny states
-	#
-	#	if = {
-	#		limit = {
-	#			has_journal_entry = je_manifest_destiny_mexico
-	#			scope:target_country = {
-	#				any_scope_state = {
-	#					OR = {
-	#						state_region = s:STATE_CALIFORNIA
-	#						state_region = s:STATE_NEVADA
-	#						state_region = s:STATE_UTAH
-	#						state_region = s:STATE_ARIZONA
-	#						state_region = s:STATE_NEW_MEXICO
-	#						state_region = s:STATE_TEXAS
-	#					}
-	#				}
-	##			}
-	#		}
-	#		add = 100 #NFM TURNS OFF
-	#	}
+		if = {
+			limit = {
+				has_journal_entry = je_manifest_destiny_mexico
+				scope:target_country = {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_CALIFORNIA
+							state_region = s:STATE_NEVADA
+							state_region = s:STATE_UTAH
+							state_region = s:STATE_ARIZONA
+							state_region = s:STATE_NEW_MEXICO
+							state_region = s:STATE_TEXAS
+						}
+					}
+				}
+			}
+			add = 100
+		}
 
 		# Extra french aggression for Haiti renouncing debt payments
 		if = {
@@ -1329,7 +1320,7 @@ ai_strategy_default = {
 					NOT = { is_country_type = unrecognized }
 					scope:target_country = { NOT = { is_country_type = unrecognized } }
 				}
-				add = 10
+				add = 10	
 			}		
 	
 			if = {
@@ -1339,6 +1330,11 @@ ai_strategy_default = {
 					scope:target_country = { is_country_type = unrecognized }
 				}
 				add = 50
+				
+				if = {
+					limit = { has_technology_researched = civilizing_mission }
+					add = 50
+				}					
 			}			
 			
 			if = { 
@@ -1442,24 +1438,24 @@ ai_strategy_default = {
 				add = 200
 			}
 			
-		#	if = {
-		#		limit = {
-		#			has_journal_entry = je_manifest_destiny_mexico
-		#			scope:target_country = {
-		#				any_scope_state = {
-		#					OR = {
-		#						state_region = s:STATE_CALIFORNIA
-		#						state_region = s:STATE_NEVADA
-		#						state_region = s:STATE_UTAH
-		#						state_region = s:STATE_ARIZONA
-		#						state_region = s:STATE_NEW_MEXICO
-		#						state_region = s:STATE_TEXAS
-		##					}
-		#				}
-		#			}
-		#		}
-		#		add = -1000 #NFM TURNED OFF FOR EVENT WAR
-		#	}
+			if = {
+				limit = {
+					has_journal_entry = je_manifest_destiny_mexico
+					scope:target_country = {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_CALIFORNIA
+								state_region = s:STATE_NEVADA
+								state_region = s:STATE_UTAH
+								state_region = s:STATE_ARIZONA
+								state_region = s:STATE_NEW_MEXICO
+								state_region = s:STATE_TEXAS
+							}
+						}
+					}
+				}
+				add = 1000
+			}
 			
 			if = {
 				limit = {
@@ -1611,6 +1607,11 @@ ai_strategy_default = {
 					scope:target_country = { NOT = { is_subject_of = root }	}
 				}
 				add = 25
+				
+				if = {
+					limit = { has_technology_researched = civilizing_mission }
+					add = 25
+				}					
 			}			
 			
 			if = {
@@ -1783,7 +1784,7 @@ ai_strategy_default = {
 
 					if = {
 						limit = { 
-							NOT = { has_strategic_adjacency = scope:target_state } 
+							NOT = { has_strategic_land_adjacency = scope:target_state } 
 							scope:target_state = { has_port = no }
 						}
 						multiply = 0.5
@@ -1791,17 +1792,24 @@ ai_strategy_default = {
 					
 					if = {
 						limit = {
+							has_strategic_land_adjacency = scope:target_country
+							NOT = { has_strategic_land_adjacency = scope:target_state }
+						}
+						multiply = 0.1
+					}					
+					else_if = {
+						limit = {
 							is_adjacent = scope:target_country
 							NOT = { is_adjacent = scope:target_state }
 						}
 						multiply = 0.5
-					}				
+					}															
 				
 					if = {
 						limit = {
 							scope:target_state = { is_homeland_of_country_cultures = root }
 						}
-						multiply = 1.25
+						multiply = 1.5
 					}	
 				}
 			}	
@@ -1832,13 +1840,29 @@ ai_strategy_default = {
 						divide = 100000
 						max = 10						
 					}
+					
+					if = {
+						limit = { 
+							NOT = { has_strategic_land_adjacency = scope:target_state } 
+							scope:target_state = { has_port = no }
+						}
+						multiply = 0.5
+					}									
 
 					if = {
 						limit = {
+							has_strategic_land_adjacency = scope:target_country
+							NOT = { has_strategic_land_adjacency = scope:target_state }
+						}
+						multiply = 0.1
+					}					
+					else_if = {
+						limit = {
+							is_adjacent = scope:target_country
 							NOT = { is_adjacent = scope:target_state }
 						}
 						multiply = 0.5
-					}	
+					}							
 
 					if = {
 						limit = {
@@ -1898,21 +1922,21 @@ ai_strategy_default = {
 				add = 50
 			}
 
-		#	if = {
-		#		limit = {
-		#			has_journal_entry = je_manifest_destiny_mexico
-		#			scope:target_state = {
-		#				OR = {
-		#					state_region = s:STATE_CALIFORNIA
-		#					state_region = s:STATE_NEVADA
-		#					state_region = s:STATE_UTAH
-		#					state_region = s:STATE_ARIZONA
-		#					state_region = s:STATE_NEW_MEXICO
-		#					state_region = s:STATE_TEXAS
-		##				}
-		#			}
-		#		}
-		#		add = 50 #NFM TURNED OFF FOR EVENT WAR
+			if = {
+				limit = {
+					has_journal_entry = je_manifest_destiny_mexico
+					scope:target_state = {
+						OR = {
+							state_region = s:STATE_CALIFORNIA
+							state_region = s:STATE_NEVADA
+							state_region = s:STATE_UTAH
+							state_region = s:STATE_ARIZONA
+							state_region = s:STATE_NEW_MEXICO
+							state_region = s:STATE_TEXAS
+						}
+					}
+				}
+				add = 50
 			}
 
 			if = {
@@ -2631,13 +2655,8 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					country_rank = rank_value:unrecognized_major_power
-					navy_size >= 50
-					army_size >= 200
-					OR = {
-						has_strategy = ai_strategy_nationalist_agenda
-						has_strategy = ai_strategy_progressive_agenda
-						has_strategy = ai_strategy_egalitarian_agenda
-					}
+					navy_size >= 20
+					army_size >= 80
 				}
 				add = 100
 			}

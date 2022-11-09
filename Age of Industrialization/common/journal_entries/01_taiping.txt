@@ -8,6 +8,17 @@
 	possible = {
 		is_subject = no
 		any_scope_state = {
+    		state_region = { is_homeland = cu:han NOT = { is_homeland = cu:manchu } }
+			OR = {
+				any_neighbouring_state = {
+					is_treaty_port = yes
+					owner = {
+						religion = rel:protestant
+					}
+				}
+				is_coastal = yes
+			}
+			any_neighbouring_state = { state_region = { is_homeland = cu:han NOT = { is_homeland = cu:manchu } } }
 			is_incorporated = yes
 			any_scope_pop = {
 				has_pop_religion = protestant
@@ -20,6 +31,17 @@
 	immediate = {
 		random_scope_state = {
 			limit = {
+    			state_region = { is_homeland = cu:han NOT = { is_homeland = cu:manchu } }
+				OR = {
+					any_neighbouring_state = {
+						is_treaty_port = yes
+						owner = {
+							religion = rel:protestant
+						}
+					}
+					is_coastal = yes
+				}
+				any_neighbouring_state = { state_region = { is_homeland = cu:han NOT = { is_homeland = cu:manchu } } }
 				is_incorporated = yes
 				any_scope_pop = {
 					has_pop_religion = protestant

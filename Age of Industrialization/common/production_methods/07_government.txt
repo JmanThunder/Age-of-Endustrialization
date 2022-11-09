@@ -16,6 +16,11 @@
 			country_convoys_capacity_add = 10
 		}
 	}	
+state_modifiers = {
+		workforce_scaled = {
+			state_construction_mult = 0.005
+		}
+	}
 	
 	ai_value = 500 # Equivalent to 50 convoys
 }			
@@ -42,6 +47,7 @@ pm_basic_port = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 5
+			state_construction_mult = 0.01
 		}
 	}
 }		
@@ -74,6 +80,7 @@ pm_industrial_port = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 7.5
+			state_construction_mult = 0.02
 		}
 	}	
 }
@@ -105,6 +112,7 @@ pm_modern_port = {
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 10
+			state_construction_mult = 0.03
 		}
 	}
 }				
