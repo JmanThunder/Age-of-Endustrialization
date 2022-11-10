@@ -4,7 +4,7 @@
 	center_building_mesh = "generic_rural_forestryhub_01_mesh"
 	
 	min_residential_buildings = 2
-	max_residential_buildings = 50
+	max_residential_buildings = 75
 	max_residence_points = 100
 	center_building_size = { 2 2 }
 	
@@ -50,4 +50,3 @@
 	building_rubber_plantation = {
 		"rubber_lodge_01_mesh"
 	}
-}

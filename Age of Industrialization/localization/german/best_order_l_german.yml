@@ -1,0 +1,124 @@
+﻿l_german:
+Best_order:0 "Ordensvasall"
+ Best_order_action_name:0 "Vasallen bestellen"
+ Best_order_desc:0 "Befiehl Vasallen, Gebäude zu bauen"
+
+ b_o:0 "Befiehl Vasallen, Gebäude zu bauen"
+
+ 
+ best_order_events.4.t:0 "Befehlsmenü öffnen"
+ best_order_events.4.d:0 "Gebiet auswählen"
+
+ best_order_events.5.t:0 "Wähle eine Region"
+ best_order_events.6.t:0 "Bestellungen zum Veröffentlichen auswählen"
+
+ 
+ bo.1:0 "Kohlenmine bauen"
+ bo.2:0 "Eisenmine bauen"
+ bo.3:0 "Bleimine bauen"
+ bo.4:0 „Schwefelmine bauen“
+ bo.5:0 "Baue eine Opiumplantage"
+ bo.6:0 „Baue eine Zuckerplantage“
+ bo.7:0 "Baue eine Seidenplantage"
+ bo.8:0 „Baue eine Kaffeeplantage“
+ bo.9:0 „Baue eine Baumwollplantage“
+ bo.10:0 „Baue eine Farbstoffplantage“
+ bo.11:0 „Baue eine Teeplantage“
+ bo.12:0 „Baue eine Tabakplantage“
+ bo.13:0 „Baue eine Bananenplantage“
+ bo.14:0 „Baue ein Sägewerk“
+ bo.15:0 „Baue eine Gummiplantage“
+ bo.16:0 "Baue ein Angeldock"
+ bo.17:0 „Baue eine Walfangstation“
+ bo.18:0 „Errichten von Ölquellen“
+ bo.19:0 "Baue eine Eisenbahn"
+ 
+
+ best_order_events.7.t:0 "Gebäude auf Befehl des Overlords"
+ best_order_events.7.a:0 "OK"
+ Best_order_action_notification_name:0 "Befehl des Overlords"
+ Best_order_action_notification_desc:0 "Der Overlord hat uns befohlen, ein Gebäude zu bauen"
+ 
+ 
+ choose.1:0 "Befiehl Vasallen, Gebäude zu bauen"
+ add_building.t:0 "Gebäudetypauswahl"
+ add.1:0 "Landwirtschaftliche Gebäude"
+ add.2:0 "Bergbaugebäude"
+ add.3:0 "Plantagengebäude"
+ add.4:0 "Fabrikgebäude (Diese Funktion wird nicht hergestellt)"
+ add.5:0 "Regierungsgebäude"
+ add.6:0 "Infrastruktur"
+ 
+ agro.t:0 "Wähle ein landwirtschaftliches Gebäude"
+ mines.t:0 "Wähle ein Bergbaugebäude"
+ plantation.t:0 "Wähle eine Plantage"
+ factory.t:0 "Wähle eine Fabrik"
+ gover.t:0 "Wähle ein Regierungsgebäude"
+ cons.t:0 "Wähle eine Infrastruktur"
+ 
+ best_choose_amount:0 "Wählen Sie die zu erstellende Menge"
+ choose_1:0 "Build 1"
+ choose_5:0 "Build 5"
+ choose_10:0 "Build 10"
+ 
+
+ag.1:0 "Roggenhof"
+ag.2:0 "Weizenfarm"
+ag.3:0 "Reisfarm"
+ag.4:0 "Maisfarm"
+ag.5:0 "Verschiedenes Valley Farm"
+ag.6:0 "Viehfarm"
+ag.7:0 "Holzplatz"
+ag.8:0 "Angelpier"
+ag.9:0 "Walfangstation"
+ 
+mines.1:0 "Kohlenminen"
+mines.2:0 "Eisenerz"
+mines.3:0 "Bleimine"
+mines.4:0 "Schwefelerz"
+mines.5:0 "Goldminen"
+Minen.6:0 "Ölquellen"
+
+pla.1:0 "Kaffeeplantage"
+pla.2:0 "Baumwollplantage"
+pla.3:0 "Färbeplantage"
+pla.4:0 "Opiumplantagen"
+pla.5:0 "Teeplantage"
+Pla.6:0 "Tabakplantage"
+pla.7:0 "Zuckerplantage"
+Pla.8:0 "Bananenplantage"
+Pla.9:0 "Seidenplantage"
+pla.10:0 "Gummiplantage"
+
+gover.1:0 "Verwaltung"
+gover.2:0 "Universität"
+
+cons.1:0 "Port"
+Nachteile 2:0 "Eisenbahn"
+cons.3:0 "Bauabteilung"
+
+ban_fac.t:0 "Diesem Land verbieten, Industrie zu entwickeln"
+ban_fac.1:0 "Bestätigung Industrieverbot"
+best_modifiers_1:0 "Industrieverbot von Overlord"
+
+
+
+
+choose.2:0 "Gewerbeverbot"
+choose.3:0 "Arbeit! Arbeit! Arbeit!"
+choose.4:0 "Bitte bewerten Sie mich, wenn Sie möchten, dass ich weitere neue Funktionen mache."
+choose.5:0 "Bitte bewerten Sie mich, wenn Sie möchten, dass ich weitere neue Funktionen mache."
+choose.6:0 "Bitte bewerten Sie mich, wenn Sie möchten, dass ich weitere neue Funktionen mache."
+
+time_choose.t:0 "Wie lange sollen sie jeden Tag arbeiten?"
+time.1:0 "8 Stunden sind genug!"
+time.2:0 "10 Stunden sind genau richtig!"
+time.3:0 "Wer 12 Stunden am Tag arbeitet, ist am glücklichsten!"
+time.4:0 "Sie müssen 14 Stunden am Tag arbeiten! Muss!"
+
+time_choose_8.t:0 "Menschen arbeiten 8 Stunden am Tag"
+time_choose_10.t:0 "Menschen arbeiten 10 Stunden am Tag"
+time_choose_12.t:0 "Menschen arbeiten 12 Stunden am Tag"
+time_choose_14.t:0 "Menschen arbeiten 14 Stunden am Tag"
+
+modifier_building_group_bg_rubber_throughput_mult:0 "Durchsatz der Gummiplantage"

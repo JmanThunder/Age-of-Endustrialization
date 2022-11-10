@@ -24,6 +24,7 @@
 	
 	pop_potential = {
 		pop_has_primary_culture = yes
+		pop_is_discriminated = no
 		NOR = {
 			is_pop_type = aristocrats
 			is_pop_type = capitalists
@@ -146,7 +147,7 @@
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
-		value = 0.60
+		value = 0.25
 		if = {
 			limit = {
 				exists = scope:character

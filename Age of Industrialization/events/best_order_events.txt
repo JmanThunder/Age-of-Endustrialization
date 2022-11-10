@@ -1,0 +1,5483 @@
+﻿namespace = best_order
+
+best_order.4 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+	}
+
+	title = best_order_events.4.t
+	desc = best_order_events.4.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+		scope:target_country = {
+			every_scope_state = {
+				if = {
+					limit = {
+						region = {
+							NOT = {
+								root = {
+									is_target_in_variable_list = {
+										name = best_order_strategic_regions
+										target = prev
+									}
+								}
+							}
+						}
+					}
+					region = {
+						root = {
+							add_to_variable_list = {
+								name = best_order_strategic_regions
+								target = prev
+							}
+						}
+					}
+				}
+			}
+		}
+		every_in_list = {
+			variable = best_order_strategic_regions
+			if = { limit = { NOT = { exists = scope:best_order_strategic_region_1 } } save_scope_as = best_order_strategic_region_1 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_2 } } save_scope_as = best_order_strategic_region_2 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_3 } } save_scope_as = best_order_strategic_region_3 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_4 } } save_scope_as = best_order_strategic_region_4 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_5 } } save_scope_as = best_order_strategic_region_5 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_6 } } save_scope_as = best_order_strategic_region_6 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_7 } } save_scope_as = best_order_strategic_region_7 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_8 } } save_scope_as = best_order_strategic_region_8 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_9 } } save_scope_as = best_order_strategic_region_9 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_10 } } save_scope_as = best_order_strategic_region_10 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_11 } } save_scope_as = best_order_strategic_region_11 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_12 } } save_scope_as = best_order_strategic_region_12 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_13 } } save_scope_as = best_order_strategic_region_13 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_14 } } save_scope_as = best_order_strategic_region_14 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_15 } } save_scope_as = best_order_strategic_region_15 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_16 } } save_scope_as = best_order_strategic_region_16 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_17 } } save_scope_as = best_order_strategic_region_17 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_18 } } save_scope_as = best_order_strategic_region_18 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_19 } } save_scope_as = best_order_strategic_region_19 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_20 } } save_scope_as = best_order_strategic_region_20 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_21 } } save_scope_as = best_order_strategic_region_21 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_22 } } save_scope_as = best_order_strategic_region_22 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_23 } } save_scope_as = best_order_strategic_region_23 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_24 } } save_scope_as = best_order_strategic_region_24 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_25 } } save_scope_as = best_order_strategic_region_25 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_26 } } save_scope_as = best_order_strategic_region_26 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_27 } } save_scope_as = best_order_strategic_region_27 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_28 } } save_scope_as = best_order_strategic_region_28 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_29 } } save_scope_as = best_order_strategic_region_29 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_30 } } save_scope_as = best_order_strategic_region_30 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_31 } } save_scope_as = best_order_strategic_region_31 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_32 } } save_scope_as = best_order_strategic_region_32 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_33 } } save_scope_as = best_order_strategic_region_33 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_34 } } save_scope_as = best_order_strategic_region_34 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_35 } } save_scope_as = best_order_strategic_region_35 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_36 } } save_scope_as = best_order_strategic_region_36 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_37 } } save_scope_as = best_order_strategic_region_37 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_38 } } save_scope_as = best_order_strategic_region_38 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_39 } } save_scope_as = best_order_strategic_region_39 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_40 } } save_scope_as = best_order_strategic_region_40 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_41 } } save_scope_as = best_order_strategic_region_41 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_42 } } save_scope_as = best_order_strategic_region_42 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_43 } } save_scope_as = best_order_strategic_region_43 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_44 } } save_scope_as = best_order_strategic_region_44 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_45 } } save_scope_as = best_order_strategic_region_45 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_46 } } save_scope_as = best_order_strategic_region_46 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_47 } } save_scope_as = best_order_strategic_region_47 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_48 } } save_scope_as = best_order_strategic_region_48 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_49 } } save_scope_as = best_order_strategic_region_49 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_50 } } save_scope_as = best_order_strategic_region_50 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_51 } } save_scope_as = best_order_strategic_region_51 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_52 } } save_scope_as = best_order_strategic_region_52 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_53 } } save_scope_as = best_order_strategic_region_53 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_54 } } save_scope_as = best_order_strategic_region_54 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_55 } } save_scope_as = best_order_strategic_region_55 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_56 } } save_scope_as = best_order_strategic_region_56 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_57 } } save_scope_as = best_order_strategic_region_57 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_58 } } save_scope_as = best_order_strategic_region_58 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_59 } } save_scope_as = best_order_strategic_region_59 } else = { if = { limit = { NOT = { exists = scope:best_order_strategic_region_60 } } save_scope_as = best_order_strategic_region_60 } else = { } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } }
+		}
+		clear_variable_list = best_order_strategic_regions
+	}
+
+	option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_1').GetName]" trigger = { exists = scope:best_order_strategic_region_1 } scope:best_order_strategic_region_1 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_2').GetName]" trigger = { exists = scope:best_order_strategic_region_2 } scope:best_order_strategic_region_2 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_3').GetName]" trigger = { exists = scope:best_order_strategic_region_3 } scope:best_order_strategic_region_3 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_4').GetName]" trigger = { exists = scope:best_order_strategic_region_4 } scope:best_order_strategic_region_4 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_5').GetName]" trigger = { exists = scope:best_order_strategic_region_5 } scope:best_order_strategic_region_5 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_6').GetName]" trigger = { exists = scope:best_order_strategic_region_6 } scope:best_order_strategic_region_6 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_7').GetName]" trigger = { exists = scope:best_order_strategic_region_7 } scope:best_order_strategic_region_7 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_8').GetName]" trigger = { exists = scope:best_order_strategic_region_8 } scope:best_order_strategic_region_8 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_9').GetName]" trigger = { exists = scope:best_order_strategic_region_9 } scope:best_order_strategic_region_9 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_10').GetName]" trigger = { exists = scope:best_order_strategic_region_10 } scope:best_order_strategic_region_10 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_11').GetName]" trigger = { exists = scope:best_order_strategic_region_11 } scope:best_order_strategic_region_11 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_12').GetName]" trigger = { exists = scope:best_order_strategic_region_12 } scope:best_order_strategic_region_12 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_13').GetName]" trigger = { exists = scope:best_order_strategic_region_13 } scope:best_order_strategic_region_13 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_14').GetName]" trigger = { exists = scope:best_order_strategic_region_14 } scope:best_order_strategic_region_14 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_15').GetName]" trigger = { exists = scope:best_order_strategic_region_15 } scope:best_order_strategic_region_15 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_16').GetName]" trigger = { exists = scope:best_order_strategic_region_16 } scope:best_order_strategic_region_16 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_17').GetName]" trigger = { exists = scope:best_order_strategic_region_17 } scope:best_order_strategic_region_17 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_18').GetName]" trigger = { exists = scope:best_order_strategic_region_18 } scope:best_order_strategic_region_18 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_19').GetName]" trigger = { exists = scope:best_order_strategic_region_19 } scope:best_order_strategic_region_19 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_20').GetName]" trigger = { exists = scope:best_order_strategic_region_20 } scope:best_order_strategic_region_20 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_21').GetName]" trigger = { exists = scope:best_order_strategic_region_21 } scope:best_order_strategic_region_21 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_22').GetName]" trigger = { exists = scope:best_order_strategic_region_22 } scope:best_order_strategic_region_22 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_23').GetName]" trigger = { exists = scope:best_order_strategic_region_23 } scope:best_order_strategic_region_23 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_24').GetName]" trigger = { exists = scope:best_order_strategic_region_24 } scope:best_order_strategic_region_24 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_25').GetName]" trigger = { exists = scope:best_order_strategic_region_25 } scope:best_order_strategic_region_25 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_26').GetName]" trigger = { exists = scope:best_order_strategic_region_26 } scope:best_order_strategic_region_26 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_27').GetName]" trigger = { exists = scope:best_order_strategic_region_27 } scope:best_order_strategic_region_27 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_28').GetName]" trigger = { exists = scope:best_order_strategic_region_28 } scope:best_order_strategic_region_28 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_29').GetName]" trigger = { exists = scope:best_order_strategic_region_29 } scope:best_order_strategic_region_29 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_30').GetName]" trigger = { exists = scope:best_order_strategic_region_30 } scope:best_order_strategic_region_30 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_31').GetName]" trigger = { exists = scope:best_order_strategic_region_31 } scope:best_order_strategic_region_31 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_32').GetName]" trigger = { exists = scope:best_order_strategic_region_32 } scope:best_order_strategic_region_32 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_33').GetName]" trigger = { exists = scope:best_order_strategic_region_33 } scope:best_order_strategic_region_33 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_34').GetName]" trigger = { exists = scope:best_order_strategic_region_34 } scope:best_order_strategic_region_34 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_35').GetName]" trigger = { exists = scope:best_order_strategic_region_35 } scope:best_order_strategic_region_35 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_36').GetName]" trigger = { exists = scope:best_order_strategic_region_36 } scope:best_order_strategic_region_36 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_37').GetName]" trigger = { exists = scope:best_order_strategic_region_37 } scope:best_order_strategic_region_37 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_38').GetName]" trigger = { exists = scope:best_order_strategic_region_38 } scope:best_order_strategic_region_38 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_39').GetName]" trigger = { exists = scope:best_order_strategic_region_39 } scope:best_order_strategic_region_39 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_40').GetName]" trigger = { exists = scope:best_order_strategic_region_40 } scope:best_order_strategic_region_40 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_41').GetName]" trigger = { exists = scope:best_order_strategic_region_41 } scope:best_order_strategic_region_41 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_42').GetName]" trigger = { exists = scope:best_order_strategic_region_42 } scope:best_order_strategic_region_42 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_43').GetName]" trigger = { exists = scope:best_order_strategic_region_43 } scope:best_order_strategic_region_43 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_44').GetName]" trigger = { exists = scope:best_order_strategic_region_44 } scope:best_order_strategic_region_44 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_45').GetName]" trigger = { exists = scope:best_order_strategic_region_45 } scope:best_order_strategic_region_45 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_46').GetName]" trigger = { exists = scope:best_order_strategic_region_46 } scope:best_order_strategic_region_46 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_47').GetName]" trigger = { exists = scope:best_order_strategic_region_47 } scope:best_order_strategic_region_47 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_48').GetName]" trigger = { exists = scope:best_order_strategic_region_48 } scope:best_order_strategic_region_48 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_49').GetName]" trigger = { exists = scope:best_order_strategic_region_49 } scope:best_order_strategic_region_49 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_50').GetName]" trigger = { exists = scope:best_order_strategic_region_50 } scope:best_order_strategic_region_50 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_51').GetName]" trigger = { exists = scope:best_order_strategic_region_51 } scope:best_order_strategic_region_51 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_52').GetName]" trigger = { exists = scope:best_order_strategic_region_52 } scope:best_order_strategic_region_52 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_53').GetName]" trigger = { exists = scope:best_order_strategic_region_53 } scope:best_order_strategic_region_53 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_54').GetName]" trigger = { exists = scope:best_order_strategic_region_54 } scope:best_order_strategic_region_54 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_55').GetName]" trigger = { exists = scope:best_order_strategic_region_55 } scope:best_order_strategic_region_55 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_56').GetName]" trigger = { exists = scope:best_order_strategic_region_56 } scope:best_order_strategic_region_56 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_57').GetName]" trigger = { exists = scope:best_order_strategic_region_57 } scope:best_order_strategic_region_57 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_58').GetName]" trigger = { exists = scope:best_order_strategic_region_58 } scope:best_order_strategic_region_58 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_59').GetName]" trigger = { exists = scope:best_order_strategic_region_59 } scope:best_order_strategic_region_59 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } } option = { name = "[SCOPE.sStrategicRegion('best_order_strategic_region_60').GetName]" trigger = { exists = scope:best_order_strategic_region_60 } scope:best_order_strategic_region_60 = { save_scope_as = best_order_chosen_region } trigger_event = { id = best_order.5 popup = yes } }
+	option = {
+		name = CANCEL
+		default_option = yes
+		
+	}
+}
+best_order.5 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = scope:target_country
+		exists = scope:best_order_chosen_region
+	}
+
+	title = best_order_events.5.t
+	desc = best_order_events.5.t
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	immediate = {
+		
+			
+		scope:target_country = {
+			every_scope_state = {
+				limit = {
+					region = scope:best_order_chosen_region
+				}
+				if = { limit = { NOT = { exists = scope:best_order_suitable_state_1 } } save_scope_as = best_order_suitable_state_1 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_2 } } save_scope_as = best_order_suitable_state_2 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_3 } } save_scope_as = best_order_suitable_state_3 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_4 } } save_scope_as = best_order_suitable_state_4 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_5 } } save_scope_as = best_order_suitable_state_5 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_6 } } save_scope_as = best_order_suitable_state_6 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_7 } } save_scope_as = best_order_suitable_state_7 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_8 } } save_scope_as = best_order_suitable_state_8 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_9 } } save_scope_as = best_order_suitable_state_9 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_10 } } save_scope_as = best_order_suitable_state_10 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_11 } } save_scope_as = best_order_suitable_state_11 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_12 } } save_scope_as = best_order_suitable_state_12 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_13 } } save_scope_as = best_order_suitable_state_13 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_14 } } save_scope_as = best_order_suitable_state_14 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_15 } } save_scope_as = best_order_suitable_state_15 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_16 } } save_scope_as = best_order_suitable_state_16 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_17 } } save_scope_as = best_order_suitable_state_17 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_18 } } save_scope_as = best_order_suitable_state_18 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_19 } } save_scope_as = best_order_suitable_state_19 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_20 } } save_scope_as = best_order_suitable_state_20 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_21 } } save_scope_as = best_order_suitable_state_21 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_22 } } save_scope_as = best_order_suitable_state_22 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_23 } } save_scope_as = best_order_suitable_state_23 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_24 } } save_scope_as = best_order_suitable_state_24 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_25 } } save_scope_as = best_order_suitable_state_25 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_26 } } save_scope_as = best_order_suitable_state_26 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_27 } } save_scope_as = best_order_suitable_state_27 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_28 } } save_scope_as = best_order_suitable_state_28 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_29 } } save_scope_as = best_order_suitable_state_29 } else = { if = { limit = { NOT = { exists = scope:best_order_suitable_state_30 } } save_scope_as = best_order_suitable_state_30 } else = { } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } 
+			}
+		}
+	}
+
+	option = { name = "[SCOPE.sState('best_order_suitable_state_1').GetName]" trigger = { exists = scope:best_order_suitable_state_1 } scope:best_order_suitable_state_1 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_2').GetName]" trigger = { exists = scope:best_order_suitable_state_2 } scope:best_order_suitable_state_2 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_3').GetName]" trigger = { exists = scope:best_order_suitable_state_3 } scope:best_order_suitable_state_3 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_4').GetName]" trigger = { exists = scope:best_order_suitable_state_4 } scope:best_order_suitable_state_4 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_5').GetName]" trigger = { exists = scope:best_order_suitable_state_5 } scope:best_order_suitable_state_5 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_6').GetName]" trigger = { exists = scope:best_order_suitable_state_6 } scope:best_order_suitable_state_6 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_7').GetName]" trigger = { exists = scope:best_order_suitable_state_7 } scope:best_order_suitable_state_7 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_8').GetName]" trigger = { exists = scope:best_order_suitable_state_8 } scope:best_order_suitable_state_8 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_9').GetName]" trigger = { exists = scope:best_order_suitable_state_9 } scope:best_order_suitable_state_9 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_10').GetName]" trigger = { exists = scope:best_order_suitable_state_10 } scope:best_order_suitable_state_10 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_11').GetName]" trigger = { exists = scope:best_order_suitable_state_11 } scope:best_order_suitable_state_11 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_12').GetName]" trigger = { exists = scope:best_order_suitable_state_12 } scope:best_order_suitable_state_12 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_13').GetName]" trigger = { exists = scope:best_order_suitable_state_13 } scope:best_order_suitable_state_13 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_14').GetName]" trigger = { exists = scope:best_order_suitable_state_14 } scope:best_order_suitable_state_14 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_15').GetName]" trigger = { exists = scope:best_order_suitable_state_15 } scope:best_order_suitable_state_15 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_16').GetName]" trigger = { exists = scope:best_order_suitable_state_16 } scope:best_order_suitable_state_16 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_17').GetName]" trigger = { exists = scope:best_order_suitable_state_17 } scope:best_order_suitable_state_17 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_18').GetName]" trigger = { exists = scope:best_order_suitable_state_18 } scope:best_order_suitable_state_18 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_19').GetName]" trigger = { exists = scope:best_order_suitable_state_19 } scope:best_order_suitable_state_19 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_20').GetName]" trigger = { exists = scope:best_order_suitable_state_20 } scope:best_order_suitable_state_20 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_21').GetName]" trigger = { exists = scope:best_order_suitable_state_21 } scope:best_order_suitable_state_21 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_22').GetName]" trigger = { exists = scope:best_order_suitable_state_22 } scope:best_order_suitable_state_22 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_23').GetName]" trigger = { exists = scope:best_order_suitable_state_23 } scope:best_order_suitable_state_23 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_24').GetName]" trigger = { exists = scope:best_order_suitable_state_24 } scope:best_order_suitable_state_24 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_25').GetName]" trigger = { exists = scope:best_order_suitable_state_25 } scope:best_order_suitable_state_25 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_26').GetName]" trigger = { exists = scope:best_order_suitable_state_26 } scope:best_order_suitable_state_26 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_27').GetName]" trigger = { exists = scope:best_order_suitable_state_27 } scope:best_order_suitable_state_27 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_28').GetName]" trigger = { exists = scope:best_order_suitable_state_28 } scope:best_order_suitable_state_28 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_29').GetName]" trigger = { exists = scope:best_order_suitable_state_29 } scope:best_order_suitable_state_29 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } option = { name = "[SCOPE.sState('best_order_suitable_state_30').GetName]" trigger = { exists = scope:best_order_suitable_state_30 } scope:best_order_suitable_state_30 = { save_scope_as = best_order_chosen_state } trigger_event = { id = best_order.6 popup = yes } } 
+	option = {
+		name = CANCEL
+		default_option = yes
+		
+	}
+}
+best_order.6 = {
+	type = country_event #命令选择菜单
+	placement = root
+	
+
+	trigger = {
+		exists = scope:target_country
+		exists = scope:best_order_chosen_state
+	}
+		title = best_order_events.6.t
+		desc = best_order_events.6.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+	
+		option = { 
+		default_option = yes
+		name = choose.1
+			
+		trigger_event = { id = best_order.26 popup = yes }
+			
+		}
+		option = { 
+		
+		name = choose.2
+		 
+		trigger_event = { id = best_order.27 popup = yes }
+			
+		}
+		option = { 
+	
+		name = choose.3
+		
+			  trigger_event = { id = best_order.28 popup = yes }
+			
+		}
+		option = { 
+		
+		name = choose.4
+
+			  trigger_event = { id = best_order.29 popup = yes }
+	
+		}
+		option = { 
+	
+		name = choose.5
+		
+			  trigger_event = { id = best_order.30 popup = yes }
+			
+		}
+		option = { 
+		
+		name = choose.6
+		
+			  trigger_event = { id = best_order.31 popup = yes }
+			
+		}
+		option = {
+		default_option = yes
+		name = CANCEL
+		}
+}
+
+
+best_order.26 = {
+	type = country_event  #建筑类型选择
+	placement = root
+	
+
+		title = add_building.t
+		desc = add_building.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+	
+	option = { 
+		
+		name = add.1
+	
+			  trigger_event = { id = best_order.33 popup = yes }
+		
+		}
+	option = { 
+		
+		name = add.2
+		
+			  trigger_event = { id = best_order.34 popup = yes }
+			
+		}
+	option = { 
+		
+		name = add.3
+	
+			  trigger_event = { id = best_order.35 popup = yes }
+			
+		}
+	option = { 
+		
+		name = add.4
+		
+			  trigger_event = { id = best_order.36 popup = yes }
+			
+		}
+	option = { 
+		
+		name = add.5
+		
+			  trigger_event = { id = best_order.37 popup = yes }
+			
+		}
+	option = { 
+		
+		name = add.6
+		
+			  trigger_event = { id = best_order.38 popup = yes }
+			
+		}
+	option = {
+		default_option = yes
+		name = CANCEL
+		}
+}
+
+best_order.27 = {
+	type = country_event  #禁止工业
+	placement = root
+	
+
+		title = ban_fac.t
+		desc = ban_fac.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+	option = {
+		name = ban_fac.1
+		scope:target_country = {
+			  trigger_event = { id = best_order.159 popup = no }
+	    }
+		change_relations = {
+		 country = scope:target_country
+		   value = -100
+	    }
+		}
+			  
+	option = {
+		default_option = yes
+		name = CANCEL
+		}
+}
+best_order.28 = {
+	type = country_event    #工作时间选择
+	placement = root
+	
+
+		title = time_choose.t
+		desc = time_choose.t
+		
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+	    
+		option = { 
+		
+		name = time.1
+				scope:target_country = {
+			  trigger_event = { id = best_order.160 popup = no }
+				}
+		}
+				option = { 
+		
+		name = time.2
+		change_relations = {
+		 country = scope:target_country
+		   value = -20
+		   }
+				scope:target_country = {
+			  trigger_event = { id = best_order.161 popup = no }
+				}
+		}
+		option = { 
+		
+		name = time.3
+		change_relations = {
+		 country = scope:target_country
+		   value = -40
+		   }
+				scope:target_country = {
+			  trigger_event = { id = best_order.162 popup = no }
+				}
+		}
+		 option = {
+		 name = time.4
+		 change_relations = {
+		 country = scope:target_country
+		   value = -60
+		   }
+				scope:target_country = {
+				 trigger_event = { id = best_order.163 popup=no}
+				 
+				 }
+				 }
+		option = {
+		default_option = yes
+	    name = CANCEL
+	    }
+}
+
+best_order.33 = {
+	type = country_event    #农业建筑选择
+	placement = root
+	
+
+		title = agro.t
+		desc = agro.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = ag.1
+			
+			  trigger_event = { id = best_order.39 popup = yes }
+			
+		}
+				option = { 
+		
+		name = ag.2
+			
+			  trigger_event = { id = best_order.40 popup = yes }
+			
+		}
+				option = { 
+		
+		name = ag.3
+	
+			  trigger_event = { id = best_order.41 popup = yes }
+			
+		}
+				option = { 
+		
+		name = ag.4
+			
+			  trigger_event = { id = best_order.42 popup = yes }
+			
+		}
+				option = { 
+	
+		name = ag.5
+		
+			  trigger_event = { id = best_order.43 popup = yes }
+			
+		}
+				option = { 
+		
+		name = ag.6
+		
+			  trigger_event = { id = best_order.44 popup = yes }
+			
+		}
+				option = { 
+	
+		name = ag.7
+			
+			  trigger_event = { id = best_order.45 popup = yes }
+			
+		}
+		option = { 
+	
+		name = ag.8
+			
+			  trigger_event = { id = best_order.151 popup = yes }
+			
+		}
+		option = { 
+	
+		name = ag.9
+			
+			  trigger_event = { id = best_order.152 popup = yes }
+			
+		}
+		option = {
+		default_option = yes
+	    name = CANCEL
+	}
+}		
+
+best_order.34 = {
+	type = country_event    #矿业建筑选择
+	placement = root
+	
+
+		title = mines.t
+		desc = mines.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = mines.1
+			
+			  trigger_event = { id = best_order.67 popup = yes }
+			
+		}
+				option = { 
+		
+		name = mines.2
+			
+			  trigger_event = { id = best_order.68 popup = yes }
+			
+		}
+				option = { 
+		
+		name = mines.3
+	
+			  trigger_event = { id = best_order.69 popup = yes }
+			
+		}
+				option = { 
+		
+		name = mines.4
+			
+			  trigger_event = { id = best_order.70 popup = yes }
+			
+		}
+				option = { 
+	
+		name = mines.5
+		
+			  trigger_event = { id = best_order.71 popup = yes }
+			
+		}
+				option = { 
+		
+		name = mines.6
+		
+			  trigger_event = { id = best_order.72 popup = yes }
+			
+		}
+
+		option = {
+		default_option = yes
+	    name = CANCEL
+	    }
+}
+
+best_order.35 = {
+	type = country_event    #种植业建筑选择
+	placement = root
+	
+
+		title = plantation.t
+		desc = plantation.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = pla.1
+			
+			  trigger_event = { id = best_order.91 popup = yes }
+			
+		}
+				option = { 
+		
+		name = pla.2
+			
+			  trigger_event = { id = best_order.92 popup = yes }
+			
+		}
+				option = { 
+		
+		name = pla.3
+	
+			  trigger_event = { id = best_order.93 popup = yes }
+			
+		}
+				option = { 
+		
+		name = pla.4
+			
+			  trigger_event = { id = best_order.94 popup = yes }
+			
+		}
+				option = { 
+	
+		name = pla.5
+		
+			  trigger_event = { id = best_order.95 popup = yes }
+			
+		}
+				option = { 
+		
+		name = pla.6
+		
+			  trigger_event = { id = best_order.96 popup = yes }
+			
+		}
+					option = { 
+		
+		name = pla.7
+		
+			  trigger_event = { id = best_order.97 popup = yes }
+			
+		}
+					option = { 
+		
+		name = pla.8
+		
+			  trigger_event = { id = best_order.98 popup = yes }
+			
+		}
+					option = { 
+		
+		name = pla.9
+		
+			  trigger_event = { id = best_order.99 popup = yes }
+			
+		}
+					option = { 
+		
+		name = pla.10
+		
+			  trigger_event = { id = best_order.100 popup = yes }
+			
+		}
+		
+		option = {
+		default_option = yes
+	    name = CANCEL
+	    }
+}
+
+best_order.36 = {
+	type = country_event    #工厂建筑选择,目前无效
+	placement = root
+	
+
+		title = factory.t
+		desc = factory.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = fac.1
+			
+			  #trigger_event = { id = best_order.131 popup = yes }
+			
+		}
+}
+
+best_order.37 = {
+	type = country_event    #政府建筑选择
+	placement = root
+	
+
+		title = gover.t
+		desc = gover.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = gover.1
+			
+			  trigger_event = { id = best_order.131 popup = yes }
+			
+		}
+				option = { 
+		
+		name = gover.2
+			
+			  trigger_event = { id = best_order.132 popup = yes }
+			
+		}
+		option = {
+		default_option = yes
+	    name = CANCEL
+	    }
+}	
+
+
+best_order.38 = {
+	type = country_event    #基础建筑选择
+	placement = root
+	
+
+		title = cons.t
+		desc = cons.t
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+
+
+		option = { 
+		
+		name = cons.1
+			
+			  trigger_event = { id = best_order.139 popup = no }
+			
+		}
+				option = { 
+		
+		name = cons.2
+			
+			  trigger_event = { id = best_order.140 popup = no }
+			
+		}
+		option = { 
+		
+		name = cons.3
+			
+			  trigger_event = { id = best_order.141 popup = no }
+			
+		
+		}
+		option = {
+		default_option = yes
+	    name = CANCEL
+	    }
+}
+
+best_order.160 = {
+	type = country_event     #8小时工作
+	placement = root
+	
+	title = time_choose_8.t
+	desc = time_choose_8.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1  
+	immediate = {
+				remove_modifier = best_modifiers_2
+				remove_modifier = best_modifiers_3
+				remove_modifier = best_modifiers_4
+				}
+		
+			
+}
+
+best_order.161 = {
+	type = country_event     #10小时工作
+	placement = root
+	
+	title = time_choose_10.t
+	desc = time_choose_10.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1  
+	immediate = {
+		if = {
+		limit = {
+		NOT = {
+			 has_modifier = best_modifiers_2
+			 has_modifier = best_modifiers_3
+		     has_modifier = best_modifiers_4			 
+			 
+		}
+		
+		}
+		add_modifier = { name = best_modifiers_2 years = 6 }
+		add_radicals = { value = 0.1 }
+		}
+		}	
+}
+
+best_order.162 = {
+	type = country_event     #12小时工作
+	placement = root
+	
+	title = time_choose_12.t
+	desc = time_choose_12.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1  
+	immediate = {
+		if = {
+		limit = {
+		NOT = {
+			 has_modifier = best_modifiers_2
+			 has_modifier = best_modifiers_3
+		     has_modifier = best_modifiers_4			 
+			 
+		}
+		
+		}
+		add_modifier = { name = best_modifiers_3 years = 6 }
+		add_radicals = { value = 0.2 }
+		}
+		}	
+}
+
+best_order.163 = {
+	type = country_event     #14小时工作
+	placement = root
+	
+	title = time_choose_14.t
+	desc = time_choose_14.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1  
+	immediate = {
+		if = {
+		limit = {
+		NOT = {
+			 has_modifier = best_modifiers_2
+			 has_modifier = best_modifiers_3
+		     has_modifier = best_modifiers_4			 
+			 
+		}
+		
+		}
+		add_modifier = { name = best_modifiers_4 years = 6 }
+		add_radicals = { value = 0.3 }
+		}
+		}	
+}
+
+best_order.152 = {
+	type = country_event  #捕鲸站数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.156 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.157 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.158 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+best_order.151 = {
+	type = country_event  #渔业码头数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.153 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.154 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.155 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.141 = {
+	type = country_event  #建设部门数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.148 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.149 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.150 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.140 = {
+	type = country_event  #铁路数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.145 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.146 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.147 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+best_order.139 = {
+	type = country_event  #港口数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.142 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.143 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.144 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.132 = {
+	type = country_event  #大学数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.136 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.137 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.138 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.131 = {
+	type = country_event  #行政机构数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.133 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.134 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.135 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.100 = {
+	type = country_event  #橡胶数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.128 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.129 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.130 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.99 = {
+	type = country_event  #丝绸数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.125 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.126 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.127 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.98 = {
+	type = country_event  #香蕉数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.122 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.123 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.124 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+
+
+best_order.97 = {
+	type = country_event  #糖料数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.119 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.120 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.121 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.96 = {
+	type = country_event  #烟草数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.116 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.117 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.118 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.95 = {
+	type = country_event  #茶叶数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.113 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.114 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.115 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.94 = {
+	type = country_event  #鸦片数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.110 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.111 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.112 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+best_order.93 = {
+	type = country_event  #染料数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.107 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.108 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.109 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.92 = {
+	type = country_event  #棉布数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.104 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.105 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.106 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.91 = {
+	type = country_event  #咖啡数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.101 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.102 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.103 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.72 = {
+	type = country_event  #油井数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.88 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.89 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.90 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+
+best_order.71 = {
+	type = country_event  #金矿数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.85 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.86 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.87 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.70 = {
+	type = country_event  #硫矿数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.82 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.83 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.84 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.69 = {
+	type = country_event  #铅矿数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.79 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.80 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.81 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.68 = {
+	type = country_event  #铁矿数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.76 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.77 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.78 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}	
+
+best_order.67 = {
+	type = country_event  #煤矿数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.73 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.74 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.75 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+
+best_order.39 = {
+	type = country_event  #黑麦农场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.46 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.47 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.48 popup = no }
+	}
+	}
+	option = {
+	 default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.40 = {
+	type = country_event  #小麦农场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.49 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.50 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.51 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.41 = {
+	type = country_event  #水稻农场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.52 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.53 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.54 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.42 = {
+	type = country_event  #玉米农场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.55popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.56 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.57 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}								
+
+best_order.43 = {
+	type = country_event  #杂谷农场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.58 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.59 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.60 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}		
+
+best_order.44 = {
+	type = country_event  #畜牧场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.61 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.62 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.63 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}
+
+best_order.45 = {
+	type = country_event  #伐木场数量选择
+	placement = root
+	
+
+		title = best_choose_amount
+		desc = best_choose_amount
+
+		event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 1
+		immediate = {
+		save_scope_as = scope_rootxx
+        }	
+		
+	option = {
+	name = choose_1
+	scope:target_country = {
+			  trigger_event = { id = best_order.64 popup = no }
+			}
+	}
+	option = {
+	name = choose_5
+	scope:target_country = {
+			  trigger_event = { id = best_order.65 popup = no }
+			  }
+	}
+	option = {
+	name = choose_10
+	scope:target_country = {
+			  trigger_event = { id = best_order.66 popup = no }
+	}
+	}
+	option = {
+	default_option = yes
+	name = CANCEL
+	}
+}						
+
+
+best_order.46 = {
+	type = country_event #1个黑麦
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rye_farm
+ 			}
+		 }
+
+}
+
+best_order.47 = {
+	type = country_event
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		
+
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+ 			}
+		 }
+	
+}		
+
+best_order.48 = {
+	type = country_event
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		
+		name = best_order_events.7.a
+		default_option = yes
+
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+			start_building_construction=building_rye_farm
+ 			}
+		 }
+	
+}		
+	
+
+best_order.49 = {
+	type = country_event  #1个小麦
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_wheat_farm
+ 			}
+		 }
+
+}
+
+best_order.50 = {
+	type = country_event
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+ 			}
+		 }
+
+}
+
+best_order.51 = {
+	type = country_event
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+			start_building_construction=building_wheat_farm
+ 			}
+		 }
+
+}
+
+best_order.52 = {
+	type = country_event  #1个水稻
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rice_farm
+ 			}
+		 }
+
+}
+
+best_order.53 = {
+	type = country_event  
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rice_farm
+			 	start_building_construction=building_rice_farm
+				 	start_building_construction=building_rice_farm
+					 	start_building_construction=building_rice_farm
+						  	start_building_construction=building_rice_farm
+ 			}
+		 }
+
+}
+best_order.54 = {
+	type = country_event  
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_rice_farm
+			 	start_building_construction=building_rice_farm
+				 	start_building_construction=building_rice_farm
+					 	start_building_construction=building_rice_farm
+						  	start_building_construction=building_rice_farm
+			start_building_construction=building_rice_farm
+			 	start_building_construction=building_rice_farm
+				 	start_building_construction=building_rice_farm
+					 	start_building_construction=building_rice_farm
+						  	start_building_construction=building_rice_farm				
+ 			}
+		 }
+
+}
+
+best_order.55 = {
+	type = country_event #1个玉米
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_maize_farm
+ 			}
+		 }
+
+}
+
+best_order.56 = {
+	type = country_event 
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm		
+ 			}
+		 }
+
+}
+
+best_order.57 = {
+	type = country_event 
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm		
+				start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm
+			 	start_building_construction=building_maize_farm	
+ 			}
+		 }
+}
+
+best_order.58 = {
+	type = country_event  #1个杂谷
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_millet_farm
+ 			}
+		 }
+
+}
+
+best_order.59 = {
+	type = country_event  
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+ 			}
+		 }
+
+}
+
+best_order.60 = {
+	type = country_event  
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	 start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+			start_building_construction=building_millet_farm
+ 			}
+		 }
+}
+
+best_order.61 = {
+	type = country_event    #建造一个畜牧场
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	 start_building_construction=building_livestock_ranch
+		
+ 			}
+		 }
+}
+
+best_order.62 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	 start_building_construction=building_livestock_ranch
+			 	 start_building_construction=building_livestock_ranch
+				 	 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+					 
+		
+ 			}
+		 }
+}
+
+best_order.63 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_livestock_ranch
+			 	 start_building_construction=building_livestock_ranch
+				 	 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+			 	 start_building_construction=building_livestock_ranch
+			 	 start_building_construction=building_livestock_ranch
+				 	 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+				 start_building_construction=building_livestock_ranch
+					 		 
+		
+ 			}
+		 }
+}
+
+best_order.64 = {
+	type = country_event    #建造一个伐木场
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_logging_camp
+ 			}
+		 }
+}
+
+best_order.65 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					 start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					  start_building_construction=building_logging_camp
+					 
+ 			}
+		 }
+}
+
+best_order.66 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					 start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					  start_building_construction=building_logging_camp
+					start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					 start_building_construction=building_logging_camp
+				 	 start_building_construction=building_logging_camp
+					  start_building_construction=building_logging_camp
+					 
+ 			}
+		 }
+}
+
+best_order.73 = {
+	type = country_event    #一个煤矿
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_coal_mine
+ 			}
+		 }
+}
+
+best_order.74 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 start_building_construction=building_coal_mine
+				  start_building_construction=building_coal_mine
+				   start_building_construction=building_coal_mine
+				    start_building_construction=building_coal_mine
+					 start_building_construction=building_coal_mine
+ 			}
+		 }
+}
+
+best_order.75 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 
+				 	 start_building_construction=building_coal_mine
+				  start_building_construction=building_coal_mine
+				   start_building_construction=building_coal_mine
+				    start_building_construction=building_coal_mine
+					 start_building_construction=building_coal_mine	 
+				  start_building_construction=building_coal_mine
+				   start_building_construction=building_coal_mine
+				    start_building_construction=building_coal_mine
+					 start_building_construction=building_coal_mine
+					 start_building_construction=building_coal_mine
+ 			}
+		 }
+}
+
+best_order.76 = {
+	type = country_event    #一个铁矿
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		 	  	 
+				 	 start_building_construction=building_iron_mine
+ 			}
+		 }
+}
+
+best_order.77 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_iron_mine
+				 	 start_building_construction=building_iron_mine
+					  start_building_construction=building_iron_mine
+					   start_building_construction=building_iron_mine
+					 start_building_construction=building_iron_mine   
+ 			}
+		 }
+}
+
+best_order.78 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_iron_mine
+				 	 start_building_construction=building_iron_mine
+					  start_building_construction=building_iron_mine
+					   start_building_construction=building_iron_mine
+					 start_building_construction=building_iron_mine 
+					start_building_construction=building_iron_mine
+				 	 start_building_construction=building_iron_mine
+					  start_building_construction=building_iron_mine
+					   start_building_construction=building_iron_mine
+					 start_building_construction=building_iron_mine	
+ 			}
+		 }
+}
+
+best_order.79 = {
+	type = country_event     #一个铅矿
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_lead_mine				 	 
+ 			}
+		 }
+}
+
+best_order.80 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_lead_mine		
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	 
+ 			}
+		 }
+}
+
+
+best_order.81 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_lead_mine		
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+					 start_building_construction=building_lead_mine		
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	
+ start_building_construction=building_lead_mine	 
+ 			}
+		 }
+}
+
+
+best_order.82 = {
+	type = country_event    #一个硫矿
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_sulfur_mine		 
+ 			}
+		 }
+}
+
+best_order.83 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_sulfur_mine
+	 start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine 
+ 			}
+		 }
+}
+
+best_order.84 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_sulfur_mine
+	 start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine 
+ 					 start_building_construction=building_sulfur_mine
+	 start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine
+ start_building_construction=building_sulfur_mine 
+ 			}
+		 }
+}
+
+
+best_order.85 = {
+	type = country_event    #一个金矿
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_gold_mine
+ 			}
+		 }
+}
+
+best_order.86 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_gold_mine
+					  start_building_construction=building_gold_mine
+					   start_building_construction=building_gold_mine
+					  start_building_construction=building_gold_mine
+					    start_building_construction=building_gold_mine
+			  
+ 			}
+		 }
+}
+
+best_order.87 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_gold_mine
+						 start_building_construction=building_gold_mine
+					  start_building_construction=building_gold_mine
+					   start_building_construction=building_gold_mine
+					  start_building_construction=building_gold_mine
+ start_building_construction=building_gold_mine			
+ start_building_construction=building_gold_mine
+					   start_building_construction=building_gold_mine
+					  start_building_construction=building_gold_mine
+ start_building_construction=building_gold_mine		 
+ 			}
+		 }
+}
+
+best_order.88 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_oil_rig
+ 			}
+		 }
+}
+best_order.89 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					   start_building_construction=building_oil_rig
+					  
+ 			}
+		 }
+}
+
+best_order.90 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					   start_building_construction=building_oil_rig
+				start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					  start_building_construction=building_oil_rig
+					   start_building_construction=building_oil_rig	   
+					  
+ 			}
+		 }
+}
+
+best_order.101 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_coffee_plantation  		  
+ 			}
+		 }
+}
+
+best_order.102 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_coffee_plantation  		
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation   
+ 			}
+		 }
+}
+
+best_order.103 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_coffee_plantation  		
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation 
+					 start_building_construction=building_coffee_plantation  		
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation  
+ start_building_construction=building_coffee_plantation    
+ 			}
+		 }
+}
+
+best_order.104 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_cotton_plantation		
+ 			}
+		 }
+}
+
+best_order.105 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_cotton_plantation		
+					  start_building_construction=building_cotton_plantation		
+					   start_building_construction=building_cotton_plantation		
+					    start_building_construction=building_cotton_plantation		
+						 start_building_construction=building_cotton_plantation		
+ 			}
+		 }
+}
+
+
+best_order.106 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_cotton_plantation		
+					  start_building_construction=building_cotton_plantation		
+					   start_building_construction=building_cotton_plantation		
+					    start_building_construction=building_cotton_plantation		
+						 start_building_construction=building_cotton_plantation	
+					start_building_construction=building_cotton_plantation		
+					  start_building_construction=building_cotton_plantation		
+					   start_building_construction=building_cotton_plantation		
+					    start_building_construction=building_cotton_plantation		
+						 start_building_construction=building_cotton_plantation	 
+ 			}
+		 }
+}
+
+best_order.107 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_dye_plantation		 
+ 			}
+		 }
+}
+
+best_order.108 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_dye_plantation
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	 
+ 			}
+		 }
+}
+
+best_order.109 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_dye_plantation
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation
+					 start_building_construction=building_dye_plantation
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	
+ start_building_construction=building_dye_plantation	 
+ 			}
+		 }
+}
+
+best_order.110 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_opium_plantation
+ 			}
+		 }
+}
+
+best_order.111 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+ 			}
+		 }
+}
+
+best_order.112 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_opium_plantation
+					  start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					  start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+					 start_building_construction=building_opium_plantation
+ 			}
+		 }
+}
+
+best_order.113 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tea_plantation
+ 			}
+		 }
+}
+
+best_order.114 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+ 			}
+		 }
+}
+
+best_order.115 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+					 start_building_construction=building_tea_plantation
+ 			}
+		 }
+}
+
+best_order.116 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tobacco_plantation
+ 			}
+		 }
+}
+
+best_order.117 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tobacco_plantation
+					  start_building_construction=building_tobacco_plantation
+					   start_building_construction=building_tobacco_plantation
+					    start_building_construction=building_tobacco_plantation
+						 start_building_construction=building_tobacco_plantation
+ 			}
+		 }
+}
+best_order.118 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_tobacco_plantation
+					  start_building_construction=building_tobacco_plantation
+					   start_building_construction=building_tobacco_plantation
+					    start_building_construction=building_tobacco_plantation
+						 start_building_construction=building_tobacco_plantation
+						  start_building_construction=building_tobacco_plantation
+					  start_building_construction=building_tobacco_plantation
+					   start_building_construction=building_tobacco_plantation
+					    start_building_construction=building_tobacco_plantation
+						 start_building_construction=building_tobacco_plantation
+ 			}
+		 }
+}
+
+best_order.119 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_sugar_plantation
+ 			}
+		 }
+}
+
+best_order.120 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+					 start_building_construction=building_sugar_plantation
+					  start_building_construction=building_sugar_plantation
+					   start_building_construction=building_sugar_plantation
+					    start_building_construction=building_sugar_plantation
+						 start_building_construction=building_sugar_plantation
+ 			}
+		 }
+}
+best_order.121 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+				 start_building_construction=building_sugar_plantation
+					  start_building_construction=building_sugar_plantation
+					   start_building_construction=building_sugar_plantation
+					    start_building_construction=building_sugar_plantation
+						 start_building_construction=building_sugar_plantation	
+				 start_building_construction=building_sugar_plantation
+					  start_building_construction=building_sugar_plantation
+					   start_building_construction=building_sugar_plantation
+					    start_building_construction=building_sugar_plantation
+						 start_building_construction=building_sugar_plantation		 
+ 			}
+		 }
+}
+
+best_order.122 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+				 start_building_construction=building_banana_plantation 
+ 			}
+		 }
+}
+
+best_order.123 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+				 start_building_construction=building_banana_plantation
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation  
+ 			}
+		 }
+}
+best_order.124 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+						 start_building_construction=building_banana_plantation
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation  
+ 				 start_building_construction=building_banana_plantation
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation 
+ start_building_construction=building_banana_plantation  
+ 			}
+		 }
+}
+
+best_order.125 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+						 start_building_construction=building_silk_plantation
+ 			}
+		 }
+}
+
+best_order.126 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+						 start_building_construction=building_silk_plantation
+				start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+
+ 			}
+		 }
+}
+
+best_order.127 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+			start_building_construction=building_silk_plantation
+				start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+				start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+start_building_construction=building_silk_plantation
+ 			}
+		 }
+}
+
+best_order.128 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+			start_building_construction=building_rubber_plantation
+ 			}
+		 }
+}
+
+best_order.129 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+ 			}
+		 }
+}
+
+best_order.130 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+			start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+		start_building_construction=building_rubber_plantation
+ 			}
+		 }
+}
+
+best_order.133 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_government_administration
+ 			}
+		 }
+}
+
+best_order.134 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+ 			}
+		 }
+}
+
+best_order.135 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+	start_building_construction=building_government_administration
+ 			}
+		 }
+}
+
+best_order.136 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_university
+ 			}
+		 }
+}
+
+best_order.137 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+ 			}
+		 }
+}
+
+best_order.138 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+	start_building_construction=building_university
+ 			}
+		 }
+}
+
+best_order.142 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_port
+ 			}
+		 }
+}
+best_order.143 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+ 			}
+		 }
+}
+best_order.144 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+	start_building_construction=building_port
+ 			}
+		 }
+}
+
+best_order.145 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_railway
+ 			}
+		 }
+}
+
+best_order.146 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+ 			}
+		 }
+}
+best_order.147 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+		start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+	start_building_construction=building_railway
+ 			}
+		 }
+}
+
+best_order.148 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_construction_sector
+ 			}
+		 }
+}
+best_order.149 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+ 			}
+		 }
+}
+best_order.150 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+		start_building_construction=building_construction_sector
+ 			}
+		 }
+}
+
+best_order.153 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_fishing_wharf
+ 			}
+		 }
+}
+best_order.154 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+ 			}
+		 }
+}
+best_order.155 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+		start_building_construction=building_fishing_wharf
+ 			}
+		 }
+}
+best_order.156 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_whaling_station
+ 			}
+		 }
+}
+best_order.157 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+ 			}
+		 }
+}
+
+best_order.158 = {
+	type = country_event    
+	placement = root
+	
+	title = best_order_events.7.t
+	desc = best_order_events.7.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1
+
+	trigger = {
+		exists = scope:best_order_chosen_state
+	}
+	
+	option = {
+		default_option = yes
+		name = best_order_events.7.a
+		scope:best_order_chosen_state = {
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+		start_building_construction=building_whaling_station
+ 			}
+		 }
+}
+
+best_order.159 = {
+	type = country_event     #禁止工业
+	placement = root
+	
+	title = ban_fac.t
+	desc = ban_fac.t
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 0.1  
+		immediate = {
+		if = {
+		limit = {
+		NOT = {
+			 has_modifier = best_modifiers_1 
+			 
+		}
+		
+		}
+		add_modifier = { name = best_modifiers_1 years = 6 }
+		add_radicals = { value = 0.5 }
+		}
+		}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

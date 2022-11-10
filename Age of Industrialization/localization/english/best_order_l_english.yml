@@ -1,0 +1,124 @@
+﻿l_english:
+ Best_order:0 "Order vassal"
+ Best_order_action_name:0 "Order Vassal"
+ Best_order_desc:0 "Order vassals to build buildings"
+
+ b_o:0 "Order vassals to build buildings"
+
+ 
+ best_order_events.4.t:0 "Open Command Menu"
+ best_order_events.4.d:0 "Select an area"
+
+ best_order_events.5.t:0 "Choose an Region"
+ best_order_events.6.t:0 "Select Orders to Post"
+
+ 
+ bo.1:0 "Build Coal Mine"
+ bo.2:0 "Build Iron Mine"
+ bo.3:0 "Build Lead Mine"
+ bo.4:0 "Build Sulfur Mine"
+ bo.5:0 "Build an opium plantation"
+ bo.6:0 "Build a sugar plantation"
+ bo.7:0 "Build a silk plantation"
+ bo.8:0 "Build a coffee plantation"
+ bo.9:0 "Build a cotton plantation"
+ bo.10:0 "Build a Dye Plantation"
+ bo.11:0 "Build a tea plantation"
+ bo.12:0 "Build a tobacco plantation"
+ bo.13:0 "Build a banana plantation"
+ bo.14:0 "Build a lumber mill"
+ bo.15:0 "Build a rubber plantation"
+ bo.16:0 "Build a fishing dock"
+ bo.17:0 "Build a whaling station"
+ bo.18:0 "Building Oil Wells"
+ bo.19:0 "Build a railway"
+ 
+
+ best_order_events.7.t:0 "Building by Overlord Order"
+ best_order_events.7.a:0 "OK"
+ Best_order_action_notification_name:0 "Overlord's Order"
+ Best_order_action_notification_desc:0 "The overlord ordered us to build a building"
+ 
+ 
+ choose.1:0 "Order vassals to build buildings"
+ add_building.t:0 "Building Type Selection"
+ add.1:0 "Agricultural Buildings"
+ add.2:0 "Mining Buildings"
+ add.3:0 "Plantation Buildings"
+ add.4:0 "Factory Building (This feature is not crafted)"
+ add.5:0 "Government Buildings"
+ add.6:0 "Infrastructure"
+ 
+ agro.t:0 "Choose an agricultural building"
+ mines.t:0 "Choose a mining building"
+ plantation.t:0 "Choose a plantation"
+ factory.t:0 "Select a factory"
+ gover.t:0 "Choose a government building"
+ cons.t:0 "Choose an infrastructure"
+ 
+ best_choose_amount:0 "Choose Amount to Build"
+ choose_1:0 "Build 1"
+ choose_5:0 "Build 5"
+ choose_10:0 "Build 10"
+ 
+
+ag.1:0 "Rye Farm"
+ag.2:0 "Wheat Farm"
+ag.3:0 "Rice Farm"
+ag.4:0 "Corn Farm"
+ag.5:0 "Miscellaneous Valley Farm"
+ag.6:0 "Livestock Farm"
+ag.7:0 "Lumberyard"
+ag.8:0 "Fishing Pier"
+ag.9:0 "Whaling Station"
+ 
+mines.1:0 "Coal Mines"
+mines.2:0 "Iron Ore"
+mines.3:0 "Lead Mine"
+mines.4:0 "Sulfur Ore"
+mines.5:0 "Gold Mines"
+mines.6:0 "Oil Wells"
+
+pla.1:0 "Coffee Plantation"
+pla.2:0 "Cotton Plantation"
+pla.3:0 "Dye Plantation"
+pla.4:0 "Opium Plantations"
+pla.5:0 "Tea Plantation"
+pla.6:0 "Tobacco Plantation"
+pla.7:0 "Sugar Plantation"
+pla.8:0 "Banana Plantation"
+pla.9:0 "Silk Plantation"
+pla.10:0 "Rubber Plantation"
+
+gover.1:0 "Administration"
+gover.2:0 "University"
+
+cons.1:0 "Port"
+cons.2:0 "Railroad"
+cons.3:0 "Construction Department"
+
+ban_fac.t:0 "Forbid this country to develop industry"
+ban_fac.1:0 "Confirmation of Industrial Ban"
+best_modifiers_1:0 "Industrial Ban from Overlord"
+
+
+
+
+choose.2:0 "Industrial Ban"
+choose.3:0 "Work! Work! Work!"
+choose.4:0 "Please rate me if you want me to make more new features"
+choose.5:0 "Please rate me if you want me to make more new features"
+choose.6:0 "Please rate me if you want me to make more new features"
+
+time_choose.t:0 "How long do you want them to work each day?"
+time.1:0 "8 hours is enough!"
+time.2:0 "10 hours is just right!"
+time.3:0 "Those who work 12 hours a day are the happiest!"
+time.4:0 "They must work 14 hours a day! Must!"
+
+time_choose_8.t:0 "People work 8 hours a day"
+time_choose_10.t:0 "People work 10 hours a day"
+time_choose_12.t:0 "People work 12 hours a day"
+time_choose_14.t:0 "People work 14 hours a day"
+
+modifier_building_group_bg_rubber_throughput_mult:0 "Rubber Plantation Throughput"

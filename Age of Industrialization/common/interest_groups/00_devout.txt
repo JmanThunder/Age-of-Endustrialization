@@ -26,6 +26,7 @@
 		
 	
 	pop_potential = {
+		pop_is_discriminated = no
 		has_state_religion = yes
 	}
 	
@@ -48,7 +49,7 @@
 				limit = { 
 					is_pop_type = aristocrats
 				}
-				value = 60
+				value = 50
 			}
 		}	
 
@@ -63,6 +64,21 @@
 		}					
 		
 		add = {
+			desc = "LITERACY_50_60"
+			
+			if = {
+				limit = { 
+					NOT = { 
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.50
+					literacy_rate < 0.60
+				}
+				add = -2
+			}
+		}		
+
+		add = {
 			desc = "LITERACY_60_70"
 			
 			if = {
@@ -73,7 +89,7 @@
 					literacy_rate >= 0.60
 					literacy_rate < 0.70
 				}
-				add = -2
+				add = -4
 			}
 		}
 
@@ -88,7 +104,7 @@
 					literacy_rate >= 0.70
 					literacy_rate < 0.80
 				}
-				add = -4
+				add = -6
 			}
 		}		
 	
@@ -103,7 +119,7 @@
 					literacy_rate >= 0.80
 					literacy_rate < 0.90
 				}
-				add = -6
+				add = -8
 			}
 		}		
 
@@ -117,7 +133,7 @@
 					}
 					literacy_rate >= 0.90
 				}
-				add = -8
+				add = -10
 			}
 		}					
 		

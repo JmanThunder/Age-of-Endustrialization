@@ -23,6 +23,7 @@
 	on_character_ig_membership = {}
 	
 	pop_potential = {
+		pop_is_discriminated = no
 		OR = {
 			is_pop_type = aristocrats
 			is_pop_type = clergymen
@@ -147,7 +148,7 @@
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
-		value = 0.85
+		value = 0.5
 		if = {
 			limit = {
 				exists = scope:character

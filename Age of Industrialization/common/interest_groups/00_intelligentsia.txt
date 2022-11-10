@@ -24,6 +24,7 @@
 	on_character_ig_membership = {}
 	
 	pop_potential = {
+		pop_is_discriminated = no
 		literacy_rate > 0.25
 		NOT = { is_pop_type = peasants }
 	}	
@@ -47,7 +48,7 @@
 				limit = { 
 					is_pop_type = clerks
 				}
-				value = 75
+				value = 100
 			}
 		}		
 		
@@ -57,7 +58,7 @@
 				limit = { 
 					is_pop_type = bureaucrats
 				}
-				value = 150
+				value = 100
 			}
 		}
 		

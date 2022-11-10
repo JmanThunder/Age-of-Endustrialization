@@ -317,30 +317,6 @@ roman_rome = {
 	}
 }
 
-republican_france = {
-	color = "revolutionary_blue"
-
-	possible = {
-		exists = c:FRA
-		THIS = c:FRA
-		NOT = { has_law = law_type:law_autocracy }
-		OR = {
-			has_law = law_type:law_parliamentary_republic
-			has_law = law_type:law_presidential_republic
-		}
-	}
-}
-
-commune_france = {
-	color = "paris_red"
-
-	possible = {
-		exists = c:FRA
-		THIS = c:FRA
-		has_law = law_type:law_council_republic
-	}
-}
-
 republican_india = {
 	color = "orange_india"
 

@@ -1,0 +1,124 @@
+﻿l_simp_chinese:
+ Best_order:0 "命令附庸"
+ Best_order_action_name:0 "命令附庸"
+ Best_order_desc:0 "命令附庸建造建筑"
+
+ b_o:0 "命令附庸建造建筑"
+
+ 
+ best_order_events.4.t:0 "打开命令菜单"
+ best_order_events.4.d:0 "选择一个区域"
+
+ best_order_events.5.t:0 "选择一个地区"
+ best_order_events.6.t:0 "选择要发布的命令"
+
+ 
+ bo.1:0 "建造煤矿"
+ bo.2:0 "建造铁矿"
+ bo.3:0 "建造铅矿"
+ bo.4:0 "建造硫矿"
+ bo.5:0 "建造鸦片种植园"
+ bo.6:0 "建造糖料种植园"
+ bo.7:0 "建造丝绸种植园"
+ bo.8:0 "建造咖啡种植园"
+ bo.9:0 "建造棉花种植园"
+ bo.10:0 "建造染料种植园"
+ bo.11:0 "建造茶叶种植园"
+ bo.12:0 "建造烟草种植园"
+ bo.13:0 "建造香蕉种植园"
+ bo.14:0 "建造伐木场"
+ bo.15:0 "建造橡胶种植园"
+ bo.16:0 "建造渔业码头"
+ bo.17:0 "建造捕鲸站"
+ bo.18:0 "建造油井"
+ bo.19:0 "建造铁路"
+ 
+
+ best_order_events.7.t:0 "受宗主国命令建造建筑"
+ best_order_events.7.a:0 "好的"
+ Best_order_action_notification_name:0 "宗主国的命令"
+ Best_order_action_notification_desc:0 "宗主国命令我们建造一个建筑"
+ 
+ 
+ choose.1:0 "命令附庸建造建筑"
+ add_building.t:0 "建筑类型选择"
+ add.1:0 "农业建筑"
+ add.2:0 "矿业建筑"
+ add.3:0 "种植业建筑"
+ add.4:0 "工厂建筑（该功能没有制作）"
+ add.5:0 "政府建筑"
+ add.6:0 "基础设施"
+ 
+ agro.t:0 "选择一种农业建筑"
+ mines.t:0 "选择一种矿业建筑"
+ plantation.t:0 "选择一种种植园"
+ factory.t:0 "选择一种工厂"
+ gover.t:0 "选择一种政府建筑"
+ cons.t:0 "选择一种基础设施"
+ 
+ best_choose_amount:0 "选择要建造的数量"
+ choose_1:0 "建造1个"
+ choose_5:0 "建造5个"
+ choose_10:0 "建造10个"
+ 
+
+ag.1:0 "黑麦农场"
+ag.2:0 "小麦农场"
+ag.3:0 "水稻农场"
+ag.4:0 "玉米农场"
+ag.5:0 "杂谷农场"
+ag.6:0 "畜牧场"
+ag.7:0 "伐木场"    
+ag.8:0 "渔业码头"
+ag.9:0 "捕鲸站"      
+ 
+mines.1:0 "煤矿" 
+mines.2:0 "铁矿" 
+mines.3:0 "铅矿" 
+mines.4:0 "硫矿" 
+mines.5:0 "金矿" 
+mines.6:0 "油井" 
+
+pla.1:0 "咖啡种植园"
+pla.2:0 "棉花种植园"
+pla.3:0 "染料种植园"
+pla.4:0 "鸦片种植园"
+pla.5:0 "茶叶种植园"
+pla.6:0 "烟草种植园"
+pla.7:0 "糖料种植园"
+pla.8:0 "香蕉种植园"
+pla.9:0 "丝绸种植园"
+pla.10:0 "橡胶种植园"
+
+gover.1:0 "行政机构"
+gover.2:0 "大学"
+
+cons.1:0 "港口"
+cons.2:0 "铁路"
+cons.3:0 "建设部门"
+
+ban_fac.t:0 "禁止这个国家发展工业"
+ban_fac.1:0 "确认发布工业禁令"
+best_modifiers_1:0 "来自宗主国的工业禁令"
+
+
+
+
+choose.2:0 "工业禁令"
+choose.3:0 "工作！工作！工作！"
+choose.4:0 "请给我好评如果你希望我制作更多新功能"
+choose.5:0 "请给我好评如果你希望我制作更多新功能"
+choose.6:0 "请给我好评如果你希望我制作更多新功能"
+
+time_choose.t:0 "你希望他们每天工作多久？"
+time.1:0 "8小时就够了！"
+time.2:0 "10个小时刚刚好！"
+time.3:0 "每天工作12小时的人是最幸福的！"
+time.4:0 "他们必须每天工作14个小时！必须！"
+
+time_choose_8.t:0 "人民每天工作8小时"
+time_choose_10.t:0 "人民每天工作10小时"
+time_choose_12.t:0 "人民每天工作12小时"
+time_choose_14.t:0 "人民每天工作14小时"
+
+modifier_building_group_bg_rubber_throughput_mult:0 "橡胶种植园吞吐量"

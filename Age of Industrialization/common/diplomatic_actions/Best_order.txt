@@ -1,0 +1,40 @@
+﻿
+
+Best_order = {
+	requires_approval = no
+	should_notify_third_parties = no
+	show_effect_in_tooltip = no
+
+	potential = {
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			
+			NOT = { is_country_type = decentralized  
+is_subject_type = subject_type_dominion   is_subject_type = subject_type_protectorate is_subject_type = subject_type_personal_union
+}
+			is_subject_of = ROOT
+		   
+		}
+		is_player = yes
+	}
+	
+	possible = {
+		scope:target_country = {
+			is_at_war = no
+			is_diplomatic_play_committed_participant = no
+		}
+		
+	}
+	
+	accept_effect = {
+		trigger_event = { id = best_order.4 popup = yes }
+		save_scope_as = scope_rootxx
+		
+	}
+	
+	ai = {
+		will_propose = { 
+			always = no
+		}
+	}
+}
