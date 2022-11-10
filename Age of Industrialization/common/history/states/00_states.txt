@@ -6904,7 +6904,7 @@ STATES = {
 	s:STATE_EAST_GALICIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xA2805F x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C xD0E061 }
+			owned_provinces = { xA2805F x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C }
 		}
 		
 		add_homeland = polish
@@ -6922,7 +6922,7 @@ STATES = {
 	s:STATE_EAST_SLOVAKIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xC54074 xB23DA0 x7DE5D3 x51E061 x20C000 x02CE3A xA0531B x69BAC7 xC85CD0 x359378 }
+			owned_provinces = { xC54074 xB23DA0 x7DE5D3 x51E061 x20C000 x02CE3A xA0531B x69BAC7 xC85CD0 x359378 xD0E061 }
 		}
 		
 		add_homeland = slovak
