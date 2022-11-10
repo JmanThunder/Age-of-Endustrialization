@@ -930,7 +930,7 @@
 		region_state:PER = {
 			create_pop = {
 				culture = persian
-				size = 639196
+				size = 1639196
 			}
 			create_pop = {
 				culture = sephardic
@@ -944,6 +944,11 @@
 				culture = armenian
 				size = 25887
 				pop_type = slaves
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = lacustrine_bantu
+				size = 75000
 			}
 			create_pop = {
 				culture = sephardic
