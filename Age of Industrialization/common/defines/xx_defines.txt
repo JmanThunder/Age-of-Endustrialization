@@ -1,4 +1,4 @@
-NMilitary = {
+﻿NMilitary = {
 	GENERAL_TRAVEL_PIXELS_TO_DAYS_SCALE = 0.025
 }
 

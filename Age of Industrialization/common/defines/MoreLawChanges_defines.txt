@@ -1,3 +1,3 @@
-NPolitics = {
+﻿NPolitics = {
 	NUM_REVOLUTIONARY_LAW_CHANGES = 10	# In addition to the main reason for the revolution, a revolutionary constitution will contain this many additional law changes
 }

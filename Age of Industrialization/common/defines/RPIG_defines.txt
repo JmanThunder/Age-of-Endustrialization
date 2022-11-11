@@ -1,4 +1,4 @@
-NPolitics = {
+﻿NPolitics = {
 	POWERFUL_IG_THRESHOLD = 0.25
 	POWERFUL_IG_CUTOFF = 0.20
 }

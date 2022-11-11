@@ -1,4 +1,4 @@
-merge_subject = {
+﻿merge_subject = {
     requires_approval = yes
     should_notify_third_parties = yes
 	show_effect_in_tooltip = yes

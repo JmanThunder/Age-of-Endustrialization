@@ -1,4 +1,4 @@
-dixie={
+﻿dixie={
 	color=rgb{ 204 154 91 } # Butternut
 	religion = protestant
 	traits = { anglophone european_heritage }

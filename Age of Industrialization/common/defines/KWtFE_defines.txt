@@ -1,4 +1,4 @@
-NAI = {
+﻿NAI = {
 	AI_PEACE_AGREEMENT_BASE_VALUE = 50 # Was 0. See ~SHORT_WAR
 	AI_PEACE_AGREEMENT_WHITE_PEACE = 50 # Was 10. See ~SHORT_WAR
 	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -2	# Was -1, war support should be a big factor for AI in negotiated peace.

@@ -140,7 +140,7 @@
 
  # Polish IGs
  ig_towarzystwo_rolnicze:0 "Towarzystwo Rolnicze"
- ig_towarzystwo_rolnicze_desc;0 "People in the countryside whose political interests are mostly aligned with their agrarian livelihoods."
+ ig_towarzystwo_rolnicze_desc:0 "People in the countryside whose political interests are mostly aligned with their agrarian livelihoods."
  
  # Baltic IGs
  ig_german_aristocracy:0 "German Landowners"

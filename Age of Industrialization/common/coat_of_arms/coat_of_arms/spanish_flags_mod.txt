@@ -1,4 +1,4 @@
-#SPAIN
+﻿#SPAIN
 
 SPA_communist = {
 	pattern = "pattern_solid.tga"

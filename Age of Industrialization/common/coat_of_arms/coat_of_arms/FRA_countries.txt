@@ -1,4 +1,4 @@
-FRA_dictatorship_emperor = {
+﻿FRA_dictatorship_emperor = {
 	# Variant based on tricolor with (lesser) coat of arms of the empire
 	
 	pattern = "pattern_solid.tga"
