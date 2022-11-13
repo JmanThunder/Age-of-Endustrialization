@@ -6,12 +6,18 @@
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
 		}
+		NOT = {
+			exists = c:ITA
+		}
 	}
 
 	possible = {
 		country_rank >= rank_value:major_power
 		has_technology_researched = nationalism
 		is_subject = no
+		NOT = {
+			exists = c:ITA
+		}
 	}
 
 	complete = {
@@ -35,14 +41,19 @@
 			owns_entire_state_region = STATE_ISTRIA
 		}
 	}
-
+		
 	on_monthly_pulse = {
 		events = {
 			italian_unification.2 # confederation
 			italian_unification.3 # Garibaldi
 		}
 	}
-
+	
+	
+	invalid = {
+		exists = c:ITA
+	}
+	
 	on_complete = {
 		trigger_event = { id = italian_unification.1 }
 	}

@@ -34,16 +34,16 @@ je_spanish_flu = {
 							limit = {
 								has_variable = plague_lockdown
 							}
-							add = -2
+							add = -3 #-2
 						}
 						else_if = {
 							limit = {
 								has_variable = plague_measures
 								}
-							add = -1
+							add = -2 #-1
 						}
 					}
-					trigger_event = { id = plague.2 }
+					trigger_event = { id = plague.2 } #plague spreads
 				}			
 				3 = {
 					modifier = {
@@ -51,30 +51,19 @@ je_spanish_flu = {
 							limit = {
 								has_variable = plague_lockdown
 							}
-							add = -2
+							add = -3 #-2
 						}
 						else_if = {
 							limit = {
 								has_variable = plague_measures
 								}
-							add = -1
+							add = -2 #-1
 						}
 					}
-					trigger_event = { id = plague.200 }
+					trigger_event = { id = plague.200 } #plague spreading
 				}
 			}
-		}
-		
-		random_events = {
-			10 = 0
-			1 = plague.7
-			1 = plague.8
-			1 = plague.9
-		}
-	}
-	
-	on_weekly_pulse = {
-		effect = {
+			
 			every_scope_state = {
 				limit = {
 					has_variable = plague_restrictions_tracker
@@ -103,6 +92,19 @@ je_spanish_flu = {
 					}
 				}
 			}
+		}
+		
+		random_events = {
+			10 = 0
+			1 = plague.7
+			1 = plague.8
+			1 = plague.9
+		}
+	}
+	
+	on_weekly_pulse = {
+		effect = {
+			
 		}
 	}
 

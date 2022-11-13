@@ -288,7 +288,7 @@ ragged_schools_no_devout = {
 
 school_supplies_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	country_bureaucracy_mult = 0.15
+	country_bureaucracy_mult = -0.15 #0.15
 }
 
 no_school_supplies_modifier = {

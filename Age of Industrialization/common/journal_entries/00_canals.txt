@@ -28,13 +28,16 @@
 	}
 
 	invalid = {
-		s:STATE_SINAI = {
-			any_scope_state = {
-				NOT = { owner = ROOT }
-				any_scope_building = {
-					is_building_type = building_panama_canal
+		OR = {
+			s:STATE_SINAI = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+					any_scope_building = {
+						is_building_type = building_panama_canal
+					}
 				}
 			}
+			has_global_variable = suez_canal_purchase_var
 		}
 	}
 
@@ -53,7 +56,7 @@ je_suez_canal = {
 				owner = ROOT
 				any_scope_building = {
 					is_building_type = building_suez_canal
-					occupancy >= 0.9
+					level >= 1 #occupancy >= 0.9
 				}
 			}
 		}
@@ -95,13 +98,16 @@ je_panama_survey = {
 	}
 
 	invalid = { # If the Panama Canal is being built and you're not the one building it, you've blown it, chief.
-		s:STATE_PANAMA = {
-			any_scope_state = {
-				NOT = { owner = ROOT }
-				any_scope_building = {
-					is_building_type = building_panama_canal
+		OR = {
+			s:STATE_PANAMA = {
+				any_scope_state = {
+					NOT = { owner = ROOT }
+					any_scope_building = {
+						is_building_type = building_panama_canal
+					}
 				}
 			}
+			has_global_variable = panama_canal_purchase_var
 		}
 	}
 
@@ -120,7 +126,7 @@ je_panama_canal = {
 				owner = ROOT
 				any_scope_building = {
 					is_building_type = building_panama_canal
-					occupancy >= 0.9
+					level >= 1 #occupancy >= 0.9
 				}
 			}
 		}

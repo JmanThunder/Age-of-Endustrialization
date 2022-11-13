@@ -435,7 +435,6 @@ cold.4 = {
 		random_scope_character = {
 			limit = { has_variable = expedition_leader_var }
 			save_scope_as = expedition_leader
-			remove_variable = expedition_leader_var
 		}
 	}
 
@@ -450,7 +449,7 @@ cold.4 = {
 	}
 }
 
-# The Pole!
+# The Pole! 
 cold.5 = {
 	type = country_event
 	placement = ROOT
@@ -621,8 +620,9 @@ cold.7 = {
 		random_scope_character = {
 			limit = { has_variable = expedition_leader_var }
 			save_scope_as = expedition_leader
-			remove_variable = expedition_leader_var
 		}
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
 	}
 	
 	option = {
@@ -635,6 +635,7 @@ cold.7 = {
 			add_trait = explorer
 			set_variable = polar_explorer
 			set_character_busy = no
+			remove_variable = expedition_leader_var 
 			add_modifier = {
 				name = succesfull_south_pole_modifier
 				multiplier = 2
@@ -794,7 +795,7 @@ cold.9 = {
 	}
 }
 
-# Whaling Station
+# Whaling Station fail expedition
 cold.10 = {
 	type = country_event
 	placement = ROOT
@@ -817,7 +818,6 @@ cold.10 = {
 		random_scope_character = {
 			limit = { has_variable = expedition_leader_var }
 			save_scope_as = expedition_leader
-			remove_variable = expedition_leader_var
 		}
 	}
 	

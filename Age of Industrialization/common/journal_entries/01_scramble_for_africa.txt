@@ -15,7 +15,10 @@
 		any_scope_state = {
 			is_incorporated = no
 			state_in_africa = yes
-			has_state_trait = state_trait_malaria
+			OR = {
+				has_state_trait = state_trait_malaria
+				has_state_trait = state_trait_severe_malaria
+			}
 		}
 		OR = {
 			has_law = law_type:law_colonial_resettlement

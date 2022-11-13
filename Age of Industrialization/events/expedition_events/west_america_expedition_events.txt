@@ -163,7 +163,7 @@ expedition_events.201 = { #Choose commander
 	}
 }
 
-expedition_events.300 = { #Sucessful expedition - Buenaventura River
+expedition_events.300 = { #Successful expedition - Buenaventura River
 	type = country_event
     placement = ROOT
 
@@ -187,13 +187,6 @@ expedition_events.300 = { #Sucessful expedition - Buenaventura River
 		remove_variable = on_expedition
 		remove_expedition_events_effect = yes
 		set_global_variable = buenaventura_river_disproven
-		random_scope_character = {
-			limit = {
-				has_variable = expedition_leader_var
-			}
-			remove_variable = expedition_leader_var
-			save_scope_as = expedition_leader
-		}
 	}
 
 	option = {
@@ -202,6 +195,7 @@ expedition_events.300 = { #Sucessful expedition - Buenaventura River
 		scope:expedition_leader = {
 			set_character_busy = no
 			add_trait = explorer
+			remove_variable = expedition_leader_var 
 		}
 		add_modifier = {
 			name = modifier_buenaventura_river_disproven
@@ -210,7 +204,7 @@ expedition_events.300 = { #Sucessful expedition - Buenaventura River
 	}
 }
 
-expedition_events.301 = { #Sucessful expedition - Oregon Trail
+expedition_events.301 = { #Successful expedition - Oregon Trail
 	type = country_event
     placement = ROOT
 
@@ -234,13 +228,6 @@ expedition_events.301 = { #Sucessful expedition - Oregon Trail
 		remove_variable = on_expedition
 		remove_expedition_events_effect = yes
 		set_global_variable = oregon_trail_mapped
-		random_scope_character = {
-			limit = {
-				has_variable = expedition_leader_var 
-			}
-			remove_variable = expedition_leader_var
-			save_scope_as = expedition_leader
-		}
 	}
 
 	option = {
@@ -257,7 +244,7 @@ expedition_events.301 = { #Sucessful expedition - Oregon Trail
 	}
 }
 
-expedition_events.302 = { #Sucessful expedition - Great Salt Lake
+expedition_events.302 = { #Successful expedition - Great Salt Lake
 	type = country_event
     placement = ROOT
 
@@ -285,7 +272,6 @@ expedition_events.302 = { #Sucessful expedition - Great Salt Lake
 			limit = {
 				has_variable = expedition_leader_var 
 			}
-			remove_variable = expedition_leader_var
 			save_scope_as = expedition_leader
 		}
 	}
@@ -325,12 +311,12 @@ expedition_events.205 = { #Failed expedition
 
     immediate = {
     	west_america_expedition_location = yes
-		remove_expedition_events_effect = yes
 		random_scope_character = {
 			limit = { has_variable = expedition_leader_var }
-			remove_variable = expedition_leader_var
 			save_scope_as = expedition_leader
 		}
+		remove_variable = on_expedition
+		remove_expedition_events_effect = yes
     }
 
 	option = {
@@ -1270,6 +1256,7 @@ expedition_events.291 = { #Pregnant Woman
 		name = expedition_events.291.a
 		default_option = yes
 		custom_tooltip = expedition_event_delayed_tt
+		set_variable = expedition_has_baby_var
 	}
 	
 	option = { #tell them to go back
@@ -1512,7 +1499,7 @@ expedition_events.294 = { #found a native settlement
 		trigger = {
 			custom_tooltip = {
 				text = expedition_baby_tt
-				has_variable = expedition_baby_var
+				has_variable = expedition_has_baby_var #expedition_baby_var
 			}
 		}
 		expedition_peril_decrease_small_effect = yes
