@@ -1,0 +1,75 @@
+﻿namespace = battlecalc
+
+# start event, not currently used
+
+battlecalc.2 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		set_global_variable = {
+			name = battlecalc_minluck_attacker
+			value = {
+				value = 1
+				divide = 3
+			}
+		}
+		set_global_variable = {
+			name = battlecalc_minluck_defender
+			value = 0.5
+		}
+	}
+}
+
+# event scope tests
+
+battlecalc.10 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		debug_log_scopes = yes
+		debug_log = BATTLECALC_CHAR_NAME_TEST
+		set_global_variable = {
+			name = battlecalc_current_attacking_bns
+			value = 1
+		}
+	}
+}
+battlecalc.11 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		debug_log_scopes = yes
+		debug_log = BATTLECALC_CHAR_NAME_TEST
+		add_trait = syphilis
+	}
+}
+battlecalc.12 = {
+	type = state_event
+	hidden = yes
+	immediate = {
+		debug_log_scopes = yes
+		debug_log = BATTLECALC_CHAR_NAME_TEST
+		add_modifier = {
+			name = state_gold_rush
+			months = short_modifier_time
+		}
+	}
+}
+
+battlecalc.1001 = {
+	type = country_event
+	immediate = {
+		set_global_variable = {
+			name = BATTLECALC_VARIABLE_TEST_NAME
+			# name = battlecalc_testvar
+			value = 999
+		}
+	}
+
+	option = {
+		name = battlecalc.1001.a
+	}
+	option = {
+		name = battlecalc.1001.b
+	}
+}

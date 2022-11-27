@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ THERE_ARE_TRADE_ROUTES_OWNED_BY_YOU_MOD:0 "你拥有自己建立的这种[concept_good]的[concept_trade_route]"
+ LCA_GUI_TOOLTIP_HIDE_DECISIONS_OUTLINER:0 "隐藏可行的$DECISIONS$"
+ LCA_GUI_TOOLTIP_SHOW_DECISIONS_OUTLINER:0 "显示可行的$DECISIONS$"
+ TITLE_AVAILABLE_DECISIONS:0 "#title 可行的$DECISIONS$#!"
+ LCA_GUI_TOOLTIP_HIDE_JE_OUTLINER:0 "隐藏[SelectLocalization(Not(IsDataModelEmpty(AccessPlayer.AccessActivePlayerObjectiveJournalEntries)), 'OTHER_ACTIVE_JOURNAL_ENTRIES', 'ACTIVE_JOURNAL_ENTRIES')]"
+ LCA_GUI_TOOLTIP_SHOW_JE_OUTLINER:0 "显示[SelectLocalization(Not(IsDataModelEmpty(AccessPlayer.AccessActivePlayerObjectiveJournalEntries)), 'OTHER_ACTIVE_JOURNAL_ENTRIES', 'ACTIVE_JOURNAL_ENTRIES')]"

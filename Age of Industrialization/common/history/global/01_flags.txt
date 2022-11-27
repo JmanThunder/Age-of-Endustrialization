@@ -62,4 +62,6 @@
 		}
 		set_variable = started_as_AUS
 	}
+
+	set_global_variable = started_with_better_flags
 }

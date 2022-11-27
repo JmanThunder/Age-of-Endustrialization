@@ -11,7 +11,7 @@ ec_country_allowed = {
 # Requirements for downsizing government funded buildings which is mostly a budget balancing thing
 
 ec_downsizing_allowed = {
-	has_variable = ec_country_weekly_surplus
+	has_variable = ec_country_budget_surplus
 	has_variable = ec_incorporated_population
 	has_revolution = no
 	is_revolutionary = no
@@ -21,7 +21,7 @@ ec_downsizing_allowed = {
 # Requirements for constructing both special and standard buildings
 
 ec_building_allowed = {
-	has_variable = ec_country_weekly_surplus
+	has_variable = ec_country_budget_surplus
 	has_variable = ec_incorporated_population
 	has_revolution = no
 	is_revolutionary = no
@@ -353,20 +353,14 @@ ec_has_free_construction_points = {
 ec_budget_health = {
 	OR = {
 		AND = {
-			$level$ = -4
-			OR = {
-				scaled_debt < 0.875
-				ec_country_weekly_surplus >= ec_10_percent_proficit
-			}
-		}
-		AND = {
 			$level$ = -3
 			OR = {
 				scaled_debt < 0.750
 				AND = {
-					ec_country_weekly_surplus >= ec_10_percent_proficit
+					ec_country_budget_surplus >= ec_10_percent_surplus
 					scaled_debt < 0.875
 				}
+				ec_country_budget_surplus >= ec_20_percent_surplus
 			}
 		}
 		AND = {
@@ -374,8 +368,12 @@ ec_budget_health = {
 			OR = {
 				scaled_debt < 0.500
 				AND = {
-					ec_country_weekly_surplus >= ec_10_percent_proficit
+					ec_country_budget_surplus >= ec_10_percent_surplus
 					scaled_debt < 0.625
+				}
+				AND = {
+					ec_country_budget_surplus >= ec_20_percent_surplus
+					scaled_debt < 0.750
 				}
 			}
 		}
@@ -384,8 +382,12 @@ ec_budget_health = {
 			OR = {
 				scaled_debt < 0.250
 				AND = {
-					ec_country_weekly_surplus >= ec_10_percent_proficit
+					ec_country_budget_surplus >= ec_10_percent_surplus
 					scaled_debt < 0.375
+				}
+				AND = {
+					ec_country_budget_surplus >= ec_20_percent_surplus
+					scaled_debt < 0.500
 				}
 			}
 		}
@@ -393,39 +395,43 @@ ec_budget_health = {
 			$level$ = 0
 			OR = {
 				AND = {
-					ec_country_weekly_surplus >= 0
+					ec_country_budget_surplus >= 0
 					scaled_debt <= 0
 				}
 				AND = {
-					ec_country_weekly_surplus >= ec_10_percent_proficit
+					ec_country_budget_surplus >= ec_10_percent_surplus
 					scaled_debt < 0.125
 				}
 				AND = {
-					ec_country_weekly_surplus < 0
+					ec_country_budget_surplus >= ec_20_percent_surplus
+					scaled_debt < 0.250
+				}
+				AND = {
+					ec_country_budget_surplus < 0
 					ec_weeks_of_reserves >= 208
 				}
 			}
 			NOT = {
-				ec_country_weekly_surplus <= ec_15_percent_deficit
+				ec_country_budget_surplus <= ec_15_percent_deficit
 			}
 		}
 		AND = {
 			$level$ = 1
 			OR = {
 				AND = {
-					ec_country_weekly_surplus >= ec_20_percent_proficit
+					ec_country_budget_surplus >= ec_20_percent_surplus
 					scaled_debt <= 0
 				}
 				AND = {
-					ec_country_weekly_surplus >= ec_15_percent_proficit
+					ec_country_budget_surplus >= ec_15_percent_surplus
 					ec_gold_reserves_percent >= 0.25
 				}
 				AND = {
-					ec_country_weekly_surplus >= ec_10_percent_proficit
+					ec_country_budget_surplus >= ec_10_percent_surplus
 					ec_gold_reserves_percent >= 0.50
 				}
 				AND = {
-					ec_country_weekly_surplus >= ec_5_percent_proficit
+					ec_country_budget_surplus >= ec_5_percent_surplus
 					ec_gold_reserves_percent >= 0.75
 				}
 			}
@@ -541,53 +547,236 @@ ec_is_using_military_forces = {
 	}
 }
 
-### CONDITIONS FOR STATES TO BE SUITABLE FOR CONSTRUCTION
-
-ec_state_has_free_workforce = {
+ec_wartime_spending = {
 	OR = {
-		ec_unemployed_population >= 5000
-		AND = {
-			any_scope_pop = {
-				is_pop_type = peasants
-				OR = {
-					pop_employment_building_group =	bg_subsistence_agriculture
-					pop_employment_building_group =	bg_subsistence_ranching
-				}
-			}
-			any_scope_building = {
-				is_subsistence_building = yes
-				level > 0
-				occupancy > 0.05
-			}
-		}
-	}
-	OR = {
-		NOT = {
-			any_scope_building = {
-				ec_building_to_evaluate_occupancy = yes
-			}
-		}
-		any_scope_building = {
-			filter = {
-				ec_building_to_evaluate_occupancy = yes
-			}
-			occupancy < ec_sufficient_occupancy
-			percent < 0.75
-		}
+		has_modifier = ec_wartime_spending
+		ec_is_using_military_forces = yes
 	}
 }
 
-ec_building_to_evaluate_occupancy = {
-	level > 0
-	NOR = {
-		is_subsistence_building = yes
-		is_building_type = building_urban_center
-		is_building_type = building_trade_center
-		is_building_type = building_railway
-		is_building_type = building_conscription_center
-		is_building_type = building_barracks
-		is_building_type = building_naval_base
+ec_has_enough_workforce = {
+	ec_available_workforce >= ec_required_workforce
+}
+
+### DOWNSIZING GOVERNMENT BUILDINGS ON STATE LEVEL
+
+# Government administration
+
+ec_downsize_government_administration = {
+	var:ec_government_administration_level > 0
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_government_administration_level > 0
+				var:ec_government_administration_level < ec_current_government_administration_level
+			}
+		}
 	}
+	ec_government_administration_downsizing_threshold >= ec_current_government_administration_level
+}
+
+# Construction sector
+
+ec_downsize_construction_sector = {
+	var:ec_construction_sector_level > 0
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_construction_sector_level > 0
+				var:ec_construction_sector_level < ec_current_construction_sector_level
+			}
+		}
+	}
+	OR = {
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -1
+				}
+			}
+			ec_wartime_spending = no
+		}
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -3
+				}
+			}
+		}
+		ec_construction_sector_downsizing_threshold >= ec_current_construction_sector_level
+	}
+}
+
+# University
+
+ec_downsize_university = {
+	var:ec_university_level > 0
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_university_level > 0
+				var:ec_university_level < ec_current_university_level
+			}
+		}
+	}
+	OR = {
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -1
+				}
+			}
+			ec_wartime_spending = no
+		}
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -3
+				}
+			}
+		}
+		ec_university_downsizing_threshold >= ec_current_university_level
+	}
+}
+
+# Port
+
+ec_downsize_port = {
+	var:ec_port_level > 0
+	OR = {
+		root = {
+			NOR = {
+				AND = {
+					has_variable_list = ec_coastline_of_outer_lands
+					variable_list_size = {
+						name = ec_coastline_of_outer_lands
+						value > 0
+					}
+				}
+				any_country = {
+					market.owner = root
+					any_scope_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+		root = {
+			is_target_in_variable_list = {
+				name = ec_coastline_of_market_capital
+				target = prev
+			}
+			any_in_list = {
+				variable = ec_coastline_of_market_capital
+				count > 1
+				has_building = building_port
+			}
+		}
+		root = {
+			is_target_in_variable_list = {
+				name = ec_safe_to_remove_ports_in_outer_lands
+				target = prev
+			}
+		}
+	}
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_port_level > 0
+				OR = {
+					root = {
+						NOR = {
+							AND = {
+								has_variable_list = ec_coastline_of_outer_lands
+								variable_list_size = {
+									name = ec_coastline_of_outer_lands
+									value > 0
+								}
+							}
+							any_country = {
+								market.owner = root
+								any_scope_state = {
+									is_coastal = yes
+								}
+							}
+						}
+					}
+					root = {
+						is_target_in_variable_list = {
+							name = ec_coastline_of_market_capital
+							target = prev
+						}
+						any_in_list = {
+							variable = ec_coastline_of_market_capital
+							count > 1
+							has_building = building_port
+						}
+					}
+					root = {
+						is_target_in_variable_list = {
+							name = ec_safe_to_remove_ports_in_outer_lands
+							target = prev
+						}
+					}
+				}
+				var:ec_port_level < ec_current_port_level
+			}
+		}
+	}
+	OR = {
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -1
+				}
+			}
+			ec_wartime_spending = no
+		}
+		root = {
+			NOT = {
+				ec_budget_health = {
+					level = -3
+				}
+			}
+		}
+		ec_port_downsizing_threshold >= ec_current_port_level
+	}
+}
+
+# Barracks
+
+ec_downsize_barracks = {
+	var:ec_barracks_level > 0
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_barracks_level > 0
+				var:ec_barracks_level < ec_current_barracks_level
+			}
+		}
+	}
+	ec_barracks_downsizing_threshold >= ec_current_barracks_level
+}
+
+# Naval base
+
+ec_downsize_naval_base = {
+	var:ec_naval_base_level > 0
+	save_temporary_scope_as = ec_current_state
+	NOT = {
+		root = {
+			any_scope_state = {
+				var:ec_naval_base_level > 0
+				var:ec_naval_base_level < ec_current_naval_base_level
+			}
+		}
+	}
+	ec_naval_base_downsizing_threshold >= ec_current_naval_base_level
 }
 
 ### COMMON BUILDING LEVEL TRIGGERS
@@ -2210,6 +2399,9 @@ ec_check_if_state_is_suitable = {
 ### GOVERNMENT ADMINISTRATION
 
 ec_consider_government_administration = {
+	NOT = {
+		has_modifier = ec_government_administration_cooldown
+	}
 	#has_technology_researched = bureaucracy
 	ec_consider_building = {
 		building = building_government_administration
@@ -2217,15 +2409,34 @@ ec_consider_government_administration = {
 		profitability = 0
 	}
 	OR = {
-		bureaucracy < ec_bureaucracy_1
+		is_player = no
 		AND = {
-			bureaucracy < ec_bureaucracy_excess
-			ec_government_costs_value < ec_government_costs_target
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_government_administration
+			}
 		}
 	}
 }
 
 ec_evaluate_government_administration = {
+	OR = {
+		$priority$ = 1
+		AND = {
+			$priority$ >= 2
+			$priority$ <= 6
+			ec_government_costs_value < ec_government_costs_excess
+			ec_government_costs_expected < ec_government_costs_ceiling
+			bureaucracy < ec_bureaucracy_excess
+		}
+		AND = {
+			$priority$ >= 7
+			ec_government_costs_value < ec_government_costs_target
+			ec_government_costs_expected < ec_government_costs_excess
+			bureaucracy < ec_bureaucracy_target
+		}
+	}
 	OR = {
 		AND = {
 			$priority$ = 1
@@ -2291,27 +2502,35 @@ ec_allocate_government_administration = {
 	OR = {
 		AND = {
 			$priority$ = 1
+			is_incorporated = yes
 			ec_tax_capacity_load_percent < ec_tax_capacity_2
 		}
 		AND = {
 			$priority$ = 2
+			is_incorporated = yes
 			ec_tax_capacity_load_percent < ec_tax_capacity_3
 		}
 		AND = {
 			$priority$ = 3
+			is_incorporated = yes
 			ec_tax_capacity_load_percent < ec_tax_capacity_4
 		}
 		AND = {
 			$priority$ = 4
+			is_incorporated = yes
 			ec_tax_capacity_load_percent < ec_tax_capacity_5
 		}
 		AND = {
 			$priority$ = 5
+			is_incorporated = yes
 			ec_tax_capacity_load_percent < ec_tax_capacity_6
 		}
 		AND = {
 			$priority$ = 6
-			ec_tax_capacity_load_percent >= ec_tax_capacity_6
+			OR = {
+				is_incorporated = no
+				ec_tax_capacity_load_percent >= ec_tax_capacity_6
+			}
 		}
 	}
 }
@@ -2319,6 +2538,9 @@ ec_allocate_government_administration = {
 ### CONSTRUCTION SECTOR
 
 ec_consider_construction_sector = {
+	NOT = {
+		has_modifier = ec_construction_sector_cooldown
+	}
 	has_technology_researched = urbanization
 	ec_consider_building = {
 		building = building_construction_sector
@@ -2326,6 +2548,7 @@ ec_consider_construction_sector = {
 		profitability = 0
 	}
 	ec_construction_costs_value < ec_construction_costs_target
+	ec_construction_costs_expected < ec_construction_costs_excess
 	OR = {
 		ec_budget_health = {
 			level = 0
@@ -2333,6 +2556,16 @@ ec_consider_construction_sector = {
 		OR = {
 			tax_level = very_low
 			tax_level = low
+		}
+	}
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_construction_sector
+			}
 		}
 	}
 }
@@ -2403,7 +2636,15 @@ ec_sanction_construction_sector = {
 ### UNIVERSITY
 
 ec_consider_university = {
+	NOT = {
+		has_modifier = ec_university_cooldown
+	}
 	has_technology_researched = academia
+	ec_consider_building = {
+		building = building_university
+		shortage = 1
+		profitability = 0
+	}
 	OR = {
 		ec_budget_health = {
 			level = 0
@@ -2413,12 +2654,27 @@ ec_consider_university = {
 			tax_level = low
 		}
 	}
-	ec_consider_building = {
-		building = building_university
-		shortage = 1
-		profitability = 0
+	OR = {
+		AND = {
+			ec_university_count < ec_university_11
+			ec_government_costs_value < ec_government_costs_excess
+			ec_government_costs_expected < ec_government_costs_ceiling
+		}
+		AND = {
+			ec_government_costs_value < ec_government_costs_target
+			ec_government_costs_expected < ec_government_costs_excess
+		}
 	}
-	ec_government_costs_value < ec_government_costs_excess
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_university
+			}
+		}
+	}
 }
 
 ec_evaluate_university = {
@@ -2521,6 +2777,16 @@ ec_consider_railway = {
 	has_technology_researched = railways
 	ec_budget_health = {
 		level = -2
+	}
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_railway
+			}
+		}
 	}
 }
 
@@ -2633,15 +2899,15 @@ ec_allocate_railway = {
 		AND = {
 			$priority$ = 6
 			ec_infrastructure_load_percent >= ec_infrastructure_5
-			ec_infrastructure_load_value < 10
+			ec_infrastructure_load_percent < ec_infrastructure_6
 			root = {
 				var:cber4 >= 9
 			}
 		}
 		AND = {
 			$priority$ = 7
-			ec_infrastructure_load_percent >= ec_infrastructure_5
-			ec_infrastructure_load_value < 20
+			ec_infrastructure_load_percent >= ec_infrastructure_6
+			ec_infrastructure_load_percent < ec_infrastructure_7
 			root = {
 				var:cber4 >= 16
 			}
@@ -2652,12 +2918,25 @@ ec_allocate_railway = {
 ### PORT
 
 ec_consider_port = {
+	NOT = {
+		has_modifier = ec_port_cooldown
+	}
 	has_technology_researched = navigation
 	ec_budget_health = {
 		level = -2
 	}
 	any_scope_state = {
 		is_coastal = yes
+	}
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_port
+			}
+		}
 	}
 }
 
@@ -2666,12 +2945,13 @@ ec_evaluate_port = {
 		$priority$ <= 2
 		AND = {
 			$priority$ = 3
-			ec_government_costs_value < ec_government_costs_ceiling
+			ec_government_costs_expected < ec_government_costs_ceiling
 			ec_convoys_current < ec_convoys_ceiling
 		}
 		AND = {
 			$priority$ >= 4
-			ec_government_costs_value < ec_government_costs_excess
+			ec_government_costs_value < ec_government_costs_target
+			ec_government_costs_expected < ec_government_costs_excess
 			ec_convoys_current < ec_convoys_target
 		}
 	}
@@ -2861,7 +3141,47 @@ ec_allocate_port = {
 
 ### BARRACKS
 
+ec_has_army_threat = {
+	any_country = {
+		NOT = {
+			this = root
+		}
+		OR = {
+			has_diplomatic_relevance = root
+			has_strategic_adjacency = root
+			has_war_with = root
+			has_diplomatic_pact = {
+				who = root
+				type = rivalry
+			}
+			root = {
+				has_diplomatic_pact = {
+					who = prev
+					type = rivalry
+				}
+			}
+			any_scope_ally = {
+				has_war_with = root
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry
+				}
+				root = {
+					has_diplomatic_pact = {
+						who = prev
+						type = rivalry
+					}
+				}
+			}
+		}
+		ec_125_percent_of_army_power_projection >= root.ec_army_power_projection
+	}
+}
+
 ec_consider_barracks = {
+	NOT = {
+		has_modifier = ec_barracks_cooldown
+	}
 	has_technology_researched = standing_army
 	ec_budget_health = {
 		level = -1
@@ -2874,39 +3194,18 @@ ec_consider_barracks = {
 	OR = {
 		var:ec_barracks_count < ec_battalions_threshold
 		AND = {
+			ec_has_army_threat = yes
 			ec_military_costs_value < ec_military_costs_target
-			any_country = {
-				NOT = {
-					this = root
-				}
-				OR = {
-					has_diplomatic_relevance = root
-					has_war_with = root
-					has_diplomatic_pact = {
-						who = root
-						type = rivalry
-					}
-					root = {
-						has_diplomatic_pact = {
-							who = prev
-							type = rivalry
-						}
-					}
-					any_scope_ally = {
-						has_war_with = root
-						has_diplomatic_pact = {
-							who = root
-							type = rivalry
-						}
-						root = {
-							has_diplomatic_pact = {
-								who = prev
-								type = rivalry
-							}
-						}
-					}
-				}
-				ec_133_percent_of_army_power_projection >= root.ec_army_power_projection
+			ec_military_costs_expected < ec_military_costs_excess
+		}
+	}
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_barracks
 			}
 		}
 	}
@@ -2990,7 +3289,47 @@ ec_allocate_barracks = {
 
 ### NAVAL BASE
 
+ec_has_navy_threat = {
+	any_country = {
+		NOT = {
+			this = root
+		}
+		OR = {
+			has_diplomatic_relevance = root
+			has_strategic_adjacency = root
+			has_war_with = root
+			has_diplomatic_pact = {
+				who = root
+				type = rivalry
+			}
+			root = {
+				has_diplomatic_pact = {
+					who = prev
+					type = rivalry
+				}
+			}
+			any_scope_ally = {
+				has_war_with = root
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry
+				}
+				root = {
+					has_diplomatic_pact = {
+						who = prev
+						type = rivalry
+					}
+				}
+			}
+		}
+		ec_125_percent_of_navy_power_projection >= root.ec_navy_power_projection
+	}
+}
+
 ec_consider_naval_base = {
+	NOT = {
+		has_modifier = ec_naval_base_cooldown
+	}
 	has_technology_researched = admiralty
 	ec_budget_health = {
 		level = -1
@@ -3007,38 +3346,16 @@ ec_consider_naval_base = {
 		navy_size < ec_flotillas_threshold
 		AND = {
 			ec_military_costs_value < ec_military_costs_target
-			any_country = {
-				NOT = {
-					this = root
-				}
-				OR = {
-					has_diplomatic_relevance = root
-					has_war_with = root
-					has_diplomatic_pact = {
-						who = root
-						type = rivalry
-					}
-					root = {
-						has_diplomatic_pact = {
-							who = prev
-							type = rivalry
-						}
-					}
-					any_scope_ally = {
-						has_war_with = root
-						has_diplomatic_pact = {
-							who = root
-							type = rivalry
-						}
-						root = {
-							has_diplomatic_pact = {
-								who = prev
-								type = rivalry
-							}
-						}
-					}
-				}
-				ec_133_percent_of_navy_power_projection >= root.ec_navy_power_projection
+			ec_military_costs_expected < ec_military_costs_excess
+		}
+	}
+	OR = {
+		is_player = no
+		AND = {
+			has_game_rule = ec_allow_autobuild
+			has_variable = ec_autobuild
+			NOT = {
+				has_variable = ec_autobuild_naval_base
 			}
 		}
 	}
@@ -3898,7 +4215,7 @@ ec_evaluate_tea_plantation = {
 				ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:coffee }
 				ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:wine }
 			}
-			ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:tea }
+			ec_requirements_floor = { priority = $priority$ offset = 0 market_good = mg:tea }
 		}
 	}
 }
@@ -3940,7 +4257,7 @@ ec_evaluate_coffee_plantation = {
 				ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:tea }
 				ec_requirements_exact = { priority = $priority$ offset = 4 market_good = mg:wine }
 			}
-			ec_requirements_exact = { priority = $priority$ offset = 0 market_good = mg:coffee }
+			ec_requirements_floor = { priority = $priority$ offset = 0 market_good = mg:coffee }
 		}
 	}
 }

@@ -182,7 +182,7 @@ types construction_queue {
 								autoresize = yes
 								align = left|nobaseline
 								parentanchor = vcenter
-								text = "[ConstructionQueueElement.GetBuilding.GetName] in [ConstructionQueueElement.GetState.GetName]"
+								text = "construction_queue_text"
 								
 								fontsize_min = 14
 								maximumsize = { 250 -1 }

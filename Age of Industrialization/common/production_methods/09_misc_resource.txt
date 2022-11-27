@@ -197,7 +197,7 @@ pm_privately_owned_building_logging_camp = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -224,7 +224,7 @@ pm_publicly_traded_building_logging_camp = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -242,7 +242,6 @@ pm_government_run_building_logging_camp = {
 	
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -265,10 +264,6 @@ pm_worker_cooperative_building_logging_camp = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -461,7 +456,7 @@ pm_privately_owned_building_fishing_wharf = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -483,7 +478,7 @@ pm_publicly_traded_building_fishing_wharf = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -500,7 +495,6 @@ pm_government_run_building_fishing_wharf = {
 	
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -522,10 +516,6 @@ pm_worker_cooperative_building_fishing_wharf = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -694,7 +684,7 @@ pm_privately_owned_building_whaling_station = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -716,7 +706,7 @@ pm_publicly_traded_building_whaling_station = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -733,7 +723,6 @@ pm_government_run_building_whaling_station = {
 
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -755,10 +744,6 @@ pm_worker_cooperative_building_whaling_station = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-	
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -876,7 +861,7 @@ pm_publicly_traded_building_oil_rig = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5

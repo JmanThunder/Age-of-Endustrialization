@@ -1,0 +1,3 @@
+﻿l_polish: 
+ automatic_irrigation:0 "Automatyczne nawadnianie"
+ automatic_building_rubber_plantation:0 "$automatic_irrigation$"

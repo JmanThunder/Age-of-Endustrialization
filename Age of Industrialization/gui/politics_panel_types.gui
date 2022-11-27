@@ -637,7 +637,7 @@ types information_panels_types
 					parentanchor = hcenter
 					addrow = 23
 					minimumsize = { -1 69 }
-					maxverticalslots = 50
+					maxverticalslots = 8
 
 					block "columnsize" {
 						addcolumn = 250

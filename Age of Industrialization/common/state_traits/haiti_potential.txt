@@ -1,0 +1,15 @@
+state_trait_caribbean_sugar = {
+	icon = "gfx/interface/icons/state_trait_icons/caribbean_sugar.dds"
+
+	modifier = {
+                building_output_sugar_mult = 0.35
+	}
+}
+
+state_trait_volcanic_activity = {
+	icon = "gfx/interface/icons/state_trait_icons/unused/rich_natural_resources.dds"
+
+	modifier = {
+                building_group_bg_mining_throughput_mult = 0.15
+	}
+}

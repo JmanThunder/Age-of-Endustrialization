@@ -1,4 +1,4 @@
-﻿GER_communist = {
+GER_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = { 135 0 0 }
 	

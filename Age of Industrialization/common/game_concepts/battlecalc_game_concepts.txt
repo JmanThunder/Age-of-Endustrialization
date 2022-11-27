@@ -1,0 +1,3 @@
+﻿concept_battlecalc_width = {}
+
+concept_battlecalc_techbonus = {}

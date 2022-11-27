@@ -8,7 +8,7 @@ building_construction_sector = {
 	
 	has_max_level = yes
 	
-	required_construction = construction_cost_medium
+	required_construction = construction_cost_low
 	unlocking_technologies = {
 		urbanization
 	}

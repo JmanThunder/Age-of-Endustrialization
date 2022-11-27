@@ -14,6 +14,11 @@ law_consumption_based_taxation = {
 		country_consumption_tax_cost_mult = -0.50
 	}
 	
+	disallowing_laws = {
+		law_traditionalism
+		law_centrally_planned_economy
+	}
+
 	tax_modifier_very_low = {
 		tax_consumption_add = 0.20
 	}	
@@ -52,6 +57,11 @@ law_land_based_taxation = {
 	
 	progressiveness = -50
 	
+	disallowing_laws = {
+		law_traditionalism
+		law_centrally_planned_economy
+	}
+
 	tax_modifier_very_low = {
 		tax_consumption_add = 0.20
 		tax_land_add = 0.40
@@ -102,6 +112,7 @@ law_per_capita_based_taxation = {
 	
 	disallowing_laws = {
 		law_traditionalism
+		law_centrally_planned_economy
 	}
 	
 	unlocking_technologies = {
@@ -113,15 +124,6 @@ law_per_capita_based_taxation = {
 		tax_per_capita_add = 0.40
 		tax_land_add = 0.20
 		tax_income_add = 0.10
-		state_bureaucrats_investment_pool_contribution_add = 0.2
-		state_aristocrats_investment_pool_contribution_add = 0.2
-		state_capitalists_investment_pool_contribution_add = 0.30
-
-interest_group_ig_industrialists_approval_add = 3
-interest_group_ig_rural_folk_approval_add = 3
-interest_group_ig_industrialists_pop_attraction_mult = 0.2
-
-
 	}	
 	
 	tax_modifier_low = {
@@ -129,45 +131,27 @@ interest_group_ig_industrialists_pop_attraction_mult = 0.2
 		tax_per_capita_add = 0.55
 		tax_land_add = 0.275
 		tax_income_add = 0.125
-		state_bureaucrats_investment_pool_contribution_add = 0.1
-		state_aristocrats_investment_pool_contribution_add = 0.1
-		state_capitalists_investment_pool_contribution_add = 0.20
-
-interest_group_ig_industrialists_approval_add = 2
-interest_group_ig_rural_folk_approval_add = 2
-interest_group_ig_industrialists_pop_attraction_mult = 0.1
-
-
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.39
-		tax_per_capita_add = 0.77
-		tax_land_add = 0.39
-		tax_income_add = 0.17
-		state_bureaucrats_investment_pool_contribution_add = 0.0089
-		state_aristocrats_investment_pool_contribution_add = 0.0211
-		state_capitalists_investment_pool_contribution_add = 0.1056
-
-
+		tax_consumption_add = 0.35
+		tax_per_capita_add = 0.70
+		tax_land_add = 0.35
+		tax_income_add = 0.15
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.51
-		tax_per_capita_add = 1.02
-		tax_land_add = 0.51
-		tax_income_add = 0.21
-		state_aristocrats_investment_pool_contribution_add = 0.0137
-		state_capitalists_investment_pool_contribution_add = 0.0686
+		tax_consumption_add = 0.425
+		tax_per_capita_add = 0.85
+		tax_land_add = 0.425
+		tax_income_add = 0.175
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.65
-		tax_per_capita_add = 1.3
-		tax_land_add = 0.65
-		tax_income_add = 0.26
-		state_aristocrats_investment_pool_contribution_add = 0.0089
-		state_capitalists_investment_pool_contribution_add = 0.0445
+		tax_consumption_add = 0.50
+		tax_per_capita_add = 1.0
+		tax_land_add = 0.50
+		tax_income_add = 0.20
 	}	
 	
 	possible_political_movements = {
@@ -185,6 +169,7 @@ law_proportional_taxation = {
 	
 	disallowing_laws = {
 		law_traditionalism
+		law_centrally_planned_economy
 	}	
 	
 	unlocking_technologies = {
@@ -195,56 +180,30 @@ law_proportional_taxation = {
 		tax_consumption_add = 0.20
 		tax_income_add = 0.15
 		tax_dividends_add = 0.15
-		state_bureaucrats_investment_pool_contribution_add = 0.10
-		state_aristocrats_investment_pool_contribution_add = 0.10
-		state_capitalists_investment_pool_contribution_add = 0.50
-
-interest_group_ig_industrialists_approval_add = 3
-interest_group_ig_rural_folk_approval_add = 3
-interest_group_ig_industrialists_pop_attraction_mult = 0.2
-
 	}	
 	
 	tax_modifier_low = {
 		tax_consumption_add = 0.275
 		tax_income_add = 0.20
 		tax_dividends_add = 0.20
-		state_bureaucrats_investment_pool_contribution_add = 0.065
-		state_aristocrats_investment_pool_contribution_add = 0.065
-		state_capitalists_investment_pool_contribution_add = 0.325
-
-interest_group_ig_industrialists_approval_add = 2
-interest_group_ig_rural_folk_approval_add = 2
-interest_group_ig_industrialists_pop_attraction_mult = 0.1
-
-
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.39
-		tax_income_add = 0.27
-		tax_dividends_add = 0.27
-		state_bureaucrats_investment_pool_contribution_add = 0.0422
-		state_aristocrats_investment_pool_contribution_add = 0.0422
-		state_capitalists_investment_pool_contribution_add = 0.2112
+		tax_consumption_add = 0.35
+		tax_income_add = 0.25
+		tax_dividends_add = 0.25
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.51
-		tax_income_add = 0.36
-		tax_dividends_add = 0.36
-		state_bureaucrats_investment_pool_contribution_add = 0.0274
-		state_aristocrats_investment_pool_contribution_add = 0.0274
-		state_capitalists_investment_pool_contribution_add = 0.1372
+		tax_consumption_add = 0.425
+		tax_income_add = 0.30
+		tax_dividends_add = 0.30
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.65
-		tax_income_add = 0.45
-		tax_dividends_add = 0.45
-		state_bureaucrat_investment_pool_contribution_add = 0.0274
-		state_aristocrats_investment_pool_contribution_add = 0.0274
-		state_capitalists_investment_pool_contribution_add = 0.1372
+		tax_consumption_add = 0.50
+		tax_income_add = 0.35
+		tax_dividends_add = 0.35
 	}	
 
 	possible_political_movements = {

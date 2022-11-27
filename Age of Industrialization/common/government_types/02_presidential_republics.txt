@@ -103,10 +103,6 @@ gov_colonial_administration = {
 				is_subject_type = subject_type_dominion
 			}
 			AND = {
-				AND = { exists = c:RUS is_subject_of = c:RUS }
-				c:UBD = ROOT
-			}
-			AND = {
 				exists = c:SPA
 				is_subject_of = c:SPA
 				is_subject_type = subject_type_puppet
@@ -152,6 +148,7 @@ gov_military_dictatorship = {
 	female_ruler = "RULER_TITLE_GENERAL"
 	
 	possible = {
+		NOT = { has_variable = fra_presidential_dictatorship }
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_autocracy 
 		OR = {
@@ -168,9 +165,16 @@ gov_presidential_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_autocracy 
 		OR = {
+			has_law = law_type:law_autocracy
+			AND = {
+				has_law = law_type:law_oligarchy
+				has_variable = fra_presidential_dictatorship
+			}
+		}
+		has_law = law_type:law_presidential_republic
+		OR = {
+			has_variable = fra_presidential_dictatorship
 			has_law = law_type:law_peasant_levies
 			has_law = law_type:law_national_militia
 		}
@@ -184,12 +188,12 @@ gov_junta = {
 	female_ruler = "RULER_TITLE_GENERAL"
 	
 	possible = {
+		NOT = { has_variable = fra_presidential_dictatorship }
 		has_law = law_type:law_presidential_republic
 		country_has_voting_franchise = no
 		OR = {
 			has_law = law_type:law_mass_conscription
 			has_law = law_type:law_professional_army
-			has_variable = pol_uprising
 		}
 	}
 }

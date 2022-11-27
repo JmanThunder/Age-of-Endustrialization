@@ -1,6 +1,6 @@
 ﻿l_german:
   MS_BTN: "Spreadsheets"
-  MS_TOOLTIP: "Mehr spreadsheets anzeigen"
+  MS_TOOLTIP: "Mehr Spreadsheets anzeigen"
   MS_PANEL_HEADER: "Mehr Spreadsheets"
   MS_STATES: "Staaten"
   MS_POPS: "Pops"
@@ -72,4 +72,8 @@
   MS_TRADE_ROUTE_TOOLTIP: "Handelsrouten für diese Ware gehen von dir aus"
   MS_WARNING_1: "Fehlende Waren?"
   MS_WARNING_2: "Problem: Paradox filtert alle Waren automatisch durch den Filter im Markt Tab."
-  MS_WARNING_3: "Lösung: Filter im Markt Tab abwählen."
+  MS_WARNING_3: "Lösung: Filter im Markt Tab abwählen. Alternativ kann es auch sein, dass noch nicht genug Waren im Markt sind."
+  MS_GOODS_NUMBER_WITH_TRADE_LEVEL: "[TradeRoute.GetTradeQuantity|Dv]  (S. [TradeRoute.GetLevel|v])"
+  MS_WAGES: "#bold $WAGES$#!"
+  MS_EXPENSES: "#bold $EXPENSES$#!"
+  MS_TAXES: "#bold $TAXES$#!"

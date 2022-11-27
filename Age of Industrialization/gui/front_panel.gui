@@ -1072,7 +1072,7 @@ types front_panel_types
 					layoutpolicy_vertical = expanding
 					layoutpolicy_horizontal = expanding
 					elide = right
-					text = "[Character.GetCountry.GetFlagTextIcon] [Character.GetFullName]"
+					text = "[Character.GetCountry.GetFlagTextIcon] [Character.GetCustom('GetUniversalFullName')]"
 					align = left|nobaseline
 				}
 
@@ -1301,41 +1301,14 @@ types front_panel_types
 			parentanchor = center
 			spacing = 15
 			
-			### ----
-			#textbox = {
-			#	margin_left = 0
-			#	text = "[Battle.GetUnitIcon] [Battle.GetCurrentAttackerUnits|v]#!"
-			#	size = { 100 50 }
-			#	align = right|nobaseline
-			#	parentanchor = vcenter
-			#	using = fontsize_large
-			#}
-			### ++++
 			textbox = {
-				margin_right = 0
-				text = "[Battle.GetCurrentAttackerUnits|v]  [Battle.GetUnitIcon]#!"
+				margin_left = 0
+				text = "[Battle.GetUnitIcon] [Battle.GetCurrentAttackerUnits|v]#!"
 				size = { 100 50 }
 				align = right|nobaseline
 				parentanchor = vcenter
 				using = fontsize_large
 			}
-			### ====
-			
-			### ++++
-			white_progressbar_vertical = {
-				size = { 9 36 }
-				parentanchor = vcenter
-				
-				blockoverride "values" {
-					min = 0
-					max = 1
-					value = "[FixedPointToFloat( Battle.AccessAttackerBattleParticipant.GetMorale )]"
-				}
-				blockoverride "color" {
-					color = "[GetMoraleColorVec( Battle.AccessAttackerBattleParticipant.GetMorale )]"
-				}
-			}
-			### ====
 			
 			button = {
 				size = { 45 45 }
@@ -1343,22 +1316,6 @@ types front_panel_types
 				alwaystransparent = yes
 				parentanchor = vcenter
 			}
-			
-			### ++++
-			white_progressbar_vertical = {
-				size = { 9 36 }
-				parentanchor = vcenter
-				
-				blockoverride "values" {
-					min = 0
-					max = 1
-					value = "[FixedPointToFloat( Battle.AccessDefenderBattleParticipant.GetMorale )]"
-				}
-				blockoverride "color" {
-					color = "[GetMoraleColorVec( Battle.AccessDefenderBattleParticipant.GetMorale )]"
-				}
-			}
-			### ====
 			
 			textbox = {
 				margin_left = 0

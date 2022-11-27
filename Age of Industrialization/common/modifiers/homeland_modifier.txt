@@ -1,0 +1,4 @@
+﻿homeland_add_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_assimilation_mult = 0.2
+}

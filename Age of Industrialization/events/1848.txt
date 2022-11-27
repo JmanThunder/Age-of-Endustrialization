@@ -51,6 +51,12 @@
 			}
 			activate_law = law_type:law_parliamentary_republic
 		}
+		if = {
+			limit = {
+				c:FRA = ROOT
+			}
+			trigger_event = { id = napoleonic_flavor.6 days = 1 popup = yes }
+		}
 		# monarchists get VERY angry
 		every_interest_group = {
 			limit = {
@@ -68,7 +74,7 @@
 			kill_character = yes
 		}
 		ai_chance = {
-			base = 99
+			base = 25
 		}
 	}
 	option = {
@@ -79,7 +85,7 @@
 			name = regicide_averted
 		}
 		ai_chance = {
-			base = 25
+			base = 75
 		}
 	}
 }
@@ -121,7 +127,12 @@
 		every_interest_group = {
 			limit = {
 				leader = {
-					has_ideology = ideology_royalist	
+					OR = {
+						has_ideology = ideology_royalist
+						has_ideology = ideology_orleanist
+						has_ideology = ideology_legitimist
+						has_ideology = ideology_bonapartist
+					}
 				}
 			}
 			leader = {
@@ -337,7 +348,7 @@
 			value = medium_radicals
 		}
 		ai_chance = {
-			base = 88
+			base = 66
 		}
 	}
 	option = { # radical option

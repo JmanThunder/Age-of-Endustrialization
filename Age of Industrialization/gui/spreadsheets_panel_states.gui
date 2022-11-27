@@ -2,7 +2,7 @@
 @line_height = 35
 @item_height = 32
 @item_right_margin_inside = 8
-@item_right_margin_outside = 12
+@item_right_margin_outside = 6
 
 types spreadsheets_panel_types
 {
@@ -80,10 +80,10 @@ types spreadsheets_panel_types
 					icon = {
 						texture = "gfx/interface/icons/pops_icons/peasants.dds"
 						size = { @secondary_icon_size @secondary_icon_size }
-						parentanchor = vcenter
+						parentanchor = hcenter|vcenter
 					}
 
-					text = "MS_PEASANT"
+					text = ""
 					tooltip = "MS_PEASANT"
 					align = right|nobaseline
 					using = fontsize_medium
@@ -96,7 +96,13 @@ types spreadsheets_panel_types
 					size = { 0 @item_height }
 					enabled = no
 
-					text = "MS_UNEMP"
+					icon = {
+						texture = "gfx/interface/icons/pops_icons/unemployed.dds"
+						size = { @secondary_icon_size @secondary_icon_size }
+						parentanchor = hcenter|vcenter
+					}
+
+					text = ""
 					tooltip = "[concept_unemployed]"
 					align = right|nobaseline
 					using = fontsize_medium
@@ -160,7 +166,7 @@ types spreadsheets_panel_types
 					size = { 0 @item_height }
 					onclick = "[AccessPlayer.SortStates('averagepopwage')]"
 
-					text = "WAGES"
+					text = "MS_WAGES"
 					align = right|nobaseline
 
 					tooltip = AVERAGE_POP_WAGE_EXPLAINER
@@ -231,12 +237,6 @@ types spreadsheets_panel_types
 					size = { 0 @item_height }
 					enabled = no
 
-					icon = {
-						texture = "gfx/interface/icons/state_status_icons/state_infrastructure.dds"
-						size = { @secondary_icon_size @secondary_icon_size }
-						parentanchor = vcenter
-					}
-
 					text = "MS_INFRA"
 					tooltip = "MS_INFRA"
 					align = right|nobaseline
@@ -266,12 +266,6 @@ types spreadsheets_panel_types
 					layoutpolicy_horizontal = expanding
 					size = { 0 @item_height }
 					enabled = no
-
-					icon = {
-						texture = "gfx/interface/icons/state_status_icons/state_tax_capacity.dds"
-						size = { @secondary_icon_size @secondary_icon_size }
-						parentanchor = vcenter
-					}
 
 					text = "MS_TAXCAP"
 					tooltip = "MS_TAXCAP"
@@ -306,10 +300,10 @@ types spreadsheets_panel_types
 					icon = {
 						texture = "gfx/interface/icons/state_status_icons/has_turmoil.dds"
 						size = { @secondary_icon_size @secondary_icon_size }
-						parentanchor = vcenter
+						parentanchor = hcenter|vcenter
 					}
 
-					text = "MS_TURMOIL"
+					text = ""
 					tooltip = "MS_TURMOIL"
 					align = right|nobaseline
 					using = fontsize_medium
@@ -342,7 +336,7 @@ types spreadsheets_panel_types
 					size = { 0 @item_height }
 					onclick = "[AccessPlayer.SortStates('governmentexpenses')]"
 
-					text = "EXPENSES"
+					text = "MS_EXPENSES"
 					align = right|nobaseline
 
 					tooltip = EXPENSES_EXPLAINER
@@ -356,7 +350,7 @@ types spreadsheets_panel_types
 					size = { 0 @item_height }
 					onclick = "[AccessPlayer.SortStates('taxrevenue')]"
 
-					text = "TAXES"
+					text = "MS_TAXES"
 					align = right|nobaseline
 
 					tooltip = STATE_INCOME_TAX_REVENUE_EXPLAINER
@@ -403,7 +397,7 @@ types spreadsheets_panel_types
 
 				### TRAITS
 				sort_button = {
-					size = { 80 @item_height }
+					size = { 90 @item_height }
 					enabled = no
 
 					align = right|nobaseline
@@ -715,11 +709,11 @@ types spreadsheets_panel_types
 								direction = vertical
 
 								widget = {
-									size = { 80 @line_height }
+									size = { 90 @line_height }
 
 									flowcontainer = {
 										datamodel = "[State.AccessStateRegion.AccessTraits]"
-										spacing = 5
+										spacing = 3
 										margin = { @item_right_margin_outside 0 }
 										parentanchor = right|vcenter
 

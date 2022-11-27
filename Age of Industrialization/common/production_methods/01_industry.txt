@@ -241,7 +241,7 @@ pm_privately_owned_building_food_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -268,7 +268,7 @@ pm_publicly_traded_building_food_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -285,7 +285,6 @@ pm_government_run_building_food_industry = {
 	
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -307,10 +306,6 @@ pm_worker_cooperative_building_food_industry = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -556,7 +551,7 @@ pm_privately_owned_building_textile_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -584,7 +579,7 @@ pm_publicly_traded_building_textile_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -603,7 +598,6 @@ pm_government_run_building_textile_mills = {
 	
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -627,10 +621,6 @@ pm_worker_cooperative_building_textile_mills = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -877,7 +867,7 @@ pm_privately_owned_building_furniture_manufacturies = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -904,7 +894,7 @@ pm_publicly_traded_building_furniture_manufacturies = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -922,7 +912,6 @@ pm_government_run_building_furniture_manufacturies = {
 	
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -945,10 +934,6 @@ pm_worker_cooperative_building_furniture_manufacturies = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1166,7 +1151,7 @@ pm_privately_owned_building_glassworks = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 1
@@ -1194,7 +1179,7 @@ pm_publicly_traded_building_glassworks = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 1
@@ -1213,7 +1198,6 @@ pm_government_run_building_glassworks = {
 	
 	unlocking_laws = {
 		law_command_economy
-        law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1237,10 +1221,6 @@ pm_worker_cooperative_building_glassworks = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1418,7 +1398,7 @@ pm_privately_owned_building_tooling_workshops = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -1445,7 +1425,7 @@ pm_publicly_traded_building_tooling_workshops = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -1463,7 +1443,6 @@ pm_government_run_building_tooling_workshops = {
 	
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1486,10 +1465,6 @@ pm_worker_cooperative_building_tooling_workshops = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1655,7 +1630,7 @@ pm_privately_owned_building_paper_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -1682,7 +1657,7 @@ pm_publicly_traded_building_paper_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -1700,7 +1675,6 @@ pm_government_run_building_paper_mills = {
 	
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1723,10 +1697,6 @@ pm_worker_cooperative_building_paper_mills = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-	
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -1932,7 +1902,7 @@ pm_privately_owned_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -1945,7 +1915,6 @@ pm_government_run_industry = {
 
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -1963,10 +1932,6 @@ pm_worker_cooperative_industry = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -2577,7 +2542,7 @@ pm_privately_owned_building_shipyards = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -2605,7 +2570,7 @@ pm_publicly_traded_building_shipyards = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -2624,7 +2589,6 @@ pm_government_run_building_shipyards = {
 
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -2648,10 +2612,6 @@ pm_worker_cooperative_building_shipyards = {
 
 	unlocking_laws = {
 		law_council_republic
-	}
-
-	disallowing_laws = {
-		law_centrally_planned_economy
 	}
 
 	building_modifiers = {
@@ -2978,7 +2938,7 @@ pm_privately_owned_building_arms_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3006,7 +2966,7 @@ pm_publicly_traded_building_arms_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3025,7 +2985,6 @@ pm_government_run_building_arms_industry = {
 
 	unlocking_laws = {
 		law_command_economy
-		law_centrally_planned_economy
 	}
 	
 	building_modifiers = {
@@ -3051,10 +3010,6 @@ pm_worker_cooperative_building_arms_industry = {
 		law_council_republic
 	}
 
-	disallowing_laws = {
-		law_centrally_planned_economy
-	}
-	
 	building_modifiers = {
 		level_scaled = {
 			building_employment_laborers_add = 100
@@ -3136,7 +3091,7 @@ pm_publicly_traded_building_chemical_plants = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3158,7 +3113,7 @@ pm_publicly_traded_building_synthetic_plants = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3186,7 +3141,7 @@ pm_publicly_traded_building_steel_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3213,7 +3168,7 @@ pm_publicly_traded_building_motor_industries = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3235,7 +3190,7 @@ pm_publicly_traded_building_war_machines_induestries = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3257,7 +3212,7 @@ pm_publicly_traded_building_electrics_industries = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -3283,7 +3238,7 @@ pm_publicly_traded_building_munition_plants = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5

@@ -1,0 +1,38 @@
+namespace = gui_lca_events
+
+gui_lca_events.1 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		clear_global_variable_list = temp_markets
+		every_in_global_list = {
+			variable = markets
+			if = {
+				limit = {
+					exists = this
+					is_country_alive = yes
+					market.owner = this
+				}
+				add_to_global_variable_list = {
+					name = temp_markets
+					target = this
+				}
+			}
+		}
+		clear_global_variable_list = markets
+		every_in_global_list = {
+			variable = temp_markets
+			add_to_global_variable_list = {
+				name = markets
+				target = this
+			}
+		}
+		clear_global_variable_list = temp_markets
+	}
+}

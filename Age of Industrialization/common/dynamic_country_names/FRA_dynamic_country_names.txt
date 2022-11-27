@@ -9,7 +9,9 @@ FRA = { # France
 		trigger = {
 			scope:actor = { 
 				has_law = law_type:law_monarchy
-				has_variable = french_empire_created
+				ruler = {
+					has_variable = is_bonapartist
+				}
 			}
 		}
 	}

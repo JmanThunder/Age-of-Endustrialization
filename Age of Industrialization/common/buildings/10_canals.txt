@@ -20,8 +20,10 @@
 
 	production_method_groups = {
 		pmg_canal
+		pm_canals_mint
+		pm_canals_eletric
+		pm_canals_oil
 	}
-	ai_value = 10000
 }
 
 building_panama_canal = {
@@ -45,6 +47,8 @@ building_panama_canal = {
 
 	production_method_groups = {
 		pmg_canal
+		pm_canals_mint
+		pm_canals_eletric
+		pm_canals_oil
 	}
-	ai_value = 10000
 }

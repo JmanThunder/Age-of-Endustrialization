@@ -8,7 +8,7 @@ types pinnable_outliner_items {
 		}
 
 		blockoverride "text" {
-			text = "[Character.GetFullNameNoFormatting]"
+			text = "[Character.GetCustom('GetUniversalFullNameNoFormatting')]"
 		}
 		blockoverride "tooltip" {
 			tooltipwidget = {
@@ -183,16 +183,6 @@ types pinnable_outliner_items {
 
 			textbox = {
 				autoresize = yes
-				layoutpolicy_horizontal = expanding
-				elide = right
-				text = "[InterestGroup.GetApprovalValue|=+]"
-				minimumsize = { 20 -1 }
-				align = right|nobaseline
-				tooltip = "IG_APPROVAL_BREAKDOWN"
-			}
-
-			textbox = {
-				autoresize = yes
 				text = "[InterestGroup.GetClout|%1v]"
 				minimumsize = { 55 -1 }
 				align = right|nobaseline
@@ -357,11 +347,6 @@ types pinnable_outliner_items {
 	type state_item = pinnable_outliner_entry {
 		datacontext = "[OutlinerEntry.AccessScope.AccessState]"
 
-		blockoverride "text_size" {
-			minimumsize = { 115 -1 }
-			maximumsize = { 115 -1 }
-		}
-
 		blockoverride "text" {
 			text = "[State.GetNameNoFormatting]"
 		}
@@ -379,35 +364,15 @@ types pinnable_outliner_items {
 			onmousehierarchyenter = "[AccessHighlightManager.HighlightState(State.Self)]"
 			onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
 		}
-		## added 
+
 		blockoverride "additional_info" {
 			textbox = {
-				align = left|nobaseline
+				align = right|nobaseline
 				autoresize = yes
-				margin_right = 10
-				minimumsize = { 65 -1 }
-				maximumsize = { 65 -1 }
-				text = "[State.GetPopulationSize|v*1]"
+				minimumsize = { 70 -1 }
+				text = "[State.GetPopulationSize|*1v]"
 				tooltip = "TOOLTIP_STATE_POPULATION"
 			}
-			textbox = {
-				align = left|nobaseline
-				autoresize = yes
-				margin_right = 10
-				minimumsize = { 65 -1 }
-				maximumsize = { 65 -1 }
-				text = "@peasants!#!#![State.GetNumSubsistenceWorkingAdults|*0]"
-				tooltip = "TOOLTIP_STATE_POPULATION"
-			}
-			textbox = {
-				align = left|nobaseline
-				autoresize = yes
-				minimumsize = { 65 -1 }
-				maximumsize = { 65 -1 }
-				text = "@unemployed_icon!#!#![State.GetNumUnemployedWorkingAdults|*0]"
-				tooltip = "TOOLTIP_STATE_POPULATION"
-			}
-		### /added
 		}
 		blockoverride "onclick" {
 			onclick = "[InformationPanelBar.OpenStatePanel( State.AccessSelf )]"

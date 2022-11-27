@@ -1,7 +1,7 @@
 ﻿pm_no_public_transport = {
 	texture = "gfx/interface/icons/production_method_icons/no_public_transport.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_public_trams = {
@@ -22,7 +22,7 @@ pm_public_trams = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_public_motor_carriages = {
@@ -43,5 +43,5 @@ pm_public_motor_carriages = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }

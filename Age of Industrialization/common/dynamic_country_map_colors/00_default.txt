@@ -317,6 +317,35 @@ roman_rome = {
 	}
 }
 
+napoleonic_france = {
+	color = "napoleonic_blue"
+
+	possible = {
+		exists = c:FRA
+		THIS = c:FRA
+		OR = { 
+			AND = {
+				has_law = law_type:law_monarchy
+				ruler = {
+					has_variable = is_bonapartist
+				}
+			}
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+		}
+	}
+}
+
+commune_france = {
+	color = "paris_red"
+
+	possible = {
+		exists = c:FRA
+		THIS = c:FRA
+		has_law = law_type:law_council_republic
+	}
+}
+
 republican_india = {
 	color = "orange_india"
 

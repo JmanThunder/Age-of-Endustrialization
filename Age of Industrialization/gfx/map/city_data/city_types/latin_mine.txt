@@ -7,7 +7,7 @@
 
 	
 	min_residential_buildings = 4
-	max_residential_buildings = 75
+	max_residential_buildings = 50
 	max_residence_points = 100
 
 	rich_building_meshes = {
@@ -63,3 +63,4 @@
 	building_sulfur_mine = {
 		"latin_colonial_manufactory_01_mesh"
 	}
+}

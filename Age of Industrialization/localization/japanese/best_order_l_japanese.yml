@@ -1,124 +1,149 @@
 ﻿l_japanese:
- Best_order:0 "家臣団"
- Best_order_action_name:0 "騎士団家臣"
- Best_order_desc:0 "家臣に建物の建設を命じる"
-
- b_o:0 "家臣に建物の建設を命じる"
-
- 
- best_order_events.4.t:0 "コマンドメニューを開く"
- best_order_events.4.d:0 "エリアを選択してください"
-
- best_order_events.5.t:0 "地域を選択してください"
- best_order_events.6.t:0 "投稿する注文を選択"
-
- 
- bo.1:0 「炭鉱を建てる」
- bo.2:0 「鉄鉱山を作れ」
- bo.3:0 「鉛鉱山を作れ」
- bo.4:0 「硫黄鉱山を作れ」
- bo.5:0 "アヘン農園を建てる"
- bo.6:0 「サトウキビ畑を作ろう」
- bo.7:0 "絹のプランテーションを作ろう"
- bo.8:0 「コーヒー農園を作ろう」
- bo.9:0 「綿花プランテーションを作ろう」
- bo.10:0 "染料プランテーションを作る"
- bo.11:0 「茶畑を作れ」
- bo.12:0 "たばこ農園を作ろう"
- bo.13:0 「バナナ農園を作ろう」
- bo.14:0 "製材所を建てる"
- bo.15:0 "ゴム農園を作ろう"
- bo.16:0 "釣り場を作る"
- bo.17:0 "捕鯨基地を建設せよ"
- bo.18:0 「油井の建設」
- bo.19:0 「鉄道を作ろう」
- 
-
- best_order_events.7.t:0 "オーバーロード オーダーによるビルド"
- best_order_events.7.a:0 "OK"
- Best_order_action_notification_name:0 "オーバーロードの命令"
- Best_order_action_notification_desc:0 "大君主は私たちに建物を建てるよう命じました"
- 
- 
- choose.1:0 "家臣に建物の建設を命じる"
- add_building.t:0 "建物タイプの選択"
- add.1:0 「農業用建物」
- add.2:0 「採掘施設」
- add.3:0 「プランテーションビル」
- add.4:0 "Factory Building (この機能は作成されていません)"
- add.5:0 「政府の建物」
- add.6:0 "インフラ"
- 
- agro.t:0 "農業用建物を選択してください"
- mines.t:0 "採掘施設を選択してください"
- plantation.t:0 "プランテーションを選択してください"
- factory.t:0 "工場を選択してください"
- gover.t:0 "政府の建物を選択してください"
- cons.t:0 "インフラストラクチャを選択してください"
- 
- best_choose_mount:0 "ビルドする金額を選択してください"
- choose_1:0 "ビルド 1"
- choose_5:0 "ビルド 5"
- choose_10:0 "ビルド 10"
- 
-
-ag.1:0「ライ麦畑」
-ag.2:0 「麦畑」
-ag.3:0 「田んぼ」
-ag.4:0 「コーンファーム」
-ag.5:0 「その他の谷の農場」
-ag.6:0「畜産農場」
-ag.7:0 「材木置き場」
-ag.8:0「釣り桟橋」
-ag.9:0「捕鯨基地」
- 
-mines.1:0 「炭鉱」
-mines.2:0 「鉄鉱石」
-mines.3:0 「リードマイン」
-mines.4:0 「硫黄鉱石」
-mines.5:0 「金鉱山」
-mines.6:0 「油田」
-
-pla.1:0「コーヒー農園」
-pla.2:0 「コットンプランテーション」
-pla.3:0「染料農園」
-pla.4:0 「アヘン農園」
-pla.5:0 「茶畑」
-pla.6:0 「たばこ農園」
-pla.7:0 「シュガープランテーション」
-pla.8:0 「バナナ農園」
-pla.9:0「シルクプランテーション」
-pla.10:0 「ラバープランテーション」
-
-gover.1:0「管理」
-gover.2:0 「大学」
-
-cons.1:0 "ポート"
-cons.2:0 "鉄道"
-cons.3:0「建設部」
-
-ban_fac.t:0 "この国が産業を発展させることを禁じる"
-ban_fac.1:0 「産業禁止の確認」
-best_modifiers_1:0 "オーバーロードからの産業禁止"
+Best_Morder:0 "コマンド付随"
+Best_order_action_name:0 "コマンド従属"
+Best_order_desc:0 "従属者に建築を命じる"
 
 
+best_order_events.1000.t:0 "発行するコマンドを選択する"
+choose.1:0 "従属者に建築を命じる"
+choose.2:0 "工業禁止令"
+choose.3:0 "仕事！仕事！仕事！"
+choose.4:0 "請求書の支払い"
+choose.5:0 "もっと新しい機能を作ってほしいなら好評をお願いします"
+choose.6:0 "もっと新しい機能を作ってほしいなら、評価してください"
 
 
-choose.2:0 「工業禁止」
-choose.3:0 「働け！働け！働け！」
-choose.4:0 "新しい機能を追加してほしい場合は評価してください"
-choose.5:0 "新しい機能を追加してほしい場合は評価してください"
-choose.6:0 "新しい機能を追加してほしい場合は評価してください"
+ban_fac.t:0 "この国の工業発展を禁止する"
+ban_fac.1:0 "工業禁止令の発布を確認する"
+ban_fac.2:0 "工業禁止令の撤廃"
+best_modifiers_1:0 "宗主国からの工業禁止令"
 
-time_choose.t:0 "毎日どれくらい働かせたいですか？"
-time.1:0 "8時間で十分です！"
-time.2:0 "10時間がちょうどいい！"
-time.3:0 「1日12時間働く人が一番幸せ！」
-time.4:0 "彼らは 1 日 14 時間働かなければなりません! しなければなりません!"
 
-time_choose_8.t:0 "人々は 1 日 8 時間働きます"
-time_choose_10.t:0 "人は1日10時間働きます"
-time_choose_12.t:0 "人々は 1 日 12 時間働きます"
-time_choose_14.t:0 "人々は 1 日 14 時間働きます"
+time_choose.t:0 "毎日どのくらい働いてほしいですか？"
+time.1:0 "12時間で十分！"
+time.2:0 "14時間はちょうどいい！"
+time.3:0 "毎日16時間働いている人が一番幸せ！"
+time.4:0 "彼らは毎日18時間働かなければならない！必要！"
+best_modifiers_2:0 "14時間勤務"
+best_modifiers_3:0 "16時間勤務"
+best_modifiers_4:0 "18時間稼働"
 
-modifier_building_group_bg_rubber_throughput_mult:0 "ゴム農園のスループット"
+Overlord_Fund_Construction.t:0 "支払いの転送"
+  Overlord_Fund_Construction.d:0 "注文した建設の費用を払ってもよろしいですか?\n 注: すべての建設ポイントに 1000 ポンドの費用がかかると仮定してください"
+  bo.vme100:0 "私がすべての請求書を支払うことに感謝すべきです (100%)"
+  bo.vme50:0 "あなたは自分の役目を果たします。残りは私が負担します (50%)"
+  bo.pay_nothing:0 "一円も払いません！"
+  best_order_modifiers_pay_100:0 "100% 資金調達"
+  best_order_modifiers_pay_50:0 "50% の資金調達"
+  bo_modifiers_transfer_payment_1:0 "送金中"
+  bo_modifiers_transfer_payment_5:0 "送金中"
+  bo_modifiers_transfer_payment_25:0 "送金中"
+  bo_modifiers_transfer_payment_50:0 "送金中"
+  bo_modifiers_transfer_payment_100:0 "送金中"
+  bo_modifiers_transfer_recieve_1:0 "支払いを受け取り中"
+  bo_modifiers_transfer_recieve_5:0 "支払いを受け取り中"
+  bo_modifiers_transfer_recieve_25:0 "支払いを受け取り中"
+  bo_modifiers_transfer_recieve_50:0 "支払いを受け取り中"
+  bo_modifiers_transfer_recieve_100:0 "入金中"
+
+b_o:0 "従属者に建築を命じる"
+
+
+best_order_events.4.t:0 "従属に建築を命じる"
+best_order_events.4.d:0 "領域を選択"
+
+
+best_order_events.5.t:0 "地域を選択する"
+best_order_events.6.t:0 "建築する建築タイプを選択する"
+bo.61:0 "農業施設をつくる"
+bo.62:0 "プランテーションをつくる"
+bo.63:0 "資源施設の建設"
+bo.64:0 "軽工業をつくる"
+bo.65:0 "重工業をつくる"
+bo.66:0 "その他の建物を建てる"
+bo.67:0"鉄道をつくる"
+
+
+best_order_events.61.t:0 "農業施設をつくる"
+bo.611:0 "ライ麦農場"
+bo.612:0 "小麦農場"
+bo.613:0 "水稲農場"
+bo.614:0 "トウモロコシ農場"
+bo.615:0"雑穀ファーム"
+bo.616:0 "牧畜場"
+
+
+best_order_events.62.t:0 "プランテーションをつくる"
+bo.621:0 "コーヒー農園"
+bo.622:0 "コットンプランテーション"
+bo.623:0 "シルクプランテーション"
+bo.624:0 "染料栽培園"
+bo.625:0 "アヘン栽培園"
+bo.626:0 "茶の栽培園"
+bo.627:0 "タバコ栽培園"
+bo.628:0 "砂糖栽培園"
+bo.629:0 "バナナ農園"
+
+
+best_order_events.63.t:0 "資源施設の建設"
+bo.631:0 "金鉱"
+bo.632:0 "炭鉱"
+bo.633:0 "鉄鉱石"
+bo.634:0 "鉛鉱"
+bo.635:0 "硫黄鉱"
+bo.636:0 "伐採キャンプ"
+bo.637:0 "ゴム農園"
+bo.638:0 "捕鯨ステーション"
+bo.639:0 "漁業埠頭"
+bo.6310:0 "油井"
+
+
+best_order_events.64.t:0 "軽工業をつくる"
+bo.641:0 "食品工場"
+bo.642:0 "紡績工場"
+bo.643:0 "家具メーカー"
+bo.644:0 "ガラス工場"
+bo.645:0 "工芸装備ワークショップ"
+bo.646:0 "製紙工場"
+bo.647:0 "造船所"
+bo.648:0 "武器工場"
+
+
+best_order_events.65.t:0 "重工業をつくる"
+bo.651:0 "化学工場"
+bo.652:0 "化学合成プラント"
+bo.653:0 "製鋼所"
+bo.654:0 "動力機械プラント"
+bo.655:0 "戦争機械工場"
+bo.656:0 "電子工場"
+bo.657:0 "弾薬工場"
+
+
+best_order_events.66.t:0 "雑用建築"
+bo.661:0 "兵舎"
+bo.662:0 "海軍基地"
+bo.663:0 "芸術学院"
+bo.664:0 "発電所"
+bo.665:0 "ポート"
+bo.666:0 "行政機関"
+bo.667:0 "大学"
+bo.668:0 "摩天楼"
+bo.669:0 "建築部門"
+
+
+
+best_order_events.600.t:0 "数量の選択"
+bo.601:0 "1"
+bo.605:0 "5"
+bo.6010:0 "10"
+
+
+
+best_order_events.7.t:0 "宗主国の命令を受けて建築する"
+best_order_events.7.a:0 "はい"
+Best_order_action_notification_name:0 "宗主国の命令"
+Best_order_action_notification_desc:0 "宗主国は私たちに建築を命じた"
+
+
+modifier_building_group_bg_rubber_throughput_mult:0 "ゴムパークスループット"
+RETURN:0 "戻る"

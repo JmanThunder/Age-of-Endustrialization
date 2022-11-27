@@ -1,0 +1,81 @@
+﻿col_collapse_90 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.9
+	building_group_bg_ranching_throughput_mult = -0.9
+	building_subsistence_farms_throughput_mult = -0.9
+	building_group_bg_plantations_throughput_mult = -0.9
+	building_group_bg_fishing_throughput_mult = -0.25
+	building_group_bg_whaling_throughput_mult = -0.25
+}
+
+col_collapse_80 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.8
+	building_group_bg_ranching_throughput_mult = -0.8
+	building_subsistence_farms_throughput_mult = -0.8
+	building_group_bg_plantations_throughput_mult = -0.8
+	building_group_bg_fishing_throughput_mult = -0.2
+	building_group_bg_whaling_throughput_mult = -0.2	
+}
+
+col_collapse_70 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.7
+	building_group_bg_ranching_throughput_mult = -0.7
+	building_subsistence_farms_throughput_mult = -0.7
+	building_group_bg_plantations_throughput_mult = -0.7
+	building_group_bg_fishing_throughput_mult = -0.15
+	building_group_bg_whaling_throughput_mult = -0.15	
+}
+
+col_collapse_60 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.6
+	building_group_bg_ranching_throughput_mult = -0.6
+	building_subsistence_farms_throughput_mult = -0.6
+	building_group_bg_plantations_throughput_mult = -0.6
+	building_group_bg_fishing_throughput_mult = -0.1
+	building_group_bg_whaling_throughput_mult = -0.1	
+}
+
+col_collapse_50 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.5
+	building_group_bg_ranching_throughput_mult = -0.5
+	building_subsistence_farms_throughput_mult = -0.5
+	building_group_bg_plantations_throughput_mult = -0.5
+	building_group_bg_fishing_throughput_mult = -0.05
+	building_group_bg_whaling_throughput_mult = -0.05	
+}
+
+col_collapse_40 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.4
+	building_group_bg_ranching_throughput_mult = -0.4
+	building_subsistence_farms_throughput_mult = -0.4
+	building_group_bg_plantations_throughput_mult = -0.4
+}
+
+col_collapse_30 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.3
+	building_group_bg_ranching_throughput_mult = -0.3
+	building_subsistence_farms_throughput_mult = -0.3
+	building_group_bg_plantations_throughput_mult = -0.3
+}
+
+col_collapse_20 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.2
+	building_group_bg_ranching_throughput_mult = -0.2
+	building_subsistence_farms_throughput_mult = -0.2
+	building_group_bg_plantations_throughput_mult = -0.2
+}
+
+col_collapse_10 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.1
+	building_group_bg_ranching_throughput_mult = -0.1
+	building_subsistence_farms_throughput_mult = -0.1
+	building_group_bg_plantations_throughput_mult = -0.1
+}

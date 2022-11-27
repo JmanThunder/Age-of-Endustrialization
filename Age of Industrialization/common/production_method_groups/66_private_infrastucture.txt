@@ -1,4 +1,4 @@
-pmg_ownership_building_trade_center = {
+﻿pmg_ownership_building_trade_center = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	ai_selection = most_productive
 

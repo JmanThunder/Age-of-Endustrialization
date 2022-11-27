@@ -1,0 +1,98 @@
+﻿pm_potatoes = {
+	texture = "gfx/interface/icons/production_method_icons/potatoes.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -30
+			building_output_liquor_add = 25
+			building_employment_shopkeepers_add = 150
+		}
+	}
+}
+
+pm_apple_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -30
+			building_output_fruit_add = 15
+			building_output_sugar_add = 10
+			building_employment_laborers_add = 500
+		}
+	}
+}
+
+pm_citrus_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -30
+			building_output_fruit_add = 15
+			building_output_sugar_add = 10
+			building_employment_laborers_add = 500
+		}
+	}
+}
+
+pm_vineyards = {
+	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -30
+			building_output_wine_add = 20
+			building_employment_shopkeepers_add = 500
+		}
+	}
+}
+
+pm_fig_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/orchards.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -35
+			building_output_fruit_add = 10
+			building_output_sugar_add = 15
+			building_employment_laborers_add = 250
+		}
+	}
+}						
+
+pm_vineyards_building_maize_farm = {
+	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -30
+			building_output_wine_add = 15
+			building_employment_shopkeepers_add = 150
+		}
+	}
+}
+
+pm_intensive_grazing_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/intensive_grazing.dds"
+
+	pollution_generation = 15
+	
+	unlocking_technologies = {
+		intensive_agriculture
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_grain_add = 20
+			building_output_fabric_add = 50
+			building_output_fertilizer_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_farmers_add = 1200
+			building_employment_clergymen_add = 100
+		}
+	}
+}

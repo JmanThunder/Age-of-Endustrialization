@@ -20,10 +20,10 @@
 	CONSTRUCTION_MAX_NUM_GOVERNMENT_CONSTRUCTIONS_SCALED_MAX = 0.01 # CONSTRUCTION_MAX_NUM_GOVERNMENT_CONSTRUCTIONS_SCALED can't be higher than this	
 	#CONSTRUCTION_WANTED_SUPPLY_OF_CONSTRUCTION_GOODS = 1.0 # Try to import construction goods if supply-to-demand ratio is below this
 	CONSTRUCTION_RESERVES_NEW_CONSTRUCTIONS = 666.6 # If gold reserves are less than this after adding the cost of a new construction, don't queue it
-	CONSTRUCTION_DEBT_RESUME = 0.50 # If constructions are paused, resume once debt is this low relative to ceiling
-	CONSTRUCTION_DEBT_PAUSE = 0.55 # If in this much relative debt to debt ceiling, pause all non-critical constructions 	
-	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.50 # If critical constructions are paused, resume once debt is this low relative to ceiling
-	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 6.66 # If in this much relative debt to debt ceiling, pause all critical constructions 	
+	CONSTRUCTION_DEBT_RESUME = 6.66 # If constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE = 7.77 # If in this much relative debt to debt ceiling, pause all non-critical constructions 	
+	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 6.66 # If critical constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 7.77 # If in this much relative debt to debt ceiling, pause all critical constructions 	
 	
 	# Below data is used to calculate how much weight the AI places on different things it can spend its weekly money income on
 	#MONEY_SPENDING_RANDOM_FACTOR = 2.0 # The higher this is, the more random new AI money spending will be
@@ -74,8 +74,8 @@
 	#CONSUMPTION_TAX_INCOME_VALUE = 10 # Per percent of state expenses in taxable value (this is then multiplied by relative authority cost of the good)
 	#CONSUMPTION_TAX_STAPLE_MULT = 0.5 # Multiply desire to tax staple goods by this
 	#CONSUMPTION_TAX_LUXURY_MULT = 2.0 # Multiply desire to tax luxury goods by this
-	#CONSUMPTION_TAX_LOW_INCOME_THRESHOLD = 1.25 # Income-to-expenses threshold below which consumption taxes are a must-have
-	#CONSUMPTION_TAX_HIGH_INCOME_THRESHOLD = 1.5 # Income-to-expenses threshold at which consumption taxes should be removed (if removal would not put us below this)
-	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_BASE = 4 # Base max number of goods AI wants to tax
+	CONSUMPTION_TAX_LOW_INCOME_THRESHOLD = 3.0 # Income-to-expenses threshold below which consumption taxes are a must-have
+	CONSUMPTION_TAX_HIGH_INCOME_THRESHOLD = 5.0 # Income-to-expenses threshold at which consumption taxes should be removed (if removal would not put us below this)
+	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_BASE = 0 # Base max number of goods AI wants to tax
 	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_PER_MISSING_TAX_TYPE = 2 # Added to max number of goods AI wants to tax for each other type of tax it does not collect
 }

@@ -85,6 +85,10 @@ types spreadsheets_panel_types
 										text = "[PopType.GetNameNoIcon]"
 										using = fontsize_large
 										align = left|nobaseline
+
+										tooltipwidget = {
+											FancyTooltip_PopType = {}
+										}
 									}
 
 									widget = {
@@ -189,12 +193,6 @@ types spreadsheets_panel_types
 									}
 								}
 							}
-							widget = {
-								size = { 100% 100% }
-								tooltipwidget = {
-									FancyTooltip_PopType = {}
-								}
-							}
 						}
 
 					}
@@ -249,7 +247,7 @@ types spreadsheets_panel_types
 		# IDENTIFICATION
 		# State
 		sort_button = {
-			layoutstretchfactor_horizontal = 2
+			layoutstretchfactor_horizontal = 4
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			onclick = "[AccessPlayer.SortStates('name')]"
@@ -262,7 +260,7 @@ types spreadsheets_panel_types
 
 		# Building
 		sort_button = {
-			layoutstretchfactor_horizontal = 2
+			layoutstretchfactor_horizontal = 4
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -270,6 +268,7 @@ types spreadsheets_panel_types
 			text = "MS_WORK_BUILDING"
 			tooltip = "MS_WORK_BUILDING_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Acceptance
@@ -280,11 +279,12 @@ types spreadsheets_panel_types
 			text = "MS_ACCEPTED"
 			tooltip = "MS_ACCEPTED_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Culture
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 3
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -292,11 +292,12 @@ types spreadsheets_panel_types
 			text = "MS_CULTURE"
 			tooltip = "CULTURE_TITLE"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Religion
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -304,13 +305,14 @@ types spreadsheets_panel_types
 			text = "MS_RELIGION"
 			tooltip = "RELIGION_TITLE"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		vertical_divider = {}
 
 		# Total Pops
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -318,11 +320,12 @@ types spreadsheets_panel_types
 			text = "MS_POP"
 			tooltip = "MS_POP_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Workforce
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -330,11 +333,12 @@ types spreadsheets_panel_types
 			text = "MS_WORKFORCE"
 			tooltip = "MS_WORKFORCE_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Dependents
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -342,11 +346,12 @@ types spreadsheets_panel_types
 			text = "MS_DEPENDENTS"
 			tooltip = "MS_DEPENDENTS_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Workforce Ratio
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -354,11 +359,12 @@ types spreadsheets_panel_types
 			text = "MS_WORKFORCE_RATIO"
 			tooltip = "MS_WORKFORCE_RATIO_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Net Growth
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -366,13 +372,14 @@ types spreadsheets_panel_types
 			text = "MS_GROWTH"
 			tooltip = "MS_GROWTH"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		vertical_divider = {}
 
 		# Sol
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -380,11 +387,12 @@ types spreadsheets_panel_types
 			text = "MS_SOL"
 			tooltip = "MS_SOL"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Expected Sol
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -392,11 +400,12 @@ types spreadsheets_panel_types
 			text = "MS_EXPEXCTED_SOL"
 			tooltip = "MS_EXPEXCTED_SOL_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Income
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -404,11 +413,12 @@ types spreadsheets_panel_types
 			text = "MS_INCOME"
 			tooltip = "MS_INCOME_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Workforce Income
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -416,11 +426,12 @@ types spreadsheets_panel_types
 			text = "MS_WORKFORCE_INCOME"
 			tooltip = "MS_WORKFORCE_INCOME_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Dependents Income
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -428,11 +439,12 @@ types spreadsheets_panel_types
 			text = "MS_DEPENDENTS_INCOME"
 			tooltip = "MS_DEPENDENTS_INCOME_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Net Income
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -440,11 +452,12 @@ types spreadsheets_panel_types
 			text = "MS_NET_INCOME"
 			tooltip = "MS_NET_INCOME_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Avg Annual Wage
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -452,11 +465,12 @@ types spreadsheets_panel_types
 			text = "MS_AVG_ANNUAL_WAGE"
 			tooltip = "MS_AVG_ANNUAL_WAGE_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Wealth Progression
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -464,11 +478,14 @@ types spreadsheets_panel_types
 			text = "MS_WEALTH_PROGRESSION"
 			tooltip = "MS_WEALTH_PROGRESSION_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
+
+		vertical_divider = {}
 
 		# Literacy
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -476,11 +493,12 @@ types spreadsheets_panel_types
 			text = "MS_LITERACY"
 			tooltip = "LITERACY_TITLE"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Education Access
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -488,11 +506,12 @@ types spreadsheets_panel_types
 			text = "MS_EDUCATION_ACCESS"
 			tooltip = "MS_EDUCATION_ACCESS_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Pol Strength
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -500,11 +519,12 @@ types spreadsheets_panel_types
 			text = "MS_POL_STR"
 			tooltip = "MS_POL_STR_TOOLTIP"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Radicals
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -512,11 +532,12 @@ types spreadsheets_panel_types
 			text = "MS_RADICAL"
 			tooltip = "MS_RADICAL"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		# Loyalist
 		sort_button = {
-			layoutstretchfactor_horizontal = 1
+			layoutstretchfactor_horizontal = 2
 			layoutpolicy_horizontal = expanding
 			size = { 0 @item_height }
 			enabled = no
@@ -524,6 +545,7 @@ types spreadsheets_panel_types
 			text = "MS_LOYALIST"
 			tooltip = "MS_LOYALIST"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 
 		vertical_divider = {}
@@ -535,6 +557,7 @@ types spreadsheets_panel_types
 			text = "MS_IGS"
 			tooltip = "MS_IGS"
 			align = right|nobaseline
+			using = fontsize_medium
 		}
 	}
 
@@ -551,7 +574,7 @@ types spreadsheets_panel_types
 			# IDENTIFICATION
 			# State
 			textbox = {
-				layoutstretchfactor_horizontal = 2
+				layoutstretchfactor_horizontal = 4
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_left = @item_right_margin_outside
@@ -567,7 +590,7 @@ types spreadsheets_panel_types
 
 			# Building
 			hbox = {
-				layoutstretchfactor_horizontal = 2
+				layoutstretchfactor_horizontal = 4
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -624,7 +647,7 @@ types spreadsheets_panel_types
 
 			# Culture
 			hbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 3
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -649,7 +672,7 @@ types spreadsheets_panel_types
 			# Religion
 			hbox = {
 				datacontext = "[Pop.GetReligion]"
-				layoutstretchfactor_horizontal =1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -657,6 +680,7 @@ types spreadsheets_panel_types
 				icon = {
 					size = { @secondary_icon_size @secondary_icon_size }
 					texture = "[Religion.GetTexture]"
+					tooltip = "[Religion.GetName]"
 				}
 				icon = {
 					visible = "[Pop.IsConverting]"
@@ -665,13 +689,13 @@ types spreadsheets_panel_types
 					tooltip = "[Pop.GetPopConversionDesc]"
 				}
 
-				textbox = {
-					layoutpolicy_horizontal = expanding
-					size = { 0 @item_height }
-					align = left|nobaseline
-					elide = right
-					text = "[Religion.GetName]"
-				}
+				#textbox = {
+					#layoutpolicy_horizontal = expanding
+					#size = { 0 @item_height }
+					#align = left|nobaseline
+					#elide = right
+					#text = "[Religion.GetName]"
+				#}
 			}
 
 			vertical_divider = {}
@@ -679,7 +703,7 @@ types spreadsheets_panel_types
 			# POPULATION
 			# Total pops
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -691,7 +715,7 @@ types spreadsheets_panel_types
 
 			# Workforce
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -703,7 +727,7 @@ types spreadsheets_panel_types
 
 			# Dependents
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -715,7 +739,7 @@ types spreadsheets_panel_types
 
 			# Workforce Ratio
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -727,7 +751,7 @@ types spreadsheets_panel_types
 
 			# Net Growth
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -742,7 +766,7 @@ types spreadsheets_panel_types
 			# MONEY
 			# Sol
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -754,7 +778,7 @@ types spreadsheets_panel_types
 
 			# Expected Sol
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -766,7 +790,7 @@ types spreadsheets_panel_types
 
 			# Income
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -778,7 +802,7 @@ types spreadsheets_panel_types
 
 			# Workforce Income
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -790,7 +814,7 @@ types spreadsheets_panel_types
 
 			# Dependents Income
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -802,7 +826,7 @@ types spreadsheets_panel_types
 
 			# Net income
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -814,7 +838,7 @@ types spreadsheets_panel_types
 
 			# Avg Annual Wage
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -826,7 +850,7 @@ types spreadsheets_panel_types
 
 			# Wealth Progression
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -841,7 +865,7 @@ types spreadsheets_panel_types
 			# POLITICS
 			# Literacy
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -853,7 +877,7 @@ types spreadsheets_panel_types
 
 			# Education Access
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -865,7 +889,7 @@ types spreadsheets_panel_types
 
 			# Pol Strength
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -878,7 +902,7 @@ types spreadsheets_panel_types
 
 			# Radicals
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside
@@ -890,7 +914,7 @@ types spreadsheets_panel_types
 
 			# Loyalist
 			textbox = {
-				layoutstretchfactor_horizontal = 1
+				layoutstretchfactor_horizontal = 2
 				layoutpolicy_horizontal = expanding
 				size = { 0 @item_height }
 				margin_right = @item_right_margin_inside

@@ -158,16 +158,6 @@ APC = {
 	}
 }
 
-ARA_Theocracy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 4 4}
-	
-	textured_emblem = {
-		texture = "ARA_Theocracy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 ARG_monarchy = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {69 50 49}
@@ -398,32 +388,12 @@ BOL_monarchy = {
 	}
 }
 
-BOL_perubolivia_dictatorship = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {219 20 35}
-	
-	textured_emblem = {
-		texture = "BOL_perubolivia_dictatorship.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 BOL_perubolivia_fascist = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {4 123 51}
 	
 	textured_emblem = {
 		texture = "BOL_perubolivia_fascist.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-BOL_perubolivia_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {218 21 28}
-	
-	textured_emblem = {
-		texture = "BOL_perubolivia_monarchy.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -538,15 +508,6 @@ BRZ_council_republic_democratic = {
 	}
 }
 
-BRZ_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {7 142 59}
-	
-	textured_emblem = {
-		texture = "BRZ_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 BRZ_socialist_dictatorship = {
 	pattern = "pattern_solid.tga"
@@ -554,26 +515,6 @@ BRZ_socialist_dictatorship = {
 	
 	textured_emblem = {
 		texture = "BRZ_socialist_dictatorship.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-BRZ_theocracy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 132 4}
-	
-	textured_emblem = {
-		texture = "BRZ_theocracy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-BSS = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {5 100 52}
-	
-	textured_emblem = {
-		texture = "BSS.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -624,16 +565,6 @@ BUG_democratic = {
 	
 	textured_emblem = {
 		texture = "BUG_democratic.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-CAN_subject_britain = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {203 20 35}
-	
-	textured_emblem = {
-		texture = "CAN_subject_britain.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -778,16 +709,6 @@ DEI_independent = {
 	}
 }
 
-DEI_subject_notNET = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {235 28 36}
-	
-	textured_emblem = {
-		texture = "DEI_subject_notNET.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 DFR = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {204 20 36}
@@ -858,72 +779,12 @@ ECU_democratic = {
 	}
 }
 
-ECU_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {220 20 28}
-	
-	textured_emblem = {
-		texture = "ECU_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-ECU_subject_spain = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {220 20 28}
-	
-	textured_emblem = {
-		texture = "ECU_subject_spain.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-ETH = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 140 52}
-	
-	textured_emblem = {
-		texture = "ETH.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-ETH_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {6 139 51}
-	
-	textured_emblem = {
-		texture = "ETH_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 EWE = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {218 38 28}
 	
 	textured_emblem = {
 		texture = "EWE.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-EZO = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {242 201 201}
-	
-	textured_emblem = {
-		texture = "EZO.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-EZO_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 52 4}
-	
-	textured_emblem = {
-		texture = "EZO_monarchy.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -1008,15 +869,6 @@ GAO = {
 	}
 }
 
-GER_austria = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {251 195 4}
-	
-	textured_emblem = {
-		texture = "GER_austria.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 GER_bavaria = {
 	pattern = "pattern_solid.tga"
@@ -1058,15 +910,6 @@ GGO = {
 	}
 }
 
-GJM = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {14 146 56}
-	
-	textured_emblem = {
-		texture = "GJM.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 GJM_republic = {
 	pattern = "pattern_solid.tga"
@@ -1448,15 +1291,6 @@ KHM = {
 	}
 }
 
-KHN = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {236 4 4}
-	
-	textured_emblem = {
-		texture = "KHN.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 KKY = {
 	pattern = "pattern_solid.tga"
@@ -1768,15 +1602,7 @@ MNC = {
 	}
 }
 
-MNP = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {219 35 27}
-	
-	textured_emblem = {
-		texture = "MNP.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
+
 
 MNP_republic = {
 	pattern = "pattern_solid.tga"
@@ -1828,16 +1654,6 @@ MSK = {
 	}
 }
 
-MSN = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {251 251 4}
-	
-	textured_emblem = {
-		texture = "MSN.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 MTB = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {20 123 28}
@@ -1864,16 +1680,6 @@ NAH = {
 	
 	textured_emblem = {
 		texture = "NAH.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-NAH_theocracy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 132 68}
-	
-	textured_emblem = {
-		texture = "NAH_theocracy.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -1908,15 +1714,6 @@ NOR_subject_denmark = {
 	}
 }
 
-NOR_subject_sweden = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 36 92}
-	
-	textured_emblem = {
-		texture = "NOR_subject_sweden.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 NTO = {
 	pattern = "pattern_solid.tga"
@@ -2078,15 +1875,6 @@ PER_absolute_monarchy = {
 	}
 }
 
-PEU_democratic = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {219 20 36}
-	
-	textured_emblem = {
-		texture = "PEU_democratic.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 PEU_monarchy = {
 	pattern = "pattern_solid.tga"
@@ -2094,26 +1882,6 @@ PEU_monarchy = {
 	
 	textured_emblem = {
 		texture = "PEU_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-PEU_subject_bolivia = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 124 52}
-	
-	textured_emblem = {
-		texture = "PEU_subject_bolivia.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-PEU_subject_spain = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 124 52}
-	
-	textured_emblem = {
-		texture = "PEU_subject_spain.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -2138,15 +1906,6 @@ PLY_subject_USA = {
 	}
 }
 
-PNI_fascist = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {220 44 20}
-	
-	textured_emblem = {
-		texture = "PNI_fascist.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 PNI_monarchy = {
 	pattern = "pattern_solid.tga"
@@ -2458,16 +2217,6 @@ SRA = {
 	}
 }
 
-SRB = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {7 62 174}
-	
-	textured_emblem = {
-		texture = "SRB.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 SRR = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {251 251 4}
@@ -2488,16 +2237,6 @@ SSU = {
 	}
 }
 
-SWE_overlord_norway = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {245 182 6}
-	
-	textured_emblem = {
-		texture = "SWE_overlord_norway.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 TBI = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {5 5 5}
@@ -2508,15 +2247,6 @@ TBI = {
 	}
 }
 
-TEX_textime = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {188 12 52}
-	
-	textured_emblem = {
-		texture = "TEX_textime.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 TGR = {
 	pattern = "pattern_solid.tga"
@@ -2588,15 +2318,6 @@ TOB = {
 	}
 }
 
-TPG = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {252 204 12}
-	
-	textured_emblem = {
-		texture = "TPG.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 TPI = {
 	pattern = "pattern_solid.tga"
@@ -2708,32 +2429,12 @@ TUV = {
 	}
 }
 
-TUV_republic = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {100 180 228}
-	
-	textured_emblem = {
-		texture = "TUV_republic.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 TUV_socialist = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {204 5 4}
 	
 	textured_emblem = {
 		texture = "TUV_socialist.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-URU_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {4 60 172}
-	
-	textured_emblem = {
-		texture = "URU_monarchy.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }
@@ -2748,15 +2449,6 @@ UTE = {
 	}
 }
 
-UYA = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {116 76 52}
-	
-	textured_emblem = {
-		texture = "UYA.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 VNT_subject_FRA_GBR = {
 	pattern = "pattern_solid.tga"
@@ -2858,16 +2550,6 @@ WLO = {
 	}
 }
 
-WLS_theocracy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {230 172 7}
-	
-	textured_emblem = {
-		texture = "WLS_theocracy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 WSG = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {5 109 45}
@@ -2938,26 +2620,6 @@ YUE = {
 	}
 }
 
-YUN_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {244 211 43}
-	
-	textured_emblem = {
-		texture = "YUN_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-ZAN = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {251 211 19}
-	
-	textured_emblem = {
-		texture = "ZAN.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
 ZAN_republic = {
 	pattern = "pattern_solid.tga"
 	color1 = rgb {4 164 220}
@@ -2980,7 +2642,7 @@ ZAN_subject = {
 
 ZHI = {
 	pattern = "pattern_solid.tga"
-	color1 = rgb {124 124 124}
+	color1 = rgb {127 127 127}
 	
 	textured_emblem = {
 		texture = "ZHI.tga"
@@ -2988,15 +2650,6 @@ ZHI = {
 	}
 }
 
-ZHI_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {251 195 4}
-	
-	textured_emblem = {
-		texture = "ZHI_monarchy.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
 
 ZND = {
 	pattern = "pattern_solid.tga"
@@ -3004,16 +2657,6 @@ ZND = {
 	
 	textured_emblem = {
 		texture = "ZND.tga"
-		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
-	}
-}
-
-ZUL = {
-	pattern = "pattern_solid.tga"
-	color1 = rgb {219 43 20}
-	
-	textured_emblem = {
-		texture = "ZUL.tga"
 		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
 	}
 }

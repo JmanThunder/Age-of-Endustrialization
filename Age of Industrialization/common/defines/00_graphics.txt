@@ -15,7 +15,7 @@
 	### HEAT MAP MAP MODE ###
 	HEAT_MAP_COLOR_FROM = { 0.4 0.4 0.1 0.34 }
 	HEAT_MAP_COLOR_TO = { 0.1 0.4 0.2 @opacity }
-	HEAT_MAP_MIN_ALPHA = 0 										# Used in the Interest Group Map Mode
+	HEAT_MAP_MIN_ALPHA = 0.4 									# Used in the Interest Group Map Mode
 
 	### HIGHLIGHT ###
 	HIGHLIGHT_COLOR = { 1 1 1 0.5 }								# White

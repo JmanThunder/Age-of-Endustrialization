@@ -1,0 +1,9 @@
+﻿l_french:
+ BATTLE_BATTALIONS_BREAKDOWN_DIRECTLY_COMMANDED: "$UNIT_ICON$ $VALUE|v$ de [Character.GetNumCombatUnits] sous le commandement direct de [Character.GetRankTitle] [Character.GetFullName]"
+ BATTLE_BATTALIONS_BREAKDOWN_BY_GENERAL: "$UNIT_ICON$ $VALUE|v$ de [Character.GetNumCombatUnits] emprunté de [Character.GetRankTitle] [Character.GetFullName]"
+ BATTLE_BATTALIONS_BREAKDOWN_GARRISON: "$UNIT_ICON$ $VALUE|v$ de la [concept_garrison]"
+
+ DATA_CHARACTER_COMMANDER_DETAILS: "Rang: [Character.GetRankName|v]\nUnités: #tooltippable #tooltip:MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP [GetUnitStrengthHeader( Character.GetNumCombatUnits, Character.GetMaxNumCombatUnits, Character.GetCombatUnitsTypeIcon )]#!#! (#v [Multiply_CFixedPoint(Character.GetMorale, '(CFixedPoint)100')|0]%#! [concept_morale])$DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP$$DATA_CHARACTER_COMMANDER_ADVANCEMENT_CONTRIBUTION$\n[concept_attrition]: [Character.GetAttritionFormatted]"
+ DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: "[AddTextIf(And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), '\nEmplacement:' )] [AddTextIf( And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), Character.GetLocationFormatted )] ([Character.GetHomeHQ.GetHomeGarrisonUnits] en totale dans la [concept_garnison])"
+
+ BATTLE_ON_FRONT_SUBTITLE: "[concept_battle] sur [Select_CString(Battle.GetAttackerCommander.HasNavalInvasionPlan, Concatenate('les plages de ', Battle.GetProvince.GetState.GetName), Concatenate('le ', Battle.GetFront.GetName))]"

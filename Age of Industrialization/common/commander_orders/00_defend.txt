@@ -12,10 +12,21 @@
             severity = fail
             is_mobilized = yes
         }
+		error_check = {
+            severity = fail
+			OR = {
+				AND = {
+					is_traveling = no
+					has_commander_order = advance
+				}
+				has_commander_order = stand_by
+				has_commander_order = defend
+			}
+        }
     }
 
     modifier = {
-        character_attrition_risk_add = 0 #0.2
+        character_attrition_risk_add = 0.2
         front_enemy_advancement_speed_mult = -0.5
     }
 

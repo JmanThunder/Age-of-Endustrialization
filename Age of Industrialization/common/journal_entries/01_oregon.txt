@@ -43,14 +43,15 @@
 	complete = {
 		OR = {
 			AND = {
+				OR = {
 				custom_tooltip = {
 					text = oregon_tt
 					has_global_variable = oregon_trail_mapped
 				}
-				owns_entire_state_region = STATE_MONTANA
-				owns_entire_state_region = STATE_WYOMING
+				year >= 1846
+			}
 				c:GBR = {
-					relations:ROOT >= relations_threshold:cordial
+					relations:ROOT >= relations_threshold:neutral
 				}
 			}
 			AND = {

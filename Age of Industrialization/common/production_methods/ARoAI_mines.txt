@@ -1,7 +1,7 @@
 ﻿pm_no_steam_automation = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_steam_donkey_building_coal_mine = {
@@ -24,13 +24,13 @@ pm_steam_donkey_building_coal_mine = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_road_carts = {
 	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_steam_donkey_mine = {
@@ -53,7 +53,7 @@ pm_steam_donkey_mine = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rail_transport_mine = {
@@ -75,5 +75,5 @@ pm_rail_transport_mine = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }

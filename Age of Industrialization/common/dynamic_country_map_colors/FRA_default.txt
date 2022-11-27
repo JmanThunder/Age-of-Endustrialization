@@ -5,12 +5,8 @@
 		exists = c:FRA
 		THIS = c:FRA
 		has_law = law_type:law_monarchy
-		has_variable = bourbon_restauration
-		OR = {
-			has_law = law_type:law_autocracy 
-			has_law = law_type:law_elder_council
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_landed_voting
+		ruler = {
+			has_variable = is_legitimist
 		}
 	}
 }

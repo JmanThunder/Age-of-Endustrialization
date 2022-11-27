@@ -1,4 +1,4 @@
-pm_worker_cooperative_building_logging_camp = {
+﻿pm_worker_cooperative_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_production_methods = {

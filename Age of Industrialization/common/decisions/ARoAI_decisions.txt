@@ -1,30 +1,17 @@
-﻿ec_enable_autobuild = {
+﻿ec_open_autobuild_settings = {
 	is_shown = {
 		is_player = yes
 		has_game_rule = ec_allow_autobuild
 		NOT = {
-			has_variable = ec_autobuild
+			has_modifier = ec_autobuild_settings
 		}
 	}
 	
 	when_taken = {
-		set_variable = ec_autobuild
-	}
-	
-	ai_chance = {
-		base = 0
-	}
-}
-
-ec_disable_autobuild = {
-	is_shown = {
-		is_player = yes
-		has_game_rule = ec_allow_autobuild
-		has_variable = ec_autobuild
-	}
-	
-	when_taken = {
-		remove_variable = ec_autobuild
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
 	}
 	
 	ai_chance = {

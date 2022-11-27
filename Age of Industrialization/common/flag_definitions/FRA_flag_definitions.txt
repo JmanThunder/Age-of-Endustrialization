@@ -28,44 +28,61 @@ FRA = { # France
 		}
 	}
 	flag_definition = {
-		coa = FRA_dictatorship_emperor
-		subject_canton = FRA_dictatorship_emperor
+		coa = FRA_emperor
+		subject_canton = FRA_emperor
 		priority = 100
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = FRA_subject			
 		trigger = {			
-			scope:actor = { has_variable = french_empire_created }
-			OR = {
-				coa_def_undemocratic_monarchy_flag_trigger = yes
-				coa_def_absolute_monarchy_flag_trigger = yes
-			}
+			scope:actor = { ruler = { has_variable = is_bonapartist } }
+			coa_def_undemocratic_monarchy_flag_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = FRA_bourbon
-		subject_canton = FRA_bourbon
+		coa = FRA_emperor_coa
+		subject_canton = FRA_emperor_coa
+		priority = 150
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		trigger = {			
+			scope:actor = { ruler = { has_variable = is_bonapartist } }
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_bourbon_white
+		subject_canton = FRA_bourbon_white
 		priority = 300
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = FRA_subject			
 		trigger = {			
-			scope:actor = { has_variable = bourbon_restauration }
-			OR = {
-				coa_def_undemocratic_monarchy_flag_trigger = yes
-				scope:actor = { has_law = law_type:law_landed_voting }
-			}
+			scope:actor = { ruler = { has_variable = is_legitimist } }
+			coa_def_undemocratic_monarchy_flag_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = FRA_absolute_monarchy
-		subject_canton = FRA_absolute_monarchy	
+		coa = FRA_bourbon_coa
+		subject_canton = FRA_bourbon_coa	
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = FRA_subject			
 		priority = 350
 		trigger = {
-			scope:actor = { has_variable = bourbon_restauration }
+			scope:actor = { ruler = { has_variable = is_legitimist } }
 			coa_def_absolute_monarchy_flag_trigger = yes
 		}
-	}	
+	}
+	flag_definition = {
+		coa = FRA_restoration_monarchy
+		subject_canton = FRA_restoration_monarchy	
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		priority = 1050
+		trigger = {
+			scope:actor = { ruler = { has_variable = is_legitimist } }
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = { has_law = law_type:law_landed_voting }
+		}
+	}
 	flag_definition = {
 		coa = FRA_constitutional_monarchy
 		subject_canton = FRA_constitutional_monarchy	
@@ -73,7 +90,7 @@ FRA = { # France
 		coa_with_overlord_canton = FRA_subject			
 		priority = 1050
 		trigger = {
-			scope:actor = { has_variable = bourbon_restauration }
+			scope:actor = { ruler = { has_variable = is_legitimist } }
 			coa_def_monarchy_flag_trigger = yes
 			OR = {
 				scope:actor = { has_law = law_type:law_wealth_voting }
@@ -82,6 +99,28 @@ FRA = { # France
 			}
 		}
 	}	
+	flag_definition = {
+		coa = FRA_flipped_tricolor
+		subject_canton = FRA_flipped_tricolor
+		priority = 300
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		trigger = {			
+			scope:actor = { ruler = { has_variable = is_orleanist } }
+			coa_def_undemocratic_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_first_tricolor
+		subject_canton = FRA_first_tricolor	
+		allow_overlord_canton = yes
+		coa_with_overlord_canton = FRA_subject			
+		priority = 350
+		trigger = {
+			scope:actor = { ruler = { has_variable = is_orleanist } }
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
 	flag_definition = {
 		coa = FRA_theocracy
 		subject_canton = FRA_theocracy

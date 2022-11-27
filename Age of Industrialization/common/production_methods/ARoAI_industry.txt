@@ -1,7 +1,7 @@
 ﻿pm_manual_dough_processing = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_automated_bakery = {
@@ -23,13 +23,13 @@ pm_automated_bakery = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_traditional_looms = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_mechanized_looms = {
@@ -51,7 +51,7 @@ pm_mechanized_looms = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_automatic_power_looms = {
@@ -74,13 +74,13 @@ pm_automatic_power_looms = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_automation_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_watertube_boiler_building_furniture_manufacturies = {
@@ -104,7 +104,7 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rotary_valve_engine_building_furniture_manufacturies = {
@@ -128,7 +128,7 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_watertube_boiler_building_tooling_workshops = {
@@ -150,7 +150,7 @@ pm_watertube_boiler_building_tooling_workshops = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rotary_valve_engine_building_tooling_workshops = {
@@ -172,7 +172,7 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_watertube_boiler_building_paper_mills = {
@@ -196,7 +196,7 @@ pm_watertube_boiler_building_paper_mills = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rotary_valve_engine_building_paper_mills = {
@@ -220,7 +220,7 @@ pm_rotary_valve_engine_building_paper_mills = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_watertube_boiler_building_steel_mills = {
@@ -244,7 +244,7 @@ pm_watertube_boiler_building_steel_mills = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rotary_valve_engine_building_steel_mills = {
@@ -268,7 +268,7 @@ pm_rotary_valve_engine_building_steel_mills = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_watertube_boiler_building_motor_industry = {
@@ -293,7 +293,7 @@ pm_watertube_boiler_building_motor_industry = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rotary_valve_engine_building_motor_industry = {
@@ -318,5 +318,5 @@ pm_rotary_valve_engine_building_motor_industry = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }

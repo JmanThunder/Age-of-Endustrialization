@@ -1,0 +1,46 @@
+dp_large_annex_war = {
+	is_epic = yes
+	war_goal = annex_country
+	
+	texture = "gfx/interface/icons/war_goals/annex_country.dds"
+
+	possible = {
+		has_technology_researched = colonization
+		has_technology_researched = civilizing_mission
+		NOT = { is_country_type = decentralized }
+		aggressive_diplomatic_plays_permitted = yes
+		scope:target = {
+			NOT = { is_country_type = decentralized }
+			NOT = { is_subject_of = root }
+		}
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}
+
+dp_small_annex_war = {
+	war_goal = annex_country
+	
+	texture = "gfx/interface/icons/war_goals/annex_country.dds"
+
+	possible = {
+		has_technology_researched = colonization
+		NOT = { is_country_type = decentralized }
+		aggressive_diplomatic_plays_permitted = yes
+		scope:target = {
+			NOT = { is_country_type = decentralized }
+			NOT = { is_subject_of = root }
+			num_states < 6
+		}
+	}
+	
+	on_weekly_pulse = {}
+	
+	on_war_begins = {}
+
+	on_war_end = {}
+}

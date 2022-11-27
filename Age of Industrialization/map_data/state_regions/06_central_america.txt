@@ -142,7 +142,7 @@ STATE_HAITI = {
     id = 344
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0E35C0" "x1A20A4" "x2FC1FC" "x4FE008" "xB0B001" "xC6C663" "xEA2C2D" "bg_silk_plantations" "xF54C13" }
-    traits = { "state_trait_natural_harbors" "state_trait_terra_rossa" "state_trait_severe_malaria" }
+    traits = { "state_trait_natural_harbors" "state_trait_terra_rossa" "state_trait_severe_malaria" "state_trait_volcanic_activity" }
     city = "x1A20A4"
     port = "xC6C663"
     farm = "x0E35C0"
@@ -151,16 +151,22 @@ STATE_HAITI = {
     arable_land = 228
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_dye_plantations" "building_livestock_ranch" }
     capped_resources = {
-        bg_coal_mining = 3
-        bg_sulfur_mining = 6
-        bg_logging = 12
-        bg_fishing = 17
-        bg_gold_mining = 12
+        bg_logging = 7
+        bg_fishing = 6
+        bg_coal_mining = 16
+        bg_iron_mining = 24
+        bg_sulfur_mining = 12
+        bg_lead_mining = 6          
     }
     resource = {
         type = "bg_rubber"
-        undiscovered_amount = 24
+        undiscovered_amount = 12    
     }
+    resource = {
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 6
+    }   
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 21
@@ -172,7 +178,7 @@ STATE_SANTO_DOMINGO = {
     id = 345
     subsistence_building = "building_subsistence_farms"
     provinces = { "x1785E8" "x317080" "x41A862" "x7252EC" "x877F90" "x907A0C" "x961483" "xACBDD9" }
-    traits = { "state_trait_terra_rossa" "state_trait_severe_malaria" }
+    traits = { "state_trait_terra_rossa" "state_trait_severe_malaria" "state_trait_caribbean_sugar" }
     city = "x1785E8"
     port = "x7252EC"
     farm = "x317080"
@@ -181,15 +187,23 @@ STATE_SANTO_DOMINGO = {
     arable_land = 150
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
-        bg_logging = 10
+        bg_logging = 11
         bg_fishing = 7
-        bg_lead_mining = 10
-        bg_gold_mining = 17
+        bg_iron_mining = 12
+        bg_sulfur_mining = 12
+        bg_lead_mining = 6
+        
     }
     resource = {
         type = "bg_rubber"
         undiscovered_amount = 12
     }
+
+    resource = {
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 6
+    }   
     naval_exit_id = 3061
 }
 

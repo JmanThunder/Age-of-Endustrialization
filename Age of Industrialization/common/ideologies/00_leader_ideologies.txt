@@ -108,7 +108,7 @@ ideology_traditionalist = {
 	}
 }
 
-ideology_atheist = { #changed
+ideology_atheist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_atheist.dds"
 	
 	character_ideology = yes
@@ -124,22 +124,8 @@ ideology_atheist = { #changed
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
 		law_freedom_of_conscience = disapprove
-		law_total_separation = strongly_approve #approve
+		law_total_separation = approve
 	}
-	
-	lawgroup_education_system = { #added
-		law_public_schools = strongly_approve
-		law_private_schools = neutral
-		law_no_schools = neutral
-		law_religious_schools = strongly_disapprove	
-	}
-	
-	lawgroup_health_system = { #added
-		law_public_health_insurance = approve
-		law_private_health_insurance = neutral
-		law_no_health_system = neutral
-		law_charitable_health_system = disapprove
-	}	
 	
 	possible = {
 		owner = {
@@ -209,33 +195,23 @@ ideology_atheist = { #changed
 	}
 }
 
-ideology_republican_leader = { #changed
+ideology_republican_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_republican.dds"
 	
 	character_ideology = yes
 	
 	lawgroup_governance_principles = {
 		law_presidential_republic = approve
-		law_parliamentary_republic = approve
+		law_parliamentary_republic = approve 
 		law_council_republic = neutral
-		law_monarchy = disapprove
-		law_theocracy = disapprove
+		law_monarchy = strongly_disapprove #changed to strong
+		law_theocracy = strongly_disapprove #changed to strong
 	}
 	
 	lawgroup_bureaucracy = {
 		law_elected_bureaucrats = approve
 		law_appointed_bureaucrats = neutral
 		law_hereditary_bureaucrats = disapprove
-	}
-	
-	lawgroup_distribution_of_power = { #added
-		law_universal_suffrage = approve
-		law_census_voting = approve
-		law_wealth_voting = approve
-		law_landed_voting = neutral
-		law_oligarchy = disapprove
-		law_autocracy = strongly_disapprove
-		law_anarchy = strongly_disapprove
 	}
 	
 	possible = {
@@ -316,7 +292,7 @@ ideology_radical = {
 		law_national_guard = strongly_disapprove
 		law_secret_police = strongly_disapprove
 	}
-	
+
 	possible = {
 		owner = { has_technology_researched = egalitarianism }
 		scope:interest_group = {
@@ -448,9 +424,9 @@ ideology_reformer = {
 	
 	character_ideology = yes
 	
-	lawgroup_citizenship = {
-		law_ethnostate = strongly_disapprove
-		law_national_supremacy = strongly_disapprove
+	lawgroup_citizenship = { #changed up a lil
+		law_ethnostate = disapprove
+		law_national_supremacy = neutral
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = approve
 		law_multicultural = neutral	
@@ -463,7 +439,7 @@ ideology_reformer = {
 		law_womens_suffrage = neutral
 	}
 	
-	lawgroup_childrens_rights = { #changed
+	lawgroup_childrens_rights = {
 		law_child_labor_allowed = disapprove
 		law_restricted_child_labor = neutral
 		law_compulsory_primary_school = approve
@@ -957,15 +933,15 @@ ideology_jingoist_leader = {
 	}
 }
 
-ideology_royalist = { #changed
+ideology_royalist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_royalist.dds"
 	
 	character_ideology = yes
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = strongly_disapprove #disapprove
+		law_presidential_republic = strongly_disapprove
+		law_parliamentary_republic = strongly_disapprove
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
 	}
@@ -1037,7 +1013,7 @@ ideology_royalist = { #changed
 	}
 }
 
-ideology_social_democrat = { #changed
+ideology_social_democrat = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
 	
 	character_ideology = yes
@@ -1049,20 +1025,20 @@ ideology_social_democrat = { #changed
 		law_serfdom = strongly_disapprove
 	}
 
-	lawgroup_distribution_of_power = { #changed
+	lawgroup_distribution_of_power = {
 		law_universal_suffrage = strongly_approve
-		law_census_voting = disapprove #neutral
-		law_wealth_voting = strongly_disapprove #disapprove
-		law_landed_voting = strongly_disapprove #disapprove
-		law_oligarchy = strongly_disapprove #strongly_disapprove
-		law_autocracy = strongly_disapprove #strongly_disapprove
-		law_anarchy = strongly_disapprove #disapprove		
+		law_census_voting = neutral
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_anarchy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove		
 	}
 	
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = strongly_disapprove #neutral
-		law_consumption_based_taxation = disapprove 
-		law_land_based_taxation = disapprove 
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = approve
 		law_graduated_taxation = strongly_approve
 	}
@@ -1072,12 +1048,6 @@ ideology_social_democrat = { #changed
 		law_no_social_security = strongly_disapprove
 		law_wage_subsidies = approve
 		law_old_age_pension = strongly_approve
-	}
-	
-	lawgroup_childrens_rights = { #added
-		law_child_labor_allowed = disapprove
-		law_restricted_child_labor = neutral 
-		law_compulsory_primary_school = approve
 	}
 
 	possible = {
@@ -1168,7 +1138,7 @@ ideology_social_democrat = { #changed
 	}
 }
 
-ideology_communist = { #changed
+ideology_communist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_communist.dds"
 	
 	character_ideology = yes
@@ -1193,11 +1163,13 @@ ideology_communist = { #changed
 		law_freedom_of_conscience = neutral
 		law_total_separation = approve
 	}
-	
-	lawgroup_childrens_rights = { #added
-		law_child_labor_allowed = disapprove
-		law_restricted_child_labor = neutral 
-		law_compulsory_primary_school = approve
+
+	lawgroup_citizenship = { #added
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_racial_segregation = strongly_disapprove
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_approve	
 	}
 	
 	possible = {
@@ -1263,7 +1235,7 @@ ideology_communist = { #changed
 	}
 }
 
-ideology_vanguardist = { #changed
+ideology_vanguardist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_vanguardist.dds"
 	
 	character_ideology = yes
@@ -1288,9 +1260,9 @@ ideology_vanguardist = { #changed
 	
 	lawgroup_economic_system = {	
 		law_command_economy = strongly_approve
-		law_interventionism = approve #neutral
+		law_interventionism = neutral
 		law_agrarianism = disapprove
-		law_traditionalism = strongly_disapprove #disapprove		
+		law_traditionalism = disapprove		
 		law_laissez_faire = strongly_disapprove
 	}
 	
@@ -1299,13 +1271,23 @@ ideology_vanguardist = { #changed
 		law_mercantilism = neutral		
 		law_isolationism = disapprove
 		law_free_trade = strongly_disapprove
-	}		
-	
-	lawgroup_childrens_rights = { #added
-		law_child_labor_allowed = disapprove
-		law_restricted_child_labor = neutral 
-		law_compulsory_primary_school = approve
-	}		
+	}	
+
+	lawgroup_citizenship = { #added
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = neutral
+		law_multicultural = approve	
+	}			
+
+	lawgroup_centralization= { #NFM Centralization
+		law_totalitarian = strongly_approve
+		law_unitary = approve
+		law_cooperative_federalism = neutral
+		law_dual_federalism = disapprove
+		law_regionalism = strongly_disapprove
+	}
 	
 	possible = {
 		owner = { has_technology_researched = socialism }
@@ -1421,19 +1403,19 @@ ideology_vanguardist = { #changed
 	}
 }
 
-ideology_fascist = { #changed
+ideology_fascist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_fascist.dds"
 	
 	character_ideology = yes
 
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
-		law_oligarchy = approve #neutral
+		law_oligarchy = neutral
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
 		law_census_voting = strongly_disapprove
 		law_wealth_voting = strongly_disapprove
-		law_landed_voting = disapprove #strongly_disapprove				
+		law_landed_voting = strongly_disapprove				
 	}
 
 	lawgroup_citizenship = {
@@ -1464,6 +1446,16 @@ ideology_fascist = { #changed
 		law_militarized_police = strongly_approve
 		law_no_police = disapprove
 	}
+
+	lawgroup_centralization= { #NFM Centralization
+		law_totalitarian = strongly_approve
+		law_unitary = approve
+		law_cooperative_federalism = neutral
+		law_dual_federalism = disapprove
+		law_regionalism = strongly_disapprove
+	}
+
+
 	
 	possible = {
 		owner = { has_technology_researched = mass_propaganda }
@@ -1634,6 +1626,22 @@ ideology_anarchist = {
 		law_parliamentary_republic = disapprove
 		law_theocracy = strongly_disapprove
 		law_council_republic = strongly_approve
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_racial_segregation = strongly_disapprove
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_approve	
+	}
+
+	lawgroup_centralization= { #NFM Centralization
+		law_totalitarian = strongly_disapprove
+		law_unitary = strongly_disapprove
+		law_cooperative_federalism = disapprove
+		law_dual_federalism = neutral
+		law_regionalism = strongly_approve
 	}
 	
 	possible = {
@@ -1824,7 +1832,7 @@ ideology_ethno_nationalist = {
 	}
 }
 
-ideology_theocrat = { #changed
+ideology_theocrat = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_theocrat.dds"
 	
 	character_ideology = yes
@@ -1838,24 +1846,10 @@ ideology_theocrat = { #changed
 	lawgroup_governance_principles = {
 		law_theocracy = strongly_approve	
 		law_monarchy = neutral
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
-		law_council_republic = disapprove
+		law_presidential_republic = strongly_disapprove
+		law_parliamentary_republic = strongly_disapprove
+		law_council_republic = strongly_disapprove
 	}
-	
-	lawgroup_education_system = { #added
-		law_religious_schools = strongly_approve	
-		law_no_schools = neutral
-		law_private_schools = strongly_disapprove
-		law_public_schools = strongly_disapprove
-	}
-	
-	lawgroup_health_system = { #added	
-		law_charitable_health_system = approve
-		law_no_health_system = neutral
-		law_private_health_insurance = disapprove
-		law_public_health_insurance = disapprove
-	}	
 	
 	possible = {
 		OR = {
@@ -1938,7 +1932,7 @@ ideology_theocrat = { #changed
 	}
 }
 
-ideology_market_liberal = { #changed
+ideology_market_liberal = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_market_liberal.dds"
 	
 	character_ideology = yes
@@ -1947,7 +1941,7 @@ ideology_market_liberal = { #changed
 		law_laissez_faire = strongly_approve
 		law_interventionism = neutral
 		law_agrarianism = disapprove
-		law_traditionalism = strongly_disapprove #disapprove		
+		law_traditionalism = disapprove		
 		law_command_economy = strongly_disapprove
 	}
 	

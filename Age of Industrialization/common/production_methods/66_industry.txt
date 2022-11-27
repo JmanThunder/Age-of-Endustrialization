@@ -1,4 +1,4 @@
-pm_worker_cooperative_building_food_industry = {
+﻿pm_worker_cooperative_building_food_industry = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_production_methods = {

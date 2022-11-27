@@ -1,4 +1,4 @@
-institution_development_and_reform_commission = {
+﻿institution_development_and_reform_commission = {
 	icon = "gfx/interface/icons/institution_icons/fa_gai_wei.dds"
 	background_texture = "gfx/interface/illustrations/institutions/workplace_safety.dds"
 	modifier = {

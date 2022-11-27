@@ -65,48 +65,245 @@ german_unification.1 = {
 				}
 			}
 			change_tag = NGF
-			every_country = {
+			if = {
 				limit = {
-					country_has_primary_culture = cu:north_german
-					is_player = no	
-					OR = {
-						has_diplomatic_pact = {
-							who = ROOT
-							type = customs_union
-						}
-						is_subject_of = ROOT
+					exists = c:ANH
+					NOT = {
+						ROOT = c:ANH
 					}
-					OR = {
-						is_subject = no
-						is_subject_of = ROOT
-					}
-					country_rank < rank_value:major_power
-				}		
-				ROOT = { 
-					annex = PREV 
 				}
+				annex = c:ANH
 			}
-			every_country = {
+			if = {
 				limit = {
-					NOT = { THIS = ROOT }
-				}
-				every_scope_state = {
-					limit = {
-						state_region = {
-							is_homeland = cu:north_german
-						}
-					}
-					state_region = {
-						add_claim = ROOT
+					exists = c:BRA
+					NOT = {
+						ROOT = c:BRA
 					}
 				}
+				annex = c:BRA
 			}
-			every_country = {
+			if = {
 				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
+					exists = c:BRE
+					NOT = {
+						ROOT = c:BRE
+					}
 				}
-				set_strategy = ai_strategy_unify_germany
+				annex = c:BRE
+			}
+			if = {
+				limit = {
+					exists = c:COB
+					NOT = {
+						ROOT = c:COB
+					}
+				}
+				annex = c:COB
+			}
+			if = {
+				limit = {
+					exists = c:FRM
+					NOT = {
+						ROOT = c:FRM
+					}
+				}
+				annex = c:FRM
+			}
+			if = {
+				limit = {
+					exists = c:HAM
+					NOT = {
+						ROOT = c:HAM
+					}
+				}
+				annex = c:HAM
+			}
+			if = {
+				limit = {
+					exists = c:HAN
+					NOT = {
+						ROOT = c:HAN
+					}
+				}
+				annex = c:HAN
+			}
+			if = {
+				limit = {
+					exists = c:HEK
+					NOT = {
+						ROOT = c:HEK
+					}
+				}
+				annex = c:HEK
+			}
+			if = {
+				limit = {
+					exists = c:HOH
+					NOT = {
+						ROOT = c:HOH
+					}
+				}
+				annex = c:HOH
+			}
+			if = {
+				limit = {
+					exists = c:HOL
+					NOT = {
+						ROOT = c:HOL
+					}
+				}
+				annex = c:HOL
+			}
+			if = {
+				limit = {
+					exists = c:LIP
+					NOT = {
+						ROOT = c:LIP
+					}
+				}
+				annex = c:LIP
+			}
+			if = {
+				limit = {
+					exists = c:LUB
+					NOT = {
+						ROOT = c:LUB
+					}
+				}
+				annex = c:LUB
+			}
+			if = {
+				limit = {
+					exists = c:MEC
+					NOT = {
+						ROOT = c:MEC
+					}
+				}
+				annex = c:MEC
+			}
+			if = {
+				limit = {
+					exists = c:MEI
+					NOT = {
+						ROOT = c:MEI
+					}
+				}
+				annex = c:MEI
+			}
+			if = {
+				limit = {
+					exists = c:MST
+					NOT = {
+						ROOT = c:MST
+					}
+				}
+				annex = c:MST
+			}
+			if = {
+				limit = {
+					exists = c:NAS
+					NOT = {
+						ROOT = c:NAS
+					}
+				}
+				annex = c:NAS
+			}
+			if = {
+				limit = {
+					exists = c:POM
+					NOT = {
+						ROOT = c:POM
+					}
+				}
+				annex = c:POM
+			}
+			if = {
+				limit = {
+					exists = c:PRU
+					NOT = {
+						ROOT = c:PRU
+					}
+				}
+				annex = c:PRU
+			}
+			if = {
+				limit = {
+					exists = c:OLD
+					NOT = {
+						ROOT = c:OLD
+					}
+				}
+				annex = c:OLD
+			}
+			if = {
+				limit = {
+					exists = c:SAX
+					NOT = {
+						ROOT = c:SAX
+					}
+				}
+				annex = c:SAX
+			}
+			if = {
+				limit = {
+					exists = c:SCH
+					NOT = {
+						ROOT = c:SCH
+					}
+				}
+				annex = c:SCH
+			}
+			if = {
+				limit = {
+					exists = c:SCM
+					NOT = {
+						ROOT = c:SCM
+					}
+				}
+				annex = c:SCM
+			}
+			if = {
+				limit = {
+					exists = c:SCW
+					NOT = {
+						ROOT = c:SCW
+					}
+				}
+				annex = c:SCW
+			}
+			if = {
+				limit = {
+					exists = c:WEI
+					NOT = {
+						ROOT = c:WEI
+					}
+				}
+				annex = c:WEI
+			}
+			if = {
+				limit = {
+					exists = c:WES
+					NOT = {
+						ROOT = c:WES
+					}
+				}
+				annex = c:WES
+			}
+			if = {
+				limit = {
+					exists = c:WLD
+					NOT = {
+						ROOT = c:WLD
+					}
+				}
+				annex = c:WLD
+			}
+			s:STATE_HESSE = {
+				set_owner_of_provinces = {
+					country = ROOT
+					provinces = { x8B7C67 }
+				}
 			}
 		}
 		else_if = {
@@ -119,53 +316,36 @@ german_unification.1 = {
 				}
 			}
 			change_tag = SGF
-			
-			every_country = {
+			if = {
 				limit = {
-					country_has_primary_culture = cu:south_german
-					is_player = no	
-					OR = {
-						has_diplomatic_pact = {
-							who = ROOT
-							type = customs_union
-						}
-						is_subject_of = ROOT
+					exists = c:BAD
+					NOT = {
+						ROOT = c:BAD
 					}
-					OR = {
-						is_subject = no
-						is_subject_of = ROOT
-					}
-					country_rank < rank_value:major_power
-				}	
-				ROOT = { 
-					annex = PREV 
 				}
+				annex = c:BAD
 			}
-			every_country = {
+			if = {
 				limit = {
-					NOT = { THIS = ROOT }
-				}
-				every_scope_state = {
-					limit = {
-						state_region = {
-							is_homeland = cu:south_german
-						}
-					}
-					state_region = {
-						add_claim = ROOT
+					exists = c:BAV
+					NOT = {
+						ROOT = c:BAV
 					}
 				}
+				annex = c:BAV
 			}
-			
-		}
-		every_country = {
-			limit = {
-				is_unification_candidate = GER
-				is_ai = yes
+			if = {
+				limit = {
+					exists = c:WUR
+					NOT = {
+						ROOT = c:WUR
+					}
+				}
+				annex = c:WUR
 			}
-			set_strategy = ai_strategy_unify_germany
 		}
 	}
+	
 	option = {
 		name = german_unification.1.b
 		add_modifier = {
@@ -182,50 +362,248 @@ german_unification.1 = {
 				}
 			}
 			change_tag = NGF
-			every_country = {
+			if = {
 				limit = {
-					country_has_primary_culture = cu:north_german
-					is_player = no	
-					OR = {
-						has_diplomatic_pact = {
-							who = ROOT
-							type = customs_union
-						}
-						is_subject_of = ROOT
+					exists = c:ANH
+					NOT = {
+						ROOT = c:ANH
 					}
-					OR = {
-						is_subject = no
-						is_subject_of = ROOT
-					}
-					country_rank < rank_value:major_power
-				}	
-				ROOT = { 
-					annex = PREV 
 				}
+				annex = c:ANH
 			}
-			every_country = {
+			if = {
 				limit = {
-					NOT = { THIS = ROOT }
-				}
-				every_scope_state = {
-					limit = {
-						state_region = {
-							is_homeland = cu:north_german
-						}
-					}
-					state_region = {
-						add_claim = ROOT
+					exists = c:BRA
+					NOT = {
+						ROOT = c:BRA
 					}
 				}
+				annex = c:BRA
 			}
-			every_country = {
+			if = {
 				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
+					exists = c:BRE
+					NOT = {
+						ROOT = c:BRE
+					}
 				}
-				set_strategy = ai_strategy_unify_germany
+				annex = c:BRE
+			}
+			if = {
+				limit = {
+					exists = c:COB
+					NOT = {
+						ROOT = c:COB
+					}
+				}
+				annex = c:COB
+			}
+			if = {
+				limit = {
+					exists = c:FRM
+					NOT = {
+						ROOT = c:FRM
+					}
+				}
+				annex = c:FRM
+			}
+			if = {
+				limit = {
+					exists = c:HAM
+					NOT = {
+						ROOT = c:HAM
+					}
+				}
+				annex = c:HAM
+			}
+			if = {
+				limit = {
+					exists = c:HAN
+					NOT = {
+						ROOT = c:HAN
+					}
+				}
+				annex = c:HAN
+			}
+			if = {
+				limit = {
+					exists = c:HEK
+					NOT = {
+						ROOT = c:HEK
+					}
+				}
+				annex = c:HEK
+			}
+			if = {
+				limit = {
+					exists = c:HOH
+					NOT = {
+						ROOT = c:HOH
+					}
+				}
+				annex = c:HOH
+			}
+			if = {
+				limit = {
+					exists = c:HOL
+					NOT = {
+						ROOT = c:HOL
+					}
+				}
+				annex = c:HOL
+			}
+			if = {
+				limit = {
+					exists = c:LIP
+					NOT = {
+						ROOT = c:LIP
+					}
+				}
+				annex = c:LIP
+			}
+			if = {
+				limit = {
+					exists = c:LUB
+					NOT = {
+						ROOT = c:LUB
+					}
+				}
+				annex = c:LUB
+			}
+			if = {
+				limit = {
+					exists = c:MEC
+					NOT = {
+						ROOT = c:MEC
+					}
+				}
+				annex = c:MEC
+			}
+			if = {
+				limit = {
+					exists = c:MEI
+					NOT = {
+						ROOT = c:MEI
+					}
+				}
+				annex = c:MEI
+			}
+			if = {
+				limit = {
+					exists = c:MST
+					NOT = {
+						ROOT = c:MST
+					}
+				}
+				annex = c:MST
+			}
+			if = {
+				limit = {
+					exists = c:NAS
+					NOT = {
+						ROOT = c:NAS
+					}
+				}
+				annex = c:NAS
+			}
+			if = {
+				limit = {
+					exists = c:POM
+					NOT = {
+						ROOT = c:POM
+					}
+				}
+				annex = c:POM
+			}
+			if = {
+				limit = {
+					exists = c:PRU
+					NOT = {
+						ROOT = c:PRU
+					}
+				}
+				annex = c:PRU
+			}
+			if = {
+				limit = {
+					exists = c:OLD
+					NOT = {
+						ROOT = c:OLD
+					}
+				}
+				annex = c:OLD
+			}
+			if = {
+				limit = {
+					exists = c:SAX
+					NOT = {
+						ROOT = c:SAX
+					}
+				}
+				annex = c:SAX
+			}
+			if = {
+				limit = {
+					exists = c:SCH
+					NOT = {
+						ROOT = c:SCH
+					}
+				}
+				annex = c:SCH
+			}
+			if = {
+				limit = {
+					exists = c:SCM
+					NOT = {
+						ROOT = c:SCM
+					}
+				}
+				annex = c:SCM
+			}
+			if = {
+				limit = {
+					exists = c:SCW
+					NOT = {
+						ROOT = c:SCW
+					}
+				}
+				annex = c:SCW
+			}
+			if = {
+				limit = {
+					exists = c:WEI
+					NOT = {
+						ROOT = c:WEI
+					}
+				}
+				annex = c:WEI
+			}
+			if = {
+				limit = {
+					exists = c:WES
+					NOT = {
+						ROOT = c:WES
+					}
+				}
+				annex = c:WES
+			}
+			if = {
+				limit = {
+					exists = c:WLD
+					NOT = {
+						ROOT = c:WLD
+					}
+				}
+				annex = c:WLD
+			}
+			s:STATE_HESSE = {
+				set_owner_of_provinces = {
+					country = ROOT
+					provinces = { x8B7C67 }
+				}
 			}
 		}
+		
 		else_if = {
 			limit = {
 				country_has_primary_culture = cu:south_german
@@ -240,213 +618,38 @@ german_unification.1 = {
 				}
 			}
 			change_tag = SGF
-			
-			every_country = {
+			if = {
 				limit = {
-					country_has_primary_culture = cu:south_german
-					is_player = no	
-					OR = {
-						has_diplomatic_pact = {
-							who = ROOT
-							type = customs_union
-						}
-						is_subject_of = ROOT
+					exists = c:BAD
+					NOT = {
+						ROOT = c:BAD
 					}
-					OR = {
-						is_subject = no
-						is_subject_of = ROOT
-					}
-					country_rank < rank_value:major_power
-				}	
-				ROOT = { 
-					annex = PREV 
 				}
+				annex = c:BAD
 			}
-			every_country = {
+			if = {
 				limit = {
-					NOT = { THIS = ROOT }
-				}
-				every_scope_state = {
-					limit = {
-						state_region = {
-							is_homeland = cu:south_german
-						}
-					}
-					state_region = {
-						add_claim = ROOT
+					exists = c:BAV
+					NOT = {
+						ROOT = c:BAV
 					}
 				}
+				annex = c:BAV
 			}
-			
+			if = {
+				limit = {
+					exists = c:WUR
+					NOT = {
+						ROOT = c:WUR
+					}
+				}
+				annex = c:WUR
+			}
 		}
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
-				}
-				set_strategy = ai_strategy_unify_germany
-			}
 	}
 }
 
-# Annex a German country
-german_unification.2 = {
-	type = country_event
-	placement = ROOT
-
-	title = german_unification.2.t
-	desc = german_unification.2.d
-	flavor = german_unification.2.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
-
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	duration = 3
-
-	cooldown = { months = 4 }
-
-	trigger = {
-		root.infamy < infamy_threshold:infamous
-		OR = {
-			country_tier = kingdom
-			country_tier = principality
-		}
-		any_country = {
-			exists = yes
-			trigger_if = {
-				limit = {
-					has_technology_researched = pan-nationalism
-				}
-				OR = {
-					country_has_primary_culture = cu:north_german
-					country_has_primary_culture = cu:south_german
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					ROOT = {
-						country_has_primary_culture = cu:north_german
-					}
-				}
-				country_has_primary_culture = cu:north_german
-			}
-			trigger_else_if = {
-				limit = {
-					ROOT = {
-						country_has_primary_culture = cu:south_german
-					}
-				}
-				country_has_primary_culture = cu:south_german
-			}
-			OR = {
-				has_diplomatic_pact = {
-					who = ROOT
-					type = customs_union
-				}
-				is_subject_of = ROOT
-			}
-			OR = {
-				is_subject = no
-				is_subject_of = ROOT
-			}
-			country_rank < rank_value:major_power
-			relations:root >= relations_threshold:amicable
-			is_player = no
-			NOT = { has_variable = german_minor_dont_annex }
-		}
-	}
-
-	immediate = {
-		random_country = {
-			limit = {
-				exists = yes
-				trigger_if = {
-					limit = {
-						has_technology_researched = pan-nationalism
-					}
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-					}
-				}
-				trigger_else_if = {
-					limit = {
-						ROOT = {
-							country_has_primary_culture = cu:north_german
-						}
-					}
-					country_has_primary_culture = cu:north_german
-				}
-				trigger_else_if = {
-					limit = {
-						ROOT = {
-							country_has_primary_culture = cu:south_german
-						}
-					}
-					country_has_primary_culture = cu:south_german
-				}
-				OR = {
-					has_diplomatic_pact = {
-						who = ROOT
-						type = customs_union
-					}
-					is_subject_of = ROOT
-				}
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
-				country_rank < rank_value:major_power
-				relations:root >= relations_threshold:amicable
-				is_player = no
-				NOT = { has_variable = german_minor_dont_annex }
-			}
-			save_scope_as = german_annex_country
-		}
-	}
-
-	option = {
-		name = german_unification.2.a
-		default_option = yes
-		create_incident = {
-			country = scope:german_annex_country
-			value = 3
-		}
-		annex = scope:german_annex_country
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
-				}
-				set_strategy = ai_strategy_unify_germany
-			}
-		ai_chance = {
-			base = 1
-		}
-	}
-	option = {
-		name = german_unification.2.b
-		change_relations = {
-			country = scope:german_annex_country
-			value = 20
-		}
-		scope:german_annex_country = {
-			set_variable = {
-				name = german_minor_dont_annex
-				days = 1825
-			}
-		}
-		ai_chance = {
-			base = 0
-		}
-	}
-}
+# Annex a German country (removed)
 
 # Bismarck
 german_unification.3 = {
@@ -529,13 +732,6 @@ german_unification.3 = {
 			name = realpolitik
 			months = normal_modifier_time
 		}
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
-				}
-				set_strategy = ai_strategy_unify_germany
-			}
 	}
 	option = {
 		name = german_unification.3.b
@@ -565,13 +761,6 @@ german_unification.3 = {
 			name = germany_aggressive_expansion
 			months = normal_modifier_time
 		}
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
-				}
-				set_strategy = ai_strategy_unify_germany
-			}
 	}
 }
 
@@ -606,14 +795,288 @@ german_unification.4 = {
 				name = german_unifier_ruler
 			}
 		}
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
+		change_tag = GER
+		if = {
+			limit = {
+				exists = c:ANH
+				NOT = {
+					ROOT = c:ANH
 				}
-				set_strategy = ai_strategy_unify_germany
 			}
-	}
+			annex = c:ANH
+		}
+		if = {
+			limit = {
+				exists = c:BAD
+				NOT = {
+					ROOT = c:BAD
+				}
+			}
+			annex = c:BAD
+		}
+		if = {
+			limit = {
+				exists = c:BAV
+				NOT = {
+					ROOT = c:BAV
+				}
+			}
+			annex = c:BAV
+		}
+		if = {
+			limit = {
+				exists = c:BRA
+				NOT = {
+					ROOT = c:BRA
+				}
+			}
+			annex = c:BRA
+		}
+		if = {
+			limit = {
+				exists = c:BRE
+				NOT = {
+					ROOT = c:BRE
+				}
+			}
+			annex = c:BRE
+		}
+		if = {
+			limit = {
+				exists = c:COB
+				NOT = {
+					ROOT = c:COB
+				}
+			}
+			annex = c:COB
+		}
+		if = {
+			limit = {
+				exists = c:FRM
+				NOT = {
+					ROOT = c:FRM
+				}
+			}
+			annex = c:FRM
+		}
+		if = {
+			limit = {
+				exists = c:HAM
+				NOT = {
+						ROOT = c:HAM
+				}
+			}
+			annex = c:HAM
+		}
+		if = {
+			limit = {
+				exists = c:HAN
+				NOT = {
+					ROOT = c:HAN
+				}
+			}
+			annex = c:HAN
+		}
+		if = {
+			limit = {
+				exists = c:HEK
+				NOT = {
+					ROOT = c:HEK
+				}
+			}
+			annex = c:HEK
+		}
+		if = {
+			limit = {
+				exists = c:HES
+				NOT = {
+					ROOT = c:HES
+				}
+			}
+			annex = c:HES
+		}
+		if = {
+			limit = {
+				exists = c:HOH
+				NOT = {
+					ROOT = c:HOH
+				}
+			}
+			annex = c:HOH
+		}
+		if = {
+			limit = {
+				exists = c:HOL
+				NOT = {
+					ROOT = c:HOL
+				}
+			}
+			annex = c:HOL
+		}
+		if = {
+			limit = {
+				exists = c:LIP
+				NOT = {
+					ROOT = c:LIP
+				}
+			}
+			annex = c:LIP
+		}
+		if = {
+			limit = {
+				exists = c:LUB
+				NOT = {
+					ROOT = c:LUB
+				}
+			}
+			annex = c:LUB
+		}
+		if = {
+			limit = {
+				exists = c:MEC
+				NOT = {
+					ROOT = c:MEC
+				}
+			}
+			annex = c:MEC
+		}
+		if = {
+			limit = {
+				exists = c:MEI
+				NOT = {
+					ROOT = c:MEI
+				}
+			}
+			annex = c:MEI
+		}
+		if = {
+			limit = {
+				exists = c:MST
+				NOT = {
+					ROOT = c:MST
+				}
+			}
+			annex = c:MST
+		}
+		if = {
+			limit = {
+				exists = c:NAS
+				NOT = {
+					ROOT = c:NAS
+				}
+			}
+			annex = c:NAS
+		}
+		if = {
+			limit = {
+				exists = c:NGF
+				NOT = {
+					ROOT = c:NGF
+				}
+			}
+			annex = c:NGF
+		}
+			if = {
+				limit = {
+					exists = c:POM
+					NOT = {
+						ROOT = c:POM
+					}
+				}
+				annex = c:POM
+			}
+		if = {
+			limit = {
+				exists = c:PRU
+				NOT = {
+					ROOT = c:PRU
+				}
+			}
+			annex = c:PRU
+		}
+		if = {
+			limit = {
+				exists = c:OLD
+				NOT = {
+					ROOT = c:OLD
+				}
+			}
+			annex = c:OLD
+		}
+		if = {
+			limit = {
+				exists = c:SAX
+				NOT = {
+					ROOT = c:SAX
+				}
+			}
+			annex = c:SAX
+		}
+		if = {
+			limit = {
+				exists = c:SCH
+				NOT = {
+					ROOT = c:SCH
+				}
+			}
+			annex = c:SCH
+		}
+		if = {
+			limit = {
+				exists = c:SCM
+				NOT = {
+					ROOT = c:SCM
+				}
+			}
+			annex = c:SCM
+		}
+		if = {
+			limit = {
+				exists = c:SCW
+				NOT = {
+					ROOT = c:SCW
+				}
+			}
+			annex = c:SCW
+		}
+		if = {
+			limit = {
+				exists = c:SGF
+				NOT = {
+					ROOT = c:SGF
+				}
+			}
+			annex = c:SGF
+		}
+		if = {
+			limit = {
+				exists = c:WEI
+				NOT = {
+					ROOT = c:WEI
+				}
+			}
+			annex = c:WEI
+		}
+		if = {
+			limit = {
+				exists = c:WLD
+				NOT = {
+					ROOT = c:WLD
+				}
+			}
+			annex = c:WLD
+		}
+		if = {
+			limit = {
+				exists = c:WUR
+				NOT = {
+					ROOT = c:WUR
+				}
+			}
+			annex = c:WUR
+		}
+	}	
+		
 	option = {
 		name = german_unification.4.b
 		add_loyalists = {
@@ -624,12 +1087,294 @@ german_unification.4 = {
 			value = 0.1
 			culture = cu:south_german
 		}
-		every_country = {
-				limit = {
-					is_unification_candidate = GER
-					is_ai = yes
+		change_tag = GER
+		if = {
+			limit = {
+				exists = c:ANH
+				NOT = {
+					ROOT = c:ANH
 				}
-				set_strategy = ai_strategy_unify_germany
 			}
+			annex = c:ANH
+		}
+		if = {
+			limit = {
+				exists = c:BAD
+				NOT = {
+					ROOT = c:BAD
+				}
+			}
+			annex = c:BAD
+		}
+		if = {
+			limit = {
+				exists = c:BAV
+				NOT = {
+					ROOT = c:BAV
+				}
+			}
+			annex = c:BAV
+		}
+		if = {
+			limit = {
+				exists = c:BRA
+				NOT = {
+					ROOT = c:BRA
+				}
+			}
+			annex = c:BRA
+		}
+		if = {
+			limit = {
+				exists = c:BRE
+				NOT = {
+					ROOT = c:BRE
+				}
+			}
+			annex = c:BRE
+		}
+		if = {
+			limit = {
+				exists = c:COB
+				NOT = {
+					ROOT = c:COB
+				}
+			}
+			annex = c:COB
+		}
+		if = {
+			limit = {
+				exists = c:FRM
+				NOT = {
+					ROOT = c:FRM
+				}
+			}
+			annex = c:FRM
+		}
+		if = {
+			limit = {
+				exists = c:HAM
+				NOT = {
+						ROOT = c:HAM
+				}
+			}
+			annex = c:HAM
+		}
+		if = {
+			limit = {
+				exists = c:HAN
+				NOT = {
+					ROOT = c:HAN
+				}
+			}
+			annex = c:HAN
+		}
+		if = {
+			limit = {
+				exists = c:HEK
+				NOT = {
+					ROOT = c:HEK
+				}
+			}
+			annex = c:HEK
+		}
+		if = {
+			limit = {
+				exists = c:HES
+				NOT = {
+					ROOT = c:HES
+				}
+			}
+			annex = c:HES
+		}
+		if = {
+			limit = {
+				exists = c:HOH
+				NOT = {
+					ROOT = c:HOH
+				}
+			}
+			annex = c:HOH
+		}
+		if = {
+			limit = {
+				exists = c:HOL
+				NOT = {
+					ROOT = c:HOL
+				}
+			}
+			annex = c:HOL
+		}
+		if = {
+			limit = {
+				exists = c:LIP
+				NOT = {
+					ROOT = c:LIP
+				}
+			}
+			annex = c:LIP
+		}
+		if = {
+			limit = {
+				exists = c:LUB
+				NOT = {
+					ROOT = c:LUB
+				}
+			}
+			annex = c:LUB
+		}
+		if = {
+			limit = {
+				exists = c:MEC
+				NOT = {
+					ROOT = c:MEC
+				}
+			}
+			annex = c:MEC
+		}
+		if = {
+			limit = {
+				exists = c:MEI
+				NOT = {
+					ROOT = c:MEI
+				}
+			}
+			annex = c:MEI
+		}
+		if = {
+			limit = {
+				exists = c:MST
+				NOT = {
+					ROOT = c:MST
+				}
+			}
+			annex = c:MST
+		}
+		if = {
+			limit = {
+				exists = c:NAS
+				NOT = {
+					ROOT = c:NAS
+				}
+			}
+			annex = c:NAS
+		}
+		if = {
+			limit = {
+				exists = c:NGF
+				NOT = {
+					ROOT = c:NGF
+				}
+			}
+			annex = c:NGF
+		}
+			if = {
+				limit = {
+					exists = c:POM
+					NOT = {
+						ROOT = c:POM
+					}
+				}
+				annex = c:POM
+			}
+		if = {
+			limit = {
+				exists = c:PRU
+				NOT = {
+					ROOT = c:PRU
+				}
+			}
+			annex = c:PRU
+		}
+		if = {
+			limit = {
+				exists = c:OLD
+				NOT = {
+					ROOT = c:OLD
+				}
+			}
+			annex = c:OLD
+		}
+		if = {
+			limit = {
+				exists = c:SAX
+				NOT = {
+					ROOT = c:SAX
+				}
+			}
+			annex = c:SAX
+		}
+		if = {
+			limit = {
+				exists = c:SCH
+				NOT = {
+					ROOT = c:SCH
+				}
+			}
+			annex = c:SCH
+		}
+		if = {
+			limit = {
+				exists = c:SCM
+				NOT = {
+					ROOT = c:SCM
+				}
+			}
+			annex = c:SCM
+		}
+		if = {
+			limit = {
+				exists = c:SCW
+				NOT = {
+					ROOT = c:SCW
+				}
+			}
+			annex = c:SCW
+		}
+		if = {
+			limit = {
+				exists = c:SGF
+				NOT = {
+					ROOT = c:SGF
+				}
+			}
+			annex = c:SGF
+		}
+		if = {
+			limit = {
+				exists = c:WEI
+				NOT = {
+					ROOT = c:WEI
+				}
+			}
+			annex = c:WEI
+		}
+		if = {
+			limit = {
+				exists = c:WES
+				NOT = {
+					ROOT = c:WES
+				}
+			}
+			annex = c:WES
+		}
+		if = {
+			limit = {
+				exists = c:WLD
+				NOT = {
+					ROOT = c:WLD
+				}
+			}
+			annex = c:WLD
+		}
+		if = {
+			limit = {
+				exists = c:WUR
+				NOT = {
+					ROOT = c:WUR
+				}
+			}
+			annex = c:WUR
+		}
 	}
 }

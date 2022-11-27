@@ -14,7 +14,7 @@ RU_CL_RP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_RP_dyn_c_french_empire # genitive
 	}
@@ -4873,7 +4873,7 @@ RU_CL_DP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_DP_dyn_c_french_empire # dative
 	}
@@ -9742,7 +9742,7 @@ RU_CL_VP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_VP_dyn_c_french_empire # accusative
 	}
@@ -14611,7 +14611,7 @@ RU_CL_TP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_TP_dyn_c_french_empire # instrumental
 	}
@@ -19480,7 +19480,7 @@ RU_CL_PP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_PP_dyn_c_french_empire # prepositional
 	}

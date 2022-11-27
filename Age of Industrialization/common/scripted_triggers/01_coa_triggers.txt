@@ -14,7 +14,7 @@ coa_socialism_trigger = {
 }
 
 coa_started_LUC_trigger = {
-    has_variable = started_as_LUC
+	has_variable = started_as_LUC
 }
 
 coa_started_MOD_trigger = {
@@ -22,7 +22,13 @@ coa_started_MOD_trigger = {
 }
 
 coa_started_SIC_trigger = {
-    has_variable = started_as_SIC
+	OR = {
+		has_variable = started_as_SIC
+		AND = {
+			coa_did_not_start_game_with_mod = yes
+			capital.state_region = s:STATE_CAMPANIA
+		}
+	}
 }
 
 coa_started_PAR_trigger = {
@@ -30,19 +36,43 @@ coa_started_PAR_trigger = {
 }
 
 coa_started_TUS_trigger = {
-    has_variable = started_as_TUS
+	OR = {
+		has_variable = started_as_TUS
+		AND = {
+			coa_did_not_start_game_with_mod = yes
+			capital.state_region = s:STATE_TUSCANY
+		}
+	}
 }
 
 coa_started_HAN_trigger = {
-    has_variable = started_as_HAN
+	OR = {
+		has_variable = started_as_HAN
+		AND = {
+			coa_did_not_start_game_with_mod = yes
+			capital.state_region = s:STATE_HANNOVER
+		}
+	}
 }
 
 coa_started_BAV_trigger = {
-    has_variable = started_as_BAV
+	OR = {
+		has_variable = started_as_BAV
+		AND = {
+			coa_did_not_start_game_with_mod = yes
+			capital.state_region = s:STATE_BAVARIA
+		}
+	}
 }
 
 coa_started_AUS_trigger = {
-    has_variable = started_as_AUS
+	OR = {
+		has_variable = started_as_AUS
+		AND = {
+			coa_did_not_start_game_with_mod = yes
+			capital.state_region = s:STATE_AUSTRIA
+		}
+	}
 }
 
 coa_no_NET_overlord_trigger = {
@@ -64,6 +94,14 @@ coa_no_NET_overlord_trigger = {
 
 coa_time_tex_trigger = {
 	game_date > 1839.1.15
+}
+
+coa_time_saf_trigger = {
+	game_date > 1928.5.31
+}
+
+coa_time_swe_nor_trigger = {
+	game_date > 1844.1.15
 }
 
 coa_council_republic_democratic_trigger = {
@@ -118,6 +156,16 @@ coa_peru_bolivia_dictatorship_trigger = {
 
 coa_independent_trigger = {
 	NOT = {exists = scope:overlord}
+}
+
+coa_did_not_start_game_with_mod = {
+	NOT = { has_global_variable = started_with_better_flags }
+}
+
+coa_union_south_africa_trigger = {
+	owns_entire_state_region = STATE_TRANSVAAL
+	owns_entire_state_region = STATE_VRYSTAAT
+	owns_entire_state_region = STATE_ZULULAND
 }
 
 # Government
@@ -201,6 +249,11 @@ coa_def_time_tex_flag_trigger = {
 	scope:actor = { coa_time_tex_trigger = yes}
 }
 
+coa_def_time_saf_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_time_saf_trigger = yes}
+}
+
 coa_def_democratic_monarchy_flag_trigger  = {
 	exists = scope:actor
 	scope:actor = { coa_democratic_monarchy_trigger = yes}
@@ -244,4 +297,14 @@ coa_def_peru_bolivia_dictatorship_flag_trigger  = {
 coa_def_independent_flag_trigger  = {
 	exists = scope:actor
 	scope:actor = { coa_independent_trigger = yes}
+}
+
+coa_def_union_south_africa_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_union_south_africa_trigger = yes}
+}
+
+coa_def_swe_nor_time_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_time_swe_nor_trigger = yes }
 }

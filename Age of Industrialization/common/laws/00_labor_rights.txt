@@ -9,9 +9,7 @@ law_serfdom_banned = {
 	
 	progressiveness = 0
 	
-	modifier = { 
-	    interest_group_ig_rural_folk_pop_attraction_mult = 0.2
-	    country_farmers_pol_str_mult = 0.25
+	modifier = {	
 	}
 	
 	possible_political_movements = {
@@ -52,10 +50,7 @@ law_serfdom = {
 	}
 	
 	modifier = {
-		interest_group_ig_landowners_pol_str_mult = 0.25
-		country_aristocrats_pol_str_mult = 0.25
-		country_tech_spread_mult = -0.1
-		building_construction_sector_throughput_mult = -0.15
+		interest_group_ig_landowners_pol_str_mult = 0.5
 	}
 
 	possible_political_movements = {
@@ -79,14 +74,14 @@ law_regulatory_bodies = {
 		labor_movement
 	}
 
-    modifier = {
-		interest_group_ig_trade_unions_pop_attraction_mult = 0.1
-		interest_group_ig_trade_unions_pol_str_mult = 0.1
-	}
 	institution = institution_workplace_safety
 	
 	possible_political_movements = {
 		law_worker_protections
+	}
+	
+	institution_modifier = {
+		building_minimum_wage_mult = 0.05
 	}
 	
 	pop_support = {
@@ -127,15 +122,11 @@ law_worker_protections = {
 	
 	institution = institution_workplace_safety
 	institution_modifier = {
-		building_minimum_wage_mult = 0.16
-		interest_group_ig_trade_unions_pop_attraction_mult = 0.02
-		interest_group_ig_trade_unions_pol_str_mult = 0.02
+		building_minimum_wage_mult = 0.25
 	}
 
 	modifier = {
-		building_minimum_wage_mult = 0.2
-		interest_group_ig_trade_unions_pop_attraction_mult = 0.1
-		interest_group_ig_trade_unions_pol_str_mult = 0.1
+		building_minimum_wage_mult = 0.5
 	}
 	
 	pop_support = {

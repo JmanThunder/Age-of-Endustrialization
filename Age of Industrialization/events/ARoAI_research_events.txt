@@ -26,6 +26,14 @@ ARoAI_research_events.1 = {
 				}
 			}
 			
+			set_variable = {
+				name = rs_monthly_innovation
+				value = {
+					value = modifier:country_weekly_innovation_add
+					multiply = 4.345
+				}
+			}
+			
 			# Academia
 			
 			if = {
@@ -41,7 +49,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = rationalism
 						}
 					}
-					rs_add_points_to_rationalism = yes
+					rs_add_progress_to_technology = {
+						technology = rationalism
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -59,7 +69,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = academia
 						}
 					}
-					rs_add_points_to_academia = yes
+					rs_add_progress_to_technology = {
+						technology = academia
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -79,7 +91,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = enclosure
 						}
 					}
-					rs_add_points_to_enclosure = yes
+					rs_add_progress_to_technology = {
+						technology = enclosure
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -96,7 +110,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = manufacturies
 						}
 					}
-					rs_add_points_to_manufacturies = yes
+					rs_add_progress_to_technology = {
+						technology = manufacturies
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -115,7 +131,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = shaft_mining
 						}
 					}
-					rs_add_points_to_shaft_mining = yes
+					rs_add_progress_to_technology = {
+						technology = shaft_mining
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -133,7 +151,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = steelworking
 						}
 					}
-					rs_add_points_to_steelworking = yes
+					rs_add_progress_to_technology = {
+						technology = steelworking
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -151,7 +171,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = cotton_gin
 						}
 					}
-					rs_add_points_to_cotton_gin = yes
+					rs_add_progress_to_technology = {
+						technology = cotton_gin
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -169,7 +191,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = lathe
 						}
 					}
-					rs_add_points_to_lathe = yes
+					rs_add_progress_to_technology = {
+						technology = lathe
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -188,7 +212,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = mechanical_tools
 						}
 					}
-					rs_add_points_to_mechanical_tools = yes
+					rs_add_progress_to_technology = {
+						technology = mechanical_tools
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -206,7 +232,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = atmospheric_engine
 						}
 					}
-					rs_add_points_to_atmospheric_engine = yes
+					rs_add_progress_to_technology = {
+						technology = atmospheric_engine
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -225,7 +253,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = railways
 						}
 					}
-					rs_add_points_to_railways = yes
+					rs_add_progress_to_technology = {
+						technology = railways
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -268,7 +298,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = mass_communication
 						}
 					}
-					rs_add_points_to_mass_communication = yes
+					rs_add_progress_to_technology = {
+						technology = mass_communication
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -308,7 +340,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = nationalism
 						}
 					}
-					rs_add_points_to_nationalism = yes
+					rs_add_progress_to_technology = {
+						technology = nationalism
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -331,7 +365,9 @@ ARoAI_research_events.1 = {
 							is_researching_technology = pan-nationalism
 						}
 					}
-					rs_add_points_to_pan_nationalism = yes
+					rs_add_progress_to_technology = {
+						technology = pan-nationalism
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
@@ -352,10 +388,14 @@ ARoAI_research_events.1 = {
 							is_researching_technology = pumpjacks
 						}
 					}
-					rs_add_points_to_pumpjacks = yes
+					rs_add_progress_to_technology = {
+						technology = pumpjacks
+					}
 					add_modifier = { name = rs_innovation_redirection months = 2 }
 				}
 			}
+			
+			remove_variable = rs_monthly_innovation
 		}
 	}
 }

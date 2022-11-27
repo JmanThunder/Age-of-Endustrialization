@@ -47,9 +47,14 @@ discrimination = {
 	state_political_strength_from_discrimination_mult = -0.95
 	state_dependent_wage_mult = 0.5
 	state_radicals_from_sol_change_mult = -0.05
-	state_radicals_from_discrimination_mult = 0.05
-	state_education_access_add = -0.25
+	state_radicals_from_discrimination_mult = 0.1
+	state_education_access_add = -0.5
 	building_minimum_wage_mult = -0.5
+	state_conscription_rate_mult = -0.75
+	state_pop_pol_str_mult = -0.25
+	state_welfare_payments_add = -1.0
+	tax_dividends_add = 0.5
+	state_tax_waste_add = 0.25
 }
 
 coastal_state = {
@@ -105,10 +110,8 @@ incorporated_state = {
 unincorporated_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -0.25
-	state_conscription_rate_mult = -0.75
-	state_pop_pol_str_mult = -0.75
+	state_conscription_rate_mult = -0.5
 	state_welfare_payments_add = -1.0
-	tax_dividends_add = 1.0
 	state_tax_waste_add = 1.0
 }
 
@@ -471,13 +474,13 @@ convoy_raiding = {
 # an intercepted naval invasion force gives penalty in land combat depending on naval battle outcome
 battle_naval_invasion_beachhead_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	unit_offense_mult = -1
+	unit_offense_mult = -0.4
 }
 
 # a naval invasion force without Landing Craft gives a flat penalty in land combat
 battle_naval_invasion_landing_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	unit_offense_mult = -0.25
+	unit_offense_mult = -0.10
 }
 
 country_humiliated = {

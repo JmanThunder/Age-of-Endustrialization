@@ -291,7 +291,7 @@ pm_traditional_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_aristocrats_add = 150
+			building_employment_aristocrats_add = 75
 			building_employment_academics_add = 850
 		}		
 
@@ -316,8 +316,8 @@ pm_bourgeoisie_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_capitalists_add = 100
-			building_employment_aristocrats_add = 50
+			building_employment_capitalists_add = 50
+			building_employment_aristocrats_add = 25
 			building_employment_academics_add = 850
 		}		
 
@@ -426,7 +426,7 @@ pm_publicly_traded_building_power_plant = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 150
+			building_employment_capitalists_add = 75
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5

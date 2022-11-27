@@ -1,4 +1,4 @@
-pm_worker_cooperative_building_railway = {
+﻿pm_worker_cooperative_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_laws = {

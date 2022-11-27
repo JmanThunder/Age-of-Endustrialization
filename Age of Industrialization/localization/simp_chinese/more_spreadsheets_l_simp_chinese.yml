@@ -59,17 +59,21 @@
   MS_AVG_ANNUAL_WAGE_TOOLTIP: "平均年收入"
   MS_WEALTH_PROGRESSION: "进度"
   MS_WEALTH_PROGRESSION_TOOLTIP: "前往下一财富等级的进度"
-  MS_EDUCATION_ACCESS: "识字"
-  MS_EDUCATION_ACCESS_TOOLTIP: "识字率"
+  MS_EDUCATION_ACCESS: "机会"
+  MS_EDUCATION_ACCESS_TOOLTIP: "受教育机会"
   MS_POL_STR: "势力"
   MS_POL_STR_PCT: "势力"
   MS_POL_STR_TOOLTIP: "政治力量"
   MS_IGS: "利益"
 
-  MS_QUALIFICATIONS_TOOLTIP: "Qualifications"
-  MS_SELL_ORDERS: "[concept_sell_orders]"
-  MS_BUY_ORDERS: "[concept_buy_orders]"
-  MS_TRADE_ROUTE_TOOLTIP: "该商品有你参与的贸易路线" # There are trade routes for this good that are owned by you
-  MS_WARNING_1: "市场商品缺失？" # Missing Market Goods?
-  MS_WARNING_2: "原因：你在市场页面单独筛选了商品" # For some reason Paradox only exposes goods filtered by the Market tab filters.
-  MS_WARNING_3: "修复：在市场页面改为显示所有商品" # How to fix: Head to the Market tab and deselect the filter.
+  MS_QUALIFICATIONS_TOOLTIP: "资质"
+  MS_SELL_ORDERS: "售"
+  MS_BUY_ORDERS: "购"
+  MS_TRADE_ROUTE_TOOLTIP: "该商品有你参与的贸易路线"
+  MS_WARNING_1: "市场商品缺失？"
+  MS_WARNING_2: "原因：你在市场页面单独筛选了商品"
+  MS_WARNING_3: "修复：在市场页面改为显示所有商品"
+  MS_GOODS_NUMBER_WITH_TRADE_LEVEL: "[TradeRoute.GetTradeQuantity|Dv] ([TradeRoute.GetLevel|v]级)"
+  MS_WAGES: "#bold $WAGES$#!"
+  MS_EXPENSES: "#bold $EXPENSES$#!"
+  MS_TAXES: "#bold $TAXES$#!"

@@ -24,7 +24,7 @@ ARoAI_economy_events.1 = {
 			# Calculate incorporated population and weekly income of the country
 			
 			ec_calculate_incorporated_population = yes
-			ec_calculate_country_weekly_income = yes
+			ec_calculate_country_budget_income = yes
 			
 			# Collect budget costs and restart costs collection cycle 7 days later
 			
@@ -33,6 +33,10 @@ ARoAI_economy_events.1 = {
 				id = ARoAI_economy_events.4
 				days = 7
 			}
+			
+			# Check if military expenses are higher than usual
+			
+			ec_check_wartime_spending = yes
 			
 			# Change tax level and government wages
 			
@@ -258,6 +262,245 @@ ARoAI_economy_events.5 = {
 		}
 	}
 }
+
+### AUTOBUILD SETTINGS
+
+ARoAI_economy_events.6 = {
+	type = country_event
+	placement = root
+
+	title = ARoAI_economy_events.6.t
+	desc = ARoAI_economy_events.6.d
+	flavor = ARoAI_economy_events.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_gears_pistons.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = ""
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	trigger = {}
+
+	immediate = {
+		gb_renew_modifier = {
+			name = ec_autobuild_settings
+			days = 93
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.1a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild
+			}
+		}
+		set_variable = ec_autobuild
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.1b
+		trigger = {
+			has_variable = ec_autobuild
+		}
+		remove_variable = ec_autobuild
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.2a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_government_administration
+			}
+		}
+		set_variable = ec_autobuild_government_administration
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.2b
+		trigger = {
+			has_variable = ec_autobuild_government_administration
+		}
+		remove_variable = ec_autobuild_government_administration
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.3a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_construction_sector
+			}
+		}
+		set_variable = ec_autobuild_construction_sector
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.3b
+		trigger = {
+			has_variable = ec_autobuild_construction_sector
+		}
+		remove_variable = ec_autobuild_construction_sector
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.4a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_university
+			}
+		}
+		set_variable = ec_autobuild_university
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.4b
+		trigger = {
+			has_variable = ec_autobuild_university
+		}
+		remove_variable = ec_autobuild_university
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.5a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_railway
+			}
+		}
+		set_variable = ec_autobuild_railway
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.5b
+		trigger = {
+			has_variable = ec_autobuild_railway
+		}
+		remove_variable = ec_autobuild_railway
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.6a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_port
+			}
+		}
+		set_variable = ec_autobuild_port
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.6b
+		trigger = {
+			has_variable = ec_autobuild_port
+		}
+		remove_variable = ec_autobuild_port
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.7a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_barracks
+			}
+		}
+		set_variable = ec_autobuild_barracks
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.7b
+		trigger = {
+			has_variable = ec_autobuild_barracks
+		}
+		remove_variable = ec_autobuild_barracks
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.8a
+		trigger = {
+			NOT = {
+				has_variable = ec_autobuild_naval_base
+			}
+		}
+		set_variable = ec_autobuild_naval_base
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	option = {
+		name = ARoAI_economy_events.6.8b
+		trigger = {
+			has_variable = ec_autobuild_naval_base
+		}
+		remove_variable = ec_autobuild_naval_base
+		trigger_event = {
+			id = ARoAI_economy_events.6
+			popup = yes
+		}
+	}
+	
+	option = {
+		name = ARoAI_economy_events.6.x
+		default_option = yes
+		remove_modifier = ec_autobuild_settings
+	}
+}
+
+### CHECK ARABLE RESOURCES
 
 ARoAI_economy_events.300 = {
 	type = country_event

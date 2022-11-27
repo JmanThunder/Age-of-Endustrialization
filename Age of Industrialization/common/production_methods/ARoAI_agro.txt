@@ -1,7 +1,7 @@
 ﻿pm_tools_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/no_tool_use.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_tools = {
@@ -18,7 +18,7 @@ pm_tools = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_steam_threshers = {
@@ -41,7 +41,7 @@ pm_steam_threshers = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_tractors = {
@@ -64,13 +64,13 @@ pm_tractors = {
 		}
 	}
 	
-	ai_value = 200000
+	ai_value = 400000
 }
 
 pm_standard_fences = {
 	texture = "gfx/interface/icons/production_method_icons/standard_fences.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_barbed_wire_fences = {
@@ -88,7 +88,7 @@ pm_barbed_wire_fences = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }		
 
 pm_electric_fencing = {
@@ -107,13 +107,13 @@ pm_electric_fencing = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_unrefrigerated = {
 	texture = "gfx/interface/icons/production_method_icons/no_refrigeration.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_refrigerated_storage_building_livestock_ranch = {
@@ -131,7 +131,7 @@ pm_refrigerated_storage_building_livestock_ranch = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_refrigerated_rail_cars_building_livestock_ranch = {
@@ -152,5 +152,5 @@ pm_refrigerated_rail_cars_building_livestock_ranch = {
 		}
 	}
 	
-	ai_value = 200000
+	ai_value = 400000
 }

@@ -5,7 +5,7 @@ fall_of_french_empire = {
 	is_shown_when_inactive = {
         exists = c:FRA
         c:FRA = ROOT
-		has_variable = french_empire_created
+		ruler = { has_variable = is_bonapartist }
 		has_variable = french_empire_alsace_lorraine
 		has_law = law_type:law_monarchy
 		NOT = { owns_entire_state_region = STATE_ALSACE_LORRAINE }
@@ -24,3 +24,103 @@ fall_of_french_empire = {
 
 	should_be_pinned_by_default = yes
 }
+
+french_conquest_of_algeria = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	on_monthly_pulse = {
+		random_events = {
+			10 = 0 
+			1 = conquest_of_algeria.2
+		}
+	}
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_CONSTANTINE
+				owns_entire_state_region = STATE_TLEMCEN
+				NOT = { exists = c:ALD }
+			}
+			OR = {
+				c:FRA = {
+					has_diplomatic_pact = {
+						who = c:ALD
+						type = puppet
+					}
+				}
+				c:FRA = {
+					has_diplomatic_pact = {
+						who = c:ALD
+						type = dominion
+					}
+				}			}
+		}
+	}
+	
+	on_complete = {
+		remove_variable = conquest_of_algeria_stall
+		custom_tooltip = {
+			text = french_conquest_of_algeria_end
+			trigger_event = { id = conquest_of_algeria.3 popup = yes }
+		}
+	}
+	
+	invalid = {
+		OR = {
+			year >= 1848
+			has_law = law_type:law_no_colonial_affairs
+			NOT = { owns_entire_state_region = STATE_ALGIERS }
+		}
+	}
+	
+	weight = 200
+	
+	should_be_pinned_by_default = yes
+	
+	inheritable = no
+}
+
+#establishment_of_imperial_authority = {
+#	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+#
+#	on_monthly_pulse = {
+#		effect = {
+#			change_variable = {
+#				name = create_empire_var
+#				add = 1
+#			}
+#		}
+#	}
+#
+#	complete = {
+#		scope:journal_entry = {
+#			is_goal_complete = yes
+#		}
+#	}
+#	
+#	on_complete = {
+#		custom_tooltip = {
+#			text = establishment_of_imperial_authority_end
+#			trigger_event = { id = napoleonic_flavor.2 popup = yes }
+#		}
+#	}
+#	
+#	invalid = {
+#		NOT = {
+#			is_enacting_law = law_type:law_monarchy
+#		}
+#	}
+#
+#	current_value = {
+#		value = var:create_empire_var
+#	}
+#
+#	goal_add_value = {
+#		add = 12
+#	}
+#	
+#	should_be_pinned_by_default = yes
+#	
+#	inheritable = no
+#}

@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ PERCENTAGE_EMPLOYED_MOD:0 "#v 失业 [Building.GetEmploymentPercentage|0%]"
+ BUILDING_MAP_LIST_PANEL_UNEMPLOYED_HEADER:0 "失业"
+ BUILDING_MAP_LIST_PANEL_UNEMPLOYED_HEADER_TOOLTIP:0 "#header 失业#!"
+ building_employment_text:0 "已雇佣 [Building.GetEmploymentPercentage|0%]"

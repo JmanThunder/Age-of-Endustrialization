@@ -1,7 +1,7 @@
 ﻿pm_no_equipment = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	
-	ai_value = 0
+	ai_value = 50000
 }
 
 pm_steam_donkey_building_logging_camp = {
@@ -24,7 +24,7 @@ pm_steam_donkey_building_logging_camp = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_rail_transport_building_logging_camp = {
@@ -45,7 +45,7 @@ pm_rail_transport_building_logging_camp = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_log_carts = {
@@ -66,7 +66,7 @@ pm_log_carts = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_refrigerated_storage_building_fishing_wharf = {
@@ -87,7 +87,7 @@ pm_refrigerated_storage_building_fishing_wharf = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_refrigerated_rail_cars_building_fishing_wharf = {
@@ -111,7 +111,7 @@ pm_refrigerated_rail_cars_building_fishing_wharf = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_flash_freezing_building_fishing_wharf = {
@@ -134,7 +134,7 @@ pm_flash_freezing_building_fishing_wharf = {
 		}
 	}
 	
-	ai_value = 200000
+	ai_value = 400000
 }
 
 pm_refrigerated_storage_building_whaling_station = {
@@ -155,7 +155,7 @@ pm_refrigerated_storage_building_whaling_station = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_refrigerated_rail_cars_building_whaling_station = {
@@ -179,7 +179,7 @@ pm_refrigerated_rail_cars_building_whaling_station = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }
 
 pm_flash_freezing_building_whaling_station = {
@@ -202,7 +202,7 @@ pm_flash_freezing_building_whaling_station = {
 		}
 	}
 	
-	ai_value = 200000
+	ai_value = 400000
 }
 
 pm_rail_transport_building_oil_rig = {
@@ -224,7 +224,7 @@ pm_rail_transport_building_oil_rig = {
 		}
 	}
 	
-	ai_value = 50000
+	ai_value = 100000
 }
 
 pm_tanker_cars = {
@@ -246,5 +246,5 @@ pm_tanker_cars = {
 		}
 	}
 	
-	ai_value = 100000
+	ai_value = 200000
 }

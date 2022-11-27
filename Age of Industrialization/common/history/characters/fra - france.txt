@@ -7,12 +7,13 @@
 			birth_date = 1773.10.6
 			dna = dna_king_louis_philippe_01
 			interest_group = ig_industrialists
-			ideology = ideology_royalist
+			ideology = ideology_orleanist
 			traits = {
 				tactful
 			}
 			on_created = {
 				set_variable = is_married
+				set_variable = is_orleanist
 			}
 		}
 
@@ -22,21 +23,25 @@
 			heir = yes
 			birth_date = 1810.9.3
 			interest_group = ig_armed_forces
-			ideology = ideology_jingoist_leader
+			ideology = ideology_orleanist
 			traits = {
 				reserved
+			}
+			on_created = {
+				set_variable = is_orleanist
 			}
 		}
 
 		create_character = {
-			first_name = "Victor"
-			last_name = "de_Broglie"
-			birth_date = 1785.11.28
+			first_name = "Pierre-Antoine"
+			last_name = "Berryer"
+			birth_date = 1790.10.21
+			dna = dna_pa_berryer
 			ig_leader = yes
 			interest_group = ig_landowners
-			ideology = ideology_reformer
+			ideology = ideology_legitimist
 			traits = {
-				tactful
+				direct
 			}
 		}
 
@@ -46,32 +51,23 @@
 			birth_date = 1797.4.15
 			ig_leader = yes
 			interest_group = ig_intelligentsia
-			ideology = ideology_moderate
+			ideology = ideology_reformer
 			traits = {
 				charismatic
 			}
 		}
 
 		create_character = {
-			first_name = "Jacques"
-			last_name = "Laffitte"
-			birth_date = 1767.10.24
+			first_name = "Mathieu_2"
+			last_name = "Mole"
+			birth_date = 1781.1.24
+			dna = dna_mathieu_mole
 			ig_leader = yes
 			interest_group = ig_industrialists
-			ideology = ideology_reformer
+			ideology = ideology_orleanist
 			traits = {
-				reckless
-			}
-		}
-
-		create_character = {
-			first_name = "Jean-de-Dieu"
-			last_name = "Soult"
-			birth_date = 1769.3.29
-			ig_leader = yes
-			interest_group = ig_armed_forces
-			ideology = ideology_royalist
-			traits = {
+				experienced_political_operator
+				basic_diplomat
 			}
 		}
 		
@@ -82,14 +78,26 @@
 			dna = dna_antoine_argout
 			ig_leader = yes
 			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_market_liberal
+			ideology = ideology_reformer
 			traits = {
 				meticulous
 			}
 		}
 		
 		create_character = {
-			first_name = "Hyacinthe-Louis"
+			first_name = "Odilon"
+			last_name = "Barrot"
+			birth_date = 1791.7.19
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				inspirational_orator
+			}
+		}
+		
+		create_character = {
+			first_name = "Hyacinthe_Louis"
 			last_name = "de_Quelen"
 			birth_date = 1778.10.8
 			dna = dna_de_quelen
@@ -100,30 +108,15 @@
 				pious
 			}
 		}
-		
+
 		create_character = {
-			first_name = "Francois-Vincent"
-			last_name = "Raspail"
-			birth_date = 1794.1.29
-			dna = dna_francois_raspail
+			first_name = "Jean-de-Dieu"
+			last_name = "Soult"
+			birth_date = 1769.3.29
 			ig_leader = yes
-			interest_group = ig_trade_unions
-			ideology = ideology_radical
-			traits = {
-				bandit
-			}
-		}
-		
-		create_character = {
-			first_name = "Mathieu"
-			last_name = "Mole"
-			birth_date = 1781.1.24
-			dna = dna_mathieu_mole
-			ig_leader = yes
-			interest_group = ig_rural_folk
-			ideology = ideology_moderate
-			traits = {
-				basic_diplomat
+			interest_group = ig_armed_forces
+			ideology = ideology_orleanist
+			traits = {				arrogant       
 			}
 		}
 
