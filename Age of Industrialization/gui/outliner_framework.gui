@@ -98,6 +98,7 @@ types outliner_framework {
 		
 		# The list of the items within that group
 		container = {
+			parentanchor = right
 			block "list_visibility" {
 				visible = "[OutlinerEntry.IsExpanded]"
 			}

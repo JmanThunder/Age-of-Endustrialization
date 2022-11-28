@@ -111,7 +111,7 @@ types outliner_types {
 						pinned_expand_buttons = {}
 					}
 					using = outliner_entry_animation
-					
+
 					flowcontainer = {
 						visible = "[OutlinerEntry.IsPinnedExpanded]"
 						direction = vertical
@@ -126,7 +126,6 @@ types outliner_types {
 							}
 						}
 					}
-
 				}
 				outliner_colonies = {
 					blockoverride "visibility" {
