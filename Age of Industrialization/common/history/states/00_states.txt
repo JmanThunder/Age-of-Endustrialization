@@ -519,7 +519,7 @@ STATES = {
 			create_state = {
 				country = c:USA
 				owned_provinces = { 
-					x844BD6 x0D6439 x49577A x551291
+					x844BD6 x0D6439 x49577A x551291 x21134C
 				}
 				state_type = unincorporated
 			}
@@ -1325,7 +1325,7 @@ STATES = {
 	s:STATE_SANTO_DOMINGO = {
 		create_state = {
 			country = c:HAI
-			owned_provinces = { x317080 x41A862 x1785E8 xACBDD9 x7252EC x961483 x877F90 x907A0C x3D94FF xACBDD9 x4E2FA3 }
+			owned_provinces = { xA52B72 x317080 x41A862 x1785E8 xACBDD9 x7252EC x961483 x877F90 x907A0C x3D94FF xACBDD9 x4E2FA3 }
 		}
 		
 		add_homeland = afro_caribeno
