@@ -1,9 +1,9 @@
 {
   "name" : "Age of Industrialization",
-  "id" : "",
+  "id" : "AoI",
   "version" : "0.0.2",
   "supported_game_version" : "1.0.6",
-  "short_description" : "Among us event but it is a mod.",
+  "short_description" : "Among us but it is a mod.",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {

@@ -572,3 +572,59 @@ mulatto={
 	}
 	graphics = african
 }
+
+#afro_dutch = {
+#	color= rgb{ 80 63 50 } 
+#}
+#
+#afro_german = {
+#	color= rgb{ 32 32 32 } 
+#}
+#
+#afro_scadi = {
+#	
+#}
+#
+#afro_slavic = {
+#
+#}
+#
+#afro_italian = {
+#
+#}
+#
+#afro_romanian = {
+#
+#}
+#
+#afro_hellenic = {
+#
+#}
+#
+#afro_turkish = {
+#
+#}
+#
+#afro_arab = {
+#
+#}
+#
+#afro_iranian = {
+#
+#}
+#
+#afro_hindistani = {
+#
+#}
+#
+#afro_asian = {
+#
+#}
+#
+#afro_sinic = {
+#
+#}
+#
+#afro_japonic = {
+#
+#} 
