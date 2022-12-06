@@ -1,0 +1,3 @@
+﻿NPops = {
+	DISCRIMINATION_BASE = 80
+}

@@ -1,0 +1,6 @@
+﻿l_english:
+
+  # Trains
+ pmg_track_system:0 "Railway Track"
+ pm_cast_iron_track:0 "Cast Iron Rail"
+ pm_steel_track:0 "Steel Rail"

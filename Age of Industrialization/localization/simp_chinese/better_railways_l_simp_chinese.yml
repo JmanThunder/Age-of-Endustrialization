@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+
+  # Trains
+ pmg_track_system:0 "轨道材质"
+ pm_cast_iron_track:0 "铸铁轨道"
+ pm_steel_track:0 "钢制轨道"

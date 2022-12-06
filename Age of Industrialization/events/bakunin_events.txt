@@ -1,0 +1,74 @@
+﻿namespace = bakunin_events
+
+# Bakunin Spawns
+bakunin_events.1 = {
+	type = country_event
+
+	title = bakunin_events.1.t
+	desc = bakunin_events.1.d
+	flavor = bakunin_events.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		has_technology_researched = anarchism
+		NOT = { has_global_variable = bakunin_happened }
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = bakunin_happened
+		}
+	}
+
+
+	option = { #get rid of this man
+		name = bakunin_events.1.c
+	}
+	
+	option = { #complete anarchy
+		name = bakunin_events.1.a
+				create_character = {
+					first_name = Mikhail
+					last_name = Bakunin
+					culture = cu:russian
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_rural_folk
+					female = no
+					ideology = ideology_anarchist
+					religion = rel:orthodox
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}
+	option = { #baguette anarchy
+		name = proudhon_events.1.a
+				create_character = {
+					first_name = Pierre-Joseph
+					last_name = Proudhon
+					culture = cu:french
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					ideology = ideology_anarchist
+					religion = rel:protestant
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}				
+}

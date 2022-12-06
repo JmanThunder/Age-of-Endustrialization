@@ -1,0 +1,20 @@
+﻿building_bank = {
+	building_group = bg_arts
+
+	city_type = city
+	
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		banking
+	}
+
+	production_method_groups = {
+		pmg_bank
+		pmg_operations
+	}
+	
+	texture = "gfx/interface/icons/building_icons/building_bank.dds"
+
+	required_construction = construction_cost_low
+}

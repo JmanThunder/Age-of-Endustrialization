@@ -1,0 +1,6 @@
+﻿l_korean:
+
+  # Trains
+ pmg_track_system:0 "선로"
+ pm_cast_iron_track:0 "주철 레일"
+ pm_steel_track:0 "강철 레일"

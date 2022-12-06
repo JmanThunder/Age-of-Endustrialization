@@ -1,0 +1,7 @@
+﻿# Root = The applicable country
+# scope:technology = The technology type they just acquired
+on_acquired_technology = {
+	events = {
+		bakunin_events.1
+	}
+}

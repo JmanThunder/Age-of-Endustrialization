@@ -1,0 +1,6 @@
+﻿l_german:
+
+  # Trains
+ pmg_track_system:0 "Eisenbahngleise"
+ pm_cast_iron_track:0 "Gusseiserne Schiene"
+ pm_steel_track:0 "stahl Schiene"

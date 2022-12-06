@@ -1,0 +1,6 @@
+﻿l_japanese:
+
+  # Trains
+ pmg_track_system:0 "鉄道の線路"
+ pm_cast_iron_track:0 "鋳鉄軌条"
+ pm_steel_track:0 "鋼鉄軌条"

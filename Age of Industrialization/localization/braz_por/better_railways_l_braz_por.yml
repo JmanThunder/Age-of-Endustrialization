@@ -1,0 +1,6 @@
+﻿l_braz_por:
+
+  # Trains
+ pmg_track_system:0 "trilhos de trem"
+ pm_cast_iron_track:0 "trilho de ferro fundido"
+ pm_steel_track:0 "trilho de aço"

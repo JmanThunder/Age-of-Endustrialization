@@ -1,0 +1,11 @@
+STATES = {
+	s:STATE_ALBERTA = {
+		create_state = {
+			country = c:ORG
+			owned_provinces = { 
+				xF57F4E xA27A1D x556882 x7A784F x82238C x80E000
+			}
+			state_type = unincorporated
+		}
+	}
+}

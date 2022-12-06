@@ -1,0 +1,6 @@
+﻿l_turkish:
+
+  # Trains
+ pmg_track_system:0 "Demiryolu hattı"
+ pm_cast_iron_track:0 "Dökme demir ray"
+ pm_steel_track:0 "çelik ray"

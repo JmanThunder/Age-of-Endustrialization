@@ -16,27 +16,25 @@
 	}
 
 	complete = {
-		calc_true_if = {
-			owns_entire_state_region = STATE_POMERANIA
-			owns_entire_state_region = STATE_ELBE
-			owns_entire_state_region = STATE_WESTPHALIA
-			owns_entire_state_region = STATE_ANHALT
-			owns_entire_state_region = STATE_RHINELAND
-			owns_entire_state_region = STATE_NORTH_RHINE
-			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-			owns_entire_state_region = STATE_HANNOVER
-			owns_entire_state_region = STATE_BRUNSWICK
-			owns_entire_state_region = STATE_SAXONY
-			owns_entire_state_region = STATE_HESSE
-			owns_entire_state_region = STATE_MECKLENBURG
-			owns_entire_state_region = STATE_SILESIA
-			owns_entire_state_region = STATE_WEST_PRUSSIA
-			owns_entire_state_region = STATE_EAST_PRUSSIA
-			owns_entire_state_region = STATE_POSEN
-			amount >= 10
+		has_technology_researched = pan-nationalism
+		NOT = {
+			any_country = {
+				country_has_primary_culture = cu:north_german
+				NOT = {
+					THIS = ROOT
+					THIS = c:LUX
+					OR = {
+						is_subject_of = ROOT
+						has_diplomatic_pact = {
+							who = ROOT
+							type = customs_union
+						}
+					}
+				}
+			}
 		}
 	}
-
+	
 	on_monthly_pulse = {
 		events = {
 			german_unification.2 # confederation
@@ -57,6 +55,8 @@
 	}
 
 	weight = 100
+	
+	should_be_pinned_by_default = yes
 }
 
 je_german_unification = {
@@ -72,34 +72,59 @@ je_german_unification = {
 
 	possible = {
 		country_rank >= rank_value:major_power
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 		is_subject = no
 	}
 
 	complete = {
-		calc_true_if = {
-			amount >= 17
-			owns_entire_state_region = STATE_POMERANIA
-			owns_entire_state_region = STATE_ELBE
-			owns_entire_state_region = STATE_WESTPHALIA
-			owns_entire_state_region = STATE_ANHALT
-			owns_entire_state_region = STATE_RHINELAND
-			owns_entire_state_region = STATE_NORTH_RHINE
-			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-			owns_entire_state_region = STATE_HANNOVER
-			owns_entire_state_region = STATE_BRUNSWICK
-			owns_entire_state_region = STATE_SAXONY
-			owns_entire_state_region = STATE_HESSE
-			owns_entire_state_region = STATE_MECKLENBURG
-			owns_entire_state_region = STATE_SILESIA
-			owns_entire_state_region = STATE_WEST_PRUSSIA
-			owns_entire_state_region = STATE_EAST_PRUSSIA
-			owns_entire_state_region = STATE_POSEN
-			owns_entire_state_region = STATE_ALSACE_LORRAINE
-			owns_entire_state_region = STATE_WURTTEMBERG
-			owns_entire_state_region = STATE_BADEN
-			owns_entire_state_region = STATE_BAVARIA
-			owns_entire_state_region = STATE_FRANCONIA
+		OR = {
+			calc_true_if = {
+				has_technology_researched = steel_frame_buildings
+				has_technology_researched = mutual_funds
+				has_technology_researched = identification_documents
+				has_technology_researched = pan-nationalism
+				has_technology_researched = civilizing_mission
+				has_technology_researched = anarchism
+				has_technology_researched = human_rights
+				has_technology_researched = philosophical_pragmatism
+				has_technology_researched = socialism
+				has_technology_researched = camera
+				amount >= 10
+			}
+			calc_true_if = {
+				has_technology_researched = steel_frame_buildings
+				has_technology_researched = mutual_funds
+				has_technology_researched = identification_documents
+				has_technology_researched = pan-nationalism
+				has_technology_researched = civilizing_mission
+				has_technology_researched = anarchism
+				has_technology_researched = human_rights
+				has_technology_researched = philosophical_pragmatism
+				has_technology_researched = socialism
+				has_technology_researched = camera
+				amount >= 6
+				owns_entire_state_region = STATE_ALSACE_LORRAINE
+			}
+		}
+		NOT = {
+			any_country = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+				NOT = {
+					THIS = ROOT
+					THIS = c:LUX
+					THIS = c:AUS
+					OR = {
+						is_subject_of = ROOT
+						has_diplomatic_pact = {
+							who = ROOT
+							type = customs_union
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -132,6 +157,8 @@ je_german_unification = {
 	}
 
 	weight = 100
+	
+	should_be_pinned_by_default = yes
 }
 
 je_south_german_unification = {
@@ -152,13 +179,22 @@ je_south_german_unification = {
 	}
 
 	complete = {
-		calc_true_if = {
-			amount >= 4
-			owns_entire_state_region = STATE_WURTTEMBERG
-			owns_entire_state_region = STATE_BADEN
-			owns_entire_state_region = STATE_BAVARIA
-			owns_entire_state_region = STATE_FRANCONIA
-			owns_entire_state_region = STATE_ALSACE_LORRAINE
+		has_technology_researched = pan-nationalism
+		NOT = {
+			any_country = {
+				country_has_primary_culture = cu:south_german
+				NOT = {
+					THIS = ROOT
+					THIS = c:AUS
+					OR = {
+						is_subject_of = ROOT
+						has_diplomatic_pact = {
+							who = ROOT
+							type = customs_union
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -184,4 +220,6 @@ je_south_german_unification = {
 	}
 
 	weight = 100
+	
+	should_be_pinned_by_default = yes
 }

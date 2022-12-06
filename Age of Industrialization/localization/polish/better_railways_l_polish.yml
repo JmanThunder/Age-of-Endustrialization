@@ -1,0 +1,6 @@
+﻿l_polish:
+
+  # Trains
+ pmg_track_system:0 "Droga kolejowa"
+ pm_cast_iron_track:0 "Szyna żeliwna"
+ pm_steel_track:0 "Szyna stalowa"

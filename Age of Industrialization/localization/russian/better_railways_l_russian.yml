@@ -1,0 +1,6 @@
+﻿l_russian:
+
+  # Trains
+ pmg_track_system:0 "Железнодорожный путь"
+ pm_cast_iron_track:0 "Чугунный рельс"
+ pm_steel_track:0 "Стальной рельс"

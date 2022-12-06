@@ -1,0 +1,78 @@
+﻿### Country Strategies+ (© Revan ©) ###
+
+AI = {
+	c:BEL = {
+		random_list = {	
+			80 = { set_strategy = ai_strategy_resource_expansion }
+			20 = { set_strategy = ai_strategy_industrial_expansion }
+		}		
+		random_list = {
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			25 = { set_strategy = ai_strategy_progressive_agenda }
+		}
+	}	
+	c:SIA = {
+		random_list = {	
+			90 = { set_strategy = ai_strategy_maintain_power_balance }
+			10 = { set_strategy = ai_strategy_maintain_mandate_of_heaven }
+		}
+		set_strategy = ai_strategy_plantation_economy
+	}	
+	c:NET = {
+		random_list = {	
+			65 = { set_strategy = ai_strategy_conservative_agenda }
+			35 = { set_strategy = ai_strategy_colonial_expansion }
+		}		
+	}	
+	c:SPA = {
+		random_list = {	
+			30 = { set_strategy = ai_strategy_maintain_power_balance }
+			10 = { set_strategy = ai_strategy_progressive_agenda }
+			60 = { set_strategy = ai_strategy_plantation_economy }
+		}
+	}
+	c:BIC = {
+		random_list = {	
+			70 = { set_strategy = ai_strategy_plantation_economy }
+			30 = { set_strategy = ai_strategy_placate_population }
+		}
+	}	
+	c:POR = {
+		random_list = {	
+			50 = { set_strategy = ai_strategy_plantation_economy }
+			50 = { set_strategy = ai_strategy_colonial_expansion }
+		}
+	}
+	c:DEN = {
+		random_list = {	
+			75 = { set_strategy = ai_strategy_maintain_power_balance }
+			20 = { set_strategy = ai_strategy_conservative_agenda }
+			 5 = { set_strategy = ai_strategy_colonial_expansion }
+		}
+	}	
+	c:BOL = {
+		random_list = {	
+			20 = { set_strategy = ai_strategy_conservative_agenda }
+			20 = { set_strategy = ai_strategy_maintain_power_balance }
+			60 = { set_strategy = ai_strategy_plantation_economy }
+		} 
+	}	
+	c:PEU = {
+		random_list = {	
+			45 = { set_strategy = ai_strategy_agricultural_expansion }
+			45 = { set_strategy = ai_strategy_plantation_economy }
+			10 = { set_strategy = ai_strategy_conservative_agenda }
+		}
+	}
+	c:MEX = {
+		random_list = {	
+			80 = { set_strategy = ai_strategy_plantation_economy }
+			10 = { set_strategy = ai_strategy_territorial_expansion }
+			10 = { set_strategy = ai_strategy_maintain_power_balance }
+		}
+	}	
+}	
+
+
+
+

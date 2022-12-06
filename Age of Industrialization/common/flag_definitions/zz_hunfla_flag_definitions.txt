@@ -1,0 +1,81 @@
+﻿HUN = { # Hungary
+
+	flag_definition = {
+		coa = HUN
+		subject_canton = HUN	
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = HUN_peoplesrepublic
+		subject_canton = HUN_peoplesrepublic
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = HUN_monarchy
+		subject_canton = HUN_monarchy
+		priority = 10
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = HUN_theocracy
+		subject_canton = HUN_theocracy
+		priority = 10
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = HUN_democracy
+		subject_canton = HUN_democracy
+		priority = 9
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic			
+				}
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = HUN
+		subject_canton = HUN
+		priority = 1500
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = HUN
+		subject_canton = HUN
+		priority = 10
+		trigger = { 
+			exists = scope:actor
+			scope:actor = {
+				AND = {
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic	
+					}
+					OR = {
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_autocracy
+					}
+				}
+			}
+		}
+	}
+	
+}

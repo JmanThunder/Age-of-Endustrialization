@@ -3,6 +3,8 @@
 	selection_behavior = weighted_random
 	fallback = default_clothes
 
+
+
 	no_clothes = {
         dna_modifiers = {
             accessory = {
@@ -17,19 +19,23 @@
                 template = hide_nudity
                 range = { 0 1 } # For the randomness to work correctly
             }
-        }    
+        }
         #outfit_tags = { no_clothes }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:no_clothes }
+
             base = 0
             modifier = {
                 add = 5000
                 should_be_fully_naked_portrait_trigger = yes
             }
-        }
+		}
     }
 
+
+
 	default_clothes = {
-        dna_modifiers = {   
+        dna_modifiers = {
            # accessory = {
            #     mode = add
            #     gene = civilian_coats
@@ -48,7 +54,9 @@
         }
     }
 
-    shopkeepers_clothes = {
+
+
+	shopkeepers_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -70,6 +78,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:shopkeepers_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -91,7 +101,9 @@
         }
     }
 
-    chinese_imperial_clothes = {
+
+
+	chinese_imperial_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -101,15 +113,20 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_imperial_clothes }
+
             base = 0
             modifier = {
                 add = 1000
                 chinese_imperial_clothes_trigger = yes
             }
+
         }
     }
 
-    chinese_court_clothes = {
+
+
+	chinese_court_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -119,6 +136,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_court_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -133,7 +152,9 @@
         }
     }
 
-    chinese_common_clothes = {
+
+
+	chinese_common_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -143,6 +164,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_common_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -152,7 +175,9 @@
         }
     }
 
-    african_clothes = {
+
+
+	african_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -168,6 +193,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:african_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -176,7 +203,9 @@
         }
     }
 
-    european_royal_clothes = { #Currently only includes and checks for female clothes.
+
+
+	european_royal_clothes = { #Currently only includes and checks for female clothes.
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -186,6 +215,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { is_female = yes } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_royal_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -214,8 +245,10 @@
             }
         }
     }
+#
 
-    european_ruler_clothes = {
+
+	european_ruler_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -249,6 +282,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_ruler_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -276,7 +311,9 @@
         }
     }
 
-    european_ruler_republic_clothes = {
+
+	#TODO
+	european_ruler_republic_clothes = {
         dna_modifiers = {
            accessory = {
                mode = add
@@ -299,6 +336,7 @@
         }
         weight = {
             base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_ruler_republic_clothes }
             modifier = {
                 add = 1000
                 AND = {
@@ -338,6 +376,8 @@
            }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { is_female = yes } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_ruler_republic_clothes_female }
+
             base = 0
             modifier = {
                 add = 1000
@@ -368,7 +408,9 @@
         }
     }
 
-    european_military_clothes = {
+
+
+	european_military_clothes = {
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -390,6 +432,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_military_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -422,7 +466,7 @@
                     NOT = {
                         AND = {
                             exists = c:PRU
-                            owner = c:PRU 
+                            owner = c:PRU
                         }
                     }
                 }
@@ -430,7 +474,9 @@
         }
     }
 
-    american_military_clothes = {
+
+
+	american_military_clothes = {
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -452,6 +498,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:american_military_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -469,13 +517,15 @@
                             armed_forces_clothes_trigger = yes
                             politician_clothes_trigger = yes
                         }
-                    }   
-                }    
+                    }
+                }
             }
         }
     }
 
-    american_confederate_military_clothes = {
+
+
+	american_confederate_military_clothes = {
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -497,6 +547,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:american_confederate_military_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -523,12 +575,14 @@
                             owner = c:CSA
                         }
                     }
-                }   
+                }
             }
         }
     }
 
-    american_confederate_soldier_clothes = {
+
+
+	american_confederate_soldier_clothes = {
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -544,6 +598,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:american_confederate_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -558,7 +614,9 @@
         }
     }
 
-    british_military_clothes = {
+
+
+	british_military_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -587,6 +645,7 @@
         }
         weight = {
             base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:british_military_clothes }
             modifier = {
                 add = 10000
                 OR = {
@@ -605,7 +664,7 @@
                         british_empire_clothes_p_trigger = yes
                         officers_clothes_pop_trigger = yes
                     }
-                }    
+                }
             }
         }
     }
@@ -627,6 +686,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:british_military_clothes_soldier }
+
             base = 0
             modifier = {
                 add = 10000
@@ -636,7 +697,9 @@
         }
     }
 
-    french_military_clothes = {
+
+
+	french_military_clothes = {
         dna_modifiers = {
              accessory = {
                 mode = add
@@ -665,7 +728,9 @@
         }
         weight = {
             base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:french_military_clothes }
             modifier = {
+
                 add = 10000
                 OR = {
                     AND = {
@@ -677,7 +742,7 @@
                                 armed_forces_clothes_trigger = yes
                                 politician_clothes_trigger = yes
                             }
-                        }   
+                        }
                     }
                     AND = {
                         french_empire_clothes_pop_trigger = yes
@@ -705,6 +770,8 @@
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:french_military_clothes_soldier }
+
             base = 0
             modifier = {
                 add = 10000
@@ -715,7 +782,9 @@
         }
     }
 
-    japanese_military_clothes = {
+
+
+	japanese_military_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -724,7 +793,7 @@
                 range = { 0 1 } # For the randomness to work correctly
             }
 
-                accessory = {
+            accessory = {
                 mode = add
                 gene = legwear
                 template = japanese_legwear
@@ -741,22 +810,29 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_military_clothes }
+
             base = 0
             modifier = {
                 add  = 1100
 
                  AND = {
-                    yamato_clothes_pop_trigger = yes
+                    exists = scope:pop
+                    scope:pop = {
+                        culture = cu:japanese
+                    }
                     OR = {
                         soldier_clothes_pop_trigger = yes
                         officers_clothes_pop_trigger = yes
-                    }   
-                }    
+                    }
+                }
             }
         }
     }
 
-        japanese_officers_clothes = {
+
+
+	japanese_officers_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -789,6 +865,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_officers_clothes }
+
             base = 0
             modifier = {
                 add  = 1200
@@ -797,18 +875,20 @@
 
                     OR = {
                         military_clothes_trigger = yes
-                        
+
                         AND = {
                             armed_forces_clothes_trigger = yes
                             politician_clothes_trigger = yes
                         }
-                    } 
-                }    
+                    }
+                }
             }
         }
     }
 
-    european_politician_clothes = {
+
+
+	european_politician_clothes = {
         dna_modifiers = {
            accessory = {
                mode = add
@@ -840,6 +920,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_politician_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -875,7 +957,9 @@
         }
     }
 
-    prussian_clothes = {
+
+
+	prussian_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -901,6 +985,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:prussian_clothes }
+
             base = 0
             modifier = {
                 add = 5000
@@ -929,7 +1015,9 @@
         }
     }
 
-    japanese_imperial_clothes = {
+
+
+	japanese_imperial_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -940,6 +1028,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_imperial_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -948,7 +1038,9 @@
         }
     }
 
-    japanese_pop_clothes = {
+
+
+	japanese_pop_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -956,9 +1048,11 @@
                 template = japanese_low_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_pop_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -968,7 +1062,9 @@
         }
     }
 
-    japanese_pop_mid_clothes = {
+
+
+	japanese_pop_mid_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -989,9 +1085,11 @@
                 template = japanese_top_layer
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_pop_mid_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -1001,7 +1099,9 @@
         }
     }
 
-    japanese_common_clothes = {
+
+
+	japanese_common_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1026,16 +1126,31 @@
         }
 
          weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:japanese_common_clothes }
+
             base = 0
             modifier = {
                 add = 100
-                japanese_common_clothes_trigger = yes
+                AND = {
+                    exists = scope:character
+                    scope:character = {
+                        OR = {
+                            AND = {
+                                has_culture = cu:japanese
+                                monarchy_clothes_trigger = no
+                            }
+                            has_culture = cu:ainu
+                        }
+                    }
+                }
             }
         }
     }
 
 
-    korean_pop_clothes = {
+
+
+	korean_pop_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1043,9 +1158,11 @@
                 template = korean_low_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:korean_pop_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1063,7 +1180,9 @@
         }
     }
 
-    korean_clothes = {
+
+
+	korean_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1074,6 +1193,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:korean_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -1097,7 +1218,9 @@
         }
     }
 
-    korean_imperial_clothes = {
+
+
+	korean_imperial_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1108,6 +1231,8 @@
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:korean_imperial_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -1118,61 +1243,72 @@
                         is_ruler = yes
                     }
                 }
-                
+
            }
         }
     }
-arabic_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = arabic_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 100
-            arabic_clothes_trigger = yes
-            armed_forces_clothes_trigger = no
-        }
-    }
-}
-arabic_coats = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = coats
-            template = arabic_coats
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            AND = {
-                arabic_clothes_trigger = yes
-                OR = {
-                    military_clothes_trigger = yes
-                    officers_clothes_pop_trigger = yes
-                    AND = {
-                        armed_forces_clothes_trigger = yes
-                        OR = { 
-                            politician_clothes_trigger = yes
-                            ruler_clothes_trigger = yes
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
-     ethiopian_clothes = {
+
+	arabic_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = arabic_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_clothes }
+
+	        base = 0
+			modifier = {
+	            add = 100
+	            arabic_clothes_trigger = yes
+	            armed_forces_clothes_trigger = no
+	        }
+	    }
+	}
+
+
+
+	arabic_coats = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = coats
+	            template = arabic_coats
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_coats }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            AND = {
+	                arabic_clothes_trigger = yes
+	                OR = {
+	                    military_clothes_trigger = yes
+	                    officers_clothes_pop_trigger = yes
+	                    AND = {
+	                        armed_forces_clothes_trigger = yes
+	                        OR = {
+	                            politician_clothes_trigger = yes
+	                            ruler_clothes_trigger = yes
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+
+
+	ethiopian_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1183,6 +1319,8 @@ arabic_coats = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { is_female = no } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:ethiopian_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1190,12 +1328,14 @@ arabic_coats = {
                 scope:character = {
                     is_female = no
                     monarchy_clothes_trigger = no
-                }                
+                }
            }
         }
     }
 
-    ethiopian_royal_clothes = {
+
+
+	ethiopian_royal_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1218,6 +1358,8 @@ arabic_coats = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:ethiopian_royal_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1225,73 +1367,84 @@ arabic_coats = {
                 scope:character = {
                     is_female = no
                     monarchy_clothes_trigger = yes
-                }                
+                }
            }
         }
     }
 
-indian_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = indian_common_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 100
-            indian_clothes_trigger = yes
-        }
-    }
-}
-indian_royal_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = indian_high_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = top_layer
-            template = indian_top_layer
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = necklaces
-            template = indian_necklaces
-            range = { 0 1 } # For the randomness to work correctly
-        }
 
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 200
-            OR = {
-                AND = {
-                    indian_clothes_trigger = yes
-                    monarchy_clothes_trigger = yes
-                }
-                AND = {
-                    hindu_clothes_pop_trigger = yes
-                    clergy_clothes_pop_trigger = yes
-                }
-            }
-        }
-    }
-}
 
-    siamese_clothes = {
+	indian_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = indian_common_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indian_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 100
+	            indian_clothes_trigger = yes
+	        }
+	    }
+	}
+
+
+
+	indian_royal_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = indian_high_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = top_layer
+	            template = indian_top_layer
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = necklaces
+	            template = indian_necklaces
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indian_royal_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 200
+	            OR = {
+	                AND = {
+	                    indian_clothes_trigger = yes
+	                    monarchy_clothes_trigger = yes
+	                }
+	                AND = {
+	                    hindu_clothes_pop_trigger = yes
+	                    clergy_clothes_pop_trigger = yes
+	                }
+	            }
+	        }
+	    }
+	}
+
+
+
+	siamese_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1308,16 +1461,20 @@ indian_royal_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:siamese_clothes }
+
             base = 0
             modifier = {
                 add = 100
                 siamese_clothes_trigger = yes
-                
+
            }
         }
     }
 
-    siamese_royal_clothes = {
+
+
+	siamese_royal_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1334,6 +1491,8 @@ indian_royal_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:siamese_royal_clothes }
+
             base = 0
             modifier = {
                 add = 1200
@@ -1343,7 +1502,9 @@ indian_royal_clothes = {
         }
     }
 
-    christian_character_clothes = {
+
+
+	christian_character_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1354,6 +1515,8 @@ indian_royal_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:christian_character_clothes }
+
             base = 0
             modifier = {
                 add = 5000
@@ -1362,7 +1525,7 @@ indian_royal_clothes = {
                 scope:character = {
                     OR = {
                         AND = {
-                            politician_clothes_trigger = yes  
+                            politician_clothes_trigger = yes
                             christian_clothes_trigger = yes
                             OR = {
                                 devout_clothes_trigger = yes
@@ -1384,12 +1547,14 @@ indian_royal_clothes = {
                             }
                         }
                     }
-                }  
+                }
             }
         }
     }
 
-    papal_clothes = {
+
+
+	papal_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1400,13 +1565,15 @@ indian_royal_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { is_female = no } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:papal_clothes }
+
             base = 0
             modifier = {
                 add = 10000
                 exists = scope:character
                 exists = c:PAP
                 scope:character = {
-                    ruler_clothes_trigger = yes  
+                    ruler_clothes_trigger = yes
                     christian_clothes_trigger = yes
                     owner = c:PAP
                     owner = {
@@ -1414,14 +1581,16 @@ indian_royal_clothes = {
                     }
                     is_female = no
                 }
-                
+
            }
         }
     }
 
 #Pop Clothes
 
-    circumpolar_pop_clothes = {
+
+
+	circumpolar_pop_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1436,9 +1605,11 @@ indian_royal_clothes = {
                 template = circumpolar_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:circumpolar_pop_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -1468,7 +1639,9 @@ indian_royal_clothes = {
         }
     }
 
-    sami_clothes = {
+
+
+	sami_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1482,8 +1655,10 @@ indian_royal_clothes = {
                 template = circumpolar_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:sami_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1505,34 +1680,37 @@ indian_royal_clothes = {
                 }
             }
         }
-    }   
+    }
 
 #Indigenous Oceanic Heritage
 
-indigenous_oceanic_pop_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = polynesian_outfits
-            range = { 0 0.5 } # For the randomness to work correctly
-        }
-        accessory = {
-            mode = add
-            gene = necklaces
-            template = polynesian_necklaces
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            indigenous_oceanic_clothes_trigger = yes
-            upper_clothes_pop_trigger = no
-        }
-    }
-}
+
+
+	indigenous_oceanic_pop_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = polynesian_outfits
+	            range = { 0 0.5 } # For the randomness to work correctly
+	        }
+	        accessory = {
+	            mode = add
+	            gene = necklaces
+	            template = polynesian_necklaces
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indigenous_oceanic_pop_clothes }
+	        base = 0
+	        modifier = {
+	            add = 500
+	            indigenous_oceanic_clothes_trigger = yes
+	            upper_clothes_pop_trigger = no
+	        }
+	    }
+	}
 
 # consolidated with general pop clothes, but scripting left in if we want to quickly re-enable this stuff
 #indigenous_oceanic_mid_clothes = {
@@ -1549,7 +1727,7 @@ indigenous_oceanic_pop_clothes = {
 #            template = polynesian_necklaces
 #            range = { 0 1 } # For the randomness to work correctly
 #        }
-#    } 
+#    }
 #    weight = {
 #        base = 0
 #        modifier = {
@@ -1559,98 +1737,102 @@ indigenous_oceanic_pop_clothes = {
 #        }
 #    }
 #}
-indigenous_oceanic_high_clothes_unrecognized = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = peasant_outfits
-            range = { 0.5 1 } # For the randomness to work correctly
-        }
-        accessory = {
-            mode = add
-            gene = legwear
-            template = polynesian_legwear
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            indigenous_oceanic_clothes_trigger = yes
-            upper_clothes_pop_trigger = yes
-            recognized_country_trigger = no
-        }
-    }
-}
-indigenous_oceanic_high_clothes_recognized = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = polynesian_outfits
-            range = { 0.5 1 } # For the randomness to work correctly
-        }
-        accessory = {
-            mode = add
-            gene = legwear
-            template = polynesian_legwear
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    }
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
-            indigenous_oceanic_clothes_trigger = yes
-            OR = {
-                upper_clothes_pop_trigger = yes
-                middle_clothes_pop_trigger = yes
-                AND = {
-                    exists = scope:character
-                    scope:character = {
-                        owner = {
-                            exists = c:HAW
-                            c:HAW = this
-                        }
-                    }
-                    OR = {
-                        ruler_clothes_trigger = yes
-                        politician_clothes_trigger = yes
-                    }                
-                }
-            }
-            OR = {
-                recognized_country_trigger = yes
-                recognized_country_pop_trigger = yes
-                OR = { # Hawaii does not need to be recognized in order for characters and pops to wear these clothes
-                    AND = {
-                        exists = scope:pop
-                        scope:pop = {
-                            owner = {
-                                exists = c:HAW
-                                c:HAW = this
-                            }                        
-                        }
-                    }
-                    AND = {
-                        exists = scope:character
-                        scope:character = {
-                            owner = {
-                                exists = c:HAW
-                                c:HAW = this
-                            }                        
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+	#TODO
+	indigenous_oceanic_high_clothes_unrecognized = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = peasant_outfits
+	            range = { 0.5 1 } # For the randomness to work correctly
+	        }
+	        accessory = {
+	            mode = add
+	            gene = legwear
+	            template = polynesian_legwear
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+	        base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indigenous_oceanic_high_clothes_unrecognized }
+	        modifier = {
+	            add = 500
+	            indigenous_oceanic_clothes_trigger = yes
+	            upper_clothes_pop_trigger = yes
+	            recognized_country_trigger = no
+	        }
+	    }
+	}
+
+	indigenous_oceanic_high_clothes_recognized = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = outfits
+				template = polynesian_outfits
+				range = { 0.5 1 } # For the randomness to work correctly
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = polynesian_legwear
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indigenous_oceanic_high_clothes_recognized }
+			modifier = {
+				add = 1000
+				indigenous_oceanic_clothes_trigger = yes
+				OR = {
+					upper_clothes_pop_trigger = yes
+					middle_clothes_pop_trigger = yes
+					AND = {
+						exists = scope:character
+						scope:character = {
+							owner = {
+								exists = c:HAW
+								c:HAW = this
+							}
+						}
+						OR = {
+							ruler_clothes_trigger = yes
+							politician_clothes_trigger = yes
+						}
+					}
+				}
+				OR = {
+					recognized_country_trigger = yes
+					recognized_country_pop_trigger = yes
+					OR = { # Hawaii does not need to be recognized in order for characters and pops to wear these clothes
+						AND = {
+							exists = scope:pop
+							scope:pop = {
+								owner = {
+									exists = c:HAW
+									c:HAW = this
+								}
+							}
+						}
+						AND = {
+							exists = scope:character
+							scope:character = {
+								owner = {
+									exists = c:HAW
+									c:HAW = this
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 
-    south_american_clothes = {
+	south_american_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1665,9 +1847,11 @@ indigenous_oceanic_high_clothes_recognized = {
                 template = south_american_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:south_american_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1683,9 +1867,9 @@ indigenous_oceanic_high_clothes_recognized = {
                         politician_clothes_trigger = yes
                         south_american_clothes_character_trigger = yes
                         scope:character = {
-                            interest_group = { 
+                            interest_group = {
                                 OR = {
-                                    is_interest_group_type = ig_petty_bourgeoisie 
+                                    is_interest_group_type = ig_petty_bourgeoisie
                                     is_interest_group_type = ig_rural_folk
                                     is_interest_group_type = ig_trade_unions
                                 }
@@ -1698,7 +1882,9 @@ indigenous_oceanic_high_clothes_recognized = {
     }
 
 #South East Asia
-    south_east_asia_poor_clothes = {
+
+
+	south_east_asia_poor_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1706,9 +1892,11 @@ indigenous_oceanic_high_clothes_recognized = {
                 template = indian_common_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:south_east_asia_poor_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -1725,7 +1913,9 @@ indigenous_oceanic_high_clothes_recognized = {
             }
         }
     }
-    south_east_asia_middle_clothes = {
+
+
+	south_east_asia_middle_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1736,6 +1926,8 @@ indigenous_oceanic_high_clothes_recognized = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:south_east_asia_middle_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -1745,7 +1937,9 @@ indigenous_oceanic_high_clothes_recognized = {
         }
     }
 
-    south_east_asia_upper_clothes = {
+
+
+	south_east_asia_upper_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1762,6 +1956,8 @@ indigenous_oceanic_high_clothes_recognized = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:south_east_asia_upper_clothes }
+
             base = 0
             modifier = {
                 add = 1200
@@ -1781,42 +1977,50 @@ indigenous_oceanic_high_clothes_recognized = {
 
 #Central Asia
 
-    central_asian_upper_clothes = {
+
+
+	central_asian_upper_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
                 gene = outfits
                 template = central_asian_outfits
-                range = { 0.51 1 } 
+                range = { 0.51 1 }
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:central_asian_upper_clothes }
+
             base = 0
             modifier = {
                 add = 500
                 AND = {
                     central_asian_clothes_pop_trigger = yes
-                    OR = { 
+                    OR = {
                         clergy_clothes_pop_trigger = yes
                         upper_clothes_pop_trigger = yes
                     }
-                }                
+                }
             }
         }
     }
 
-    central_asian_lower_clothes = {
+
+
+	central_asian_lower_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
                 gene = outfits
                 template = central_asian_outfits
-                range = { 0 0.49 } 
+                range = { 0 0.49 }
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:central_asian_lower_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1826,91 +2030,105 @@ indigenous_oceanic_high_clothes_recognized = {
                         middle_clothes_pop_trigger = yes
                         poor_clothes_pop_trigger = yes
                     }
-                }                
+                }
             }
         }
     }
 
 #Indian
 
-indian_poor_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = indian_common_outfits
-            range = { 0 0.5 } # For the randomness to work correctly
-        } 
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            indian_clothes_pop_trigger = yes
-            poor_clothes_pop_trigger = yes
-        }
-    }
-}
 
-indian_middle_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = indian_common_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        } 
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            AND = {
-                indian_clothes_pop_trigger = yes
-                OR = {
-                    middle_clothes_pop_trigger = yes
-                    soldier_clothes_pop_trigger = yes
-                }
-            }
-        }
-    }
-}
 
-indian_upper_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = indian_high_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        } 
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            OR = {
-                AND = {
-                    indian_clothes_pop_trigger = yes
-                    OR = {
-                        upper_clothes_pop_trigger = yes
-                        officers_clothes_pop_trigger = yes
-                    }
-                }
-                AND = {
-                    clergy_clothes_pop_trigger = yes
-                    scope:pop = {
-                        religion = rel:sikh
-                    }
-                }
-            }
-        }
-    }
-}
+	indian_poor_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = indian_common_outfits
+	            range = { 0 0.5 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indian_poor_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            indian_clothes_pop_trigger = yes
+	            poor_clothes_pop_trigger = yes
+	        }
+	    }
+	}
+
+
+
+	indian_middle_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = indian_common_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indian_middle_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            AND = {
+	                indian_clothes_pop_trigger = yes
+	                OR = {
+	                    middle_clothes_pop_trigger = yes
+	                    soldier_clothes_pop_trigger = yes
+	                }
+	            }
+	        }
+	    }
+	}
+
+
+
+	indian_upper_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = indian_high_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:indian_upper_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            OR = {
+	                AND = {
+	                    indian_clothes_pop_trigger = yes
+	                    OR = {
+	                        upper_clothes_pop_trigger = yes
+	                        officers_clothes_pop_trigger = yes
+	                    }
+	                }
+	                AND = {
+	                    clergy_clothes_pop_trigger = yes
+	                    scope:pop = {
+	                        religion = rel:sikh
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
 
 #China
 
-    chinese_poor_clothes = {
+
+
+	chinese_poor_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1925,9 +2143,11 @@ indian_upper_clothes = {
             #    template = peasants_legwear
             #    range = { 0 1 } # For the randomness to work correctly
             #}
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_poor_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -1938,50 +2158,60 @@ indian_upper_clothes = {
         }
     }
 
-chinese_middle_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = chinese_common_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            east_asian_clothes_pop_trigger = yes
-            japanese_clothes_pop_trigger = no
-            OR = {
-                middle_clothes_pop_trigger = yes
-                clergy_clothes_pop_trigger = yes
-            }
-        }
-    }
-}
-chinese_upper_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = chinese_common_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }  
-    } 
-    weight = {
-        base = 0
-        modifier = {
-            add = 500
-            east_asian_clothes_pop_trigger = yes
-            japanese_clothes_pop_trigger = no
-            upper_clothes_pop_trigger = yes                       
-        }
-    }
-}
+
+
+	chinese_middle_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = chinese_common_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_middle_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            east_asian_clothes_pop_trigger = yes
+	            japanese_clothes_pop_trigger = no
+	            OR = {
+	                middle_clothes_pop_trigger = yes
+	                clergy_clothes_pop_trigger = yes
+	            }
+	        }
+	    }
+	}
+
+
+	chinese_upper_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = chinese_common_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:chinese_upper_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 500
+	            east_asian_clothes_pop_trigger = yes
+	            japanese_clothes_pop_trigger = no
+	            upper_clothes_pop_trigger = yes
+	        }
+	    }
+	}
 
 #Arabic
-    arabic_poor_clothes = {
+
+
+	arabic_poor_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -1989,8 +2219,10 @@ chinese_upper_clothes = {
                 template = arabic_outfits
                 range = { 0.25 0.5 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_poor_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2014,7 +2246,9 @@ chinese_upper_clothes = {
             }
         }
     }
-    arabic_middle_clothes = {
+
+
+	arabic_middle_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2022,8 +2256,10 @@ chinese_upper_clothes = {
                 template = arabic_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_middle_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2034,7 +2270,9 @@ chinese_upper_clothes = {
            }
         }
     }
-    arabic_upper_clothes = {
+
+
+	arabic_upper_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2042,8 +2280,10 @@ chinese_upper_clothes = {
                 template = arabic_upper_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_upper_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2055,7 +2295,9 @@ chinese_upper_clothes = {
         }
     }
 #European
-    european_poor_clothes = {
+
+
+	european_poor_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2075,8 +2317,10 @@ chinese_upper_clothes = {
                 template = european_working_class_outfits
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_poor_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -2084,13 +2328,15 @@ chinese_upper_clothes = {
                     OR = {
                         european_clothes_pop_trigger = yes
                         african_diaspora_pop_clothes_trigger = yes
-                    }  
+                    }
                     slaves_clothes_pop_trigger = no
-                }     
+                }
            }
         }
     }
-    european_middle_clothes = {
+
+
+	european_middle_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2119,9 +2365,11 @@ chinese_upper_clothes = {
            #    template = european_civilian_coats
            #    range = { 0 1 } # For the randomness to work correctly
            #}
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_middle_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -2135,9 +2383,9 @@ chinese_upper_clothes = {
                     }
                     AND = {
                         exists = scope:pop
-                        scope:pop = { 
+                        scope:pop = {
                             OR = {
-                                culture = cu:cherokee 
+                                culture = cu:cherokee
                                 culture = cu:muskogean
                             }
                         }
@@ -2147,11 +2395,13 @@ chinese_upper_clothes = {
                         }
                         clergy_clothes_pop_trigger = no
                     }
-                }                
+                }
            }
         }
     }
-    european_upper_clothes = {
+
+
+	european_upper_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2173,8 +2423,10 @@ chinese_upper_clothes = {
                 template = european_civilian_coats
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_upper_clothes }
+
             base = 0
             modifier = {
                 add = 500
@@ -2189,7 +2441,9 @@ chinese_upper_clothes = {
         }
     }
 
-    european_soldier_clothes = {
+
+
+	european_soldier_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2210,9 +2464,11 @@ chinese_upper_clothes = {
                 template = all_epaulettes
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 1100
@@ -2226,13 +2482,15 @@ chinese_upper_clothes = {
                         soldier_clothes_pop_trigger = yes
                         officers_clothes_pop_trigger = yes
                     }
-                    
+
                 }
            }
         }
     }
 
-    enslaved_clothes = {
+
+
+	enslaved_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2246,8 +2504,10 @@ chinese_upper_clothes = {
                 template = peasants_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:enslaved_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -2258,14 +2518,16 @@ chinese_upper_clothes = {
                         arabic_clothes_pop_trigger = yes
                         native_american_clothes_pop_trigger = yes
                         cold_clothes_pop_trigger = yes
-                    }  
+                    }
                     slaves_clothes_pop_trigger = yes
-                }  
+                }
             }
         }
     }
 
-    southern_peasant_clothes = {
+
+
+	southern_peasant_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2279,8 +2541,10 @@ chinese_upper_clothes = {
                 template = peasants_legwear_02
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:southern_peasant_clothes }
+
             base = 0
             modifier = {
                 add = 100
@@ -2290,7 +2554,7 @@ chinese_upper_clothes = {
                     arabic_clothes_pop_trigger = no
                     native_american_clothes_pop_trigger = no
                     cold_clothes_pop_trigger = no
-                } 
+                }
                 OR = {
                     slaves_clothes_pop_trigger = yes
                     poor_clothes_pop_trigger = yes
@@ -2299,7 +2563,9 @@ chinese_upper_clothes = {
         }
     }
 
-    british_empire_soldier_clothes = { 
+
+
+	british_empire_soldier_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2320,9 +2586,11 @@ chinese_upper_clothes = {
             #    template = all_epaulettes
             #    range = { 0.5 0.8 } # For the randomness to work correctly
             #}
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:british_empire_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -2331,13 +2599,15 @@ chinese_upper_clothes = {
                     OR = {
                         soldier_clothes_pop_trigger = yes
                         officers_clothes_pop_trigger = yes
-                    } 
+                    }
                 }
             }
         }
     }
 
-        french_soldier_clothes = { 
+
+
+	french_soldier_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2358,26 +2628,28 @@ chinese_upper_clothes = {
             #    template = all_epaulettes
             #    range = { 0.5 0.8 } # For the randomness to work correctly
             #}
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:french_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 10000
                 AND = {
-                   french_empire_clothes_pop_trigger = yes
-                OR = {
-                        soldier_clothes_pop_trigger = yes
-                        officers_clothes_pop_trigger = yes
-                    }
-                    
-                }
-                
-                
-           }
+                	french_empire_clothes_pop_trigger = yes
+	                OR = {
+	                    soldier_clothes_pop_trigger = yes
+	                    officers_clothes_pop_trigger = yes
+	                }
+	            }
+        	}
         }
     }
-        prussian_soldier_clothes = { 
+
+
+
+	prussian_soldier_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2398,9 +2670,11 @@ chinese_upper_clothes = {
                 template = all_epaulettes
                 range = { 0.1 0.2 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:prussian_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 10000
@@ -2412,7 +2686,7 @@ chinese_upper_clothes = {
                                 exists = c:PRU
                                 c:PRU = this
                             }
-                        }       
+                        }
                         OR = {
                             soldier_clothes_pop_trigger = yes
                             officers_clothes_pop_trigger = yes
@@ -2429,14 +2703,16 @@ chinese_upper_clothes = {
                                 exists = c:PRU
                                 c:PRU = this
                             }
-                        }       
+                        }
                     }
                 }
             }
         }
     }
 
-   arabic_soldier_clothes = {
+
+
+	arabic_soldier_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2450,9 +2726,11 @@ chinese_upper_clothes = {
                 template = european_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:arabic_soldier_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2469,7 +2747,10 @@ chinese_upper_clothes = {
             }
         }
     }
-    slavic_middle_clothes = {
+
+
+
+	slavic_middle_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2483,8 +2764,10 @@ chinese_upper_clothes = {
                 template = slavic_legwear
                 range = { 0 1 } # For the randomness to work correctly
             }
-        } 
+        }
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:slavic_middle_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2496,7 +2779,9 @@ chinese_upper_clothes = {
         }
     }
     #African
-      african_poor_clothes = {
+
+
+	african_poor_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2506,17 +2791,22 @@ chinese_upper_clothes = {
             }
         }
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:african_poor_clothes }
+
             base = 0
             modifier = {
                 add = 100
                 AND = {
                     african_clothes_pop_trigger = yes
                     #poor_clothes_pop_trigger = yes
-                }  
+                }
             }
         }
     }
-    african_middle_clothes = {
+
+
+
+	african_middle_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2525,7 +2815,10 @@ chinese_upper_clothes = {
                 range = { 0.5 0.7 } # For the randomness to work correctly
             }
         }
+
         weight = {
+			modifier = { add = 100000 exists = scope:character scope:character = { age >= 18 } trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:african_middle_clothes }
+
             base = 0
             modifier = {
                 add = 600
@@ -2550,7 +2843,10 @@ chinese_upper_clothes = {
             }
         }
     }
-     african_upper_clothes = {
+
+
+
+	african_upper_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2558,9 +2854,11 @@ chinese_upper_clothes = {
                 template = african_outfits
                 range = { 0.75 1 } # For the randomness to work correctly
             }
-
         }
+
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:african_upper_clothes }
+
             base = 0
             modifier = {
                 add = 600
@@ -2600,7 +2898,9 @@ chinese_upper_clothes = {
 
     #Native America
 
-    subarctic_native_american_clothes = {
+
+
+	subarctic_native_american_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2609,19 +2909,18 @@ chinese_upper_clothes = {
                 range = { 0 1 } # For the randomness to work correctly
             }
 
-        } 
+        }
 
         weight = {
             base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:subarctic_native_american_clothes }
             modifier = {
                 add = 100
                 AND = {
                     native_american_clothes_pop_trigger = yes
                     cold_clothes_pop_trigger = yes
                 }
-                
-                
-           }
+          	}
         }
     }
 
@@ -2639,10 +2938,11 @@ chinese_upper_clothes = {
                 template = native_american_legwear
                 range = { 0 0.33 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
             base = 0
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_clothes_low }
             modifier = {
                 add = 1000
                 AND = {
@@ -2653,46 +2953,48 @@ chinese_upper_clothes = {
         }
     }
 
-   native_american_clothes_mid = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = native_american_outfits
-            range = { 0.45 0.55 }
-        }
-                    accessory = {
-            mode = add
-            gene = legwear
-            template = native_american_legwear
-            range = { 0 0.33 } # For the randomness to work correctly
-        }
-    } 
+	native_american_clothes_mid = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = native_american_outfits
+	            range = { 0.45 0.55 }
+	        }
+            accessory = {
+	            mode = add
+	            gene = legwear
+	            template = native_american_legwear
+	            range = { 0 0.33 } # For the randomness to work correctly
+	        }
+	    }
 
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_clothes_mid }
+
+	        base = 0
+	        modifier = {
+	            add = 1000
                 AND = {
                     native_american_clothes_pop_trigger = yes
-                    scope:pop = { 
-                        NOR = { 
-                            culture = cu:cherokee 
+                    scope:pop = {
+                        NOR = {
+                            culture = cu:cherokee
                             culture = cu:muskogean
-                        } 
+                        }
                     }
                     OR = {
                         middle_clothes_pop_trigger = yes
                         upper_clothes_pop_trigger = yes
                         soldier_clothes_pop_trigger = yes
                     }
-                    clergy_clothes_pop_trigger = no
+	                clergy_clothes_pop_trigger = no
                 }
             }
         }
     }
 
-     native_american_clothes_high = {
+    native_american_clothes_high = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2700,15 +3002,17 @@ chinese_upper_clothes = {
                 template = native_american_outfits
                 range = { 0.7 1 }
             }
-                        accessory = {
+	        accessory = {
                 mode = add
                 gene = legwear
                 template = native_american_legwear
                 range = { 0 0.33 } # For the randomness to work correctly
             }
-        } 
+        }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_clothes_high }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2720,7 +3024,9 @@ chinese_upper_clothes = {
         }
     }
 
-    native_american_male_ruler_clothes = {
+
+
+	native_american_male_ruler_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2745,6 +3051,8 @@ chinese_upper_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_male_ruler_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2755,8 +3063,8 @@ chinese_upper_clothes = {
                 }
                 scope:character = {
                     is_female = no
-                    NOR = { 
-                        culture = cu:inuit 
+                    NOR = {
+                        culture = cu:inuit
                         culture = cu:cherokee
                         culture = cu:muskogean
                     }
@@ -2765,7 +3073,9 @@ chinese_upper_clothes = {
         }
     }
 
-    native_american_female_ruler_clothes = {
+
+
+	native_american_female_ruler_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2776,6 +3086,8 @@ chinese_upper_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_female_ruler_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2791,7 +3103,9 @@ chinese_upper_clothes = {
         }
     }
 
-    native_american_character_clothes = {
+
+
+	native_american_character_clothes = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -2808,6 +3122,8 @@ chinese_upper_clothes = {
         }
 
         weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:native_american_character_clothes }
+
             base = 0
             modifier = {
                 add = 1000
@@ -2815,7 +3131,7 @@ chinese_upper_clothes = {
                 native_american_clothes_trigger = yes
                 scope:character = {
                     is_ruler = no
-                    NOT = { 
+                    NOT = {
                         OR = {
                             culture = cu:inuit
                             culture = cu:cherokee
@@ -2827,121 +3143,138 @@ chinese_upper_clothes = {
         }
     }
 
-    
+
 
 #Religion Clothes
 
-christian_religious_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = christian_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
 
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
-            AND = {
-                christian_clothes_pop_trigger = yes
-                clergy_clothes_pop_trigger = yes
-            }
-        }
-    }
-}
 
-semitic_religious_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = arabic_upper_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
+	christian_religious_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = christian_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
 
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
-            AND = {
-                OR = {
-                    muslim_clothes_pop_trigger = yes
-                    AND = {
-                        european_clothes_pop_trigger = no
-                        jewish_clothes_pop_trigger = yes
-                    }
-                }
-                clergy_clothes_pop_trigger = yes
-            }
-        }
-    }
-}
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:christian_religious_clothes }
 
-european_semitic_religious_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = semitic_upper_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
+	        base = 0
+	        modifier = {
+	            add = 1000
+	            AND = {
+	                christian_clothes_pop_trigger = yes
+	                clergy_clothes_pop_trigger = yes
+	            }
+	        }
+	    }
+	}
 
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
-            AND = {
-                european_clothes_pop_trigger = yes
-                jewish_clothes_pop_trigger = yes
-                clergy_clothes_pop_trigger = yes
-            }
-        }
-    }
-}
 
-buddhist_religious_clothes = {
-    dna_modifiers = {
-        accessory = {
-            mode = add
-            gene = outfits
-            template = chinese_common_outfits
-            range = { 0 1 } # For the randomness to work correctly
-        }
-    } 
 
-    weight = {
-        base = 0
-        modifier = {
-            add = 1000
-            OR = {
-                AND = {
-                    buddhist_clothes_pop_trigger = yes
-                    japanese_clothes_pop_trigger = no
-                    clergy_clothes_pop_trigger = yes
-                }
-                AND = {
-                    exists = scope:character
-                    scope:character = {
-                        is_ruler = yes
-                        OR = {
-                            religion = {
-                                has_discrimination_trait = buddhist
-                            }
-                            #religion = rel:sikh
-                            religion = rel:shinto
-                        }
-                        owner = {
-                            has_law = law_type:law_theocracy
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+	semitic_religious_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = arabic_upper_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:semitic_religious_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 1000
+	            AND = {
+	                OR = {
+	                    muslim_clothes_pop_trigger = yes
+	                    AND = {
+	                        european_clothes_pop_trigger = no
+	                        jewish_clothes_pop_trigger = yes
+	                    }
+	                }
+	                clergy_clothes_pop_trigger = yes
+	            }
+	        }
+	    }
+	}
+
+
+
+	european_semitic_religious_clothes = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = semitic_upper_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:european_semitic_religious_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 1000
+	            AND = {
+	                european_clothes_pop_trigger = yes
+	                jewish_clothes_pop_trigger = yes
+	                clergy_clothes_pop_trigger = yes
+	            }
+	        }
+	    }
+	}
+
+
+
+	buddhist_religious_clothes = {
+
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = outfits
+	            template = chinese_common_outfits
+	            range = { 0 1 } # For the randomness to work correctly
+	        }
+	    }
+
+	    weight = {
+			modifier = { add = 100000 exists = scope:character trigger_if = { limit = { NOT = { has_global_variable = fsp_open } }  scope:character = { owner = { is_ai = no } is_ruler = yes } } has_global_variable = clothes global_var:clothes = flag:buddhist_religious_clothes }
+
+	        base = 0
+	        modifier = {
+	            add = 1000
+	            OR = {
+	                AND = {
+	                    buddhist_clothes_pop_trigger = yes
+	                    japanese_clothes_pop_trigger = no
+	                    clergy_clothes_pop_trigger = yes
+	                }
+	                AND = {
+	                    exists = scope:character
+	                    scope:character = {
+	                        is_ruler = yes
+	                        OR = {
+	                            religion = {
+	                                has_discrimination_trait = buddhist
+	                            }
+	                            #religion = rel:sikh
+	                            religion = rel:shinto
+	                        }
+	                        owner = {
+	                            has_law = law_type:law_theocracy
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
 }

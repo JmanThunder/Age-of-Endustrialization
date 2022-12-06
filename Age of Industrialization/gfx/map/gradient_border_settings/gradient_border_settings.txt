@@ -1,18 +1,19 @@
-﻿@zoom_step_flatmap_far = 	17 							# the furthest zoom out
-@zoom_step_flatmap = 		9 							# zoom step where the paper map kicks in
-@zoom_step_mid = 			7 							# introduce some colour
+@zoom_step_flatmap_far = 	17 							# the furthest zoom out
+@zoom_step_flatmap = 		10 							# zoom step where the paper map kicks in
+@zoom_step_mid = 			9 							# introduce some colour
 @zoom_step_near = 			6							# close zoom
 @zoom_step_ultra_near = 	5							# absolutely closest zoom
 @zoom_step_2 = 				2							# absolutely closest zoom
 
-@color_multi = 	0.3										# Color brightness
+@color_multi = 	0.5										# Color brightness
 
 # The default map mode, filled paper map, terrain + gradient borders zoomed in
 default = {
 	gradient_water_borders_zoom = @zoom_step_flatmap
 
+	
 	gradient_parameters = {
-		zoom_step = @zoom_step_ultra_near
+		zoom_step = 0
 
 		gradient_alpha_inside = 	0
 		gradient_alpha_outside = 	0
@@ -26,47 +27,98 @@ default = {
 		after_lighting_blend =		0
 	}
 
+
 	gradient_parameters = {
-		zoom_step = @zoom_step_near
+		zoom_step = 4
 
 		gradient_alpha_inside = 	0
-		gradient_alpha_outside = 	0.0
-		gradient_width = 			0.05
+		gradient_alpha_outside = 	0
+		gradient_width = 			0
 		gradient_color_mult =		@color_multi
-		edge_width = 				0.01
-		edge_sharpness = 			0.04
-		edge_alpha = 				0.8
+		edge_width = 				0.0
+		edge_sharpness = 			0.05
+		edge_alpha = 				0
+		edge_color_mult = 			@color_multi
+		before_lighting_blend =	 	1
+		after_lighting_blend =		0
+	}
+
+
+      gradient_parameters = {
+		zoom_step = 5
+
+
+		gradient_alpha_inside = 	0
+		gradient_alpha_outside = 	0
+		gradient_width = 			0
+		gradient_color_mult =		@color_multi
+		edge_width = 				0.0
+		edge_sharpness = 			0.05
+		edge_alpha = 				0
+		edge_color_mult = 			@color_multi
+		before_lighting_blend =	 	1
+		after_lighting_blend =		0
+	}
+
+
+	gradient_parameters = {
+		zoom_step = 6
+		
+		
+		gradient_alpha_inside = 	0
+		gradient_alpha_outside = 	0
+		gradient_width = 			0
+		gradient_color_mult =		@color_multi
+		edge_width = 				0.0
+		edge_sharpness = 			0.05
+		edge_alpha = 				0
 		edge_color_mult = 			@color_multi
 		before_lighting_blend =	 	1
 		after_lighting_blend =		0
 	}
 
 	gradient_parameters = {
-		zoom_step = @zoom_step_mid
+		zoom_step = 7
+		
+		
+		gradient_alpha_inside = 	0.1
+		gradient_alpha_outside =    1.5
+		gradient_width = 			4
+		gradient_color_mult =		1.2
+		edge_width = 				0.01
+		edge_sharpness = 			0.03
+		edge_alpha = 				0.2
+		edge_color_mult = 			1.25
+		before_lighting_blend =		0.4
+		after_lighting_blend =		0.6
+	}
 
-		gradient_alpha_inside = 	0
-		gradient_alpha_outside = 	0.0
-		gradient_width = 			0.05
-		gradient_color_mult =		@color_multi
-		edge_width = 				0.025
-		edge_sharpness = 			0.01
-		edge_alpha = 				1.0
-		edge_color_mult = 			@color_multi
-		before_lighting_blend =		1
-		after_lighting_blend =		0
+	gradient_parameters = {
+		zoom_step = @zoom_step_mid
+		
+		gradient_alpha_inside = 	0.1
+		gradient_alpha_outside =    1.5
+		gradient_width = 			4
+		gradient_color_mult =		1.2
+		edge_width = 				0.01
+		edge_sharpness = 			0.03
+		edge_alpha = 				0.2
+		edge_color_mult = 			1.25
+		before_lighting_blend =		0.4
+		after_lighting_blend =		0.6
 	}
 
 	gradient_parameters = {
 		zoom_step = @zoom_step_flatmap
 
-		gradient_alpha_inside = 	1
+		gradient_alpha_inside = 	0.8
 		gradient_alpha_outside = 	1
-		gradient_width = 			1
+		gradient_width = 			0.001
 		gradient_color_mult =		1
-		edge_width = 				0.08
-		edge_sharpness = 			0.005
+		edge_width = 				0
+		edge_sharpness = 			0.01
 		edge_alpha = 				1
-		edge_color_mult = 			1
+		edge_color_mult = 			0.7
 		before_lighting_blend =		0
 		after_lighting_blend =		1
 	}
@@ -74,14 +126,14 @@ default = {
 	gradient_parameters = {
 		zoom_step = @zoom_step_flatmap_far
 
-		gradient_alpha_inside = 	1
+		gradient_alpha_inside = 	0.8
 		gradient_alpha_outside = 	1
-		gradient_width = 			1
+		gradient_width = 			0.001
 		gradient_color_mult =		1
-		edge_width = 				0.003
+		edge_width = 				0
 		edge_sharpness = 			0.01
 		edge_alpha = 				1
-		edge_color_mult = 			1
+		edge_color_mult = 			0.7
 		before_lighting_blend =		0
 		after_lighting_blend =		1
 	}
@@ -174,14 +226,15 @@ heatmap = {
 
 	gradient_parameters = {
 		zoom_step = @zoom_step_flatmap
-		gradient_alpha_inside = 	1
+
+		gradient_alpha_inside = 	0.8
 		gradient_alpha_outside = 	1
-		gradient_width = 			0.3
+		gradient_width = 			0.5
 		gradient_color_mult =		1
-		edge_width = 				0
+		edge_width = 				0.03
 		edge_sharpness = 			0
 		edge_alpha = 				1
-		edge_color_mult = 			1
+		edge_color_mult = 			0.7
 		before_lighting_blend =		0
 		after_lighting_blend =		1
 	}

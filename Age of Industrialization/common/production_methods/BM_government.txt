@@ -1,0 +1,89 @@
+﻿pm_skyscraper_bureaucratic_nexus = {
+	texture = "gfx/interface/icons/production_method_icons/skyscraper_bureaucratic_nexus.dds"
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 100
+			building_government_administration_throughput_mult = 0.25
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_migration_pull_mult = 0.25
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 50
+			building_output_services_add = 100
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 5000
+			building_employment_clerks_add = 10000
+			building_employment_bureaucrats_add = 5000
+		}
+		unscaled = {
+			building_bureaucrats_shares_add = 1
+		}
+	}
+}
+
+pm_skyscraper_trade_nexus = {
+	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_trade_route_quantity_mult = 0.25
+			building_group_bg_trade_tax_mult = 0.25
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_migration_pull_mult = 0.25
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 25
+			building_output_services_add = 100
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 1750
+			building_employment_capitalists_add = 250
+			building_employment_laborers_add = 5000
+			building_employment_clerks_add = 10000
+			building_employment_bureaucrats_add = 1500
+		}
+		unscaled = {
+			building_capitalists_shares_add = 1
+		}
+	}
+}
+		
+pm_no_airships = {
+	texture = "gfx/interface/icons/production_method_icons/no_airships.dds"
+}
+
+pm_airship_mooring_post = {
+	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
+	
+	unlocking_technologies = {
+		zeppelins
+	}
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_prestige_add = 10
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_migration_pull_mult = 0.25
+		}
+	}
+}

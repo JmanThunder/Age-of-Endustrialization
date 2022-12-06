@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ ai_strategy_balanced_development:0 "均衡发展"
+ ai_strategy_balanced_development_desc:0 "[COUNTRY.GetName]希望均衡扩充所有的产业，实现自给自足。"
+ ai_strategy_early_political:0 "前期内政"
+ ai_strategy_early_political_desc:0 "[COUNTRY.GetName]希望寻求实业家的支持，完成资本的原始积累。"
+ ai_strategy_late_political:0 "后期内政"
+ ai_strategy_late_political_desc:0 "[COUNTRY.GetName]希望提高人民的福利待遇，消除社会上的阶层矛盾。"
+ ai_strategy_foreign_expansion:0 "对外扩张"
+ ai_strategy_foreign_expansion_desc:0 "[COUNTRY.GetName]希望扩张自己的核心领土，无论代价如何。"
+ 

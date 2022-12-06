@@ -1,0 +1,52 @@
+﻿pm_bank = {
+	texture = "gfx/interface/icons/production_method_icons/bank.dds"
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 1250
+			building_employment_shopkeepers_add = 500
+                        building_employment_bureaucrats_add = 500
+                        building_employment_capitalists_add = 250
+                        
+		}
+		unscaled = {
+			building_capitalists_shares_add = 5
+			building_bureaucrats_shares_add = 2
+		}
+		workforce_scaled = {
+			building_input_paper_add = 30 
+			building_input_services_add = 30
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 150
+		}
+	}
+}
+
+pm_deposit = {
+	texture = "gfx/interface/icons/production_method_icons/deposit.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_shares_add = 35
+		}
+	}
+}
+
+pm_credit = {
+	texture = "gfx/interface/icons/production_method_icons/credit.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_shares_add = 20
+			building_input_services_add = -10
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 100
+		}
+	}
+}			

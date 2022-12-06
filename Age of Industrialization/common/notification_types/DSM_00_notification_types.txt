@@ -1,0 +1,26 @@
+﻿acquired_technology_notification = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/technology.dds"
+
+	notification_type = popup #important
+	popup_name = acquired_technology_popup
+	months = 1
+}
+
+migration_target_created = {
+	type = state
+	texture = "gfx/interface/icons/notification_icons/pops.dds"
+
+	notification_type = toast
+	days = 21
+	
+}
+
+migration_target_created_other = {
+	type = state
+	texture = "gfx/interface/icons/notification_icons/pops.dds"
+
+	notification_type = toast
+	days = 21
+	
+}

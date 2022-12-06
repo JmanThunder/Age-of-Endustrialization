@@ -11,6 +11,8 @@
 
 @battle_side_width = 250			# specific for this screen
 
+@plains_combat_width = 1.0
+
 types battle_panel_types
 {
 	type battle_panel = default_block_window_two_lines {
@@ -245,6 +247,7 @@ types battle_panel_types
 				# date + terrain
 				flowcontainer = {
 					direction = vertical
+					ignoreinvisible = yes
 					parentanchor = hcenter
 					spacing = 5
 					
@@ -255,10 +258,55 @@ types battle_panel_types
 					}
 					textbox = {
 						autoresize = yes
+						visible = "[Not( Battle.IsNavalBattle )]"
+						text = "BATTLE_TERRAIN_BATTLECALC"
+						parentanchor = hcenter
+					}
+					textbox = {
+						autoresize = yes
+						visible = "[Battle.IsNavalBattle]"
 						text = "BATTLE_TERRAIN"
 						parentanchor = hcenter
 					}
+					textbox = {
+						autoresize = yes
+						visible = "[Not( Battle.IsNavalBattle )]"
+						text = "BATTLE_TERRAIN_BATTLECALC_ALL_TERRAIN"
+						parentanchor = hcenter
+					}
+					
+					## # BattleCalc Set Province Button
+				
+					## button = {
+						## name = "battlecalc_set_province_button"
+						## using = default_button_action
+						## size = { 90 90 }
+						## # position = { 30 160 }
+						## text = "Set"
+						## fontsize = 24
+						## # onclick = "[GetVariableSystem.Set('battlecalc_current_province', Battle.GetProvince.GetID)]"
+						## onclick = "[GetVariableSystem.Set('battlecalc_current_infrastructure', MakeScopeValue(Battle.GetProvince.GetState.GetInfrastructure))]"
+						## #onclick = "[GetVariableSystem.Set('battlecalc_current_infrastructure', '100')]"
+					## }
+					
+					## # BattleCalc Run Button
+					
+					# button = {
+					# 	name = "battlecalc_run_button"
+					# 	using = default_button_action
+					# 	size = { 200 30 }
+					# 	# position = { 30 160 }
+					# 	parentanchor = hcenter
+					# 	# text = "[Concatenate(Localize('BATTLECALC_ATK_COMMANDER_ID'), 'A')]"
+					# 	text = "[Concatenate('event battlecalc.10 ', Localize('BATTLECALC_ATK_COMMANDER_ID'))]"
+					# 	fontsize = 16
+					# 	# onclick = "[ExecuteConsoleCommand(Concatenate('event battlecalc.10 ', Localize('BATTLECALC_ATK_COMMANDER_ID')))]"
+					# 	onclick = "[ExecuteConsoleCommand('event battlecalc.10 3')]"
+					# 	# enabled = "[GetVariableSystem.Exists('battlecalc_current_province')]"
+					# }
 				}
+				
+				
 				
 				# victory/defeat + captured provinces
 				flowcontainer = {
@@ -429,7 +477,8 @@ types battle_panel_types
 						tooltip = "BATTLE_DEFENSE_TOOLTIP"
 					}
 					blockoverride "offense_or_defense_value_text" {
-                        text = "[Battle.GetDefenseRaw|0]"
+                        text = "[Battle.GetDefenseRaw)|0]"
+                        ## text = "[Multiply_CFixedPoint(IntToFixedPoint(Battle.CalcCurrentDefenderManpower), Battle.GetDefenseRaw)|0]"
                     }
 					blockoverride "offense_or_defense_icon" {
 						texture = "gfx/interface/icons/military_icons/defense_strip.dds"
@@ -445,7 +494,7 @@ types battle_panel_types
 						text = "ENEMY"
 					}
 					blockoverride "commander_text" {
-						text = "[Battle.GetDefenderCommander.GetCustom('GetUniversalFullName')]"
+						text = "[Battle.GetDefenderCommander.GetFullName]"
 					}
 					blockoverride "commander_visible" {
 						visible = "[Battle.HasDefenderCommander]"
@@ -454,13 +503,19 @@ types battle_panel_types
 						texture = "[Battle.GetDefenderCommander.GetCommanderRank.GetTexture]"
 					}
 					blockoverride "battalions_or_warships" {
-						text = "[Battle.GetCurrentDefenderUnits]"
+						text = "[Battle.GetCurrentDefenderUnits] ([Battle.CalcCurrentDefenderManpower])"
+					}
+					blockoverride "row_mirror_direction" {
+						righttoleft = yes
+					}
+					blockoverride "label_align_side" {
+						align = right|nobaseline
 					}
 					blockoverride "current_battalions_tooltip" {
 						tooltip = "[Battle.GetDefenderBattalionBreakdown]"
 					}
 					blockoverride "start_of_battle_battalions_or_warships" {
-						text = "[Battle.GetStartingDefenderUnits]"
+						text = "[Battle.GetStartingDefenderUnits] ([Battle.GetStartingDefenderManpower])"
 					}
 					blockoverride "starting_battalions_tooltip" {
 						tooltip = "[Battle.GetStartingDefenderBattalionBreakdown]"
@@ -476,6 +531,37 @@ types battle_panel_types
 					}
 					blockoverride "current_morale_color" { 
 						color = "[GetMoraleColorVec( Battle.CalcCurrentDefenderMorale )]"
+					}
+					blockoverride "battlecalc_entire_army_tooltip" {
+						tooltip = BATTLECALC_ENTIRE_ARMY_DEF_TOOLTIP
+					}
+					blockoverride "battlecalc_entire_army" {
+						text = "BATTLECALC_ENTIRE_ARMY_DEF"
+					}
+					blockoverride "battlecalc_min_and_max_from_terrain" {
+							text = BATTLECALC_TERRAIN_WINDOW_DEF
+					}
+					blockoverride "battlecalc_terrain_bounds_tooltip" {
+						tooltip = BATTLECALC_COULD_HAVE_DEF_TOOLTIP
+					}
+					blockoverride "visible_if_stats_worse" {
+						## visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						visible = "[GreaterThan_CFixedPoint(Battle.GetOffenseRaw, Battle.GetDefenseRaw)]"
+					}
+					blockoverride "placeholder_if_stats_better" {
+						visible = "[LessThanOrEqualTo_CFixedPoint(Battle.GetOffenseRaw, Battle.GetDefenseRaw)]"
+					}
+					blockoverride "battlecalc_worse_stats_tooltip" {
+						## block "visible_if_stats_worse" {
+							## visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						## }
+						## tooltip = "[Battle.GetStartingAttackerBattalionBreakdown]"
+						tooltip = BATTLECALC_WORSE_STATS_DEF_TOOLTIP
+					}
+					blockoverride "battlecalc_worse_stats_bonus" {
+							text = BATTLECALC_TECH_BONUS_DEF
+							## text = "ABC"
+							## text = [Min_CFixedPoint('(CFixedPoint)2', Max_CFixedPoint('(CFixedPoint)1', Add_CFixedPoint('(CFixedPoint)1', Multiply_CFixedPoint('(CFixedPoint)0.2', Multiply_CFixedPoint(Battle.GetOffenseRaw, GuiScope.SetRoot(MakeScopeValue(Battle.GetDefenseRaw)).ScriptValue('battlecalc_divide_stats_3'))))))]
 					}
 					blockoverride "ending_morale" {
 						value = "[FixedPointToFloat( Battle.GetEndingDefenderMorale )]"
@@ -573,6 +659,7 @@ types battle_panel_types
 					autoresize = yes
 					block "offense_or_defense_value_text" {
 					    text = "[Battle.GetOffenseRaw|0]"
+					    ## text = "[Multiply_CFixedPoint(IntToFixedPoint(Battle.GetStartingAttackerManpower), Battle.GetOffenseRaw)|0]"
 					}
 					using = fontsize_large
 					default_format = "#variable"
@@ -659,7 +746,7 @@ types battle_panel_types
 						autoresize = yes
 						align = nobaseline
 						block "commander_text" {
-							text = "[Battle.GetAttackerCommander.GetCustom('GetUniversalFullName')]"
+							text = "[Battle.GetAttackerCommander.GetFullName]"
 						}
 					}
 					icon = {
@@ -680,18 +767,25 @@ types battle_panel_types
 		
 		# number of battalions or warships
 		widget = {
-			size = { @battle_side_width 65 }
+			## size = { @battle_side_width 65 }
+			size = { @battle_side_width 120 }
 			parentanchor = hcenter
 
 			vbox = {
 				layoutpolicy_horizontal = expanding
 				layoutpolicy_vertical = expanding
+				# ignoreinvisible = no
 				
 				# current
 				hbox = {
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
 					spacing = 5
+
+					block "row_mirror_direction" {
+						righttoleft = no
+					}
+
 					block "current_battalions_tooltip" {
 						tooltip = "[Battle.GetAttackerBattalionBreakdown]"
 					}
@@ -699,7 +793,9 @@ types battle_panel_types
 					textbox = {
 						layoutpolicy_horizontal = expanding
 						size = { 0 20 }
-						align = left|nobaseline
+						block "label_align_side" {
+							align = left|nobaseline
+						}
 						text = "CURRENT"
 					}
 					
@@ -707,7 +803,8 @@ types battle_panel_types
 						align = nobaseline
 						autoresize = yes
 						block "battalions_or_warships" {
-							text = "[Battle.GetCurrentAttackerUnits]"
+							## text = "[Battle.GetCurrentAttackerUnits]"
+							text = "[Battle.GetCurrentAttackerUnits] ([Battle.CalcCurrentAttackerManpower])"
 						}
 						using = fontsize_large
 						default_format = "#variable"
@@ -773,6 +870,10 @@ types battle_panel_types
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
 					spacing = 5
+
+					block "row_mirror_direction" {
+						righttoleft = no
+					}
 					block "starting_battalions_tooltip" {
 						tooltip = "[Battle.GetStartingAttackerBattalionBreakdown]"
 					}
@@ -780,7 +881,9 @@ types battle_panel_types
 					textbox = {
 						layoutpolicy_horizontal = expanding
 						size = { 0 20 }
-						align = left|nobaseline
+						block "label_align_side" {
+							align = left|nobaseline
+						}
 						text = "START_OF_BATTLE"
 					}
 					
@@ -788,7 +891,8 @@ types battle_panel_types
 						align = nobaseline
 						autoresize = yes
 						block "start_of_battle_battalions_or_warships" {
-							text = "[Battle.GetStartingAttackerUnits]"
+							## text = "[Battle.GetStartingAttackerUnits]"
+							text = "[Battle.GetStartingAttackerUnits] ([Battle.GetStartingAttackerManpower])"
 						}
 						alpha = 0.5
 					}
@@ -825,6 +929,243 @@ types battle_panel_types
 						}
 					}
 				}
+				
+				# Entire Army
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 5
+					block "row_mirror_direction" {
+						righttoleft = no
+					}
+					block "battlecalc_entire_army_tooltip" {
+						tooltip = BATTLECALC_ENTIRE_ARMY_ATK_TOOLTIP
+					}
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						visible = "[Not( Battle.IsNavalBattle )]"
+						size = { 0 20 }
+						block "label_align_side" {
+							align = left|nobaseline
+						}
+						text = "BATTLECALC_ENTIRE_ARMY_TEXT"
+					}
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						visible = "[Battle.IsNavalBattle]"
+						size = { 0 20 }
+						block "label_align_side" {
+						align = left|nobaseline
+						}
+						text = "BATTLECALC_ENTIRE_FLEET_TEXT"
+					}
+					
+					textbox = {
+						align = nobaseline
+						autoresize = yes
+						
+						block "battlecalc_entire_army" {
+							text = "BATTLECALC_ENTIRE_ARMY_ATK"
+						}
+						alpha = 0.5
+					}
+
+					# icon = {
+					# 	visible = "[Not( Battle.IsNavalBattle )]"
+					# 	texture = "gfx/interface/icons/generic_icons/battalions.dds"
+					# 	size = { 25 25 }
+					# }
+
+					# icon = {
+					# 	visible = "[Battle.IsNavalBattle]"
+					# 	texture = "gfx/interface/icons/generic_icons/flotillas.dds"
+					# 	size = { 25 25 }
+					# }
+					
+					white_progressbar_vertical = {
+						size = { 8 22 }
+						block "terrain_width_bar_tooltip" {
+							tooltip = "BATTLECALC_TERRAIN_WIDTH_BAR_TOOLTIP"
+						}
+						
+						blockoverride "values" {
+							min = 0
+							max = 1
+							block "terrain_width" {
+								value = "[FixedPointToFloat( '(CFixedPoint)1' )]"
+							}
+						}
+						## blockoverride "color" {
+							## block "start_of_battle_morale_color" { 
+								## color = "[GetMoraleColorVec( '(CFixedPoint)1' )]"
+							## }
+						## }
+					}
+				}
+				# Terrain bounds
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 5
+					block "row_mirror_direction" {
+						righttoleft = no
+					}
+					block "battlecalc_terrain_bounds_tooltip" {
+						## tooltip = "[Battle.GetStartingAttackerBattalionBreakdown]"
+						tooltip = BATTLECALC_COULD_HAVE_ATK_TOOLTIP
+					}
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						size = { 0 20 }
+						block "label_align_side" {
+							align = left|nobaseline
+						}
+						visible = "[Not( Battle.IsNavalBattle )]"
+						text = "BATTLECALC_TERRAIN_WIDTH_PERMITS"
+						## text = "BATTLECALC_DIVISION_TEST"
+						## text = "[Multiply_CFixedPoint(Battle.GetDefenseRaw, GuiScope.SetRoot(MakeScopeValue(Battle.GetOffenseRaw)).ScriptValue('battlecalc_divide_stats_2'))]"
+					}
+					
+					textbox = {
+						align = nobaseline
+						autoresize = yes
+						visible = "[Not( Battle.IsNavalBattle )]"
+						block "battlecalc_min_and_max_from_terrain" {
+							text = BATTLECALC_TERRAIN_WINDOW_ATK
+						}
+						alpha = 0.5
+					}
+
+					icon = {
+						visible = "[Not( Battle.IsNavalBattle )]"
+						texture = "gfx/interface/icons/generic_icons/battalions.dds"
+						size = { 25 25 }
+					}
+
+					# icon = {
+					# 	visible = "[Battle.IsNavalBattle]"
+					# 	texture = "gfx/interface/icons/generic_icons/flotillas.dds"
+					# 	size = { 25 25 }
+					# }
+					
+					white_progressbar_vertical = {
+						size = { 8 22 }
+						visible = "[Not( Battle.IsNavalBattle )]"
+						block "terrain_width_bar_tooltip" {
+							tooltip = "BATTLECALC_TERRAIN_WIDTH_BAR_TOOLTIP"
+						}
+						
+						blockoverride "values" {
+							min = 0
+							max = 1
+							block "terrain_width" {
+								value = "[FixedPointToFloat( '(CFixedPoint)1' )]"
+							}
+						}
+						## blockoverride "color" {
+							## block "start_of_battle_morale_color" { 
+								## color = "[GetMoraleColorVec( '(CFixedPoint)1' )]"
+							## }
+						## }
+					}
+				}
+				# Worse Stats
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 5
+					block "row_mirror_direction" {
+						righttoleft = no
+					}
+					ignoreinvisible = yes
+					visible = "[Not( Battle.IsNavalBattle )]"
+					block "battlecalc_worse_stats_tooltip" {
+						## block "visible_if_stats_worse" {
+							## visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						## }
+						## tooltip = "[Battle.GetStartingAttackerBattalionBreakdown]"
+						tooltip = BATTLECALC_WORSE_STATS_ATK_TOOLTIP
+					}
+					
+					## block "battlecalc_better_stats_tooltip" {
+						## block "visible_if_stats_better" {
+							## visible = "[GreaterThan_CFixedPoint(Battle.GetOffenseRaw, Battle.GetDefenseRaw)]"
+						## }
+						## tooltip = BATTLECALC_BETTER_STATS_ATK_TOOLTIP
+					## }
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						size = { 0 20 }
+						block "label_align_side" {
+							align = left|nobaseline
+						}
+						block "visible_if_stats_worse" {
+							visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						}
+						text = "BATTLECALC_TECH_BONUS_LABEL"
+					}
+					
+					textbox = {
+						align = nobaseline
+						autoresize = yes
+						block "visible_if_stats_worse" {
+							visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						}
+						block "battlecalc_worse_stats_bonus" {
+							text = BATTLECALC_TECH_BONUS_ATK
+						}
+						alpha = 0.5
+					}
+
+					icon = {
+						# visible = "[Not( Battle.IsNavalBattle )]"
+						block "visible_if_stats_worse" {
+							visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						}
+						texture = "gfx/interface/icons/generic_icons/battalions.dds"
+						size = { 25 25 }
+					}
+
+					textbox = {
+						align = nobaseline
+						autoresize = yes
+						block "placeholder_if_stats_better" {
+							visible = "[LessThanOrEqualTo_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						}
+						block "battlecalc_worse_stats_placeholder" {
+							text = " "
+						}
+						alpha = 0.5
+					}
+
+					
+					
+					white_progressbar_vertical = {
+						size = { 8 22 }
+						block "visible_if_stats_worse" {
+							visible = "[GreaterThan_CFixedPoint(Battle.GetDefenseRaw, Battle.GetOffenseRaw)]"
+						}
+						block "terrain_width_bar_tooltip" {
+							tooltip = "BATTLECALC_WORSE_STATS_BAR_TOOLTIP"
+						}
+						
+						blockoverride "values" {
+							min = 0
+							max = 1
+							block "terrain_width" {
+								value = "[FixedPointToFloat( '(CFixedPoint)1' )]"
+							}
+						}
+						## blockoverride "color" {
+							## block "start_of_battle_morale_color" { 
+								## color = "[GetMoraleColorVec( '(CFixedPoint)1' )]"
+							## }
+						## }
+					}
+				}
 			}
 		}
 		
@@ -843,11 +1184,16 @@ types battle_panel_types
 
 			hbox = {
 				spacing = 5
+				block "row_mirror_direction" {
+					righttoleft = no
+				}
 
 				textbox = {
 					layoutpolicy_horizontal = expanding
 					size = { 0 20 }
-					align = left|nobaseline
+					block "label_align_side" {
+						align = left|nobaseline
+					}
 					text = "[concept_dead]"
 				}
 				textbox = {
@@ -873,11 +1219,16 @@ types battle_panel_types
 
 			hbox = {
 				spacing = 5
+				block "row_mirror_direction" {
+					righttoleft = no
+				}
 
 				textbox = {
 					layoutpolicy_horizontal = expanding
 					size = { 0 20 }
-					align = left|nobaseline
+					block "label_align_side" {
+						align = left|nobaseline
+					}
 					text = "[concept_wounded]"
 				}
 				textbox = {

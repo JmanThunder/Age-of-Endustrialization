@@ -1,0 +1,12 @@
+﻿pmg_bank = {
+	production_methods = {
+		pm_bank
+	}
+}
+
+pmg_operations = {
+	production_methods = {
+		pm_deposit
+                pm_credit
+	}
+}

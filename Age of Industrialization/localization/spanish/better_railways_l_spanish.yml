@@ -1,0 +1,6 @@
+﻿l_spanish:
+
+  # Trains
+ pmg_track_system:0 "Vía férrea"
+ pm_cast_iron_track:0 "Riel de hierro fundido"
+ pm_steel_track:0 "Riel de acero"

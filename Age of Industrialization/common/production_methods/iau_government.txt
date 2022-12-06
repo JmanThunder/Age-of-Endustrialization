@@ -1,0 +1,100 @@
+# keep in mind that education access caps at 100%, 
+	# education institution gives 50% at level 5, 
+	# social mobility decree gives 25% 
+	# and standard of living gives 1% per 1 (vanilla it's 2% per 1)
+# so level 5 inst, decree and 25 sol = 100% access anyway without uni buffs
+
+pm_scholastic_education = {
+	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 3 # buffed from 2
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 3 # buffed from 5, easier to maintain more unis
+		}	
+	
+		level_scaled = {
+			building_employment_clerks_add = 1500
+			building_employment_laborers_add = 1500
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.1
+			state_education_access_add = 0.02 # most bang for buck but needs many unis
+		}	
+	}
+}
+
+pm_philosophy_department = {
+	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
+	
+	unlocking_technologies = {
+		dialectics
+	}
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 5 # buffed from 3
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 7 # buffed from 10, easier to maintain more unis
+			building_input_tools_add = 2  # nerf now needs some tools	
+		}
+		
+		level_scaled = {
+			building_employment_clerks_add = 1750
+			building_employment_laborers_add = 1250
+		}					
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.15
+			state_education_access_add = 0.04 
+		}	
+	}
+}
+
+pm_analytical_philosophy_department = {
+	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
+	
+	unlocking_technologies = {
+		analytical_philosophy
+	}
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = 8 # buffed from 4
+		}
+	}
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			building_input_paper_add = 11 # buffed from 15, easier to maintain more unis
+			building_input_tools_add = 2  # nerf now needs some tools	
+			building_input_electricity_add = 2 # nerf now needs some electricity
+		}
+		
+		level_scaled = {
+			building_employment_clerks_add = 2000
+			building_employment_laborers_add = 1000
+		}					
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.2
+			state_education_access_add = 0.06 # at this point pops should be already 100% anyway
+		}	
+	}
+}	

@@ -1,0 +1,12 @@
+﻿l_english:
+ advance_assault:0 "Reckless Assault"
+ defend_se:0 "Scorched Earth"
+ stand_by_train:0 "Train Conscripts"
+ advance_assault_desc:0 "#header $advance_assault$#!\nOrder this Commander to recklessly advance a [concept_front], trying to invade enemy territory.\nA Commander with an Assault Order can still partake in defensive battles.[ConcatIfNeitherEmpty( '\n\n', COMMANDER_ORDER_TYPE.GetModifier.GetDesc )]"
+ defend_se_desc:0 "#header $defend_se$#!\nOrder this Commander to dig in on the [concept_front], irregardless of destruction caused to their own territory.[ConcatIfNeitherEmpty( '\n\n', COMMANDER_ORDER_TYPE.GetModifier.GetDesc )]"
+ stand_by_train_desc:0 "#header Stand By#!\nOrder [Character.GetFullName] to leave the [concept_front] and train conscripts at the [Character.GetHomeHQ.GetName|v].\n\nTheir [Concept('concept_battalion', '$concept_battalions$')] will still be able to participate in defensive [Concept('concept_battle', '$concept_battles$')], but without the benefit of their General. While at the [concept_hq] the troops will not take any [concept_attrition].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
+ stand_by__train_gerund:0 "Training"
+ advance_tooltip:0 "#header $advance_assault$#!\nIs targeting [SCOPE.GetRootScope.GetFront.GetName]"
+ advance_assault_gerund:0 "Assaulting"
+ defend_se_gerund:0 "Defending"
+ defend_se_tooltip:1 "#header $defend_se$#!\nIs targeting [SCOPE.GetRootScope.GetFront.GetName]"

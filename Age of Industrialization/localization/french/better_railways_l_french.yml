@@ -1,0 +1,6 @@
+﻿l_french:
+
+  # Trains
+ pmg_track_system:0 "Voie ferrée"
+ pm_cast_iron_track:0 "Rail en fonte"
+ pm_steel_track:0 "Rail en acier"

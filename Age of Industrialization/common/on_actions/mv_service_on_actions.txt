@@ -1,0 +1,335 @@
+﻿on_five_year_pulse_country = {
+	on_actions = {
+		mv_five_year_service_pulse_country
+	}
+}
+
+mv_five_year_service_pulse_country = {
+	effect = {
+		random_list = {
+			60 = {}
+			15 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_small_positive_modifier
+						years = 5
+					}
+				}
+			}
+			15 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_small_negative_modifier
+						years = 5
+					}
+				}
+			}
+			2 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_medium_positive_modifier
+						years = 5
+					}
+				}
+			}
+			2 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_medium_negative_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_large_positive_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_large_negative_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_huge_positive_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_huge_negative_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_enormous_positive_modifier
+						years = 5
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_enormous_negative_modifier
+						years = 5
+					}
+				}
+			}						
+		}
+	}
+}
+
+on_yearly_pulse_country = {
+	on_actions = {
+		mv_yearly_service_pulse_country
+	}
+}
+
+mv_yearly_service_pulse_country = {
+	effect = {
+		random_list = {
+			50 = {}
+			15 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_small_positive_modifier
+						years = 1
+					}
+				}
+			}
+			15 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_small_negative_modifier
+						years = 1
+					}
+				}
+			}
+			4 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_medium_positive_modifier
+						years = 1
+					}
+				}
+			}
+			4 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_medium_negative_modifier
+						years = 1
+					}
+				}
+			}
+			3 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_large_positive_modifier
+						years = 1
+					}
+				}
+			}
+			3 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_large_negative_modifier
+						years = 1
+					}
+				}
+			}
+			2 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_huge_positive_modifier
+						years = 1
+					}
+				}
+			}
+			2 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_huge_negative_modifier
+						years = 1
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_enormous_positive_modifier
+						years = 1
+					}
+				}
+			}
+			1 = {
+				every_scope_state = {
+					add_modifier = {
+						name = mv_service_enormous_negative_modifier
+						years = 1
+					}
+				}
+			}						
+		}
+	}
+}
+
+on_five_year_pulse_state = {
+	on_actions = {
+		mv_five_year_service_pulse_state
+	}
+}
+
+mv_five_year_service_pulse_state = {
+	effect = {
+		random_list = {
+			50 = {}
+			15 = {
+				add_modifier = {
+					name = mv_service_small_positive_modifier
+					years = 5
+				}
+			}
+			15 = {
+				add_modifier = {
+					name = mv_service_small_negative_modifier
+					years = 5
+				}
+			}
+			5 = {
+				add_modifier = {
+					name = mv_service_medium_positive_modifier
+					years = 5
+				}
+			}
+			5 = {
+				add_modifier = {
+					name = mv_service_medium_negative_modifier
+					years = 5
+				}
+			}
+			3 = {
+				add_modifier = {
+					name = mv_service_large_positive_modifier
+					years = 5
+				}
+			}
+			3 = {
+				add_modifier = {
+					name = mv_service_large_negative_modifier
+					years = 5
+				}
+			}
+			1 = {
+				add_modifier = {
+					name = mv_service_huge_positive_modifier
+					years = 5
+				}
+			}
+			1 = {
+				add_modifier = {
+					name = mv_service_huge_negative_modifier
+					years = 5
+				}
+			}
+			1 = {
+				add_modifier = {
+					name = mv_service_enormous_positive_modifier
+					years = 5
+				}
+			}
+			1 = {
+				add_modifier = {
+					name = mv_service_enormous_negative_modifier
+					years = 5
+				}
+			}						
+		}
+	}
+}
+
+on_yearly_pulse_state = {
+	on_actions = {
+		mv_yearly_service_pulse_state
+	}
+}
+
+mv_yearly_service_pulse_state = {
+	effect = {
+		random_list = {
+			25 = {}
+			20 = {
+				add_modifier = {
+					name = mv_service_small_positive_modifier
+					years = 1
+				}
+			}
+			20 = {
+				add_modifier = {
+					name = mv_service_small_negative_modifier
+					years = 1
+				}
+			}
+			10 = {
+				add_modifier = {
+					name = mv_service_medium_positive_modifier
+					years = 1
+				}
+			}
+			10 = {
+				add_modifier = {
+					name = mv_service_medium_negative_modifier
+					years = 1
+				}
+			}
+			5 = {
+				add_modifier = {
+					name = mv_service_large_positive_modifier
+					years = 1
+				}
+			}
+			5 = {
+				add_modifier = {
+					name = mv_service_large_negative_modifier
+					years = 1
+				}
+			}
+			3 = {
+				add_modifier = {
+					name = mv_service_huge_positive_modifier
+					years = 1
+				}
+			}
+			3 = {
+				add_modifier = {
+					name = mv_service_huge_negative_modifier
+					years = 1
+				}
+			}
+			2 = {
+				add_modifier = {
+					name = mv_service_enormous_positive_modifier
+					years = 1
+				}
+			}
+			2 = {
+				add_modifier = {
+					name = mv_service_enormous_negative_modifier
+					years = 1
+				}
+			}						
+		}
+	}
+}
