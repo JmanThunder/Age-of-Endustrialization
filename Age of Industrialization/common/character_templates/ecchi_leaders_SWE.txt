@@ -10,7 +10,7 @@ ecchi_swe_nobel_character_template = {
     interest_group = ig_industrialists
     birth_date = 1833.10.21
 	dna = ecchi_dna_alfred_nobel
-    traits = { historical_figures tactful ambitious innovative }
+    traits = { tactful ambitious innovative }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -34,6 +34,6 @@ ecchi_swe_nobel_character_template = {
         }
         earliest_usage_date = 1867.1.1
         latest_usage_date = 1896.12.10
-        chance = 75
+        chance = 90
     }
 }

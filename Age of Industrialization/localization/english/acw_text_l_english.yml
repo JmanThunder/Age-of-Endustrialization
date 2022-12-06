@@ -44,7 +44,7 @@
 
  acw_events.8.t:0 "The Great Locomotive Chase"
  acw_events.8.d:0 "Enemy raiders have successfully stolen a locomotive and wrecked miles of track and telegraph lines in [SCOPE.sState('great_locomotive_chase_state').GetName] before being stopped."
- acw_events.8.f:0 "The whisps of smoke grew more and more feeble with each huff of their tired locomotive, the [SCOPE.GetRootScope.GetCountry.GetCustom('random_csa_acw_locomotive')]. The raiders had run out of fuel miles back, and the rails they had torn up hadn't been enough to save them. In the distance, plumes of smoke from their pursuers grew ever-closer. The chase was coming to an end."
+ acw_events.8.f:0 "The wisps of smoke grew more and more feeble with each huff of their tired locomotive, the [SCOPE.GetRootScope.GetCountry.GetCustom('random_csa_acw_locomotive')]. The raiders had run out of fuel miles back, and the rails they had torn up hadn't been enough to save them. In the distance, plumes of smoke from their pursuers grew ever-closer. The chase was coming to an end."
  acw_events.8.a:0 "Damn everything else, rebuild those tracks and lines now!"
  acw_events.8.b:0 "Keeping troops on our trains will slow them down, but make them safer."
  acw_events.8.c:0 "Next time, we'll capture the raiders before they start."
@@ -74,15 +74,15 @@
  acw_followup_events.4.a:0 "Authorize the limited redistribution of land."
  acw_followup_events.4.b:0 "Economic measures are liable to cause trouble."
 
- acw_followup_events.5.t:0 "Supremacist Violence in [SCOPE.sState('supremacist_violence_state').GetName]"
+ acw_followup_events.5.t:0 "Supremacist violence in [SCOPE.sState('supremacist_violence_state').GetName]"
  acw_followup_events.5.d:0 "Violence between white rioters and black freedmen has caused significant tension in [SCOPE.sState('supremacist_violence_state').GetName]."
- acw_followup_events.5.f:0 ""The rioters stomped, kicked, and clubbed others mercilessly. The streets grew slick with the blood of innocent men. Emptied revolvers clattered on the ground as attacks grew too frenzied to bother with reloading anymore. It was only when martial law was declared and troops marched in that even a pretence of order could return.""
+ acw_followup_events.5.f:0 ""The rioters stomped, kicked, and clubbed others mercilessly. The streets grew slick with the blood of innocent men. Emptied revolvers clattered on the ground as attacks grew too frenzied to bother with reloading anymore. It was only when martial law was declared and troops marched in that even a pretense of order could return.""
  acw_followup_events.5.a:0 "Use the full might of the government to protect freedmen."
  acw_followup_events.5.b:0 "We cannot alienate local leaders with the use of troops."
 
  acw_followup_events.6.t:0 "Redeemers"
  acw_followup_events.6.d:0 "A coalition of former Confederates and Confederate sympathizers have won control of [SCOPE.sState('redeemer_state').GetName]'s state government through means fair and foul, threatening the ongoing process of Reconstruction."
- acw_followup_events.6.f:0 ""Draw a line one side of which you see intelligence, virtue, self-respect, and democracy; and on the other the absolute unchecked political supremacy of brute force and terror, and there you will behold not one attribute of free government, but the saddest tyranny of the Old South desperately clawing back power that ever cursed this earth."" # this is an inversion of Lucius Quintus Cincinnatus Lamar II's horribe racist diatribe.
+ acw_followup_events.6.f:0 ""Draw a line one side of which you see intelligence, virtue, self-respect, and democracy; and on the other the absolute unchecked political supremacy of brute force and terror, and there you will behold not one attribute of free government, but the saddest tyranny of the Old South desperately clawing back power that ever cursed this earth."" # this is an inversion of Lucius Quintus Cincinnatus Lamar II's horrible racist diatribe.
  acw_followup_events.6.a:0 "Reconciliation demands an accord with these men."
  acw_followup_events.6.b:0 "Arrest these men and install a new state government."
 
@@ -121,6 +121,47 @@
  je_acw_countdown:0 "The Slavery Debate"
  je_acw_countdown_reason:1 "Slaveholders and abolitionists are engaged in increasingly rancorous debate across the nation. Sooner or later, the arguments will stop being made with words and start being made with bullets."
  je_acw_countdown_complete:0 "The American Civil War has begun."
+ je_acw_reconstruction:0 "Reconstruction"
+ je_acw_reconstruction_status:1 "Rebuild the nation after the divisive Civil War."
+ je_acw_reconstruction_reason:0 "With the Civil War behind us, now is the time for former secessionist states to be reintegrated into the Union."
+ je_acw_reconstruction_goal:0 "Reconstruct the formerly-rebellious states."
+ je_acw_reincorporate:0 "Readmit the Secessionist States"
+ je_acw_reincorporate_status:0 "Bring the former secessionist states back into the fold as fully-fledged incorporated states once more."
+ je_acw_reincorporate_reason:0 "Readmitting the rebellious states back into the Union is essential for restoring the shaken spirit of the nation, and may help establish new powerbases for the government."
+ je_acw_equality:0 "Equality for All"
+ je_acw_equality_status:0 "Create a system that recognizes all men, from the North and South, and Black and White, as true equals in this nation of ours."
+ je_acw_equality_reason:0 "This nation fought a war over deep issues that were papered over for generations until the problems became too big to ignore. We must avoid a repeat of this disaster, and tackle the problems head-on lest they are left to fester for another century."
+ je_acw_wild_wild_west:0 "The Wild, Wild West"
+ je_acw_wild_wild_west_reason:0 "The western frontier has been set alight by the unrest in the rest of the nation. We must find a way to calm it down."
+
+ je_acw_war:0 "The American Civil War"
+ je_acw_war_reason:0 "War between the states is upon us. Now is the time to preserve the Union, or die trying."
+ acw_war_tt_complete:0 "Secessionists have been defeated and reannexed."
+
+ acw_je_events.1.t1:0 "The Southern Declaration of Secession"
+ acw_je_events.1.t2:0 "The Northern Declaration of Secession"
+ acw_je_events.1.d1:1 "A convention of pro-slavery states have declared their independence from us as the [SCOPE.sCountry('csa_scope').GetName]. The Union has been challenged, but will not yield so easily."
+ acw_je_events.1.d2:1 "A convention of abolitionist states have declared their independence from us as the [SCOPE.sCountry('fsa_scope').GetName]. The Union has been challenged, but will not yield so easily."
+ acw_je_events.1.f1:1 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery — the great material interest of the world.""
+ acw_je_events.1.f2:0 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery - an institution of unparalleled evil that must be abolished.""
+ acw_je_events.1.a:0 "A house divided against itself cannot stand. For the Union!"
+ acw_je_events.1.b:0 "I would rather call our cause one of states' rights."
+
+ acw_je_events.2.t:0 "Reconstructing the Nation"
+ acw_je_events.2.d:0 "While the military fight has finished, the fight for the nation's soul has not. The [SCOPE.GetName] must rebuild itself after being split in two."
+ acw_je_events.2.f:0 ""I do not expect this nation to fall. Welcome or unwelcome, whether it becomes all one thing or all the other, this nation shall cease to be divided in body and soul.""
+ unreconstructed_state:0 "Unreconstructed State"
+
+ acw_je_events.3.t:0 "The Nation, Reconstructed"
+ acw_je_events.3.d:0 "Our nation has rebuilt itself, making something distinct, something new, and most importantly, something united."
+ acw_je_events.3.f:0 ""For all our faults, we have reforged our nation, and have built ourselves a government that shall not perish from this earth.""
+ acw_je_events.3.a:0 "We stand united once more."
+
+ acw_je_events.4.t:0 "The Emancipation Proclamation"
+ acw_je_events.4.d:0 "With the supporters of slavery in rebellion, we can issue a proclamation to free all slaves in rebellious territories. This is the first but most significant step in total abolition."
+ acw_je_events.4.f:0 ""By virtue of the power vested in me in this time of actual armed rebellion, I do order and declare that all persons held as slaves henceforward shall be free. Upon this act, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.""
+ acw_je_events.4.a:0 "By this stroke, we shall save the Union!"
+ acw_je_events.4.b:0 "We refuse to emancipate outside of conventional means."
 
  ig_slavers_happy:0 "Slavers Appeased"
  ig_slavers_mad:0 "Slavers Unappeased"
@@ -168,273 +209,18 @@
 
  dont_lose_dixie_culture:0 "Dixie culture remains a primary culture of our nation."
  reconstruction_progress:0 "Reconstruction progresses towards completion."
+ acw_african_american_culture_complete_tt:0 "Afro-American culture is not discriminated against."
+ acw_african_american_culture:0 "Afro-American culture becomes a primary culture of our nation."
  acw_no_outlaw_crisis:0 "The frontier's outlaw crisis ceases."
+
+ je_acw_countdown_goal:0 "The following must be true for 10 total years:"
+ acw_landowner_revolt:0 "Has a Civil War against the Southern Planters"
+ acw_antislaver_revolt:0 "Has a Civil War while the Southern Planters are in government"
+ acw_will_happen_tt:0 "The American Civil War breaks out"
+ csa_revolt_name:0 "Confederate States of America"
+ csa_revolt_name_adj:0 "Confederate"
+ fsa_revolt_name:0 "Free States of America"
+ fsa_revolt_name_adj:0 "Free American"
 
  je_acw_wild_wild_west_goal:0 "The following must be true for 5 years total:"
  missouri_compromise:0 "The Missouri Compromise"
- 
- #MOD ADDITIONS-------------------------------------------------------------------------------
-  usa_southern_supremacy:0 "Southern Slaver Supremacy"
-  usa_deep_southern_supremacy:0 "Deep Southern Slaver Supremacy"
-  usa_northern_supremacy:0 "Northern Abolitionist Supremacy"
-  usa_border_state:0 "Border Slave State"
-  usa_new_england:0 "New England Abolitionist Supremacy"
-  usa_iron_belt:0 "Midwestern Industrial Supremacy"
-  american_civil_war_name:0 "The American Civil War"
-  acw_lost_civil_war:0 "Lost the American Civil War"
-  usa_reconstructed:0 "America, Reconstructed"
- 
-  je_acw_countdown_goal:0 "The following must be true for 10 total years:"
-  acw_outlawing_slavery:0 "The Federal Government is attempting to outlaw slavery"
-  acw_abolitionist_president:0 "An abolitionist President was elected in 1860"
-  acw_slavery_kept:0 "The Federal Government has made no attempts to outlaw slavery"
-  acw_slaver_president:0 "A slaver President was elected in 1860"
-  acw_will_happen_tt:0 "States may begin declaring secession"
-  csa_revolt_name:0 "Confederate States of America"
-  csa_revolt_name_adj:0 "Confederate"
-  fsa_revolt_name:0 "Free States of America"
-  fsa_revolt_name_adj:0 "Free American"
- 
-  acw_je_events.4.t:0 "The Emancipation Proclamation"
-  acw_je_events.4.d:0 "With the supporters of slavery in rebellion, we can issue a proclamation to free all slaves in rebellious territories. This is the first but  most significant step in total abolition."
-  acw_je_events.4.f:0 ""By virtue of the power vested in me in this time of actual armed rebellion, I do order and declare that all persons held as slaves henceforward shall be free. Upon this act, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.""
-  acw_je_events.4.a:0 "By this stroke, we shall save the Union!"
-  acw_je_events.4.b:0 "We refuse to emancipate outside of conventional means."
-  acw_emancipation.tt:0 "If the Union wins the Civil War, then slaves in all Confederate states will be liberated."
- 
- #ACW Special Events------------------------------
- 
-  acw_special_events_union.tt:0 "This will bolster the Union's war support."
-  acw_special_events_confederacy.tt:0 "This will bolster the Confederacy's war support."
-  acw_special_events_undecided.tt:0 "Control over this state is undecided; thus, both sides will gain war support." 
- 
-  acw_special_events.1.t:0 "The Gettysburg Address"
-  acw_special_events.1.d:0 "Today, President [SCOPE.sCharacter('president').GetFullName] made a short, humble speech at a cemetery dedication ceremony in the small town of Gettysburg, [SCOPE.sState('gettysburg').GetName]. In just a brief 271 words, [SCOPE.sCharacter('president').GetLastName] described the national purpose of the [SCOPE.sCountry('united_states').GetNameNoFlag]; a nation that was "conceived in Liberty, and dedicated to the proposition that all men are created equal.""
-  acw_special_events.1.f:0 ""Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure...\n\n...we here highly resolve that these dead shall not have died in vain — that this nation, under God, shall have a new birth of freedom — and that government of the People, by the People, for the People, shall not perish from the earth.""
-  acw_special_events.1.a:0 "They shall not have died in vain."
-  acw_special_events.1.tt:0 "The Union will gain war support."
- 
-  acw_special_events.2.t:0 "The March to the Sea"
-  acw_special_events.2.d:0 "General [SCOPE.sCharacter('sherman').GetFullName] has torn through the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] countryside, burning towns, tearing up railroads, and destroying infrastructure in a show of dominance and force against the Confederacy. Though some back home have decried his actions as barbaric, many in the government, including President [SCOPE.sCharacter('president').GetFullName], have given their full support to the General, encouraging him to continue the fight."
-  acw_special_events.2.f:0 ""To army corps commanders alone is intrusted the power to destroy mills, houses, cotton-gins, et cetera, and for them this general principle is laid down: In districts and neighborhoods where the army is unmolested no destruction of such property should be permitted; but should guerrillas or bushwhackers molest our march, or should the inhabitants burn bridges, obstruct roads, or otherwise manifest local hostility, then army commanders should order and enforce a devastation more or less relentless according to the measure of such hostility.""
-  acw_special_events.2.a:0 "This is what they deserve."
- 
-  acw_special_events.3.t:0 "The Bloodiest Day in [SCOPE.sCountry('america').GetAdjectiveNoFlag] History"
-  acw_special_events.3.d:0 "The Union Army scored a large victory at the small town of Antietam, [SCOPE.sState('maryland').GetName], after a massive engagement  against the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army. Tens of thousands were killed or wounded in the fighting, but the town stood strong, and the Rebels were driven back. The Union Army continues their march South toward Richmond; but the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army remains strong in spite of the loss. This day will go down as the bloodiest in [SCOPE.sCountry('america').GetAdjectiveNoFlag] history."
-  acw_special_events.3.f:0 ""...every stalk of corn in the northern and greater part of the field was cut as closely as could have been done with a knife, and the Confederates slain lay in rows precisely as they had stood in their ranks a few moments before.""
-  acw_special_events.3.a:0 "We won, but at what cost?"
- 
-  acw_special_events.4.t:0 "The First Battle of Bull Run"
-  acw_special_events.4.d:0 "Union and Rebel troops clashed along the Bull Run tributary in northern [SCOPE.sState('virginia').GetName]. Our forces, naive and unprepared for the true horrors of war, were slaughtered by Rebel gunfire. The Rebels, however, were as inexperienced as us; as such, their losses were high. Both sides eventually retreated from the waterway, fleeing to their respective sides. The fight has been an utter disappointment for our forces, and many in the government are viewing the battle as a Rebel victory."
-  acw_special_events.4.f:0 ""Reserve your fire until they come within 50 yards! Then fire and give them the bayonet! And when you charge, yell like furies!""
-  acw_special_events.4.a:0 "Damn the Rebels!"
- 
-  acw_special_events.5.t:0 "[SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Victory at Chancellorsville"
-  acw_special_events.5.d:0 "The [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army crushed Union forces outside the city of Chancellorsville in [SCOPE.sState('virginia').GetName]. [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] generals split up their army into multiple smaller forces, encircling and crushing the Union Army. This loss, however, does have a caveat; one of the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Generals was accidentally shot and killed by his own men on his return from a reconnaissance mission."
-  acw_special_events.5.f:0 ""My plans are perfect. May God have mercy on the Confederacy, for I will have none." - Union General"
-  acw_special_events.5.a:0 "Damn the rebels! This was disastrous."
- 
-  acw_special_events.6.t:0 "The Battle of Vicksburg"
-  acw_special_events.6.d:0 "The Union Army finally captured the city of Vicksburg in [SCOPE.sState('vicksburg').GetName] after months of sieging the city. The fall of this [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] stronghold has left the Mississippi River entirely in Union hands, solidifying our dominance over the South. Victory is at hand."
-  acw_special_events.6.f:0 ""As our line of battle started and before our yell had died upon the air the Confederate fortifications in our front were completely crowded with the enemy, who with an answering cry of defiance, poured into our ranks, one continuous fire of musketry, and the forts and batteries in our front and both sides, were pouring in to our line, an unceasing fire of shot and shell...""
-  acw_special_events.6.a:0 "A rousing victory!"
-  
-  acw_special_events.7.t:0 "The Emancipation Proclamation"
-  acw_special_events.7.d:0 "President [SCOPE.sCharacter('president').GetFullName] has issued an executive order declaring that all slaves held within the [SCOPE.sCountry('confederacy').GetNameNoFlag] are to be recognized by the Union as free. The Proclamation has galvanized abolitionists and black freedmen in the North, who have broken out into great celebrations. Those in the South, however, have reacted to the Proclamation with disgust, and many have questioned the constitutionality of the Order."
-  acw_special_events.7.f:0 ""I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.... Such persons of suitable condition, will be received into the armed service of the United States.... And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.""
-  acw_special_events.7.a:0 "The fight has shifted from unity to slavery."
-  acw_special_events.7.tt:0 "If the Union wins the American Civil War, all slaves in the Confederacy will be freed."
-  
-  acw_special_events.8.t:0 "The Fight for [SCOPE.sState('kentucky').GetName]"
-  acw_special_events.8.d:0 "Union and Rebel forces have skirmished across southern [SCOPE.sState('kentucky').GetName] as the Rebel army marches forth. Despite our best attempts, many of our troops have been routed in small-scale battles, leaving part of [SCOPE.sState('kentucky').GetName] in the hands of the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army."
-  acw_special_events.8.f:0 ""I think to lose Kentucky is nearly the same as to lose the whole game. Kentucky gone, we cannot hold Missouri, nor Maryland. These all against us, and the job on our hands is too large for us. We would as well consent to separation at once, including the surrender of this capitol.""
-  acw_special_events.8.a:0 "We cannot lose [SCOPE.sState('kentucky').GetName], no matter the cost!"
-  
-  acw_special_events.9.t:0 "The Battle for [SCOPE.sState('arkansas').GetName]"
-  acw_special_events.9.d:0 "Despite our advance into the State of [SCOPE.sState('arkansas').GetName], the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army continues to best our troops in battle. Our only saving grace is the large, mostly uninhabited [SCOPE.sState('arkansas').GetName] countryside, which has allowed our forces to move deeper into the state unchecked. Regardless, the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] still continues to pummel our forces."
-  acw_special_events.9.f:0 ""From the best data in possession of the State authorities it is estimated that [SCOPE.sState('arkansas').GetName] has now 22,000 men in the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Army, which is equal to 37 per cent, of her population fit or subject to military duty—the 8,500 called for making 30,500 out of 60,000, being one-half, or 50 per cent, of her entire military force.""
-  acw_special_events.9.a:0 "This will slow our advance tremendously."
-  
-  acw_special_events.10.t:0 "The Struggle for [SCOPE.sState('missouri').GetName]"
-  acw_special_events.10.d:0 "Union and Rebel troops continue to clash across the fields and hills of [SCOPE.sState('missouri').GetName]. Despite the heavy losses on both sides, control over the state remains rather unknown; however, the devastation caused across the state is immense. The [SCOPE.sState('missouri').GetName] government has raised many troops in an attempt to drive the Rebels from their lands, but it seems unlikely that the Rebel Army will be driven out so easily."
-  acw_special_events.10.f:0 ""The property, real and personal, of all persons in the State of [SCOPE.sState('missouri').GetName] who shall take up arms against the United States, and who shall be directly proven to have taken active part with their enemies in the field, is declared to be confiscated to the public use; and their slaves, if any they have, are hereby declared free.""
-  acw_special_events.10.a:0 "[SCOPE.sState('missouri').GetName] must not fall to the Rebels!"
-  
-  acw_special_events.11.t:0 "Skirmishes Across [SCOPE.sState('oklahoma').GetName]"
-  acw_special_events.11.d:0 "Many skirmishes have been reported between Union and Rebel troops in [SCOPE.sState('oklahoma').GetName]. The battles have drawn the attention of the various Indian tribes who were forcibly moved there many years ago. The warring in the region has pitted tribes against tribes, with some even opting to join the Rebel cause. Some have contacted us, hoping to fight for us in exchange for land and the promise of being left alone. These questions, however, have gone unanswered by the Federal Government."
-  acw_special_events.11.f:0 ""Mr. President, a report: many of the Indian tribes within the [SCOPE.sState('oklahoma').GetName] region have sworn allegiance to the Rebel Army, hoping to win land concessions and peace... It is unlikely the Rebels will agree to these terms, however. Despite this, they continue to raid our troops and supply lines...""
-  acw_special_events.11.a:0 "The Indians must be stopped!"
-  
-  acw_special_events.12.t:0 "The Battle for Gettysburg"
-  acw_special_events.12.d:0 "The bloodiest battle in [SCOPE.sCountry('america').GetAdjectiveNoFlag] history ended today. Just outside the small, humble town of Gettysburg, [SCOPE.sState('pennsylvania').GetName], thousands upon thousands of Union and Rebel troops skirmshed and engaged in brutal hand-to-hand combat for control over the countryside. Tens of thousands died over the course of just three days, but our forces came out on top, forcing the Rebel Army into a massive retreat. The slaughter outside of the town led to many in the Army to break down into tears, with some fighting coming to an end in order to retrieve the dead. This battle has shown many Americans the true and utter destruction of the Civil War, but still the fight rages on."
-  acw_special_events.12.f:0 ""Well, it is all over now. The battle is lost, and many of us are prisoners, many are dead, many wounded, bleeding and dying. Your Soldier lives and mourns, but for you, my darling, he would rather, a million times rather, be back there with his dead, to sleep for all time in an unknown grave.""
-  acw_special_events.12.a:0 "Is this truly a victory...?"
-  
-  acw_special_events.13.t:0 "The Battle of Shiloh"
-  acw_special_events.13.d:0 "Union troops crossed the [SCOPE.sState('tennessee').GetName] border today and engaged multiple Rebel units just outside a small church named Shiloh. The battle was bloody, but eventually Union troops came out on top, forcing the Rebel Army deep into the [SCOPE.sState('tennessee').GetName] countryside. Resistance remains high, but some towns and villages nearby have welcomed Federal forces into their homes. Despite agreeing to secede from the Union just before the Civil War began, [SCOPE.sState('tennessee').GetName] remains one of the most welcoming States our forces have entered. Rebel forces, however, continue to harass our military as the advance toward Memphis and the Mississippi River slows."
-  acw_special_events.13.f:0 ""...the thought that the Confederates could have permanently breached or pulverized the Federal line in an additional hour or so of piecemeal night assaults simply lacks plausibility...""
-  acw_special_events.13.a:0 "[SCOPE.sState('tennessee').GetName] will be ours!"
-  
-  acw_special_events.14.t:0 "Skirmishes in [SCOPE.sState('skirmish_state').GetName]"
-  acw_special_events.14.d:0 "Union and [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] troops have engaged throughout the State of [SCOPE.sState('skirmish_state').GetName], resulting in losses on both sides. Engagements continue to occur across [SCOPE.sState('skirmish_state').GetName], from the deep forests and hills to small villages and towns to her largest cities. Most fights end inconclusively, but reports still come in nonetheless. These battles continue to bolster the [SCOPE.sCountry('confederacy').GetNameNoFlag], who are using any victory as a way to strengthen the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] Peoples' resolve to fight."
-  acw_special_events.14.f:0 ""Our homes were destroyed by the barbaric fighting. We don't want anything to do with this war. We just want to live in peace. Why? Why must we be damned like this? Our beautiful nation, ripped apart...""
-  acw_special_events.14.a:0 "We shall keep an eye on [SCOPE.sState('skirmish_state').GetName]."
-  acw_special_events_skirmish_state.tt:0 "Fights will continue throughout [SCOPE.sState('skirmish_state').GetName]."
-  
- #Growing Sectionalism Events------------------------------
-  acw_sectionalism_startup.1.t:0 "Growing Sectionalism"
-  acw_sectionalism_startup.1.d:0 "The ongoing Slavery Debate is beginning to grow louder and louder. Anti- and pro-slavery power bases have formed in the North and  South, while the slave states caught in between seem unsure of their stance on the issue of slavery."
-  acw_sectionalism_startup.1.f:0 ""I believe this government cannot endure permanently half slave and half free." - Abraham Lincoln" 
-  acw_sectionalism_startup.1.a:0 "This may tear the United States apart."
-  acw_sectionalism_startup.1.tt:0 "The Northern Intelligentsia and Southern Planters will take control of the North and South."
-  
-  #Dredd Scott Case-----------------------------
-  acw_sectionalism_startup.2.t:0 "The Case of Dredd Scott"
-  acw_sectionalism_startup.2.d:0 "The Supreme Court has taken up a case by a slave named Dredd Scott. Mr. Scott has filed a lawsuit against his owner, John Sandford, arguing that his residency in the State of [SCOPE.sState('free_state').GetName] means that he is, by law, a free man. His owner, Mr. Sandford, has argued against this. The lawsuit has climbed up the court system to the Supreme Court, where the trial is currently ongoing. Many in the abolitionist North fear that Scott may be found ineligible to hold a lawsuit, while many in the slave-holding South fear that the Court may rule in Scott's favor."
-  acw_sectionalism_startup.2.f:0 ""Slavery lives in this country not because of any paper Constitution, but in the moral blindness of the American people, who persuade themselves that they are safe, though the rights of others may be struck down." — Frederick Douglass"
-  acw_sectionalism_startup.2.a:0 "The Court finds for Scott."
-  acw_sectionalism_startup.2.b:0 "The Court finds for Sandford."
-  
-  acw_sectionalism_startup.3.t:0 "Dredd Scott Wins!"
-  acw_sectionalism_startup.3.d:0 "The Supreme Court has found that Dredd Scott is, in fact, a free man. The decision has caused a ripple effect throughout the nation, as the Northern Abolitionists celebrate while the Southern Aristocracy has condemned the decision. Dredd Scott and his family have been officially freed from John Sandford."
-  acw_sectionalism_startup.3.f:0 ""It is clear to this court, then, that in the case of Mr. Dredd Scott v. Mr. John Sandford, Mr. Scott is, in the eyes of the Constitution, a free man.""
-  acw_sectionalism_startup.3.a:0 "The Court is clear. Scott is free."
-  
-  acw_sectionalism_startup.4.t:0 "Dredd Scott Loses!"
-  acw_sectionalism_startup.4.d:0 "The Supreme Court has found that Dredd Scott is, in fact, a slave. The decision has caused a ripple effect throughout the nation, as the Southern Aristocracy rejoices while the Northern Abolitionists have condemned the decision. Dredd Scott and his family have been returned to John Sandford. The Court further ruled that black people from all descents, free or enslaved, were not meant to be United States citizens, and thus the Constitution does not apply to them."
-  acw_sectionalism_startup.4.f:0 ""We think ... that black people are not included, and were not intended to be included, under the word "citizens" in the Constitution, and can therefore claim none of the rights and privileges which that instrument provides for and secures to citizens of the United States. On the contrary, they were, at that time of America's founding, considered as a subordinate and inferior class of beings who had been subjugated by the dominant race, and, whether emancipated or not, yet remained subject to their authority, and had no rights or privileges but such as those who held the power and the Government might choose to grant them.""
-  acw_sectionalism_startup.4.a:0 "The Court is clear. Scott is a slave."
-  #----------------------------------------------
-  
-  
- #Secession Crisis Events/Journal Entries-----------------------------
-  acw_je_events.1.t1:0 "The [SCOPE.sState('south_carolina').GetName] Ordinance of Secession"
-  acw_je_events.1.t2:0 "The New York Ordinance of Secession"
-  acw_je_events.1.d1:1 "Today, Congress received a letter of resignation from the Senators and House Representatives of the State of [SCOPE.sState('south_carolina').GetName]. The State, fed up with Federal attempts to outlaw the institution of slavery, has unilaterally declared its secession from the [SCOPE.sCountry('united_states').GetNameNoFlag]. They have demanded the evacuation of Federal troops from their territory, and [SCOPE.sCountry('united_states').GetAdjectiveNoFlag] recognition of their sovereignty."
-  acw_je_events.1.d2:1 "Today, Congress received a letter of resignation from the Senators and House Representatives of the State of New York. The State, fed up with Federal inaction on outlawing the institution of slavery, has unilaterally declared its secession from the [SCOPE.sCountry('united_states').GetNameNoFlag]. They have demanded the evacuation of Federal troops from New York territory, and American recognition of their sovereignty."
-  acw_je_events.1.f1:1 ""The union now subsisting between [SCOPE.sState('south_carolina').GetName] and other States, under the name of 'The [SCOPE.sCountry('united_states').GetNameNoFlag]," is hereby dissolved.' — [SCOPE.sState('south_carolina').GetName] Ordinance of Secession"
-  acw_je_events.1.f2:0 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery — an institution of unparalleled evil that must be abolished.""
-  acw_je_events.1.a:0 "Can they even do that?"
-  acw_je_events.1.tt:0 "This may lead other Deep Southern states to consider secession..."
- 
- #The Southern Secession Crisis Event Chain-----------------------------
-  je_acw_secession_crisis:0 "The Southern Secession Crisis"
-  je_acw_secession_crisis_reason:0 "The United States are in a constitutional crisis. Multiple states in the South have declared their secession from the Union. The Congress has already received multiple Congressional letters of resignation, and political ties are already being severed between the Rebellious and Loyalist States."
-  je_acw_secession_crisis_ongoing_tt:0 "Union and Confederate troops have skirmished"
-  je_acw_secession_crisis_over_tt:0 "The American Civil War will begin"
- 
-  acw_secession_crisis.1.t:0 "The Montgomery Convention"
-  acw_secession_crisis.1.d:0 "Multiple Deep Southern States have joined [SCOPE.sState('south_carolina').GetName] in unilaterally declaring independence from the [SCOPE.sCountry('united_states').GetNameNoFlag]. After a convention in Montgomery, [SCOPE.sState('alabama').GetName], the States have all made clear their reason for secession: the institution of slavery, and our attempts to outlaw it."
-  acw_secession_crisis.1.f:0 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery — the great material interest of the world." — [SCOPE.sState('mississippi').GetName] Ordinance of Secession"
-  acw_secession_crisis.1.a:0 "This is a constitutional crisis!"
-  acw_secession_crisis.1.tt:0 "This may lead to conflict between the Union and Confederate troops stationed in the Deep South."
- 
-  acw_secession_crisis.2.t:0 "A House Divided"
-  acw_secession_crisis.2.d:0 "It is over. All attempts at compromise, the efforts of decades of public discourse on the issue of slavery, have failed. The Southern Secession Crisis has come to a head. Four more States have declared their secession from the Federal Union and joined States already in rebellion as the [SCOPE.sCountry('confederate_states').GetNameNoFlag]. President [SCOPE.sCharacter('president').GetFullName] has declared a state of insurrection in the United States and put out the call for over seventy thousand men. The American Civil War has begun."
-  acw_secession_crisis.2.f:0 ""...and the Federal Government having perverted said powers, not only to the injury of the people of Virginia, but to the oppression of the Southern slaveholding States." — [SCOPE.sState('virginia').GetName] Ordinance of Secession"
-  acw_secession_crisis.2.a:0 "We will tolerate this Southern treason no longer! For the Union!"
-  acw_secession_crisis.2.b:0 "We will tolerate this Northern aggression no longer! For the Confederacy!"
-  acw_secession_crisis.2.tt:0 "This WILL begin the American Civil War IMMEDIATELY!"
- 
-  acw_secession_crisis.3.t:0 "The Firing on Fort [SCOPE.sCharacter('fort_sumter').GetLastName]"
-  acw_secession_crisis.3.d:0 "This morning, President [SCOPE.sCharacter('president').GetFullName] received a report from Federal troops in [SCOPE.sState('south_carolina').GetName]: Fort [SCOPE.sCharacter('fort_sumter').GetLastName], located in Charleston Harbor, was bombarded by [SCOPE.sState('south_carolina').GetName] militiamen after Federal forces refused to surrender the fort. The President and the Congress, as well as the general American populace, are outraged at the news. Tensions seem to have reached the boiling point."
-  acw_secession_crisis.3.f:0 ""There was a faint whistling sound that cut through the dead of night. It grew louder and louder until, suddenly, the walls exploded around me. The ceiling partially collapsed in, crushing the men unfortunate enough to be caught underneath it. More shouts came down from the barracks, followed by the distinct whistling of more artillery shells. It felt like the world was ending.""
-  acw_secession_crisis.3.a:0 "This is absolutely outrageous! Mobilize the Army!"
-  acw_secession_crisis.3.tt:0 "Federal response to this may result in more States seceding..."
- 
-  acw_secession_crisis.4.t:0 "The Wheeling Convention"
-  acw_secession_crisis.4.d:0 "A convention of pro-Union delegates in Wheeling, Virginia, have proclaimed secession from the [SCOPE.sCountry('confederacy').GetNameNoFlag]. They have approached President [SCOPE.sCharacter('president').GetFullName] and the Congress with the hopes of being admitted as the State of [SCOPE.sState('west_virginia').GetName]. Their position near the [SCOPE.sCountry('confederacy').GetAdjectiveNoFlag] capital of Richmond would prove invaluable to our war effort."
-  acw_secession_crisis.4.f:0 ""We wish not to be seen as enemies of the Union. Our voices were ignored and our beliefs were exiled by those in Richmond. Our allegiance is to the [SCOPE.sCountry('america').GetNameNoFlag].""
-  acw_secession_crisis.4.a.tt:0 "West Virginia will be admitted to the Union and recognized as the legitimate government of Virginia."
-  acw_secession_crisis.4.b.tt:0 "West Virginia will remain a part of Virginia and the Confederacy."
-  acw_secession_crisis.4.a:0 "We accept West Virginia's declaration."
-  acw_secession_crisis.4.b:0 "They are all traitors and shall be treated as such."
- 
- #The Northern Secession Crisis Event Chain-----------------------------
-  je_acw_northern_secession_crisis:0 "The Northern Secession Crisis"
-  je_acw_northern_secession_crisis_reason:0 "The United States are in a constitutional crisis. Multiple states in the North have declared their secession from the Union over the institution of slavery. The Congress has already received multiple Congressional letters of resignation, and political ties are already being severed between the Rebellious and Loyalist States."
-  je_acw_northern_secession_crisis_ongoing_tt:0 "Federal and Free American troops have skirmished"
-  je_acw_northern_secession_crisis_over_tt:0 "The American Civil War will begin"
- 
-  acw_secession_crisis.5.t:0 "The Boston Convention"
-  acw_secession_crisis.5.d:0 "The various New England States have joined New York in unilaterally declaring independence from the United States of America. After a convention in Boston, Massachussetts, the New English States have made clear their reason for secession: the institution of slavery, and our refusal to outlaw it."
-  acw_secession_crisis.5.f:0 ""AN ORDINANCE to dissolve the union between the State of Massachussetts and other States united with her under the compact entitled 'The Constitution of the United States of America.' — Massachussetts Ordinance of Secession"
-  acw_secession_crisis.5.a:0 "This is a constitutional crisis!"
-  acw_secession_crisis.5.tt:0 "This may lead to conflict between the Federal and Free American troops stationed in New England."
-  acw_je_events.1.tt:0 "This may lead other Northern states to consider secession..."
- 
-  acw_secession_crisis.6.t:0 "The Chicago Convention"
-  acw_secession_crisis.6.d:0 "The North-Midwestern States have joined their northeastern compatriots in unilaterally declaring independence from the United States of America. Blaming the recent skirmishes between Federal and Free American troops, these States have been accepted into the so-called Free States of America as full-fledged states."
-  acw_secession_crisis.6.f:0 ""...and the Federal Government having failed to hear the pleas of the North, not only to the injury of the people of Michigan, but to the oppression of the Northern abolitionist States." — Michigan Ordinance of Secession"
-  acw_secession_crisis.6.a:0 "We will tolerate this Northern treason no longer! To War!"
-  acw_secession_crisis.6.tt:0 "The American Civil War will begin in earnest."
- 
-  acw_secession_crisis.7.t:0 "The Firing on Fort [SCOPE.sCharacter('fort_sumter').GetLastName]"
-  acw_secession_crisis.7.d:0 "This morning, President [SCOPE.sCharacter('president').GetFullName] received a report from Federal troops in New York: Fort [SCOPE.sCharacter('fort_sumter').GetLastName], located in New York Harbor, was bombarded by Free American militiamen after Federal forces refused to surrender the fort. The President and the Congress, as well as the general American populace, are outraged at the news. Tensions seem to have reached the boiling point."
-  acw_secession_crisis.7.f:0 ""There was a faint whistling sound that cut through the dead of night. It grew louder and louder until, suddenly, the walls exploded around me. The ceiling partially collapsed in, crushing the men unfortunate enough to be caught underneath it. More shouts came down from the barracks, followed by the distinct whistling of more artillery shells. It felt like the world was ending.""
-  acw_secession_crisis.7.a:0 "This is absolutely outrageous! Mobilize the Army!"
-  acw_secession_crisis.7.tt:0 "Federal response to this may result in more States seceding..."
- 
-  acw_secession_crisis.7.t:0 "The Wheeling Convention"
-  acw_secession_crisis.7.d:0 "A convention of pro-Free-American delegates in Wheeling, Virginia, have proclaimed secession from the United States of America. They have approached President [SCOPE.sCharacter('president').GetFullName] and the Free American Congress with the hopes of being admitted as the State of West Virginia. Their position near the Federal capital of Washington would prove invaluable to our war effort."
-  acw_secession_crisis.7.f:0 ""We wish not to be seen as enemies of the North. Our voices were ignored and our beliefs were exiled by those in Washington. Our allegiance is to the Free States of America.""
-  acw_secession_crisis.7.a.tt:0 "West Virginia will be admitted to the Free American Union and recognized as the legitimate government of Virginia."
-  acw_secession_crisis.7.b.tt:0 "West Virginia will remain part of the United States."
-  acw_secession_crisis.7.a:0 "We accept West Virginia's declaration."
-  acw_secession_crisis.7.b:0 "They are all tyrants and shall be treated as such."
- 
- #American Civil War Peace Treaty Events/Journal--------------------------
-  acw_peace_treaty.1.t:0 "Treaty at the Appomattox Court House"
-  acw_peace_treaty.1.d:0 "The [SCOPE.sCountry('confederacy').GetNameNoFlag] have surrendered to us completely. With the Confederate capital under siege and the majority of their army in our prison camps, President [SCOPE.sCharacter('president').GetFullName] and Confederate President [SCOPE.sCharacter('confederate_president').GetFullName] have met at a court house in Appomattox, Virginia, to discuss surrender. The Southern Rebellion has agreed to immediately cease hostilities and allow itself to be annexed by the Union."
-  acw_peace_treaty.1.f:0 ""We are beaten; we have lost. Our men lay dead in mass graves. Our navy lay at the bottom of the sea. Our economy lay in ruin. There is no hope left for us. We will fight no more.""
-  acw_peace_treaty.1.a:0 "After all this bloodshed, the American Civil War is over."
-  acw_peace_treaty.1.tt:0 "The American Civil War will end and the South will be occupied by the Union."
- 
-  acw_peace_treaty.2.t:0 "The Treaty of Washington"
-  acw_peace_treaty.2.d:0 "The [SCOPE.sCountry('confederacy').GetNameNoFlag] have beaten us completely. With our capital under siege and the majority of our army in their prison camps, President [SCOPE.sCharacter('president').GetFullName] and Confederate President [SCOPE.sCharacter('confederate_president').GetFullName] have met at New York City to discuss conditional surrender. The South has pressed its independence on us, and we have no choice but to accept their demands."
-  acw_peace_treaty.2.f:0 ""BE IT KNOWN — the Government of the United States of America henceforth shall recognize the existence and independence of the Confederate States of America, and respect her territorial integrity forevermore...\n\nThe Confederate States Government has agreed to aid the United States Government in the evacuation of all United States personnel from all Confederate territory...\n\nThe United States and Confederate States shall not owe any money to each other in any form, including war material, industrial material, or financial compensation...""
-  acw_peace_treaty.2.a:0 "A humiliating and embarrassing defeat."
-  acw_peace_treaty.2.tt:0 "The Confederacy will keep its current borders, but gain claims on all Dixie homelands."
- 
-  acw_peace_treaty.3.t:0 "The Treaty of New York"
- 
-  acw_peace_treaty.4.t:0 "The Treaty of Washington"
- 
- #Reconstruction Events/Journal Entries-------------------------
-  je_acw_war:0 "The American Civil War"
-  je_acw_war_reason:0 "The War Between the States is upon us. The sectionalism that has been dividing the nation for decades has reached the boiling point. The United States of America are now engaged with the Rebellious States. Hundreds of thousands are picking up arms for their homes. For the Union!"
-  acw_war_tt_complete:0 "The United States won the American Civil War"
-  acw_rebel_victory:0 "The United States lost the American Civil War"
- 
-  acw_reconstruction.1.t:0 "Reconstructing the Nation"
-  acw_reconstruction.1.d:0 "While the American Civil War may be over, the fight for the nation's soul is not. The Union was challenged by radical separatists, but it has not disintegrated. With the Constitutional Crisis at an end and the last pockets of military resistance conquered, it is time for the [SCOPE.sCountry('united_states').GetNameNoFlag] to reconstruct herself in a new image."
-  acw_reconstruction.1.f:0 ""I do not expect this nation to fall. Welcome or unwelcome, whether it becomes all one thing or all the other, this nation shall cease to be divided in body and soul.""
-  acw_reconstruction.1.a:0 "Our wounds must heal."
-  acw_reconstruction.1.b:0 "The Union must be rebuilt for all."
-  acw_reconstruction_emancipation.tt:0 "The slaves held in all former Confederate territories will be freed."
- 
-  je_acw_reconstruction:0 "American Reconstruction"
-  je_acw_reconstruction_status:1 "Rebuild the nation after the destruction of the American Civil War."
-  je_acw_reconstruction_reason:0 "The Civil War has ended, and the destruction left in its wake is massive. The Loyalist States have defeated the Rebels and declared their intention to reintegrate them into the Union."
-  je_acw_reconstruction_goal:0 "The formerly-rebellious States have been reintegrated fully into the Union."
- 
-  je_acw_reincorporate:0 "Readmit the Secessionist States"
-  je_acw_reincorporate_status:0 "Bring the former secessionist states back into the fold as fully-fledged incorporated states once more."
-  je_acw_reincorporate_reason:0 "Readmitting the rebellious states back into the Union is essential for restoring the shaken spirit of the nation, and may help establish new powerbases for the government."
- 
-  je_acw_equality:0 "The Civil War Amendments"
-  je_acw_equality_status:0 "In order to create a system that reconizes all men, from the North and South, Black or White, as true equals in this nation of ours, we must pass a series of constitutional amendments that ensure racial equality."
-  je_acw_equality_reason:0 "This nation fought a war over deep issues that were papered over for generations until the problems became too big to ignore. We must avoid a repeat of this disaster, and tackle the problems head-on lest they are left to fester for another century. In order to do so, we must constitutionally ban slavery and ensure the former slave population are no longer discriminated in our country."
-  acw_african_american_culture_complete_tt:0 "The Civil Rights Amendments have been passed."
-  acw_african_american_culture:0 "Afro-American culture becomes a primary culture of our nation."
- 
-  je_acw_wild_wild_west:0 "The Wild, Wild West"
-  je_acw_wild_wild_west_reason:0 "With the Federal Government entirely focused on defeating the rebellious States during the Civil War, our western territories became lawless lands with almost no influence from the central government. The warring in the East left the West in a state of absolute chaos; as such, it is time we focus our efforts towards quelling the chaos in the West."
- 
-  unreconstructed_state:0 "Unreconstructed State"
-
-  acw_reconstruction.2.t:0 "The Nation, Reconstructed"
-  acw_reconstruction.2.d:0 "Our nation has rebuilt itself, making something distinct, something new, and most importantly, something united. It is time for America to forge a new path, united under the Stars and Stripes forever. The [SCOPE.sCountry('united_states').GetNameNoFlag] has emerged from her chaotic civil war as a more united, centralized nation. It is time, now, to pick up the fallen pieces of our hegemony, and reclaim our place on the global stage."
-  acw_reconstruction.2.f:0 ""For all our faults, we have reforged our nation, and have built ourselves a government that shall not perish from this earth.""
-  acw_reconstruction.2.a:0 "We stand united once more."
-  usa_reconstruction_sectionalism_gone.tt:0 "The political and regional sectionalism that have dominated American politics will peter out."

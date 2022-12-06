@@ -298,7 +298,7 @@ german_unification.3 = {
 			dna = dna_otto_von_bismarck
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Otto_von_Bismarck
 				direct
 				cautious
 			}
@@ -325,7 +325,7 @@ german_unification.3 = {
 				birth_date = 1815.4.1
 				ideology = ideology_royalist
 				traits = {
-					historical_figures
+					concept_wikipedia_Otto_von_Bismarck
 					direct
 					cautious
 				}
@@ -355,7 +355,7 @@ german_unification.3 = {
 				birth_date = 1815.4.1
 				ideology = ideology_royalist
 				traits = {
-					historical_figures
+					concept_wikipedia_Otto_von_Bismarck
 					direct
 					cautious
 				}

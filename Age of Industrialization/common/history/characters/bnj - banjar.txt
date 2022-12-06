@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Adam_Al_Watsiq_Billah_Banjar
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Tamjidullah_al-Watsiqu_Billah_Banjar
 			}
 		}
 	}

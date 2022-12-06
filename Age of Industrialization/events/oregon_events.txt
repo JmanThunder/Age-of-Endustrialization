@@ -27,6 +27,7 @@ oregon.2 = {
 		s:STATE_WASHINGTON = {
 			random_scope_state = {
 				limit = {
+					exists = c:GBR
 					owner = {
 						OR = {
 							c:GBR = THIS
@@ -40,6 +41,7 @@ oregon.2 = {
 		s:STATE_IDAHO = {
 			random_scope_state = {
 				limit = {
+					exists = c:GBR
 					owner = {
 						OR = {
 							c:GBR = THIS
@@ -53,6 +55,7 @@ oregon.2 = {
 		s:STATE_OREGON = {
 			random_scope_state = {
 				limit = {
+					exists = c:GBR
 					owner = {
 						OR = {
 							c:GBR = THIS
@@ -63,9 +66,24 @@ oregon.2 = {
 				save_scope_as = oregon_scope
 			}
 		}
+		s:STATE_WYOMING = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				save_scope_as = wyoming_scope
+			}
+		}
 		s:STATE_MONTANA = {
 			random_scope_state = {
 				limit = {
+					exists = c:GBR
 					owner = {
 						OR = {
 							c:GBR = THIS
@@ -163,6 +181,20 @@ oregon.2 = {
 				}
 			}
 			s:STATE_OREGON = { #USA Gets Oregon
+				random_scope_state = {
+					limit = {
+						exists = c:GBR
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+					set_state_owner = c:USA
+				}
+			}
+			s:STATE_WYOMING = {
 				random_scope_state = {
 					limit = {
 						exists = c:GBR
@@ -375,6 +407,20 @@ oregon.3 = { #USA Event if GBR accepts treaty
 				save_scope_as = oregon_scope
 			}
 		}
+		s:STATE_WYOMING = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				save_scope_as = wyoming_scope
+			}
+		}
 		s:STATE_MONTANA = {
 			random_scope_state = {
 				limit = {
@@ -500,8 +546,8 @@ oregon.3 = { #USA Event if GBR accepts treaty
 			}
 		}
 		s:STATE_MONTANA = { #USA Gets Montana - edge case when HBC/Canada annexes Niitsitapi
-			add_homeland = yankee
-			random_scope_state = {
+		add_homeland = yankee
+		random_scope_state = {
 				limit = {
 					exists = c:GBR
 					owner = {
@@ -626,10 +672,6 @@ oregon.3 = { #USA Event if GBR accepts treaty
 			add_claim = ROOT
 			add_homeland = yankee
 		}
-		s:STATE_WYOMING = {
-			add_claim = ROOT
-			add_homeland = yankee
-		}
 		s:STATE_WASHINGTON = {
 			add_claim = ROOT
 			add_homeland = yankee
@@ -639,15 +681,18 @@ oregon.3 = { #USA Event if GBR accepts treaty
 			add_homeland = yankee
 		}
 		s:STATE_MONTANA = { #Edge case for when HBC or CAN annexes Niitsitapi
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
+			if = {
+				limit = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
 					}
 				}
 				add_claim = ROOT
-				add_homeland = yankee
 			}
 		}
 
@@ -714,6 +759,14 @@ oregon.4 = { #USA event if GBR refuses treaty
 			add_homeland = yankee
 		}
 		s:STATE_WASHINGTON = {
+			add_claim = ROOT
+			add_homeland = yankee
+		}
+		s:STATE_WYOMING = {
+			add_claim = ROOT
+			add_homeland = yankee
+		}
+		s:STATE_MONTANA = {
 			add_claim = ROOT
 			add_homeland = yankee
 		}

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Kinfu_Gojjam
 				cautious
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Walda_Tekle_Gojjam
 				reserved
 			}
 		}

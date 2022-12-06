@@ -10,7 +10,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Nicolai_Krog
 				brave
 			}
 		}
@@ -21,7 +21,7 @@
 			last_name = Wedel_Jarlsberg
 			age = 55
 			traits = {
-				historical_figures
+				concept_wikipedia_Ferdinand_Wedel_Jarlsberg
 			}
 		}
 		
@@ -31,7 +31,7 @@
 			 last_name = Konow
 			 age = 40
 			 traits = {
-			 	historical_figures
+			 	concept_wikipedia_Thomas_Konow
 			 	meticulous
 			}
 		 }

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Malikis_Solikin_Pakubuwana
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Mustojo_Hamengkubuwono
 			}
 		}
 	}

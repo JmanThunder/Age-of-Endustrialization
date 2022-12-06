@@ -10,19 +10,18 @@ ecchi_kor_myeongseong_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_myeongseong
     birth_date = 1851.11.17
-    traits = { historical_figures pious persistent ambitious }
+    traits = { pious persistent ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:KOR
             this = c:KOR
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_landowners
         }
         earliest_usage_date = 1866.1.1
         latest_usage_date = 1895.10.8
-        chance = 75
+        chance = 90
     }
 }
 
@@ -36,7 +35,7 @@ ecchi_kor_daewongun_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_daewongun
     birth_date = 1820.12.21
-    traits = { historical_figures cruel cautious romantic experienced_political_operator }
+    traits = { cruel cautious romantic experienced_political_operator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:KOR
@@ -51,7 +50,7 @@ ecchi_kor_daewongun_character_template = {
         }
         earliest_usage_date = 1864.1.1
         latest_usage_date = 1898.2.22
-        chance = 75
+        chance = 90
     }
 }
 
@@ -65,7 +64,7 @@ ecchi_kor_jeon_bongjun_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_jeon_bongjun
     birth_date = 1855.1.10
-    traits = { historical_figures pious romantic brave }
+    traits = { pious romantic brave }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:KOR
@@ -80,7 +79,7 @@ ecchi_kor_jeon_bongjun_character_template = {
         }
         earliest_usage_date = 1890.1.1
         latest_usage_date = 1895.4.24
-        chance = 75
+        chance = 90
     }
 }
 
@@ -94,7 +93,7 @@ ecchi_kor_son_byonghi_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_song_byong_hi
     birth_date = 1861.4.8
-    traits = { historical_figures pious innovative }
+    traits = { pious innovative }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:KOR
@@ -109,6 +108,6 @@ ecchi_kor_son_byonghi_character_template = {
         }
         earliest_usage_date = 1890.1.1
         latest_usage_date = 1922.5.19
-        chance = 75
+        chance = 90
     }
 }

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Milos_Obrenovic
 				persistent
 			}
 			on_created = {
@@ -27,7 +27,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Milan_Obrenovic
 				reserved
 				# condition: Tuberculosis
 			}
@@ -39,7 +39,7 @@
 			last_name = Karadordevic
 			age = 30
 			traits = {
-				historical_figures
+				concept_wikipedia_Prince_Aleksandar_Karadordevic
 		#		openminded
 		#		gifted_administrator
 			}

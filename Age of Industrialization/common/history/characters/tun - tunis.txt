@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Mustafa_al_Husaini
 				reserved
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Ahmad_al_Husaini
 				ambitious
 			}
 		}

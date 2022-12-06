@@ -10,7 +10,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate # 
 			traits = {
-				historical_figures
+				concept_wikipedia_Jose_Maria_Vargas
 				meticulous
 			}
 		}

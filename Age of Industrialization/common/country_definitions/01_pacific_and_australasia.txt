@@ -133,6 +133,17 @@ MCR = { # Micronesia
 	capital = STATE_EAST_MICRONESIA
 }
 
+WMC = { # West Micronesia
+	color = { 54 102 190}
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { micronesian }
+	capital = STATE_WEST_MICRONESIA
+}
+
 
 VNT = { # Vanuatu
 	color = { 37 214 50 }

@@ -20,7 +20,7 @@ raj.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	minor_left_icon = root
+	minor_left_icon = c:GBR
 	minor_right_icon = c:BIC
 
 	trigger = {
@@ -31,7 +31,7 @@ raj.1 = {
 			save_scope_as = company_country
 			trigger_event = { id = raj.7 days = 0 popup = yes }
 		}
-		root = {
+		c:GBR = {
 			save_scope_as = british_raj_country
 		}
 		set_variable = {
@@ -313,10 +313,11 @@ raj.4 = {
 		}
 		if = {
 			limit = {
-				is_subject_of = root
+				exists = c:GBR
+				is_subject_of = c:GBR
 			}
 			change_relations = {
-				country = root
+				country = c:GBR
 				value = -20
 			}
 		}
@@ -582,6 +583,7 @@ raj.6 = {
 				interest_group = ig_armed_forces
 				ideology = ideology_jingoist_leader
 				traits = { 
+					concept_wikipedia_Bakht_Khan
 					stalwart_defender 
 					experienced_artillery_commander 
 				}
@@ -605,6 +607,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = { 
+						concept_wikipedia_Mirza_Mughal_Gurkani
 						resupply_commander 
 						basic_political_operator 
 					}
@@ -620,6 +623,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = { 
+						concept_wikipedia_Bahadur_Shah_Gurkani
 						reserved 
 						romantic 
 						expensive_tastes
@@ -636,6 +640,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = {
+						concept_wikipedia_Mirza_Fakhru_Gurkani
 					}
 				}
 			}
@@ -663,6 +668,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = { 
+						concept_wikipedia_Mirza_Mughal_Gurkani
 						resupply_commander 
 						basic_political_operator 
 					}
@@ -678,6 +684,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = { 
+						concept_wikipedia_Bahadur_Shah_Gurkani
 						reserved 
 						romantic 
 						expensive_tastes
@@ -694,6 +701,7 @@ raj.6 = {
 					interest_group = ig_landowners
 					ideology = ideology_royalist
 					traits = { 
+						concept_wikipedia_Mirza_Fakhru_Gurkani
 					}
 				}
 			}
@@ -721,7 +729,7 @@ raj.7 = {
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
-	minor_left_icon = root
+	minor_left_icon = c:GBR
 	minor_right_icon = c:BIC
 
 	trigger = {
@@ -731,7 +739,7 @@ raj.7 = {
 		c:BIC = {
 			save_scope_as = company_country
 		}
-		root = {
+		c:GBR = {
 			save_scope_as = british_raj_country
 		}
 	}
@@ -742,7 +750,7 @@ raj.7 = {
 		custom_tooltip = activate_british_raj
 		custom_tooltip = doctrine_of_lapse_disabled
 		show_as_tooltip = {
-			root = {
+			c:GBR = {
 				create_diplomatic_pact = {
 					country = c:BIC
 					type = puppet

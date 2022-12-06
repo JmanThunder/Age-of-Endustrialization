@@ -1,0 +1,41 @@
+Jman's todo list:
+	1.) Miscellaneous
+		-Lighten the modifier of discrimination{DONE}
+		-Nerf qualifications(+ buff discrimination's effect on that){DONE}
+		-Remove Standard of Living buff to litteracy{DONE}
+		-Recolor Nations/Cultures to V2 and EU4 colors(Cultures left)
+		-Look into Religous conversions and migrations{DONE} 
+
+	2.) Mapping
+		-Attempt to fix, the Netherlands, Vancouver and Prussia{MOSTLY DONE}
+		-Add PLC Borders if MaTi wants it 
+		-Map rework (states, politcal borders, and pops):
+			+ Canada (Light)
+			+ Northern Mexico/Western US (Medium to Heavy)
+			+ Miskito Kingdom (Light)
+			+ Guyana/Grand Colombia (Light to Medium)
+			+ South America (Light)
+			+ Western Europe (Mostly fine probably just more states)
+			+ Austria and Ottoman Europe (Medium)
+			+ North Africa (Light)
+			+ Ethiopia and the Horn (Medium)
+			+ Rest of Africa (Change how colonization work)
+			+ Arabia (Medium to Heavy)
+			+ Iran and Central Asia (Heavy)
+			+ China (Sub-States)
+			+ Japan (HPM-style??? idk)
+
+	3.) Flava 
+		-Port base game Victoria II events to Victoria 3
+		-London treaty for Belgium
+		-Scramble for Africa 
+		-French population stagnation 
+		-World wide culture rework(suffering)
+		-Finish Haitian Flavor
+		-Citadelle...
+
+	4.) Mechanics
+		-Senate system?
+		-Colonial states 
+		-National Values 
+		-Artisans stuff

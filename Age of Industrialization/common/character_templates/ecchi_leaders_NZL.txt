@@ -10,7 +10,7 @@ ecchi_nzl_sewell_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_henry_sewell
     birth_date = 1807.9.7
-    traits = { historical_figures romantic persistent basic_colonial_administrator }
+    traits = { romantic persistent basic_colonial_administrator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NZL
@@ -25,7 +25,7 @@ ecchi_nzl_sewell_character_template = {
         }
         earliest_usage_date = 1850.1.1
         latest_usage_date = 1879.5.14
-        chance = 75
+        chance = 90
     }
 }
 
@@ -39,7 +39,7 @@ ecchi_nzl_fox_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_william_fox
     birth_date = 1812.1.20
-    traits = { historical_figures innovative bigoted wrathful direct }
+    traits = { innovative bigoted wrathful direct }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NZL
@@ -54,7 +54,7 @@ ecchi_nzl_fox_character_template = {
         }
         earliest_usage_date = 1855.1.1
         latest_usage_date = 1893.6.23
-        chance = 75
+        chance = 90
     }
 }
 
@@ -68,7 +68,7 @@ ecchi_nzl_savage_character_template = {
     interest_group = ig_trade_unions
 	dna = ecchi_dna_michael_joseph_savage
     birth_date = 1872.3.23
-    traits = { historical_figures cancer romantic charismatic experienced_political_operator }
+    traits = { cancer romantic charismatic experienced_political_operator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NZL
@@ -83,7 +83,7 @@ ecchi_nzl_savage_character_template = {
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1940.3.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -97,7 +97,7 @@ ecchi_nzl_seddon_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_richard_seddon
     birth_date = 1845.6.22
-    traits = { historical_figures charismatic demagogue direct ambitious }
+    traits = { charismatic demagogue direct ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NZL
@@ -112,7 +112,7 @@ ecchi_nzl_seddon_character_template = {
         }
         earliest_usage_date = 1878.1.1
         latest_usage_date = 1906.6.10
-        chance = 75
+        chance = 90
     }
 }
 
@@ -126,7 +126,7 @@ ecchi_nzl_ballance_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_john_ballance
     birth_date = 1839.3.27
-    traits = { historical_figures kidney_stones experienced_political_operator }
+    traits = { kidney_stones experienced_political_operator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NZL
@@ -142,7 +142,7 @@ ecchi_nzl_ballance_character_template = {
         }
         earliest_usage_date = 1875.1.1
         latest_usage_date = 1893.4.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -158,7 +158,7 @@ ecchi_aot_heke_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_hone_heke
     birth_date = 1807.8.7
-    traits = { historical_figures experienced_defensive_strategist traditionalist_commander }
+    traits = { experienced_defensive_strategist traditionalist_commander }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -190,7 +190,7 @@ ecchi_aot_heke_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1850.8.7
-        chance = 75
+        chance = 90
     }
 }
 
@@ -204,7 +204,7 @@ ecchi_aot_kawiti_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_te_ruki_kawiti
     birth_date = 1775.5.5
-    traits = { historical_figures basic_defensive_strategist popular_commander }
+    traits = { basic_defensive_strategist popular_commander }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -231,7 +231,7 @@ ecchi_aot_kawiti_character_template = {
         role = general
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1854.5.5
-        chance = 75
+        chance = 90
     }
 }
 
@@ -245,7 +245,7 @@ ecchi_aot_o_rongomai_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_te_whiti_o_rongomai
     birth_date = 1832.11.18
-    traits = { historical_figures pious meticulous persistent }
+    traits = { pious meticulous persistent }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -277,7 +277,7 @@ ecchi_aot_o_rongomai_character_template = {
         }
         earliest_usage_date = 1867.1.1
         latest_usage_date = 1907.11.18
-        chance = 75
+        chance = 90
     }
 }
 
@@ -293,7 +293,7 @@ ecchi_aot_solomon_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_tommy_solomon
     birth_date = 1884.5.7
-    traits = { historical_figures reserved cautious }
+    traits = { reserved cautious }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -317,11 +317,10 @@ ecchi_aot_solomon_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1933.3.19
-        chance = 75
+        chance = 90
     }
 }

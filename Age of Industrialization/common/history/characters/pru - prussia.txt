@@ -12,8 +12,8 @@
 			interest_group = ig_armed_forces
 			ideology= ideology_royalist
 			traits = {
+				concept_wikipedia_Friedrich_Wilhelm1_von_Hohenzollern
 				direct
-				historical_figures
 			}
 			on_created = {
 				set_variable = is_married
@@ -30,8 +30,8 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
+				concept_wikipedia_Friedrich_Wilhelm2_von_Hohenzollern
 				reserved
-				historical_figures
 			}
 			on_created = {
 				set_variable = is_married
@@ -48,8 +48,8 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
+				concept_wikipedia_Gustav_von_Rauch
 				persistent
-				historical_figures
 			}
 		}
 
@@ -62,8 +62,8 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = {
+				concept_wikipedia_Friedrich_Ancillon
 				imperious
-				historical_figures
 			}
 		}
 
@@ -77,8 +77,8 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
+				concept_wikipedia_Carl_Heinrich_von_Wylich_und_Lottum
 				ambitious
-				historical_figures
 			}
 		}
 
@@ -92,8 +92,8 @@
 			interest_group = ig_devout
 			ideology = ideology_royalist
 			traits = {
+				concept_wikipedia_Ludwig_Gustav_von_Thile
 				tactful
-				historical_figures
 			}
 		}
 
@@ -107,8 +107,8 @@
 			interest_group = ig_industrialists
 			ideology = ideology_moderate
 			traits = {
+				concept_wikipedia_August_von_der_Heydt
 				persistent
-				historical_figures
 			}
 		}
 		
@@ -121,10 +121,10 @@
 			age = 36
 			dna = dna_moltke_elder
 			traits = {
+				concept_wikipedia_Helmuth1_von_Moltke
 				expert_offensive_planner
 				resupply_commander
 				reserved
-				historical_figures
 			}
 		}
 		
@@ -137,10 +137,21 @@
 			hq = region_poland
 			commander_rank = commander_rank_3
 			traits = {
-				historical_figures
+				concept_wikipedia_Hans_Ernst_Karl_von_Zieten
 				plains_commander
 			}
 		}
+		
+		#create_character = {
+		#	is_general = yes
+		#	first_name = Hermann
+		#	last_name = von_Boyen
+		#	age = 65
+		#	traits = {
+		#	
+		#	}
+		#}
+		# In retirement at game start
 		
 		create_character = {
 			is_general = yes
@@ -151,11 +162,99 @@
 			age = 62
 			dna = dna_von_krauseneck
 			traits = {
+				concept_wikipedia_Wilhelm_von_Krauseneck
 				reserved
-				historical_figures
 			}
 		}
 		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Karl_Freiherr
+	#		last_name = von_Muffling
+	#		age = 61
+	#		traits = {
+	#			surveyor
+	#		}
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = August
+	#		last_name = von_Colomb
+	#		age = 61
+	#		traits = {
+	#			imperious
+	#		}
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Karl
+	#		last_name = von_Grolman
+	#		age = 59
+	#		traits = {
+	#			brave
+	#		}
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = Ruhle
+	#		last_name = von_Lilienstern
+	#		age = 56
+	#		traits = {
+	#			romantic
+	#		}
+	#	}
+		
+		
+#		create_character = {
+#			is_general = yes
+#			first_name = Friedrich_Graf
+#			last_name = von_Wrangel
+#			age = 52
+#			traits = {
+#				persistent
+#			}
+#
+#		}
+		
+#		create_character = {
+#			is_general = yes
+#			first_name = August_Wilhelm
+#			last_name = von_Neumann_Cosel
+#			age = 50
+#			traits = {
+#		#		gallant
+#		#		military_family
+#			}
+#
+#		}
+		
+#		create_character = {
+#			is_general = yes
+#			first_name = Karl
+#			last_name = von_Prittwitz
+#			age = 46
+#			traits = {
+#		#		harsh
+#		#		powerful_friends
+#			}
+#
+#		}
+		
+#		create_character = {
+#			is_general = yes
+#			first_name = Karl
+#			last_name = von_Reyher
+#			age = 50
+#			traits = {
+#		#		careful
+#		#		up_from_the_ranks
+#			}
+#
+#		}
+	}
 		create_character = {
 			is_general = yes
 			first_name = Friedrich_Graf
@@ -167,7 +266,7 @@
 				persistent
 				senile
 				expert_offensive_planner
-				historical_figures
 			}
 
 		}
+	}

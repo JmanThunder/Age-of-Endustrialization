@@ -76,7 +76,7 @@ anarchist_party = {
 	}
 	join_weight = {
 		value = {
-			value = 1
+			value = -5
 			desc = "base_value"
 		}
 		if = { # anarchists like anarchism
@@ -296,6 +296,17 @@ anarchist_party = {
 			add = {
 				value = 3
 				desc = "from_republican"
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					has_variable = politically_neutral_var
+				}
+			}
+			add = {
+				value = -10
+				desc = "Politically Neutral"
 			}
 		}
 	}

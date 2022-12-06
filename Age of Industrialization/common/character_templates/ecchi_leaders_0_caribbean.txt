@@ -10,7 +10,7 @@ ecchi_cub_de_cespedes_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_carlos_manuel_de_cespedes
     birth_date = 1819.4.18
-    traits = { historical_figures arrogant persistent forest_commander }
+    traits = { arrogant persistent forest_commander }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CUB
@@ -25,7 +25,7 @@ ecchi_cub_de_cespedes_character_template = {
         }
         earliest_usage_date = 1865.1.1
         latest_usage_date = 1874.2.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -39,7 +39,7 @@ ecchi_cub_marti_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_jose_marti
     birth_date = 1853.1.28
-    traits = { historical_figures romantic brave reckless }
+    traits = { romantic brave reckless }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CUB
@@ -54,7 +54,7 @@ ecchi_cub_marti_character_template = {
         }
         earliest_usage_date = 1875.1.1
         latest_usage_date = 1895.5.19
-        chance = 75
+        chance = 90
     }
 }
 
@@ -70,7 +70,7 @@ ecchi_hai_soulouque_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_faustin_soulouque
     birth_date = 1782.8.15
-    traits = { historical_figures wrathful ambitious imperious }
+    traits = { wrathful ambitious imperious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:HAI
@@ -85,7 +85,7 @@ ecchi_hai_soulouque_character_template = {
         }
         earliest_usage_date = 1845.1.1
         latest_usage_date = 1867.8.3
-        chance = 75
+        chance = 90
     }
 }
 
@@ -99,7 +99,7 @@ ecchi_hai_pierrot_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_jean_louis_pierrot
     birth_date = 1761.12.19
-    traits = { historical_figures forest_commander pillager }
+    traits = { forest_commander pillager }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -109,7 +109,7 @@ ecchi_hai_pierrot_character_template = {
         role = general
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1857.2.18
-        chance = 75
+        chance = 90
     }
 }
 
@@ -125,7 +125,7 @@ ecchi_jam_garvey_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_marcus_garvey
     birth_date = 1887.8.17
-    traits = { historical_figures bigoted ambitious wrathful }
+    traits = { bigoted ambitious wrathful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:JAM
@@ -140,7 +140,7 @@ ecchi_jam_garvey_character_template = {
         }
         earliest_usage_date = 1914.1.1
         latest_usage_date = 1940.6.10
-        chance = 75
+        chance = 90
     }
 }
 
@@ -154,18 +154,17 @@ ecchi_jam_bogle_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_paul_bogle
     birth_date = 1822.10.24
-    traits = { historical_figures charismatic direct }
+    traits = { charismatic direct }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:JAM
             this = c:JAM
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1860.1.1
         latest_usage_date = 1865.10.24
-        chance = 75
+        chance = 90
     }
 }

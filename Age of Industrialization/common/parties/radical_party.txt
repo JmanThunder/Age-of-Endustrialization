@@ -268,7 +268,7 @@ radical_party = {
 	}
 	join_weight = {
 		value = {
-			value = 1
+			value = -5
 			desc = "base_value"
 		}
 		if = { # radicals love radicalism

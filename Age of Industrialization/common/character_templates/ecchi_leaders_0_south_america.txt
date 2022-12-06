@@ -10,7 +10,7 @@ ecchi_chl_o_higgins_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_bernardo_o_higgins
     birth_date = 1778.8.20
-    traits = { historical_figures senile romantic imperious ambitious }
+    traits = { senile romantic imperious ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CHL
@@ -25,7 +25,7 @@ ecchi_chl_o_higgins_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1842.10.24
-        chance = 75
+        chance = 90
     }
 }
 
@@ -41,7 +41,7 @@ ecchi_uru_artigas_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_jose_gervasio_artigas
     birth_date = 1764.6.19
-    traits = { historical_figures pillager ambitious imperious }
+    traits = { pillager ambitious imperious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:URU
@@ -57,7 +57,7 @@ ecchi_uru_artigas_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1850.9.23
-        chance = 75
+        chance = 90
     }
 }
 
@@ -71,7 +71,7 @@ ecchi_uru_berro_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_bernardo_berro
     birth_date = 1803.4.28
-    traits = { historical_figures tactful basic_political_operator }
+    traits = { tactful basic_political_operator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:URU
@@ -86,7 +86,7 @@ ecchi_uru_berro_character_template = {
         }
         earliest_usage_date = 1852.1.1
         latest_usage_date = 1868.2.19
-        chance = 75
+        chance = 90
     }
 }
 
@@ -102,7 +102,7 @@ ecchi_vnz_lopez_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_narciso_lopez
     birth_date = 1797.11.2
-    traits = { historical_figures reckless persistent }
+    traits = { reckless persistent }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -121,6 +121,6 @@ ecchi_vnz_lopez_character_template = {
         role = general
         earliest_usage_date = 1840.1.1
         latest_usage_date = 1851.9.1
-        chance = 75
+        chance = 90
     }
 }

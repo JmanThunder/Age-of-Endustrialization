@@ -10,7 +10,6 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
 				arrogant
 				psychological_affliction
 			}
@@ -25,10 +24,10 @@
 			heir = yes
 			noble = yes
 			birth_date = 1830.8.18
+			dna = dna_franz_joseph
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
 				cautious
 			}
 		}
@@ -37,11 +36,11 @@
 			first_name = Klemens
 			last_name = von_Metternich
 			age = 63
+			dna = dna_klemens_metternich
 			ig_leader = yes
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
 				meticulous
 				masterful_diplomat
 				experienced_political_operator
@@ -53,11 +52,11 @@
 			first_name = Ludwig
 			last_name = von_Habsburg
 			birth_date = 1784.12.13
+			dna = dna_archduke_ludwig
 			ig_leader = yes
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
 				arrogant
 				tactful
 				pious
@@ -68,12 +67,12 @@
 			first_name = Franz_Anton
 			last_name = von_Kolowrat_Liebsteinsky
 			birth_date = 1778.1.31
+			dna = dna_graf_kolowrat
 			ig_leader = yes
 			# From Bohemia, but a native German speaker
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
 				imperious
 				persistent
 			}
@@ -84,11 +83,11 @@
 			first_name = Vincenz
 			last_name = Milde
 			birth_date = 1777.5.11
+			dna = dna_vincent_milde
 			ig_leader = yes
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
 				pious
 				reserved
 			}
@@ -99,11 +98,11 @@
 			first_name = Ignaz
 			last_name = Czapka
 			birth_date = 1791.2.24 # possibly born in 1792
+			dna = dna_ignaz_czapka
 			ig_leader = yes
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
 				cautious
 				imperious
 			}
@@ -114,11 +113,11 @@
 			first_name = Anton
 			last_name = von_Doblhoff-Dier
 			birth_date = 1800.11.10
+			dna = dna_doblhoff_dier
 			ig_leader = yes
 			interest_group = ig_rural_folk
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
 				innovative
 				reserved
 			}
@@ -129,10 +128,10 @@
 			first_name = Josef
 			last_name = Radetzky
 			birth_date = 1766.11.2
+			dna = dna_josef_radetzky
 			hq = region_south_germany
 			commander_rank = commander_rank_3
 			traits = {
-				historical_figures
 				persistent
 				surveyor
 			}
@@ -143,10 +142,10 @@
 			first_name = Julius
 			last_name = von_Haynau
 			birth_date = 1786.10.14
+			dna = dna_julius_haynau
 			hq = region_poland
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
 				wrathful
 				cruel
 			}
@@ -157,10 +156,10 @@
 			first_name = Heinrich
 			last_name = von_Hess
 			birth_date = 1788.3.17
+			dna = dna_heinrich_hess
 			hq = region_danubia
 			commander_rank = commander_rank_4
 			traits = {
-				historical_figures
 				meticulous
 				resupply_commander
 			}
@@ -174,10 +173,10 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			birth_date = 1777.11.3
+			dna = dna_laval_nugent
 			hq = region_italy
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
 				basic_offensive_planner
 				tactful
 			}
@@ -191,10 +190,10 @@
 			interest_group = ig_landowners
 			ideology = ideology_royalist
 			birth_date = 1777.3.23
+			dna = dna_graf_ficquelmont
 			hq = region_balkans
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
 				experienced_diplomat
 				charismatic
 			}
@@ -208,10 +207,10 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			birth_date = 1785.5.22
+			dna = dna_franz_bandiera
 			hq = region_italy
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
 				direct
 				basic_naval_commander
 			}

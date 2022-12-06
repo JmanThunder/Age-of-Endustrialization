@@ -15,23 +15,6 @@
 	}
 }
 
-gov_pol_monarchy_rus = {
-	transfer_of_power = dictatorial
-	
-	male_ruler = "Namiestnik"
-	female_ruler = "Namiestniczka"
-
-	male_heir = "" # Empty on purpose
-	female_heir = "" # Empty on purpose
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_has_primary_culture = cu:polish
-		c:POL = ROOT
-		is_subject_of = c:RUS
-	}
-}
-
 gov_hawaiian_monarchy_recognised = {
 	transfer_of_power = hereditary
 	
@@ -463,6 +446,13 @@ gov_absolute_monarchy = {
 	possible = {
 		has_law = law_type:law_monarchy
 		has_law = law_type:law_autocracy 
+		NOT = { 
+			owner = { 
+				ruler = { 
+					has_variable = is_bonapartist 
+				} 
+			} 
+		}
 		AND = { 
 			exists = c:FRA 
 			c:FRA = ROOT
@@ -481,6 +471,13 @@ gov_monarchy = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
+		NOT = {
+			 owner = { 
+				ruler = { 
+					has_variable = is_bonapartist 
+				} 
+			} 
+		}
 		OR = { 
 			has_law = law_type:law_oligarchy 
 			has_law = law_type:law_elder_council 
@@ -504,6 +501,13 @@ gov_constitutional_monarchy = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
+		NOT = { 
+			owner = { 
+				ruler = { 
+					has_variable = is_bonapartist 
+				} 
+			} 
+		}
 		OR = { 
 			has_law = law_type:law_wealth_voting 
 			has_law = law_type:law_census_voting 
@@ -598,7 +602,7 @@ gov_absolute_principality_muslim = {
 	}
 }
 
-gov_feudal_empire = {
+gov_absolute_empire = {
 	transfer_of_power = hereditary
 
 	male_ruler = "RULER_TITLE_EMPEROR"
@@ -628,7 +632,9 @@ gov_feudal_empire = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		has_law = law_type:law_autocracy 
+		country_has_voting_franchise = no
+		has_law = law_type:law_serfdom
+
 		OR = {
 			country_tier = hegemony
 			country_tier = empire
@@ -647,11 +653,7 @@ gov_empire = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		OR = { 
-			has_law = law_type:law_oligarchy 
-			has_law = law_type:law_elder_council 
-			has_law = law_type:law_landed_voting 
-		}
+		country_has_voting_franchise = no
 		OR = {
 			country_tier = hegemony
 			country_tier = empire
@@ -671,11 +673,7 @@ gov_constitutional_empire = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		OR = { 
-			has_law = law_type:law_wealth_voting 
-			has_law = law_type:law_census_voting 
-			has_law = law_type:law_universal_suffrage 
-		}
+		country_has_voting_franchise = yes
 		OR = {
 			country_tier = hegemony
 			country_tier = empire
@@ -1036,6 +1034,22 @@ gov_constitutional_grand_principality = {
 		country_tier = grand_principality
 		country_is_in_europe = no
 
+	}
+}
+
+gov_windhoek = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_KAPTEIN"
+	female_ruler = "RULER_TITLE_KAPTEIN" 
+	
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:WNH
+		c:WNH = ROOT
 	}
 }
 

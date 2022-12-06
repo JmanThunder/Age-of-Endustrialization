@@ -14,43 +14,9 @@ RU_CL_RP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_RP_dyn_c_french_empire # genitive
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			has_law = law_type:law_monarchy
-		}
-		localization_key = RU_CL_RP_dyn_c_russian_empire # genitive
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_republic_trigger = yes
-			NOT = { coa_communist_trigger = yes }
-		}
-		localization_key = RU_CL_RP_dyn_c_russian_republic # genitive
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_fascist_trigger = yes
-		}
-		localization_key = RU_CL_RP_dyn_c_russian_state # genitive
-	}
-	text = {
-		trigger = {
-			exists = c:AUS
-			this = c:AUS
-			has_law = law_type:law_monarchy
-			NOT = { country_has_primary_culture = cu:hungarian }
-		}
-		localization_key = RU_CL_RP_dyn_c_austrian_empire # genitive
 	}
 	text = {
 		trigger = {
@@ -4873,43 +4839,9 @@ RU_CL_DP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_DP_dyn_c_french_empire # dative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			has_law = law_type:law_monarchy
-		}
-		localization_key = RU_CL_DP_dyn_c_russian_empire # dative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_republic_trigger = yes
-			NOT = { coa_communist_trigger = yes }
-		}
-		localization_key = RU_CL_DP_dyn_c_russian_republic # dative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_fascist_trigger = yes
-		}
-		localization_key = RU_CL_DP_dyn_c_russian_state # dative
-	}
-	text = {
-		trigger = {
-			exists = c:AUS
-			this = c:AUS
-			has_law = law_type:law_monarchy
-			NOT = { country_has_primary_culture = cu:hungarian }
-		}
-		localization_key = RU_CL_DP_dyn_c_austrian_empire # dative
 	}
 	text = {
 		trigger = {
@@ -9742,43 +9674,9 @@ RU_CL_VP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_VP_dyn_c_french_empire # accusative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			has_law = law_type:law_monarchy
-		}
-		localization_key = RU_CL_VP_dyn_c_russian_empire # accusative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_republic_trigger = yes
-			NOT = { coa_communist_trigger = yes }
-		}
-		localization_key = RU_CL_VP_dyn_c_russian_republic # accusative
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_fascist_trigger = yes
-		}
-		localization_key = RU_CL_VP_dyn_c_russian_state # accusative
-	}
-	text = {
-		trigger = {
-			exists = c:AUS
-			this = c:AUS
-			has_law = law_type:law_monarchy
-			NOT = { country_has_primary_culture = cu:hungarian }
-		}
-		localization_key = RU_CL_VP_dyn_c_austrian_empire # accusative
 	}
 	text = {
 		trigger = {
@@ -14611,43 +14509,9 @@ RU_CL_TP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_TP_dyn_c_french_empire # instrumental
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			has_law = law_type:law_monarchy
-		}
-		localization_key = RU_CL_TP_dyn_c_russian_empire # instrumental
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_republic_trigger = yes
-			NOT = { coa_communist_trigger = yes }
-		}
-		localization_key = RU_CL_TP_dyn_c_russian_republic # instrumental
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_fascist_trigger = yes
-		}
-		localization_key = RU_CL_TP_dyn_c_russian_state # instrumental
-	}
-	text = {
-		trigger = {
-			exists = c:AUS
-			this = c:AUS
-			has_law = law_type:law_monarchy
-			NOT = { country_has_primary_culture = cu:hungarian }
-		}
-		localization_key = RU_CL_TP_dyn_c_austrian_empire # instrumental
 	}
 	text = {
 		trigger = {
@@ -19480,43 +19344,9 @@ RU_CL_PP = {
 			exists = c:FRA
 			this = c:FRA
 			has_law = law_type:law_monarchy
-			has_variable = french_empire_created
+			ruler = { has_variable = is_bonapartist }
 		}
 		localization_key = RU_CL_PP_dyn_c_french_empire # prepositional
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			has_law = law_type:law_monarchy
-		}
-		localization_key = RU_CL_PP_dyn_c_russian_empire # prepositional
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_republic_trigger = yes
-			NOT = { coa_communist_trigger = yes }
-		}
-		localization_key = RU_CL_PP_dyn_c_russian_republic # prepositional
-	}
-	text = {
-		trigger = {
-			exists = c:RUS
-			this = c:RUS
-			coa_fascist_trigger = yes
-		}
-		localization_key = RU_CL_PP_dyn_c_russian_state # prepositional
-	}
-	text = {
-		trigger = {
-			exists = c:AUS
-			this = c:AUS
-			has_law = law_type:law_monarchy
-			NOT = { country_has_primary_culture = cu:hungarian }
-		}
-		localization_key = RU_CL_PP_dyn_c_austrian_empire # prepositional
 	}
 	text = {
 		trigger = {

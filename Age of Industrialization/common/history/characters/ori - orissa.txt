@@ -13,7 +13,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Somanath_Mohapatra
 				cautious
 			}
 		}	
@@ -28,7 +28,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Braja_Sundar_Mohapatra
 				reserved
 			}
 		}

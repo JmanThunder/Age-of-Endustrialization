@@ -8,7 +8,7 @@
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Muhammed_Bello_dan_Fodio
 				tactful
 			}
 		}
@@ -23,7 +23,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Abu_Bakr_Atiku_dan_Fodio
 				arrogant
 			}
 		}
@@ -37,7 +37,7 @@
 			female = yes
 			interest_group = ig_intelligentsia
 			traits = {
-				historical_figures
+				concept_wikipedia_Nana_Asmau_dan_Fodio
 				persistent
 			}
 		}

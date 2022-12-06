@@ -10,7 +10,7 @@
 			interest_group = ig_devout
 			ideology = ideology_theocrat
 			traits = {
-				historical_figures
+				concept_wikipedia_Tsultrim_Gyatso
 				cautious
 			}
 		}

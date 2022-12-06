@@ -10,7 +10,7 @@ ecchi_ire_collins_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_michael_collins
     birth_date = 1890.10.16
-    traits = { historical_figures tactful demagogue }
+    traits = { tactful demagogue }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:IRE
@@ -25,7 +25,7 @@ ecchi_ire_collins_character_template = {
         }
         earliest_usage_date = 1915.1.1
         latest_usage_date = 1922.8.22
-        chance = 75
+        chance = 90
     }
 }
 
@@ -39,7 +39,7 @@ ecchi_ire_griffith_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_arthur_griffith
     birth_date = 1871.3.31
-    traits = { historical_figures persistent experienced_diplomat }
+    traits = { persistent experienced_diplomat }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:IRE
@@ -54,7 +54,7 @@ ecchi_ire_griffith_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1922.8.12
-        chance = 75
+        chance = 90
     }
 }
 
@@ -68,18 +68,17 @@ ecchi_ire_larkin_character_template = {
     interest_group = ig_trade_unions
 	dna = ecchi_dna_james_larkin
     birth_date = 1874.1.28
-    traits = { historical_figures demagogue charismatic }
+    traits = { demagogue charismatic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:IRE
             this = c:IRE
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_trade_unions
         }
         earliest_usage_date = 1905.1.1
         latest_usage_date = 1947.1.30
-        chance = 75
+        chance = 90
     }
 }

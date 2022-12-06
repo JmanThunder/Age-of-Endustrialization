@@ -10,19 +10,18 @@ ecchi_que_lambton_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_john_lambton
     birth_date = 1792.4.12
-    traits = { historical_figures expert_colonial_administrator romantic expensive_tastes }
+    traits = { expert_colonial_administrator romantic expensive_tastes }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:QUE
             this = c:QUE
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1840.7.28
-        chance = 75
+        chance = 90
     }
 }
 
@@ -36,7 +35,7 @@ ecchi_que_nelson_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_robert_nelson
     birth_date = 1794.8.8
-    traits = { historical_figures persistent reckless ambitious }
+    traits = { persistent reckless ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:QUE
@@ -51,7 +50,7 @@ ecchi_que_nelson_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1873.3.1
-        chance = 75
+        chance = 90
     }
 }
 
@@ -65,7 +64,7 @@ ecchi_que_bowen_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_edward_bowen
     birth_date = 1780.12.1
-    traits = { historical_figures expensive_tastes arrogant basic_colonial_administrator }
+    traits = { expensive_tastes arrogant basic_colonial_administrator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:QUE
@@ -80,7 +79,7 @@ ecchi_que_bowen_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1866.4.11
-        chance = 75
+        chance = 90
     }
 }
 
@@ -94,7 +93,7 @@ ecchi_que_cartier_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_george_etienne_cartier
     birth_date = 1814.9.6
-    traits = { historical_figures kidney_stones tactful romantic }
+    traits = { kidney_stones tactful romantic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:QUE
@@ -109,7 +108,7 @@ ecchi_que_cartier_character_template = {
         }
         earliest_usage_date = 1838.1.1
         latest_usage_date = 1873.5.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -125,7 +124,7 @@ ecchi_nvs_howe_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_joseph_howe
     birth_date = 1804.12.13
-    traits = { historical_figures persistent romantic wrathful }
+    traits = { persistent romantic wrathful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:NVS
@@ -141,7 +140,7 @@ ecchi_nvs_howe_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1873.6.1
-        chance = 75
+        chance = 90
     }
 }
 
@@ -157,7 +156,7 @@ ecchi_org_douglas_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_james_douglas
     birth_date = 1803.8.15
-    traits = { historical_figures experienced_colonial_administrator meticulous }
+    traits = { experienced_colonial_administrator meticulous }
     interest_group_leader_usage = {
 		country_trigger = {
             OR = {
@@ -191,7 +190,7 @@ ecchi_org_douglas_character_template = {
         }
         earliest_usage_date = 1849.1.1
         latest_usage_date = 1877.8.2
-        chance = 75
+        chance = 90
     }
 }
 
@@ -205,7 +204,7 @@ ecchi_org_de_cosmos_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_amor_de_cosmos
     birth_date = 1825.8.20
-    traits = { historical_figures psychological_affliction meticulous imperious }
+    traits = { psychological_affliction meticulous imperious }
     interest_group_leader_usage = {
         country_trigger = {
              OR = {
@@ -230,12 +229,11 @@ ecchi_org_de_cosmos_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1863.1.1
         latest_usage_date = 1897.7.4
-        chance = 75
+        chance = 90
     }
 }
 
@@ -251,7 +249,7 @@ ecchi_ont_robinson_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_john_robinson
     birth_date = 1791.7.26
-    traits = { historical_figures expensive_tastes imperious hedonist }
+    traits = { expensive_tastes imperious hedonist }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:ONT
@@ -266,7 +264,7 @@ ecchi_ont_robinson_character_template = {
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1863.1.31
-        chance = 75
+        chance = 90
     }
 }
 
@@ -280,7 +278,7 @@ ecchi_ont_mowat_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_oliver_mowat
     birth_date = 1820.7.22
-    traits = { historical_figures experienced_political_operator demagogue tactful }
+    traits = { experienced_political_operator demagogue tactful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:ONT
@@ -296,7 +294,7 @@ ecchi_ont_mowat_character_template = {
         }
         earliest_usage_date = 1857.1.1
         latest_usage_date = 1903.4.19
-        chance = 75
+        chance = 90
     }
 }
 
@@ -313,7 +311,7 @@ ecchi_can_macdonald_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_john_a_macdonald
     birth_date = 1815.1.10
-    traits = { historical_figures expert_political_operator tactful bigoted }
+    traits = { expert_political_operator tactful bigoted }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
@@ -325,7 +323,7 @@ ecchi_can_macdonald_character_template = {
         }
         earliest_usage_date = 1844.1.1
         latest_usage_date = 1891.6.6
-        chance = 75
+        chance = 90
     }
 }
 
@@ -339,7 +337,7 @@ ecchi_can_laurier_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_wilfrid_laurier
     birth_date = 1841.11.20
-    traits = { historical_figures tactful experienced_diplomat expert_political_operator }
+    traits = { tactful experienced_diplomat expert_political_operator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
@@ -354,7 +352,7 @@ ecchi_can_laurier_character_template = {
         }
         earliest_usage_date = 1874.1.1
         latest_usage_date = 1891.6.6
-        chance = 75
+        chance = 90
     }
 }
 
@@ -368,7 +366,7 @@ ecchi_can_king_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_mackenzie_king
     birth_date = 1874.12.17
-    traits = { historical_figures innovative basic_diplomat meticulous }
+    traits = { innovative basic_diplomat meticulous }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
@@ -383,7 +381,7 @@ ecchi_can_king_character_template = {
         }
         earliest_usage_date = 1908.1.1
         latest_usage_date = 1950.7.22
-        chance = 75
+        chance = 90
     }
 }
 
@@ -397,19 +395,18 @@ ecchi_can_riel_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_louis_riel
     birth_date = 1844.10.22
-    traits = { historical_figures charismatic devout psychological_affliction popular_commander }
+    traits = { charismatic devout psychological_affliction popular_commander }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
             this = c:CAN
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1869.1.1
         latest_usage_date = 1885.11.16
-        chance = 75
+        chance = 90
     }
 }
 
@@ -423,19 +420,18 @@ ecchi_can_massey_character_template = {
     interest_group = ig_industrialists
     birth_date = 1823.4.29
 	dna = ecchi_dna_hart_massey
-    traits = { historical_figures expensive_tastes innovative }
+    traits = { expensive_tastes innovative }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
             this = c:CAN
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_industrialists
         }
         earliest_usage_date = 1856.1.1
         latest_usage_date = 1896.2.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -449,19 +445,18 @@ ecchi_can_van_horne_character_template = {
     interest_group = ig_industrialists
 	dna = ecchi_dna_william_van_horne
     birth_date = 1843.2.3
-    traits = { historical_figures meticulous ambitious innovative }
+    traits = { meticulous ambitious innovative }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CAN
             this = c:CAN
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_industrialists
         }
         earliest_usage_date = 1888.1.1
         latest_usage_date = 1915.9.11
-        chance = 75
+        chance = 90
     }
 }
 

@@ -11,7 +11,7 @@
 			interest_group = ig_intelligentsia # Maria II was a Constitutionalist
 			ideology = ideology_reformer
 			traits = {
-				historical_figures
+				concept_wikipedia_Maria_de_Braganca
 				persistent
 			}
 		}
@@ -28,7 +28,7 @@
 			interest_group = ig_armed_forces
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
+				concept_wikipedia_Antonio_Jose_Severim_de_Noronha
 				tactful
 			}
 		}
@@ -39,7 +39,7 @@
 			last_name = do_Rego_Barreto
 			birth_date = 1777.10.28
 			traits = {
-				historical_figures
+				concept_wikipedia_Luis_2_do_Rego_Barreto
 				experienced_colonial_administrator
 				cruel
 			}

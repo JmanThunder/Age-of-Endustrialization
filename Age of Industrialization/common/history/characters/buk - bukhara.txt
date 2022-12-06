@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Nasr_Allah_Manghud
 				reckless
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Muzaffar_al-Din_Manghud
 				reserved
 			}
 		}

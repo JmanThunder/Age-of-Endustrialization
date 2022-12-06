@@ -10,7 +10,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_jingoist_leader
 			traits = {
-				historical_figures
+				concept_wikipedia_Jean-Pierre_Boyer
 				ambitious
 			}
 		}	

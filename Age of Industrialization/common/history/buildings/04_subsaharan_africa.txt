@@ -884,6 +884,10 @@
 				activate_production_methods={ "pm_wound_dressing" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_irregular_infantry" }
 			}
 		}
+		region_state:ONI={
+		}
+		region_state:ZAF={
+		}
 	}
 	s:STATE_NORTH_MADAGASCAR={
 		region_state:MAD={
@@ -967,6 +971,16 @@
 			}
 		}
 	}
+	s:STATE_EQUATORIA={
+		region_state:DNK={
+		}
+		region_state:NUE={
+		}
+		region_state:DFT={
+		}
+		region_state:TPS={
+		}
+	}
 	s:STATE_MOCAMBIQUE={
 		region_state:POR={
 			create_building={
@@ -999,6 +1013,8 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
+		}
+		region_state:MRV={
 		}
 	}
 	s:STATE_WADDAI={
@@ -1049,6 +1065,42 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
+		}
+		region_state:FNG={
+		}
+		region_state:DLA={
+		}
+	}
+	s:STATE_UBANGI_SHARI={
+		region_state:DAK={
+		}
+		region_state:ZND={
+		}
+	}
+	s:STATE_CONGO={
+		region_state:BOB={
+		}
+		region_state:LNG={
+		}
+		region_state:TKE={
+		}
+	}
+	s:STATE_CONGO_ORIENTALE={
+		region_state:MNB={
+		}
+		region_state:ZND={
+		}
+		region_state:LGA={
+		}
+		region_state:HMB={
+		}
+		region_state:LBA={
+		}
+	}
+	s:STATE_KASAI={
+		region_state:KBA={
+		}
+		region_state:LBA={
 		}
 	}
 	s:STATE_BAS_CONGO={

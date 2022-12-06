@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Iskandar_Qudraullah_of_Maguindanao
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Muhammad_Makakwa_of_Maguindanao
 			}
 		}
 	}

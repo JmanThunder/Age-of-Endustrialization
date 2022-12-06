@@ -10,7 +10,7 @@ ecchi_joh_aw_character_template = {
     interest_group = ig_industrialists
 	dna = ecchi_dna_aw_boon_haw
     birth_date = 1882.12.11
-    traits = { historical_figures innovative meticulous demagogue }
+    traits = { innovative meticulous demagogue }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -26,12 +26,11 @@ ecchi_joh_aw_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_industrialists
         }
         earliest_usage_date = 1925.1.1
         latest_usage_date = 1954.9.4
-        chance = 75
+        chance = 90
     }
 }
 
@@ -47,7 +46,7 @@ ecchi_kaz_bukeikhanov_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_alikhan_bukeikhanov
     birth_date = 1866.3.5
-    traits = { historical_figures romantic reckless persistent surveyor }
+    traits = { romantic reckless persistent surveyor }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:KAZ
@@ -63,7 +62,7 @@ ecchi_kaz_bukeikhanov_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1937.9.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -79,7 +78,7 @@ ecchi_geo_chavchavadze_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_ilia_chavchavadze
     birth_date = 1837.11.8
-    traits = { historical_figures innovative romantic demagogue }
+    traits = { innovative romantic demagogue }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:GEO
@@ -94,7 +93,7 @@ ecchi_geo_chavchavadze_character_template = {
         }
         earliest_usage_date = 1870.1.1
         latest_usage_date = 1907.9.12
-        chance = 75
+        chance = 90
     }
 }
 
@@ -108,7 +107,7 @@ ecchi_geo_cholokashvili_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_kakutsa_cholokashvili
     birth_date = 1888.7.14
-    traits = { historical_figures mountain_commander popular_commander }
+    traits = { mountain_commander popular_commander }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -118,7 +117,7 @@ ecchi_geo_cholokashvili_character_template = {
         role = general
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1930.6.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -134,7 +133,7 @@ ecchi_tur_ataturk_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_mustafa_kemal_ataturk
     birth_date = 1881.5.19
-    traits = { historical_figures innovative charismatic demagogue romantic celebrity_commander }
+    traits = { innovative charismatic demagogue romantic celebrity_commander }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:TUR
@@ -150,7 +149,7 @@ ecchi_tur_ataturk_character_template = {
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1938.11.10
-        chance = 75
+        chance = 90
     }
 }
 
@@ -166,7 +165,7 @@ ecchi_pal_trumpeldor_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_joseph_trumpeldor
     birth_date = 1880.11.21
-    traits = { historical_figures pious brave reckless }
+    traits = { pious brave reckless }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -190,6 +189,6 @@ ecchi_pal_trumpeldor_character_template = {
         }
         earliest_usage_date = 1911.1.1
         latest_usage_date = 1920.3.1
-        chance = 75
+        chance = 90
     }
 }

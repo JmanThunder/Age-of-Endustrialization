@@ -13,7 +13,7 @@
 			hq = region_north_india
 			commander_rank = commander_rank_3
 			traits = {
-				historical_figures
+				concept_wikipedia_Ranjit_Singh
 				ambitious
 				alcoholic
 			}
@@ -29,7 +29,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Kharak_Singh
 				reckless
 				expensive_tastes
 			}
@@ -43,7 +43,7 @@
 			hq = region_himalayas
 			commander_rank = commander_rank_2
 			traits = {
-				historical_figures
+				concept_wikipedia_Zorawar_Singh
 				reserved
 				mountain_commander
 			}
@@ -92,7 +92,7 @@
 			hq = region_persia
 			age = 51
 			traits = {
-				historical_figures
+				concept_wikipedia_Alexander_Gardner
 				brave
 				experienced_artillery_commander
 			}

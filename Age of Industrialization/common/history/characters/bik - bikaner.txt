@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Ratan_Singh_Rathore
 				persistent
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Sardar_Singh_Rathore
 				cautious
 			}
 		}

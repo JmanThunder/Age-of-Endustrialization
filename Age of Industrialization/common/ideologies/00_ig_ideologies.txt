@@ -59,6 +59,13 @@ ideology_laissez_faire = {
 		law_command_economy = strongly_disapprove
 	}
 	
+	lawgroup_navy_model = {
+		law_professional_navy = neutral
+		law_merchant_navy = approve
+		law_mass_draft = neutral
+		law_feudal_navy = disapprove
+	}
+	
 	lawgroup_trade_policy = {		
 		law_free_trade = approve	
 		law_mercantilism = neutral
@@ -106,7 +113,6 @@ ideology_individualist = {
 	
 	lawgroup_migration = {
 		law_no_migration_controls = approve
-		law_encourage_immigration = strongly_approve
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
 	}
@@ -120,6 +126,13 @@ ideology_stratocratic = {
 		law_professional_army = neutral
 		law_national_militia = neutral
 		law_mass_conscription = disapprove
+	}
+	
+	lawgroup_navy_model = {
+		law_professional_navy = neutral
+		law_merchant_navy = neutral
+		law_mass_draft = disapprove
+		law_feudal_navy = approve
 	}
 	
 	lawgroup_labor_rights = {
@@ -240,8 +253,8 @@ ideology_isolationist = {
 	lawgroup_citizenship = { ### Does not exist by default
 		law_ethnostate = neutral
 		law_national_supremacy = neutral
-		law_racial_segregation = approve
-		law_cultural_exclusion = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
 		law_multicultural = strongly_disapprove	
 	}
 }
@@ -268,7 +281,7 @@ ideology_moralist = {
 		law_national_supremacy = approve
 		law_racial_segregation = neutral
 		law_cultural_exclusion = disapprove
-		law_multicultural = disapprove	
+		law_multicultural = strongly_disapprove	
 	}
 }
 
@@ -313,7 +326,6 @@ ideology_patriotic = {
 		law_right_of_assembly = neutral
 		law_protected_speech = disapprove
 	}	
-
 }
 
 ideology_loyalist = {
@@ -338,6 +350,12 @@ ideology_jingoist = {
 		law_peasant_levies = disapprove
 	}
 	
+	lawgroup_navy_model = {
+		law_professional_navy = strongly_approve
+		law_merchant_navy = disapprove
+		law_mass_draft = approve
+		law_feudal_navy = disapprove
+	}
 	lawgroup_colonization = {
 		law_colonial_resettlement = approve
 		law_colonial_exploitation = approve
@@ -348,10 +366,10 @@ ideology_jingoist = {
 ideology_liberal = {
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 	
-	lawgroup_citizenship = { 
-		law_ethnostate = neutral ## Normally strongly_disapprove
-		law_national_supremacy = approve #Normally strongly_disapprove
-		law_racial_segregation = approve #Normally disapprove
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove ## Normally strongly_disapprove
+		law_national_supremacy = disapprove #Normally strongly_disapprove
+		law_racial_segregation = disapprove #Normally disapprove
 		law_cultural_exclusion = approve #Normally neutral
 		law_multicultural = disapprove	#normally approve
 	}
@@ -383,7 +401,6 @@ ideology_liberal = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 	}
-
 }
 
 ideology_anti_clerical = {
@@ -514,7 +531,7 @@ ideology_egalitarian = {
 		law_national_supremacy = neutral
 		law_racial_segregation = neutral
 		law_cultural_exclusion = neutral
-		law_multicultural = strongly_approve	
+		law_multicultural = approve	
 	}
 }
 
@@ -573,7 +590,6 @@ ideology_reactionary = {
 	}
 
 	lawgroup_migration = {
-		law_encourage_immigration = disapprove
 		law_closed_borders = approve
 		law_migration_controls = strongly_approve
 		law_no_migration_controls = disapprove

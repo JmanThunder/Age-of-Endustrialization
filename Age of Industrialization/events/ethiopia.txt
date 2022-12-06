@@ -54,7 +54,7 @@ ethiopia.1 = {
 			religion = rel:oriental_orthodox
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Tewodros_Solomon
 				romantic
 				expert_offensive_planner
 			}

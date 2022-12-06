@@ -11,7 +11,7 @@ ecchi_czh_palacky_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_frantisek_palacky
     birth_date = 1798.6.20
-    traits = { historical_figures tactful meticulous }
+    traits = { tactful meticulous }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -27,12 +27,11 @@ ecchi_czh_palacky_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1840.1.1
         latest_usage_date = 1876.5.26
-        chance = 75
+        chance = 90
     }
 }
 
@@ -46,7 +45,7 @@ ecchi_czh_masaryk_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_tomas_masaryk
     birth_date = 1850.3.7
-    traits = { historical_figures brave romantic inspirational_orator }
+    traits = { brave romantic inspirational_orator }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -70,7 +69,7 @@ ecchi_czh_masaryk_character_template = {
         }
         earliest_usage_date = 1890.1.1
         latest_usage_date = 1937.9.14
-        chance = 75
+        chance = 90
     }
 }
 
@@ -84,7 +83,7 @@ ecchi_czh_kafka_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_franz_kafka
     birth_date = 1883.7.3
-    traits = { historical_figures reserved cautious meticulous }
+    traits = { reserved cautious meticulous }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -124,7 +123,7 @@ ecchi_czh_tiso_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_jozef_tiso
     birth_date = 1887.10.13
-    traits = { historical_figures bigoted ambitious cruel pious war_criminal }
+    traits = { bigoted ambitious cruel pious war_criminal }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -148,7 +147,7 @@ ecchi_czh_tiso_character_template = {
         }
         earliest_usage_date = 1920.1.1
         latest_usage_date = 1947.4.18
-        chance = 75
+        chance = 90
     }
 }
 
@@ -162,7 +161,7 @@ ecchi_czh_stefanik_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_milan_rastislav_stefanik
     birth_date = 1880.7.21
-    traits = { historical_figures experienced_diplomat explorer resupply_commander surveyor }
+    traits = { experienced_diplomat explorer resupply_commander surveyor }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -186,7 +185,7 @@ ecchi_czh_stefanik_character_template = {
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1919.5.4
-        chance = 75
+        chance = 90
     }
 }
 

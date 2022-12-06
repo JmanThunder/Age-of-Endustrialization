@@ -11,7 +11,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Willem1_van_Oranje-Nassau
 				romantic
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_reformer
 			traits = {
-				historical_figures
+				concept_wikipedia_Willem2_van_Oranje-Nassau
 				persistent
 			}
 		}
@@ -36,7 +36,7 @@
 			last_name = Chasse
 			age = 71
 			traits = {
-				historical_figures
+				concept_wikipedia_David_Hendrik_Chasse
 				wrathful
 				wounded # Right upper arm
 			}
@@ -48,7 +48,7 @@
 			 last_name = Lucas
 			 age = 51
 			 traits = {
-			 	historical_figures
+			 	concept_wikipedia_Engelbertus_Lucas
 			 	experienced_naval_commander
 			 	wrathful
 			}

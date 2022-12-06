@@ -307,13 +307,16 @@
 				has_ideology = ideology_market_liberal
 				has_ideology = ideology_traditionalist
 				has_ideology = ideology_royalist
+				has_ideology = ideology_orleanist
+				has_ideology = ideology_legitimist
+				has_ideology = ideology_bonapartist
 				has_ideology = ideology_theocrat
 			}
 		}
 	}
 	join_weight = {
 		value = {
-			value = 1
+			value = -5
 			desc = "base_value"
 		}
 		if = { # communists love communism

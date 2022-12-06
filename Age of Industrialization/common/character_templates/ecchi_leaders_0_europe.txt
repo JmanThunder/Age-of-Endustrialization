@@ -10,7 +10,7 @@ ecchi_lit_basanavicius_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_jonas_basanavicius
     birth_date = 1851.11.23
-    traits = { historical_figures romantic demagogue surveyor }
+    traits = { romantic demagogue surveyor }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -42,7 +42,7 @@ ecchi_lit_basanavicius_character_template = {
         }
         earliest_usage_date = 1905.1.1
         latest_usage_date = 1927.2.16
-        chance = 75
+        chance = 90
     }
 }
 
@@ -58,19 +58,18 @@ ecchi_bul_botev_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_hristo_botev
     birth_date = 1848.1.6
-    traits = { historical_figures romantic direct }
+    traits = { romantic direct }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:BUL
             this = c:BUL
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1867.1.1
         latest_usage_date = 1876.6.1
-        chance = 75
+        chance = 90
     }
 }
 
@@ -86,7 +85,7 @@ ecchi_rom_radulescu-motru_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_constantin_radulescu_motru
     birth_date = 1868.2.15
-    traits = { historical_figures reckless romantic arrogant }
+    traits = { reckless romantic arrogant }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:ROM
@@ -101,7 +100,7 @@ ecchi_rom_radulescu-motru_character_template = {
         }
         earliest_usage_date = 1890.1.1
         latest_usage_date = 1957.3.6
-        chance = 75
+        chance = 90
     }
 }
 
@@ -117,7 +116,7 @@ ecchi_bye_kalinowski_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_konstanty_kalinowski
     birth_date = 1838.2.2
-    traits = { historical_figures reckless inspirational_orator }
+    traits = { reckless inspirational_orator }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:BYE
@@ -132,7 +131,7 @@ ecchi_bye_kalinowski_character_template = {
         }
         earliest_usage_date = 1860.1.1
         latest_usage_date = 1864.3.22
-        chance = 75
+        chance = 90
     }
 }
 
@@ -148,7 +147,7 @@ ecchi_gre_kolokotronis_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_theodoros_kolokotronis
     birth_date = 1770.4.3
-    traits = { historical_figures traditionalist_commander mountain_commander }
+    traits = { traditionalist_commander mountain_commander }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -167,7 +166,7 @@ ecchi_gre_kolokotronis_character_template = {
         role = general
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1843.2.4
-        chance = 75
+        chance = 90
     }
 }
 
@@ -183,7 +182,7 @@ ecchi_hun_lukacs_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_lukacs_gyorgy
     birth_date = 1885.4.13
-    traits = { historical_figures innovative cautious }
+    traits = { innovative cautious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:HUN
@@ -198,7 +197,7 @@ ecchi_hun_lukacs_character_template = {
         }
         earliest_usage_date = 1915.1.1
         latest_usage_date = 1971.6.4
-        chance = 75
+        chance = 90
     }
 }
 
@@ -214,7 +213,7 @@ ecchi_ser_krstic_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_micko_krstic
     birth_date = 1855.10.29
-    traits = { historical_figures basic_offensive_planner mountain_commander }
+    traits = { basic_offensive_planner mountain_commander }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -222,12 +221,9 @@ ecchi_ser_krstic_character_template = {
             this = c:SER
         }
         role = general
-
-
-
         earliest_usage_date = 1880.1.1
         latest_usage_date = 1909.10.29
-        chance = 75
+        chance = 90
     }
 }
 
@@ -243,7 +239,7 @@ ecchi_ukr_makhno_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_nestor_makhno
     birth_date = 1888.11.8
-    traits = { historical_figures demagogue popular_commander }
+    traits = { demagogue popular_commander }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:UKR
@@ -259,7 +255,7 @@ ecchi_ukr_makhno_character_template = {
         }
         earliest_usage_date = 1908.1.1
         latest_usage_date = 1934.7.25
-        chance = 75
+        chance = 90
     }
 }
 
@@ -275,7 +271,7 @@ ecchi_bel_wahis_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_theophile_wahis
     birth_date = 1844.4.27
-    traits = { historical_figures cruel wrathful bigoted }
+    traits = { cruel wrathful bigoted }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -299,7 +295,7 @@ ecchi_bel_wahis_character_template = {
         }
         earliest_usage_date = 1890.1.1
         latest_usage_date = 1921.1.26
-        chance = 75
+        chance = 90
     }
 }
 
@@ -315,7 +311,7 @@ ecchi_den_kierkegaard_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_soren_kierkegaard
     birth_date = 1813.5.5
-    traits = { historical_figures romantic inspirational_orator }
+    traits = { romantic inspirational_orator }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -355,7 +351,7 @@ ecchi_nor_amundsen_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_roald_amundsen
     birth_date = 1872.7.16
-    traits = { historical_figures explorer surveyor brave }
+    traits = { explorer surveyor brave }
     commander_rank = default
     commander_usage = {
         country_trigger = {

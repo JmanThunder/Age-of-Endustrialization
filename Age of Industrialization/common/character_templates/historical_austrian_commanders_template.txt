@@ -9,7 +9,7 @@ aus_admiral_tegetthoff = {
 	interest_group = ig_armed_forces
 	birth_date = 1827.12.23
 	dna = dna_wilhelm_tegetthoff
-	traits = { historical_figures 
+	traits = {
 		expert_naval_commander
 		direct
 		innovative
@@ -32,7 +32,7 @@ aus_admiral_tegetthoff = {
 		role = admiral
 		earliest_usage_date = 1854.1.1
 		latest_usage_date = 1880.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_admiral_archduke_friedrich = {
@@ -45,7 +45,7 @@ aus_admiral_archduke_friedrich = {
 	interest_group = ig_armed_forces
 	birth_date = 1821.5.14
 	dna = dna_archduke_friedrich
-	traits = { historical_figures 
+	traits = {
 		basic_naval_commander
 		brave
 		meticulous
@@ -72,7 +72,7 @@ aus_admiral_archduke_friedrich = {
 		role = admiral
 		earliest_usage_date = 1840.1.1
 		latest_usage_date = 1870.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_von_windisch_gratz = {
@@ -85,7 +85,7 @@ aus_general_von_windisch_gratz = {
 	interest_group = ig_landowners
 	birth_date = 1787.5.11
 	dna = dna_alfred_windisch
-	traits = { historical_figures 
+	traits = {
 		cautious
 	}
 	commander_usage = {
@@ -106,7 +106,7 @@ aus_general_von_windisch_gratz = {
 		role = general
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1850.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_von_hotzendorf = {
@@ -119,7 +119,7 @@ aus_general_von_hotzendorf = {
 	interest_group = ig_landowners
 	birth_date = 1852.11.11
 	dna = dna_franz_hotzendorf
-	traits = { historical_figures 
+	traits = {
 		basic_offensive_planner
 		arrogant
 		reckless
@@ -142,7 +142,7 @@ aus_general_von_hotzendorf = {
 		role = general
 		earliest_usage_date = 1876.1.1
 		latest_usage_date = 1925.1.1
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_boroevic = {
@@ -155,7 +155,7 @@ aus_general_boroevic = {
 	interest_group = ig_armed_forces
 	birth_date = 1856.12.13
 	dna = dna_svetozar_borocevic
-	traits = { historical_figures 
+	traits = {
 		expert_defensive_strategist
 		experienced_offensive_planner
 		popular_commander
@@ -184,7 +184,7 @@ aus_general_boroevic = {
 		role = general
 		earliest_usage_date = 1896.1.1
 		latest_usage_date = 1927.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_von_benedek = {
@@ -197,7 +197,7 @@ aus_general_von_benedek = {
 	interest_group = ig_armed_forces
 	birth_date = 1804.7.14
 	dna = dna_ludwig_benedek
-	traits = { historical_figures 
+	traits = {
 		basic_offensive_planner
 		stalwart_defender
 		traditionalist_commander
@@ -220,7 +220,7 @@ aus_general_von_benedek = {
 		role = general
 		earliest_usage_date = 1896.1.1
 		latest_usage_date = 1927.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_von_habsburg_lothringen = {
@@ -233,7 +233,7 @@ aus_general_von_habsburg_lothringen = {
 	interest_group = ig_landowners
 	birth_date = 1817.8.3
 	dna = dna_archduke_albrecht
-	traits = { historical_figures 
+	traits = {
 		cautious
 	}
 	commander_usage = {
@@ -245,7 +245,7 @@ aus_general_von_habsburg_lothringen = {
 		role = general
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1869.1.1	
-		chance = 50
+		chance = 90
 	}
 }
 aus_general_urban = {
@@ -258,7 +258,7 @@ aus_general_urban = {
 	interest_group = ig_armed_forces
 	birth_date = 1802.8.1
 	dna = dna_von_urban
-	traits = { historical_figures 
+	traits = {
 		cruel
 		experienced_defensive_strategist
 		basic_artillery_commander
@@ -284,7 +284,7 @@ aus_general_mensdorff = {
 	interest_group = ig_armed_forces
 	birth_date = 1813.8.4
 	dna = dna_mensdorff_pouilly
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		resupply_commander
 	}
@@ -309,7 +309,7 @@ aus_general_winpffen = {
 	interest_group = ig_armed_forces
 	birth_date = 1797.4.2
 	dna = dna_von_winpffen
-	traits = { historical_figures 
+	traits = {
 		resupply_commander
 		basic_defensive_strategist
 		tactful
@@ -335,7 +335,7 @@ aus_general_schaffgotsch = {
 	interest_group = ig_armed_forces
 	birth_date = 1792.6.30
 	dna = dna_von_schaffgotsch
-	traits = { historical_figures 
+	traits = {
 		brave
 		experienced_offensive_planner
 		wrathful
@@ -361,7 +361,7 @@ aus_general_schlick = {
 	interest_group = ig_armed_forces
 	birth_date = 1789.5.23
 	dna = dna_franz_schlick
-	traits = { historical_figures 
+	traits = {
 		resupply_commander
 		popular_commander
 		romantic
@@ -387,7 +387,7 @@ aus_general_clam = {
 	interest_group = ig_armed_forces
 	birth_date = 1805.3.14
 	dna = dna_clam_gallas
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		resupply_commander
 		cautious
@@ -413,7 +413,7 @@ aus_general_montenuovo = {
 	interest_group = ig_armed_forces
 	birth_date = 1819.8.8
 	dna = dna_di_montenuovo
-	traits = { historical_figures 
+	traits = {
 		romantic
 		experienced_defensive_strategist
 		mountain_commander
@@ -439,7 +439,7 @@ aus_general_welden = {
 	interest_group = ig_armed_forces
 	birth_date = 1821.6.16
 	dna = dna_von_welden
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		basic_defensive_strategist
 		forest_commander_commander
@@ -465,7 +465,7 @@ aus_general_joseph = {
 	interest_group = ig_landowners
 	birth_date = 1872.5.24
 	dna = dna_archduke_joseph
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		romantic
 		plains_commander
@@ -491,7 +491,7 @@ aus_general_schonburg = {
 	interest_group = ig_armed_forces
 	birth_date = 1858.11.21
 	dna = dna_shonburg
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		cruel
 	}
@@ -516,7 +516,7 @@ aus_general_arz = {
 	interest_group = ig_armed_forces
 	birth_date = 1858.6.16
 	dna = dna_arthur_arz
-	traits = { historical_figures 
+	traits = {
 		expert_artillery_commander
 		experienced_offensive_planner
 		tactful
@@ -542,7 +542,7 @@ aus_general_stoger = {
 	interest_group = ig_armed_forces
 	birth_date = 1861.4.24
 	dna = dna_stoger_steiner
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		mountain_commander
 	}
@@ -567,7 +567,7 @@ aus_general_scheuchenstuel = {
 	interest_group = ig_landowners
 	birth_date = 1857.5.10
 	dna = dna_von_scheuchenstuel
-	traits = { historical_figures 
+	traits = {
 		mountain_commander
 		resupply_commander
 	}
@@ -592,7 +592,7 @@ aus_general_hauer = {
 	interest_group = ig_armed_forces
 	birth_date = 1857.5.10
 	dna = dna_von_hauer
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 	}
 	commander_usage = {
@@ -616,7 +616,7 @@ aus_general_wurm = {
 	interest_group = ig_armed_forces
 	birth_date = 1859.2.27
 	dna = dna_von_wurm
-	traits = { historical_figures 
+	traits = {
 		mountain_commander
 		experienced_artillery_commander
 	}
@@ -641,7 +641,7 @@ aus_general_kritek = {
 	interest_group = ig_armed_forces
 	birth_date = 1861.10.24
 	dna = dna_von_kritek
-	traits = { historical_figures 
+	traits = {
 		basic_offensive_planner
 		persistent
 	}
@@ -666,7 +666,7 @@ aus_general_kusmanek = {
 	interest_group = ig_armed_forces
 	birth_date = 1860.9.16
 	dna = dna_kusmanek
-	traits = { historical_figures 
+	traits = {
 		popular_commander
 		expert_defensive_strategist
 		trench_rat
@@ -692,7 +692,7 @@ aus_general_huyn = {
 	interest_group = ig_armed_forces
 	birth_date = 1857.11.18
 	dna = dna_von_huyn
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		basic_defensive_strategist
 		defense_in_depth_specialist
@@ -718,7 +718,7 @@ aus_general_kirchbach = {
 	interest_group = ig_landowners
 	birth_date = 1856.5.20
 	dna = dna_von_kirchbach
-	traits = { historical_figures 
+	traits = {
 		plains_commander
 		tactful
 	}
@@ -743,7 +743,7 @@ aus_general_leopold = {
 	interest_group = ig_landowners
 	birth_date = 1863.10.15
 	dna = dna_archduke_salvator
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		arrogant
 	}
@@ -768,7 +768,7 @@ aus_general_brolg = {
 	interest_group = ig_armed_forces
 	birth_date = 1856.2.21
 	dna = dna_von_brolg
-	traits = { historical_figures 
+	traits = {
 		plains_commander
 		basic_defensive_strategist
 	}
@@ -793,7 +793,7 @@ aus_general_nadas = {
 	interest_group = ig_armed_forces
 	birth_date = 1854.10.28
 	dna = dna_von_nadas
-	traits = { historical_figures 
+	traits = {
 		mountain_commander
 		trench_rat
 		meticulous
@@ -819,7 +819,7 @@ aus_general_krasnik = {
 	interest_group = ig_armed_forces
 	birth_date = 1854.9.18
 	dna = dna_von_krasnik
-	traits = { historical_figures 
+	traits = {
 		meticulous
 		trench_rat
 	}
@@ -844,7 +844,7 @@ aus_general_pflanzer = {
 	interest_group = ig_armed_forces
 	birth_date = 1855.6.1
 	dna = dna_von_pflanzer
-	traits = { historical_figures 
+	traits = {
 		mountain_commander
 		stalwart_defender
 	}
@@ -869,7 +869,7 @@ aus_general_beck = {
 	interest_group = ig_armed_forces
 	birth_date = 1830.3.21
 	dna = dna_von_beck
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		surveyor
 	}
@@ -894,7 +894,7 @@ aus_general_friedrich = {
 	interest_group = ig_landowners
 	birth_date = 1856.6.4
 	dna = dna_archduke_friedrich
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		arrogant
 	}
@@ -919,7 +919,7 @@ aus_general_kovess = {
 	interest_group = ig_armed_forces
 	birth_date = 1854.3.30
 	dna = dna_kovess
-	traits = { historical_figures 
+	traits = {
 		experienced_defensive_strategist
 		experienced_offensive_planner
 		defense_in_depth_specialist
@@ -947,7 +947,7 @@ aus_general_krobatin = {
 	interest_group = ig_armed_forces
 	birth_date = 1849.9.12
 	dna = dna_von_krobatin
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		stalwart_defender
 	}
@@ -972,7 +972,7 @@ aus_general_denta = {
 	interest_group = ig_armed_forces
 	birth_date = 1854.10.30
 	dna = dna_von_denta
-	traits = { historical_figures 
+	traits = {
 		experienced_defensive_strategist
 		trench_rat
 		surveyor
@@ -998,7 +998,7 @@ aus_general_bohm = {
 	interest_group = ig_armed_forces
 	birth_date = 1856.2.12
 	dna = dna_von_bohm
-	traits = { historical_figures 
+	traits = {
 		mountain_commander
 		experienced_offensive_planner
 		persistent
@@ -1024,7 +1024,7 @@ aus_general_wratislaw = {
 	interest_group = ig_armed_forces
 	birth_date = 1786.7.8
 	dna = dna_wratislaw
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 	}
 	commander_usage = {
@@ -1048,7 +1048,7 @@ aus_general_schwarzenberg = {
 	interest_group = ig_landowners
 	birth_date = 1803.11.18
 	dna = dna_edmund_schwarzenberg
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		romantic
 	}
@@ -1073,7 +1073,7 @@ aus_general_auffenberg = {
 	interest_group = ig_armed_forces
 	birth_date = 1852.5.22
 	dna = dna_von_auffenberg
-	traits = { historical_figures 
+	traits = {
 		basic_offensive_planner
 		surveyor
 	}
@@ -1098,7 +1098,7 @@ aus_general_eugen = {
 	interest_group = ig_landowners
 	birth_date = 1863.5.21
 	dna = dna_archduke_eugen
-	traits = { historical_figures 
+	traits = {
 		popular_commander
 		brave
 		trench_rat
@@ -1124,7 +1124,7 @@ aus_general_prokesch = {
 	interest_group = ig_landowners
 	birth_date = 1795.12.10
 	dna = dna_von_prokesch
-	traits = { historical_figures 
+	traits = {
 		traditionalist_commander
 		celebrity_commander
 	}
@@ -1136,6 +1136,425 @@ aus_general_prokesch = {
 		role = general
 		earliest_usage_date = 1836.1.1
 		latest_usage_date = 1876.1.1	
+		chance = 50
+	}
+}
+aus_admiral_wullerstorf = {
+	first_name = Bernhard
+	last_name = von_Wullerstorf-Urbai
+	culture = cu:south_german
+	female = no
+	ideology = ideology_market_liberal
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1816.1.29
+	dna = dna_von_wullerstorf
+	traits = {
+		explorer
+		celebrity_commander
+		experienced_naval_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:AUS 
+			this = c:AUS
+		}
+		role = admiral
+		earliest_usage_date = 1857.1.1
+		latest_usage_date = 1883.1.1	
+		chance = 50
+	}
+}
+aus_admiral_spaun = {
+	first_name = Hermann
+	last_name = von_Spaun
+	culture = cu:south_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1833.5.9
+	dna = dna_von_spaun
+	traits = {
+		dockyard_master
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:AUS 
+			this = c:AUS
+		}
+		role = admiral
+		earliest_usage_date = 1885.1.1
+		latest_usage_date = 1904.1.1	
+		chance = 50
+	}
+}
+aus_admiral_haus = {
+	first_name = Anton
+	last_name = Haus
+	culture = cu:south_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1851.6.13
+	dna = dna_von_haus
+	traits = {
+		experienced_naval_commander
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:AUS 
+			this = c:AUS
+		}
+		role = admiral
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1917.1.1	
+		chance = 50
+	}
+}
+
+# Hungary - HUN
+hun_admiral_horthy = {
+	first_name = Miklos
+	last_name = Horthy
+	culture = cu:hungarian
+	female = no
+	ideology = ideology_ethno_nationalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1868.5.18
+	dna = dna_miklos_horthy
+	traits = {
+		experienced_naval_commander
+		celebrity_commander
+		bigoted
+
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:HUN 
+					this = c:HUN
+				}
+				AND = { 
+					NOT = { exists = c:HUN } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = admiral
+		earliest_usage_date = 1911.1.1
+		latest_usage_date = 1936.1.1	
+		chance = 50
+	}
+}
+hun_general_gorgey = {
+	first_name = Artur
+	last_name = Gorgey
+	culture = cu:hungarian
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1818.1.30
+	dna = dna_gorgey
+	traits = {
+		expert_artillery_commander
+		celebrity_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:HUN 
+			this = c:HUN
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1895.1.1	
+		chance = 50
+	}
+}
+hun_general_gyulai = {
+	first_name = Ferencz
+	last_name = Gyulai
+	culture = cu:hungarian
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1798.9.1
+	dna = dna_gyulai
+	traits = {
+		basic_diplomat
+		expert_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:HUN 
+					this = c:HUN
+				}
+				AND = { 
+					NOT = { exists = c:HUN } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1839.1.1
+		latest_usage_date = 1868.1.1	
+		chance = 50
+	}
+}
+hun_general_hazai = {
+	first_name = Samu
+	last_name = Hazai
+	culture = cu:hungarian
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1851.12.26
+	dna = dna_hazai
+	traits = {
+		defense_in_depth_specialist
+		basic_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:HUN 
+					this = c:HUN
+				}
+				AND = { 
+					NOT = { exists = c:HUN } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1936.1.1	
+		chance = 50
+	}
+}
+hun_general_novak = {
+	first_name = Elemer
+	last_name = Gorondy-Novak
+	culture = cu:hungarian
+	female = no
+	ideology = ideology_ethno_nationalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1885.2.23
+	dna = dna_novak
+	traits = {
+		basic_offensive_planner
+		experienced_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:HUN 
+					this = c:HUN
+				}
+				AND = { 
+					NOT = { exists = c:HUN } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1918.1.1
+		latest_usage_date = 1936.1.1	
+		chance = 50
+	}
+}
+
+# Czech - CZH
+czh_general_syrovy = {
+	first_name = Jan
+	last_name = Syrovy
+	culture = cu:czech
+	female = no
+	ideology = ideology_ethno_nationalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1888.1.24
+	dna = dna_syrovy
+	traits = {
+		basic_offensive_planner
+		bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:CZH 
+					this = c:CZH
+				}
+				AND = { 
+					NOT = { exists = c:CZH } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1920.1.1
+		latest_usage_date = 1936.1.1	
+		chance = 50
+	}
+}
+
+# Croatia - CRO
+cro_general_jelacic = {
+	first_name = Josip
+	last_name = Jelacic
+	culture = cu:croat
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1801.10.16
+	dna = dna_jelacic
+	traits = {
+		basic_offensive_planner
+		meticulous
+		ambitious
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:CRO 
+					this = c:CRO
+				}
+				AND = { 
+					NOT = { exists = c:CRO } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1842.1.1
+		latest_usage_date = 1859.1.1	
+		chance = 50
+	}
+}
+cro_general_sarkotic = {
+	first_name = Stjepan
+	last_name = Sarkotic
+	culture = cu:croat	
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1858.10.4
+	dna = dna_sarkotic
+	traits = {
+		traditionalist_commander
+		experienced_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:CRO 
+					this = c:CRO
+				}
+				AND = { 
+					NOT = { exists = c:CRO } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1901.1.1
+		latest_usage_date = 1936.1.1	
+		chance = 50
+	}
+}
+slo_general_potiorek = {
+	first_name = Oskar
+	last_name = Potiorek
+	culture = cu:slovene
+	female = no
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1853.11.20
+	dna = dna_potiorek
+	traits = {
+		resupply_commander
+		reserved
+		ambitious
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:SLO 
+					this = c:SLO
+				}
+				AND = { 
+					NOT = { exists = c:SLO } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1906.1.1
+		latest_usage_date = 1933.1.1	
+		chance = 50
+	}
+}
+cro_admiral_njegovan = {
+	first_name = Maksimilijan
+	last_name = Njegovan
+	culture = cu:croat
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1858.10.30
+	dna = dna_njegovan
+	traits = {
+		dockyard_master
+		convoy_raider_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:CRO 
+					this = c:CRO
+				}
+				AND = { 
+					NOT = { exists = c:CRO } 
+					exists = c:AUS 
+					this = c:AUS 
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1911.1.1
+		latest_usage_date = 190.1.1	
 		chance = 50
 	}
 }

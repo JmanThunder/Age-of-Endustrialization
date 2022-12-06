@@ -22,8 +22,13 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
-		activate_law = law_type:dual_federalism
+		activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_merchant_navy
 
+		set_institution_investment_level = {
+			institution = institution_navy_professionalism
+			level = 2
+		}
 		
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
@@ -69,7 +74,13 @@
 
 		add_modifier = {
 			name = missouri_compromise
+			years = 50
+			is_decaying = yes
 		}
-		
+		add_modifier = {
+			name = second_great_awakening_mod
+			months = 125
+			is_decaying = yes
+		}
 	}
 }

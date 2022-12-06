@@ -137,7 +137,6 @@ gadsden_purchase.2 = { #MEX gets offer
 	}
     option = { #Mexico Refuses
         name = gadsden_purchase.2.b
-        default_option = yes
         show_as_tooltip = {
             s:STATE_ARIZONA = {  
                 if = {

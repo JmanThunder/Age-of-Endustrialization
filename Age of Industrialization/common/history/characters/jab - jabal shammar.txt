@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Abdullah_al_Rashid
 				ambitious
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Talal_al_Rashid
 				ambitious
 			}
 		}

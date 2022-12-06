@@ -30,6 +30,15 @@ reject_back_down_event.1 = {
 				initiator = {
 					is_player = yes
 				}
+				NOT = {
+					has_play_goal = make_vassal
+				}
+				NOT = {
+					has_play_goal = make_puppet
+				}
+				NOT = {
+					has_play_goal = make_dominion
+				}
 				exists = var:temp
 				var:temp = {
 					any_scope_state = {
@@ -42,6 +51,25 @@ reject_back_down_event.1 = {
 					name = target
 					value = root.var:temp
 				}
+			}
+		}
+		else_if = {
+			limit = {
+				initiator = {
+					is_player = yes
+				}
+			}
+			every_state = {
+				limit = {
+					has_variable = owned_by_target
+				}
+				remove_variable = owned_by_target
+			}
+			every_country = {
+				limit = {
+					has_variable = subject_of_target
+				}
+				remove_variable = owned_by_target
 			}
 		}
 	}
@@ -69,6 +97,19 @@ reject_back_down_event.2 = {
 		name = reject_back_down_event.2.b
 		default_option = yes
 		remove_variable = target
+
+		every_country = {
+			limit = {
+				has_variable = subject_of_target
+			}
+			remove_variable = subject_of_target
+		}
+		every_state = {
+			limit = {
+				has_variable = owned_by_target
+			}
+			remove_variable = owned_by_target
+		}
 	}
 
 	option = {
@@ -91,7 +132,186 @@ reject_back_down_event.2 = {
 				type = dp_reject_back_down
 				target_country = var:target
 			}
+			every_state = {
+				limit = {
+					owner = root
+					has_variable = owned_by_target
+				}
+				set_state_owner = root.var:target
+				set_state_type = incorporated
+			}
+			every_country = {
+				limit = {
+					has_variable = subject_of_target
+					NOT = {
+						is_subject_of = root.var:target
+					}
+				}
+				if = {
+					limit = {
+						is_subject_of = root
+					}
+					if = {
+						limit = {
+							is_subject_type = subject_type_puppet
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = puppet
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = puppet
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_subject_type = subject_type_dominion
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = dominion
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = dominion
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_subject_type = subject_type_protectorate
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = protectorate
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = protectorate
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_subject_type = subject_type_tributary
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = tributary
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = tributary
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_subject_type = subject_type_personal_union
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = personal_union
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = personal_union
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_subject_type = subject_type_vassal
+						}
+						root = {
+							remove_diplomatic_pact = {
+								country = prev
+								type = vassal
+							}
+						}
+						root.var:target = {
+							create_diplomatic_pact = {
+								country = prev
+								type = vassal
+							}
+						}
+					}
+				}
+				else = {
+					create_diplomatic_pact = {
+						country = prev
+						type = puppet
+					}
+				}
+			}		
 		}
 		remove_variable = target
+		every_country = {
+			limit = {
+				has_variable = subject_of_target
+			}
+			remove_variable = subject_of_target
+		}
+		every_state = {
+			limit = {
+				has_variable = owned_by_target
+			}
+			remove_variable = owned_by_target
+		}
+	}
+}
+
+# setup owned states/subjects
+reject_back_down_event.3 = {
+	type = diplomatic_play_event
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		target = {
+			root = {
+				set_variable = {
+					name = temp
+					value = prev
+				}
+			}
+		}
+		if = {
+			limit = {
+				initiator = {
+					is_player = yes
+				}
+			}
+			every_state = {
+				limit = {
+					owner = root.var:temp
+				}
+				set_variable = owned_by_target
+			}
+			every_country = {
+				limit = {
+					is_subject_of = root.var:temp
+				}
+				set_variable = subject_of_target
+			}
+			
+		}
 	}
 }

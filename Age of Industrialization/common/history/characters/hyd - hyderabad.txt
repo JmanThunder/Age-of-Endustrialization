@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Nasir-ud-Daulah_Asaf_Jah
 				reckless
 				expensive_tastes
 			}
@@ -26,7 +26,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Afzal-uh-Daulah_Asaf_Jah
 				meticulous
 			}
 		}

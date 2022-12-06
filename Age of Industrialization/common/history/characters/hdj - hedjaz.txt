@@ -11,7 +11,7 @@
 			ideology = ideology_traditionalist
 			religion = rel:sunni
 			traits = {
-				historical_figures
+				concept_wikipedia_Muhammad_al_Hashimi
 				ambitious
 			}
 		}	
@@ -27,7 +27,7 @@
 			ideology = ideology_traditionalist
 			religion = rel:sunni
 			traits = {
-				historical_figures
+				concept_wikipedia_Abd_al_Muttalib_al_Hashimi
 				persistent
 			}
 		}

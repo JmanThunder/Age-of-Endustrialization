@@ -13,6 +13,10 @@
         bg_lead_mining = 36
         bg_sulfur_mining = 80
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
+    }
 }
 
 STATE_TIANSHAN = {
@@ -115,6 +119,10 @@ STATE_ALXA = {
     capped_resources = {
         bg_coal_mining = 32
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 5
+    }
 }
 
 STATE_HINGGAN = {
@@ -187,6 +195,10 @@ STATE_SHENGJING = {
         bg_logging = 2
         bg_fishing = 2
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
+    }
     naval_exit_id = 3057
 }
 
@@ -211,6 +223,10 @@ STATE_OUTER_MANCHURIA = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
         undiscovered_amount = 8
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
     }
     naval_exit_id = 3059
 }
@@ -322,6 +338,10 @@ STATE_XIAN = {
         bg_sulfur_mining = 60
         bg_logging = 9
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
+    }
 }
 
 STATE_QINGHAI = {
@@ -355,6 +375,10 @@ STATE_CHONGQING = {
     capped_resources = {
         bg_coal_mining = 36
         bg_logging = 9
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 5
     }
 }
 
@@ -596,10 +620,17 @@ STATE_FORMOSA = {
     mine = "xE73B31"
     wood = "xE73B31"
     arable_land = 172
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" "bg_sugar_plantations" "bg_coffee_plantations" }
     capped_resources = {
         bg_logging = 7
         bg_fishing = 13
+        bg_coal_mining = 36
+        bg_sulfur_mining = 18
+    }
+    resource = {
+        type = "bg_gold_fields"
+        depleted_type = "bg_gold_mining"
+        undiscovered_amount = 4
     }
     naval_exit_id = 3056
 }
@@ -620,6 +651,10 @@ STATE_SHANDONG = {
         bg_sulfur_mining = 32
         bg_logging = 6
         bg_fishing = 15
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
     }
     naval_exit_id = 3057
 }
@@ -980,6 +1015,10 @@ STATE_SAKHALIN = {
         bg_logging = 11
         bg_whaling = 3
         bg_fishing = 7
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 5
     }
     naval_exit_id = 3059
 }

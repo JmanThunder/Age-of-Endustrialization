@@ -12,7 +12,6 @@
 			ideology = ideology_moderate
 			traits = {
 				persistent
-				historical_figures
 			}
 		}
 	}

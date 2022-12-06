@@ -252,6 +252,7 @@ ai_strategy_progressive_agenda = {
 						has_ideology = ideology_feminist
 						has_ideology = ideology_abolitionist
 						has_ideology = ideology_market_liberal
+						has_ideology = ideology_cosmopolitanism
 					}
 				}
 			}
@@ -286,7 +287,14 @@ ai_strategy_progressive_agenda = {
 			}
 			
 			add = 10
-		}	
+		}
+
+		if = {
+			limit = {
+				has_variable = japan_forced_to_open_market
+			}
+			add = 100
+		}
 	}
 }
 
@@ -358,6 +366,7 @@ ai_strategy_egalitarian_agenda = {
 						has_ideology = ideology_feminist
 						has_ideology = ideology_abolitionist
 						has_ideology = ideology_social_democrat
+						has_ideology = ideology_cosmopolitanism
 						
 					}
 				}

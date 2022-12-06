@@ -95,7 +95,17 @@ conservative_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					NOT = { has_variable = french_empire_created }
+					NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
+				}
+			}
+			triggered_desc = {
+				desc = party_bonapartist_party
+				trigger = {
+					exists = c:FRA
+					THIS = c:FRA
+					has_law = law_type:law_monarchy
+					owner = { ruler = { has_variable = is_bonapartist } }
+					year < 1880
 				}
 			}
 			triggered_desc = {
@@ -104,7 +114,8 @@ conservative_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					has_variable = french_empire_created
+					owner = { ruler = { has_variable = is_bonapartist } }
+					year >= 1880
 				}
 			}
 			triggered_desc = {
@@ -250,7 +261,7 @@ conservative_party = {
 	}
 	join_weight = {
 		value = {
-			value = 1
+			value = -5
 			desc = "base_value"
 		}
 		if = { # socialists and radicals won't join conservative parties
@@ -277,6 +288,9 @@ conservative_party = {
 					OR = {
 						has_ideology = ideology_traditionalist
 						has_ideology = ideology_royalist
+						has_ideology = ideology_orleanist
+						has_ideology = ideology_legitimist
+						has_ideology = ideology_bonapartist
 						has_ideology = ideology_theocrat
 						has_ideology = ideology_slaver
 					}
@@ -586,11 +600,8 @@ conservative_party = {
 		}
 		if = { # arbitrary weight for Andrew Jackson to be in the right party
 			limit = {
-				OR = {
-					leader = {
-						has_variable = is_andrew_jackson
-					}
-					has_modifier = missouri_compromise				
+				leader = {
+					has_variable = is_andrew_jackson
 				}
 			}
 			add = {
@@ -601,12 +612,96 @@ conservative_party = {
 		if = {
 			limit = {
 				leader = {
-					has_ideology = ideology_orleanist
+					has_variable = is_adolphe_thiers_right
+					NOT = { owner = { has_law = law_type:law_monarchy } }
 				}
 			}
 			add = {
-				value = -10
-				desc = "from_orleanist"
+				value = 10
+				desc = "from_adolphe_thiers"
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology_orleanist
+						has_ideology = ideology_bonapartist
+					}
+				}
+				NOT = { AND = { leader = { has_variable = is_adolphe_thiers_right } NOT = { owner = { has_law = law_type:law_monarchy } } } }
+				NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
+			}
+			add = {
+				value = -15
+				desc = "from_rival_royalist"
+			}
+		}
+		if = {
+			limit = {
+				leader = { has_ideology = ideology_legitimist }
+				NOT = { 
+					owner = { 
+						ruler = { 
+							has_variable = is_bonapartist 
+						} 
+					} 
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_legitimist"
+			}
+		}
+		if = {
+			limit = {
+				is_powerful = yes
+				leader = { has_ideology = ideology_legitimist }
+				NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
+			}
+			add = {
+				value = 10
+				desc = "from_powerful_legitimist"
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology_legitimist
+						has_ideology = ideology_orleanist
+					}
+				}
+				owner = {
+					ruler = {
+						has_variable = is_bonapartist 
+					} 
+				}
+			}
+			add = {
+				value = -15
+				desc = "from_rival_royalist"
+			}
+		}
+		if = {
+			limit = {
+				leader = { has_ideology = ideology_bonapartist }
+				owner = { ruler = { has_variable = is_bonapartist } }
+			}
+			add = {
+				value = 10
+				desc = "from_bonapartist"
+			}
+		}
+		if = {
+			limit = {
+				is_powerful = yes
+				leader = { has_ideology = ideology_bonapartist }
+				owner = { ruler = { has_variable = is_bonapartist } }
+			}
+			add = {
+				value = 10
+				desc = "from_powerful_bonapartist"
 			}
 		}
 	}

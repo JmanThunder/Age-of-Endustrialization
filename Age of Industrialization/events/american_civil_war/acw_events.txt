@@ -2,7 +2,7 @@
 
 # The Abolitionist's Martyrdom
 # based off the death of Elijah P. Lovejoy
-acw_events.1 = { ###Edited to change when it fires 
+acw_events.1 = {
 	type = country_event
 	
 	event_image = {
@@ -93,14 +93,14 @@ acw_events.1 = { ###Edited to change when it fires
 				months = short_modifier_time
 				is_decaying = yes
 			}
-		c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:yankee
-		}}
-		c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:dixie
-		}}
+	#	c:USA = {add_radicals = {
+	#		value = 0.01
+	#		culture = cu:yankee
+	#	}}
+	#	c:USA = {add_radicals = {
+	#		value = 0.01
+	#		culture = cu:dixie
+	#	}}
 	}
 
 	option = {
@@ -126,22 +126,145 @@ acw_events.1 = { ###Edited to change when it fires
 				months = short_modifier_time
 				is_decaying = yes
 			}
-        c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:yankee
-		}}
-		c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:dixie
-		}}
+    #    c:USA = {add_radicals = {
+	#		value = 0.01
+	#		culture = cu:yankee
+	#	}}
+	#	c:USA = {add_radicals = {
+	#		value = 0.01
+	#		culture = cu:dixie
+	#	}}
 	}
+}
+
+# The Fugitive Slave
+acw_events.2 = {
+	type = country_event
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_slaves_night.bk2"
 	}
 
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/slaves_night"
 
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	title = acw_events.2.t
+	desc = acw_events.2.d
+	flavor = acw_events.2.f
+
+	duration = 3
+
+	trigger = {
+		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_variable = american_civil_war }
+		any_interest_group = {
+			is_revolutionary = no
+			is_insurrectionary = no
+			is_marginal = no
+			OR = {
+				has_ideology = ideology_pro_slavery
+				leader = {
+					has_ideology = ideology_slaver
+				}
+			}
+		}
+		NOT = { has_variable = fugitive_slave_var }
+	}
+
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_revolutionary = no
+				is_insurrectionary = no
+				is_marginal = no
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = {
+						has_ideology = ideology_slaver
+					}
+				}
+			}
+			save_scope_as = slaver_ig
+			leader = {
+				save_scope_as = slaver_ig_leader
+			}
+		}
+		set_variable = {
+			name = fugitive_slave_var
+			months = short_modifier_time
+		}
+	}
+
+	cancellation_trigger = {
+		has_global_variable = american_civil_war
+	}
+
+	option = {
+		name = acw_events.2.a
+        default_option = yes
+
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = { has_ideology = ideology_slaver }
+				}
+			}
+			add_modifier = {
+				name = ig_slavers_happy
+				months = short_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_anti_slavery
+					leader = { has_ideology = ideology_abolitionist }
+				}
+			}
+			add_modifier = {
+				name = ig_abolitionists_mad
+				months = short_modifier_time
+			}
+		}
+	}
+	option = {
+		name = acw_events.2.b
+
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = { has_ideology = ideology_slaver }
+				}
+				NOT = { has_modifier = ig_slavers_mad }
+			}
+			add_modifier = {
+				name = ig_slavers_mad
+				months = short_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_anti_slavery
+					leader = { has_ideology = ideology_abolitionist }
+				}
+				NOT = { has_modifier = ig_abolitionists_happy }
+			}
+			add_modifier = {
+				name = ig_abolitionists_happy
+				months = short_modifier_time
+			}
+		}
+	}
+}
 
 # The [Leader Name] Proviso - a.k.a. The (Dynamic) Wilmot Proviso
+
 acw_events.3 = {
-	hidden = yes
 	type = country_event
 
 	title = acw_events.3.t
@@ -160,26 +283,26 @@ acw_events.3 = {
 	duration = 3
 
 	trigger = {
-	#	exists = c:USA
-	#	c:USA = ROOT
-	#	NOT = { has_law = law_type:law_slavery_banned }
-	#	NOT = { has_variable = american_civil_war }
-	#	NOT = { has_variable = USA_wilmot_proviso }
-	#	exists = c:MEX
-	#	any_state = {
-	#		has_claim_by = c:MEX
-	#	}
-	#	any_interest_group = {
-	#		is_revolutionary = no
-	#		is_insurrectionary = no
-	#		is_marginal = no
-	#		OR = {
-	#			has_ideology = ideology_anti_slavery
-	##			leader = {
-	#				has_ideology = ideology_abolitionist
-	#			}
-	#		}
-	#	}
+		exists = c:USA
+		c:USA = ROOT
+		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_variable = american_civil_war }
+		NOT = { has_variable = USA_wilmot_proviso }
+		exists = c:MEX
+		any_state = {
+			has_claim_by = c:MEX
+		}
+		any_interest_group = {
+			is_revolutionary = no
+			is_insurrectionary = no
+			is_marginal = no
+			OR = {
+				has_ideology = ideology_anti_slavery
+				leader = {
+					has_ideology = ideology_abolitionist
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -210,77 +333,9 @@ acw_events.3 = {
 		has_global_variable = american_civil_war
 	}
 
-}
-
-# The Fugitive Slave 
-acw_events.2 = {###Edited to change when it fires  
-	type = country_event
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_slaves_night.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/slaves_night"
-
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	title = acw_events.2.t
-	desc = acw_events.2.d
-	flavor = acw_events.2.f
-
-	duration = 3
-
-	trigger = {
-		NOT = { has_law = law_type:law_slavery_banned }
-		NOT = { has_variable = american_civil_war }
-		any_interest_group = {	
-			is_revolutionary = no
-			is_insurrectionary = no
-			is_marginal = no
-			OR = {
-				has_ideology = ideology_pro_slavery
-				leader = {
-					has_ideology = ideology_slaver
-				}
-			}
-			ig_approval <= -6
-		}
-		NOT = { has_variable = fugitive_slave_var }
-	}
-
-	immediate = {
-		random_interest_group = {
-			limit = {
-				is_revolutionary = no
-				is_insurrectionary = no
-				is_marginal = no
-				OR = {
-					has_ideology = ideology_pro_slavery
-					leader = {
-						has_ideology = ideology_slaver
-					}
-				}
-			}
-			save_scope_as = slaver_ig
-			leader = {
-				save_scope_as = slaver_ig_leader
-			}
-		}
-		set_variable = {
-			name = fugitive_slave_var
-			months = short_modifier_time
-			is_decaying = yes
-		}
-	}
-
-	cancellation_trigger = {
-		has_global_variable = american_civil_war
-	}
-
 	option = {
-		name = acw_events.2.a
-        default_option = yes
+		name = acw_events.3.a # a compromise is when nobody is happy at the end
+		default_option = yes
 
 		every_interest_group = {
 			limit = {
@@ -288,11 +343,11 @@ acw_events.2 = {###Edited to change when it fires
 					has_ideology = ideology_pro_slavery
 					leader = { has_ideology = ideology_slaver }
 				}
+				NOT = { has_modifier = disappointing_compromise }
 			}
 			add_modifier = {
-				name = ig_slavers_happy
+				name = disappointing_compromise
 				months = short_modifier_time
-				is_decaying = yes
 			}
 		}
 		every_interest_group = {
@@ -301,21 +356,23 @@ acw_events.2 = {###Edited to change when it fires
 					has_ideology = ideology_anti_slavery
 					leader = { has_ideology = ideology_abolitionist }
 				}
+				NOT = { has_modifier = disappointing_compromise }
 			}
 			add_modifier = {
-				name = ig_abolitionists_mad
+				name = disappointing_compromise
 				months = short_modifier_time
-				is_decaying = yes
 			}
 		}
-		c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:yankee
-		}}
 	}
-	option = {
-		name = acw_events.2.b
+	option = { # Abolish slavery in all the new territories
+		name = acw_events.3.b
 
+		every_scope_state = {
+			limit = {
+				has_claim_by = c:MEX
+			}
+			liberate_slaves = yes # this is going to be rough for freed pops initially, and that's to be expected.
+		}
 		every_interest_group = {
 			limit = {
 				OR = {
@@ -327,7 +384,6 @@ acw_events.2 = {###Edited to change when it fires
 			add_modifier = {
 				name = ig_slavers_mad
 				months = short_modifier_time
-				is_decaying = yes
 			}
 		}
 		every_interest_group = {
@@ -341,13 +397,39 @@ acw_events.2 = {###Edited to change when it fires
 			add_modifier = {
 				name = ig_abolitionists_happy
 				months = short_modifier_time
-				is_decaying = yes
 			}
 		}
-		c:USA = {add_radicals = {
-			value = 0.03
-			culture = cu:dixie
-		}}
+
+	}
+	option = { # Enable slavery in all the new territories
+		name = acw_events.3.c
+
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = { has_ideology = ideology_slaver }
+				}
+				NOT = { has_modifier = ig_slavers_happy }
+			}
+			add_modifier = {
+				name = ig_slavers_happy
+				months = short_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_anti_slavery
+					leader = { has_ideology = ideology_abolitionist }
+				}
+				NOT = { has_modifier = ig_abolitionists_mad }
+			}
+			add_modifier = {
+				name = ig_abolitionists_mad
+				months = short_modifier_time
+			}
+		}
 	}
 }
 
@@ -373,11 +455,14 @@ acw_events.5 = {
 
 	duration = 3
 
+	is_popup = yes
+
 	trigger = {
 		exists = c:USA
 		c:USA = ROOT
 		NOT = { has_law = law_type:law_slavery_banned }
 		NOT = { has_variable = bleeding_kansas_happened }
+		NOT = { has_modifier = missouri_compromise}
 		any_scope_state = {
 			is_slave_state = no
 			is_incorporated = no
@@ -403,8 +488,15 @@ acw_events.5 = {
 				wrathful
 				pious
 			}
-
-			save_scope_as = character_to_display_john_brown
+			on_created = {
+                set_variable = {
+                    name = is_john_brown #give the character a variable
+                }
+            }
+        }
+        random_scope_character = {
+            limit = { has_variable = is_john_brown } #use the variable to scope to that specific character
+            save_scope_as = character_to_display_john_brown #save the scope here
 		}
 		set_variable = {
 			name = bleeding_kansas_happened
@@ -435,18 +527,21 @@ acw_events.5 = {
 				liberate_slaves = yes
 			}
 		}
-		c:USA = {add_radicals = {
+		c:USA = {
+			add_radicals = {
 			value = 0.003
 			culture = cu:dixie
-		}}
-		c: USA = { add_modifier = {
+		}
+	}
+		c:USA = { 
+			add_modifier = {
 			name = abolitionist_win
 			months = 98
 			is_decaying = yes
-		} }
+		} 
+	}
 		custom_tooltip = acw_events_5_free_state_tt
 	}
-	
 	option = {
 		name = acw_events.5.b
 
@@ -459,15 +554,19 @@ acw_events.5 = {
 				}
 			}
 		}
-		c:USA = {add_radicals = {
+		c:USA = {
+			add_radicals = {
 			value = 0.003
 			culture = cu:yankee
-		}}
-		c:USA = { add_modifier = {
+		}
+	}
+		c:USA = { 
+			add_modifier = {
 			name = slavery_win 
 			months = 98
 			is_decaying = yes
-		} }
+		} 
+	}
 		custom_tooltip = acw_events_5_slave_state_tt
 	}
 }
@@ -582,10 +681,12 @@ acw_events.6 = {
 				kill_character = yes
 			}
 		}
-		c:USA = {add_radicals = {
+		c:USA = {
+			add_radicals = {
 			value = 0.02
 			culture = cu:yankee
-		}}
+		}
+	}
 	}
 	option = {
 		name = acw_events.6.b
@@ -601,14 +702,18 @@ acw_events.6 = {
 				kill_character = yes
 			}
 		}
-		c:USA = {add_radicals = {
+		c:USA = {
+			add_radicals = {
 			value = 0.01
 			culture = cu:yankee
-		}}
-		c:USA = {add_radicals = {
+		}
+	}
+		c:USA = {
+			add_radicals = {
 			value = 0.01
 			culture = cu:dixie
-		}}
+		}
+	}
 	}
 }
 

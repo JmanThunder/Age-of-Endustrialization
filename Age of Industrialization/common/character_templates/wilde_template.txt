@@ -8,7 +8,7 @@
 	birth_date = 1854.10.16
 	religion = catholic
 	traits = {
-		historical_figures
+		concept_wikipedia_Oscar_Wilde
 		romantic
 	}
 }
@@ -23,7 +23,7 @@ dynamic_wilde_character_template = {
 	birth_date = 1854.10.16
 	religion = random
 	traits = {
-		historical_figures
+		concept_wikipedia_Oscar_Wilde
 		romantic
 	}
 }

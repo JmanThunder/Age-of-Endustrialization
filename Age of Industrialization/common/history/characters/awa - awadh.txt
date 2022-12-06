@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Nasir-ud-Din_Haidar_Sayyid
 				meticulous
 				expensive_tastes
 			}
@@ -26,7 +26,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Muhammad_Ali_Sayyid
 				ambitious
 			}
 		}

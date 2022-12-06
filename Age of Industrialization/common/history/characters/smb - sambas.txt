@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Umar_Aqamaddin_Sambas
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Abu_Bakar_Sambas
 			}
 		}
 	}

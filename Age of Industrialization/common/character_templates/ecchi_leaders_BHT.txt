@@ -10,7 +10,7 @@ ecchi_bht_tata_character_template = {
     interest_group = ig_industrialists
 	dna = ecchi_dna_jamsetji_tata
     birth_date = 1839.3.3
-    traits = { historical_figures innovative ambitious persistent }
+    traits = { innovative ambitious persistent }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -42,7 +42,7 @@ ecchi_bht_tata_character_template = {
         }
         earliest_usage_date = 1874.1.1
         latest_usage_date = 1904.5.19
-        chance = 75
+        chance = 90
     }
 }
 
@@ -56,7 +56,7 @@ ecchi_bht_gandhi_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_mohandas_gandhi
     birth_date = 1869.10.2
-    traits = { historical_figures charismatic tactful experienced_diplomat persistent }
+    traits = { charismatic tactful experienced_diplomat persistent }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -88,7 +88,7 @@ ecchi_bht_gandhi_character_template = {
         }
         earliest_usage_date = 1915.1.1
         latest_usage_date = 1948.1.30
-        chance = 75
+        chance = 90
     }
 }
 
@@ -102,7 +102,7 @@ ecchi_bht_nehru_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_jawaharlal_nehru
     birth_date = 1889.11.14
-    traits = { historical_figures masterful_diplomat meticulous direct }
+    traits = { masterful_diplomat meticulous direct }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -134,7 +134,7 @@ ecchi_bht_nehru_character_template = {
         }
         earliest_usage_date = 1912.1.1
         latest_usage_date = 1964.5.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -148,7 +148,7 @@ ecchi_mug_bakht_khan_character_template = {
     interest_group = ig_armed_forces
 	dna = ecchi_dna_bakht_khan
     birth_date = 1797.1.27
-    traits = { historical_figures meticulous experienced_defensive_strategist }
+    traits = { meticulous experienced_defensive_strategist }
     commander_rank = default
     commander_usage = {
         country_trigger = {
@@ -158,7 +158,7 @@ ecchi_mug_bakht_khan_character_template = {
         role = general
         earliest_usage_date = 1855.1.1
         latest_usage_date = 1860.1.1
-        chance = 75
+        chance = 90
     }
 }
 
@@ -172,7 +172,7 @@ ecchi_sin_jinnah_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_muhammad_ali_jinnah
     birth_date = 1876.12.25
-    traits = { historical_figures tactful romantic demagogue }
+    traits = { tactful romantic demagogue }
 	interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -196,12 +196,11 @@ ecchi_sin_jinnah_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1948.9.11
-        chance = 75
+        chance = 90
     }
 }
 
@@ -215,19 +214,18 @@ ecchi_gwa_rani_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_rani_of_jhansi
     birth_date = 1828.11.19
-    traits = { historical_figures demagogue inspirational_orator charismatic }
+    traits = { demagogue inspirational_orator charismatic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:GWA
             this = c:GWA
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_landowners
         }
         earliest_usage_date = 1855.1.1
         latest_usage_date = 1858.6.18
-        chance = 75
+        chance = 90
     }
 }
 
@@ -241,7 +239,7 @@ ecchi_awa_hazrat_mahal_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_hazrat_mahal
     birth_date = 1820.4.7
-    traits = { historical_figures charismatic tactful }
+    traits = { charismatic tactful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:AWA
@@ -257,7 +255,7 @@ ecchi_awa_hazrat_mahal_character_template = {
         }
         earliest_usage_date = 1855.1.1
         latest_usage_date = 1879.4.7
-        chance = 75
+        chance = 90
     }
 }
 
@@ -271,7 +269,7 @@ ecchi_cey_senanayake_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_d_s_senanayake
     birth_date = 1884.10.21
-    traits = { historical_figures pious experienced_political_operator experienced_diplomat }
+    traits = { pious experienced_political_operator experienced_diplomat }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:CEY
@@ -287,6 +285,6 @@ ecchi_cey_senanayake_character_template = {
         }
         earliest_usage_date = 1920.1.1
         latest_usage_date = 1952.3.22
-        chance = 75
+        chance = 90
     }
 }

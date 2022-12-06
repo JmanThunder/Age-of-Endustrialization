@@ -11,19 +11,18 @@ ecchi_tib_11_dalai_lama_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_khedrup_gyatso
     birth_date = 1838.11.1
-    traits = { historical_figures reserved romantic }
+    traits = { reserved romantic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:TIB
             this = c:TIB
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_devout
         }
         earliest_usage_date = 1842.1.1
         latest_usage_date = 1856.1.31
-        chance = 75
+        chance = 90
     }
 }
 
@@ -37,19 +36,18 @@ ecchi_tib_12_dalai_lama_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_trinley_gyatso
     birth_date = 1857.1.26
-    traits = { historical_figures basic_diplomat cancer }
+    traits = { basic_diplomat cancer }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:TIB
             this = c:TIB
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_devout
         }
         earliest_usage_date = 1858.1.1
         latest_usage_date = 1875.4.25
-        chance = 75
+        chance = 90
     }
 }
 
@@ -63,19 +61,18 @@ ecchi_tib_13_dalai_lama_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_thubten_gyatso
     birth_date = 1876.2.12
-    traits = { historical_figures masterful_diplomat innovative wrathful }
+    traits = { masterful_diplomat innovative wrathful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:TIB
             this = c:TIB
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_devout
         }
         earliest_usage_date = 1878.1.1
         latest_usage_date = 1933.12.17
-        chance = 75
+        chance = 90
     }
 }
 
@@ -89,7 +86,7 @@ ecchi_tib_dorzhiev_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_agvan_dorzhiev
     birth_date = 1854.4.15
-    traits = { historical_figures experienced_diplomat surveyor pious }
+    traits = { experienced_diplomat surveyor pious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:TIB
@@ -104,6 +101,6 @@ ecchi_tib_dorzhiev_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1938.1.29
-        chance = 75
+        chance = 90
     }
 }

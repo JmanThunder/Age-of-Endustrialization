@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Achmadul_Mansur_Sirajuddin_Syah_Tidore
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Achmad_Syaifuddin_Alting_Tidore
 			}
 		}
 	}

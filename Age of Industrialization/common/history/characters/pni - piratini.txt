@@ -10,7 +10,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Bento_GonC_alves_da_Silva
 				ambitious
 				tactful
 			}
@@ -24,7 +24,7 @@
 			ideology = ideology_abolitionist
 			birth_date = 1801.2.11
 			traits = {
-				historical_figures
+				concept_wikipedia_Antonio_3_de_Sousa_Neto
 				brave
 				basic_defensive_strategist
 				surveyor

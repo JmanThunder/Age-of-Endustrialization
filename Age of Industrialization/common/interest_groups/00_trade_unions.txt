@@ -1,4 +1,4 @@
-ig_trade_unions = {
+﻿ig_trade_unions = {
 	color = hsv{ 0 0.56 0.58 }
 	texture = "gfx/interface/icons/ig_icons/trade_unions.dds"
 	
@@ -52,8 +52,8 @@ ig_trade_unions = {
 				}
 				value = 50
 			}
-		}
-
+		}			
+	
 		add = {
 			desc = "CONSCRIPTED"
 			if = {
@@ -83,7 +83,7 @@ ig_trade_unions = {
 				value = 50
 			}
 		}			
-
+		
 		add = {
 			desc = "SOL_0_5"
 			if = {
@@ -140,7 +140,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "NO_HEALTH_SYSTEM"
+			desc = "law_no_health_system"
 			if = {
 				limit = {
 					owner = {
@@ -152,7 +152,19 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "SERFDOM_BANNED"
+			desc = "law_serfdom"
+			if = {
+				limit = {
+					owner = {
+						has_law = law_type:law_serfdom
+					}
+				}
+				value = 10
+			}
+		}
+
+		add = {
+			desc = "law_serfdom_banned"
 			if = {
 				limit = {
 					owner = {
@@ -164,7 +176,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "CHILD_LABOR_ALLOWED"
+			desc = "law_child_labor_allowed"
 			if = {
 				limit = {
 					owner = {
@@ -176,7 +188,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "NO_SOCIAL_SECURITY"
+			desc = "law_no_social_security"
 			if = {
 				limit = {
 					owner = {
@@ -229,6 +241,20 @@ ig_trade_unions = {
 		}
 
 		multiply = {
+			desc = "NO_SOCIALISM"	
+			value = 1.0
+			
+			if = {
+				limit = { 
+					owner = {
+						NOT = { has_technology_researched = socialism }
+					}
+				}
+				value = 0.75
+			}		
+		}
+
+		multiply = {
 			desc = "decentralized_power"	
 			value = 1.0
 			
@@ -240,7 +266,7 @@ ig_trade_unions = {
 				}
 				value = 0.0
 			}		
-		}	
+		}		
 
 		multiply = {
 			desc = "IG_IS_MARGINALIZED"

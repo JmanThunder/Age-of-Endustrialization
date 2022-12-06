@@ -12,7 +12,7 @@ wild_west.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/vandalized_storefront"
 
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	title = wild_west.1.t
 	desc = wild_west.1.d
@@ -99,8 +99,6 @@ wild_west.1 = {
 # Raids on the Iron Horse
 wild_west.2 = {
 	type = country_event
-	placement = scope:raided_railroad
-	
 	event_image = {
 		video = "gfx/event_pictures/unspecific_trains.bk2"
 	}
@@ -108,7 +106,7 @@ wild_west.2 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	title = wild_west.2.t
 	desc = wild_west.2.d
@@ -208,8 +206,6 @@ wild_west.2 = {
 # Gunfight at the Corral
 wild_west.3 = {
 	type = country_event
-	placement = scope:OK_corral_state
-	
 	event_image = {
 		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
 	}
@@ -217,7 +213,7 @@ wild_west.3 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
 
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	title = wild_west.3.t
 	desc = wild_west.3.d

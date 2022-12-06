@@ -10,7 +10,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Augustus_von_Holstein-Gottorp
 				cautious
 			}
 			on_created = {
@@ -27,7 +27,7 @@
 			age = 9
 			interest_group = ig_landowners
 			traits = {
-				historical_figures
+				concept_wikipedia_Peter_von_Holstein-Gottorp
 				romantic
 			}
 		}

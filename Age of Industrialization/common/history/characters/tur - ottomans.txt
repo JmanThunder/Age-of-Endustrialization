@@ -13,7 +13,7 @@ CHARACTERS = {
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Mahmut_Osmanoglu
 				ambitious
 			}
 		}
@@ -27,7 +27,7 @@ CHARACTERS = {
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Abdulmecid_Osmanoglu
 				persistent
 			}
 		}
@@ -43,7 +43,7 @@ CHARACTERS = {
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Mehmet_Emin_Rauf_Pasha
 				cautious
 			}
 		}
@@ -57,7 +57,7 @@ CHARACTERS = {
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Mustafa_Reshid_Pasha
 				experienced_political_operator
 				experienced_diplomat
 				persistent
@@ -74,7 +74,7 @@ CHARACTERS = {
 			interest_group = ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Mustafa_Bushatli
 				imperious
 			}
 		}	
@@ -88,7 +88,7 @@ CHARACTERS = {
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				historical_figures
+				concept_wikipedia_Koca_Huesrev_Pasha
 			}
 		}
 		# also worth considering Ağa Hüseyin Paşa, age 60
@@ -115,7 +115,7 @@ CHARACTERS = {
 			ig_leader = yes
 			interest_group = ig_devout
 			traits = {
-				historical_figures
+				concept_wikipedia_Mustafa_Asim_Mekkizade
 				tactful
 			}
 		}
@@ -128,7 +128,7 @@ CHARACTERS = {
 			hq = region_balkans
 			commander_rank = commander_rank_3
 			traits = {
-				historical_figures
+				concept_wikipedia_Resid_Mehmed_Pasha
 				mountain_commander
 				cruel
 			}
@@ -142,7 +142,7 @@ CHARACTERS = {
 			hq = region_anatolia
 			commander_rank = commander_rank_3
 			traits = {
-				historical_figures
+				concept_wikipedia_abdulkerim_nadir_Pasha
 				cruel
 				basic_offensive_planner
 			}
@@ -157,7 +157,7 @@ CHARACTERS = {
 			commander_rank = commander_rank_3
 			age = 42
 			traits = {
-				historical_figures
+				concept_wikipedia_Yaver_Pasha
 				basic_diplomat
 				basic_naval_commander
 			}
@@ -183,7 +183,7 @@ CHARACTERS = {
 			birth_date = 1790.2.11 # Unsure of birth date, approxiamate age based on portraits.
 			hq = region_caucasus
 			traits = {
-				historical_figures
+				concept_wikipedia_Hafiz_Osman_Pasha
 				reckless
 				basic_defensive_strategist
 			}
@@ -200,7 +200,7 @@ CHARACTERS = {
 			birth_date = 1806.9.24
 			hq = region_arabic
 			traits = {
-				historical_figures
+				concept_wikipedia_Omer_Lutfi_Pasha
 				meticulous
 				charismatic
 				experienced_offensive_planner

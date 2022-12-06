@@ -10,7 +10,7 @@ ecchi_ast_parkes_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_henry_parkes
     birth_date = 1815.5.27
-    traits = { historical_figures inspirational_orator brave imperious }
+    traits = { inspirational_orator brave imperious }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -34,7 +34,7 @@ ecchi_ast_parkes_character_template = {
         }
         earliest_usage_date = 1855.1.1
         latest_usage_date = 1896.4.27
-        chance = 75
+        chance = 90
     }
 }
 
@@ -48,7 +48,7 @@ ecchi_ast_hughes_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_billy_hughes
     birth_date = 1862.9.25
-    traits = { historical_figures imperious firebrand wrathful }
+    traits = { imperious firebrand wrathful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:AST
@@ -63,7 +63,7 @@ ecchi_ast_hughes_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1952.10.28
-        chance = 75
+        chance = 90
     }
 }
 
@@ -77,7 +77,7 @@ ecchi_ast_barton_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_edmund_barton
     birth_date = 1849.1.18
-    traits = { historical_figures bigoted experienced_political_operator persistent }
+    traits = { bigoted experienced_political_operator persistent }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -101,7 +101,7 @@ ecchi_ast_barton_character_template = {
         }
         earliest_usage_date = 1878.1.1
         latest_usage_date = 1920.1.7
-        chance = 75
+        chance = 90
     }
 }
 
@@ -115,7 +115,7 @@ ecchi_ast_deakin_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_alfred_deakin
     birth_date = 1856.8.3
-    traits = { historical_figures bigoted arrogant meticulous direct }
+    traits = { bigoted arrogant meticulous direct }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:AST
@@ -131,7 +131,7 @@ ecchi_ast_deakin_character_template = {
         }
         earliest_usage_date = 1878.1.1
         latest_usage_date = 1919.10.7
-        chance = 75
+        chance = 90
     }
 }
 
@@ -145,7 +145,7 @@ ecchi_ast_curtin_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_john_curtin
     birth_date = 1885.1.8
-    traits = { historical_figures bigoted innovative experienced_diplomat }
+    traits = { bigoted innovative experienced_diplomat }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:AST
@@ -160,7 +160,7 @@ ecchi_ast_curtin_character_template = {
         }
         earliest_usage_date = 1927.1.1
         latest_usage_date = 1945.7.5
-        chance = 75
+        chance = 90
     }
 }
 
@@ -174,14 +174,13 @@ ecchi_ast_kelly_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_ned_kelly
     birth_date = 1854.12.22
-    traits = { historical_figures cruel bandit demagogue pillager romantic }
+    traits = { cruel bandit demagogue pillager romantic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:AST
             this = c:AST
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1875.1.1
@@ -202,7 +201,7 @@ ecchi_ulr_wonga_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_simon_wonga
     birth_date = 1824.2.5
-    traits = { historical_figures experienced_diplomat surveyor }
+    traits = { experienced_diplomat surveyor }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -226,7 +225,7 @@ ecchi_ulr_wonga_character_template = {
         }
         earliest_usage_date = 1848.1.1
         latest_usage_date = 1875.1.1
-        chance = 75
+        chance = 90
     }
 }
 
@@ -240,7 +239,7 @@ ecchi_ulr_biraban_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_biraban
     birth_date = 1800.2.21
-    traits = { historical_figures tactful innovative }
+    traits = { tactful innovative }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -256,12 +255,11 @@ ecchi_ulr_biraban_character_template = {
             }
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_intelligentsia
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1846.4.14
-        chance = 75
+        chance = 90
     }
 }
 
@@ -275,7 +273,7 @@ ecchi_ulr_barak_character_template = {
     interest_group = ig_intelligentsia
     birth_date = 1823.3.15
 	dna = ecchi_dna_william_barak
-    traits = { historical_figures romantic surveyor explorer }
+    traits = { romantic surveyor explorer }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -299,6 +297,6 @@ ecchi_ulr_barak_character_template = {
         }
         earliest_usage_date = 1874.1.1
         latest_usage_date = 1903.8.15
-        chance = 75
+        chance = 90
     }
 }

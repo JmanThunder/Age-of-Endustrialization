@@ -48,7 +48,7 @@ meiji.1 = {
 				interest_group = ig_landowners # beholden to the Shogun
 				ideology = ideology_traditionalist
 				traits = {
-					historical_figures
+					concept_wikipedia_Ninko_Yamato
 					reserved # not very active in affairs of state
 				}
 			}
@@ -60,7 +60,7 @@ meiji.1 = {
 				dna = dna_emperor_komei
 				interest_group = ig_armed_forces
 				traits = {
-					historical_figures
+					concept_wikipedia_Komei_Yamato
 					reserved # ditto
 				}
 			}
@@ -78,7 +78,7 @@ meiji.1 = {
 				dna = dna_emperor_komei
 				interest_group = ig_armed_forces
 				traits = {
-					historical_figures
+					concept_wikipedia_Komei_Yamato
 					reserved # ditto
 				}
 			}
@@ -90,7 +90,7 @@ meiji.1 = {
 				dna = dna_emperor_meiji
 				interest_group = ig_industrialists
 				traits = {
-					historical_figures
+					concept_wikipedia_Meiji_Yamato
 					innovative
 					charismatic
 				}
@@ -109,7 +109,7 @@ meiji.1 = {
 				dna = dna_emperor_meiji
 				interest_group = ig_industrialists
 				traits = {
-					historical_figures
+					concept_wikipedia_Meiji_Yamato
 					innovative
 					charismatic
 				}
@@ -121,7 +121,7 @@ meiji.1 = {
 				birth_date = 1879.1.1
 				interest_group = ig_industrialists
 				traits = {
-					historical_figures
+					concept_wikipedia_Taisho_Yamato
 				}
 			}
 		}
@@ -137,7 +137,7 @@ meiji.1 = {
 				birth_date = 1879.1.1
 				interest_group = ig_industrialists
 				traits = {
-					historical_figures
+					concept_wikipedia_Taisho_Yamato
 				}
 			}
 			create_character = {
@@ -147,7 +147,7 @@ meiji.1 = {
 				birth_date = 1901.1.1
 				interest_group = ig_armed_forces
 				traits = {
-					historical_figures
+					concept_wikipedia_Showa_Yamato
 				}
 			}
 		}
@@ -163,7 +163,7 @@ meiji.1 = {
 				birth_date = 1901.1.1
 				interest_group = ig_armed_forces
 				traits = {
-					historical_figures
+					concept_wikipedia_Showa_Yamato
 				}
 			}
 		}
@@ -487,7 +487,6 @@ meiji.3 = {
 		}
 		scope:samurai_ig = {
 			remove_ideology = ideology_bakufu
-			add_ideology = ideology_patriotic
 		}
 		# reduce mil tech spread
 		add_modifier = {
@@ -505,7 +504,6 @@ meiji.3 = {
 		}
 		scope:samurai_ig = {
 			remove_ideology = ideology_bakufu
-			add_ideology = ideology_patriotic
 		}
 		scope:samurai_ig_leader = { # honorable sudoku
 			kill_character = yes
@@ -1490,5 +1488,59 @@ meiji.12 = {
 			months = normal_modifier_time
 		}
 
+	}
+}
+
+meiji.13 = {
+	type = country_event
+	placement = root
+	title = meiji.13.t
+	desc = meiji.13.d
+	flavor = meiji.13.f
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	event_image = {
+		video = "gfx/event_pictures/asia_westerners_arriving.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia" 
+
+	trigger = {
+		exists = c:JAP
+		THIS = c:JAP
+		has_modifier = forced_market_opening
+		NOT = { has_variable = meiji_var }
+		NOT = { has_variable = japan_forced_to_open_market }
+	}
+
+	immediate = {
+		ig:ig_landowners = {
+			save_scope_as = shogunate_ig
+		}
+		ruler = {
+			save_scope_as = shogun_scope
+		}
+	}
+
+	option = {
+		name = meiji.13.a
+		set_variable = japan_forced_to_open_market # affects AI strategy
+		scope:shogunate_ig = {
+			add_modifier = {
+				name = shogun_ig_forced_to_open_market
+				months = very_long_modifier_time
+			}
+		}
+		scope:shogun_scope = {
+			add_modifier = {
+				name = shogun_forced_to_open_market
+				months = very_long_modifier_time
+			}
+		}
 	}
 }

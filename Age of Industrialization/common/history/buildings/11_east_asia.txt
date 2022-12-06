@@ -1090,10 +1090,28 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
 			create_building={
+				building="building_rice_farm"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+			}
+			create_building={
 				building="building_port"
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_sugar_plantation"
+				level=1
+				reserves=1
+				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned" }
+			}
+			create_building={
+				building="building_sulfur_mine"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_sulfur_mine" }
 			}
 		}
 	}
@@ -2063,7 +2081,7 @@
 		region_state:KOR={
 			create_building={
 				building="building_government_administration"
-				level=2
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -2107,6 +2125,12 @@
 	}
 	s:STATE_BUSAN={
 		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_shipyards"
 				level=1
@@ -2155,7 +2179,7 @@
 		region_state:KOR={
 			create_building={
 				building="building_government_administration"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}	
@@ -2194,6 +2218,12 @@
 	s:STATE_SARIWON={
 		region_state:KOR={
 			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_rice_farm"
 				level=1
 				reserves=1
@@ -2223,7 +2253,7 @@
 		region_state:KOR={
 			create_building={
 				building="building_government_administration"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}

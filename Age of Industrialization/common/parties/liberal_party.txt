@@ -48,7 +48,7 @@ liberal_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					NOT = { has_variable = french_empire_created }
+					NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
 				}
 			}
 			triggered_desc = {
@@ -57,7 +57,7 @@ liberal_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					has_variable = french_empire_created
+					owner = { ruler = { has_variable = is_bonapartist } }
 				}
 			}
 			triggered_desc = {
@@ -285,7 +285,7 @@ liberal_party = {
 	}
 	join_weight = {
 		value = {
-			value = 1
+			value = -5
 			desc = "base_value"
 		}
 		if = { # liberals love liberalism
@@ -339,6 +339,9 @@ liberal_party = {
 					OR = {
 						has_ideology = ideology_traditionalist
 						has_ideology = ideology_royalist
+						has_ideology = ideology_orleanist
+						has_ideology = ideology_legitimist
+						has_ideology = ideology_bonapartist
 						has_ideology = ideology_theocrat
 						has_ideology = ideology_slaver
 					}
@@ -576,12 +579,17 @@ liberal_party = {
 		}
 		if = {
 			limit = {		
+				owner = {
+					 ruler = {
+						 has_variable = is_orleanist 
+						} 
+					}
 				is_interest_group_type = ig_petty_bourgeoisie
-			}
 			add = {
 				value = 5
 				desc = "from_orleanist_king"
 			}
 		}
+	}
 	}
 }

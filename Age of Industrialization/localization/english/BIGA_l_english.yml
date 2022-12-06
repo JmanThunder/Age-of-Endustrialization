@@ -26,3 +26,4 @@
  RESOURCE_POP:0 "Resource Industry Employment"
  SMALL_URBAN_CENTER:0 "Urban Center smaller than 5"
  NO_URBAN_CENTER:0 "No Urban Center"
+ NO_SOCIALISM:0 "The #v $socialism$#! [concept_technology] is not unlocked"

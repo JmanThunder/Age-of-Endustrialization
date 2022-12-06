@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Dost_Barakzai
 				ambitious
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_traditionalist
 			traits = {
-				historical_figures
+				concept_wikipedia_Akbar_Singh
 				ambitious
 			}
 		}
@@ -36,7 +36,7 @@
 			last_name = Mohammed
 			age = 43
 			traits = {
-				historical_figures
+				concept_wikipedia_Dost_Mohammed
 		#		stalwart
 		#		debutante
 			}

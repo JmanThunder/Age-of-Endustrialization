@@ -18,5 +18,21 @@
  notification_je_make_schools_secular_fail_name:0 "Failed to acquire Secular Education"
  notification_je_make_schools_secular_fail_desc:0 "You have failed to switch to a secular education law."
  notification_je_make_schools_secular_fail_tooltip:0 "You have failed to switch to a secular education law."
- je_martial_law_pl:0 "Martial law in the Kingdom Of Poland"
- je_martial_law_pl_reason:0 "amongus"
+
+ 
+ 
+je_carlist_victory:0 "Winning The Carlist War"
+
+je_carlist_victory_reason:0 "After years of fighting we must bring the war to an end, install our rightful king to the throne, and celebrate a new and better Spain!"
+
+
+je_isab_victory:0 "Winning The Carlist War"
+
+
+je_isab_victory_reason:0 "Portugal has been tamed, and we are closer than ever to uniting the nation under our liberal Queen! We will usher in a new age towards the rights of man!"
+
+modifier_monarch_win:0 "Carlist Victory!"
+
+modifier_liberal_win:0 "Liberal Victory!"
+
+

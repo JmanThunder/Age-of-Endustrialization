@@ -3265,7 +3265,7 @@ GEO = { # Georgia
 
 GER = { # Germany
 	flag_definition = {
-		coa = GER
+		coa = GER_modern
 	}
 	flag_definition = {
 		coa = GER_iron_cross
@@ -3301,6 +3301,68 @@ GER = { # Germany
 		priority = 1500
 		trigger = { 
 			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_bavarian
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				ruler = {
+					has_culture = cu:south_german
+				}
+				capital = { 
+					OR = {
+						state_region = s:STATE_BAVARIA 
+						state_region = s:STATE_FRANCONIA
+					}
+				}
+			}
+		}
+	}	
+	flag_definition = {
+		coa = GER_austrian
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				ruler = {
+					has_culture = cu:south_german
+				}
+				capital = { 
+					OR = {
+						state_region = s:STATE_AUSTRIA
+						state_region = s:STATE_TYROL
+						state_region = s:STATE_SOUTH_TYROL
+						state_region = s:STATE_STYRIA
+					}
+				}
+			}
+		}
+	}	
+	
+	# Black-White-Red tricolor is reserved for a Prussian monarchy
+	flag_definition = {
+		coa = GER
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				ruler = {
+					has_culture = cu:north_german
+				}
+				capital = { 
+					OR = {
+						state_region = s:STATE_BRANDENBURG 
+						state_region = s:STATE_EAST_PRUSSIA
+						state_region = s:STATE_WEST_PRUSSIA
+					}
+				}
+			}
 		}
 	}	
 }
@@ -4115,10 +4177,49 @@ ISR = { # Israel
 
 ITA = { # Italy
 	flag_definition = {
-		coa = ITA
-		subject_canton = ITA
+		coa = ITA_republic
+		subject_canton = ITA_republic
 		priority = 1
 	}
+	flag_definition = {
+		coa = ITA_sicilian
+		subject_canton = ITA_sicilian
+		priority = 15
+		trigger = { 
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				ruler = {
+					has_culture = cu:south_italian
+				}
+				capital = { 
+					OR = {
+						state_region = s:STATE_SICILY 
+						state_region = s:STATE_CAMPANIA
+						state_region = s:STATE_ABRUZZO
+						state_region = s:STATE_APULIA
+					}
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = ITA_papal
+		subject_canton = ITA_papal
+		priority = 15
+		
+		trigger = {
+			NOT = { exists = c:PAP } # Can't be Pope if the Pope is still in control of another country!
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ITA
+		priority = 10
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
 	flag_definition = {
 		coa = ITA_republic
 		priority = 10
@@ -4263,6 +4364,46 @@ JAN = { # Jan Mayen
 			coa_def_republic_flag_trigger = yes
 		}
 	}		
+}
+
+ALK = {
+	flag_definition = {
+		coa = ALK
+		subject_canton = ALK
+		priority = 1
+	}
+	flag_definition = {
+		coa = ALK_communist
+		subject_canton = ALK_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ALK_fascist
+		subject_canton = ALK_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ALK_theocratic
+		subject_canton = ALK_theocratic
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ALK_absolute_monarchy
+		subject_canton = ALK_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
 }
 
 JAP = { # Japan
@@ -6554,15 +6695,6 @@ POL = { # Poland
 		coa = POL
 		subject_canton = POL
 		priority = 1
-	}
-	flag_definition = {
-		coa = POL_subject_RUS
-		allow_overlord_canton = no		
-		subject_canton = POL
-		priority = 50
-		trigger = { 
-			coa_def_russian_ensign_trigger = yes
-		}
 	}	
 	flag_definition = {
 		coa = POL_absolute_monarchy
@@ -8070,18 +8202,6 @@ TUS = { # Tuscany
 			coa_def_austrian_ensign_trigger = yes
 		}
 	}		
-}
-
-UBD = {
-	flag_definition = {
-		coa = UBD_subject_RUS
-		allow_overlord_canton = no		
-		subject_canton = UBD
-		priority = 50
-		trigger = { 
-			coa_def_russian_ensign_trigger = yes
-		}
-	}
 }	
 
 UCA = { # Central America

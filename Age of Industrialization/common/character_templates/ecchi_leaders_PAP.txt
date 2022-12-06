@@ -10,7 +10,7 @@ ecchi_pap_pecci_character_template = {
     interest_group = ig_trade_unions
 	dna = ecchi_dna_leo_xiii
     birth_date = 1810.3.2
-    traits = { historical_figures innovative romantic }
+    traits = { innovative romantic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:PAP
@@ -26,7 +26,7 @@ ecchi_pap_pecci_character_template = {
         }
         earliest_usage_date = 1870.1.1
         latest_usage_date = 1903.7.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -40,7 +40,7 @@ ecchi_pap_sarto_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_pius_x
     birth_date = 1835.6.2
-    traits = { historical_figures pious direct demagogue }
+    traits = { pious direct demagogue }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:PAP
@@ -56,7 +56,7 @@ ecchi_pap_sarto_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1914.8.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -70,7 +70,7 @@ ecchi_pap_della_chiesa_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_benedict_xv
     birth_date = 1854.11.21
-    traits = { historical_figures experienced_diplomat cautious innovative }
+    traits = { experienced_diplomat cautious innovative }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:PAP
@@ -85,7 +85,7 @@ ecchi_pap_della_chiesa_character_template = {
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1922.1.22
-        chance = 75
+        chance = 90
     }
 }
 
@@ -99,7 +99,7 @@ ecchi_pap_ratti_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_pius_xi
     birth_date = 1857.5.31
-    traits = { historical_figures direct reserved wrathful }
+    traits = { direct reserved wrathful }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:PAP
@@ -115,6 +115,6 @@ ecchi_pap_ratti_character_template = {
         }
         earliest_usage_date = 1920.1.1
         latest_usage_date = 1939.2.10
-        chance = 75
+        chance = 90
     }
 }

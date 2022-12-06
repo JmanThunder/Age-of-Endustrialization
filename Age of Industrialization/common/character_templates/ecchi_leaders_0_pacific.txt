@@ -10,7 +10,7 @@ ecchi_ply_gauguin_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_paul_gauguin
     birth_date = 1848.6.7
-    traits = { historical_figures romantic imperious hedonist }
+    traits = { romantic imperious hedonist }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:PLY
@@ -41,19 +41,18 @@ ecchi_haw_malo_character_template = {
     interest_group = ig_devout
 	dna = ecchi_dna_david_malo
     birth_date = 1795.10.25
-    traits = { historical_figures pious meticulous }
+    traits = { pious meticulous }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:HAW
             this = c:HAW
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_devout
         }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1853.10.25
-        chance = 75
+        chance = 90
     }
 }
 
@@ -67,7 +66,7 @@ ecchi_haw_james_dole_character_template = {
     interest_group = ig_industrialists
 	dna = ecchi_dna_james_dole
     birth_date = 1877.9.27
-    traits = { historical_figures meticulous grifter }
+    traits = { meticulous grifter }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:HAW
@@ -82,7 +81,7 @@ ecchi_haw_james_dole_character_template = {
         }
         earliest_usage_date = 1900.1.1
         latest_usage_date = 1958.5.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -96,7 +95,7 @@ ecchi_haw_dole_character_template = {
     interest_group = ig_landowners
 	dna = ecchi_dna_sanford_b_dole
     birth_date = 1844.4.23
-    traits = { historical_figures pious grifter masterful_diplomat }
+    traits = { pious grifter masterful_diplomat }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:HAW
@@ -112,6 +111,6 @@ ecchi_haw_dole_character_template = {
         }
         earliest_usage_date = 1880.1.1
         latest_usage_date = 1926.6.9
-        chance = 75
+        chance = 90
     }
 }

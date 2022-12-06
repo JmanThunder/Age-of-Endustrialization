@@ -4,7 +4,7 @@
 	type = political
 
 	revolution_aversion = 5 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
-	min_law_chance_to_pass = 10 # If base chance for law to pass is below this, don't enact it
+	min_law_chance_to_pass = 5 # If base chance for law to pass is below this, don't enact it
 	max_progressiveness = 100 # How progressive is the AI willing to be when passing laws
 	max_regressiveness = 25 # How regressive is the AI willing to be when passing laws
 
@@ -25,6 +25,17 @@
 			}
 			add = 95
 		}
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					OR = {
+						is_in_government = no
+						ig_approval < 0
+					}
+				}
+			}
+			subtract = 100
+		}
 	}
 
 	pro_interest_groups = {
@@ -34,7 +45,6 @@
 	}
 
 	anti_interest_groups = {
-		ig_landowners
 		ig_devout
 	}
 
@@ -65,6 +75,7 @@
 	possible = {
 		exists = c:JAP
 		this = c:JAP
+		has_law = law_type:law_monarchy
 		NOT = { has_variable = meiji_restoration_complete }
 		OR = {
 			has_law = law_type:law_peasant_levies
@@ -83,7 +94,7 @@ ai_strategy_japanese_flavor_political_phase_2 = {
 	type = political
 
 	revolution_aversion = 5 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
-	min_law_chance_to_pass = 10 # If base chance for law to pass is below this, don't enact it
+	min_law_chance_to_pass = 5 # If base chance for law to pass is below this, don't enact it
 	max_progressiveness = 100 # How progressive is the AI willing to be when passing laws
 	max_regressiveness = 25 # How regressive is the AI willing to be when passing laws
 
@@ -103,6 +114,17 @@ ai_strategy_japanese_flavor_political_phase_2 = {
 			}
 			add = 95
 		}
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					OR = {
+						is_in_government = no
+						ig_approval < 5
+					}
+				}
+			}
+			subtract = 100
+		}
 	}
 
 	pro_interest_groups = {
@@ -111,7 +133,6 @@ ai_strategy_japanese_flavor_political_phase_2 = {
 	}
 
 	anti_interest_groups = {
-		ig_landowners
 		ig_armed_forces
 	}
 
@@ -142,6 +163,7 @@ ai_strategy_japanese_flavor_political_phase_2 = {
 	possible = {
 		exists = c:JAP
 		this = c:JAP
+		has_law = law_type:law_monarchy
 		NOT = { has_variable = meiji_restoration_complete }
 		NOR = {
 			has_law = law_type:law_peasant_levies
@@ -163,7 +185,7 @@ ai_strategy_japanese_flavor_political_phase_3 = {
 	type = political
 
 	revolution_aversion = 5 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
-	min_law_chance_to_pass = 10 # If base chance for law to pass is below this, don't enact it
+	min_law_chance_to_pass = 5 # If base chance for law to pass is below this, don't enact it
 	max_progressiveness = 100 # How progressive is the AI willing to be when passing laws
 	max_regressiveness = 25 # How regressive is the AI willing to be when passing laws
 
@@ -182,6 +204,17 @@ ai_strategy_japanese_flavor_political_phase_3 = {
 				}
 			}
 			add = 95
+		}
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					OR = {
+						is_in_government = no
+						ig_approval < 5
+					}
+				}
+			}
+			subtract = 100
 		}
 	}
 
@@ -222,6 +255,7 @@ ai_strategy_japanese_flavor_political_phase_3 = {
 	possible = {
 		exists = c:JAP
 		this = c:JAP
+		has_law = law_type:law_monarchy
 		NOR = {
 			has_law = law_type:law_peasant_levies
 			has_law = law_type:law_local_police
@@ -243,8 +277,8 @@ ai_strategy_japanese_flavor_political_phase_4 = {
 
 	type = political
 
-	revolution_aversion = 10 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
-	min_law_chance_to_pass = 10 # If base chance for law to pass is below this, don't enact it
+	revolution_aversion = 5 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
+	min_law_chance_to_pass = 5 # If base chance for law to pass is below this, don't enact it
 	max_progressiveness = 100 # How progressive is the AI willing to be when passing laws
 	max_regressiveness = 25 # How regressive is the AI willing to be when passing laws
 
@@ -265,10 +299,22 @@ ai_strategy_japanese_flavor_political_phase_4 = {
 			}
 			add = 95
 		}
+		if = {
+			limit = {
+				ig:ig_landowners = {
+					OR = {
+						is_in_government = no
+						ig_approval < 5
+					}
+				}
+			}
+			subtract = 100
+		}
 	}	
 
 	pro_interest_groups = {
 		ig_industrialists
+		ig_intelligentsia
 	}
 
 	anti_interest_groups = {
@@ -303,6 +349,7 @@ ai_strategy_japanese_flavor_political_phase_4 = {
 	possible = {
 		exists = c:JAP
 		this = c:JAP
+		has_law = law_type:law_monarchy
 		NOR = {
 			has_law = law_type:law_peasant_levies
 			has_law = law_type:law_local_police
@@ -311,6 +358,7 @@ ai_strategy_japanese_flavor_political_phase_4 = {
 			NOT = { has_variable = meiji_restoration_complete }
 		}
 		OR = {
+			has_law = law_type:law_isolationism
 			NOT = { has_global_variable = meiji_restoration_complete }
 		}
 	}
@@ -326,8 +374,8 @@ ai_strategy_japanese_flavor_political_fallback = {
 	type = political
 
 	revolution_aversion = 5 # Chance each day that the AI will stop enacting a law that is going to spark a civil war (1 aversion should translate into ~50% chance of avoiding a civil war) - also influences how flexible the AI is willing to be about its max progressiveness/regressiveness to avoid a revolution
-	min_law_chance_to_pass = 10 # If base chance for law to pass is below this, don't enact it
-	max_progressiveness = 100 # How progressive is the AI willing to be when passing laws
+	min_law_chance_to_pass = 5 # If base chance for law to pass is below this, don't enact it
+	max_progressiveness = 1000 # How progressive is the AI willing to be when passing laws
 	max_regressiveness = 25 # How regressive is the AI willing to be when passing laws
 
 	# Chance each update that the AI is willing to start changing a law (1 = 1%)
@@ -347,6 +395,7 @@ ai_strategy_japanese_flavor_political_fallback = {
 
 	anti_interest_groups = {
 		ig_landowners
+		ig_armed_forces
 	}
 
 	institution_scores = {
@@ -376,6 +425,7 @@ ai_strategy_japanese_flavor_political_fallback = {
 	possible = {
 		exists = c:JAP
 		this = c:JAP
+		has_law = law_type:law_monarchy
 		NOT = { has_global_variable = meiji_restoration_complete }
 	}
 

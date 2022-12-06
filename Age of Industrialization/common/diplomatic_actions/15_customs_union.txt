@@ -344,6 +344,29 @@
 				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
 				value = -100
 			}
+			if = {
+				limit = {
+					AND = {
+						scope:target_country = {
+								OR = {
+								country_has_primary_culture = cu:north_german
+								country_has_primary_culture = cu:south_german
+								}
+							}
+						scope:actor = {
+							country_has_primary_culture = cu:north_german
+							OR = {
+							country_rank = rank_value:great_power
+							country_rank = rank_value:major_power
+							}
+						}
+					}
+				}
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_PRUSSIA"
+					value = 50
+				}
+			}
 
 			if = {
 				limit = {
@@ -529,19 +552,6 @@
 					value = -50
 				}
 			}
-			add = {
-				desc = "DIPLOMATIC_ACCEPTANCE_RANK_GPS"
-
-				if = {
-					limit = {
-						scope:actor = {
-							country_rank = rank_value:great_power
-						}
-						country_rank = rank_value:great_power
-					}
-					value = -100000
-				}
-			}
 		}
 		
 		will_break = { 
@@ -682,12 +692,11 @@ change_customs_union = {
 
 	potential = {
 		NOT = { is_country_type = decentralized }
-
+		is_junior_in_customs_union = no
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
+			 is_junior_in_customs_union = yes
 		}
-		
-		is_junior_in_customs_union = no		
 	}
 
 	possible = {

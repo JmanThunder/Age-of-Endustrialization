@@ -10,7 +10,7 @@ ecchi_aus_lueger_character_template = {
     interest_group = ig_petty_bourgeoisie
 	dna = ecchi_dna_karl_lueger
     birth_date = 1844.10.24
-    traits = { historical_figures bigoted demagogue }
+    traits = { bigoted demagogue }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -35,7 +35,7 @@ ecchi_aus_lueger_character_template = {
         }
         earliest_usage_date = 1875.1.1
         latest_usage_date = 1910.3.10
-        chance = 75
+        chance = 90
     }
 }
 
@@ -49,7 +49,7 @@ ecchi_aus_bauer_character_template = {
     interest_group = ig_trade_unions
 	dna = ecchi_dna_otto_bauer
     birth_date = 1881.9.5
-    traits = { historical_figures persistent ambitious }
+    traits = { persistent ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -74,7 +74,7 @@ ecchi_aus_bauer_character_template = {
         }
         earliest_usage_date = 1905.1.1
         latest_usage_date = 1938.7.4
-        chance = 75
+        chance = 90
     }
 }
 
@@ -88,7 +88,7 @@ ecchi_aus_von_suttner_character_template = {
     interest_group = ig_intelligentsia
 	dna = ecchi_dna_bertha_von_suttner
     birth_date = 1843.6.9
-    traits = { historical_figures romantic persistent inspirational_orator }
+    traits = { romantic persistent inspirational_orator }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -113,6 +113,48 @@ ecchi_aus_von_suttner_character_template = {
         }
         earliest_usage_date = 1885.1.1
         latest_usage_date = 1914.6.21
-        chance = 75
+        chance = 90
+    }
+}
+
+ecchi_aus_porsche_character_template = {
+    first_name = Ferdinand
+    last_name = ecchi_Porsche
+    culture = cu:south_german
+    female = no
+    religion = protestant
+    ideology = ideology_traditionalist
+    interest_group = ig_industrialists
+	dna = ecchi_dna_ferdinand_porsche
+    birth_date = 1875.9.3
+    traits = { meticulous imperious }
+    interest_group_leader_usage = {
+		country_trigger = {
+			OR = {
+				AND = {
+					exists = c:AUS
+					this = c:AUS
+					NOT = {
+						exists = c:GER
+						exists = c:NGF
+					}
+				}
+				 AND = {
+					exists = c:NGF
+					this = c:NGF
+					NOT = { exists = c:GER }
+				}
+				AND = {
+					exists = c:GER
+					this = c:GER
+				}
+			}
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_industrialists
+        }
+        earliest_usage_date = 1920.1.1
+        latest_usage_date = 1951.1.30
+        chance = 90
     }
 }

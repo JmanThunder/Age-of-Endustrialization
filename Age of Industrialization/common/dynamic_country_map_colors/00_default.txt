@@ -169,7 +169,7 @@ dark_khmer = {
 }
 
 austria_hungary = {
-	color = { 124 40 30 }
+	color = {211 220 240}
 
 	possible = {
 		exists = c:AUS
@@ -284,7 +284,7 @@ communist_britain = {
 }
 
 unpleasant_germany = {
-	color = {91 89 87}
+	color = "feldgrau"
 
 	possible = {
 		exists = c:GER
@@ -293,15 +293,15 @@ unpleasant_germany = {
 	}
 }
 
-ddr_germany = {
-	color = "DDR_green"
-
-	possible = {
-		exists = c:GER
-		THIS = c:GER
-		has_law = law_type:law_council_republic
-	}
-}
+#ddr_germany = {
+#	color = "DDR_green"
+#
+#	possible = {
+#		exists = c:GER
+#		THIS = c:GER
+#		has_law = law_type:law_council_republic
+#	}
+#}
 
 roman_rome = {
 	color = "roman_red"
@@ -323,10 +323,13 @@ napoleonic_france = {
 	possible = {
 		exists = c:FRA
 		THIS = c:FRA
-		OR = { 
+		OR = {
 			AND = {
 				has_law = law_type:law_monarchy
-				has_variable = french_empire_created
+				OR = {
+					ruler = { has_variable = is_bonapartist }
+					has_variable = french_empire_created
+				}
 			}
 			has_law = law_type:law_parliamentary_republic
 			has_law = law_type:law_presidential_republic

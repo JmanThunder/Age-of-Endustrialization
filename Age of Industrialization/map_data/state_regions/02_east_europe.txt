@@ -2,7 +2,7 @@
     id = 131
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0020E0" "x01A0E0" "x042A4F" "x0FEA4B" "x1AE461" "x246095" "x3266DE" "x57DF51" "x607A9E" "x6F9858" "x80A0E0" "x86F5A3" "x87C547" "x89D566" "x8F79E9" "x93FBC9" "x9A8A71" "xA577B1" "xA981B3" "xAEBDCB" "xB64167" "xB6C9C3" "xBA361B" "xBB73A3" "xCD164E" "xD0DA34" "xD14E99" "xD1CBDD" "xD7689F" "xDED975" "xDF3F5C" "xE7438E" "xE97616" "xF06F29" }
-    traits = { "state_trait_russian_forest" "state_trait_chilly_waters"}
+    traits = { "state_trait_russian_forest" }
     city = "xCD164E"
     port = "xCD164E"
     farm = "xDED975"
@@ -159,7 +159,7 @@ STATE_ARKHANGELSK = {
     id = 140
     subsistence_building = "building_subsistence_farms"
     provinces = { "x009EB7" "x0662C5" "x09201E" "x116B4E" "x1230DB" "x125781" "x1405E0" "x178A5C" "x17C3A9" "x1D4E77" "x237586" "x257570" "x27923A" "x339F71" "x35C277" "x360D95" "x37D5D3" "x39C3D7" "x40D3DA" "x40F1F0" "x417983" "x45C3AD" "x461ABA" "x48BC6F" "x49C142" "x4A5404" "x4A6073" "x4D2452" "x4E1756" "x50829A" "x51742F" "x533140" "x53C825" "x5539CF" "x577ADC" "x58F495" "x5943FE" "x5A9872" "x5D0C97" "x5F87BA" "x60053A" "x67A6D0" "x68FEEE" "x6A0C01" "x6DBE60" "x6DE113" "x6E148E" "x73AE5B" "x73F31C" "x787542" "x78A0D5" "x7A00E6" "x7A608A" "x7BFAD9" "x7D80D6" "x7FE1CB" "x81827E" "x835452" "x848EFC" "x85CE81" "x877BDE" "x8CA5D6" "x8DA9F9" "x8ED444" "x8F45AB" "x90A6D0" "x952880" "x973436" "x99B3A6" "x9A6F0B" "x9AAAF0" "xA082DB" "xA10EA2" "xA2F602" "xA3F91A" "xA57615" "xAA9473" "xAB54F1" "xAC7A28" "xB0726B" "xB07CEC" "xB272FC" "xB3E4A8" "xB4907A" "xB663D9" "xB71DD4" "xBB094C" "xBCC48C" "xC280EF" "xC35BA4" "xC699CC" "xC86EE7" "xCD39E2" "xCE6ECE" "xCF2221" "xCF8844" "xD0FC2C" "xD4B959" "xD6BC8B" "xE05893" "xE587B2" "xE72A8A" "xEAE9CB" "xEDEE19" "xEF2B17" "xF29885" "xF3672D" "xFE65B5" }
-    traits = { "state_trait_russian_forest" "state_trait_arctic_waters"}
+    traits = { "state_trait_russian_forest" }
     city = "xCF8844"
     port = "x125781"
     farm = "xE587B2"
@@ -360,7 +360,6 @@ STATE_ESTONIA = {
     id = 151
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0121A0" "x01A021" "x1D7342" "x25CC83" "x297D54" "x5C8F48" "x6040E0" "x6D20F8" "x6D38BF" "x7AAA5C" "x80A021" "x8487D5" "x9884F2" "xA69127" "xB9FF4E" "xBCF2BB" "xBF6060" "xD29762" "xD5B5D2" "xD737E2" "xE87B15" "xFCA6F4" }
-    traits = { "state_trait_chilly_waters" }
     city = "xD737E2"
     port = "x8487D5"
     farm = "x25CC83"
@@ -379,7 +378,6 @@ STATE_LATVIA = {
     id = 152
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00A0A0" "x01E021" "x02D30A" "x3A5E28" "x3B8640" "x3D26D8" "x3FA9D2" "x3FFD66" "x48F471" "x4A8E5D" "x4D08D8" "x521396" "x5DC582" "x675939" "x74042F" "x7F93C7" "x8021A0" "x806121" "x898083" "x8D4F76" "xABA718" "xBF2060" "xD51E75" "xE3BB51" "xE4E3DB" "xE7C9B1" "xF4B54B" "xF8BBB0" "xFA8436" "xFCC2E1" "xFD1424" }
-    traits = { "state_trait_chilly_waters" }
     city = "x00A0A0"
     port = "x4D08D8"
     farm = "xF8BBB0"
@@ -572,7 +570,12 @@ STATE_EAST_GALICIA = {
         bg_coal_mining = 92
         bg_logging = 9
     }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 50
+    }
 }
+
 
 STATE_CENTRAL_HUNGARY = {
     id = 163
@@ -637,6 +640,10 @@ STATE_DELVIDEK = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 4
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 10
     }
 }
 
@@ -737,6 +744,10 @@ STATE_MOLDAVIA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_logging = 14
+    }
+    resource = {
+        type = "bg_oil_extraction"
+        undiscovered_amount = 30
     }
 }
 

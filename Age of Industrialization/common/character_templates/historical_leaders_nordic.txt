@@ -8,7 +8,7 @@ swe_louis_gerard_de_geer_template = {
 	ideology = ideology_radical
 	interest_group = ig_rural_folk
 	birth_date = 1818.7.18
-	traits = { historical_figures 
+	traits = {
 		tactful
 		cautious
 		experienced_political_operator
@@ -36,7 +36,7 @@ swe_axel_adlercreutz_template = {
 	ideology = ideology_traditionalist
 	interest_group = ig_armed_forces
 	birth_date = 1821.3.2
-	traits = { historical_figures 
+	traits = {
 		arrogant
 		brave
 	}
@@ -64,7 +64,7 @@ nor_frederik_due_template = {
 	ideology = ideology_moderate
 	interest_group = ig_armed_forces
 	birth_date = 1796.4.14
-	traits = { historical_figures 
+	traits = {
 		brave
 		basic_diplomat
 	}
@@ -91,7 +91,7 @@ nor_johan_sverdrup_template = {
 	ideology = ideology_radical
 	interest_group = ig_intelligestia
 	birth_date = 1816.7.3
-	traits = { historical_figures 
+	traits = {
 		persistent
 		basic_political_operator
 	}
@@ -123,7 +123,7 @@ nor_soren_jaabaek_template = {
 	ideology = ideology_feminist
 	interest_group = ig_rural_folk
 	birth_date = 1816.7.3
-	traits = { historical_figures 
+	traits = {
 		persistent
 	}
 	interest_group_leader_usage = {
@@ -150,7 +150,7 @@ nor_marcus_thrane_template = {
 	ideology = ideology_radical
 	interest_group = ig_trade_unions
 	birth_date = 1816.10.14
-	traits = { historical_figures 
+	traits = {
 		reckless
 	}
 	interest_group_leader_usage = {
@@ -176,7 +176,7 @@ den_nfs_grundtvig_template = {
 	ideology = ideology_radical
 	interest_group = ig_devout
 	birth_date = 1802.10.25
-	traits = { historical_figures 
+	traits = {
 		innovative
 		pious
 	}
@@ -203,7 +203,7 @@ den_balthazar_christensen_template = {
 	ideology = ideology_moderate
 	interest_group = ig_rural_folk
 	birth_date = 1802.10.25
-	traits = { historical_figures 
+	traits = {
 		persistent
 		experienced_political_operator
 	}
@@ -230,7 +230,7 @@ den_jacob_bronnum_template = {
 	ideology = ideology_reformer
 	interest_group = ig_landowners
 	birth_date = 1825.4.16
-	traits = { historical_figures 
+	traits = {
 		persistent
 	}
 	interest_group_leader_usage = {
@@ -257,7 +257,7 @@ fin_yrjo_koskinen_template = {
 	ideology = ideology_traditionalist
 	interest_group = ig_landowners
 	birth_date = 1830.12.10
-	traits = { historical_figures 
+	traits = {
 		cautious
 		reserved
 	}
@@ -284,7 +284,7 @@ fin_johan_snellman_template = {
 	ideology = ideology_radical
 	interest_group = ig_intelligentsia
 	birth_date = 1806.5.12
-	traits = { historical_figures 
+	traits = {
 		reckless
 		bigoted
 	}
@@ -311,7 +311,7 @@ fin_fredrik_cygnaeus_template = {
 	ideology = ideology_moderate
 	interest_group = ig_intelligentsia
 	birth_date = 1807.4.1
-	traits = { historical_figures 
+	traits = {
 		cautious
 		reserved
 	}

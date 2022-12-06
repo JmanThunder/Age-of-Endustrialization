@@ -1,7 +1,5 @@
 ﻿je_oregon = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-
 	is_shown_when_inactive = {
 		exists = c:USA
 		exists = c:GBR
@@ -36,6 +34,16 @@
 				}
 			}
 		}
+		s:STATE_WYOMING = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+						}
+					}
+				}
+	}
 	}
 
 	possible = {
@@ -45,10 +53,16 @@
 	complete = {
 		OR = {
 			AND = {
-				OR = {
-					owns_entire_state_region = STATE_MONTANA
-					custom_tooltip = {
-						text = montana_dispute_tt
+				custom_tooltip = {
+					text = oregon_tt
+					has_global_variable = oregon_trail_mapped
+				}
+				year >= 1846
+				c:GBR = {
+					relations:ROOT >= relations_threshold:neutral
+				}
+			}
+		}
 						s:STATE_MONTANA = {
 							any_scope_state = {
 								owner = {
@@ -60,21 +74,15 @@
 								}
 							}
 						}
+					AND = {
+						owns_entire_state_region = STATE_WASHINGTON
+						owns_entire_state_region = STATE_IDAHO
+						owns_entire_state_region = STATE_OREGON
+						owns_entire_state_region = STATE_WYOMING
+						owns_entire_state_region = STATE_MONTANA
 					}
-				}
-				owns_entire_state_region = STATE_WYOMING
-				
-				c:GBR = {
-					relations:ROOT >= relations_threshold:cordial
-				}
-			}
-			AND = {
-				owns_entire_state_region = STATE_WASHINGTON
-				owns_entire_state_region = STATE_IDAHO
-				owns_entire_state_region = STATE_OREGON
-			}
-		}
 	}
+}
 
 	on_complete = {
 		if = {
@@ -122,13 +130,17 @@
 			s:STATE_OREGON = {
 				add_homeland = yankee
 			}
+			s:STATE_WYOMING = {
+				add_homeland = yankee
+			}
+			s:STATE_MONTANA = {
+				add_homeland = yankee
+			}
 			add_modifier = {
 				name = oregon_resolved
 				months = normal_modifier_time
 			}
 		}
-	}
-
 	weight = 100
 }
 
@@ -140,6 +152,8 @@ je_conquer_oregon = {
 			owns_entire_state_region = STATE_WASHINGTON
 			owns_entire_state_region = STATE_IDAHO
 			owns_entire_state_region = STATE_OREGON
+			owns_entire_state_region = STATE_WYOMING
+			owns_entire_state_region = STATE_MONTANA
 		}
 	}
 

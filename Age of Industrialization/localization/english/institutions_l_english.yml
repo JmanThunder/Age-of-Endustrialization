@@ -13,8 +13,3 @@
  institution_health_system_desc:0 "Keeping the spread of disease at bay."
  institution_home_affairs:0 "Home Affairs"
  institution_home_affairs_desc:0 "Tasked with obstructing citizen revolts."
-
- institution_immigration_promotion:0 "Immigration Affairs"
- institution_immigration_promotion_desc:0 "Tasked with managing foreign immigration into the country."
- 
- modifier_country_institution_immigration_promotion_max_investment_add:0 "Maximum Immigration Affairs institution investment level"

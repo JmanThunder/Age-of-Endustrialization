@@ -40,7 +40,7 @@
 				limit = { 
 					is_pop_type = aristocrats
 				}
-				value = 200
+				value = 250
 			}
 		}
 
@@ -77,8 +77,8 @@
 				}
 				value = 50
 			}
-		}
-
+		}			
+		
 		add = {
 			desc = "SLAVE_STATE"
 			if = {
@@ -94,8 +94,8 @@
 				}
 				value = 200
 			}
-		}				
-		
+		}	
+
 		add = {
 			desc = "PLANTATION_EMPLOYMENT"
 			if = {
@@ -118,7 +118,7 @@
 				}
 			}
 		}	
-		
+
 		multiply = {
 			desc = "IG_IS_MARGINALIZED"
 			value = 1.0

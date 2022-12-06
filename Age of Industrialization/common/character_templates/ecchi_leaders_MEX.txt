@@ -10,19 +10,18 @@ ecchi_mex_villa_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_pancho_villa
     birth_date = 1878.6.5
-    traits = { historical_figures demagogue pillager ambitious }
+    traits = { demagogue pillager ambitious }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:MEX
             this = c:MEX
         }
         interest_group_trigger = {
-            is_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1923.7.20
-        chance = 75
+        chance = 90
     }
 }
 
@@ -36,7 +35,7 @@ ecchi_mex_zapata_character_template = {
     interest_group = ig_rural_folk
 	dna = ecchi_dna_emiliano_zapata
     birth_date = 1879.8.8
-    traits = { historical_figures demagogue resupply_commander stalwart_defender brave romantic }
+    traits = { demagogue resupply_commander stalwart_defender brave romantic }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:MEX
@@ -51,6 +50,6 @@ ecchi_mex_zapata_character_template = {
         }
         earliest_usage_date = 1910.1.1
         latest_usage_date = 1919.4.10
-        chance = 75
+        chance = 90
     }
 }
