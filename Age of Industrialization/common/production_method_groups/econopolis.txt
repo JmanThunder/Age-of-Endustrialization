@@ -1,0 +1,98 @@
+﻿pmg_base_building_sugar_cane_refinery = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_refining
+		pm_advanced
+	}
+}
+
+pmg_alcohol = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_disabled_alcohol
+		pm_liquer
+		pm_wine
+	}
+}
+
+pmg_automation_building_sugar_cane_refinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_sugarcane
+		pm_rotary_valve_engine_building_sugarcane
+		pm_assembly_lines_building_sugarcane
+	}
+}
+
+pmg_ownership_capital_building_sugar_cane_refinery = {
+	production_methods = {
+		pm_privately_owned_industry
+		pm_publicly_traded_building_synthetic_plants
+		pm_government_run_industry
+		pm_worker_cooperative_industry
+	}
+}
+pmg_fertilization_building_coffee_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_coffee_eco
+	}
+}
+
+pmg_fertilization_building_cotton_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_cotton_eco
+	}
+}
+
+pmg_fertilization_building_dye_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_dye_eco
+	}
+}
+
+pmg_fertilization_building_opium_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_opium_eco
+	}
+}
+
+pmg_fertilization_building_tea_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_tea_eco
+	}
+}
+
+pmg_fertilization_building_tobacco_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_tobacco_eco
+	}
+}
+
+pmg_fertilization_building_sugar_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_sugar_eco
+	}
+}
+
+pmg_fertilization_building_banana_plantation = {
+	production_methods = {
+		pm_deactivated
+		pm_fertilization_banana_eco
+	}
+}
+
+pmg_fertilization_building_silk_plantation = {
+	production_methods = {
+		pm_deactivated
+	}
+}

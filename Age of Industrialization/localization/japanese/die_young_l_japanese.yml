@@ -1,0 +1,6 @@
+﻿l_japanese:
+ notification_ruler_die_young_notification_name: "私たちの偉大な [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] 亡くなった"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], 
+の年齢で亡くなっています [SCOPE.GetRootScope.GetCharacter.GetAge]. 
+新しい統治者は、国の法律に従って任命されます。"
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

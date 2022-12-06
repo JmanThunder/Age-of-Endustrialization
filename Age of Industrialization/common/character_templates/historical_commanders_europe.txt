@@ -1,1069 +1,4 @@
-﻿# Austria - AUS
-aus_admiral_tegetthoff = {
-	first_name = Wilhelm
-	last_name = von_Tegetthoff
-	culture = cu:south_german
-	female = no
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1827.12.23
-	traits = {
-		expert_naval_commander
-		direct
-		innovative
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER 
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_AUSTRIA } 
-				}
-			}
-		}
-		role = admiral
-		earliest_usage_date = 1854.1.1
-		latest_usage_date = 1880.1.1	
-		chance = 50
-	}
-}
-aus_admiral_archduke_friedrich = {
-	first_name = Archduke_Friedrich
-	last_name = von_Habsburg_Lothringen
-	culture = cu:south_german
-	female = no
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1821.5.14
-	traits = {
-		basic_naval_commander
-		brave
-		meticulous
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-					c:AUS = { has_law = law_type:law_monarchy }
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER 
-					this = c:GER
-					c:GER = { 
-						owns_entire_state_region = STATE_AUSTRIA 
-						has_law = law_type:law_monarchy 
-					}
-				}
-			}
-		}
-		role = admiral
-		earliest_usage_date = 1840.1.1
-		latest_usage_date = 1870.1.1	
-		chance = 50
-	}
-}
-aus_general_von_windisch_gratz = {
-	first_name = Alfred
-	last_name = von_Windisch_Gratz
-	culture = cu:south_german
-	female = no
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1787.5.11
-	traits = {
-		cautious
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER 
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_AUSTRIA } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
-		chance = 50
-	}
-}
-aus_general_von_hotzendorf = {
-	first_name = Franz_Conrad
-	last_name = von_Hotzendorf
-	culture = cu:south_german
-	female = no
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1852.11.11
-	traits = {
-		basic_offensive_planner
-		arrogant
-		reckless
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER 
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_AUSTRIA } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1876.1.1
-		latest_usage_date = 1925.1.1
-		chance = 50
-	}
-}
-aus_general_boroevic = {
-	first_name = Svetozar
-	last_name = BoroeviC
-	culture = cu:south_german
-	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1856.12.13
-	traits = {
-		expert_defensive_strategist
-		experienced_offensive_planner
-		popular_commander
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-					c:AUS = { owns_entire_state_region = STATE_CROATIA } 
-				}
-				AND = { 
-					exists = c:CRO 
-					this = c:CRO
-					c:CRO = { owns_entire_state_region = STATE_CROATIA } 
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER 
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_CROATIA } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1896.1.1
-		latest_usage_date = 1927.1.1	
-		chance = 50
-	}
-}
-aus_general_von_benedek = {
-	first_name = Ludwig
-	last_name = von_Benedek
-	culture = cu:south_german
-	female = no
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1804.7.14
-	traits = {
-		basic_offensive_planner
-		stalwart_defender
-		traditionalist_commander
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:AUS 
-					this = c:AUS
-				}
-				AND = { 
-					NOT = { exists = c:AUS } 
-					exists = c:GER
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_STYRIA } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1896.1.1
-		latest_usage_date = 1927.1.1	
-		chance = 50
-	}
-}
-aus_general_von_habsburg_lothringen = {
-	first_name = Archduke_Albrecht
-	last_name = von_Habsburg_Lothringen
-	culture = cu:south_german
-	female = no
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1817.8.3
-	traits = {
-		cautious
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:AUS
-			this = c:AUS
-			c:AUS = { has_law = law_type:law_monarchy }
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1869.1.1	
-		chance = 50
-	}
-}
-# Bavaria - BAV
-bav_general_von_wittelsbach = {
-	first_name = Prince_Karl_Theodor
-	last_name = von_Wittelsbach
-	culture = cu:south_german
-	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1795.7.7
-	traits = {
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:BAV
-			this = c:BAV
-			c:BAV = { has_law = law_type:law_monarchy }
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1866.1.1	
-		chance = 50
-	}
-}
-bav_general_von_der_tann = {
-	first_name = Ludwig
-	last_name = von_der_Tann
-	culture = cu:south_german
-	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1815.6.18
-	traits = {
-		experienced_offensive_planner
-		surveyor
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:BAV 
-					this = c:BAV
-				}
-				AND = { 
-					NOT = { exists = c:BAV } 
-					exists = c:GER
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_BAVARIA } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1848.1.1
-		latest_usage_date = 1880.1.1	
-		chance = 50
-	}
-}
-# Belgium - BEL
-bel_general_prisse = {
-	first_name = Albert_Florent_Joseph
-	last_name = Prisse
-	culture = cu:wallonian
-	female = no
-	religion = catholic
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1788.6.24
-	traits = {
-		surveyor
-		basic_diplomat
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:BEL
-			this = c:BEL
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1855.1.1	
-		chance = 50
-	}
-}
-# Denmark - DEN
-fra_admiral_suenson = {
-	first_name = edouard
-	last_name = Suenson
-	culture = cu:danish
-	female = no
-	religion = protestant
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1805.4.13
-	traits = {
-		experienced_convoy_raider
-		cautious
-		persistent
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:DEN
-			this = c:DEN
-		}
-		role = admiral
-		earliest_usage_date = 1842.1.1
-		latest_usage_date = 1870.1.1	
-		chance = 50
-	}
-}
-# Finland
-fin_general_mannerheim = {
-	first_name = Carl_Gustav_Emil
-	last_name = Mannerheim
-	culture = cu:swedish
-	female = no
-	religion = protestant
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1867.6.4
-	traits = {
-		direct
-		stalwart_defender
-		meticulous
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FIN
-			this = c:FIN
-		}
-		role = general
-		earliest_usage_date = 1900.1.1
-		latest_usage_date = 1936.1.1	
-		chance = 50
-	}
-}
-# France - FRA
-fra_admiral_courbet = {
-	first_name = Amedee
-	last_name = Courbet
-	culture = cu:french
-	female = no
-	religion = catholic
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1788.6.24
-	traits = {
-		expert_naval_commander
-		cautious
-		meticulous
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = admiral
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1855.1.1	
-		chance = 50
-	}
-}
-fra_admiral_lespes = {
-	first_name = Sebastien
-	last_name = Lespes
-	culture = cu:occitan
-	female = no
-	religion = catholic
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1828.4.13
-	traits = {
-		basic_naval_commander
-		cautious
-		reserved
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = admiral
-		earliest_usage_date = 1860.1.1
-		latest_usage_date = 1895.1.1	
-		chance = 50
-	}
-}
-fra_admiral_boue_de_lapeyrere = {
-	first_name = Augustin
-	last_name = Boue_de_Lapeyrere
-	culture = cu:occitan
-	female = no
-	religion = catholic
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1852.1.18
-	traits = {
-		experienced_naval_commander
-		innovative
-		dockyard_master
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = admiral
-		earliest_usage_date = 1883.1.1
-		latest_usage_date = 1916.1.1	
-		chance = 50
-	}
-}
-fra_admiral_jaureguiberry = {
-	first_name = Bernard
-	last_name = Jaureguiberry
-	culture = cu:occitan
-	female = no
-	religion = catholic
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1815.1.18
-	traits = {
-		experienced_naval_commander
-		brave
-		dockyard_master
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = admiral
-		earliest_usage_date = 1845.1.1
-		latest_usage_date = 1887.1.1	
-		chance = 50
-	}
-}
-fra_general_boulanger = {
-	first_name = Georges_Ernest
-	last_name = Boulanger
-	culture = cu:french
-	female = no
-	religion = catholic
-	ideology = ideology_jingoist_leader
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1837.4.29
-	traits = {
-		celebrity_commander
-		firebrand
-		brave
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = general
-		earliest_usage_date = 1870.1.1
-		latest_usage_date = 1910.1.1	
-		chance = 50
-	}
-}
-fra_general_foch = {
-	first_name = Ferdinand
-	last_name = Foch
-	culture = cu:french
-	female = no
-	religion = catholic
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1851.8.2
-	traits = {
-		persistent
-		experienced_offensive_planner
-		popular_commander
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = general
-		earliest_usage_date = 1879.1.1
-		latest_usage_date = 1927.1.1	
-		chance = 50
-	}
-}
-fra_general_macmahon = {
-	first_name = Patrice
-	last_name = de_MacMahon
-	culture = cu:french
-	female = no
-	religion = catholic
-	ideology = ideology_legitimist # legitimist
-	commander_rank = default
-	interest_group = ig_devout
-	birth_date = 1808.6.13
-	traits = {
-		popular_commander
-		experienced_offensive_planner
-		reckless
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = general
-		earliest_usage_date = 1848.1.1
-		latest_usage_date = 1884.1.1	
-		chance = 50
-	}
-}
-fra_general_bazaine = {
-	first_name = Francois_Achille
-	last_name = Bazaine
-	culture = cu:french
-	female = no
-	religion = catholic
-	ideology = ideology_bonapartist # bonapartist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1808.6.13
-	traits = {
-		brave
-		direct
-		experienced_offensive_planner
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:FRA
-			this = c:FRA
-		}
-		role = general
-		earliest_usage_date = 1848.1.1
-		latest_usage_date = 1884.1.1	
-		chance = 50
-	}
-}
-# Great Britain - GBR
-gbr_admiral_beatty = {
-	first_name = David
-	last_name = Beatty
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1871.1.17
-	traits = {
-		experienced_naval_commander
-		reckless
-		charismatic
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = admiral
-		earliest_usage_date = 1899.2.5
-		latest_usage_date = 1936.1.1	
-		chance = 50
-	}
-}
-gbr_admiral_fisher = {
-	first_name = John
-	last_name = Fisher
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1841.1.25
-	traits = {
-		experienced_naval_commander
-		innovative
-		dockyard_master
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = admiral
-		earliest_usage_date = 1869.2.5
-		latest_usage_date = 1925.1.1	
-		chance = 50
-	}
-}
-gbr_admiral_mountbatten = { # Louis Alexander Mountbatten
-	first_name = Prince_Louis
-	last_name = of_Battenberg
-	culture = cu:north_german
-	female = no
-	religion = protestant
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1854.1.25
-	traits = {
-		experienced_naval_commander
-		tactful
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-			c:GBR = { has_law = law_type:law_monarchy }
-		}
-		role = admiral
-		earliest_usage_date = 1885.2.5
-		latest_usage_date = 1924.1.1	
-		chance = 50
-	}
-}
-gbr_admiral_milne = {
-	first_name = Sir_Alexander
-	last_name = Milne
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_abolitionist # famous for hunting down slavers on the high seas
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1806.11.10
-	traits = {
-		experienced_naval_commander
-		persistent
-		tactful
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = admiral
-		earliest_usage_date = 1839.1.30
-		latest_usage_date = 1876.1.1	
-		chance = 50
-	}
-}
-gbr_admiral_seymour = {
-	first_name = Edward
-	last_name = Seymour
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1840.4.30
-	traits = {
-		brave
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = admiral
-		earliest_usage_date = 1873.3.13
-		latest_usage_date = 1910.1.1	
-		chance = 50
-	}
-}
-gbr_general_smith = {
-	first_name = Sir_Henry
-	last_name = Wakelyn_Smith
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1787.6.28
-	traits = {
-		experienced_colonial_administrator
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
-		chance = 50
-	}
-}
-gbr_general_kitchener = {
-	first_name = Herbert
-	last_name = Kitchener
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_jingoist_leader
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1850.6.24
-	traits = {
-		surveyor
-		pillager
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = general
-		earliest_usage_date = 1883.1.4
-		latest_usage_date = 1920.1.1	
-		chance = 50
-	}
-}
-gbr_general_gordon = {
-	first_name = Charles_George
-	last_name = Gordon
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_abolitionist # actively fought against slave traders in the Sudan
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1833.1.28
-	traits = {
-		explorer
-		charismatic
-		brave
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = general
-		earliest_usage_date = 1859.1.4
-		latest_usage_date = 1910.1.1	
-		chance = 50
-	}
-}
-gbr_general_french = {
-	first_name = John
-	last_name = French
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_market_liberal
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1852.9.28
-	traits = {
-		resupply_commander
-		hedonist
-		basic_defensive_strategist
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = general
-		earliest_usage_date = 1859.1.4
-		latest_usage_date = 1910.1.1	
-		chance = 50
-	}
-}
-gbr_general_baden_powell = {
-	first_name = Robert
-	last_name = Baden_Powell
-	culture = cu:british
-	female = no
-	religion = protestant
-	ideology = ideology_reformer
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1857.2.22
-	traits = {
-		surveyor
-		innovative
-		stalwart_defender
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-		}
-		role = general
-		earliest_usage_date = 1890.1.4
-		latest_usage_date = 1920.1.1	
-		chance = 50
-	}
-}
-gbr_general_prince_george = {
-	first_name = Prince_George
-	last_name = of_Hanover
-	culture = cu:north_german
-	female = no
-	religion = protestant
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1819.4.26
-	traits = {
-		arrogant
-		cautious
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GBR
-			this = c:GBR
-			c:GBR = { has_law = law_type:law_monarchy }
-		}
-		role = general
-		earliest_usage_date = 1854.1.4
-		latest_usage_date = 1904.1.1	
-		chance = 50
-	}
-}
-
-# Greece - GRE
-gre_general_kolokotronis = {
-	first_name = Ioannis
-	last_name = Kolokotronis
-	culture = cu:greek
-	female = no
-	religion = orthodox
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1805.6.28 # approximate birth date
-	traits = {
-		brave
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GRE
-			this = c:GRE
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1865.1.1	
-		chance = 50
-	}
-}
-gre_general_kallergis = {
-	first_name = Dimitrios
-	last_name = Kallergis
-	culture = cu:greek
-	female = no
-	religion = orthodox
-	ideology = ideology_traditionalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1805.6.28 # approximate birth date
-	traits = {
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:GRE
-			this = c:GRE
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1865.1.1	
-		chance = 50
-	}
-}
-# Netherlands - NET
-net_admiral_rijk = {
-	first_name = Julius
-	last_name = Rijk
-	culture = cu:dutch
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1787.1.1
-	traits = {
-		experienced_naval_commander
-		innovative
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:NET
-			this = c:NET
-		}
-		role = admiral
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
-		chance = 50
-	}
-}
-net_general_cochius = {
-	first_name = Frans_David
-	last_name = Cochius
-	culture = cu:dutch
-	female = no
-	ideology = ideology_jingoist_leader
-	commander_rank = default
-	interest_group = ig_devout
-	birth_date = 1787.12.3
-	traits = {
-		forest_commander
-		meticulous
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:NET
-			this = c:NET
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1865.1.1	
-		chance = 50
-	}
-}
-net_general_de_kock = {
-	first_name = Hendrik_Merkus
-	last_name = de_Kock
-	culture = cu:dutch
-	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1779.5.25
-	traits = {
-		forest_commander
-		ambitious
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:NET
-			this = c:NET
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1865.1.1	
-		chance = 50
-	}
-}
-net_general_michiels = {
-	first_name = Andreas_Victor
-	last_name = Michiels
-	culture = cu:dutch
-	female = no
-	ideology = ideology_jingoist_leader
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1797.5.30
-	traits = {
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:NET
-			this = c:NET
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1865.1.1	
-		chance = 50
-	}
-}
-net_general_list = {
-	first_name = Frederik_Carel
-	last_name = List
-	culture = cu:dutch
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1784.2.5
-	traits = {
-		basic_artillery_commander
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:NET
-			this = c:NET
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
-		chance = 50
-	}
-}
-# Portugal - POR
-por_general_de_mesquita = {
-	first_name = Vicente_Nicolau
-	last_name = de_Mesquita
-	culture = cu:portuguese
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1818.7.9
-	traits = {
-		brave
-		wrathful
-		psychological_affliction
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:POR
-			this = c:POR
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1873.1.1	
-		chance = 50
-	}
-}
-# Prussia - PRU
+﻿# Prussia - PRU
 pru_admiral_von_tirpitz = {
 	first_name = Alfred
 	last_name = von_Tirpitz
@@ -1073,7 +8,8 @@ pru_admiral_von_tirpitz = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1849.3.19
-	traits = {
+	dna = dna_alfred_tirpitz
+	traits = { historical_figures 
 		ambitious
 		dockyard_master
 		convoy_raider_commander
@@ -1108,7 +44,8 @@ pru_admiral_von_spee = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1861.6.22
-	traits = {
+	dna = dna_admiral_spee
+	traits = { historical_figures 
 		experienced_convoy_raider
 		brave
 	}
@@ -1142,7 +79,8 @@ pru_general_zu_dohna_schlobitten = {
 	commander_rank = default
 	interest_group = ig_landowners
 	birth_date = 1784.4.4
-	traits = {
+	dna = dna_dohna_sclobitten
+	traits = { historical_figures 
 		tactful
 	}
 	commander_usage = {
@@ -1165,7 +103,8 @@ pru_general_von_moltke = { # Moltke the Younger
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1848.5.25
-	traits = {
+	dna = dna_moltke_younger
+	traits = { historical_figures 
 		experienced_offensive_planner
 		reserved
 		resupply_commander
@@ -1200,7 +139,8 @@ pru_general_von_roon = {
 	commander_rank = default
 	interest_group = ig_landowners
 	birth_date = 1803.4.3
-	traits = {
+	dna = dna_albrecht_roon
+	traits = { historical_figures 
 		meticulous
 		innovative
 		resupply_commander
@@ -1235,7 +175,8 @@ pru_general_prince_friedrich_karl = {
 	commander_rank = default
 	interest_group = ig_landowners
 	birth_date = 1828.3.20
-	traits = {
+	dna = dna_prince_friedrich_karl
+	traits = { historical_figures 
 		experienced_offensive_planner
 		innovative
 		surveyor
@@ -1272,7 +213,8 @@ pru_general_von_goeben = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1816.12.10
-	traits = {
+	dna = dna_august_goeben
+	traits = { historical_figures 
 		experienced_offensive_planner
 		persistent
 	}
@@ -1306,10 +248,12 @@ pru_general_von_hindenburg = {
 	commander_rank = default
 	interest_group = ig_landowners
 	birth_date = 1847.8.2
-	traits = {
+	dna = dna_von_hindenburg
+	traits = { historical_figures 
 		experienced_offensive_planner
 		expert_defensive_strategist
 		persistent
+		popular_commander
 	}
 	commander_usage = {
 		country_trigger = {
@@ -1341,7 +285,8 @@ pru_general_ludendorff = {
 	commander_rank = default
 	interest_group = ig_armed_forces
 	birth_date = 1865.4.9
-	traits = {
+	dna = dna_erich_ludendorff
+	traits = { historical_figures 
 		expert_offensive_planner
 		resupply_commander
 		surveyor
@@ -1367,202 +312,840 @@ pru_general_ludendorff = {
 		chance = 90
 	}
 }
-# Russia - RUS
-rus_admiral_makarov = {
-	first_name = Stepan
-	last_name = Makarov
-	culture = cu:russian
+pru_general_von_caprivi = {
+	first_name = Leo
+	last_name = von_Caprivi
+	culture = cu:north_german
 	female = no
-	ideology = ideology_moderate
+	ideology = ideology_reformer
 	commander_rank = default
 	interest_group = ig_armed_forces
-	birth_date = 1849.1.8
-	traits = {
-		explorer
-		experienced_naval_commander
-		innovative
+	birth_date = 1831.2.24
+	dna = dna_leo_caprivi
+	traits = { historical_figures 
+		experienced_diplomat
+		ambitious
+		experienced_offensive_planner
 	}
 	commander_usage = {
 		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-		}
-		role = admiral
-		earliest_usage_date = 1881.1.1
-		latest_usage_date = 1918.1.1	
-		chance = 50
-	}
-}
-rus_admiral_nakhimov = {
-	first_name = Pavel
-	last_name = Nakhimov
-	culture = cu:russian
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1802.7.5
-	traits = {
-		brave
-		experienced_naval_commander
-		meticulous
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-		}
-		role = admiral
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1870.1.1	
-		chance = 50
-	}
-}
-rus_general_chicherin = {
-	first_name = Pyotr
-	last_name = Chicherin
-	culture = cu:russian
-	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1778.2.21
-	traits = {
-		plains_commander
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
 		}
 		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1848.1.1	
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1894.1.1	
 		chance = 50
 	}
 }
-rus_general_von_tottleben = {
-	first_name = Franz_Eduard
-	last_name = von_Tottleben
+pru_general_falkenhayn = {
+	first_name = Erich
+	last_name = von_Falkenhayn
 	culture = cu:north_german
 	female = no
 	ideology = ideology_moderate
 	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1818.5.20
-	traits = {
-		expert_defensive_strategist
-		innovative
+	interest_group = ig_armed_forces
+	birth_date = 1861.9.11
+	dna = dna_erich_falkenhayn
+	traits = { historical_figures 
+		expert_offensive_planner
+		trench_rat
+		experienced_artillery_commander
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1903.1.1
+		latest_usage_date = 1919.1.1	
+		chance = 50
+	}
+}
+pru_general_von_seeckt = {
+	first_name = Hans
+	last_name = von_Seeckt
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1866.4.22
+	dna = dna_hans_seeckt
+	traits = { historical_figures 
+		basic_defensive_strategist
+		resupply_commander
 		trench_rat
 	}
 	commander_usage = {
 		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-			c:RUS = { owns_entire_state_region = STATE_LATVIA } 
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
 		}
 		role = general
-		earliest_usage_date = 1850.1.1
-		latest_usage_date = 1884.1.1	
+		earliest_usage_date = 1899.1.1
+		latest_usage_date = 1932.1.1	
 		chance = 50
 	}
 }
-rus_general_von_rennenkampf = {
-	first_name = Paul
-	last_name = von_Rennenkampf
+pru_general_von_steinmetz = {
+	first_name = Karl_Friedrich
+	last_name = von_Steinmetz
+	culture = cu:north_german
+	female = no
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1796.12.27
+	dna = dna_von_steinmetz
+	traits = { historical_figures 
+		persistent
+		experienced_offensive_planner
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 50
+	}
+}
+pru_general_bittenfeld = {
+	first_name = Karl_Eberhard
+	last_name = von_Caprivi
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1796.9.4
+	dna = dna_von_bittenfeld
+	traits = { historical_figures 
+		expert_defensive_strategist
+		wrathful
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1872.1.1	
+		chance = 50
+	}
+}
+pru_general_manteuffel = {
+	first_name = Edwin
+	last_name = von_Manteuffel
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1809.2.24
+	dna = dna_edwin_manteuffel
+	traits = { historical_figures 
+		experienced_offensive_planner
+		pillager
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1853.1.1
+		latest_usage_date = 1885.1.1	
+		chance = 50
+	}
+}
+pru_general_von_flies = {
+	first_name = Eduard_Moritz
+	last_name = von_Flies
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1802.8.25
+	dna = dna_von_flies
+	traits = { historical_figures 
+		basic_defensive_strategist
+		resupply_commander
+		forest_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1859.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 50
+	}
+}
+pru_general_falckenstein = {
+	first_name = Eduard
+	last_name = Vogel_von_Falckenstein
+	culture = cu:north_german
+	female = no
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1797.1.5
+	dna = dna_von_falckenstein
+	traits = { historical_figures 
+		basic_offensive_planner
+		surveyor
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1873.1.1	
+		chance = 50
+	}
+}
+pru_general_von_hutier = {
+	first_name = Oskar
+	last_name = von_Hutier
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1857.8.27
+	dna = dna_von_hutier
+	traits = { historical_figures 
+		expert_offensive_planner
+		expert_artillery_commander
+		surveyor
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1934.1.1	
+		chance = 50
+	}
+}
+pru_admiral_von_hipper = {
+	first_name = Franz
+	last_name = von_Hipper
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1863.9.19
+	dna = dna_von_hipper
+	traits = { historical_figures 
+		expert_naval_commander
+		surveyor
+		persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:BAV 
+					this = c:BAV 
+				}
+				AND = { 
+					NOT = { exists = c:BAV } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = admiral
+		earliest_usage_date = 1912.1.1
+		latest_usage_date = 1932.1.1	
+		chance = 50
+	}
+}
+pru_admiral_von_ingenohl = {
+	first_name = Friedrich
+	last_name = von_Ingenohl
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1857.6.30
+	dna = dna_von_ingenohl
+	traits = { historical_figures 
+		experienced_naval_commander
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = admiral
+		earliest_usage_date = 1907.1.1
+		latest_usage_date = 1933.1.1	
+		chance = 50
+	}
+}
+pru_admiral_von_pohl = {
+	first_name = Hugo
+	last_name = von_Pohl
+	culture = cu:north_german
+	female = no
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1855.8.25
+	dna = dna_von_pohl
+	traits = { historical_figures 
+		experienced_naval_commander
+		direct
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = admiral
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1916.1.1	
+		chance = 50
+	}
+}
+pru_admiral_scheer = {
+	first_name = Reinhard
+	last_name = Scheer
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1863.9.30
+	dna = dna_admiral_scheer
+	traits = { historical_figures 
+		expert_naval_commander
+		popular_commander
+		imperious
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER
+				}
+			}
+		}
+		role = admiral
+		earliest_usage_date = 1905.1.1
+		latest_usage_date = 1928.1.1	
+		chance = 50
+	}
+}
+pru_general_von_francois = {
+	first_name = Hermann
+	last_name = von_Francois
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1856.1.31
+	dna = dna_von_francois
+	traits = { historical_figures 
+		experienced_offensive_planner
+		trench_rat
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1908.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 50
+	}
+}
+pru_general_von_mackensen = {
+	first_name = August
+	last_name = von_Mackensen
 	culture = cu:north_german
 	female = no
 	ideology = ideology_royalist
 	commander_rank = default
 	interest_group = ig_landowners
-	birth_date = 1854.4.17
-	traits = {
-		basic_offensive_planner
-		reckless
-		persistent
+	birth_date = 1849.12.6
+	dna = dna_von_mackensen
+	traits = { historical_figures 
+		expert_offensive_planner
+		celebrity_commander
+		brave
 	}
 	commander_usage = {
 		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-			c:RUS = { owns_entire_state_region = STATE_ESTONIA } 
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
 		}
 		role = general
-		earliest_usage_date = 1884.1.1
-		latest_usage_date = 1920.1.1	
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1919.1.1	
 		chance = 50
 	}
 }
-rus_general_grand_duke_nicholas = {
-	first_name = Grand_Duke_Nicholas
-	last_name = Romanov
-	culture = cu:russian
+pru_general_von_kluck = {
+	first_name = Alexander
+	last_name = von_Kluck
+	culture = cu:north_german
 	female = no
-	ideology = ideology_royalist
-	commander_rank = default
-	interest_group = ig_landowners
-	birth_date = 1856.11.6
-	traits = {
-		popular_commander
-		pious
-		basic_offensive_planner
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-			c:RUS = { has_law = law_type:law_monarchy }
-		}
-		role = general
-		earliest_usage_date = 1884.1.1
-		latest_usage_date = 1920.1.1	
-		chance = 50
-	}
-}
-rus_general_brusilov = {
-	first_name = Aleksei
-	last_name = Brusilov
-	culture = cu:russian
-	female = no
-	ideology = ideology_moderate # argued for the abdication of Tsar Nicholas II
+	ideology = ideology_jingoist_leader
 	commander_rank = default
 	interest_group = ig_armed_forces
-	birth_date = 1853.8.31
-	traits = {
-		expert_offensive_planner
-		innovative
-		direct
+	birth_date = 1846.5.20
+	dna = dna_von_kluck
+	traits = { historical_figures 
+		expert_artillery_commander
+		experienced_offensive_planner
+		meticulous
+		tactful
 	}
 	commander_usage = {
 		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-			c:RUS = { owns_entire_state_region = STATE_GEORGIA } 
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
 		}
 		role = general
-		earliest_usage_date = 1874.1.1
+		earliest_usage_date = 1899.1.1
 		latest_usage_date = 1920.1.1	
 		chance = 50
 	}
 }
-rus_general_wrangel = {
-	first_name = Pyotr
-	last_name = Wrangel
-	culture = cu:russian
+pru_general_von_bulow = {
+	first_name = Karl
+	last_name = von_Bulow
+	culture = cu:north_german
 	female = no
-	ideology = ideology_royalist
+	ideology = ideology_traditionalist
 	commander_rank = default
 	interest_group = ig_landowners
-	birth_date = 1878.8.27
-	traits = {
+	birth_date = 1846.4.24
+	dna = dna_karl_bulow
+	traits = { historical_figures 
+		expert_defensive_strategist
+		surveyor
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1921.1.1	
+		chance = 50
+	}
+}
+pru_general_von_schlieffen = {
+	first_name = Alfred
+	last_name = von_Schlieffen
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1833.2.28
+	dna = dna_von_schlieffen
+	traits = { historical_figures 
+		expert_offensive_planner
+		plains_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1906.1.1	
+		chance = 50
+	}
+}
+pru_general_von_marwitz = {
+	first_name = Georg
+	last_name = von_der_Marwitz
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1856.7.7
+	dna = dna_von_der_marwitz
+	traits = { historical_figures 
 		experienced_offensive_planner
-		popular_commander
+		basic_artillery_commander
 		direct
 	}
 	commander_usage = {
 		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1894.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 50
+	}
+}
+pru_general_von_hoeppner = {
+	first_name = Ernst
+	last_name = von_Hoeppner
+	culture = cu:north_german
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1860.1.14
+	dna = dna_von_hoeppner
+	traits = { historical_figures 
+		resupply_commander
+		experienced_artillery_commander
+		surveyor
+		innovative
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1902.1.1
+		latest_usage_date = 1922.1.1	
+		chance = 50
+	}
+}
+pru_general_von_waldersee = {
+	first_name = Alfred
+	last_name = von_Waldersee
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1832.4.8
+	dna = dna_von_waldersee
+	traits = { historical_figures 
+		experienced_artillery_commander
+		resupply_commander
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1904.1.1	
+		chance = 50
+	}
+}
+pru_general_karl_hohenzollern = {
+	first_name = Karl-Anton
+	last_name = von_Hohenzollern
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1868.9.1
+	dna = dna_karl_anton_hohenzollern
+	traits = { historical_figures 
+		surveyor
+		arrogant
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1914.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 50
+	}
+}
+bad_general_von_kageneck = {
+	first_name = Karl_Marquard
+	last_name = von_Kageneck
+	culture = cu:south_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1871.5.10
+	dna = dna_von_kageneck
+	traits = { historical_figures 
+		surveyor
+		reserved
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:BAD 
+					this = c:BAD 
+				}
+				AND = { 
+					NOT = { exists = c:BAD } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1912.1.1
+		latest_usage_date = 19920.1.1	
+		chance = 50
+	}
+}
+pru_general_lettow_vorbeck = {
+	first_name = Paul
+	last_name = von_Lettow-Vorbeck
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1870.3.20
+	dna = dna_lettow_vorbeck
+	traits = { historical_figures 
+		resupply_commander
+		persistent
+		tactful
+		surveyor
+		experienced_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
 		}
 		role = general
 		earliest_usage_date = 1914.1.1
@@ -1570,306 +1153,2587 @@ rus_general_wrangel = {
 		chance = 50
 	}
 }
-rus_general_skobelev = {
-	first_name = Mikhail
-	last_name = Skobelev
-	culture = cu:russian
+pru_general_von_trumpling = {
+	first_name = Wilhelm
+	last_name = von_Trumpling
+	culture = cu:north_german
 	female = no
-	ideology = ideology_ethno_nationalist
+	ideology = ideology_traditionalist
 	commander_rank = default
 	interest_group = ig_armed_forces
-	birth_date = 1843.9.29
-	traits = {
-		expert_offensive_planner
-		popular_commander
-		bigoted
-	}
-	commander_usage = {
-		country_trigger = {
-			exists = c:RUS
-			this = c:RUS
-		}
-		role = general
-		earliest_usage_date = 1870.1.1
-		latest_usage_date = 1910.1.1	
-		chance = 50
-	}
-}
-# Sardinia-Piedmont - SAR
-sar_admiral_pellion_di_persano = {
-	first_name = Carlo
-	last_name = Pellion_di_Persano
-	culture = cu:north_italian
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1806.3.11
-	traits = {
-		basic_naval_commander
-		basic_diplomat
-		reckless
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
-				}
-				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
-				}
-			}
-		}
-		role = admiral
-		earliest_usage_date = 1849.1.1
-		latest_usage_date = 1870.1.1	
-		chance = 50
-	}
-}
-sar_general_de_sonnaz = {
-	first_name = Ettore
-	last_name = de_Sonnaz
-	culture = cu:north_italian
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1787.1.3
-	traits = {
-		reckless
-	}
-	commander_usage = {
-		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
-				}
-				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
-				}
-			}
-		}
-		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
-		chance = 50
-	}
-}
-sar_general_la_marmora = {
-	first_name = Alfonso
-	last_name = Ferrero_la_Marmora
-	culture = cu:north_italian
-	female = no
-	ideology = ideology_moderate
-	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1804.11.18
-	traits = {
+	birth_date = 1809.12.30
+	dna = dna_von_trumpling
+	traits = { historical_figures 
 		basic_offensive_planner
-		basic_diplomat
-		reckless
+		cautious
+		traditionalist_commander
 	}
 	commander_usage = {
 		country_trigger = {
 			OR = {
 				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
+					exists = c:PRU 
+					this = c:PRU 
 				}
 				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
 				}
 			}
 		}
 		role = general
 		earliest_usage_date = 1848.1.1
-		latest_usage_date = 1875.1.1	
+		latest_usage_date = 1883.1.1	
 		chance = 50
 	}
 }
-sar_general_bava = {
-	first_name = Eusebio_2
-	last_name = Bava
-	culture = cu:north_italian
+pru_general_wweltzien = {
+	first_name = Ludwig
+	last_name = von_Weltzien
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1815.4.1
+	dna = dna_von_weltzien
+	traits = { historical_figures 
+		surveyor
+		plains_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1853.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 50
+	}
+}
+pru_general_beyer = {
+	first_name = Gustav_Friedrich
+	last_name = von_Beyer
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1812.2.26
+	dna = dna_von_beyer
+	traits = { historical_figures 
+		basic_artillery_commander
+		forest_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1880.1.1	
+		chance = 50
+	}
+}
+pru_general_fransecky = {
+	first_name = Eduard
+	last_name = von_Fransecky
+	culture = cu:north_german
 	female = no
 	ideology = ideology_moderate
 	commander_rank = default
 	interest_group = ig_armed_forces
-	birth_date = 1790.8.9
-	traits = {
-		surveyor
+	birth_date = 1807.11.16
+	dna = dna_von_fransecky
+	traits = { historical_figures 
+		resupply_commander
+		meticulous
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1882.1.1	
+		chance = 50
+	}
+}
+pru_general_werder = {
+	first_name = August
+	last_name = von_Werder
+	culture = cu:north_german
+	female = no
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1808.9.12
+	dna = dna_von_werder
+	traits = { historical_figures 
+		popular_commander
+		experienced_artillery_commander
+		plains_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1859.1.1
+		latest_usage_date = 1879.1.1	
+		chance = 50
+	}
+}
+pru_general_bonin = {
+	first_name = Adolf
+	last_name = von_Bonin
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1803.11.11
+	dna = dna_von_bonin
+	traits = { historical_figures 
+		moutains_commander
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			OR = {
+				AND = { 
+					exists = c:PRU 
+					this = c:PRU 
+				}
+				AND = { 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1851.1.1
+		latest_usage_date = 1872.1.1	
+		chance = 50
+	}
+}
+pru_general_heeringen = {
+	first_name = Josias
+	last_name = von_Heeringen
+	culture = cu:north_german
+	female = no
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1850.3.9
+	dna = dna_von_heeringen
+	traits = { historical_figures 
+		experienced_defensive_strategist
 		cautious
 	}
 	commander_usage = {
 		country_trigger = {
 			OR = {
 				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
+					exists = c:PRU 
+					this = c:PRU 
 				}
 				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
+					NOT = { exists = c:PRU } 
+					exists = c:GER 
+					this = c:GER  
 				}
 			}
 		}
 		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
+		earliest_usage_date = 1898.1.1
+		latest_usage_date = 1926.1.1	
 		chance = 50
 	}
 }
-sar_general_cadorna = {
-	first_name = Luigi
-	last_name = Cadorna
-	culture = cu:north_italian
+
+
+# Bavaria - BAV
+bav_general_von_wittelsbach = {
+	first_name = Prince_Karl_Theodor
+	last_name = von_Wittelsbach
+	culture = cu:south_german
 	female = no
-	ideology = ideology_moderate
+	ideology = ideology_royalist
 	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1850.9.4
-	traits = {
-		reckless
-		arrogant
-		imperious
+	interest_group = ig_landowners
+	birth_date = 1795.7.7
+	dna = dna_karl_von_bayern 
+	traits = { historical_figures 
+		resupply_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			AND = {
+					exists = c:BAV
+					this = c:BAV
+					c:BAV = { has_law = law_type:law_monarchy }
+				}
+			AND = { 
+					NOT = { exists = c:BAV } 
+					exists = c:GER 
+					this = c:GER  
+				}
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1875.1.1	
+		chance = 50
+	}
+}
+bav_general_von_der_tann = {
+	first_name = Ludwig
+	last_name = von_der_Tann
+	culture = cu:south_german
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1815.6.18
+	dna = dna_von_der_tann
+	traits = { historical_figures 
+		celebrity_commander
+		experienced_offensive_planner
+		resupply_commander
+		tactful
 	}
 	commander_usage = {
 		country_trigger = {
 			OR = {
 				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
+					exists = c:BAV 
+					this = c:BAV
 				}
 				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
+					NOT = { exists = c:BAV } 
+					exists = c:GER
+					this = c:GER
+					c:GER = { owns_entire_state_region = STATE_BAVARIA } 
 				}
 			}
 		}
 		role = general
-		earliest_usage_date = 1890.1.1
-		latest_usage_date = 1920.1.1	
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1880.1.1	
 		chance = 50
 	}
 }
-sar_general_chiodo = {
-	first_name = Agostino
-	last_name = Chiodo
-	culture = cu:north_italian
+bav_rupprecht_bayern = {
+	first_name = Rupprecht
+	last_name = von_Bayern
+	culture = cu:south_german
 	female = no
-	ideology = ideology_moderate
+	ideology = ideology_royalist
 	commander_rank = default
-	interest_group = ig_armed_forces
-	birth_date = 1791.4.16
-	traits = {
+	interest_group = ig_landowners
+	birth_date = 1869.5.18
+	dna = dna_rupprecht_bayern
+	traits = { historical_figures 
+		experienced_offensive_planner
+		meticulous
 		trench_rat
 	}
 	commander_usage = {
 		country_trigger = {
 			OR = {
 				AND = { 
-					exists = c:SAR 
-					this = c:SAR 
+					exists = c:BAV 
+					this = c:BAV 
 				}
 				AND = { 
-					NOT = { exists = c:SAR } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
+					NOT = { exists = c:BAV } 
+					exists = c:GER 
+					this = c:GER  
 				}
 			}
 		}
 		role = general
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1850.1.1	
+		earliest_usage_date = 1914.1.1
+		latest_usage_date = 1936.1.1	
 		chance = 50
 	}
 }
-# Saxony - SAX
-sax_general_von_hausen = {
-	first_name = Max
-	last_name = von_Hausen
+
+
+# Wurttemberg - WUR
+wur_albert_wurttemberg = {
+	first_name = Albert
+	last_name = von_Wurttemberg
 	culture = cu:south_german
 	female = no
 	ideology = ideology_royalist
 	commander_rank = default
 	interest_group = ig_landowners
-	birth_date = 1846.12.17
-	traits = {
-		pillager
-		cruel
-		surveyor
+	birth_date = 1865.12.23
+	dna = dna_albert_wurttemberg
+	traits = { historical_figures 
+		basic_offensive_planner
+		stalwart_defender 
+		resupply_commander
 	}
 	commander_usage = {
 		country_trigger = {
 			OR = {
 				AND = { 
-					exists = c:SAX 
-					this = c:SAX
+					exists = c:WUR 
+					this = c:WUR 
 				}
 				AND = { 
-					NOT = { exists = c:SAX } 
-					exists = c:GER
-					this = c:GER
-					c:GER = { owns_entire_state_region = STATE_SAXONY } 
+					NOT = { exists = c:WUR } 
+					exists = c:GER 
+					this = c:GER  
 				}
 			}
 		}
 		role = general
-		earliest_usage_date = 1875.1.1
-		latest_usage_date = 1920.1.1	
+		earliest_usage_date = 1898.1.1
+		latest_usage_date = 1936.1.1	
 		chance = 50
 	}
 }
-# Two Sicilies - SIC
-sic_general_diaz = {
-	first_name = Armando
-	last_name = Diaz
-	culture = cu:south_italian
+# France - FRA
+fra_admiral_courbet = {
+	first_name = Amedee
+	last_name = Courbet
+	culture = cu:french
 	female = no
+	religion = catholic
 	ideology = ideology_moderate
 	commander_rank = default
 	interest_group = ig_armed_forces
-	birth_date = 1861.12.5
-	traits = {
-		experienced_offensive_planner
-		basic_artillery_commander
+	birth_date = 1788.6.24
+	dna = dna_admiral_courbet
+	traits = { historical_figures 
+		expert_naval_commander
+		cautious
 		meticulous
 	}
 	commander_usage = {
 		country_trigger = {
-			OR = {
-				AND = { 
-					exists = c:SIC 
-					this = c:SIC 
-				}
-				AND = { 
-					NOT = { exists = c:SIC } 
-					exists = c:ITA 
-					this = c:ITA 
-					c:ITA = { owns_entire_state_region = STATE_PIEDMONT } 
-				}
-			}
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1855.1.1	
+		chance = 25
+	}
+}
+fra_admiral_jaures = {
+	first_name = Charles
+	last_name = Jaures
+	culture = cu:occitan
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1808.12.5
+	dna = dna_admiral_jaures
+	traits = { historical_figures 
+		basic_naval_commander
+		cautious
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1825.1.1	
+		chance = 25
+	}
+}
+fra_admiral_boue_de_lapeyrere = {
+	first_name = Augustin
+	last_name = Boue_de_Lapeyrere
+	culture = cu:occitan
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1852.1.18
+	dna = dna_admiral_lapeyrere
+	traits = { historical_figures 
+		experienced_naval_commander
+		innovative
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1883.1.1
+		latest_usage_date = 1916.1.1	
+		chance = 25
+	}
+}
+fra_admiral_jaureguiberry = {
+	first_name = Bernard
+	last_name = Jaureguiberry
+	culture = cu:occitan
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1815.1.18
+	dna = dna_admiral_jaureguiberry
+	traits = { historical_figures 
+		experienced_naval_commander
+		brave
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1845.1.1
+		latest_usage_date = 1887.1.1	
+		chance = 25
+	}
+}
+fra_admiral_hamelin = {
+	first_name = Ferdinand
+	last_name = Hamelin
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1796.9.2
+	dna = dna_admiral_hamelin
+	traits = { historical_figures 
+		expert_naval_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1842.1.1
+		latest_usage_date = 1860.1.1	
+		chance = 25
+	}
+}
+fra_admiral_parseval = {
+	first_name = Alexandre_Ferdinand
+	last_name = Parseval-Deschenes
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1790.11.27
+	dna = dna_admiral_parseval
+	traits = { historical_figures 
+		dockyard_master
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1860.1.1	
+		chance = 25
+	}
+}
+fra_admiral_bruat = {
+	first_name = Armand_Joseph
+	last_name = Bruat
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_petty_bourgeoisie
+	birth_date = 1796.5.26
+	dna = dna_admiral_bruat
+	traits = { historical_figures 
+		celebrity_commander
+		expert_colonial_administrator
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1855.1.1	
+		chance = 25
+	}
+}
+fra_admiral_desfosses = {
+	first_name = Joseph-Romain
+	last_name = Desfosses
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1798.12.2
+	dna = dna_admiral_desfosses
+	traits = { historical_figures 
+		dockyard_master
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1847.1.1
+		latest_usage_date = 1864.1.1	
+		chance = 25
+	}
+}
+fra_admiral_bonard = {
+	first_name = Louis_Adolphe
+	last_name = Bonard
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1805.3.27
+	dna = dna_admiral_bonard
+	traits = { historical_figures 
+		explorer
+		experienced_diplomat
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1867.1.1	
+		chance = 25
+	}
+}
+fra_admiral_rigault = {
+	first_name = Charles
+	last_name = Rigault_de_Genouilly
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1807.4.12
+	dna = dna_admiral_rigault
+	traits = { historical_figures 
+		expert_naval_commander
+		explorer
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1857.1.1
+		latest_usage_date = 1873.1.1	
+		chance = 25
+	}
+}
+fra_admiral_charner = {
+	first_name = Leonard_Victor
+	last_name = Charner
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1797.2.13
+	dna = dna_admiral_charner
+	traits = { historical_figures 
+		experienced_naval_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1851.1.1
+		latest_usage_date = 1869.1.1	
+		chance = 25
+	}
+}
+fra_admiral_trehouart = {
+	first_name = Francois
+	last_name = Trehouart
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1798.4.27
+	dna = dna_admiral_trehouart
+	traits = { historical_figures 
+		experienced_naval_commander
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1846.1.1
+		latest_usage_date = 1873.1.1	
+		chance = 25
+	}
+}
+fra_admiral_pothuau = {
+	first_name = Louis
+	last_name = Pothuau
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1815.10.28
+	dna = dna_admiral_pothuau
+	traits = { historical_figures 
+		basic_naval_commander
+		experienced_diplomat
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1864.1.1
+		latest_usage_date = 1880.1.1	
+		chance = 25
+	}
+}
+fra_admiral_jurien = {
+	first_name = Edmond
+	last_name = Jurien_de_La_Graviere
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1812.11.19
+	dna = dna_admiral_jurien
+	traits = { historical_figures 
+		expert_naval_commander
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = admiral
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1886.1.1	
+		chance = 25
+	}
+}
+fra_general_boulanger = {
+	first_name = Georges_Ernest
+	last_name = Boulanger
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1837.4.29
+	dna = dna_general_boulanger
+	traits = { historical_figures 
+		celebrity_commander
+		firebrand
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
 		}
 		role = general
-		earliest_usage_date = 1899.1.1
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1910.1.1	
+		chance = 25
+	}
+}
+fra_general_foch = {
+	first_name = Ferdinand
+	last_name = Foch
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1851.8.2
+	dna = dna_ferdinand_foch
+	traits = { historical_figures 
+		persistent
+		experienced_offensive_planner
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1879.1.1
+		latest_usage_date = 1927.1.1	
+		chance = 25
+	}
+}
+fra_general_macmahon = {
+	first_name = Patrice
+	last_name = de_MacMahon
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist # legitimist
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1808.6.13
+	dna = dna_mac_mahon
+	traits = { historical_figures 
+		popular_commander
+		experienced_offensive_planner
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1884.1.1	
+		chance = 25
+	}
+}
+fra_general_bazaine = {
+	first_name = Francois_Achille
+	last_name = Bazaine
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist # bonapartist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1808.6.13
+	dna = dna_general_bazaine
+	traits = { historical_figures 
+		brave
+		direct
+		experienced_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1884.1.1	
+		chance = 25
+	}
+}
+fra_general_saintarnaud = {
+	first_name = Armand
+	last_name = Leroy_de_Saint-Arnaud
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist # bonapartist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1798.8.20
+	dna = dna_leroy_saintarnaud
+	traits = { historical_figures 
+		cruel
+		celebrity_commander
+		experienced_offensive_planner
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_pelissier = {
+	first_name = Aimable
+	last_name = Pelissier
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1794.11.6
+	dna = dna_aimable_pelissier
+	traits = { historical_figures 
+		basic_artillery_commander
+		persistent
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1845.1.1
+		latest_usage_date = 1864.1.1	
+		chance = 25
+	}
+}
+fra_general_randon = {
+	first_name = Jacques_Louis
+	last_name = Randon
+	culture = cu:french
+	female = no
+	religion = protestant
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1795.3.26
+	dna = dna_general_randon
+	traits = { historical_figures 
+		basic_colonial_administrator
+		resupply_commander
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1847.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_canrobert = {
+	first_name = Francois_Certain
+	last_name = de_Canrobert
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1809.6.27
+	dna = dna_marechal_canrobert
+	traits = { historical_figures 
+		basic_offensive_planner
+		traditionalist_commander
+		bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1873.1.1	
+		chance = 25
+	}
+}
+fra_general_bosquet = {
+	first_name = Pierre
+	last_name = Bosquet
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1810.11.8
+	dna = dna_pierre_bosquet
+	traits = { historical_figures 
+		charismatic
+		meticulous
+		expert_offensive_planner
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_niel = {
+	first_name = Alphonse
+	last_name = Niel
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader # bonapartist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1802.10.4
+	dna = dna_alphonse_niel
+	traits = { historical_figures 
+		innovative
+		resupply_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1849.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_mellinet = {
+	first_name = Emile
+	last_name = Mellinet
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist # bonapartist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1798.6.1
+	dna = dna_emile_mellinet
+	traits = { historical_figures 
+		pillager
+		plains_commander
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_chanzy = {
+	first_name = Alfred
+	last_name = Chanzy
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_republican_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1823.3.12
+	dna = dna_alfred_chanzy
+	traits = { historical_figures 
+		experienced_defensive_strategist
+		cautious
+		defense_in_depth_specialist
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1864.1.1
+		latest_usage_date = 1883.1.1	
+		chance = 25
+	}
+}
+fra_general_gallieni = {
+	first_name = Joseph
+	last_name = Gallieni
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1849.4.24
+	dna = dna_joseph_gallieni
+	traits = { historical_figures 
+		expert_colonial_administrator
+		resupply_commander
+		direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1891.1.1
+		latest_usage_date = 1914.9.1	
+		chance = 25
+	}
+}
+fra_general_joffre = {
+	first_name = Joseph
+	last_name = Joffre
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1852.1.12
+	dna = dna_joseph_joffre
+	traits = { historical_figures 
+		reckless
+		resupply_commander
+		experienced_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1885.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 25
+	}
+}
+fra_general_franchet = {
+	first_name = Louis
+	last_name = Franchet_d_Esperey
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1856.5.25
+	dna = dna_franchet_desperey
+	traits = { historical_figures 
+		trench_rat
+		experienced_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1903.1.1
+		latest_usage_date = 1930.1.1	
+		chance = 25
+	}
+}
+fra_general_petain = {
+	first_name = Philippe
+	last_name = Petain
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1856.4.24
+	dna = dna_philippe_petain
+	traits = { historical_figures 
+		trench_rat
+		popular_commander
+		experienced_defensive_strategist
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1914.1.1
+		latest_usage_date = 1935.1.1	
+		chance = 25
+	}
+}
+fra_eugene_cavaignac = {
+	first_name = Eugene
+	last_name = Cavaignac
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_republican_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1802.10.15
+	dna = dna_eugene_cavaignac
+	traits = { historical_figures 
+		celebrity_commander
+        surveyor
+        wrathful
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1857.1.1	
+		chance = 25
+	}
+}
+fra_general_lyautey = {
+	first_name = Hubert
+	last_name = Lyautey
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1854.11.17
+	dna = dna_hubert_lyautey
+	traits = { historical_figures 
+		experienced_defensive_strategist
+        trench_rat
+        basic_artillery_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1903.1.1
+		latest_usage_date = 1925.1.1	
+		chance = 25
+	}
+}
+fra_general_castelnau = {
+	first_name = Edouard
+	last_name = de_Castelnau
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1851.12.24
+	dna = dna_ed_castelnau
+	traits = { historical_figures 
+		basic_artillery_commander
+        bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1906.1.1
+		latest_usage_date = 1935.1.1	
+		chance = 25
+	}
+}
+fra_general_baraguay = {
+	first_name = Achilles
+	last_name = Baraguey_d_Hilliers
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1795.9.6
+	dna = dna_baraguey_hilliers
+	traits = { historical_figures 
+		traditionalist_commander
+        surveyor
+        direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1851.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_billot = {
+	first_name = Jean-Baptiste
+	last_name = Billot
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_republican_leader
+	commander_rank = default
+	interest_group = ig_petty_bourgeoisie
+	birth_date = 1828.8.15
+	dna = dna_jb_billot
+	traits = { historical_figures 
+		basic_offensive_planner
+        persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1900.1.1	
+		chance = 25
+	}
+}
+fra_general_castelane = {
+	first_name = Boniface
+	last_name = de_Castelane
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1788.3.21
+	dna = dna_boni_castelane
+	traits = { historical_figures 
+		resupply_commander
+        arrogant
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1860.1.1	
+		chance = 25
+	}
+}
+fra_general_chanoine = {
+	first_name = Jules
+	last_name = Chanoine
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1835.12.18
+	dna = dna_jules_chanoine
+	traits = { historical_figures 
+		innovative
+        surveyor
+		explorer
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1867.1.1
+		latest_usage_date = 1898.1.1	
+		chance = 25
+	}
+}
+fra_general_cousin = {
+	first_name = Charles
+	last_name = Cousin-Montauban
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1796.6.24
+	dna = dna_cousin_montauban
+	traits = { historical_figures 
+		basic_colonial_administrator
+        plains_commander
+		imperious
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_fleury = {
+	first_name = Emile
+	last_name = Fleury
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1815.12.23
+	dna = dna_emile_fleury
+	traits = { historical_figures 
+		basic_defensive_strategist
+        surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1852.1.1
+		latest_usage_date = 1874.1.1	
+		chance = 25
+	}
+}
+fra_general_goyon = {
+	first_name = Charles-Marie-Augustin
+	last_name = de_Goyon
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1803.9.13
+	dna = dna_de_goyon
+	traits = { historical_figures 
+		experienced_defensive_strategist
+        stalwart_defender
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_lannes = {
+	first_name = Gustave_Olivier
+	last_name = Lannes
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1804.12.4
+	dna = dna_go_lannes
+	traits = { historical_figures 
+		surveyor
+        hedonist
+		basic_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1851.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_leboeuf = {
+	first_name = Edmond
+	last_name = Le_Boeuf
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1809.12.5
+	dna = dna_le_boeuf
+	traits = { historical_figures 
+		experienced_artillery_commander
+        forest_commander
+		direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1880.1.1	
+		chance = 25
+	}
+}
+fra_general_magnan = {
+	first_name = Bernard_Pierre
+	last_name = Magnan
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1791.12.7
+	dna = dna_marechal_magnan
+	traits = { historical_figures 
+		charismatic
+        forest_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1845.1.1
+		latest_usage_date = 1865.1.1	
+		chance = 25
+	}
+}
+fra_general_morris = {
+	first_name = Louis_Michel
+	last_name = Morris
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1803.9.27
+	dna = dna_lm_morris
+	traits = { historical_figures 
+		experienced_offensive_planner
+        brave
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1849.1.1
+		latest_usage_date = 1867.1.1	
+		chance = 25
+	}
+}
+fra_general_ornano = {
+	first_name = Philippe_Antoine
+	last_name = d_Ornano
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1784.1.17
+	dna = dna_philippe_ornano
+	traits = { historical_figures 
+		experienced_offensive_planner
+        celebrity_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1863.1.1	
+		chance = 25
+	}
+}
+fra_general_forey = {
+	first_name = Elie_Frederic
+	last_name = Forey
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1804.1.10
+	dna = dna_elie_forrey
+	traits = { historical_figures 
+		wrathful
+        celebrity_commander
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1867.4.1	
+		chance = 25
+	}
+}
+fra_general_bourbaki = {
+	first_name = Charles_Denis
+	last_name = Bourbaki
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1816.4.22
+	dna = dna_charles_bourbaki
+	traits = { historical_figures 
+		plains_commander
+        explorer
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1885.1.1	
+		chance = 25
+	}
+}
+fra_general_harispe = {
+	first_name = Jean_Isidore
+	last_name = Harispe
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1768.12.7
+	dna = dna_marechal_harispe
+	traits = { historical_figures 
+		popular_commander
+        traditionalist_commander
+		senile
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1851.1.1	
+		chance = 25
+	}
+}
+fra_general_vaillant = {
+	first_name = Jean-Baptiste_Philibert
+	last_name = Vaillant
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1790.12.6
+	dna = dna_marechal_vaillant
+	traits = { historical_figures 
+		resupply_commander
+        reserved
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1849.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_appert = {
+	first_name = Felix_Antoine
+	last_name = Appert
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1817.6.12
+	dna = dna_felix_appert
+	traits = { historical_figures 
+		meticulous
+        cruel
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1884.1.1	
+		chance = 25
+	}
+}
+fra_general_voyron = {
+	first_name = Regis
+	last_name = Voyron
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1838.8.5
+	dna = dna_regis_voyron
+	traits = { historical_figures 
+		expert_colonial_administrator
+        resupply_commander
+		bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1887.1.1
+		latest_usage_date = 1900.1.1	
+		chance = 25
+	}
+}
+fra_general_vassoigne = {
+	first_name = Elie
+	last_name = de_Vassoigne
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1811.5.27
+	dna = dna_elie_vassoigne
+	traits = { historical_figures 
+		experienced_offensive_planner
+        explorer
+		meticulous
+		celebrity_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1880.1.1	
+		chance = 25
+	}
+}
+fra_general_failly = {
+	first_name = Pierre_Louis_Charles
+	last_name = de_Failly
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = default
+	interest_group = ig_devout
+	birth_date = 1810.1.21
+	dna = dna_de_failly
+	traits = { historical_figures 
+		popular_commander
+        arrogant
+		reckless
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_galliffet = {
+	first_name = Gaston
+	last_name = de_Galliffet
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_petty_bourgeoisie
+	birth_date = 1831.1.23
+	dna = dna_gaston_galliffet
+	traits = { historical_figures 
+		celebrity_commander
+        brave
+		cruel
+		arrogant
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1900.1.1	
+		chance = 25
+	}
+}
+fra_general_faidherbe = {
+	first_name = Louis
+	last_name = Faidherbe
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_republican_leader
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1818.6.3
+	dna = dna_louis_faidherbe
+	traits = { historical_figures 
+		expert_colonial_administrator
+        meticulous
+		bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1888.1.1	
+		chance = 25
+	}
+}
+fra_general_mangin = {
+	first_name = Charles
+	last_name = Mangin
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1866.7.6
+	dna = dna_charles_mangin
+	traits = { historical_figures 
+		experienced_artillery_commander
+        basic_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1913.1.1
+		latest_usage_date = 1925.1.1	
+		chance = 25
+	}
+}
+fra_general_marchand = {
+	first_name = Jean-Baptiste
+	last_name = Marchand
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1863.11.22
+	dna = dna_jb_marchand
+	traits = { historical_figures 
+		explorer
+        reckless
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1896.1.1
+		latest_usage_date = 1918.1.1	
+		chance = 25
+	}
+}
+fra_general_nivelle = {
+	first_name = Robert
+	last_name = Nivelle
+	culture = cu:french
+	female = no
+	religion = protestant
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1856.10.15
+	dna = dna_robert_nivelle
+	traits = { historical_figures 
+		expert_artillery_commander
+        experienced_offensive_planner
+		direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1910.1.1
 		latest_usage_date = 1921.1.1	
-		chance = 50
+		chance = 25
+	}
+}
+fra_general_dreyfus = {
+	first_name = Alfred
+	last_name = Dreyfus
+	culture = cu:french
+	female = no
+	religion = jewish
+	ideology = ideology_pacifist
+	commander_rank = default
+	interest_group = ig_intelligentsia
+	birth_date = 1859.10.9
+	dna = dna_alfred_dreyfus
+	traits = { historical_figures 
+		basic_artillery_commander
+        reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1919.1.1	
+		chance = 25
+	}
+}
+fra_general_picquart = {
+	first_name = Marie-Georges
+	last_name = Picquart
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_intelligentsia
+	birth_date = 1854.9.6
+	dna = dna_mg_picquart
+	traits = { historical_figures 
+		meticulous
+        direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1914.1.1	
+		chance = 25
+	}
+}
+fra_general_renault = {
+	first_name = Pierre_Hippolyte
+	last_name = Renault
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1807.1.20
+	dna = dna_pierre_renault
+	traits = { historical_figures 
+		basic_offensive_planner
+        brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1854.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_boisdeffre = {
+	first_name = Raoul
+	last_name = Le_Mouton_de_Boisdeffre
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_reformer
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1839.2.6
+	dna = dna_mouton_boisdeffre
+	traits = { historical_figures 
+		basic_offensive_planner
+        surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1880.1.1
+		latest_usage_date = 1914.1.1	
+		chance = 25
+	}
+}
+fra_general_vinoy = {
+	first_name = Joseph
+	last_name = Vinoy
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1800.8.10
+	dna = dna_joseph_vinoy
+	traits = { historical_figures 
+		basic_defensive_strategist
+        cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1853.1.1
+		latest_usage_date = 1871.1.1	
+		chance = 25
+	}
+}
+fra_general_brugere = {
+	first_name = Joseph
+	last_name = Brugere
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1841.6.27
+	dna = dna_joseph_brugere
+	traits = { historical_figures 
+		surveyor
+        meticulous
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1887.1.1
+		latest_usage_date = 1914.1.1	
+		chance = 25
+	}
+}
+fra_general_changarnier = {
+	first_name = Nicolas
+	last_name = Changarnier
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_rural_folk
+	birth_date = 1793.4.26
+	dna = dna_nicolas_changarnier
+	traits = { historical_figures 
+		experienced_offensive_planner
+        cruel
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1870.1.1	
+		chance = 25
+	}
+}
+fra_general_driant = {
+	first_name = Emile
+	last_name = Driant
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_intelligentsia
+	birth_date = 1855.9.11
+	dna = dna_emile_driant
+	traits = { historical_figures 
+		surveyor
+        romantic
+		resupply_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 25
+	}
+}
+fra_general_fayolle = {
+	first_name = Emile
+	last_name = Fayolle
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1852.5.14
+	dna = dna_emile_fayolle
+	traits = { historical_figures 
+		experienced_artillery_commander
+        arrogant
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1910.1.1
+		latest_usage_date = 1920.1.1	
+		chance = 25
+	}
+}
+fra_general_mercier = {
+	first_name = Auguste
+	last_name = Mercier
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_ethno_nationalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1833.12.8
+	dna = dna_auguste_mercier
+	traits = { historical_figures 
+		basic_artillery_commander
+        bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1918.1.1	
+		chance = 25
+	}
+}
+fra_general_meunier = {
+	first_name = Victor_Joseph
+	last_name = Meunier
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_pacifist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1848.4.23
+	dna = dna_victor_meunier
+	traits = { historical_figures 
+		experienced_diplomat
+        explorer
+		basic_artillery_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1914.1.1	
+		chance = 25
+	}
+}
+fra_general_saussier = {
+	first_name = Gustave
+	last_name = Saussier
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_ethno_moderate
+	commander_rank = default
+	interest_group = ig_industrialists
+	birth_date = 1828.1.16
+	dna = dna_gustave_saussier
+	traits = { historical_figures 
+		resupply_commander
+        popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1857.1.1
+		latest_usage_date = 1887.1.1	
+		chance = 25
+	}
+}
+fra_general_trochu = {
+	first_name = Louis-Jules
+	last_name = Trochu
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1815.3.12
+	dna = dna_louis_trochu
+	traits = { historical_figures 
+		expert_defensive_strategist
+        tactful
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1866.1.1
+		latest_usage_date = 1885.1.1	
+		chance = 25
+	}
+}
+fra_general_weygand = {
+	first_name = Maxime
+	last_name = Weygand
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_fascist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1867.1.21
+	dna = dna_maxime_weygand
+	traits = { historical_figures 
+		surveyor
+        bigoted
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1920.1.1
+		latest_usage_date = 1935.1.1	
+		chance = 25
+	}
+}
+fra_general_bedeau = {
+	first_name = Marie-Alphonse
+	last_name = Bedeau
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1804.8.19
+	dna = dna_general_bedeau
+	traits = { historical_figures 
+		experienced_defensive_strategist
+        basic_colonial_administrator
+		popular_commander
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1839.1.1
+		latest_usage_date = 1851.12.2	
+		chance = 25
+	}
+}
+fra_general_lamoricière = {
+	first_name = Louis
+	last_name = Juchault_de_Lamoriciere
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1806.2.5
+	dna = dna_de_lamoriciere
+	traits = { historical_figures 
+		experienced_offensive_planner
+        cruel
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1851.12.2	
+		chance = 25
+	}
+}
+fra_general_oudinot = {
+	first_name = Nicolas_Charles
+	last_name = Oudinot
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_moderate
+	commander_rank = commander_rank_4
+	interest_group = ig_armed_forces
+	birth_date = 1767.4.25
+	dna = dna_marechal_oudinot
+	traits = { historical_figures 
+		traditionalist_commander
+        celebrity_commander
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1847.1.1	
+		chance = 25
+	}
+}
+fra_general_perrin = {
+	first_name = Claude-Victor
+	last_name = Perrin
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = commander_rank_4
+	interest_group = ig_devout
+	birth_date = 1764.12.7
+	dna = dna_marechal_perrin
+	traits = { historical_figures 
+		experienced_artillery_commander
+		celebrity_commander
+        senile
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1841.1.1	
+		chance = 25
+	}
+}
+fra_general_bourmont = {
+	first_name = Louis_Auguste_Victor
+	last_name = de_Ghaisne_de_Bourmont
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = commander_rank_3
+	interest_group = ig_landowners
+	birth_date = 1773.9.2
+	dna = dna_marechal_ghaisne
+	traits = { historical_figures 
+		traditionalist_commander
+        senile
+		brave
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1846.1.1	
+		chance = 25
+	}
+}
+fra_general_gerard = {
+	first_name = Etienne_Maurice
+	last_name = Gerard
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_royalist
+	commander_rank = commander_rank_3
+	interest_group = ig_rural_folk
+	birth_date = 1773.4.4
+	dna = dna_marechal_gerard
+	traits = { historical_figures 
+		expert_offensive_planner
+        celebrity_commander
+		basic_political_operator
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1852.1.1	
+		chance = 25
+	}
+}
+fra_general_valee = {
+	first_name = Sylvain_Charles
+	last_name = Valee
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = commander_rank_3
+	interest_group = ig_armed_forces
+	birth_date = 1773.12.17
+	dna = dna_marechal_valee
+	traits = { historical_figures 
+		expert_artillery_commander
+        popular_commander
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1846.1.1	
+		chance = 25
+	}
+}
+fra_general_sebastiani = {
+	first_name = Horace
+	last_name = Sebastiani
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = commander_rank_3
+	interest_group = ig_armed_forces
+	birth_date = 1773.11.17
+	dna = dna_marechal_sebastiani
+	traits = { historical_figures 
+		celebrity_commander
+        experienced_diplomat
+		senile
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1851.1.1	
+		chance = 25
+	}
+}
+fra_general_drouet = {
+	first_name = Jean-Baptiste
+	last_name = Drouet_d_Erlon
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_jingoist_leader
+	commander_rank = commander_rank_3
+	interest_group = ig_petty_bourgeoisie
+	birth_date = 1765.7.29
+	dna = dna_marechal_drouet
+	traits = { historical_figures 
+		popular_commander
+        reckless
+		basic_colonial_administrator
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1844.1.1	
+		chance = 25
+	}
+}
+fra_general_exelmans = {
+	first_name = Remy_Joseph_Isidore
+	last_name = Exelmans
+	culture = cu:french
+	female = no
+	religion = catholic
+	ideology = ideology_traditionalist
+	commander_rank = commander_rank_3
+	interest_group = ig_landowners
+	birth_date = 1775.11.13
+	dna = dna_marechal_exelmans
+	traits = { historical_figures 
+		celebrity_commander
+        brave
+		experienced_offensive_planner
+		direct
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:FRA
+			this = c:FRA
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1852.1.1	
+		chance = 25
 	}
 }

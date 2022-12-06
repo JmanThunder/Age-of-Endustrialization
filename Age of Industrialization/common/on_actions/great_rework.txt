@@ -1,0 +1,23 @@
+﻿on_monthly_pulse_country = {
+	events = {
+		maine_events.1
+		great_rework.2
+		great_rework.3
+		great_rework.4
+	}
+}
+on_country_released_as_independent = {
+	events = {
+		great_rework.6
+	}
+}
+on_country_released_as_overlord_subject = {
+	events = {
+		great_rework.6
+	}
+}
+on_country_released_as_own_subject = {
+	events = {
+		great_rework.6
+	}
+}

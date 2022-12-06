@@ -1,7 +1,7 @@
 ﻿l_english:
-  MS_BTN: "Spreadsheets"
-  MS_TOOLTIP: "Shows more spreadsheets"
-  MS_PANEL_HEADER: "More Spreadsheets"
+  MS_BTN: "National Statistics"
+  MS_TOOLTIP: "Shows National Statistics"
+  MS_PANEL_HEADER: "National Statistics"
   MS_STATES: "States"
   MS_POPS: "Pops"
   MS_MARKET: "Market"

@@ -507,7 +507,7 @@ psychology_events.5 = {
 				religion = rel:jewish
 				ideology = ideology_atheist
 				traits = {
-					concept_wikipedia_Sigismund_Schlomo_Freud
+					historical_figures
 					ambitious
 					charismatic
 					cocaine_addiction

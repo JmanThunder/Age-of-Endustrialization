@@ -1,0 +1,154 @@
+pm_hardwood_only = {
+	texture = "gfx/interface/icons/production_method_icons/hardwood_selection.dds"
+
+	unlocking_production_methods = {
+		pm_electric_saw_mills
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods										
+			building_output_wood_add = -100			
+			building_output_hardwood_add = 40
+		}
+	}
+}
+pm_super_vineyards = {
+	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
+
+	unlocking_production_methods = {
+		pm_soil_enriching_farming
+		pm_fertilization
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -90
+			building_output_wine_add = 30
+			building_employment_shopkeepers_add = 200
+		}
+	}
+}
+
+pm_super_great_vineyards = {
+	texture = "gfx/interface/icons/production_method_icons/vineyards.dds"
+
+	unlocking_production_methods = {
+		pm_chemical_fertilizer
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_grain_add = -140
+			building_output_wine_add = 50
+			building_employment_shopkeepers_add = 200
+		}
+	}
+}
+pm_military_shipbuilding_wooden_2 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_wooden.dds"
+	
+	unlocking_production_methods = {
+		pm_basic_shipbuilding
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_wood_add = 10
+			building_input_fabric_add = 5
+
+			# output goods
+			building_output_clippers_add = -35
+			building_output_manowars_add = 35
+		}
+	}	
+}
+
+pm_military_shipbuilding_wooden_3 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_wooden_2.dds"
+	
+	unlocking_production_methods = {
+		pm_complex_shipbuilding
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_wood_add = 20
+			building_input_hardwood_add = 10
+			building_input_fabric_add = 10
+			building_input_engines_add = 5
+
+			# output goods
+			building_output_clippers_add = -70
+			building_output_manowars_add = 70
+		}
+	}
+}
+
+pm_military_shipbuilding_steam_2 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam.dds"
+	
+	unlocking_production_methods = {
+		pm_metal_shipbuilding
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_steel_add = 15
+			building_input_coal_add = 5
+			building_input_engines_add = 5
+
+			# output goods
+			building_output_steamers_add = -60
+			building_output_ironclads_add = 60
+		}
+	}	
+}
+
+pm_military_shipbuilding_steam_3 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	unlocking_production_methods = {
+		pm_arc_welding_shipbuilding
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_steel_add = 15
+			building_input_electricity_add = 15
+			building_input_engines_add = 5
+			
+			# output goods
+			building_output_steamers_add = -80
+			building_output_ironclads_add = 80
+		}
+	}
+}
+
+pm_radios_only = {
+	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+	unlocking_technologies = {
+		radio
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_iron_add = 10
+			building_input_rubber_add = 5
+			building_input_lead_add = 10
+			building_input_electricity_add = 75
+
+			# output goods
+			building_output_telephones_add = -60
+			building_output_radios_add = 60
+		}
+		
+		level_scaled = {
+			building_employment_engineers_add = 750
+		}
+	}
+}

@@ -1,0 +1,37 @@
+﻿namespace = californian_statehood
+
+californian_statehood.1 = {
+	type = country_event
+	placement = root
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = californian_statehood.1.t
+	desc = californian_statehood.1.d
+	flavor = californian_statehood.1.f
+
+	duration = 3
+
+	trigger = {
+		# triggered by completion of je_california_usa
+	}
+
+	immediate = {
+		c:CAL = {
+			save_scope_as = california_scope
+		}
+	}
+
+	option = {
+		name = californian_statehood.1.a
+		default_option = yes
+		annex = c:CAL
+	}
+}

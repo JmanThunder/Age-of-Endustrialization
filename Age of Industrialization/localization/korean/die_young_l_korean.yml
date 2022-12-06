@@ -1,0 +1,4 @@
+﻿l_korean:
+ notification_ruler_die_young_notification_name: "우리의 위대한 [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] 사망했다"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], 의 나이에 사망했다. [SCOPE.GetRootScope.GetCharacter.GetAge]. 그 땅의 법에 따라 새로운 통치자가 임명될 것입니다."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

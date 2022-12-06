@@ -1,7 +1,0 @@
-﻿l_english:
- THERE_ARE_TRADE_ROUTES_OWNED_BY_YOU_MOD:0 "You have [concept_trade_route] of this [concept_good] owned by yourself."
- LCA_GUI_TOOLTIP_HIDE_DECISIONS_OUTLINER:0 "Hide Available $DECISIONS$"
- LCA_GUI_TOOLTIP_SHOW_DECISIONS_OUTLINER:0 "Show Available $DECISIONS$"
- TITLE_AVAILABLE_DECISIONS:0 "#title Available $DECISIONS$#!"
- LCA_GUI_TOOLTIP_HIDE_JE_OUTLINER:0 "Hide [SelectLocalization(Not(IsDataModelEmpty(AccessPlayer.AccessActivePlayerObjectiveJournalEntries)), 'OTHER_ACTIVE_JOURNAL_ENTRIES', 'ACTIVE_JOURNAL_ENTRIES')]"
- LCA_GUI_TOOLTIP_SHOW_JE_OUTLINER:0 "Show [SelectLocalization(Not(IsDataModelEmpty(AccessPlayer.AccessActivePlayerObjectiveJournalEntries)), 'OTHER_ACTIVE_JOURNAL_ENTRIES', 'ACTIVE_JOURNAL_ENTRIES')]"

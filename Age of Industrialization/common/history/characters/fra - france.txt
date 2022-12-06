@@ -22,6 +22,7 @@
 			last_name = d_Orleans
 			heir = yes
 			birth_date = 1810.9.3
+			dna = dna_ferdinand_philippe
 			interest_group = ig_armed_forces
 			ideology = ideology_orleanist
 			traits = {
@@ -49,11 +50,15 @@
 			first_name = "Adolphe"
 			last_name = "Thiers"
 			birth_date = 1797.4.15
+			dna = dna_adolphe_thiers
 			ig_leader = yes
 			interest_group = ig_intelligentsia
 			ideology = ideology_reformer
 			traits = {
 				charismatic
+			}
+			on_created = {
+				set_variable = is_adolphe_thiers
 			}
 		}
 
@@ -113,6 +118,7 @@
 			first_name = "Jean-de-Dieu"
 			last_name = "Soult"
 			birth_date = 1769.3.29
+			dna = dna_marshal_soult
 			ig_leader = yes
 			interest_group = ig_armed_forces
 			ideology = ideology_orleanist

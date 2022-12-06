@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Muhammad_Shah_Opu_Daeng_Celak
+				historical_figures
 			}
 		}	
 
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Abdul_Samad_Opu_Daeng_Celak
+				historical_figures
 			}
 		}
 	}

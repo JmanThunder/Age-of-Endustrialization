@@ -99,7 +99,7 @@ front_battle_province_weight = {
 				is_coastal = yes
 			}
 		}
-		multiply = 20
+		multiply = 10
 	}
 	if = {
 		limit = {
@@ -311,20 +311,13 @@ land_battle_size = {
 	
 	if = {
         limit = {
-			any_scope_building = {
-				is_building_type = building_stuff_headquarters
-				has_active_production_method = pm_electric_telegraph_order_transmission
-			}
-        }
-        multiply = 1.5
-		desc = "BATTLE_SIZE_ORDER_TRANSMISSION"
-    }
-	
-	else_if = {
-        limit = {
-			any_scope_building = {
-				is_building_type = building_stuff_headquarters
-				has_active_production_method = pm_telephone_order_transmission
+            exists = scope:own_commander
+			scope:own_commander = {
+				commander_pm_usage = {
+					target = root
+					production_method = pm_electric_telegraph_order_transmission
+					value > 0.01
+				}
 			}
         }
         multiply = 2
@@ -333,12 +326,31 @@ land_battle_size = {
 	
 	else_if = {
         limit = {
-			any_scope_building = {
-				is_building_type = building_stuff_headquarters
-				has_active_production_method = pm_radio_order_transmission
+            exists = scope:own_commander
+			scope:own_commander = {
+				commander_pm_usage = {
+					target = root
+					production_method = pm_telephone_order_transmission
+					value > 0.01
+				}
 			}
         }
         multiply = 3
+		desc = "BATTLE_SIZE_ORDER_TRANSMISSION"
+    }
+	
+	else_if = {
+        limit = {
+            exists = scope:own_commander
+			scope:own_commander = {
+				commander_pm_usage = {
+					target = root
+					production_method = pm_radio_order_transmission
+					value > 0.01
+				}
+			}
+        }
+        multiply = 4
 		desc = "BATTLE_SIZE_ORDER_TRANSMISSION"
     }
 	if = {

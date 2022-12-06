@@ -1,0 +1,18 @@
+sub_1BN = {
+	pattern = "pattern_solid.tga"
+	color1 = { 255 255 255 }
+	
+	colored_emblem = {
+		texture = "ce_tricolor_fimbriated_thin.dds"
+		color1 = { 239 43 43 }
+		color2 = { 255 255 255 }
+		color3 = { 33 70 139 }
+	}
+	colored_emblem = {
+		texture = "benelux.dds"
+		color1 = { 239 43 43 }
+		color2 = { 255 255 255 }
+		color3 = { 248 216 14 }
+
+	}
+}

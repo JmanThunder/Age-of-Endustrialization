@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Ali_Iskandar_Bendahara
+				historical_figures
 				reserved
 				expensive_tastes
 			}
@@ -26,7 +26,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Abu_Bakar_Bendahara
+				historical_figures
 				charismatic
 			}
 		}

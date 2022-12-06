@@ -387,15 +387,6 @@ qwf_state_fort_total_value = {
 		}
 		multiply = 2
 	}
-	if = {
-		limit = {
-			any_scope_building = {
-				is_building_type = building_fortifications
-				building_has_goods_shortage = yes
-			}
-		}
-		multiply = 0.5
-	}
 }
 
 qwf_attacker_artillery_fire_support_for_battle_value = {

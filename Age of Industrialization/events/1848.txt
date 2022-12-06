@@ -51,12 +51,6 @@
 			}
 			activate_law = law_type:law_parliamentary_republic
 		}
-		if = {
-			limit = {
-				c:FRA = ROOT
-			}
-			trigger_event = { id = napoleonic_flavor.6 days = 1 popup = yes }
-		}
 		# monarchists get VERY angry
 		every_interest_group = {
 			limit = {
@@ -130,8 +124,6 @@
 					OR = {
 						has_ideology = ideology_royalist
 						has_ideology = ideology_orleanist
-						has_ideology = ideology_legitimist
-						has_ideology = ideology_bonapartist
 					}
 				}
 			}

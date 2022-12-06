@@ -1,0 +1,38 @@
+﻿effect_starting_explosives = {
+	if = {
+		limit = {
+			OR = {
+				has_technology_researched = nitroglycerin
+				has_technology_researched = percussion_cap
+			}
+			is_junior_in_customs_union = no
+			is_subject = no
+			NOT = {
+				this = c:USA
+			}
+		}
+		random_scope_state = {
+			limit = {
+				is_capital = yes
+			}
+			create_building={
+				building= building_explosives_industry
+				level=5
+				reserves=1
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = c:USA
+			this = c:USA
+		}
+		s:STATE_NEW_YORK = {
+			create_building={
+				building= building_explosives_industry
+				level=5
+				reserves=1
+			}
+		}
+	}
+}

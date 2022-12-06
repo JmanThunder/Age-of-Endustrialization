@@ -1,0 +1,12 @@
+﻿NAI = {
+	AI_PEACE_AGREEMENT_WHITE_PEACE = 30 # If no wargoals are being enforced on either side (was 10)
+	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_SELF_FACTOR = -30 # For each wargoal that the enemy is pressing against us (was -50)
+	AI_PEACE_DESIRE_FROM_SHORT_WAR = -75 # Subtract this amount of peace desire for the above number of months (was 100)
+	AI_PEACE_DESIRE_FROM_TURMOIL = 30 # Add this amount of peace desire at 100% radicals (was 25)
+	AI_PEACE_DESIRE_FROM_LOYALISTS = -20 # Subtract this amount of peace desire at 100% loyalists (was -25)
+	AI_PEACE_DESIRE_FROM_GOLD_RESERVES = -30 # Subtract this amount of peace desire at 100% gold reserves (was -50)
+}
+NCharacters = {
+	RECRUIT_COMMANDER_NUM_OPTIONS = 5	# default: 2
+	RECRUIT_COMMANDER_POOL_SIZE = 8		# default: 3
+}

@@ -1,0 +1,21 @@
+﻿wb_loan_amount_given = {
+	value = gold_reserves
+	multiply = 0.2
+	floor = yes
+}
+
+wb_loan_amount_remove = {
+	value = wb_loan_amount_given
+	multiply = -1
+}
+wb_max_grant_amount_taken = {
+	value = gold_reserves_limit
+	multiply = 0.7
+}
+
+wb_max_grant_take = {
+	value = wb_max_grant_amount_taken
+}
+
+
+

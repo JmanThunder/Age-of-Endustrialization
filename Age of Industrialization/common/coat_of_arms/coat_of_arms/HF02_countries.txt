@@ -1,0 +1,178 @@
+@semy = 0.25
+@third = @[1/3]
+@fifth = @[1/5]
+@sixth = @[1/6]
+
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+
+@canton_scale_sweden_x = @[ ( 255 / 768 ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / 512 ) + 0.001 ]
+
+@uru_canton_height = 0.556
+@NZL_coa_offset = @[3/16] 
+@sm_fra = 0.16
+
+JAP = { # Japan
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+JAP_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}	
+}
+JAP_rising_sun = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+JAP_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+JAP_dictatorship = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+JAP_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}	
+}
+JAP_fascist = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}
+
+TUN = { # Tunis
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "tunis_flag.png"
+		instance = { scale = { 1.00 1.00 } position = { 0.50 0.50 } }
+	}	
+}
+
+RUS_absolute_monarchy = {
+	# 1858-1914
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "yellow"
+		color2 = "white"
+	}		
+}
+
+AUS_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}	
+}
+
+PRU_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_eagle_prussia.dds"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }	
+		color1 = "black"
+		color2 = "yellow"	
+		color3 = "pearl"		
+	}		
+	textured_emblem = {
+		texture = "te_crown_cut.dds"
+		instance = { scale = { 0.15 0.20 } position = { 0.52 0.195 } rotation = 12 }
+	}		
+}
+
+CHI = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+        instance = { scale = { 0.66 0.66 } position = { 0.5 0.5 } }				
+	}
+	colored_emblem = {
+		texture = "ce_dragon_china_circle.dds"
+		color1 = "blue"
+		color2 = "white"
+		color3 = "blue_light"
+		instance = { scale = { 0.68 0.68 } position = { 0.50 0.51 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.12 0.12 } position = { 0.5 0.525 } }		
+	}		
+}
+CHI_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.16 0.16 } position = { 0.10 0.155 } }		
+	}	
+	textured_emblem = {
+		texture = "qng_dragon_china.dds"
+		instance = { scale = { 1.4 1.4 } position = { 0.5 0.49 } }
+	}
+}

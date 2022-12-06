@@ -1,4 +1,0 @@
-revolution_lost_ig = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_pol_str_factor = -2.0
-}

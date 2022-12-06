@@ -1,0 +1,40 @@
+pmg_secondary_building_wheat_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_citrus_orchards
+		pm_vineyards
+		pm_super_vineyards
+		pm_super_great_vineyards
+	}
+}
+pmg_military_base = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_military_shipbuilding
+		pm_military_shipbuilding_wooden
+		pm_military_shipbuilding_wooden_2
+		pm_military_shipbuilding_wooden_3
+		pm_military_shipbuilding_steam
+		pm_military_shipbuilding_steam_2
+		pm_military_shipbuilding_steam_3
+	}
+}
+pmg_radios_category = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_radios
+		pm_radios
+		pm_radios_only
+	}
+}
+pmg_hardwood = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_hardwood
+		pm_hardwood
+		pm_hardwood_only
+	}
+}

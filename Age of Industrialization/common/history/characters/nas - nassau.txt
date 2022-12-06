@@ -10,7 +10,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Wilhelm_von_Nassau-Weilburg
+				historical_figures
 				tactful
 			}
 			on_created = {
@@ -28,7 +28,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Adolf_von_Nassau-Weilburg
+				historical_figures
 				charismatic
 			}
 		}	

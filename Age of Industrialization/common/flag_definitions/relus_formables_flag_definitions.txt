@@ -1,0 +1,95 @@
+﻿MDL = {
+	flag_definition = {
+		coa = MDL
+		subject_canton = MDL
+		priority = 1
+	}
+}
+
+GLK = {
+	flag_definition = {
+		coa = GLK
+		subject_canton = GLK
+		priority = 1
+	}
+}
+
+SLF = {
+	flag_definition = {
+		coa = SLF
+		subject_canton = SLF
+		priority = 1
+	}
+}
+
+DIX = {
+	flag_definition = {
+		coa = DIX
+		subject_canton = DIX
+		priority = 1
+	}
+}
+
+GDK = {
+	flag_definition = {
+		coa = GDK
+		subject_canton = GDK
+		priority = 1
+	}
+}
+
+RVR = {
+	flag_definition = {
+		coa = RVR
+		subject_canton = RVR
+		priority = 1
+	}
+}
+
+GTX = {
+	flag_definition = {
+		coa = GTX
+		subject_canton = GTX
+		priority = 1
+	}
+}
+
+RKY = {
+	flag_definition = {
+		coa = RKY
+		subject_canton = RKY
+		priority = 1
+	}
+}
+
+ACA = {
+	flag_definition = {
+		coa = ACA
+		subject_canton = ACA
+		priority = 1
+	}
+}
+
+CSD = {
+	flag_definition = {
+		coa = CSD
+		subject_canton = CSD
+		priority = 1
+	}
+}
+
+GPA = {
+	flag_definition = {
+		coa = GPA
+		subject_canton = GPA
+		priority = 1
+	}
+}
+
+PSA = {
+	flag_definition = {
+		coa = PSA
+		subject_canton = PSA
+		priority = 1
+	}
+}

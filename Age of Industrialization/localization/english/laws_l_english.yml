@@ -304,14 +304,12 @@
  law_traditionalism_desc:0 "Pre-industrial subsistence economy with little central control."
  law_agrarianism:0 "Agrarianism"
  law_agrarianism_desc:0 "A rural economy emphasizing agricultural development and community."
- law_command_economy:0 "Bureaucratic Command Economy"
- law_command_economy_desc:0 "An inward-focused interventionist economy where the government directly manages most aspects of production with the wealth being distributed among the bureaucrats."
+ law_command_economy:0 "Command Economy"
+ law_command_economy_desc:0 "An inward-focused interventionist economy where the government directly manages most aspects of production."
  law_laissez_faire:0 "Laissez-Faire"
  law_laissez_faire_desc:0 "A liberal economy founded on the principles of comparative advantage and that fewer government interventions means greater growth"
  law_interventionism:0 "Interventionism"
  law_interventionism_desc:0 "To ensure the stability of our nation, government must curb the worst excesses of private businesses."
- law_centrally_planned_economy:0 "Centrally Planned Economy"
- law_centrally_planned_economy_desc:0 "A goverment run economy with business profits directly contributing to state budget."
 
  # Trade Policy group
  lawgroup_trade_policy:0 "Trade Policy"
@@ -447,11 +445,13 @@
   # Migration
  lawgroup_migration:0 "Migration"
  lawgroup_migration_desc:0 "Controlling the flow of people."
-  
+
+ law_encourage_immigration:0 "Encourage Migration"
+ law_encourage_immigration_desc:0 "Promote immigration into the country."
  law_no_migration_controls:0 "No Migration Controls"
  law_no_migration_controls_desc:0 "The country makes no attempt to control movement across its borders."
  law_migration_controls:0 "Migration Controls"
- law_migration_controls_desc:0 "Only people of cultures and religions not discriminated against may migrate."
+ law_migration_controls_desc:0 "Only people of acceptable cultures and religions may migrate."
  law_closed_borders:0 "Closed Borders"
  law_closed_borders_desc:0 "No internal or external migration is permitted."
 

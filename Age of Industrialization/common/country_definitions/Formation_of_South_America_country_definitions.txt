@@ -1,0 +1,7 @@
+﻿FOA = { ### 南アメリカ
+	color = { 240 60 0 }
+	tier = hegemony
+	country_type = recognized
+	cultures = { afro_caribbean north_andean amazonian quechua south_andean aimara guarani platinean patagonian afro_brazilian brazilian }
+	capital = STATE_GUAYANA
+}

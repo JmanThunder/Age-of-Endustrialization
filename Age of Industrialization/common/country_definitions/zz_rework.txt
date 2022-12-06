@@ -1,0 +1,20 @@
+﻿DEI = {
+	color = { 20  80  80 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dutch_colonial }
+	capital = STATE_WEST_JAVA
+}
+BIC = {
+	color = { 188  113  61 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { british_colonial }
+	capital = STATE_SOUTH_BENGAL
+}

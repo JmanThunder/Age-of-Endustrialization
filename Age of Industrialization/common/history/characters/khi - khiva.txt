@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Allah_Quli_Bahadur_Qungrat
+				historical_figures
 				meticulous
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Muhammad_Qungrat
+				historical_figures
 				cautious
 			}
 		}

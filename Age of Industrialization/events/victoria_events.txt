@@ -41,7 +41,7 @@ victoria.1 = {
 				interest_group = ig_landowners
 				ideology = ideology_royalist
 				traits = {
-					concept_wikipedia_Ernest_Augustus_Hannover
+					historical_figures
 					basic_political_operator
 					arrogant
 				}
@@ -55,7 +55,7 @@ victoria.1 = {
 				interest_group = ig_landowners
 				ideology = ideology_royalist
 				traits = {
-					concept_wikipedia_George_Hannover
+					historical_figures
 					arrogant
 				}
 			}

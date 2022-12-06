@@ -296,22 +296,6 @@ je_dynamite = {
 				occupancy >= 0.75
 			}
 		}
-		any_scope_building = {
-			custom_tooltip = je_shortform_building_chemical_plants_tooltip
-			filter = {
-				is_building_type = building_chemical_plants
-			}
-			percent > 0.75
-			OR = {
-				has_active_production_method = pm_leblanc_process
-				has_active_production_method = pm_ammonia-soda_process
-				has_active_production_method = pm_vacuum_evaporation
-				has_active_production_method = pm_brine_electrolysis
-			}
-			cash_reserves_ratio >= 0.25
-			weekly_profit > 0
-			occupancy >= 0.75
-		}
 	}
 
 	on_complete = {

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Carlo_Alberto_di_Savoia
+				historical_figures
 				reserved
 				romantic
 			}
@@ -29,7 +29,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Vittorio_Emanuele_di_Savoia
+				historical_figures
 				ambitious
 			}
 		}
@@ -43,7 +43,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Alessandro_Di_Saluzzo
+				historical_figures
 				surveyor
 				tactful
 			}
@@ -57,7 +57,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_radical
 			traits = {
-				concept_wikipedia_Massimo_d_Azeglio
+				historical_figures
 				inspirational_orator
 				romantic
 				persistent
@@ -72,7 +72,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Lodovico_Sauli_d_Igliano
+				historical_figures
 				experienced_diplomat
 				meticulous
 				imperious
@@ -87,7 +87,7 @@
 			interest_group = ig_devout # not a man of the cloth, but strongly aligned with the Catholic right
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Clemente_Solaro_della_Margarita
+				historical_figures
 				basic_diplomat
 				pious
 				persistent
@@ -101,7 +101,7 @@
 			age = 59
 			interest_group = ig_landowners
 			traits = {
-				concept_wikipedia_Emanuele_Pes
+				historical_figures
 				basic_diplomat
 			}
 		}
@@ -112,7 +112,7 @@
 			last_name = "Albini"
 			age = 56
 			traits = {
-				concept_wikipedia_Giuseppe_Albini
+				historical_figures
 			 	experienced_naval_commander
 			# 	war_college
 			}

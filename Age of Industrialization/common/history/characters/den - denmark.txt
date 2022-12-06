@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Frederik_von_Oldenburg
+				historical_figures
 				imperious
 			}
 			on_created = {
@@ -27,7 +27,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Christian_von_Oldenburg
+				historical_figures
 				cautious
 			}
 			on_created = {
@@ -43,7 +43,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Otto_von_Moltke
+				historical_figures
 				cautious
 			}
 		}
@@ -55,7 +55,7 @@
 			age = 45
 			culture = cu:norwegian
 			traits = {
-				concept_wikipedia_Olaf_Rye
+				historical_figures
 				mountain_commander
 				brave
 			}

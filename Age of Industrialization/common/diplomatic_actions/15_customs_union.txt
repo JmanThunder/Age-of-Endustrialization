@@ -162,59 +162,6 @@
 			
 			if = {
 				limit = {
-					any_scope_culture = {
-						is_primary_culture_of = ROOT
-						is_primary_culture_of = scope:actor
-					}
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_SAME_CULTURE"
-					value = 25
-				}
-			}
-			
-			if = {
-				limit = {
-					has_unification_candidate = GER
-					is_unification_candidate = GER
-					scope:actor = {
-						OR = {
-							country_has_primary_culture = cu:north_german
-							country_has_primary_culture = cu:south_german
-						}
-						NOT = { is_unification_candidate = GER }
-						is_supporting_unification_candidate = { who = root country_formation = GER }
-					}
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_SUPPORT_UNIFICATION"
-					value = 25
-				}
-			}
-			
-			if = {
-				limit = {
-					has_unification_candidate = ITA
-					is_unification_candidate = ITA
-					scope:actor = {
-						OR = {
-							country_has_primary_culture = cu:north_italian
-							country_has_primary_culture = cu:south_italian
-						}
-						NOT = { is_unification_candidate = ITA }
-						is_supporting_unification_candidate = { who = root country_formation = ITA }
-					}
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_SUPPORT_UNIFICATION"
-					value = 25
-				}
-			}
-			
-			
-			
-			if = {
-				limit = {
 					NOR = {
 						scope:actor.market = {
 							any_scope_country = {
@@ -397,61 +344,7 @@
 				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
 				value = -100
 			}
-			
-			if = {
-				limit = {
-					any_scope_culture = {
-						is_primary_culture_of = ROOT
-						is_primary_culture_of = scope:actor
-					}
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_SAME_CULTURE"
-					value = 25
-				}
-			}
-			
-			if = {
-				limit = {
-					has_unification_candidate = GER
-					scope:actor = {
-						is_unification_candidate = GER
-					}
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-					}
-					NOT = { is_unification_candidate = GER }
-					is_supporting_unification_candidate = { who = scope:actor country_formation = GER }
-					
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_UNIFICATION"
-					value = 25
-				}
-			}
-			
 
-			
-			if = {
-				limit = {
-					has_unification_candidate = ITA
-					scope:actor = {
-						is_unification_candidate = ITA
-					}
-					OR = {
-						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:south_italian
-					}
-					NOT = { is_unification_candidate = ITA }
-					is_supporting_unification_candidate = { who = root country_formation = ITA }
-				}
-				add = {
-					desc = "DIPLOMATIC_ACCEPTANCE_UNIFICATION"
-					value = 25
-				}
-			}
-			
 			if = {
 				limit = {
 					NOR = {
@@ -636,6 +529,19 @@
 					value = -50
 				}
 			}
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_RANK_GPS"
+
+				if = {
+					limit = {
+						scope:actor = {
+							country_rank = rank_value:great_power
+						}
+						country_rank = rank_value:great_power
+					}
+					value = -100000
+				}
+			}
 		}
 		
 		will_break = { 
@@ -751,7 +657,7 @@ join_customs_union = {
 
 	ai = {
 		check_acceptance_for_will_propose = yes
-		
+
 		propose_score = {
 			value = 10
 		}

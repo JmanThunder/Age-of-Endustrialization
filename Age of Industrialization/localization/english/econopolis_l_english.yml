@@ -1,0 +1,48 @@
+﻿l_english:
+
+ #Buildings
+ building_sugar_cane_refinery:0 "Sugar Cane Refinery"
+ pmg_university_academia:1 "Academia"
+ 
+ #PMs
+  pmg_automation_building_sugarcane:0 "Automation"
+  pm_watertube_boiler_building_sugarcane:0 "Water-tube Boiler"
+  pm_rotary_valve_engine_building_sugarcane:0 "Rotary Valve Engine"
+  pm_assembly_lines_building_sugarcane:0 "Assembly Lines"
+  pm_refining:0 "Refining"
+  pm_advanced:0 "Advanced Refining"
+  pm_disabled_alcohol:0 "Disabled Alcohol"
+  pm_liquer:0 "Liquor"
+  pm_wine:0 "Fractional Distillation"
+  pm_deactivated:0 "Deactivated"
+  pm_fertilization_coffee_eco:0 "Fertilization"
+  pm_fertilization_cotton_eco:0 "Fertilization"
+  pm_fertilization_dye_eco:0 "Fertilization"
+  pm_fertilization_opium_eco:0 "Fertilization"
+  pm_fertilization_tea_eco:0 "Fertilization"
+  pm_fertilization_tobacco_eco:0 "Fertilization"
+  pm_fertilization_sugar_eco:0 "Fertilization"
+  pm_fertilization_banana_eco:0 "Fertilization"
+  pm_fertilization_silk_eco:0 "Fertilization"
+  pm_synth_oil_production:0 "Synthetic Oil Production"
+  pm_improved_synth_oil_production:0 "Improved Synthetic Oil Production"
+  pm_merchant_guilds_building_sugar_cane_refinery:0 "Merchant Guilds"
+  pm_publicly_traded_building_sugar_cane_refinery:0 "Publicly Traded"
+  pm_government_run_building_sugar_cane_refinery:0 "Government Run"
+  pm_worker_cooperative_building_sugar_cane_refinery:0 "Worker Cooperative"
+
+ #PMGs
+
+  pmg_alcohol:0 "Alcohol"
+  pmg_base_building_sugar_cane_refinery:0 "Refinery"
+  pmg_automation_building_sugar_cane_refinery:0 "Automation"
+  pmg_fertilization_building_coffee_plantation:0 "Fertilization"
+  pmg_fertilization_building_cotton_plantation:0 "Fertilization"
+  pmg_fertilization_building_dye_plantation:0 "Fertilization"
+  pmg_fertilization_building_opium_plantation:0 "Fertilization"
+  pmg_fertilization_building_tea_plantation:0 "Fertilization"
+  pmg_fertilization_building_tobacco_plantation:0 "Fertilization"
+  pmg_fertilization_building_sugar_plantation:0 "Fertilization"
+  pmg_fertilization_building_banana_plantation:0 "Fertilization"
+  pmg_fertilization_building_silk_plantation:0 "Fertilization"
+  pmg_ownership_capital_building_sugar_cane_refinery:0 "Ownership"

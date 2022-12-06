@@ -1,0 +1,14 @@
+﻿1BN = {
+	color = { 230 184 135 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = {
+		dutch
+		flemish
+		wallonian
+	}
+	capital = STATE_WALLONIA
+}

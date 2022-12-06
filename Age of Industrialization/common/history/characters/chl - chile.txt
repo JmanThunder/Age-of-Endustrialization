@@ -10,7 +10,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Jose_Joaquin_Prieto
+				historical_figures
 				persistent
 			}
 		}

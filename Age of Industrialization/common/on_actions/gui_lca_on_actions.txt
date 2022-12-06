@@ -1,5 +1,0 @@
-on_monthly_pulse_country = {
-    events = {
-        gui_lca_events.1
-    }
-}

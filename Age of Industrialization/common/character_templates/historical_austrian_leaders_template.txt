@@ -9,7 +9,7 @@ aus_pillersdorf_character_template = {
     interest_group = ig_landowners
     birth_date = 1786.3.1
 	dna = dna_franz_pillersdorf
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		persistent
     }   
@@ -37,7 +37,7 @@ aus_schwarznberg_character_template = {
     interest_group = ig_landowners
     birth_date = 1800.10.2
 	dna = dna_prince_schwarzenberg
-    traits = {
+    traits = { historical_figures 
         expert_political_operator
 		meticulous
 		experienced_diplomat
@@ -67,7 +67,7 @@ aus_bach_character_template = {
     interest_group = ig_industrialists
     birth_date = 1813.4.1
 	dna = dna_alex_bach
-    traits = {
+    traits = { historical_figures 
         basic_political_operator
 		wrathful
 		trench_rat
@@ -97,7 +97,7 @@ aus_thun_character_template = {
     interest_group = ig_intelligentsia
     birth_date = 1811.4.7
 	dna = dna_leo_thun
-    traits = {
+    traits = { historical_figures 
         innovative
 		meticulous
     }   
@@ -125,7 +125,7 @@ aus_schmerling_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1805.8.23
 	dna = dna_anton_schmerling
-    traits = {
+    traits = { historical_figures 
         expert_political_operator
 		inspirational_orator
 		ambitious
@@ -154,7 +154,7 @@ aus_buol_character_template = {
     interest_group = ig_landowners
     birth_date = 1797.5.17
 	dna = dna_karl_buol
-    traits = {
+    traits = { historical_figures 
         experienced_diplomat
 		tactful
 		cautious
@@ -183,7 +183,7 @@ aus_rechberg_character_template = {
     interest_group = ig_landowners
     birth_date = 1806.7.17
 	dna = dna_bernhard_rechberg
-    traits = {
+    traits = { historical_figures 
         basic_diplomat
 		basic_political_operator
     }   
@@ -211,7 +211,7 @@ aus_archduke_rainer_character_template = {
     interest_group = ig_landowners
     birth_date = 1827.1.11
 	dna = dna_archdule_rainer
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		innovative
 		explorer
@@ -241,7 +241,7 @@ aus_belcredi_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1823.1.12
 	dna = dna_richard_belcredi
-    traits = {
+    traits = { historical_figures 
         basic_political_operator
 		cautious
     }   
@@ -269,7 +269,7 @@ aus_beust_character_template = {
     interest_group = ig_rural_folk
     birth_date = 1809.1.13
 	dna = dna_friedrich_beust
-    traits = {
+    traits = { historical_figures 
         basic_diplomat
 		experienced_political_operator
 		meticulous
@@ -298,7 +298,7 @@ aus_taaffe_character_template = {
     interest_group = ig_intelligentsia
     birth_date = 1833.2.24
 	dna = dna_eduard_taaffe
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		tactful
 		inspirational_orator
@@ -328,7 +328,7 @@ aus_plener_character_template = {
     interest_group = ig_devout
     birth_date = 1810.5.21
 	dna = dna_ignaz_plener
-    traits = {
+    traits = { historical_figures 
         basic_diplomat
 		pious
     }   
@@ -356,7 +356,7 @@ aus_artha_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1818.3.15
 	dna = dna_leopold_artha
-    traits = {
+    traits = { historical_figures 
         expert_political_operator
 		innovative
     }   
@@ -384,7 +384,7 @@ aus_potocki_character_template = {
     interest_group = ig_rural_folk
     birth_date = 1817.7.29
 	dna = dna_alfred_potocki
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		reserved
     }   
@@ -412,7 +412,7 @@ aus_ado_auersperg_character_template = {
     interest_group = ig_rural_folk
     birth_date = 1821.6.21
 	dna = dna_adolf_auersperg
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		innovative
 		direct
@@ -441,7 +441,7 @@ aus_windisch_character_template = {
     interest_group = ig_intelligentsia
     birth_date = 1851.10.21
 	dna = dna_alfred_3_windisch
-    traits = {
+    traits = { historical_figures 
         basic_political_operator
 		reserved
 		romantic
@@ -479,7 +479,7 @@ aus_stremayr_character_template = {
     interest_group = ig_intelligentsia
     birth_date = 1823.10.30
 	dna = dna_karl_stremayr
-    traits = {
+    traits = { historical_figures 
         expert_political_operator
 		innovative
 		meticulous
@@ -508,7 +508,7 @@ aus_sturgkh_character_template = {
     interest_group = ig_industrialists
     birth_date = 1859.10.30
 	dna = dna_karl_sturgkh
-    traits = {
+    traits = { historical_figures 
         basic_political_operator
 		imperious
 		direct
@@ -537,7 +537,7 @@ aus_clary_character_template = {
     interest_group = ig_landowners
     birth_date = 1821.6.21
 	dna = dna_manfred_clary
-    traits = {
+    traits = { historical_figures 
         basic_political_operator
 		tactful
     }   
@@ -565,7 +565,7 @@ aus_renner_character_template = {
     interest_group = ig_trade_unions
     birth_date = 1870.12.14
 	dna = dna_karl_renner
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		persistent
 		charismatic
@@ -594,7 +594,7 @@ aus_bauer_character_template = {
     interest_group = ig_trade_unions
     birth_date = 1881.9.5
 	dna = dna_otto_bauer
-    traits = {
+    traits = { historical_figures 
         experienced_diplomat
 		inspirational_orator
 		direct
@@ -623,7 +623,7 @@ aus_adler_character_template = {
     interest_group = ig_trade_unions
     birth_date = 1852.6.24
 	dna = dna_viktor_adler
-    traits = {
+    traits = { historical_figures 
         demagogue
 		tactful
 		direct
@@ -652,7 +652,7 @@ aus_lammasch_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1853.5.21
 	dna = dna_heinrich_lammasch
-    traits = {
+    traits = { historical_figures 
         masterful_diplomat
     }   
     interest_group_leader_usage = {
@@ -679,7 +679,7 @@ aus_mayr_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1864.4.10
 	dna = dna_michael_mayr
-    traits = {
+    traits = { historical_figures 
         experienced_diplomat
     }   
     interest_group_leader_usage = {
@@ -706,7 +706,7 @@ aus_schober_character_template = {
     interest_group = ig_industrialists
     birth_date = 1874.9.14
 	dna = dna_johann_schober
-    traits = {
+    traits = { historical_figures 
         meticulous
 		reserved
     }   
@@ -734,7 +734,7 @@ aus_miklas_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1872.10.15
 	dna = dna_wilhelm_miklas
-    traits = {
+    traits = { historical_figures 
         persistent
 		reserved
     }   
@@ -762,7 +762,7 @@ aus_seipel_character_template = {
     interest_group = ig_devout
     birth_date = 1876.7.19
 	dna = dna_ignaz_seipel
-    traits = {
+    traits = { historical_figures 
         experienced_political_operator
 		pious
     }   
@@ -790,7 +790,7 @@ aus_hainisch_character_template = {
     interest_group = ig_rural_folk
     birth_date = 1858.8.15
 	dna = dna_michael_hainish
-    traits = {
+    traits = { historical_figures 
         meticulous
 		basic_political_operator
     }   
@@ -818,7 +818,7 @@ aus_buresch_character_template = {
     interest_group = ig_industrialists
     birth_date = 1878.10.12
 	dna = dna_karl_buresch
-    traits = {
+    traits = { historical_figures 
         tactful
     }   
     interest_group_leader_usage = {
@@ -845,7 +845,7 @@ aus_dollfuss_character_template = {
     interest_group = ig_rural_folk
     birth_date = 1892.10.4
 	dna = dna_engelbert_dollfuss
-    traits = {
+    traits = { historical_figures 
         meticulous
 		experienced_diplomat
 		firebrand
@@ -876,7 +876,7 @@ aus_schuschnigg_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1897.12.14
 	dna = dna_kurt_schuschnigg
-    traits = {
+    traits = { historical_figures 
         inspirational_orator
 		direct
 		tactful
@@ -905,7 +905,7 @@ aus_rudiger_character_template = {
     interest_group = ig_industrialists
     birth_date = 1899.5.10
 	dna = dna_ernst_rudiger
-    traits = {
+    traits = { historical_figures 
         experienced_diplomat
 		tactful
     }   
@@ -933,7 +933,7 @@ aus_lueger_character_template = {
     interest_group = ig_petty_bourgeoisie
     birth_date = 1844.10.2
 	dna = dna_karl_lueger
-    traits = {
+    traits = { historical_figures 
         demagogue
 		charismatic
     }   

@@ -28,8 +28,8 @@ FRA = { # France
 		}
 	}
 	flag_definition = {
-		coa = FRA_emperor
-		subject_canton = FRA_emperor
+		coa = FRA_empire
+		subject_canton = FRA_empire
 		priority = 100
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = FRA_subject			
@@ -39,8 +39,8 @@ FRA = { # France
 		}
 	}
 	flag_definition = {
-		coa = FRA_emperor_coa
-		subject_canton = FRA_emperor_coa
+		coa = FRA_absolute_empire
+		subject_canton = FRA_absolute_empire
 		priority = 150
 		allow_overlord_canton = yes
 		coa_with_overlord_canton = FRA_subject			

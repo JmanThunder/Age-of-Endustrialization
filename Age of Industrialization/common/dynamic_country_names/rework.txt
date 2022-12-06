@@ -1,0 +1,59 @@
+﻿RUS = { # Russia
+	dynamic_country_name = {
+		name = dyn_c_russian_empire
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_russian_republic
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_russian_state
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}
+
+AUS = { # Austria
+	dynamic_country_name = {
+		name = dyn_c_austrian_empire
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			NOT = { scope:actor = { country_has_primary_culture = cu:hungarian } }
+		}
+	}
+}
+GER = { # Germany
+	dynamic_country_name = {
+		name = dyn_c_german_empire
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}

@@ -2,12 +2,6 @@
 # enactment_approval_mult = multiplier to the approval effects changing this law has on IGs, default 1.0
 
 # enable = {} trigger for whether laws in this group should be possible at all
-lawgroup_centralization = {
-	law_group_category = power_structure
-	
-	progressive_movement_chance = 0
-	regressive_movement_chance = 0
-}
 
 
 lawgroup_slavery = {
@@ -21,10 +15,5 @@ lawgroup_slavery = {
 		NOT = {
 			has_modifier = forced_slavery_ban
 		}
-		OR = {
-			NOT = {c:USA = ROOT}
-			ruler = {has_ideology = ideology_abolitionist}
-		}
 	}	
 }
-

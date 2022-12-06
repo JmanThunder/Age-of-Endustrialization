@@ -1,0 +1,10 @@
+﻿# NEW FINANCE
+securities = {
+	texture = "gfx/interface/icons/goods_icons/securities.dds"
+	cost = 40
+	category = luxury
+	#tradeable = no
+	
+	prestige_factor = 10
+	consumption_tax_cost = 250
+}

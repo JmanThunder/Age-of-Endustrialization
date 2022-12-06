@@ -1,4 +1,4 @@
-﻿pmg_urban_clergy = {
+pmg_urban_clergy = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
 		pm_state_urban_clergy

@@ -11,21 +11,16 @@ pm_fortifications_cannon_battery = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 1
+			building_input_artillery_add = 10
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
-			
-		}
-		unscaled = {
-			unit_fortress_strength_add = 2.5
 		}
 	}
-	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 1
+			unit_army_defense_add = 5
 		}
 	}
 }
@@ -39,22 +34,19 @@ pm_fortifications_shell_gun_battery = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 1
-			building_input_ammunition_add = 0.5
-			building_input_tools_add = 0.5
+			building_input_artillery_add = 15
+			building_input_ammunition_add = 10
+			building_input_tools_add = 10
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_add = 5
-		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 2
+			unit_army_defense_add = 10
 		}
 	}
 }
@@ -68,22 +60,19 @@ pm_fortifications_shrapnel_battery = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 1
-			building_input_ammunition_add = 1
-			building_input_tools_add = 1
+			building_input_artillery_add = 20
+			building_input_ammunition_add = 20
+			building_input_tools_add = 20
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_add = 10
-		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 3
+			unit_army_defense_add = 15
 		}
 	}
 }
@@ -97,22 +86,20 @@ pm_fortifications_siege_battery = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 2
-			building_input_ammunition_add = 2
-			building_input_tools_add = 1
+			building_input_artillery_add = 30
+			building_input_ammunition_add = 30
+			building_input_tools_add = 30
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_add = 15
-		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 4
+			unit_army_defense_add = 15
+			unit_army_offense_add = 5
 		}
 	}
 }
@@ -121,20 +108,20 @@ pm_fortifications_brick_and_stone = {
 	texture = "gfx/interface/icons/invention_icons/centralization.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_fabric_add = 4
-			building_input_wood_add = 5
-			building_input_tools_add = 1
+			building_input_fabric_add = 10
+			building_input_wood_add = 10
+			building_input_small_arms_add = 6
+			building_input_tools_add = 5
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
-			unit_fortress_strength_add = 1
 		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 1
+			unit_army_defense_add = 3
 		}
 	}
 }
@@ -148,23 +135,19 @@ pm_fortifications_steel_reinforced_concrete = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_steel_add = 5
-			building_input_explosives_add = 1
-			building_input_tools_add = 4
+			building_input_steel_add = 10
+			building_input_small_arms_add = 10
+			building_input_tools_add = 10
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
-			unit_fortress_strength_add = 1
-		}
-		unscaled = {
-			unit_fortress_strength_mult = 0.5
 		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 2
+			unit_army_defense_add = 5
 		}
 	}
 }
@@ -178,23 +161,19 @@ pm_fortifications_semi_underground_concrete = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_steel_add = 10
-			building_input_explosives_add = 2
-			building_input_tools_add = 8
+			building_input_steel_add = 15
+			building_input_small_arms_add = 15
+			building_input_tools_add = 15
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
-			unit_fortress_strength_add = 1
-		}
-		unscaled = {
-			unit_fortress_strength_mult = 1.0
 		}
 	}
 	
-	country_modifiers = {
+	state_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 4
+			unit_army_defense_add = 7
 		}
 	}
 }
@@ -212,20 +191,18 @@ pm_fortifications_shooting_slopes = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 2
+			building_input_tools_add = 5
+			building_input_small_arms_add = 10
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_mult = 0.1
-		}
 	}
 	
 	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 1
+		unscaled = {
+			front_enemy_advancement_speed_mult = -0.1
 		}
 	}
 }
@@ -239,21 +216,19 @@ pm_fortifications_barbed_wire = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 2
-			building_input_steel_add = 2
+			building_input_tools_add = 15
+			building_input_small_arms_add = 20
+			building_input_steel_add = 15
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_mult = 0.2
-		}
 	}
 	
 	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 1.5
+		unscaled = {
+			front_enemy_advancement_speed_mult = -0.15
 		}
 	}
 }
@@ -267,21 +242,19 @@ pm_fortifications_outer_bunker_complex = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 5
-			building_input_steel_add = 5
+			building_input_tools_add = 25
+			building_input_small_arms_add = 25
+			building_input_steel_add = 25
 		}
 		level_scaled = {
 			building_employment_officers_add = 50
 			building_employment_soldiers_add = 450
 		}
-		unscaled = {
-			unit_fortress_strength_mult = 0.3
-		}
 	}
 	
 	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 2
+		unscaled = {
+			front_enemy_advancement_speed_mult = -0.2
 		}
 	}
 }

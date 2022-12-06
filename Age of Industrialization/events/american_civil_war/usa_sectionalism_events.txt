@@ -1,0 +1,334 @@
+namespace = acw_sectionalism_startup
+
+#Setup State loyalties
+acw_sectionalism_startup.1 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	title = acw_sectionalism_startup.1.t
+	desc = acw_sectionalism_startup.1.d
+	flavor = acw_sectionalism_startup.1.f
+	
+	duration = 3
+	
+	trigger = {
+		exists = c:USA
+		c:USA = ROOT
+		NOT = { has_law = law_type:law_slavery_banned }
+		year < 1837
+		NOT = { has_variable = usa_growing_sectionalism }
+	}
+	
+	immediate = {
+		#DEEP SOUTH
+		s:STATE_LOUISIANA.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_MISSISSIPPI.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_ALABAMA.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_GEORGIA.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_FLORIDA.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_SOUTH_CAROLINA.region_state:USA = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		s:STATE_TEXAS.region_state:TEX = {
+			add_modifier = usa_deep_southern_supremacy
+		}
+		#UPPER SOUTH
+		s:STATE_NORTH_CAROLINA.region_state:USA = {
+			add_modifier = usa_southern_supremacy
+		}
+		s:STATE_TENNESSEE.region_state:USA = {
+			add_modifier = usa_southern_supremacy
+		}
+		s:STATE_VIRGINIA.region_state:USA = {
+			add_modifier = usa_southern_supremacy
+		}
+		s:STATE_ARKANSAS.region_state:USA = {
+			add_modifier = usa_southern_supremacy
+		}
+		#BORDER STATES
+		s:STATE_WEST_VIRGINIA.region_state:USA = {
+			add_modifier = usa_border_state
+		}
+		s:STATE_MARYLAND.region_state:USA = {
+			add_modifier = usa_border_state
+		}
+		s:STATE_DELAWARE.region_state:USA = {
+			add_modifier = usa_border_state
+		}
+		s:STATE_KENTUCKY.region_state:USA = {
+			add_modifier = usa_border_state
+		}
+		s:STATE_MISSOURI.region_state:USA = {
+			add_modifier = usa_border_state
+		}
+		#NORTHERN STATES
+		s:STATE_NEW_YORK.region_state:USA = {
+			add_modifier = usa_northern_supremacy
+		}
+		s:STATE_NEW_JERSEY.region_state:USA = {
+			add_modifier = usa_northern_supremacy
+		}
+		s:STATE_PENNSYLVANIA.region_state:USA = {
+			add_modifier = usa_northern_supremacy
+		}
+		#IRON BELT
+		s:STATE_OHIO.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_ILLINOIS.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_INDIANA.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_MICHIGAN.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_WISCONSIN.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_MINNESOTA.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		s:STATE_IOWA.region_state:USA = {
+			add_modifier = usa_iron_belt
+		}
+		#NEW ENGLAND REGION
+		s:STATE_MAINE.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		s:STATE_NEW_HAMPSHIRE.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		s:STATE_VERMONT.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		s:STATE_MASSACHUSSETTS.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		s:STATE_CONNECTICUT.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		s:STATE_RHODE_ISLAND.region_state:USA = {
+			add_modifier = usa_new_england
+		}
+		set_variable = {
+		name = usa_growing_sectionalism
+		value = yes
+		}
+	}
+	
+	option = {
+		name = acw_sectionalism_startup.1.a
+        default_option = yes
+        custom_tooltip = acw_sectionalism_startup.1.tt
+	}
+}
+
+#Dredd Scott Case Splitoff
+acw_sectionalism_startup.2 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	title = acw_sectionalism_startup.2.t
+	desc = acw_sectionalism_startup.2.d
+	flavor = acw_sectionalism_startup.2.f
+	
+	duration = 3
+	
+	trigger = {
+		exists = c:USA
+		NOT = { has_law = law_type:law_slavery_banned }
+		NOT = { has_variable = dredd_scott_case }
+		year > 1854
+		any_scope_state = {
+			limit = {
+				is_slave_state = no
+				is_incorporated = yes
+				any_neighbouring_state = {
+					owner = ROOT
+					is_slave_state = yes
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		set_variable = {
+			name = dredd_scott_case
+			value = yes
+		}
+		random_scope_state = {
+			limit = {
+				is_slave_state = no
+				is_incorporated = yes
+				any_neighbouring_state = {
+					owner = ROOT
+					is_slave_state = yes
+				}
+			}
+			save_scope_as = free_state
+		}
+	}
+	
+	#Scott wins the case
+	option = {
+	name = acw_sectionalism_startup.2.a 
+		trigger_event = {
+			id = acw_sectionalism_startup.3
+			days = 5
+		}
+	}
+	
+	#Scott loses the case
+	option = {
+	name = acw_sectionalism_startup.2.b
+		trigger_event = {
+			id = acw_sectionalism_startup.4
+			days = 5
+		}
+	}
+}
+	
+#Dredd Scott Wins
+acw_sectionalism_startup.3 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	title = acw_sectionalism_startup.3.t
+	desc = acw_sectionalism_startup.3.d
+	flavor = acw_sectionalism_startup.3.f
+	
+	duration = 3
+	
+	trigger = {
+		#triggered by Dredd Scott event
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+	name = acw_sectionalism_startup.3.a 
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = { has_ideology = ideology_slaver }
+				}
+				NOT = { has_modifier = ig_slavers_mad }
+			}
+			add_modifier = {
+				name = ig_slavers_mad
+				months = short_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_anti_slavery
+					leader = { has_ideology = ideology_abolitionist }
+				}
+				NOT = { has_modifier = ig_abolitionists_happy }
+			}
+			add_modifier = {
+				name = ig_abolitionists_happy
+				months = short_modifier_time
+			}
+		}
+	}
+}
+
+#Dredd Scott Loses
+acw_sectionalism_startup.4 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	title = acw_sectionalism_startup.4.t
+	desc = acw_sectionalism_startup.4.d
+	flavor = acw_sectionalism_startup.4.f
+	
+	duration = 3
+	
+	trigger = {
+		#triggered by Dredd Scott event
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+	name = acw_sectionalism_startup.3.a 
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_pro_slavery
+					leader = { has_ideology = ideology_slaver }
+				}
+				NOT = { has_modifier = ig_slavers_happy }
+			}
+			add_modifier = {
+				name = ig_slavers_happy
+				months = short_modifier_time
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology_anti_slavery
+					leader = { has_ideology = ideology_abolitionist }
+				}
+				NOT = { has_modifier = ig_abolitionists_mad }
+			}
+			add_modifier = {
+				name = ig_abolitionists_mad
+				months = short_modifier_time
+			}
+		}
+	}
+}
+	
+	
+	

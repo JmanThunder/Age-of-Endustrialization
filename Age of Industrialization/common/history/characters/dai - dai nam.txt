@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Minh_Mang_Nguyen_Phuoc
+				historical_figures
 				imperious
 			}
 		}	
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Thieu_Tri_Nguyen_Phuoc
+				historical_figures
 				arrogant
 			}
 		}

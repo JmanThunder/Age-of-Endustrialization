@@ -9,7 +9,7 @@ chi_sun_character_template = { # Sun Yat-sen
     interest_group = ig_intelligentsia
     birth_date = 1866.11.12
     traits = {
-    	concept_wikipedia_Wen_Sun
+    	historical_figures
         ambitious
         persistent
         inspirational_orator
@@ -41,7 +41,7 @@ chi_gong_character_template = {
     interest_group = ig_landowners
     birth_date = 1833.1.11
     traits = {
-    	concept_wikipedia_Prince_Gong_Aisin_Gioro
+    	historical_figures
         experienced_diplomat
         expensive_tastes
     }   
@@ -71,7 +71,7 @@ tur_enver_pasha_character_template = {
     interest_group = ig_armed_forces
     birth_date = 1881.11.22
     traits = {
-    	concept_wikipedia_Enver_Pasha
+    	historical_figures
         ambitious
         reckless
         arrogant

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Ferdinando_di_Borbone_delle_Due_Sicilie
+				historical_figures
 				imperious
 			}
 			on_created = {
@@ -27,7 +27,7 @@
 			ideology = ideology_royalist
 			age = 0 # technically age -15 days on January 1, 1836, but let's ignore that
 			traits = {
-				concept_wikipedia_Francesco_di_Borbone_delle_Due_Sicilie
+				historical_figures
 				imperious
 			}
 		}
@@ -38,7 +38,7 @@
 			last_name = Filangieri
 			age = 52
 			traits = {
-				concept_wikipedia_Carlo_Filangieri
+				historical_figures
 		#		harsh
 		#		generals_aide
 			}
@@ -74,7 +74,7 @@
 			last_name = di_Borbone_delle_Due_Sicilie
 			age = 46
 			traits = {
-				concept_wikipedia_Prince_Leopoldo_di_Borbone_delle_Due_Sicilie
+				historical_figures
 		#		womanizer
 		#		aristocrat
 			}
@@ -99,7 +99,7 @@
 			ideology = ideology_royalist
 			birth_date = 1778.4.24
 			traits = {
-				concept_wikipedia_Raffaele_de_Cosa
+				historical_figures
 				basic_naval_commander
 				tactful
 			}

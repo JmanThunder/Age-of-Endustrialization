@@ -1,3 +1,26 @@
 ﻿l_simp_chinese:
+  
+  # Common
+ building_hospital:0 "医疗机构"
+ pmg_government_health_services_system:0 "医疗机构"
+ pm_traditional_medicine:0 "传统医疗"
+ pm_experimental_medicine:1 "实验医学"
+ pm_clinical_medicine:1 "临床医学"
+ pmg_government_health_services_organization:1 "医院形式"
+ pm_hospital_public:1 "公立医院"
+ pm_hospital_private:1 "私立医院"
+ 
+ pmg_university_academia:1 "教育科学"
  pm_military_academy:1 "军事学院"
  pm_prussian_military_academy:1 "普鲁士军官学校"
+ pm_secular_academia:1 "世俗学校"
+ pm_religious_academia:1 "宗教大学"
+ pm_science_academia:1 "科学系大学"
+ 
+ pharmaceutical_industry:1 "制药厂"
+ pmg_pharmacy_production:1 "药物工程"
+ pm_pharmacy_natural_herbs:1 "药草提炼"
+ pm_pharmacy_chemical_refining:1 "化学精制"
+ pm_pharmacy_penicillin_extraction:1 "青霉菌提炼"
+ state_pollution_mortality_1:1 "工业污染"
+ modifier_state_pollution_value:1 "污染值"

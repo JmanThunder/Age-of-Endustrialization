@@ -1,0 +1,1188 @@
+﻿####Enforce State Laws on Slavery
+abolish_legacy_us_slavery_decision = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:cajun
+			country_has_primary_culture = cu:afro_american
+		}
+		NOT = { this = c:USA }
+		NOT = { has_variable = legacy_us_slavery_abolished }
+		NOT = { has_law = law_type:law_slavery_banned }
+	}
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:cajun
+			country_has_primary_culture = cu:afro_american
+		}
+		NOT = { this = c:USA }
+	}
+	
+	when_taken = {
+		set_variable = legacy_us_slavery_abolished
+		add_modifier = {
+			name = legacy_us_slavery_abolished
+			months = normal_modifier_time
+		}
+		activate_law = law_type:law_slavery_banned
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+no_more_slavery_debate_decision = {
+	is_shown = {
+		country_has_primary_culture = cu:dixie
+		NOT = { this = c:USA }
+		NOT = { has_variable = legacy_us_slavery_upheld }
+		NOT = { has_law = law_type:law_slavery_banned }
+	}
+
+	possible = {
+		country_has_primary_culture = cu:dixie
+		NOT = { this = c:USA }
+	}
+	
+	when_taken = {
+		set_variable = legacy_us_slavery_upheld
+		add_modifier = {
+			name = booming_plantations
+			months = normal_modifier_time
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+####NAME CHANGES
+#change_wv_to_kanahwa_decision = {
+#	is_shown = {
+#		exists = c:WVA
+#		this = c:WVA
+#	}
+#
+#	possible = {
+#		this = c:WVA
+#	}
+#	
+#	when_taken = {
+#		set_variable = {
+#			name = revive_olympics_decision_taken
+#			value = yes
+#		}
+#		add_modifier = {
+#			name = modifier_olympic_games
+#		}
+#	}
+#
+#	ai_chance = {
+#		base = 0
+#
+#	}
+#}
+
+####STATE CLAIMS
+mas_claims_decision = {
+	is_shown = {
+		exists = c:MAS
+		this = c:MAS
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:MAS
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_MAINE = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+nhm_claims_decision = {
+	is_shown = {
+		exists = c:NHM
+		this = c:NHM
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:NHM
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_VERMONT = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+nyk_claims_decision = {
+	is_shown = {
+		exists = c:NYK
+		this = c:NYK
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:NYK
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_VERMONT = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_NEW_JERSEY = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+pen_claims_decision = {
+	is_shown = {
+		exists = c:PEN
+		this = c:PEN
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:PEN
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_DELAWARE = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MARYLAND = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+mar_claims_decision = {
+	is_shown = {
+		exists = c:MAR
+		this = c:MAR
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:MAR
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_DELAWARE = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_PENNSYLVANIA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_DISTRICT_OF_COLUMBIA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+vir_claims_decision = {
+	is_shown = {
+		exists = c:VIR
+		this = c:VIR
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:VIR
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_WEST_VIRGINIA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_KENTUCKY = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+carolinas_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:NCR
+				this = c:NCR
+			}
+			AND = {
+				exists = c:SCR
+				this = c:SCR
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:NCR
+			this = c:SCR
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_NORTH_CAROLINA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SOUTH_CAROLINA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_TENNESSEE = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+grg_and_flr_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:GRG
+				this = c:GRG
+			}
+			AND = {
+				exists = c:FLR
+				this = c:FLR
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:GRG
+			this = c:FLR
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_ALABAMA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MISSISSIPPI = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+ohi_mic_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:OHI
+				this = c:OHI
+			}
+			AND = {
+				exists = c:MIC
+				this = c:MIC
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			AND = {
+				exists = c:OHI
+				this = c:OHI
+			}
+			AND = {
+				exists = c:MIC
+				this = c:MIC
+			}
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_OHIO = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MICHIGAN = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+ina_ill_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:INA
+				this = c:INA
+			}
+			AND = {
+				exists = c:ILL
+				this = c:ILL
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			AND = {
+				exists = c:INA
+				this = c:INA
+			}
+			AND = {
+				exists = c:ILL
+				this = c:ILL
+			}
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_ILLINOIS = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_INDIANA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+lou_claims_decision = {
+	is_shown = {
+		exists = c:LOU
+		this = c:LOU
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:LOU
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_ARKANSAS = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MISSOURI = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+ark_msr_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:ARK
+				this = c:ARK
+			}
+			AND = {
+				exists = c:MSR
+				this = c:MSR
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:ARK
+			this = c:MSR
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_ARKANSAS = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MISSOURI = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+wis_claims_decision = {
+	is_shown = {
+		exists = c:WIS
+		this = c:WIS
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:WIS
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_MICHIGAN = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+min_ioa_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:IOA
+				this = c:IOA
+			}
+			AND = {
+				exists = c:MIN
+				this = c:MIN
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:MIN
+			this = c:IOA
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_MINNESOTA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_IOWA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dakotas_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:WYO
+				this = c:WYO
+			}
+			AND = {
+				exists = c:MTN
+				this = c:MTN
+			}
+			AND = {
+				exists = c:SDK
+				this = c:SDK
+			}
+			AND = {
+				exists = c:NDK
+				this = c:NDK
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			AND = {
+				exists = c:WYO
+				this = c:WYO
+			}
+			AND = {
+				exists = c:MTN
+				this = c:MTN
+			}
+			AND = {
+				exists = c:SDK
+				this = c:SDK
+			}
+			AND = {
+				exists = c:NDK
+				this = c:NDK
+			}
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_NORTH_DAKOTA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SOUTH_DAKOTA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MONTANA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_WYOMING = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+des_claims_decision = {
+	is_shown = {
+		exists = c:DES
+		this = c:DES
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:DES
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_NEVADA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ARIZONA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+ari_nmx_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:NMX
+				this = c:NMX
+			}
+			AND = {
+				exists = c:ARI
+				this = c:ARI
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:ARI
+			this = c:NMX
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_ARIZONA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_NEW_MEXICO = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+cal_claims_decision = {
+	is_shown = {
+		exists = c:CAL
+		this = c:CAL
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:CAL
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_NEVADA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ARIZONA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+oregon_terr_claims_decision = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:ORG
+				this = c:ORG
+			}
+			AND = {
+				exists = c:WSH
+				this = c:WSH
+			}
+			AND = {
+				exists = c:IDA
+				this = c:IDA
+			}
+		}
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		OR = {
+			this = c:ORG
+			this = c:WSH
+			this = c:IDA
+		}
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+	
+		change_infamy = 20
+		
+		s:STATE_WASHINGTON = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_OREGON = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_IDAHO = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+ida_claims_decision = {
+	is_shown = {
+		exists = c:IDA
+		this = c:IDA
+		NOT = { has_variable = colonial_claims_asserted }
+	}
+	
+	possible = {
+		this = c:IDA
+	}
+	
+	when_taken = {
+		set_variable = colonial_claims_asserted
+
+		change_infamy = 20
+		
+		s:STATE_MONTANA = { 
+			if = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

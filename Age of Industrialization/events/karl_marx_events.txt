@@ -49,23 +49,129 @@ marx_events.1 = {
 				months = normal_modifier_time
 			}
 		}
+		random_list = {
+			95 = {
+				trigger = {
+					country_is_in_europe = no
+				}
 				create_character = {
-					first_name = Karl_Heinrich
-					last_name = Marx
-					culture = cu:north_german
 					#role = politician # Remove this line
 					ig_leader = yes
 					interest_group = ig_trade_unions
 					female = no
-					dna = dna_karl_marx
 					ideology = ideology_communist
-					religion = rel:protestant
 					traits = {
 						direct
 						persistent
 					}
 				}
 			}
+			95 = {
+				trigger = {
+					country_is_in_europe = yes
+				}
+				create_character = {
+					first_name = Karl_Heinrich
+					last_name = Marx
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					dna = dna_karl_marx
+					ideology = ideology_communist
+					religion = rel:jewish
+					traits = {
+						historical_figures
+						direct
+						persistent
+					}
+				}
+			}
+			5 = {
+				modifier = {
+					if = {
+						limit = {
+							OR = {
+								ruler = {
+									has_ideology = ideology_feminist
+								}
+								ig:ig_trade_unions = {
+									leader = {
+										OR = {
+											has_ideology = ideology_feminist
+											is_female = yes
+										}
+									}
+								}
+							}
+						}
+						add = 10
+					}
+					if = {
+						limit = {
+							has_law = law_type:law_women_in_the_workplace
+						}
+						add = 5
+					}
+					if = {
+						limit = {
+							has_law = law_type:law_womens_suffrage
+						}
+						add = 5
+					}
+				}
+				create_character = { #Karla Marx
+					#role = politician # Remove this line
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = yes
+					ideology = ideology_communist
+					traits = {
+						direct
+						persistent
+					}
+				}
+			}
+			5 = {
+				trigger = {
+					capital = { state_region = s:STATE_TEXAS }
+				}
+				create_character = {
+					first_name = Charlie # howdy
+					last_name = Marx
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					dna = dna_karl_marx
+					ideology = ideology_communist
+					religion = rel:jewish
+					traits = {
+						historical_figures
+						direct
+						persistent
+					}
+				}
+			}
+			1 = {
+				trigger = {
+					capital = { state_region = s:STATE_ESTONIA } 
+				}
+				create_character = {
+					first_name = Kras
+					last_name = Masov
+					ig_leader = yes
+					interest_group = ig_trade_unions
+					female = no
+					ideology = ideology_communist
+					traits = {
+						historical_figures
+						direct
+						persistent
+					}
+				}
+			}
+		}
+	}
 
 	option = { #get rid of this man
 		name = marx_events.1.c
@@ -76,116 +182,4 @@ marx_events.1 = {
 			}
 		}
 	}
-	
-	option = { #mario and luigi
-		name = marx_events.1.e
-		ig:ig_trade_unions = {
-			add_modifier = {
-				name = modifier_promoted_marx
-				months = normal_modifier_time
-			}
-		}
-				create_character = {
-					first_name = Karl_Heinrich
-					last_name = Marx
-					culture = cu:north_german
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_trade_unions
-					female = no
-					dna = dna_karl_marx
-					ideology = ideology_communist
-					religion = rel:protestant
-					traits = {
-						direct
-						persistent
-					}
-				}
-				create_character = {
-					first_name = Friedrich
-					last_name = Engels
-					culture = cu:north_german
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_industrialists
-					female = no
-					ideology = ideology_communist
-					religion = rel:protestant
-					traits = {
-						direct
-						persistent
-			}
-		}
-	}
-	option = { #peach and daisy
-		name = marx_events.1.g
-		ig:ig_trade_unions = {
-			add_modifier = {
-				name = modifier_promoted_marx
-				months = normal_modifier_time
-					}
-				}
-				create_character = { #Karla Marx
-					first_name = Karla
-					last_name = Marx
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_trade_unions
-					female = yes
-					ideology = ideology_communist
-					traits = {
-						direct
-						persistent
-					}
-				}
-				create_character = {
-					first_name = Freda
-					last_name = Engels
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_industrialists
-					female = yes
-					ideology = ideology_communist
-					traits = {
-						direct
-						persistent
-				}
-			}
-		}
-	option = { #complete anarchy
-		name = bakunin_events.1.test
-				create_character = {
-					first_name = Mikhail
-					last_name = Bakunin
-					culture = cu:russian
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_trade_unions
-					female = no
-					ideology = ideology_anarchist
-					religion = rel:orthodox
-					traits = {
-						direct
-						persistent
-					}
-				}
-			}
-	option = { #baguette anarchy
-		name = proudhon_events.1.a
-				create_character = {
-					first_name = Pierre-Joseph
-					last_name = Proudhon
-					culture = cu:french
-					#role = politician # Remove this line
-					ig_leader = yes
-					interest_group = ig_trade_unions
-					female = no
-					ideology = ideology_anarchist
-					religion = rel:protestant
-					traits = {
-						direct
-						persistent
-					}
-				}
-			}				
 }

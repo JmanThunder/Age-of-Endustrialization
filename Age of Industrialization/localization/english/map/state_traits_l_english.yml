@@ -149,3 +149,7 @@
  state_trait_the_red_basin:0 "The Red Basin"
  state_trait_new_caledonian_nickel:0 "New Caledonian Nickel"
  state_trait_seto_inland_sea:0 "Seto Inland Sea"
+
+state_trait_good_wine_climate:0 "Good Climate For Wine Production"
+state_trait_very_good_wine_climate:0 "Very Good Climate For Wine Production"
+state_trait_la_plata_river:0 "La Plata River"

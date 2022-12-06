@@ -1,6 +1,0 @@
-﻿l_simp_chinese:
- pin_unpin_market:0 "开关市场信息"
- pin_unpin_market_desc:0 "将这个市场的信息加入或者移出市场概览。"
- pin_unpin_market_action_notification_name:0 "关注市场信息"
- pin_unpin_market_action_notification_desc:0 "关注市场信息"
- pin_unpin_market_action_name:0 "开关市场信息"

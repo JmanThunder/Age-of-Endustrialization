@@ -6,12 +6,6 @@
 	}
 }
 
-on_monthly_pulse_country = {
-	on_actions = {
-		remove_invalid_building_stuff_headquarters
-	}
-}
-
 on_battle_ended = {
 	on_actions = {
 		#remove_advanced_ship_advantages_for_battle
@@ -549,29 +543,6 @@ advanced_ship_advantages_for_battle = {
 					months = 10
 				}
 			}
-		}
-	}
-}
-
-remove_invalid_building_stuff_headquarters = {
-	effect = {
-		if = {
-			limit = {
-				any_scope_state = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						level >= 1
-					}
-					is_capital = no
-				}
-			}
-			every_scope_state = {
-				limit = {
-					is_capital = no
-				}
-				remove_building = building_stuff_headquarters
-			}
-			post_notification = invalid_building_stuff_headquarters
 		}
 	}
 }

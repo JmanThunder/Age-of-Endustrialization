@@ -1,7 +1,6 @@
 ﻿on_law_checkpoint_success = {
 	effect = {
-		trigger_event = { id = napoleonic_flavor.1 days = 1 popup = yes }
-		trigger_event = { id = napoleonic_flavor.5 days = 1 popup = yes }
+		trigger_event = { id = french_flavor.8 days = 1 popup = yes }
 		trigger_event = { id = royalist_restauration.1 days = 1 popup = yes }
 		trigger_event = { id = royalist_restauration.2 days = 1 popup = yes }
 		trigger_event = { id = royalist_restauration.3 days = 1 popup = yes }
@@ -10,34 +9,6 @@
 on_monthly_pulse_country = {
 	events = {
 		conquest_of_algeria.1
-	}
-}
-on_law_enactment_started = {
-	effect = {
-		if = {
-			limit = {
-				exists = c:FRA
-				c:FRA = ROOT
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
-				is_enacting_law = law_type:law_monarchy
-				owner = { 
-					ruler = {
-						has_variable = is_louis_napoleon
-					}
-				}
-			}
-			set_variable = {
-				name = create_empire_var
-				value = 0
-			}
-			add_journal_entry = { type = establishment_of_imperial_authority }
-			add_enactment_modifier = {
-				name = countering_bonapartism_modifire
-			}
-		}
 	}
 }
 on_character_death = {

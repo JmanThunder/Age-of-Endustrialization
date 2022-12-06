@@ -162,147 +162,15 @@
 				add = 25
 			}
 		}	
-
-		add = {
-			desc = "law_autocracy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_autocracy
-					}
-				}
-				value = 20
-			}
-		}
-
-		add = {
-			desc = "law_oligarchy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_oligarchy
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_anarchy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_anarchy
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_outlawed_dissent"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_outlawed_dissent
-					}
-				}
-				value = 20
-			}
-		}
-
-		add = {
-			desc = "law_censorship"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_censorship
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_state_religion"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_state_religion
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_no_schools"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_no_schools
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_debt_slavery"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_debt_slavery
-					}
-				}
-				value = 20
-			}
-		}
-
-		add = {
-			desc = "law_slave_trade"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_slave_trade
-					}
-				}
-				value = 20
-			}
-		}
-
-		add = {
-			desc = "law_legacy_slavery"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_legacy_slavery
-					}
-				}
-				value = 10
-			}
-		}
-
-		multiply = {
-			desc = "concept_literacy"
-			value = 1.0
-			
-			if = {
-				limit = { 
-					literacy_rate < 0.5
-				}
-				value = literacy_rate
-				multiply = 2
-			}
-		}
 		
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
 				leader = {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}

@@ -1,0 +1,9 @@
+﻿l_japanese:
+ FOA:0 "南アメリカ"
+ FOA_ADJ:0 "南アメリカ"
+ Formation_of_South_America_diplomatic_play_Unify_South_America:0 "南アメリカの統一"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_tooltip:0 "#header $Formation_of_South_America_diplomatic_play_Unify_South_America$ [concept_diplomatic_play]を開始#!\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Unify_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_desc:0 "最初の[concept_war_goal]を、南アメリカの劣等国をすべて併合するように設定します。"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America:0 "南アメリカの主導権"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_tooltip:0 "$Formation_of_South_America_diplomatic_play_Leadership_South_America$ [concept_diplomatic_play]を開始\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Leadership_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_desc:0 "最初の[concept_war_goal]を、対象の[concept_country]を南アメリカの[Concept('concept_unification', '$concept_major_unification$')]の[concept_unification_candidate]から除外するように設定します。"

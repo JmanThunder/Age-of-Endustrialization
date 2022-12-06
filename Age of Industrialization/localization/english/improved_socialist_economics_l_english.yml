@@ -1,9 +1,0 @@
-﻿l_english:
-pm_activity_urban_clergy:0 "Cultural Centers"
-pm_trade_center_worker_cooperative:1 "$pm_worker_cooperative$"
-law_collectivized_economy:0 "Collectivized Economy"
-bg_power:0 "Power Plants"
-bg_technology:0 "Universities"
-law_collectivized_economy_desc:0 "A self-managed economy in which the workers collectively own and control the industries they work in. Industries coordinate via a council of communes or trade-unions to ensure public welfare."
-law_one_party_state_desc:0 "Power is held by a single political party, membership of which is a legal or de facto requirement for attaining political office."
-law_one_party_state:0 "One-Party State"

@@ -19,13 +19,14 @@
 	}
 	
 	weight = {
-		value = 5
+		value = 10
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_professional_staff_system
+					country_pm_usage = {
+						target = owner
+						production_method = pm_professional_staff_system
+						value > 0.001
 					}
 				}
 			}
@@ -34,9 +35,10 @@
 		else_if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_complete_analysis_staff_system
+					country_pm_usage = {
+						target = owner
+						production_method = pm_complete_analysis_staff_system
+						value > 0.001
 					}
 				}
 			}
@@ -45,9 +47,10 @@
 		else = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_modern_command_system_staff_system
+					country_pm_usage = {
+						target = owner
+						production_method = pm_modern_command_system_staff_system
+						value > 0.001
 					}
 				}
 			}
@@ -88,9 +91,10 @@ stalwart_defender = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_delaying_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_delaying_defense_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -136,9 +140,10 @@ trench_rat = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_delaying_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_delaying_defense_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -197,9 +202,10 @@ defense_in_depth_specialist = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_delaying_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_delaying_defense_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -280,9 +286,10 @@ basic_artillery_commander = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_fire_support_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_fire_support_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -345,9 +352,10 @@ experienced_artillery_commander = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_fire_support_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_fire_support_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -401,9 +409,10 @@ expert_artillery_commander = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_fire_support_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_fire_support_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -443,9 +452,10 @@ basic_offensive_planner = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_forced_attack_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_forced_attack_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -477,9 +487,10 @@ experienced_offensive_planner = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_forced_attack_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_forced_attack_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -512,9 +523,10 @@ expert_offensive_planner = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_forced_attack_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_forced_attack_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -555,9 +567,10 @@ basic_defensive_strategist = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_focus_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_focus_defense_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -590,9 +603,10 @@ experienced_defensive_strategist = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_focus_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_focus_defense_war_order
+						value > 0.001
 					}
 				}
 			}
@@ -626,9 +640,10 @@ expert_defensive_strategist = {
 		if = {
 			limit = { 
 				owner = {
-					any_scope_building = {
-						is_building_type = building_stuff_headquarters
-						has_active_production_method = pm_focus_defense_war_order
+					country_pm_usage = {
+						target = owner
+						production_method = pm_focus_defense_war_order
+						value > 0.001
 					}
 				}
 			}

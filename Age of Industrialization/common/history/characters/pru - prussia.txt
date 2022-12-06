@@ -13,6 +13,7 @@
 			ideology= ideology_royalist
 			traits = {
 				direct
+				historical_figures
 			}
 			on_created = {
 				set_variable = is_married
@@ -30,6 +31,7 @@
 			ideology = ideology_royalist
 			traits = {
 				reserved
+				historical_figures
 			}
 			on_created = {
 				set_variable = is_married
@@ -47,6 +49,7 @@
 			ideology = ideology_royalist
 			traits = {
 				persistent
+				historical_figures
 			}
 		}
 
@@ -60,6 +63,7 @@
 			ideology = ideology_royalist
 			traits = {
 				imperious
+				historical_figures
 			}
 		}
 
@@ -74,6 +78,7 @@
 			ideology = ideology_moderate
 			traits = {
 				ambitious
+				historical_figures
 			}
 		}
 
@@ -88,6 +93,7 @@
 			ideology = ideology_royalist
 			traits = {
 				tactful
+				historical_figures
 			}
 		}
 
@@ -102,6 +108,7 @@
 			ideology = ideology_moderate
 			traits = {
 				persistent
+				historical_figures
 			}
 		}
 		
@@ -117,6 +124,7 @@
 				expert_offensive_planner
 				resupply_commander
 				reserved
+				historical_figures
 			}
 		}
 		
@@ -129,6 +137,7 @@
 			hq = region_poland
 			commander_rank = commander_rank_3
 			traits = {
+				historical_figures
 				plains_commander
 			}
 		}
@@ -143,6 +152,7 @@
 			dna = dna_von_krauseneck
 			traits = {
 				reserved
+				historical_figures
 			}
 		}
 		
@@ -157,6 +167,7 @@
 				persistent
 				senile
 				expert_offensive_planner
+				historical_figures
 			}
 
 		}

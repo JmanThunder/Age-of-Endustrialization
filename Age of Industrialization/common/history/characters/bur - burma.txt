@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Bagyidaw_Konbaung
+				historical_figures
 				reckless
 			}
 		}	
@@ -24,7 +24,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Tharrawaddy_Konbaung
+				historical_figures
 				ambitious
 			}
 		}

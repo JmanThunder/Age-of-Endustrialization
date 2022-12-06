@@ -28,7 +28,6 @@ state_trait_niger_river = {
 	
 	modifier = {
 		state_infrastructure_add = 15
-		building_group_bg_agriculture_throughput_mult = 0.15
 	}
 }
 
@@ -65,6 +64,5 @@ state_trait_sahara_desert = {
         building_group_bg_agriculture_throughput_mult = -0.2
 		state_construction_mult = -0.25
 		state_infrastructure_mult = -0.25
-		state_migration_pull_add = -3
     }
 }

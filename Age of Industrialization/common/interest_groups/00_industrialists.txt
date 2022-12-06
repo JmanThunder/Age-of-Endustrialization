@@ -63,6 +63,7 @@
 			}
 		}
 
+
 		add = {
 			desc = "SOL_25_30"
 			if = {
@@ -128,54 +129,6 @@
 			}
 		}
 
-		add = {
-			desc = "law_graduated_taxation"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_graduated_taxation
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_traditionalism"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_traditionalism
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_command_economy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_command_economy
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_isolationism"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_isolationism
-					}
-				}
-				value = 10
-			}
-		}
-
 		multiply = {
 			value = 1.0
 			desc = "IG_EMPLOYED_MIC"
@@ -225,8 +178,9 @@
 			scope:interest_group = {
 				leader = {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}

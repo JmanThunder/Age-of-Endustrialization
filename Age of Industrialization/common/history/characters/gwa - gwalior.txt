@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Jankoji_Roa_Scindia
+				historical_figures
 				meticulous
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Jayajirao_Scindia
+				historical_figures
 				cautious
 			}
 		}

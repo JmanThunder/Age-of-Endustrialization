@@ -1,0 +1,68 @@
+﻿namespace = maine_events
+
+maine_events.1 = { # Webster–Ashburton Treaty
+	type = maine_events
+	placement = country_event
+	
+	title = maine_events.1.t
+	desc = maine_events.1.desc
+	flavor = maine_events.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+	
+	trigger = {
+		game_date >= 1840.1.1
+		this = c:USA
+		NOT = {
+			has_global_variable = websterashburtontreaty
+		}
+	}
+
+	immediate = {
+		set_global_variable = websterashburtontreaty
+	}
+
+	option = {
+		name = maine_events.1.a
+		default_option = yes
+		s:STATE_MAINE = {
+			add_homeland = yankee
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				set_state_owner = c:USA
+			}
+		}
+		s:STATE_MINNESOTA = {
+			add_homeland = yankee
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				set_state_owner = c:USA
+			}
+		}
+	}
+}

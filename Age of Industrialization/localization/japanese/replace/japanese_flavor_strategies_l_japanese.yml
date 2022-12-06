@@ -1,12 +1,10 @@
 ﻿l_japanese:
 
  ai_strategy_japanese_flavor_administrative_phase_1:0 "経世済民"
- ai_strategy_japanese_flavor_administrative_phase_1_desc:0 "[COUNTRY.GetName]は、産業基盤の構築により国家を近代化したいと考えています。"
- ai_strategy_japanese_flavor_administrative_phase_2:0 "殖産興業"
- ai_strategy_japanese_flavor_administrative_phase_2_desc:0 "[COUNTRY.GetName]は、軽工業の育成により国家を近代化したいと考えています。"
- ai_strategy_japanese_flavor_administrative_phase_3:0 "富国強兵"
- ai_strategy_japanese_flavor_administrative_phase_3_desc:0 "[COUNTRY.GetName]は、重工業の育成により国家を近代化したいと考えています。"
- ai_strategy_japanese_flavor_administrative_fallback:0 "文明開化"
+ ai_strategy_japanese_flavor_administrative_phase_1_desc:0 "[COUNTRY.GetName]は、小農の維持により国家を安定させたいと考えています。"
+ ai_strategy_japanese_flavor_administrative_phase_2:0 "富国強兵"
+ ai_strategy_japanese_flavor_administrative_phase_2_desc:0 "[COUNTRY.GetName]は、工業の育成により国家を近代化したいと考えています。"
+ ai_strategy_japanese_flavor_administrative_fallback:0 "富国強兵"
  ai_strategy_japanese_flavor_administrative_fallback_desc:0 "[COUNTRY.GetName]は、工業の育成により国家を近代化したいと考えています。"
 
  ai_strategy_japanese_flavor_diplomatic_phase_1:0 "異国船打払令"
@@ -26,5 +24,5 @@
  ai_strategy_japanese_flavor_political_phase_3_desc:0 "[COUNTRY.GetName]は、諸外国に対抗するため[COUNTRY.GetGovernment.GetName]を改革したいと考えています。"
  ai_strategy_japanese_flavor_political_phase_4:0 "慶応の改革"
  ai_strategy_japanese_flavor_political_phase_4_desc:0 "[COUNTRY.GetName]は、諸外国に対抗するため[COUNTRY.GetGovernment.GetName]を改革したいと考えています。"
- ai_strategy_japanese_flavor_political_fallback:0 "明治維新"
+ ai_strategy_japanese_flavor_political_fallback:0 "幕政改革"
  ai_strategy_japanese_flavor_political_fallback_desc:0 "[COUNTRY.GetName]は、諸外国に対抗するため[COUNTRY.GetGovernment.GetName]を改革したいと考えています。"

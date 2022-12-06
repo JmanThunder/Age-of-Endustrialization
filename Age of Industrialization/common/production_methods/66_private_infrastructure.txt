@@ -1,4 +1,4 @@
-﻿pm_worker_cooperative_building_railway = {
+pm_worker_cooperative_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_laws = {
@@ -47,6 +47,52 @@ pm_trade_center_government_run = {
 		}
 		unscaled = {		
 			building_bureaucrats_shares_add = 5
+		}
+	}
+}
+pm_no_military_trains = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_armored_trains.dds"
+}
+
+pm_armored_trains = {
+	texture = "gfx/interface/icons/production_method_icons/unused/armored_trains.dds"
+
+	unlocking_technologies = {
+		steel_railway_cars
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 75
+			building_input_small_arms_add = 50
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			unit_army_defense_add = 10
+		}
+	}
+}
+
+pm_railway_guns = {
+	texture = "gfx/interface/icons/production_method_icons/unused/railway_guns.dds"
+
+	unlocking_technologies = {
+		breech_loading_artillery
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 75
+			building_input_artillery_add = 20
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			unit_army_offense_add = 15
+			unit_army_defense_add = 15
 		}
 	}
 }

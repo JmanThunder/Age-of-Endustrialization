@@ -1,0 +1,5 @@
+﻿benelux_unifier_ruler = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 100
+	country_authority_mult = 0.2
+}

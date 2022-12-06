@@ -813,25 +813,7 @@ GBR = { # Great Britain of United Kingdom
 			coa_def_republic_flag_trigger = yes
 			scope:actor = { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
 		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_united_kingdom_gbr
-		
-		is_main_tag_only = yes
-		priority = 1
-		
-		trigger = {
-			scope:actor = {
-				has_law = law_type:law_monarchy
-				OR = {
-					owns_entire_state_region = STATE_ULSTER
-					owns_entire_state_region = STATE_LEINSTER
-					owns_entire_state_region = STATE_MUNSTER
-					owns_entire_state_region = STATE_CONNAUGHT
-				}
-			}
-		}
-	}
+	}	
 	dynamic_country_name = {
 		name = dyn_c_british_commonwealth
 		adjective = dyn_c_british_commonwealth_adj
@@ -1505,6 +1487,18 @@ RUS = { # Russia
 
 SAF = { # South Africa
 	dynamic_country_name = {
+		name = dyn_c_saf_union
+		adjective = dyn_c_saf_union_adj
+		
+		priority = 5
+		
+		trigger = {
+			c:SAF = {
+				has_modifier = union_of_south_africa_modifier
+			}
+		}
+	}
+	dynamic_country_name = {
 		name = dyn_c_south_africa
 		adjective = dyn_c_south_africa_adj
 
@@ -1765,26 +1759,6 @@ TUS = { # Tuscany
 			coa_def_french_ensign_trigger = yes
 		}
 	}	
-}
-
-UBD = {
-	dynamic_country_name = {
-		name = dyn_c_united_baltic_states
-		adjective = dyn_c_united_baltic_states
-		
-		is_main_tag_only = yes
-		priority = 0
-		
-		trigger = {
-			c:RUS = {
-				has_diplomatic_pact = {
-					who = c:UBD
-					type = puppet
-					is_initiator = yes
-				}
-			}
-		}
-	}
 }
 
 UKR = { # Ukraine

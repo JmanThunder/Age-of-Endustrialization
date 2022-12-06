@@ -11,7 +11,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_William_Hannover
+				historical_figures
 				romantic
 			}
 			on_created = {
@@ -33,7 +33,7 @@
 			interest_group = ig_industrialists
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Victoria_Hannover
+				historical_figures
 				direct
 			}
 			on_created = {
@@ -51,7 +51,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_reformer
 			traits = {
-				concept_wikipedia_William_Lamb
+				historical_figures
 				arrogant
 			}
 		}
@@ -67,7 +67,7 @@
 		    interest_group = ig_industrialists
 		    birth_date = 1788.2.5
 		    traits = {
-		    	concept_wikipedia_Robert_Peel
+		    	historical_figures
 		        meticulous
 		        experienced_political_operator
 		        tactful
@@ -82,7 +82,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_William_Howley
+				historical_figures
 				tactful
 			}
 		}
@@ -95,7 +95,7 @@
 			interest_group = ig_trade_unions
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Robert_Owen
+				historical_figures
 				cautious
 			}
 		}
@@ -108,7 +108,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Rowland_Hill
+				historical_figures
 				reserved
 			}
 		}
@@ -121,7 +121,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_reformer
 			traits = {
-				concept_wikipedia_Thomas_Barnes
+				historical_figures
 				meticulous
 			}
 		}
@@ -134,7 +134,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Edward_Smith-Stanley
+				historical_figures
 				imperious
 				arrogant
 			}
@@ -148,7 +148,7 @@
 			interest_group = ig_rural_folk
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Charles_Gordon_Lennox
+				historical_figures
 				imperious
 			}
 		}
@@ -160,7 +160,7 @@
 			hq = region_italy
 			age = 61
 			traits = {
-				concept_wikipedia_Thomas_Cochrane
+				historical_figures
 				reckless
 				expert_naval_commander
 				expert_convoy_raider
@@ -175,7 +175,7 @@
 			hq = region_england
 			commander_rank = commander_rank_5
 			traits = {
-				concept_wikipedia_Sir_Edward_Codrington
+				historical_figures
 				direct
 				experienced_naval_commander	
 			}
@@ -190,7 +190,7 @@
 			hq = region_england
 			commander_rank = commander_rank_3
 			traits = {
-				concept_wikipedia_Hugh_Gough
+				historical_figures
 				direct
 				reckless
 			}
@@ -204,7 +204,7 @@
 			age = 64
 			hq = region_new_england
 			traits = {
-				concept_wikipedia_Sir_George_Cockburn
+				historical_figures
 				innovative
 			}
 			# Burnt down washington
@@ -218,7 +218,7 @@
 			hq = region_north_sea_coast
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_John_Seaton
+				historical_figures
 				tactful
 			}
 			#Made a decisive decision at waterloo
@@ -288,7 +288,7 @@
 			age = 51
 			hq = region_iberia
 			traits = {
-				concept_wikipedia_James_Dundas
+				historical_figures
 				cautious
 			}
 		}
@@ -303,7 +303,7 @@
 			hq = region_north_sea_coast
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_Sir_Thomas_Byam_Martin
+				historical_figures
 				dockyard_master
 				basic_naval_commander
 				innovative

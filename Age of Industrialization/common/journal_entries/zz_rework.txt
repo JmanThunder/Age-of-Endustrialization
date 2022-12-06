@@ -1,0 +1,140 @@
+﻿je_california_usa = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		exists = c:CAL
+		c:CAL = {
+			relations:root >= relations_threshold:cordial
+			is_subject = no
+			is_at_war = no
+		}
+	}
+	
+	possible = {
+		exists = c:USA
+		this = c:USA
+		exists = c:CAL
+		c:CAL = {
+			is_subject = no
+			is_at_war = no
+		}
+		NOT = {
+			c:USA = {
+				has_variable = california_je
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = californian_statehood.1
+			days = 0
+		}
+		set_variable = california_je
+	}
+
+	invalid = {
+		OR = {
+			NOT = { exists = c:CAL }
+			c:CAL = { is_subject = yes }
+		}
+	}
+	
+	weight = 100
+	
+	inheritable = no
+}
+je_hawaii_usa = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		exists = c:HAW
+		owns_entire_state_region = STATE_CALIFORNIA
+		c:HAW = {
+			relations:root >= relations_threshold:cordial
+			is_subject = no
+			is_at_war = no
+		}
+	}
+	
+	possible = {
+		exists = c:USA
+		this = c:USA
+		exists = c:HAW
+		c:HAW = {
+			is_subject = no
+			is_at_war = no
+		}
+		NOT = {
+			c:USA = {
+				has_variable = hawaii_je
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = hawaiian_statehood.1
+			days = 0
+		}
+		set_variable = hawaii_je
+	}
+
+	invalid = {
+		OR = {
+			NOT = { exists = c:HAW }
+			c:HAW = { is_subject = yes }
+		}
+	}
+	
+	weight = 100
+	
+	inheritable = no
+}
+je_recession = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	immediate = {
+		set_variable = {
+			name = recession_timer_varr
+			value = 0
+		}
+	}
+	
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = recession_timer_varr
+				add = 1
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = recession_je_tooltip
+			scope:journal_entry = {
+				is_goal_complete = yes
+			}
+		}
+	}
+
+	on_complete = {
+		remove_modifier = recession_modifier
+	}
+	
+	current_value = {
+		value = root.var:recession_timer_varr
+	}
+	
+
+	goal_add_value = {
+		value = 5
+	}
+	
+	weight = 100
+	
+	progressbar = yes
+
+	should_be_pinned_by_default = yes
+}

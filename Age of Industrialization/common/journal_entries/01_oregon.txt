@@ -1,5 +1,7 @@
 ﻿je_oregon = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+
 	is_shown_when_inactive = {
 		exists = c:USA
 		exists = c:GBR
@@ -44,14 +46,26 @@
 		OR = {
 			AND = {
 				OR = {
-				custom_tooltip = {
-					text = oregon_tt
-					has_global_variable = oregon_trail_mapped
+					owns_entire_state_region = STATE_MONTANA
+					custom_tooltip = {
+						text = montana_dispute_tt
+						s:STATE_MONTANA = {
+							any_scope_state = {
+								owner = {
+									OR = {
+										c:GBR = THIS
+										is_subject_of = c:GBR
+										c:USA = THIS
+									}
+								}
+							}
+						}
+					}
 				}
-				year >= 1846
-			}
+				owns_entire_state_region = STATE_WYOMING
+				
 				c:GBR = {
-					relations:ROOT >= relations_threshold:neutral
+					relations:ROOT >= relations_threshold:cordial
 				}
 			}
 			AND = {
@@ -132,4 +146,26 @@ je_conquer_oregon = {
 	weight = 100
 
 	inheritable = no
+}
+
+je_fifty_four_fourty = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	complete = {
+			owns_entire_state_region = STATE_WASHINGTON
+			owns_entire_state_region = STATE_IDAHO
+			owns_entire_state_region = STATE_OREGON
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+	}
+
+	weight = 100
+
+	inheritable = no
+
+	on_complete = {
+		add_modifier = {
+			name = oregon_resolved
+			months = normal_modifier_time
+		}
+	}
 }

@@ -10,7 +10,7 @@
 			interest_group = ig_rural_folk # mayor of Bern
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Karl_Friedrich_Tscharner
+				historical_figures
 			}
 		}
 
@@ -23,7 +23,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Guillaume_Henri_Dufour
+				historical_figures
 				meticulous
 				surveyor
 				basic_diplomat
@@ -39,7 +39,7 @@
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Jozef_Franz_Karl_Amrhyn
+				historical_figures
 				meticulous
 				pious
 				reserved

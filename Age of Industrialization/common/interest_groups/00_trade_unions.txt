@@ -140,7 +140,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "law_no_health_system"
+			desc = "NO_HEALTH_SYSTEM"
 			if = {
 				limit = {
 					owner = {
@@ -152,19 +152,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "law_serfdom"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_serfdom
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_serfdom_banned"
+			desc = "SERFDOM_BANNED"
 			if = {
 				limit = {
 					owner = {
@@ -176,7 +164,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "law_child_labor_allowed"
+			desc = "CHILD_LABOR_ALLOWED"
 			if = {
 				limit = {
 					owner = {
@@ -188,7 +176,7 @@ ig_trade_unions = {
 		}
 
 		add = {
-			desc = "law_no_social_security"
+			desc = "NO_SOCIAL_SECURITY"
 			if = {
 				limit = {
 					owner = {
@@ -204,8 +192,9 @@ ig_trade_unions = {
 			scope:interest_group = {
 				leader = {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}
@@ -236,20 +225,6 @@ ig_trade_unions = {
 					}
 				}
 				value = 0.5
-			}		
-		}
-
-		multiply = {
-			desc = "NO_SOCIALISM"	
-			value = 1.0
-			
-			if = {
-				limit = { 
-					owner = {
-						NOT = { has_technology_researched = socialism }
-					}
-				}
-				value = 0.75
 			}		
 		}
 

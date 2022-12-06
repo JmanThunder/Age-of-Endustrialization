@@ -95,17 +95,7 @@ conservative_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
-				}
-			}
-			triggered_desc = {
-				desc = party_bonapartist_party
-				trigger = {
-					exists = c:FRA
-					THIS = c:FRA
-					has_law = law_type:law_monarchy
-					owner = { ruler = { has_variable = is_bonapartist } }
-					year < 1880
+					NOT = { has_variable = french_empire_created }
 				}
 			}
 			triggered_desc = {
@@ -114,8 +104,7 @@ conservative_party = {
 					exists = c:FRA
 					THIS = c:FRA
 					has_law = law_type:law_monarchy
-					owner = { ruler = { has_variable = is_bonapartist } }
-					year >= 1880
+					has_variable = french_empire_created
 				}
 			}
 			triggered_desc = {
@@ -261,7 +250,7 @@ conservative_party = {
 	}
 	join_weight = {
 		value = {
-			value = -5
+			value = 1
 			desc = "base_value"
 		}
 		if = { # socialists and radicals won't join conservative parties
@@ -288,9 +277,6 @@ conservative_party = {
 					OR = {
 						has_ideology = ideology_traditionalist
 						has_ideology = ideology_royalist
-						has_ideology = ideology_orleanist
-						has_ideology = ideology_legitimist
-						has_ideology = ideology_bonapartist
 						has_ideology = ideology_theocrat
 						has_ideology = ideology_slaver
 					}
@@ -600,8 +586,11 @@ conservative_party = {
 		}
 		if = { # arbitrary weight for Andrew Jackson to be in the right party
 			limit = {
-				leader = {
-					has_variable = is_andrew_jackson
+				OR = {
+					leader = {
+						has_variable = is_andrew_jackson
+					}
+					has_modifier = missouri_compromise				
 				}
 			}
 			add = {
@@ -612,73 +601,12 @@ conservative_party = {
 		if = {
 			limit = {
 				leader = {
-					OR = {
-						has_ideology = ideology_orleanist
-						has_ideology = ideology_bonapartist
-					}
+					has_ideology = ideology_orleanist
 				}
-				NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
 			}
 			add = {
-				value = -15
-				desc = "from_rival_royalist"
-			}
-		}
-		if = {
-			limit = {
-				leader = { has_ideology = ideology_legitimist }
-				NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
-			}
-			add = {
-				value = 10
-				desc = "from_legitimist"
-			}
-		}
-		if = {
-			limit = {
-				is_powerful = yes
-				leader = { has_ideology = ideology_legitimist }
-				NOT = { owner = { ruler = { has_variable = is_bonapartist } } }
-			}
-			add = {
-				value = 10
-				desc = "from_powerful_legitimist"
-			}
-		}
-		if = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology_legitimist
-						has_ideology = ideology_orleanist
-					}
-				}
-				owner = { ruler = { has_variable = is_bonapartist } }
-			}
-			add = {
-				value = -15
-				desc = "from_rival_royalist"
-			}
-		}
-		if = {
-			limit = {
-				leader = { has_ideology = ideology_bonapartist }
-				owner = { ruler = { has_variable = is_bonapartist } }
-			}
-			add = {
-				value = 10
-				desc = "from_bonapartist"
-			}
-		}
-		if = {
-			limit = {
-				is_powerful = yes
-				leader = { has_ideology = ideology_bonapartist }
-				owner = { ruler = { has_variable = is_bonapartist } }
-			}
-			add = {
-				value = 10
-				desc = "from_powerful_bonapartist"
+				value = -10
+				desc = "from_orleanist"
 			}
 		}
 	}

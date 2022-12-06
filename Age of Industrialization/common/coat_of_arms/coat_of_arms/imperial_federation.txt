@@ -1,0 +1,25 @@
+﻿IMP = { # Imperial Federation
+	pattern = "pattern_gironny_8.dds"
+	color1 = "blue"
+	color2 = "blue"
+	color3 = "white"
+	color4 = "red"
+	color5 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = color3
+		color2 = color3
+	}	
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated.dds"
+		color1 = color5
+		color2 = color4
+		mask = { 2 }
+	}
+	colored_emblem = {
+		texture = "ce_cross_england_fimbriated.dds"
+		color1 = color3
+		color2 = color4
+	}
+}

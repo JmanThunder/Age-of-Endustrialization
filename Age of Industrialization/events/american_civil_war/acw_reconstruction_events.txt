@@ -1,0 +1,167 @@
+namespace = acw_reconstruction
+
+#The ACW has ended, Reconstruction begins
+acw_reconstruction.1 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = acw_reconstruction.1.t
+	desc = acw_reconstruction.1.d
+	flavor = acw_reconstruction.1.f
+
+	duration = 3
+
+	trigger = {
+		# triggered by peace treaty events
+	}
+
+	immediate = {
+		set_variable = {
+			name = reconstruction_var
+			value = 0
+		}
+		set_variable = {
+			name = je_acw_wild_west_var
+			value = 0
+		}
+		every_scope_state = {
+				if = {
+					limit = {
+						is_incorporated = no
+						OR = {
+						has_modifier = usa_southern_supremacy
+						has_modifier = usa_deep_southern_supremacy
+						has_modifier = usa_border_state
+					}
+				}
+				add_modifier = {
+					name = unreconstructed_state
+					years = 12
+				}
+			}
+		}
+		c:USA = {
+			save_scope_as = united_states
+		}
+	}
+
+	option = {
+	name = acw_reconstruction.1.a
+		
+	add_journal_entry = {
+		type = je_acw_reconstruction
+		}
+		
+	add_journal_entry = { type = je_acw_reincorporate }		
+	if = {
+		limit = {
+			has_variable = emancipation_proclamation
+		}
+		custom_tooltip = {
+		text = acw_reconstruction_emancipation.tt
+			every_scope_state = {
+			if = { 
+				limit = {
+					has_modifier = unreconstructed_state
+				}
+				liberate_slaves = yes
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_acw_equality
+			}
+		}
+		else = {
+			change_variable = {
+				name = reconstruction_var
+				add = 1
+			}
+		}
+		add_journal_entry = {
+			type = je_acw_wild_wild_west
+		}
+	}
+}
+
+
+# Reconstruction ending event
+acw_reconstruction.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = acw_reconstruction.2.t
+	desc = acw_reconstruction.2.d
+	flavor = acw_reconstruction.2.f
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_acw_reconstruction completion or failure
+	}
+
+	immediate = {
+		c:USA = {
+			save_scope_as = united_states
+		}
+	}
+
+	option = {
+		name = acw_reconstruction.2.a
+		add_modifier = {
+			name = usa_reconstructed
+			months = 72
+		}
+		if = {
+			limit = {
+				has_variable = acw_gain_african_american
+			}
+		add_primary_culture = cu:afro_american
+		}
+		if = {
+			limit = {
+				NOT = { has_variable = acw_keep_dixie }
+			}
+		remove_primary_culture = cu:dixie
+		}
+		add_loyalists = {
+			value = 0.10
+		}
+		custom_tooltip = {
+		text = usa_reconstruction_sectionalism_gone.tt
+		every_scope_state = {
+			limit = {
+				OR = {
+					has_modifier = usa_border_state
+					has_modifier = usa_deep_southern_supremacy
+					has_modifier = usa_southern_supremacy
+					has_modifier = usa_northern_supremacy
+					has_modifier = usa_new_england
+					has_modifier = usa_iron_belt
+				}
+			}
+			remove_modifier = usa_border_state
+			remove_modifier = usa_deep_southern_supremacy
+			remove_modifier = usa_southern_supremacy
+			remove_modifier = usa_northern_supremacy
+			remove_modifier = usa_new_england
+			remove_modifier = usa_iron_belt
+			}
+		}
+	}
+}

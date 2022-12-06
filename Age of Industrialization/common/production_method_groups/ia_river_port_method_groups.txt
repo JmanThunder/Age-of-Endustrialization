@@ -1,8 +1,0 @@
-﻿pmg_base_building_ia_river_port = {
-	production_methods = {
-		pm_ia_rp_small_dock
-		pm_ia_rp_small_port
-		pm_ia_rp_industrial_port
-		pm_ia_rp_modern_port
-	}
-}

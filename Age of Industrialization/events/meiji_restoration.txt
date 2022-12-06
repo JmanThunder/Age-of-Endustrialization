@@ -48,7 +48,7 @@ meiji.1 = {
 				interest_group = ig_landowners # beholden to the Shogun
 				ideology = ideology_traditionalist
 				traits = {
-					concept_wikipedia_Ninko_Yamato
+					historical_figures
 					reserved # not very active in affairs of state
 				}
 			}
@@ -60,7 +60,7 @@ meiji.1 = {
 				dna = dna_emperor_komei
 				interest_group = ig_armed_forces
 				traits = {
-					concept_wikipedia_Komei_Yamato
+					historical_figures
 					reserved # ditto
 				}
 			}
@@ -78,7 +78,7 @@ meiji.1 = {
 				dna = dna_emperor_komei
 				interest_group = ig_armed_forces
 				traits = {
-					concept_wikipedia_Komei_Yamato
+					historical_figures
 					reserved # ditto
 				}
 			}
@@ -90,7 +90,7 @@ meiji.1 = {
 				dna = dna_emperor_meiji
 				interest_group = ig_industrialists
 				traits = {
-					concept_wikipedia_Meiji_Yamato
+					historical_figures
 					innovative
 					charismatic
 				}
@@ -109,7 +109,7 @@ meiji.1 = {
 				dna = dna_emperor_meiji
 				interest_group = ig_industrialists
 				traits = {
-					concept_wikipedia_Meiji_Yamato
+					historical_figures
 					innovative
 					charismatic
 				}
@@ -121,7 +121,7 @@ meiji.1 = {
 				birth_date = 1879.1.1
 				interest_group = ig_industrialists
 				traits = {
-					concept_wikipedia_Taisho_Yamato
+					historical_figures
 				}
 			}
 		}
@@ -137,7 +137,7 @@ meiji.1 = {
 				birth_date = 1879.1.1
 				interest_group = ig_industrialists
 				traits = {
-					concept_wikipedia_Taisho_Yamato
+					historical_figures
 				}
 			}
 			create_character = {
@@ -147,7 +147,7 @@ meiji.1 = {
 				birth_date = 1901.1.1
 				interest_group = ig_armed_forces
 				traits = {
-					concept_wikipedia_Showa_Yamato
+					historical_figures
 				}
 			}
 		}
@@ -163,7 +163,7 @@ meiji.1 = {
 				birth_date = 1901.1.1
 				interest_group = ig_armed_forces
 				traits = {
-					concept_wikipedia_Showa_Yamato
+					historical_figures
 				}
 			}
 		}
@@ -487,6 +487,7 @@ meiji.3 = {
 		}
 		scope:samurai_ig = {
 			remove_ideology = ideology_bakufu
+			add_ideology = ideology_patriotic
 		}
 		# reduce mil tech spread
 		add_modifier = {
@@ -504,6 +505,7 @@ meiji.3 = {
 		}
 		scope:samurai_ig = {
 			remove_ideology = ideology_bakufu
+			add_ideology = ideology_patriotic
 		}
 		scope:samurai_ig_leader = { # honorable sudoku
 			kill_character = yes

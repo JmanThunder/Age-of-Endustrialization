@@ -181,7 +181,7 @@ religious_party = {
 	}
 	join_weight = {
 		value = {
-			value = -5
+			value = 1
 			desc = "base_value"
 		}
 		if = {
@@ -284,17 +284,6 @@ religious_party = {
 			add = {
 				value = 3
 				desc = "from_patriarchy"
-			}
-		}
-		if = { #NFM
-			limit = {
-				leader = {
-					has_variable = politically_neutral_var
-				}
-			}
-			add = {
-				value = -10
-				desc = "Politically Neutral"
 			}
 		}
 	}

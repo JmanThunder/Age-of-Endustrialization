@@ -440,6 +440,15 @@ types information_panels_types
 							block "goto_visibility" {}
  						}
 
+						textbox = {
+							layoutpolicy_horizontal = expanding
+							align = left|nobaseline
+							size = { 0 25 }
+							elide = right
+							text = "[InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|=+])#!"
+							tooltip = "IG_APPROVAL_BREAKDOWN"
+						}
+
  						expand = {}
 						
 						### CLOUT
@@ -484,6 +493,28 @@ types information_panels_types
 						layoutpolicy_vertical = preferred
 						margin_top = 10
 
+						### IDEOLOGIES
+						dynamicgridbox = {
+							minimumsize = { 150 -1 }
+							flipdirection = yes
+							name = "ideologies_box"
+							datamodel = "[InterestGroup.AccessIntrinsicIdeologies]"
+							item = {
+								widget = {
+									size = { 37 35 }
+
+									icon = {
+										texture = "[Ideology.GetTexture]"
+										tooltipwidget = {
+											FancyTooltip_Ideology = {}
+										}
+										size = { 35 35 }
+										using = tooltip_above
+									}
+								}
+							}
+						}
+
 						fixedgridbox = {
 							name = "traits_box"
 							flipdirection = yes
@@ -508,43 +539,51 @@ types information_panels_types
 								}
 							}
 						}
-						textbox = {
-							layoutpolicy_horizontal = expanding
-							align = left|nobaseline
-							margin_left = 10
-							size = { 0 25 }
-							elide = right
-							text = "[InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|=+])#!"
-							tooltip = "IG_APPROVAL_BREAKDOWN"
-						}
 
-						### IDEOLOGIES
+						expand = {}
+
+						### TRAITS
 						dynamicgridbox = {
 							flipdirection = yes
-							name = "ideologies_box"
-							datamodel = "[InterestGroup.AccessIntrinsicIdeologies]"
+							datamodel = "[InterestGroup.AccessLeader.AccessTraits]"
+
 							item = {
 								widget = {
-									size = { 37 35 }
+									size = { 32 42 }
 
 									icon = {
-										texture = "[Ideology.GetTexture]"
-										tooltipwidget = {
-											FancyTooltip_Ideology = {}
-										}
-										size = { 35 35 }
+										size = { 30 42 }
+										texture = "[CharacterTrait.GetTexture]"
 										using = tooltip_above
+
+										tooltipwidget = {
+											FancyTooltip_CharacterTrait = {}
+										}
 									}
 								}
 							}
 						}
 					}
-					textbox = {
-                        layoutpolicy_horizontal = expanding
-                        size = { 0 30 }
-                        text = "#v [InterestGroup.GetWillJoinPartyDesc]#!"
-                        tooltip = "[InterestGroup.GetWillJoinPartyTooltip]"
-                    }
+					hbox = {
+						textbox = {
+							visible = "[Not(StringIsEmpty(InterestGroup.GetWillJoinPartyDesc))]"
+	                        layoutpolicy_horizontal = expanding
+	                        size = { 0 30 }
+	                        text = "#v [InterestGroup.GetWillJoinPartyDesc]#!"
+	                        tooltip = "[InterestGroup.GetWillJoinPartyTooltip]"
+	                    }
+
+	                    expand = {}
+					
+						textbox = {
+							datacontext = "[InterestGroup.AccessLeader]"
+							layoutpolicy_horizontal = expanding
+							align = right|nobaseline
+							elide = right
+							size = { 0 30 }
+							text = "[Character.GetCustom('GetUniversalFullName')]"
+						}
+					}
 				}
 
 				### LEADER
@@ -637,7 +676,7 @@ types information_panels_types
 					parentanchor = hcenter
 					addrow = 23
 					minimumsize = { -1 69 }
-					maxverticalslots = 8
+					maxverticalslots = 3
 
 					block "columnsize" {
 						addcolumn = 250

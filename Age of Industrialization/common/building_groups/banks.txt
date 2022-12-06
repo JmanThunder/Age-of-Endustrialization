@@ -1,0 +1,5 @@
+﻿bg_finance = {
+	parent_group = bg_urban_facilities
+	is_government_funded = no
+	urbanization = 20
+}

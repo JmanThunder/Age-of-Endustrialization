@@ -1,32 +1,16 @@
 ﻿CHARACTERS = {
 	c:RUS = {
 		create_character = {
-			#Vladimir Iljic Lenin
-			first_name = Vladimir_Iljic
-			last_name = Lenin
-			interest_group = ig_trade_unions
-			ig_leader = yes
-			ideology = ideology_vanguardist
-			ruler = yes
-			birth_date = 1800.4.22
-			dna = dna_vladimir_iljic_lenin
-			traits = {
-				persistent
-				charismatic
-				basic_diplomat
-				experienced_political_operator
-				firebrand
-			}
-		}
-		create_character = {
 			# Tsar Nicholas I of Russia
 			first_name = Nikolai
 			last_name = Romanov
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
+			ruler = yes
 			birth_date = 1796.7.6
 			dna = dna_tsar_nicolas_01
 			traits = {
+				historical_figures
 				arrogant
 			}
 			on_created = {
@@ -38,10 +22,12 @@
 			# Alexander II of Russia
 			first_name = Aleksandr
 			last_name = Romanov
+			heir = yes
 			birth_date = 1818.4.26
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
+				historical_figures
 				meticulous
 			}
 		}
@@ -54,6 +40,7 @@
 			ig_leader = yes
 			interest_group = ig_armed_forces
 			traits = {
+				historical_figures
 				imperious
 			}
 		}
@@ -79,6 +66,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
+				historical_figures
 				cautious
 			}
 		}
@@ -94,6 +82,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
+				historical_figures
 				meticulous
 			}
 		}
@@ -107,6 +96,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
+				historical_figures
 				charismatic
 			}
 		}
@@ -116,9 +106,11 @@
 			first_name = Aleksandr
 			last_name = Herzen
 			birth_date = 1812.4.6
+			ig_leader = yes
 			interest_group = ig_trade_unions
 			ideology = ideology_moderate
 			traits = {
+				historical_figures
 			}
 		}
 
@@ -133,6 +125,7 @@
 			interest_group = ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
+				historical_figures
 				romantic
 			}
 		}
@@ -147,6 +140,7 @@
 			interest_group = ig_industrialists
 			ideology = ideology_moderate
 			traits = {
+				historical_figures
 				persistent
 			}
 		}
@@ -159,6 +153,7 @@
 			hq = region_russia
 			commander_rank = commander_rank_5
 			traits = {
+				historical_figures
 				direct
 				forest_commander
 			}
@@ -173,6 +168,7 @@
 			hq = region_dnieper
 			commander_rank = commander_rank_5
 			traits = {
+				historical_figures
 				brave
 			}
 		
@@ -195,6 +191,7 @@
 			hq = region_poland
 			commander_rank = commander_rank_2
 			traits = {
+				historical_figures
 				brave
 			}
 		}
@@ -207,6 +204,7 @@
 			hq = region_caucasus
 			commander_rank = commander_rank_2
 			traits = {
+				historical_figures
 				mountain_commander
 			}
 		}
@@ -218,6 +216,7 @@
 			birth_date = 1788.11.14 # Gregorian Calendar
 			hq = region_russia
 			traits = {
+				historical_figures
 			 	explorer
 			 	experienced_naval_commander
 			 }
@@ -231,6 +230,7 @@
 			hq = region_central_asia
 			commander_rank = commander_rank_2
 			traits = {
+				historical_figures
 				persistent
 			}
 		}
@@ -254,6 +254,7 @@
 			age = 47
 			hq = region_west_siberia
 			traits = {
+				historical_figures
 				ambitious
 				experienced_artillery_commander
 			}
@@ -278,6 +279,7 @@
 			hq = region_baltic
 			age = 42
 			traits = {
+				historical_figures
 				meticulous
 				surveyor
 			}
@@ -305,6 +307,7 @@
 			hq = region_baltic
 			commander_rank = commander_rank_2
 			traits = {
+				historical_figures
 				explorer
 				basic_naval_commander
 				popular_commander
@@ -321,6 +324,7 @@
 			hq = region_dnieper
 			commander_rank = commander_rank_3
 			traits = {
+				historical_figures
 				explorer
 				brave
 			}
@@ -334,6 +338,7 @@
 			birth_date = 1776.2.9
 			hq = region_east_siberia
 			traits = {
+				historical_figures
 				basic_naval_commander
 				experienced_diplomat
 				tactful

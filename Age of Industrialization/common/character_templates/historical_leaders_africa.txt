@@ -8,7 +8,7 @@
     interest_group = ig_rural_folk
     birth_date = 1825.10.10
     traits = {
-    	concept_wikipedia_Paul_Kruger
+    	historical_figures
         pious
     }   
     interest_group_leader_usage = {

@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Rajendra_Bikram_Shah
+				historical_figures
 				reserved
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Surendra_Bikram_Shah
+				historical_figures
 				reserved
 			}
 		}

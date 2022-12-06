@@ -1,0 +1,14 @@
+﻿building_input_securities_add = {
+	good = yes
+	percent = no
+}
+
+building_output_securities_add = {
+	good = yes
+	percent = no
+}
+state_building_central_bank_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}

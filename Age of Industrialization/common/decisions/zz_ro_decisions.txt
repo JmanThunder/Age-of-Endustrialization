@@ -1,0 +1,61 @@
+
+# Fix Moldavia leaving PU Bug
+fix_pu_moldavia = {
+
+	is_shown = {
+		exists = c:WAL
+		this = c:WAL
+		exists = c:MOL
+	}
+
+	possible = {
+		exists = c:MOL
+		c:MOL = {
+			is_subject = no
+		}
+	}
+	
+	when_taken = {
+		create_diplomatic_pact = {
+            country = c:MOL
+			target = c:WAL
+            type = personal_union
+		}
+	}
+}
+take_dobruja = {
+	is_shown = {
+		exists = c:WAL
+		exists = c:RUS
+		this = c:WAL
+		NOT = {
+			owns_entire_state_region = STATE_DOBRUJA 
+			has_variable = take_dobrudja_decision_taken
+		}
+		s:STATE_DOBRUDJA = {
+			any_scope_state = {
+				owner = c:RUS
+			}
+			any_scope_state = {
+				owner = c:WAL
+			}
+		}
+	}
+
+	possible = {
+		exists = c:WAL
+		exists = c:RUS
+		c:RUS = {
+			relations:root >= relations_threshold:amicable
+		}
+	}
+	
+	when_taken = {
+		c:RUS = {
+			trigger_event = { id = romanian_events.8 }
+		}
+		hidden_effect = {
+			set_variable = take_dobrudja_decision_taken
+		}
+	}
+}

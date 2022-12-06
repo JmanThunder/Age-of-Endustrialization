@@ -1,6 +1,0 @@
-﻿l_simp_chinese:
- INCORPORATED_POPULATION:0 "已整合人口：[Country.GetIncorporatedPopulation|Kv]"
- UNINCORPORATED_POPULATION:0 "未整合人口：[Country.GetPeopleAbroad|Kv]"
- POP_TOOLTIP_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( Country.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( Country.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
- SUCCESSFUL_ADVANCE:0 "#G 进攻成功#!"
- FAILED_ADVANCE:0 "#R 进攻失败#!"

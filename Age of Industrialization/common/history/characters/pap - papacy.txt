@@ -10,7 +10,7 @@
 			interest_group = ig_devout
 			ideology = ideology_theocrat
 			traits = {
-				concept_wikipedia_Gregorius_Cappellari
+				historical_figures
 				imperious
 			}
 		}
@@ -24,7 +24,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Carlo_Armellini
+				historical_figures
 			}
 		}
 
@@ -37,7 +37,7 @@
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Luigi_Lambruschini
+				historical_figures
 			}
 		}
 
@@ -50,7 +50,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_theocrat
 			traits = {
-				concept_wikipedia_Giovanni_Maria_Ferretti
+				historical_figures
 			}
 		}
 
@@ -60,7 +60,7 @@
 			last_name = Resta
 			age = 39
 			traits = {
-				concept_wikipedia_Filippo_Resta
+				historical_figures
 		# 		doughty
 		# 		military_family
 			}

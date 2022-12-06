@@ -1,0 +1,10 @@
+﻿l_english:
+ IMP:0 "Imperial Federation"
+ IMP_ADJ:0 "Imperial"
+ dp_unify_imperial_federation:0 "Unify the British Empire"
+ dp_unify_imperial_federation_tooltip:1 "#header Start a $dp_unify_imperial_federation$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_imperial_federation_desc$"
+ dp_unify_imperial_federation_desc:0 "Sets the initiating [concept_war_goal] to centralise the British Empire under our administration."
+ 
+ dp_leadership_imperial_federation:0 "Imperial Leadership"
+ dp_leadership_imperial_federation_desc:1 "Start a $dp_leadership_imperial_federation$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$dp_leadership_imperial_federation_tooltip_desc$"
+ dp_leadership_imperial_federation_tooltip_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Imperial [Concept('concept_unification', '$concept_major_unification$')]."

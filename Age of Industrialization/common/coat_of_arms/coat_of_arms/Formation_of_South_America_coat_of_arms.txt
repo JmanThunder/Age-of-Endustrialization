@@ -1,0 +1,12 @@
+FOA_flag = {
+	pattern = "Formation_of_South_America_pattern.dds"
+	color1 = "white"
+	color2 = "yellow"
+	color3 = "green"
+	colored_emblem = {
+		texture = "Formation_of_South_America_colored_emblem.dds"
+		color1 = blue
+		color2 = yellow
+		color3 = green
+	}
+}

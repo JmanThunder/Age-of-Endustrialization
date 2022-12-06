@@ -1,14 +1,4 @@
-﻿# root = country
-# own_commander = the commander leading this side in battle (if any; could be garrison)
-# province = land province this battle takes place in
-land_battle_unit_selection_weight = {
-     value = morale
-}
-
-
-
-
-# the weight of being picked when a new battle occurs on a Front
+﻿# the weight of being picked when a new battle occurs on a Front
 # root = commander
 # is_advancing_side = whether this side is the one advancing or not (defending = no)
 front_commander_pick_weight = {
@@ -22,115 +12,26 @@ front_commander_pick_weight = {
         
         multiply = 4
     }
-	
-	
-	if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = basic_offensive_planner 
-		}
-		multiply = 2
-	}
-	else_if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = experienced_offensive_planner 
-		}
-		multiply = 4
-	}
-	else_if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = expert_offensive_planner 
-		}
-		multiply = 6
-	}
-	
-	if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = basic_artillery_commander
-		}
-		multiply = 2
-	}
-	else_if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = experienced_artillery_commander
-		}
-		multiply = 4
-	}
-	else_if = {
-		limit = {
-			scope:is_advancing_side = yes
-			has_commander_order = advance
-			has_trait = expert_artillery_commander
-		}
-		multiply = 6
-	}
-	
-	if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = basic_defensive_strategist 
-		}
-		multiply = 2
-	}
-	
-	else_if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = experienced_defensive_strategist 
-		}
-		multiply = 4
-	}
-	
-	else_if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = expert_defensive_strategist 
-		}
-		multiply = 6
-	}
-	
-	if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = stalwart_defender 
-		}
-		multiply = 2
-	}
-	
-	else_if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = trench_rat 
-		}
-		multiply = 4
-	}
-	
-	else_if = {
-		limit = {
-			scope:is_advancing_side = no
-			has_commander_order = defend
-			has_trait = defense_in_depth_specialist 
-		}
-		multiply = 6
-	}
-	
-	
-	
-	
+}
+
+# the troop distribution weight of a Front for a country/commander
+# root = country
+# front = the front to calculate troop weight for
+# character = the country commander (if any; could be garrison)
+front_country_troop_weight = {
+    value = "scope:front.num_enemy_units(root)"
+
+    if = {
+        limit = {
+            exists = scope:character
+            scope:character = {
+                is_advancing_on_front = scope:front
+            }
+        }
+
+        min = 5
+        multiply = 4
+    }
 }
 
 # root = province
@@ -142,7 +43,7 @@ front_battle_province_weight = {
 	
 	add = {
 		value = state.infrastructure
-		#divide = 2
+		divide = 2
 		multiply = combat_width
 	}
 	
@@ -183,60 +84,7 @@ front_battle_province_weight = {
 		}
 		multiply = 3
 	}	
-	if = {
-		limit = {
-			exists = scope:own_commander
-			scope:own_commander = {
-				has_trait = plains_commander
-			}
-			has_label = label_flat
-		}
-		multiply = 4
-	}
-	else_if = {
-		limit = {
-			exists = scope:own_commander
-			scope:own_commander = {
-				has_trait = forest_commander
-			}
-			has_label = label_forested
-		}
-		multiply = 4
-	}
-	else_if = {
-		limit = {
-			exists = scope:own_commander
-			scope:own_commander = {
-				has_trait = mountain_commander
-			}
-			has_label = label_elevated
-		}
-		multiply = 4
-	}
-	
 }
-
-# the troop distribution weight of a Front for a country/commander
-# root = country
-# front = the front to calculate troop weight for
-# character = the country commander (if any; could be garrison)
-front_country_troop_weight = {
-    value = "scope:front.num_enemy_units(root)"
-
-    if = {
-        limit = {
-            exists = scope:character
-            scope:character = {
-                is_advancing_on_front = scope:front
-            }
-        }
-
-        min = 5
-        multiply = 4
-    }
-}
-
-
 
 # the battalion size for each side in a land battle
 # root = a country on the side being evaluated (this general's country, or this theater side owner if none)
@@ -287,21 +135,17 @@ land_battle_size = {
         }
 
 		max = {
-			value = 10 #5
+			value = 5
 			add = {
 				value = scope:province.state.infrastructure
-				#divide = 2
-			}
-			add = {
-				value = "scope:front.num_total_battalions(root)"
 				divide = 2
 			}
 			multiply = scope:province.combat_width
 		}
 		desc = "BATTLE_SIZE_COMBAT_WIDTH"	
 	}
-	
-    # If we are defending and the enemy baseline force has higher combat stats where it matters, increase your force
+
+    # REMOVED: If we are defending and the enemy baseline force has higher combat stats where it matters, increase your force
 	if = {
         limit = {
             exists = scope:own_commander
@@ -317,36 +161,46 @@ land_battle_size = {
                     divide = "scope:front.average_defense(root)"
 					multiply = 0.3
 					add = 1
-					max = 3
+					max = 1
                 }
             }
         }
 		desc = "BATTLE_SIZE_ENEMY_SKILL_ADVANTAGE"
     }
 
-    # If we are advancing and the enemy baseline force has higher combat stats where it matters, increase your force (less than when defending)
+    #  If we are advancing and the enemy baseline force has lower combat stats where it matters, increase your force (less than when defending)
 	if = {
         limit = {
             exists = scope:own_commander
             exists = scope:front
             scope:is_advancing_side = yes
-            "scope:front.average_defense(scope:enemy_country)" > "scope:front.average_offense(root)"
+            "scope:front.average_offense(root)" > "scope:front.average_defense(scope:enemy_country)"
         }
         multiply = {
-            fixed_range = {
-                min = 1
-                max = {
-                    add = "scope:front.average_defense(scope:enemy_country)"
-                    divide = "scope:front.average_offense(root)"
-					multiply = 0.2
-					add = 1
+                    add = "scope:front.average_offense(root)"
+                    divide = "scope:front.average_defense(scope:enemy_country)"
+					add = 0
 					max = 2
-                }
-            }
         }
 		desc = "BATTLE_SIZE_ENEMY_SKILL_ADVANTAGE"
     }
-	
+
+    # Add additional force if we outnumber the enemy
+    if = {
+        limit = {
+            exists = scope:front
+            "scope:front.num_total_battalions(root)" > "scope:front.num_total_battalions(scope:enemy_country)"
+        }
+        multiply = {
+            add = "scope:front.num_total_battalions(root)"
+            divide = "scope:front.num_total_battalions(scope:enemy_country)"
+            add = -1
+            multiply = 0.25
+            add = 1
+            max = 2
+        }
+    }
+
     # Cap to *actually available* troops; either the total number, or if own_commander is advancing, exclude defending commanders' troops
     if = {
         limit = {
@@ -399,8 +253,8 @@ land_battle_size = {
         }
         multiply = {
             fixed_range = {
-                min = 1 #0.33
-                max = 1.0
+                min = 0.9
+                max = 0.9
             }
         }
 		desc = "BATTLE_SIZE_LUCK"
@@ -414,8 +268,8 @@ land_battle_size = {
         }
 		multiply = {
             fixed_range = {
-                min = 1 #0.5
-                max = 1.0
+                min = 1
+                max = 1
             }
         }
 		desc = "BATTLE_SIZE_LUCK"
@@ -433,6 +287,17 @@ land_battle_size = {
 }
 
 
+# root = country
+# own_commander = the commander leading this side in battle (if any; could be garrison)
+# province = land province this battle takes place in
+land_battle_unit_selection_weight = {
+     value = {
+		integer_range = {
+			min = 1
+			max = 100
+		}
+	}
+}
 
 # the warships size for each side in a naval battle
 # root = country

@@ -1,0 +1,474 @@
+﻿namespace = great_rework
+
+great_rework.2 = { # Add Californian Statehood to the USA
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	trigger = {
+		exists = c:CAL
+		exists = c:USA
+		this = c:USA
+		c:CAL = {
+			is_subject = no
+			is_at_war = no
+		}
+		c:USA = {
+			NOT = {
+				has_variable = california_je
+				has_journal_entry = je_california_usa
+			}
+		}
+	}
+	
+	immediate = {
+		c:USA = {
+			add_journal_entry = {
+				type = je_california_usa
+			}
+			set_variable = california_je
+		}
+	}
+}
+great_rework.3 = { # Add Hawaiian Statehood to the USA
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	trigger = {
+		exists = c:HAW
+		exists = c:USA
+		this = c:USA
+		c:HAW = {
+			is_subject = no
+			is_at_war = no
+		}
+		c:USA = {
+			NOT = {
+				has_variable = hawaii_je
+				has_journal_entry = je_hawaii_usa
+			}
+		}
+	}
+	
+	immediate = {
+		c:USA = {
+			add_journal_entry = {
+				type = je_hawaii_usa
+			}
+			set_variable = hawaii_je
+		}
+	}
+}
+
+great_rework.4 = { # Recession
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_interventionism
+		}
+		NOT = {
+			has_game_rule = disallow_recessions
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = recession_start
+				}
+			}
+			set_variable = recession_start
+			set_variable = {
+				name = recession_total_years
+				value = 0
+			}
+			set_variable = {
+				name = recession_average
+				value = 0
+			}
+			set_variable = {
+				name = recession_1plus2
+				value = 0
+			}
+			set_variable = {
+				name = recession_2plus3
+				value = 0
+			}
+			set_variable = {
+				name = recession_3plus4
+				value = 0
+			}
+			set_variable = {
+				name = recession_4plus5
+				value = 0
+			}
+			set_variable = {
+				name = recession_1st
+				value = 2
+			}
+			set_variable = {
+				name = recession_2nd
+				value = 1
+			}
+			set_variable = {
+				name = recession_3rd
+				value = 1
+			}
+			set_variable = {
+				name = recession_4th
+				value = 1
+			}
+			set_variable = {
+				name = recession_5th
+				value = 1
+			}
+			set_variable = {
+				name = recession_6th
+				value = 1
+			}
+			set_variable = {
+				name = recession_1
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_2
+				value = 0
+			}
+			set_variable = {
+				name = recession_3
+				value = 0
+			}
+			set_variable = {
+				name = recession_4
+				value = 0
+			}
+			set_variable = {
+				name = recession_5
+				value = 0
+			}
+			set_variable = {
+				name = recession_6
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				var:recession_1st = 2
+			}
+			set_variable = {
+				name = recession_total_years
+				value = 0
+			}
+			set_variable = {
+				name = recession_average
+				value = 0
+			}
+			set_variable = {
+				name = recession_1
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_1st
+				value = 1
+			}
+			set_variable = {
+				name = recession_2nd
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				var:recession_2nd = 2
+			}
+			set_variable = {
+				name = recession_2
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_2nd
+				value = 1
+			}
+			set_variable = {
+				name = recession_3rd
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				var:recession_3rd = 2
+			}
+			set_variable = {
+				name = recession_3
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_3rd
+				value = 1
+			}
+			set_variable = {
+				name = recession_4th
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				var:recession_4th = 2
+			}
+			set_variable = {
+				name = recession_4
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_4th
+				value = 1
+			}
+			set_variable = {
+				name = recession_5th
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				var:recession_5th = 2
+			}
+			set_variable = {
+				name = recession_5
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_5th
+				value = 1
+			}
+			set_variable = {
+				name = recession_6th
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				var:recession_6th = 2
+			}
+			set_variable = {
+				name = recession_6
+				value = root.gdp
+			}
+			set_variable = {
+				name = recession_6th
+				value = 1
+			}
+			set_variable = {
+				name = recession_1st
+				value = 2
+			}
+			set_variable = {
+				name = recession_1plus2
+				value = 0
+			}
+			change_variable = {
+				name = recession_1plus2
+				add = var:recession_1
+			}
+			change_variable = {
+				name = recession_1plus2
+				add = var:recession_2
+			}
+			set_variable = {
+				name = recession_2plus3
+				value = 0
+			}
+			change_variable = {
+				name = recession_2plus3
+				add = var:recession_1plus2
+			}
+			change_variable = {
+				name = recession_2plus3
+				add = var:recession_3
+			}
+			set_variable = {
+				name = recession_3plus4
+				value = 0
+			}
+			change_variable = {
+				name = recession_3plus4
+				add = var:recession_2plus3
+			}
+			change_variable = {
+				name = recession_3plus4
+				add = var:recession_4
+			}
+			set_variable = {
+				name = recession_4plus5
+				value = 0
+			}
+			change_variable = {
+				name = recession_4plus5
+				add = var:recession_3plus4
+			}
+			change_variable = {
+				name = recession_4plus5
+				add = var:recession_5
+			}
+			set_variable = {
+				name = recession_total_years
+				value = 0
+			}
+			change_variable = {
+				name = recession_total_years
+				add = var:recession_4plus5
+			}
+			change_variable = {
+				name = recession_total_years
+				add = var:recession_6
+			}
+			set_variable = {
+				name = recession_average
+				value = 0
+			}
+			change_variable = {
+				name = recession_average
+				add = var:recession_total_years
+			}
+			change_variable = {
+				name = recession_average
+				divide = 6
+			}
+			if = {
+				limit = {
+					var:recession_average > root.gdp
+				}
+				trigger_event = { id = great_rework.5 }
+			}
+		}
+	}
+}
+
+great_rework.5 = { # Recession occurred
+	type = country_event
+	placement = root
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = great_rework.5.t
+	desc = great_rework.5.d
+	flavor = great_rework.5.f
+
+	duration = 3
+
+	trigger = {
+		# triggered by great_rework.4 event
+	}
+
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = great_rework.5.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_recession
+		}
+		add_modifier = {
+			name = recession_modifier
+			months = 6
+		}
+	}
+}
+great_rework.6 = { # Recession Setup
+	type = country_event
+	placement = root
+	hidden = yes
+	
+	trigger = {
+		# Global effect
+	}
+	
+	immediate = {
+		set_variable = recession_start
+		set_variable = {
+			name = recession_total_years
+			value = 0
+		}
+		set_variable = {
+			name = recession_average
+			value = 0
+		}
+		set_variable = {
+			name = recession_1plus2
+			value = 0
+		}
+		set_variable = {
+			name = recession_2plus3
+			value = 0
+		}
+		set_variable = {
+			name = recession_3plus4
+			value = 0
+		}
+		set_variable = {
+			name = recession_4plus5
+			value = 0
+		}
+		set_variable = {
+			name = recession_1st
+			value = 2
+		}
+		set_variable = {
+			name = recession_2nd
+			value = 1
+		}
+		set_variable = {
+			name = recession_3rd
+			value = 1
+		}
+		set_variable = {
+			name = recession_4th
+			value = 1
+		}
+		set_variable = {
+			name = recession_5th
+			value = 1
+		}
+		set_variable = {
+			name = recession_6th
+			value = 1
+		}
+		set_variable = {
+			name = recession_1
+			value = root.gdp
+		}
+		set_variable = {
+			name = recession_2
+			value = 0
+		}
+		set_variable = {
+			name = recession_3
+			value = 0
+		}
+		set_variable = {
+			name = recession_4
+			value = 0
+		}
+		set_variable = {
+			name = recession_5
+			value = 0
+		}
+		set_variable = {
+			name = recession_6
+			value = 0
+		}
+	}
+}

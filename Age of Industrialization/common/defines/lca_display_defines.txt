@@ -1,4 +1,0 @@
-NEconomy = {
-	PRICE_REPORT_MAX_ENTRIES = 8
-	GOODS_LEADERBOARD_SIZE = 20					# How many spots there are on each goods leaderboard, default: 10
-}

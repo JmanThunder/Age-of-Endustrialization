@@ -1,0 +1,8 @@
+﻿l_japanese:
+ je_open_japan:0 "黒船"
+ je_open_japan_reason:0 "夷人たちが、威力で我々の港を開こうとしています！"
+ open_japan.1.t:0 "黒船の来航"
+ open_japan.1.d:0 "開国"
+ open_japan.1.f:0 "異国の艦隊が私たちの港のひとつに到着し、市場開放を求めています。　これを拒めば、アヘン戦争と同じ轍を踏む事になるやもしれません。　一方、これに服するならば、二百余年にわたる幕府の鎖国令は終焉を迎え、日出ずる国の行く末を永遠に変えるでしょう。" #I'm translated a little fix for lore-friendly of freely.
+ open_japan.1.a:0 "我々は、夷狄などには服属しない！"
+ open_japan.1.b:0 "我々は、耐え難きを耐えるのだ。"

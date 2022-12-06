@@ -31,7 +31,7 @@
 	}
 
 	pop_weight = {
-		value = 50
+		value = 25
 
 		add = {
 			desc = "RURAL_POP"
@@ -88,7 +88,7 @@
 		}
 
 		add = {
-			desc = "law_cultural_exclusion" #they took our jobs!
+			desc = "CULTURAL_EXCLUSION" #they took our jobs!
 			if = {
 				limit = {
 					owner = {
@@ -98,18 +98,10 @@
 				}
 				value = 25
 			}
-			else_if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_cultural_exclusion
-					}
-				}
-				value = 10
-			}
 		}	
 
 		add = {
-			desc = "law_multicultural" #de terk er jerbs!
+			desc = "MULTICULTURALISM" #de terk er jerbs!
 			if = {
 				limit = {
 					owner = {
@@ -118,14 +110,6 @@
 					literacy_rate < 0.90
 				}
 				value = 50
-			}
-			else_if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_multicultural
-					}
-				}
-				value = 20
 			}
 		}
 
@@ -194,49 +178,14 @@
 			}
 		}
 
-		add = {
-			desc = "law_national_guard"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_national_guard
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_no_police"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_no_police
-					}
-				}
-				value = 10
-			}
-		}
-
-		add = {
-			desc = "law_no_migration_controls"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_no_migration_controls
-					}
-				}
-				value = 10
-			}
-		}
-
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
 				leader = {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}

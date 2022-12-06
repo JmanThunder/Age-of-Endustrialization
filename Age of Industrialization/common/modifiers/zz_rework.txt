@@ -1,0 +1,18 @@
+pm_offense_defense_readjustment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.25
+	unit_defense_mult = -0.25
+}
+modifier_texas_war_of_independence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_add = 0.75
+	unit_defense_mult = 0.75
+}
+recession_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_loan_interest_rate_add = 0.1
+	country_minting_mult = -0.15
+	state_capitalists_investment_pool_contribution_mult = 0.25
+	country_prestige_mult = -0.05
+	state_radicals_from_sol_change_mult = 0.25
+}

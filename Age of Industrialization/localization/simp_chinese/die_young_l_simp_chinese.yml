@@ -1,0 +1,4 @@
+﻿l_simp_chinese:
+ notification_ruler_die_young_notification_name: "我们伟大的 [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] 已经死了"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], 已去世 [SCOPE.GetRootScope.GetCharacter.GetAge]. 将根据国家法律任命新的统治者."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

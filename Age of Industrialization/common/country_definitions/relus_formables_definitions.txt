@@ -1,0 +1,97 @@
+﻿#REGIONAL FORMABLES
+MDL = {
+	color = { 45 95 145 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee dixie }
+	capital = STATE_PENNSYLVANIA
+}
+
+GLK = {
+	color = { 17 33 138 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee }
+	capital = STATE_MICHIGAN
+}
+
+SLF = {
+	color = { 255 255 217 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { dixie }
+	capital = STATE_VIRGINIA
+}
+
+DIX = {
+	color = { 254 178 76 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { dixie }
+	capital = STATE_GEORGIA
+}
+
+GDK = {
+	color = { 140 150 198 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee }
+	capital = STATE_SOUTH_DAKOTA
+}
+
+RVR = {
+	color = { 37 79 176 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee dixie }
+	capital = STATE_MISSOURI
+}
+
+GTX = {
+	color = { 277 26 28 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { dixie }
+	capital = STATE_TEXAS
+}
+
+RKY = {
+	color = { 138 17 17 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee dixie }
+	capital = STATE_COLORADO
+}
+
+ACA = {
+	color = { 222 171 31 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee }
+	capital = STATE_CALIFORNIA
+}
+
+CSD = {
+	color = { 9 87 10 }
+	country_type = recognized
+	tier = grand_principality
+	cultures = { yankee }
+	capital = STATE_WASHINGTON
+}
+
+#MAJOR FORMABLES
+GPA = {
+	color = { 204 177 22 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yankee dixie }
+	capital = STATE_KANSAS
+}
+
+PSA = {
+	color = { 204 52 22 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { yankee }
+	capital = STATE_CALIFORNIA
+}

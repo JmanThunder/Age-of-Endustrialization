@@ -10,7 +10,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Luis_2_Jose_de_Orbegoso
+				historical_figures
 				ambitious
 			}
 		}
@@ -22,7 +22,7 @@
 			interest_group = ig_armed_forces
 			age = 44
 			traits = {
-				concept_wikipedia_Andres_de_Santa_Cruz
+				historical_figures
 				arrogant
 			#	military_family
 			}

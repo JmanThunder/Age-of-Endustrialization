@@ -1,3 +1,0 @@
-﻿l_simp_chinese:
- construction_queue_text:0 "[ConstructionQueueElement.GetBuilding.GetName]位于[ConstructionQueueElement.GetState.GetName]"
- BUILDING_MAP_LIST_PANEL_PLANNED_CONSTRUCTION_QUEUE_HEADER_TOOLTIP_MOD:0 "#header 地区建造队列#!"

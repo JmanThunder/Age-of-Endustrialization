@@ -1,5 +1,0 @@
-﻿l_japanese:
-  dp_small_annex_war: "Small Annexation"
-  dp_small_annex_war_tooltip: "#header Start a Small Annexation [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\nSets the initiating [concept_war_goal] to completely annex the targeted [concept_country] with less than 6 states."
-  dp_large_annex_war: "Large Annexation"
-  dp_large_annex_war_tooltip: "#header Start a Large Annexation [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\nSets the initiating [concept_war_goal] to completely annex the targeted [concept_country]."

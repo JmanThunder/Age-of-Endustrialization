@@ -1,0 +1,50 @@
+﻿IMP = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_imperial_federation
+	leadership_play = dp_leadership_imperial_federation
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:welsh
+			country_has_primary_culture = cu:scottish
+			country_has_primary_culture = cu:australian
+            country_has_primary_culture = cu:anglo_canadian
+		}
+		has_technology_researched = pan-nationalism
+		owns_entire_state_region = STATE_HOME_COUNTIES
+		owns_entire_state_region = STATE_QUEBEC
+		owns_entire_state_region = STATE_ONTARIO
+		owns_entire_state_region = STATE_NEW_BRUNSWICK
+		owns_entire_state_region = STATE_PRINCE_EDWARD_ISLAND
+		owns_entire_state_region = STATE_MANITOBA
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_BRITISH_COLUMBIA
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_NEWFOUNDLAND
+		owns_entire_state_region = STATE_YUKON_TERRITORY
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+		owns_entire_state_region = STATE_EASTERN_CAPE
+		owns_entire_state_region = STATE_NORTHERN_CAPE
+		owns_entire_state_region = STATE_CAPE_COLONY
+		owns_entire_state_region = STATE_BAHAMAS
+		owns_entire_state_region = STATE_JAMAICA
+		owns_entire_state_region = STATE_SOUTH_ISLAND
+		owns_entire_state_region = STATE_NORTH_ISLAND
+		owns_entire_state_region = STATE_TASMANIA
+		owns_entire_state_region = STATE_VICTORIA
+		owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		owns_entire_state_region = STATE_QUEENSLAND
+		owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+		owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+		owns_entire_state_region = STATE_NORTHERN_TERRITORY
+	}
+}

@@ -1,8 +1,0 @@
-﻿slave_market_tech = {
-	era = era_1
-	texture = "gfx\interface\icons\invention_icons/slaver.dds"
-	category = society
-	
-	modifier = {
-	}
-}

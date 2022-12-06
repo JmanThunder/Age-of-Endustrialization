@@ -16,6 +16,7 @@
 	possible = {
 		has_interest_marker_in_region = region_pacific_coast	
 		is_at_war = no
+		has_technology_researched = quinine
 		any_scope_character = {
 			OR = {
 				has_role = general
@@ -35,7 +36,7 @@
 			set_variable = {
 				name = ai_expedition_cooldown
 				value = yes
-				days = 365
+				days = 1825
 			}		
 		}			
 	}
@@ -47,7 +48,7 @@
 				weekly_net_fixed_income > money_amount_multiplier_medium
 				gold_reserves > 0
 			}
-			add = 100
+			add = 1
 		}
 		modifier = {
 			trigger = {

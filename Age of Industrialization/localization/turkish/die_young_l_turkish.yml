@@ -1,0 +1,4 @@
+﻿l_turkish:
+ notification_ruler_die_young_notification_name: "Bizim harika [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] öldü"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], [SCOPE.GetRootScope.GetCharacter.GetAge] yaşında öldü. Ülkenin yasalarına göre yeni bir hükümdar atanacak."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

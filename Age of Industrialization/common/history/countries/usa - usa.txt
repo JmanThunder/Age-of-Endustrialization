@@ -22,8 +22,7 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
-		activate_law = law_type:law_dual_federalism
-		activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:dual_federalism
 
 		
 		set_institution_investment_level = {
@@ -49,10 +48,10 @@
 		}
 		
 		ig:ig_landowners = { 
-			add_ruling_interest_group = yes
 			set_interest_group_name = ig_southern_planters
 			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_republican_paternalistic
+			add_ruling_interest_group = yes
 		}
 
 		ig:ig_devout = {
@@ -71,10 +70,6 @@
 		add_modifier = {
 			name = missouri_compromise
 		}
-		add_modifier = {
-			name = second_great_awakening_mod
-			months = 125
-			is_decaying = yes
-		}
+		
 	}
 }

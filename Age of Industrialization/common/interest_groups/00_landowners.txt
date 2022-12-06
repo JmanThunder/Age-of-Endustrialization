@@ -94,8 +94,8 @@
 				}
 				value = 200
 			}
-		}	
-
+		}				
+		
 		add = {
 			desc = "PLANTATION_EMPLOYMENT"
 			if = {
@@ -111,13 +111,14 @@
 			scope:interest_group = {
 				leader = {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}
 		}	
-
+		
 		multiply = {
 			desc = "IG_IS_MARGINALIZED"
 			value = 1.0

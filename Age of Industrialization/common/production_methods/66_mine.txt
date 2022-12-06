@@ -1,4 +1,4 @@
-﻿pm_worker_cooperative_building_coal_mine = {
+pm_worker_cooperative_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_production_methods = {

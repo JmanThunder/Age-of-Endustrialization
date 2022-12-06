@@ -26,4 +26,3 @@
  RESOURCE_POP:0 "資源産業の雇用"
  SMALL_URBAN_CENTER:0 "アーバン センター 5 未満"
  NO_URBAN_CENTER:0 "アーバン センターなし"
- NO_SOCIALISM:0 "#v $socialism$#! [concept_technology]はアンロックされていません"

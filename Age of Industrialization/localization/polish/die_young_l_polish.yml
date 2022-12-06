@@ -1,0 +1,4 @@
+﻿l_polish:
+ notification_ruler_die_young_notification_name: "Umarł nasz wielki  [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], zmarł w wieku [SCOPE.GetRootScope.GetCharacter.GetAge]. Nowy władca zostanie powołany zgodnie z prawami kraju."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

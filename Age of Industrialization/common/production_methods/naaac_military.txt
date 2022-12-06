@@ -1,0 +1,749 @@
+﻿pm_ship_of_the_line_battery = {
+	texture = "gfx/interface/icons/production_method_icons/ship_of_the_line_battery.dds"
+	unlocking_production_methods = {
+		pm_man_o_wars
+	}
+}
+
+pm_ship_of_the_line_armor = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_ships.dds"
+	unlocking_production_methods = {
+		pm_man_o_wars
+	}
+}
+
+########################################################################################################################################################
+
+pm_ironcloud_battery_9 = {
+	texture = "gfx/interface/icons/production_method_icons/ironcloluds_battery_9.dds"
+	is_default = yes
+	unlocking_technologies = {
+		ironclad_tech
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.3
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 60
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.1
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 15
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_ironcloud_battery_10 = {
+	texture = "gfx/interface/icons/production_method_icons/ironcloluds_battery_10.dds"
+	unlocking_technologies = {
+		gantry_cranes
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.4
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 75
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.15
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 17.25
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_ironcloud_battery_11 = {
+	texture = "gfx/interface/icons/production_method_icons/ironcloluds_battery_11.dds"
+	unlocking_technologies = {
+		breech_loading_artillery
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.5
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 90
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.20
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 19.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+######################################################################################################################################
+
+
+
+pm_ironcloud_armor_7 = {
+	texture = "gfx/interface/icons/production_method_icons/ironclouds_armor_7.dds"
+	is_default = yes
+	unlocking_technologies = {
+		ironclad_tech
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.3
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 60
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.1
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 15
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_ironcloud_armor_8 = {
+	texture = "gfx/interface/icons/production_method_icons/ironclouds_armor_8.dds"
+	unlocking_technologies = {
+		gantry_cranes
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.4
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 75
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.15
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 17.25
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_ironcloud_armor_9 = {
+	texture = "gfx/interface/icons/production_method_icons/ironclouds_armor_9.dds"
+	unlocking_technologies = {
+		breech_loading_artillery
+	}
+	unlocking_production_methods = {
+		pm_ironclads
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.5
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 90
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.20
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 19.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+########################################################################################################################################################
+
+pm_monitor_battery_10 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_battery_10.dds"
+	is_default = yes
+	unlocking_technologies = {
+		monitor_tech
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.65
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 100
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.3
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 25
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_monitor_battery_11 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_battery_11.dds"
+	unlocking_technologies = {
+		floating_harbor
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.7
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 175
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.35
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 37.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_monitor_battery_12 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_battery_12.dds"
+	unlocking_technologies = {
+		open_hearth_process
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.75
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 250
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.40
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 50
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+######################################################################################################################################
+
+
+
+pm_monitor_armor_9 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_armor_9.dds"
+	is_default = yes
+	unlocking_technologies = {
+		monitor_tech
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.65
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 100
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.3
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 25
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_monitor_armor_10 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_armor_10.dds"
+	unlocking_technologies = {
+		floating_harbor
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.7
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 115
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.35
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 27.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_monitor_armor_11 = {
+	texture = "gfx/interface/icons/production_method_icons/monitors_armor_11.dds"
+	unlocking_technologies = {
+		open_hearth_process
+	}
+	unlocking_production_methods = {
+		pm_monitors
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 0.75
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 130
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.4
+		}
+	}
+	
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 30
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+
+
+
+
+####################################################################################################################################
+
+
+
+pm_early_dreadnought_battery_12 = {
+	texture = "gfx/interface/icons/production_method_icons/early_dreadnoughts_battery_12.dds"
+	is_default = yes
+	unlocking_technologies = {
+		dreadnought
+	}
+	unlocking_production_methods = {
+		pm_dreadnoughts
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 320
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.5
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 97
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+####################################################################################################################################
+
+
+
+pm_early_dreadnought_armor_11 = {
+	texture = "gfx/interface/icons/production_method_icons/early_dreadnought_armor_11.dds"
+	is_default = yes
+	unlocking_technologies = {
+		dreadnought
+	}
+	unlocking_production_methods = {
+		pm_dreadnoughts
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 320
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.5
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 75
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+###########################################################################################################################################
+
+pm_late_dreadnought_battery_13 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_battery_13.dds"
+	is_default = yes
+	unlocking_technologies = {
+		battleship_tech
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.2
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 400
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.6
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 112.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_battery_14 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_battery_14.dds"
+	is_default = yes
+	unlocking_technologies = {
+		concrete_dockyards
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.3
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 500
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.7
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 145
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_battery_15 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_battery_15.dds"
+	unlocking_technologies = {
+		arc_welding
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.4
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 600
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.8
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 130
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_battery_16 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_battery_16.dds"
+	unlocking_technologies = {
+		battlefleet_tactics
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.5
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 700
+		}
+		unscaled = {
+			unit_morale_damage_mult = 0.9
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 148
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+###########################################################################################################################################
+
+pm_late_dreadnought_armor_11 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_armor_11.dds"
+	is_default = yes
+	unlocking_technologies = {
+		battleship_tech
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.2
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 400
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.6
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 112.5
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_armor_12 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_armor_12.dds"
+	is_default = yes
+	unlocking_technologies = {
+		concrete_dockyards
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.3
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 500
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.7
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 150
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_armor_13 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_armor_13.dds"
+	unlocking_technologies = {
+		arc_welding
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.4
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 600
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.8
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 174
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_late_dreadnought_armor_14 = {
+	texture = "gfx/interface/icons/production_method_icons/late_dreadnoughts_armor_14.dds"
+	unlocking_technologies = {
+		battlefleet_tactics
+	}
+	unlocking_production_methods = {
+		pm_battleships
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		building_input_ironclads_add = 1.5
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 700
+		}
+		unscaled = {
+			unit_morale_protection_mult = 0.9
+		}
+	}
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 199
+		}
+	}
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}

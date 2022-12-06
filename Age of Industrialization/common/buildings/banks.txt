@@ -1,0 +1,61 @@
+﻿# Bank
+building_bank = {
+	building_group = bg_finance
+	city_type = city
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		banking
+	}
+
+	production_method_groups = {
+        pmg_operations_bank
+		pmg_ownership_building_bank
+	}
+	
+	texture = "gfx/interface/icons/building_icons/building_bank_1.dds"
+
+	required_construction = construction_cost_medium
+}
+
+# Central Bank
+building_central_bank = {
+	building_group = bg_government
+	city_type = city
+	buildable = yes
+	expandable = no
+	downsizeable = no
+	levels_per_mesh = 5
+	
+	has_max_level = yes
+
+	unlocking_technologies = {
+		central_banking
+	}
+
+	production_method_groups = {
+		pmg_base_building_central_bank
+		pmg_central_policy
+	}
+
+	texture = "gfx/interface/icons/building_icons/central_bank.dds"
+
+	required_construction = construction_cost_medium
+
+	can_build = {
+		error_check = {
+			severity = fail
+			is_capital = yes
+			owner = {
+				NOT = {
+					any_scope_state = {
+						has_building = building_central_bank
+					}
+				}
+			}
+		}
+	}
+	
+	ai_value = 10000
+	
+}

@@ -187,13 +187,6 @@ expedition_events.300 = { #Sucessful expedition - Buenaventura River
 		remove_variable = on_expedition
 		remove_expedition_events_effect = yes
 		set_global_variable = buenaventura_river_disproven
-		random_scope_character = {
-			limit = {
-				has_variable = expedition_leader_var
-			}
-			remove_variable = expedition_leader_var
-			save_scope_as = expedition_leader
-		}
 	}
 
 	option = {
@@ -234,13 +227,6 @@ expedition_events.301 = { #Sucessful expedition - Oregon Trail
 		remove_variable = on_expedition
 		remove_expedition_events_effect = yes
 		set_global_variable = oregon_trail_mapped
-		random_scope_character = {
-			limit = {
-				has_variable = expedition_leader_var 
-			}
-			remove_variable = expedition_leader_var
-			save_scope_as = expedition_leader
-		}
 	}
 
 	option = {
@@ -285,7 +271,6 @@ expedition_events.302 = { #Sucessful expedition - Great Salt Lake
 			limit = {
 				has_variable = expedition_leader_var 
 			}
-			remove_variable = expedition_leader_var
 			save_scope_as = expedition_leader
 		}
 	}
@@ -325,10 +310,8 @@ expedition_events.205 = { #Failed expedition
 
     immediate = {
     	west_america_expedition_location = yes
-		remove_expedition_events_effect = yes
 		random_scope_character = {
 			limit = { has_variable = expedition_leader_var }
-			remove_variable = expedition_leader_var
 			save_scope_as = expedition_leader
 		}
     }
@@ -384,10 +367,10 @@ expedition_events.220 = { #crossing a river
 		name = expedition_events.220.a
 		default_option = yes
 		random_list = {
-			75= { #75%
+			10 = { #50%
 				trigger_event = { id = expedition_events.221 days = 0 popup = yes }
 			}
-			25= { #25%
+			10 = { #50%
 				trigger_event = { id = expedition_events.222 days = 0 popup = yes}
 			}
 		}
@@ -409,11 +392,11 @@ expedition_events.220 = { #crossing a river
 		custom_tooltip = jump_river_tt
 		hidden_effect = {
 			random_list = {
-				75= {
+				99 = {
 					set_variable = jump_river_fail_var
 					trigger_event = { id = expedition_events.222 days = 0 popup = yes }
 				}
-				25 = {
+				1 = {
 					set_variable = jump_river_success_var
 					trigger_event = { id = expedition_events.221 days = 0 popup = yes }
 				}
@@ -521,10 +504,10 @@ expedition_events.230 = { #Bear sighted
 		name = expedition_events.230.a
 		default_option = yes
 		random_list = {
-			75 = {
+			10 = {
 				trigger_event = { id = expedition_events.231 days = 0 popup = yes } #Success
 			}
-			25 = {
+			10 = {
 				trigger_event = { id = expedition_events.232 days = 0 popup = yes} #Failure
 			}
 		}
@@ -1417,10 +1400,10 @@ expedition_events.293 = { #give these men a quest
 				has_variable = disciplinary_sanctions_var
 			}
 			random_list = {
-				25 = { #they flee
+				50 = { #they flee
 					add_medium_peril_effect = yes
 				}
-				75 = {
+				50 = {
 					trigger_event = { id = expedition_events.295 days = 3 }
 				}
 			}
@@ -1439,10 +1422,10 @@ expedition_events.293 = { #give these men a quest
 				has_variable = disciplinary_sanctions_var
 			}
 			random_list = {
-				25 = { #they flee
+				50 = { #they flee
 					add_medium_peril_effect = yes
 				}
-				75 = {
+				50 = {
 					trigger_event = { id = expedition_events.294 days = 3 }
 				}
 			}
@@ -1544,10 +1527,10 @@ expedition_events.295 = { #hunting party
 		name = expedition_events.295.a
 		default_option = yes
 		random_list = {
-			25 = {
+			33 = {
 				add_medium_peril_effect = yes
 			}
-			75 = {
+			66 = {
 				expedition_minor_progress_effect = yes
 			}
 		}
@@ -1556,13 +1539,13 @@ expedition_events.295 = { #hunting party
 	option = { #go for the great game
 		name = expedition_events.295.b
 		random_list = {
-			10 = {
+			33 = {
 				add_medium_peril_effect = yes
 			}
-			15 = {
+			33 = {
 				add_large_peril_effect = yes
 			}
-			75 = {
+			33 = {
 				expedition_moderate_progress_effect = yes
 			}
 		}
@@ -1624,10 +1607,10 @@ expedition_events.296 = { #listen to your guide
 	option = { #take the faster route
 		name = expedition_events.296.b
 		random_list = {
-			25 = {
+			50 = {
 				add_medium_peril_effect = yes
 			}
-			75 = {
+			50 = {
 				expedition_minor_progress_effect = yes
 			}
 		}
@@ -1679,11 +1662,10 @@ expedition_events.297 = { #cabin fever
         default_option = yes
         custom_tooltip = expedition_event_delayed_tt
         random_list = {
-            25 = {
+            50 = {
                 add_small_peril_effect = yes
             }
-            75 = {
-		expedition_minor_progress_effect = yes
+            50 = {
             }
         }
     }

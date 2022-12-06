@@ -26,4 +26,3 @@
  RESOURCE_POP:0 "Занятость в ресурсной отрасли"
  SMALL_URBAN_CENTER:0 "Городской центр Меньше 5"
  NO_URBAN_CENTER:0 "Нет городского центра"
- NO_SOCIALISM:0 "[concept_technology] #v $socialism$#! не открыта"

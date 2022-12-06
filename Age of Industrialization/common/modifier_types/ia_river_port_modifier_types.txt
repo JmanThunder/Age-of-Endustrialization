@@ -1,5 +1,0 @@
-﻿state_building_ia_river_port_max_level_add = {
-	good = yes
-	percent = no
-	num_decimals = 0
-}

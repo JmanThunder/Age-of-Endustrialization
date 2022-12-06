@@ -1,0 +1,11 @@
+﻿popneed_finance = {
+	default = securities
+	
+	entry = {
+		goods = securities
+		
+		weight = 1.0
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+}

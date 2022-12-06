@@ -13,7 +13,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Shamil_Murid
+				historical_figures
 				pious
 				ambitious
 				brave
@@ -25,7 +25,7 @@
 			last_name = "Murad"
 			birth_date = 1818.2.1
 			traits = {
-				concept_wikipedia_Hadji_Murad
+				historical_figures
 				mountain_commander
 				brave
 				cruel

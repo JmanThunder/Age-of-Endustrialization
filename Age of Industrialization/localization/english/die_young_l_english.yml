@@ -1,0 +1,4 @@
+﻿l_english:
+ notification_ruler_die_young_notification_name: "Our great [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] has died"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] of [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], has died at the age of [SCOPE.GetRootScope.GetCharacter.GetAge]. A new ruler will be appointed in line with the laws of the land."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"

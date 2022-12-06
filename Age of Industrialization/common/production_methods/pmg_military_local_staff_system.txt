@@ -1,14 +1,78 @@
-﻿
-#骑兵传令
+﻿pm_no_independent_judgement_system = {
+	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
+	building_modifiers = {
+		level_scaled = {
+			building_employment_officers_add = 100
+			building_employment_soldiers_add = 900
+			building_training_rate_add = 100
+		}
+		throughput_scaled = {
+			unit_offense_add = 10
+			unit_defense_add = 15
+		}
+	}
+}
+pm_independent_judgement_system = {
+	texture = "gfx/interface/icons/production_method_icons/unused/skirmish_infantry_old.dds"                     
+
+	unlocking_technologies = {
+		general_staff
+	}
+	
+	unlocking_production_methods = {
+		pm_electric_telegraph_order_transmission
+		pm_elite_training
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_officers_add = 200
+			building_employment_soldiers_add = 1300
+			building_training_rate_add = 200
+		}
+		throughput_scaled = {
+			unit_offense_add = 20
+			unit_defense_add = 30
+		}
+	}
+}
+pm_independent_judgement_with_hq_order_system = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+
+	unlocking_technologies = {
+		wargaming
+	}
+	
+	unlocking_production_methods = {
+		pm_telephone_order_transmission
+		pm_radio_order_transmission
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_officers_add = 400
+			building_employment_soldiers_add = 1600
+			building_training_rate_add = 300
+		}
+		throughput_scaled = {
+			unit_offense_add = 30
+			unit_defense_add = 40
+		}
+	}
+}
 pm_cavalry_order_transmission = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
 	
 	building_modifiers = {
 		level_scaled = {
+			building_employment_soldiers_add = 100
+		}
+		throughput_scaled = {
+			unit_offense_add = 5
+			unit_defense_add = 5
 		}
 	}
 }
-#电报传令
 pm_electric_telegraph_order_transmission = {
 	texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"
 	
@@ -18,19 +82,17 @@ pm_electric_telegraph_order_transmission = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 1
-			building_input_electricity_add = 1
+			building_input_tools_add = 20
 		}
 		level_scaled = {
+			building_employment_soldiers_add = 100
 		}
-	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 1
+		throughput_scaled = {
+			unit_offense_add = 10
+			unit_defense_add = 10
 		}
 	}
 }
-#电话传令
 pm_telephone_order_transmission = {
 	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
 	
@@ -40,19 +102,18 @@ pm_telephone_order_transmission = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_telephones_add = 1
-			building_input_electricity_add = 3
+			building_input_telephones_add = 20
+			building_input_electricity_add = 20
 		}
 		level_scaled = {
+			building_employment_soldiers_add = 100
 		}
-	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 2
+		throughput_scaled = {
+			unit_offense_add = 15
+			unit_defense_add = 15
 		}
 	}
 }
-#无线电传令
 pm_radio_order_transmission = {
 	texture = "gfx/interface/icons/production_method_icons/unused/radio_stations.dds"
 	
@@ -62,77 +123,39 @@ pm_radio_order_transmission = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_radios_add = 1
-			building_input_electricity_add = 5
+			building_input_radios_add = 20
+			building_input_electricity_add = 20
 		}
 		level_scaled = {
+			building_employment_soldiers_add = 100
+		}
+		throughput_scaled = {
+			unit_offense_add = 20
+			unit_defense_add = 20
 		}
 	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_army_power_projection_add = 3
-		}
-	}
 }
-
-pm_balanced_war_order = {
-	texture = "gfx/interface/icons/battle_conditions/unused/battle_condition_risky_maneuver.dds"
-}
-pm_not_attack_complex_terrain_war_order = {
-	texture = "gfx/interface/icons/battle_conditions/battle_condition_mud.dds"
-	disallowing_laws = {
-		law_peasant_levies
-	}
-}
-pm_not_far_from_coastline_war_order = {
-	texture = "gfx/interface/icons/commander_order_icons/patrol_coast.dds"
-	disallowing_laws = {
-		law_peasant_levies
-	}
-}
-pm_attack_city_area_war_order = {
-	texture = "gfx/interface/icons/production_method_icons/unused/stock_exchange.dds"
-	disallowing_laws = {
-		law_peasant_levies
-	}
-}
-pm_attack_supply_lines_war_order = {
-	texture = "gfx/interface/icons/battle_conditions/battle_condition_broken_supply_line.dds"
-	disallowing_laws = {
-		law_peasant_levies
-	}
-}
-##训练
 pm_minimal_training = {
 	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
-
-	building_modifiers = {
-		unscaled = {
-			unit_army_offense_mult = -0.2
-			unit_army_defense_mult = -0.2
-			building_training_rate_mult = 0.2
-		}
-	}
-	state_modifiers = {
-		
-	}
 }
 pm_initial_training = {
 	texture = "gfx/interface/icons/production_method_icons/unused/guns.dds"
-	is_default = yes
+
 	unlocking_technologies = {
 		army_reserves
 	}
 
 	building_modifiers = {
-		unscaled = {
-			unit_army_offense_mult = -0.1
-			unit_army_defense_mult = -0.1
-			building_training_rate_mult = 0.1
+		workforce_scaled = {
+			building_input_small_arms_add = 20
 		}
-	}
-	state_modifiers = {
-		
+		level_scaled = {
+			building_employment_officers_add = 200
+		}
+		throughput_scaled = {
+			unit_offense_add = 5
+			unit_defense_add = 5
+		}
 	}
 }
 pm_professional_training = {
@@ -149,7 +172,15 @@ pm_professional_training = {
 	}
 
 	building_modifiers = {
+		workforce_scaled = {
+			building_input_small_arms_add = 30
+		}
 		level_scaled = {
+			building_employment_officers_add = 400
+		}
+		throughput_scaled = {
+			unit_offense_add = 10
+			unit_defense_add = 10
 		}
 	}
 }
@@ -166,13 +197,15 @@ pm_elite_training = {
 	}
 
 	building_modifiers = {
-		unscaled = {
-			unit_army_offense_mult = 0.2
-			unit_army_defense_mult = 0.2
-			building_training_rate_mult = -0.2
+		level_scaled = {
+			building_employment_officers_add = 800
 		}
-	}
-	state_modifiers = {
-		
+		workforce_scaled = {
+			building_input_small_arms_add = 40
+		}
+		throughput_scaled = {
+			unit_offense_add = 15
+			unit_defense_add = 15
+		}
 	}
 }

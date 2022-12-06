@@ -1,0 +1,5 @@
+colors = {
+	1BEN_red = rgb{ 255 0 0 }
+	1BEN_blue = rgb{ 0 57 166 }
+	1BEN_white = rgb{ 255 255 255 }
+}

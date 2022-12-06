@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Friedrich_Franz_von_Mecklenburg-Schwerin
+				historical_figures
 				arrogant
 			}
 			on_created = {
@@ -28,7 +28,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Paul_Friedrich_von_Mecklenburg-Schwerin
+				historical_figures
 				reserved
 			}
 			on_created = {

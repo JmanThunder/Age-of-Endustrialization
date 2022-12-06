@@ -9,7 +9,7 @@ afg_general_mohammed = {
 	interest_group = ig_landowners
 	birth_date = 1800.1.1 # Uncertain birth date
 	traits = {
-		concept_wikipedia_Yar_Mohammed
+		historical_figures
 	}
 	commander_usage = {
 		country_trigger = {
@@ -32,7 +32,7 @@ chi_admiral_ding_ruchang = {
 	interest_group = ig_armed_forces
 	birth_date = 1836.11.18
 	traits = {
-		concept_wikipedia_Ruchang_Ding
+		historical_figures
 		basic_naval_commander
 		dockyard_master
 		direct
@@ -58,7 +58,7 @@ chi_admiral_sa_chenbing = {
 	interest_group = ig_armed_forces
 	birth_date = 1859.4.30
 	traits = {
-		concept_wikipedia_Chenbing_Sa
+		historical_figures
 		basic_naval_commander
 		innovative
 		cautious
@@ -84,7 +84,7 @@ chi_general_yuan_shikai = {
 	interest_group = ig_armed_forces
 	birth_date = 1859.9.16
 	traits = {
-		concept_wikipedia_Shikai_Yuan
+		historical_figures
 		ambitious
 		persistent
 		# army reformer, but insignificant field commander 
@@ -110,7 +110,7 @@ chi_general_zeng_guofan = {
 	interest_group = ig_armed_forces
 	birth_date = 1811.11.26
 	traits = {
-		concept_wikipedia_Guofan_Zeng
+		historical_figures
 		plains_commander
 		pious
 		pillager
@@ -136,7 +136,7 @@ chi_general_sengge_rinchen = {
 	interest_group = ig_landowners
 	birth_date = 1811.2.26
 	traits = {
-		concept_wikipedia_Sengge_Rinchen_Borjigin
+		historical_figures
 		stalwart_defender
 		experienced_artillery_commander
 		meticulous
@@ -167,7 +167,7 @@ jap_admiral_togo = {
 	interest_group = ig_armed_forces
 	birth_date = 1848.1.27
 	traits = {
-		concept_wikipedia_Heihachiro_Togo
+		historical_figures
 		expert_naval_commander
 		direct
 		meticulous
@@ -193,7 +193,7 @@ jap_general_saigo = {
 	interest_group = ig_landed_gentry
 	birth_date = 1828.1.23
 	traits = {
-		concept_wikipedia_Takamori_Saigo
+		historical_figures
 		basic_offensive_planner
 		romantic
 		brave
@@ -219,7 +219,7 @@ jap_general_gentaro = {
 	interest_group = ig_landed_gentry
 	birth_date = 1852.3.16
 	traits = {
-		concept_wikipedia_Gentaro_Kodama
+		historical_figures
 		experienced_offensive_planner
 		experienced_colonial_administrator
 		innovative
@@ -245,7 +245,7 @@ jap_general_oyama = {
 	interest_group = ig_landed_gentry
 	birth_date = 1842.11.12
 	traits = {
-		concept_wikipedia_Iwao_Oyama
+		historical_figures
 		experienced_offensive_planner
 		trench_rat
 		reserved
@@ -272,7 +272,7 @@ pan_general_singh = {
 	interest_group = ig_landowners
 	birth_date = 1807.12.4
 	traits = {
-		concept_wikipedia_Sher_Singh
+		historical_figures
 		reckless
 	}
 	commander_usage = {
@@ -296,7 +296,7 @@ tur_general_pasha = {
 	interest_group = ig_landowners
 	birth_date = 1804.2.4 # Only birth year certain
 	traits = {
-		concept_wikipedia_Mehmed_Naik_Pasha
+		historical_figures
 		persistent
 		basic_diplomat
 	}
@@ -321,7 +321,7 @@ tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
 	interest_group = ig_armed_forces
 	birth_date = 1822.4.1
 	traits = {
-		concept_wikipedia_Hobart_Pasha
+		historical_figures
 		experienced_convoy_raider
 		reckless
 	}
@@ -347,7 +347,7 @@ tur_general_mehmed_ali = { # Ludwig Karl Friedrich Detroit
 	interest_group = ig_armed_forces
 	birth_date = 1827.11.18
 	traits = {
-		concept_wikipedia_Mehmed_Ali_Pasha
+		historical_figures
 		defense_in_depth_specialist
 		pillager
 	}
@@ -373,7 +373,7 @@ tur_general_osman_nuri = {
 	interest_group = ig_armed_forces
 	birth_date = 1832.2.18
 	traits = {
-		concept_wikipedia_Osman_Nuri_Pasha
+		historical_figures
 		stalwart_defender
 		experienced_defensive_strategist
 		brave

@@ -16,65 +16,59 @@
 	}
 
 	on_complete = {
-		hidden_effect = {
 		remove_modifier = missouri_compromise
-		remove_modifier = mexican_cession_compromise
-		remove_modifier = mexican_cession_proviso
-		remove_modifier = mexican_cession_pop_sov
-		remove_modifier = dred_scott_for_scot_mod
-		remove_modifier = dred_scott_for_sand_mod
-	}
 	}
 
 	fail = {
 		OR = {
-			# CSA
+			# CSA via outlawing slavery
 			custom_tooltip = {
-				text = acw_landowner_revolt
-				any_country = {
-					is_revolutionary = yes
-					country_definition = root.country_definition
-					ig:ig_landowners = {
-						is_in_government = yes
+			text = acw_outlawing_slavery
+				c:USA = {
+					is_enacting_law = law_type:law_slavery_banned
+				}
+			}
+			# CSA via abolitionist president
+			custom_tooltip = {
+			text = acw_abolitionist_president
+				c:USA = {
+					ruler = {
+						has_ideology = ideology_abolitionist
 					}
 				}
-			}
-			# FSA
-			custom_tooltip = {
-				text = acw_antislaver_revolt
-				ig:ig_landowners = {
-					is_in_government = yes
-				}
-				NOT = { has_law = law_type:law_slavery_banned }
-				NOT = { is_enacting_law = law_type:law_slavery_banned }
-				any_country = {
-					is_revolutionary = yes
-					country_definition = root.country_definition
-				}
+				year > 1845
 			}
 			ig:ig_landowners = {
-			is_marginal = no
-			ig_approval <= -20
-		}
-	
+				is_marginal = no
+				ig_approval < -19
+			}
 		}
 	}
 
 	on_fail = {
-		if = {
-			limit = {
-				any_country = {
-					is_revolutionary = yes
-					country_definition = root.country_definition
-					ig:ig_landowners = {
-						is_in_government = yes
-					}
-				}
-			}
-			set_variable = csa_will_spawn_var
-		}
 		custom_tooltip = {
 			text = acw_will_happen_tt
+			if = {
+				limit = {
+					OR = {
+						c:USA = {
+							ruler = {
+								has_ideology = ideology_abolitionist
+							}
+						}
+						c:USA = {
+							is_enacting_law = law_type:law_slavery_banned
+						}
+						c:USA = {
+							ig:ig_landowners = {
+								is_marginal = no
+								ig_approval < -19
+							}
+						}
+					}
+				}
+				set_variable = csa_will_spawn_var
+			}
 			trigger_event = { id = acw_je_events.1 }
 		}
 	}
@@ -96,6 +90,7 @@
 			100 = 0
 			20 = acw_events.1 # The Abolitionist's Martyrdom
 			20 = acw_events.3 # The Wilmot Proviso
+			100 = acw_sectionalism_startup.1 #Growing Sectionalism
 		}
 	}
 	on_yearly_pulse = {
@@ -104,6 +99,7 @@
 			20 = acw_events.2 # The Fugitive Slave
 			20 = acw_events.5 # Bleeding Kansas
 			20 = acw_events.6 # The Caning of Charles Sumner
+			20 = acw_sectionalism_startup.2 #Dredd Scott Case
 		}
 	}
 
@@ -128,40 +124,78 @@ je_acw_war = {
 	complete = {
 		custom_tooltip = {
 			text = acw_war_tt_complete
-			OR = {
-			NOT = {exists = c:CSA}
-				AND = {
-						NOT = { has_variable = csa_will_spawn_var }
-						NOT = {exists = c:FSA}
-				}
-		}			
-	}
-	
+			c:CSA = {
+			is_subject_of = c:USA
+			}
+		}
 	}
 
 	on_complete = {
-		trigger_event = { id = acw_je_events.2 }
 		if = {
-			limit = { 
+			limit = {
 				has_variable = csa_will_spawn_var
 			}
-			ruler = {
-				set_variable = abraham_lincoln
+			trigger_event = { id = acw_peace_treaty.1 }
+		}
+		else = {
+		trigger_event = { id = acw_peace_treaty.3 }
+		}
+	}
+	
+	fail = {
+		custom_tooltip = {
+		text = acw_rebel_victory
+		
+		OR = {
+			exists = c:CSA
+			exists = c:FSA
+		}
+			is_at_war = no
+		}
+	}
+	
+	on_fail = {
+		if = {
+			limit = {
+				has_variable = csa_will_spawn_var
 			}
+		trigger_event = { id = acw_peace_treaty.2 }
+		}
+		else = {
+			trigger_event = { id = acw_peace_treaty.4 }
 		}
 	}
-
+	
 	on_monthly_pulse = {
-		events = {
-			acw_je_events.4
+		random_events = {
+			50 = acw_secession_crisis.4 #West virginia secession
+			60 = acw_special_events.14
+			30 = acw_special_events.1
+			30 = acw_special_events.2
+			30 = acw_special_events.3
+			30 = acw_special_events.4
+			30 = acw_special_events.5
+			30 = acw_special_events.6
+			30 = acw_special_events.7
+			30 = acw_special_events.8
+			30 = acw_special_events.9
+			30 = acw_special_events.10
+			30 = acw_special_events.11
+			30 = acw_special_events.12
+			30 = acw_special_events.13
+			5 = acw_special_events.14
+			5 = acw_special_events.15
 		}
 	}
+	
+	weight = 10000
 
 	should_be_pinned_by_default = yes
 
 	# acw_events.7 fires for the FSA or CSA, but requires the je_acw_war journal to be active
 	# acw_events.8 fires for the USA, FSA or CSA, but requires the je_acw_war journal to be active
 }
+
 
 je_acw_reconstruction = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
@@ -173,7 +207,7 @@ je_acw_reconstruction = {
 	}
 
 	on_complete = {
-		trigger_event = { id = acw_je_events.3 }
+		trigger_event = { id = acw_reconstruction.2 }
 		hidden_effect = { # sanity check just in case something somehow falls through the cracks
 			every_scope_state = {
 				limit = { has_modifier = unreconstructed_state }
@@ -193,9 +227,10 @@ je_acw_reconstruction = {
 	timeout = 4380
 
 	should_be_pinned_by_default = yes
+	progressbar = yes
 
 	on_timeout = {
-		trigger_event = { id = acw_je_events.3 }
+		trigger_event = { id = acw_reconstruction.2 }
 	}
 }
 
@@ -209,16 +244,16 @@ je_acw_reincorporate = {
 				is_incorporated = no
 			}
 		}
-		NOT = {
-			any_scope_state = {
-				state_region = {
-					is_homeland = cu:dixie
-				}
+		every_scope_state = {
+			limit = {
+				is_homeland = cu:dixie
+				has_modifier = unreconstructed_state
+			}
 				loyalist_fraction = {
-					value < 0.2
+					value > 0.10
 					culture = cu:dixie
 				}
-			}
+				devastation < 0.05
 		}
 	}
 
@@ -256,6 +291,7 @@ je_acw_reincorporate = {
 	}
 
 	timeout = 4380
+	should_be_pinned_by_default = yes
 }
 
 je_acw_equality = {
@@ -267,6 +303,7 @@ je_acw_equality = {
 			cu:afro_american = {
 				NOT = { culture_is_discriminated_in = ROOT }
 			}
+			has_law = law_type:law_slavery_banned
 		}
 	}
 
@@ -294,7 +331,7 @@ je_acw_equality = {
 	}
 
 	timeout = 4380
-
+	should_be_pinned_by_default = yes
 	invalid = {
 		NOT = {
 			any_scope_state = {
@@ -394,6 +431,28 @@ je_acw_wild_wild_west = {
 	}
 
 	progressbar = yes
+	should_be_pinned_by_default = yes
 
 	timeout = 4380
+}
+
+je_acw_secession_crisis = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	complete = {
+		custom_tooltip = {
+			text = je_acw_secession_crisis_ongoing_tt
+			has_global_variable = upper_south_seceded
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = je_acw_secession_crisis_over_tt
+		}
+	}
+	
+	weight = 1000
+	
+	should_be_pinned_by_default = yes
 }

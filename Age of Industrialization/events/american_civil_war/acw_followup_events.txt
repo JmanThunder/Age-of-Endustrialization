@@ -192,6 +192,7 @@ acw_followup_events.3 = {
 # Forty Acres and a Mule
 acw_followup_events.4 = {
 	type = country_event
+	placement = scope:land_redistribution_state
 
 	title = acw_followup_events.4.t
 	desc = acw_followup_events.4.d
@@ -204,7 +205,7 @@ acw_followup_events.4 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	duration = 3
 
@@ -272,6 +273,7 @@ acw_followup_events.4 = {
 # Supremacist Violence
 acw_followup_events.5 = {
 	type = country_event
+	placement = scope:supremacist_violence_state
 
 	title = acw_followup_events.5.t
 	desc = acw_followup_events.5.d
@@ -284,7 +286,7 @@ acw_followup_events.5 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	duration = 3
 
@@ -355,6 +357,7 @@ acw_followup_events.5 = {
 # Redeemer Government
 acw_followup_events.6 = {
 	type = country_event
+	placement = scope:redeemer_state
 
 	title = acw_followup_events.6.t
 	desc = acw_followup_events.6.d
@@ -367,7 +370,7 @@ acw_followup_events.6 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	duration = 3
 
@@ -443,6 +446,7 @@ acw_followup_events.6 = {
 # Paramilitary Intimidation
 acw_followup_events.7 = {
 	type = country_event
+	placement = scope:paramilitary_intimidation_state
 
 	title = acw_followup_events.7.t
 	desc = acw_followup_events.7.d
@@ -455,7 +459,7 @@ acw_followup_events.7 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/vandalized_storefront"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	duration = 3
 
@@ -529,6 +533,7 @@ acw_followup_events.7 = {
 # Carpetbaggers
 acw_followup_events.8 = {
 	type = country_event
+	placement = scope:carpetbagger_state
 
 	title = acw_followup_events.8.t
 	desc = acw_followup_events.8.d
@@ -541,7 +546,7 @@ acw_followup_events.8 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	duration = 3
 

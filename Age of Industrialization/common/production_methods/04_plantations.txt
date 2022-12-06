@@ -61,6 +61,8 @@ pm_steam_rail_transport = {
 			building_employment_laborers_add = -1000	
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_worker_cooperative_plantation = {
@@ -70,10 +72,6 @@ pm_worker_cooperative_plantation = {
 		law_council_republic
 	}
 
-	disallowing_laws = {
-		law_centrally_planned_economy
-	}
-	
 	building_modifiers = {
 		level_scaled = {
 			building_employment_laborers_add = 100

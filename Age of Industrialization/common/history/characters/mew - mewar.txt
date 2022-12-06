@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Jawan_Singh_Sisodia
+				historical_figures
 				charismatic
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Sardar_Singh
+				historical_figures
 				reserved
 			}
 		}

@@ -269,7 +269,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1806.3.21
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Fanhao_Kong
+					historical_figures
 				}
 			}
 			create_character = {
@@ -280,7 +280,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1848.9.25
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Xiangke_Kong
+					historical_figures
 				}
 			}
 		}
@@ -296,7 +296,7 @@ boxer_rebellion_events.3 = {
 				ruler = yes
 				birth_date = 1848.9.25
 				traits = {
-					concept_wikipedia_Xiangke_Kong
+					historical_figures
 				}
 			}
 			create_character = {
@@ -307,7 +307,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1872.11.29
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Lingyi_Kong
+					historical_figures
 				}
 			}
 		}
@@ -324,7 +324,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1872.11.29
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Lingyi_Kong
+					historical_figures
 				}
 			}
 			create_character = {
@@ -335,7 +335,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1920.8.17
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Teh_Cheng_Kong
+					historical_figures
 				}
 			}
 		}
@@ -352,7 +352,7 @@ boxer_rebellion_events.3 = {
 				birth_date = 1920.8.17
 				interest_group = ig_devout
 				traits = {
-					concept_wikipedia_Teh_Cheng_Kong
+					historical_figures
 				}
 			}
 		}

@@ -1,0 +1,8 @@
+﻿l_english:
+ je_open_japan:0 "The Black Ships"
+ je_open_japan_reason:0 "Foreigners are trying to force open our ports!"
+ open_japan.1.t:0 "The Arrival of the Black Ships"
+ open_japan.1.d:0 "The Opening of Japan"
+ open_japan.1.f:0 "A squadron of foreign ships has arrived in one of our ports, demanding the opening of the Japanese markets. If we refuse, we may suffer the fate of China in the Opium Wars. If we submit, over 200 years of isolation will come to an end and the Land of the Rising Sun will be forever changed."
+ open_japan.1.a:0 "We will never submit to these barbarians!"
+ open_japan.1.b:0 "We must endure the unendurable."

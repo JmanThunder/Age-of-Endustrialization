@@ -1,0 +1,50 @@
+﻿FOA = { ### 南アメリカ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### 大コロンビア
+		STATE_GUAYANA STATE_BOLIVAR STATE_MIRANDA STATE_ZULIA STATE_ANTIOQUIA STATE_CUNDINAMARCA STATE_CAUCA STATE_GUAVIARE
+		### アンデス
+		STATE_ECUADOR STATE_PASTAZA STATE_CAJAMARCA STATE_LIMA STATE_ACRE STATE_ICA STATE_AREQUIPA STATE_LA_PAZ STATE_TARAPACA STATE_POTOSI STATE_SANTA_CRUZ STATE_ANTOFAGASTA STATE_JUJUY
+		### ラ・プラタ
+		STATE_ALTO_PARAGUAY STATE_BAJO_PARAGUAY STATE_CORRIENTES STATE_CHACO STATE_SANTA_FE STATE_LA_PAMPA STATE_BUENOS_AIRES STATE_SANTIAGO STATE_TUCUMAN STATE_LOS_RIOS STATE_RIO_NEGRO STATE_ARAUCANIA STATE_PATAGONIA
+		### ブラジル
+		STATE_AMAZONAS STATE_PARA STATE_MATO_GROSSO STATE_GOIAS STATE_MARANHAO STATE_PIAUI STATE_CEARA STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_PERNAMBUCO STATE_BAHIA STATE_MINAS_GERAIS STATE_RIO_DE_JANEIRO STATE_SAO_PAULO STATE_PARANA STATE_SANTA_CATARINA STATE_RIO_GRANDE_DO_SUL STATE_URUGUAY
+	}
+	required_states_fraction = 1 ### 52州
+	unification_play = Formation_of_South_America_diplomatic_play_Unify_South_America
+	leadership_play = Formation_of_South_America_diplomatic_play_Leadership_South_America
+	ai_will_do = { always = yes }
+	possible = {
+		NOT = { exists = c:FOA }
+		OR = {
+			country_has_primary_culture = cu:afro_caribbean
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:amazonian
+			country_has_primary_culture = cu:quechua
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:aimara
+			country_has_primary_culture = cu:guarani
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:patagonian
+			country_has_primary_culture = cu:afro_brazilian
+			country_has_primary_culture = cu:brazilian
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:amazonian
+				country_has_primary_culture = cu:quechua
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:aimara
+				country_has_primary_culture = cu:guarani
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+				country_has_primary_culture = cu:afro_brazilian
+				country_has_primary_culture = cu:brazilian
+			}
+		}
+	}
+}

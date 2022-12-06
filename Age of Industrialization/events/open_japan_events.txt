@@ -1,0 +1,116 @@
+﻿namespace = open_japan
+
+open_japan.1 = {
+	type = country_event
+	placement = root
+	title = open_japan.1.t
+	desc = open_japan.1.d
+	flavor = open_japan.1.f
+	is_popup = yes
+
+	duration = 3
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/asia_westerners_arriving.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia"
+
+	trigger = {
+		# triggered by je_open_japan
+	}
+	
+	immediate = {	
+		random_scope_state = {
+			limit = { has_port = yes }
+			save_scope_as = infringed_port_state
+		}
+		
+		random_country = {
+			limit = {
+				country_rank = rank_value:great_power
+				has_interest_marker_in_region = root.capital.region
+				OR = {
+					AND = {
+						has_strategy = ai_strategy_economic_imperialism
+						OR = {
+							has_law = law_type:law_protectionism
+							has_law = law_type:law_free_trade
+						}
+					}
+					AND = {
+						has_strategy = ai_strategy_economic_imperialism
+						year > 1854
+					}
+					AND = {
+						year > 1859
+					}
+				}
+			}
+			save_scope_as = infringing_country
+		}
+	}
+	
+	option = {
+		name = open_japan.1.a
+		
+		change_relations = {
+			country = scope:infringing_country
+			value = -20
+		}
+		
+		scope:infringed_port_state.state_region = {
+			add_devastation = 25
+		}
+				
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+	option = {
+		name = open_japan.1.b
+		default_option = yes
+
+		activate_law = law_type:law_free_trade
+		
+		add_modifier = {
+			name = sakoku_violated
+			months = long_modifier_time
+		}
+		
+		add_radicals = {
+			value = large_radicals
+		}
+		
+		every_interest_group = {
+			limit = {
+				# is_in_government = yes
+				OR = {
+					has_ideology = ideology_paternalistic
+					has_ideology = ideology_isolationist
+					has_ideology = ideology_bakufu
+				}
+			}
+			add_modifier = {
+				name = ig_furious_at_cowardice
+				months = long_modifier_time
+			}
+			add_modifier = {
+				name = ig_power_challenged
+				months = long_modifier_time
+			}
+			add_modifier = {
+				name = ig_fall_from_grace
+				months = long_modifier_time
+			}
+		}
+		
+		ai_chance = {
+			base = 90
+		}
+	}
+}

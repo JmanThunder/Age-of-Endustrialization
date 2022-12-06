@@ -1,0 +1,53 @@
+﻿# Bank
+pmg_operations_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_basic_operations
+		pm_improved_operations
+	}
+}
+
+pmg_ownership_building_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_privately_owned_bank
+        pm_publicly_traded_bank
+        pm_government_run_bank
+        pm_worker_cooperative_bank
+	}
+}
+
+# New Industry PMG
+pmg_securities_backed = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_profitable
+
+	production_methods = {
+		pm_no_securities
+		pm_with_securities
+	}
+}
+
+# Central Bank
+pmg_base_building_central_bank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_central_bank_operations
+	}
+}
+
+pmg_central_policy = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+
+	production_methods = {
+		pm_no_central_policy
+		pm_issue_new_banknotes
+		pm_reduce_banknotes
+	}
+}

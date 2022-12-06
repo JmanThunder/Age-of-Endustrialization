@@ -9,7 +9,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Robert_Charles_Frederic2
+				historical_figures
 				alcoholic
 			}
 		}
@@ -22,7 +22,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_George_Augustus_Frederic2
+				historical_figures
 			}
 		}
 	}

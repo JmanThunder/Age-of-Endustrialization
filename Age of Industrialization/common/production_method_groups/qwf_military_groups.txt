@@ -33,7 +33,6 @@ pmg_frontline_positions = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-#总参谋部系统
 pmg_military_staff_system = {
 	ai_selection = most_productive
 	
@@ -45,19 +44,6 @@ pmg_military_staff_system = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-#后勤补给
-pmg_logistics_supply = {
-	ai_selection = most_productive
-	
-	production_methods = {
-		pm_logistics_supply_low
-		pm_logistics_supply_normal
-		pm_logistics_supply_train_transportation
-		pm_logistics_supply_aircraft_transportation
-	}
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-}
-#传令方式
 pmg_order_transmission_method = {
 	ai_selection = most_productive
 	
@@ -69,18 +55,6 @@ pmg_order_transmission_method = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-#情报分析/废案
-#pmg_intelligence_analysis_system = {
-#	ai_selection = most_productive
-#	
-#	production_methods = {
-#		pm_cavalry_order_transmission
-#		pm_electric_telegraph_order_transmission
-#		pm_telephone_order_transmission
-#		pm_radio_order_transmission
-#	}
-#}
-#战术侧重
 pmg_war_tactical_order = {
 	ai_selection = most_productive
 	
@@ -93,7 +67,6 @@ pmg_war_tactical_order = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-#军队指挥权
 pmg_control_of_authority = {
 	ai_selection = most_productive
 	
@@ -105,7 +78,18 @@ pmg_control_of_authority = {
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }
-#训练方式
+
+pmg_independent_judgement_system = {
+	ai_selection = most_productive
+	
+	production_methods = {
+		pm_no_independent_judgement_system
+		pm_independent_judgement_system
+		pm_independent_judgement_with_hq_order_system
+	}
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+}
+
 pmg_training_methods = {
 	ai_selection = most_productive
 	
@@ -114,19 +98,6 @@ pmg_training_methods = {
 		pm_initial_training
 		pm_professional_training
 		pm_elite_training
-	}
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-}
-#军团指令
-pmg_war_order = {
-	ai_selection = most_productive
-	
-	production_methods = {
-		pm_balanced_war_order
-		pm_not_attack_complex_terrain_war_order
-		pm_not_far_from_coastline_war_order
-		pm_attack_city_area_war_order
-		pm_attack_supply_lines_war_order
 	}
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 }

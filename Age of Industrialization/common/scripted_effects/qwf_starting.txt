@@ -18,7 +18,6 @@
 	if = {
 		limit = {
 			NOT = { is_country_type = decentralized }
-			has_technology_researched = military_drill
 		}
 		every_scope_state = {
 			limit = {
@@ -29,7 +28,7 @@
 					}
 					any_scope_building = {
 						is_building_type = building_barracks
-						level >= 15
+						level >= 30
 					}
 				}
 			}
@@ -40,31 +39,4 @@
 			}
 		}
 	}
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					exists = c:GBR
-					this = c:GBR
-				}
-				AND = {
-					exists = c:PRU
-					this = c:PRU
-				}
-				AND = {
-					exists = c:RUS
-					this = c:RUS
-				}
-				AND = {
-					exists = c:AUS
-					this = c:AUS
-				}
-			}
-		}
-		add_modifier = {
-			name = dominating_world_order
-		}
-	}
 }
-
-

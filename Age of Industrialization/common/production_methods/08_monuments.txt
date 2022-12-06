@@ -5,8 +5,16 @@ pm_default_building_eiffel_tower = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_prestige_add = 100
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.25
+			building_urban_center_throughput_mult = 0.25
+			building_arts_academy_throughput_mult = 0.25
 		}
 	}
 
@@ -24,16 +32,20 @@ pm_default_building_angkor_wat = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
+		unscaled = {
 			country_prestige_add = 25
+			interest_group_ig_devout_pol_str_mult = 0.25
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.25
+			state_conversion_mult = 1
 		}
 	}
 
 	building_modifiers = {
-#		workforce_scaled = {
-#		}
-
 		level_scaled = {
 			building_employment_clergymen_add = 500
 		}
@@ -44,21 +56,18 @@ pm_default_building_big_ben = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_prestige_add = 50
 		}
 	}
 
 	state_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			building_throughput_mult = 0.01
 		}
 	}
 	
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_machinists_add = 100
 		}
@@ -69,17 +78,14 @@ pm_default_building_forbidden_city = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
+			country_prestige_add = 25
 			country_legitimacy_headofstate_add = 20
 			country_authority_add = 50
-			country_prestige_add = 25
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 800
 			building_employment_clergymen_add = 200
@@ -91,16 +97,20 @@ pm_default_building_hagia_sophia = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pop_attraction_mult = 0.1
+		unscaled = {
 			country_prestige_add = 25
+			country_authority_add = 50
+			interest_group_ig_devout_pop_attraction_mult = 0.25
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_conversion_mult = 1
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_clergymen_add = 200
 		}
@@ -111,9 +121,9 @@ pm_default_building_mosque_of_djenne = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.1
-			state_education_access_add = 0.2
+		unscaled = {
+			country_clergymen_pol_str_mult = 0.25
+			state_education_access_add = 0.25
 		}
 	}
 
@@ -131,16 +141,20 @@ pm_default_building_saint_basils_cathedral = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.1
+		unscaled = {
 			country_prestige_add = 25
+			country_authority_add = 50
+			interest_group_ig_devout_pol_str_mult = 0.25
+		}
+	}
+	
+	unscaled = {
+		workforce_scaled = {
+			state_conversion_mult = 1
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_clergymen_add = 200
 		}
@@ -151,16 +165,19 @@ pm_default_building_statue_of_liberty = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_prestige_add = 75
-			state_migration_pull_mult = 0.25
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_assimilation_mult = 1
+			state_migration_pull_mult = 0.35
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 		}
@@ -171,15 +188,21 @@ pm_default_building_taj_mahal = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_prestige_add = 25
+			country_legitimacy_base_add = 10
+			country_authority_add = 50
+			country_law_enactment_time_mult = -0.05
+		}
+	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_migration_pull_mult = 0.25
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 		}
@@ -192,17 +215,15 @@ pm_default_building_vatican_city = {
 	unlocking_religions = { catholic }
 
 	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
+		unscaled = {
+			interest_group_ig_devout_pol_str_mult = 0.5
+			state_conversion_mult = 1
 			country_influence_add = 100
 			country_authority_add = 100
 		}
 	}
 
 	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
 		level_scaled = {
 			building_employment_clergymen_add = 500
 		}
@@ -213,8 +234,8 @@ pm_monument_prestige_only_vatican_city = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
 	country_modifiers = {
-		throughput_scaled = {
-			country_prestige_add = 25
+		unscaled = {
+			country_prestige_add = 75
 		}
 	}
 }
@@ -223,8 +244,10 @@ pm_default_building_white_house = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	state_modifiers = {
-		workforce_scaled = {
-			building_government_administration_throughput_mult = 0.2
+		unscaled = {
+			building_government_administration_throughput_mult = 0.25
+			country_bureaucracy_mult = 0.05
+			country_bureaucrats_pol_str_mult = 0.1
 		}
 	}
 
@@ -239,7 +262,7 @@ pm_monument_prestige_only = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			country_prestige_add = 25
 		}
 	}

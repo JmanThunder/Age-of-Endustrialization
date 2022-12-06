@@ -1,7 +1,0 @@
-SOV = {
-	flag_definition = {
-		coa = SOV_sub
-		priority = 1500
-	}
-	
-}

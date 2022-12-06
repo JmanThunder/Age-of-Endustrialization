@@ -1,0 +1,9 @@
+﻿ruler_die_young_notification = {
+	type = character	
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast	
+	days = 21
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/Toasts/heir_born"
+}

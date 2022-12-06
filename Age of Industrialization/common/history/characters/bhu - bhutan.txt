@@ -10,7 +10,7 @@
 			interest_group = ig_devout
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Chhoki_Gyaltshen
+				historical_figures
 				persistent
 			}
 		}

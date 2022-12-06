@@ -78,6 +78,8 @@ pm_hardwood = {
 
 pm_no_equipment = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	
+	ai_value = 0
 }
 
 pm_steam_donkey_building_logging_camp = {
@@ -99,6 +101,8 @@ pm_steam_donkey_building_logging_camp = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_chainsaws = {
@@ -139,6 +143,8 @@ pm_rail_transport_building_logging_camp = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_log_carts = {
@@ -158,6 +164,8 @@ pm_log_carts = {
 			building_employment_laborers_add = -1500
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_merchant_guilds_building_logging_camp = {
@@ -197,7 +205,7 @@ pm_privately_owned_building_logging_camp = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 50
+			building_employment_capitalists_add = 100
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -224,7 +232,7 @@ pm_publicly_traded_building_logging_camp = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -374,6 +382,8 @@ pm_refrigerated_storage_building_fishing_wharf = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_refrigerated_rail_cars_building_fishing_wharf = {
@@ -396,6 +406,8 @@ pm_refrigerated_rail_cars_building_fishing_wharf = {
 			building_employment_laborers_add = -2000
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_flash_freezing_building_fishing_wharf = {
@@ -417,6 +429,8 @@ pm_flash_freezing_building_fishing_wharf = {
 			building_employment_laborers_add = -3000
 		}
 	}
+	
+	ai_value = 200000
 }
 
 pm_merchant_guilds_building_fishing_wharf = {
@@ -456,7 +470,7 @@ pm_privately_owned_building_fishing_wharf = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 50
+			building_employment_capitalists_add = 100
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -478,7 +492,7 @@ pm_publicly_traded_building_fishing_wharf = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -603,6 +617,8 @@ pm_refrigerated_storage_building_whaling_station = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_refrigerated_rail_cars_building_whaling_station = {
@@ -625,6 +641,8 @@ pm_refrigerated_rail_cars_building_whaling_station = {
 			building_employment_laborers_add = -2000
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_flash_freezing_building_whaling_station = {
@@ -646,6 +664,8 @@ pm_flash_freezing_building_whaling_station = {
 			building_employment_laborers_add = -3000
 		}
 	}
+	
+	ai_value = 200000
 }
 
 pm_merchant_guilds_building_whaling_station = {
@@ -684,7 +704,7 @@ pm_privately_owned_building_whaling_station = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 50
+			building_employment_capitalists_add = 100
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -706,7 +726,7 @@ pm_publicly_traded_building_whaling_station = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5
@@ -825,6 +845,8 @@ pm_rail_transport_building_oil_rig = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_tanker_cars = {
@@ -845,6 +867,8 @@ pm_tanker_cars = {
 			building_employment_laborers_add = -2000
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_publicly_traded_building_oil_rig = {
@@ -861,7 +885,7 @@ pm_publicly_traded_building_oil_rig = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5

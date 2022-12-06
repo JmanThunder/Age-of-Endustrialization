@@ -1,9 +1,0 @@
-﻿l_english:
- building_ia_river_port:0 "River Port"
- pmg_base_building_ia_river_port:0 "Base"
- pm_ia_rp_small_dock:0 "Small Dock"
- pm_ia_rp_small_port:0 "Small Port"
- pm_ia_rp_industrial_port:0 "Industrial Port"
- pm_ia_rp_modern_port:0 "Modern Port"
- modifier_state_building_ia_river_port_max_level_add:0 "River Port Max Level"
- modifier_state_building_ia_river_port_max_level_add_desc:0 "A bonus or penalty to the maximum level of River Port buildings."

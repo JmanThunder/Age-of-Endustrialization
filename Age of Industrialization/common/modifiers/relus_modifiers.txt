@@ -1,0 +1,11 @@
+﻿legacy_us_slavery_abolished = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 10
+}
+
+booming_plantations = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_output_fabric_mult = 0.2
+	building_output_tobacco_mult = 0.2
+	building_output_sugar_mult = 0.2
+}

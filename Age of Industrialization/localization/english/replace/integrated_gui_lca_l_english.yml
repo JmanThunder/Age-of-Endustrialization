@@ -1,4 +1,0 @@
-﻿l_english:
- INCORPORATED_POPULATION:0 "Incorporated Population: [Country.GetIncorporatedPopulation|Kv]"
- UNINCORPORATED_POPULATION:0 "Unincorporated Population: [Country.GetPeopleAbroad|Kv]"
- POP_TOOLTIP_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( Country.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( Country.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"

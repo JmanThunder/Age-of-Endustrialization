@@ -205,7 +205,7 @@ texan_war_of_independence.3 = {
 			target_is = c:MEX
 		}
 		c:MEX = {
-			is_player = no
+			#is_player = no
 			any_scope_character = {
 				has_variable = is_santa_anna
 			}
@@ -249,10 +249,22 @@ texan_war_of_independence.3 = {
 					}			
 				}
 				post_notification = santa_anna_captured_notification
-			}		
-		}			
+			}
+			if = {
+				limit = {
+					s:STATE_TEXAS = {
+					any_scope_state = {
+							owner = c:MEX
+						}
+					}
+				}
+				s:STATE_TEXAS.region_state:MEX = {
+					set_state_owner = c:TEX
+				}
+			}
+		}
 		ai_chance = {
-			base = 99
+			base = 95
 		}		
 	}
 	option = {

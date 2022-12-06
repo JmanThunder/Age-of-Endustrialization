@@ -26,4 +26,3 @@
  RESOURCE_POP:0 "자원 산업 고용"
  SMALL_URBAN_CENTER:0 "5보다 작은 어반 센터"
  NO_URBAN_CENTER:0 "도시 중심 없음"
- NO_SOCIALISM:0 "#v $socialism$#! [concept_technology]이 잠금 해제되지 않음"

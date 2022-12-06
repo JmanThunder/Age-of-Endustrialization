@@ -21,14 +21,6 @@ popneed_simple_clothing = {
 		max_weight = 2.0
 		min_weight = 0.125
 	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_crude_items = {
@@ -48,14 +40,6 @@ popneed_crude_items = {
 		weight = 0.5
 		max_weight = 2.0
 		min_weight = 0.125
-	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
 	}
 }
 
@@ -109,15 +93,6 @@ popneed_basic_food = {
 		max_weight = 1.0
 		min_weight = 0.0625
 	}
-
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_heating = {
@@ -161,14 +136,6 @@ popneed_heating = {
 		weight = 2
 		max_weight = 8.0
 		min_weight = 0
-	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
 	}
 }
 
@@ -214,14 +181,6 @@ popneed_household_items = {
 		max_weight = 2.0
 		min_weight = 0.125
 	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_standard_clothing = {
@@ -241,14 +200,6 @@ popneed_standard_clothing = {
 		weight = 0.5
 		max_weight = 2.0
 		min_weight = 0.125
-	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
 	}
 }
 
@@ -285,14 +236,6 @@ popneed_intoxicants = {
 		weight = 1
 		max_weight = 4.0
 		min_weight = 0.25
-	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
 	}
 }
 
@@ -338,27 +281,11 @@ popneed_luxury_drinks = {
 		max_weight = 2.0
 		min_weight = 0.125
 	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_free_movement = {
 	default = transportation
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
-
+	
 	entry = {
 		goods = transportation
 		
@@ -378,14 +305,6 @@ popneed_free_movement = {
 
 popneed_communication = {
 	default = transportation
-	
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}	
 	
 	entry = {
 		goods = transportation
@@ -438,14 +357,6 @@ popneed_luxury_food = {
 		max_weight = 2.0
 		min_weight = 0.125
 	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_luxury_items = {
@@ -490,26 +401,10 @@ popneed_luxury_items = {
 		max_weight = 1.0
 		min_weight = 0.0625
 	}
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
 }
 
 popneed_art = {
-	default = services
-
-	entry = {
-		goods = services
-		
-		weight = 0.125
-		max_weight = 0.5
-		min_weight = 0.03125
-	}
+	default = fine_art
 
 	entry = {
 		goods = fine_art

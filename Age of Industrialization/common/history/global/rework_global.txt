@@ -1,0 +1,18 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	c:USA = {
+		trigger_event = {
+			id = nfm_misc.6
+			days = 0
+			popup = yes
+		}
+	}
+	every_country = {
+		trigger_event = {
+			id = great_rework.6
+			days = 0
+		}
+		effect_starting_banks = yes
+		effect_starting_explosives = yes
+	}
+}

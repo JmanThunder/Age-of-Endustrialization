@@ -26,4 +26,3 @@
  RESOURCE_POP:0 "Kaynak Endüstrisi İstihdamı"
  SMALL_URBAN_CENTER:0 "Kent Merkezi 5'ten Küçük"
  NO_URBAN_CENTER:0 "Şehir Merkezi Yok"
- NO_SOCIALISM:0 "#v $socialism$#! [Concept('concept_technology', 'Teknolojisi')] açılmadı"

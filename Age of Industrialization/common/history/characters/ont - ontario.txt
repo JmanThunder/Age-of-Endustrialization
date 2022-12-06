@@ -11,7 +11,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Francis_Bond_Head
+				historical_figures
 				arrogant
 			}
 		}
@@ -25,7 +25,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Robert_Baldwin
+				historical_figures
 				cautious
 			}
 		}
@@ -39,7 +39,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_John_Colborne
+				historical_figures
 				imperious
 			}
 		}
@@ -53,7 +53,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_radical
 			traits = {
-				concept_wikipedia_William_Lyon_Mackenzie
+				historical_figures
 				charismatic
 			}
 		}

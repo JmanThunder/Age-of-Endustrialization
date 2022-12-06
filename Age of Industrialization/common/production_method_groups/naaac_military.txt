@@ -1,0 +1,39 @@
+﻿pmg_naval_battery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_ship_of_the_line_battery
+		pm_ironcloud_battery_9
+		pm_ironcloud_battery_10
+		pm_ironcloud_battery_11
+		pm_monitor_battery_10
+		pm_monitor_battery_11
+		pm_monitor_battery_12
+		pm_early_dreadnought_battery_12
+		pm_late_dreadnought_battery_13
+		pm_late_dreadnought_battery_14
+		pm_late_dreadnought_battery_15
+		pm_late_dreadnought_battery_16
+	}
+}
+
+pmg_naval_armor = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_ship_of_the_line_armor
+		pm_ironcloud_armor_7
+		pm_ironcloud_armor_8
+		pm_ironcloud_armor_9
+		pm_monitor_armor_9
+		pm_monitor_armor_10
+		pm_monitor_armor_11
+		pm_early_dreadnought_armor_11
+		pm_late_dreadnought_armor_11
+		pm_late_dreadnought_armor_12
+		pm_late_dreadnought_armor_13
+		pm_late_dreadnought_armor_14
+	}
+}

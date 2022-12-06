@@ -1,0 +1,20 @@
+﻿coa_controls_part_of_india = {
+	any_scope_state = {
+		state_region = {
+			is_homeland = bengali
+		}
+	}
+}
+
+
+coa_def_controls_part_of_india = {
+	exists = scope:actor
+	scope:actor = {
+		OR = {
+			coa_controls_part_of_india = yes
+			any_subject_or_below = {
+				coa_controls_part_of_india = yes
+			}
+		}
+	}
+}

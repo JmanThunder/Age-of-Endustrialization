@@ -26,4 +26,3 @@
  RESOURCE_POP:0 "Empleo en la industria de recursos"
  SMALL_URBAN_CENTER:0 "Centro Urbano Menos de 5"
  NO_URBAN_CENTER:0 "Sin Centro Urbano"
- NO_SOCIALISM:0 "La [concept_technology|l] de #v $socialism$#! no se ha desbloqueado"

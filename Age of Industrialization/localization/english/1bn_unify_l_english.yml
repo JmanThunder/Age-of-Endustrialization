@@ -1,0 +1,26 @@
+﻿l_english:
+ 1BN:0 "Benelux"
+ 1BN_ADJ:0 "the Benelux"
+ 1BN_FLAVOR_TEXT:0 "The benelux have been a way for many conquerors, today it must be united in one country to face the barbarians"
+ 
+ dp_unify_benelux:0 "A unified Benelux"
+ dp_unify_benelux_tooltip:0 "The start of a $dp_unify_benelux$[concept_diplomatic_play]"
+ dp_leadership_benelux:0 "The leader of the Benelux"
+ dp_leadership_benelux_desc:0 "Create a $dp_leadership_benelux$ [concept_diplomatic_play]"
+ 
+ je_benelux_unification:0 "Formation of the Benelux"
+ je_1BN_unify:0 "Is the Benelux"
+ je_benelux_unification_reason:0 "The time of the League of Nations had come, the nations of the benelux sought unity. We must strive to be a great power in Europe."
+ 
+ benelux_unification.1.t:0 "Benelux Unify Process"
+ benelux_unification.1.d:0 "If the whole of Benelux can be united as one nation, then they must be the strongest."
+ benelux_unification.1.f:0 "The time of the League of Nations had come, and more and more peoples believed that they should merge into a single great power.""
+ benelux_unification.1.a:0 "For the Benelux, Forward!"
+ 
+ benelux_unification.2.t:0 "The Benelux Unity"
+ benelux_unification.2.d:0 "The tireless efforts of politicians and soldiers have paid off, The whole of Benelux was united into one country."
+ benelux_unification.2.f:0 "Steps over Iron and blood, layout strategy and plan, The efforts of countless statesmen and strategists of the have paid off, and today Benelux are successfully unified into one giant nation: the Benelux . This is a day for celebration and reflection. Whatever the future holds, the Benelux has become the world first great power."
+ benelux_unification.2.a:0 "Cheers to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+ benelux_unification.2.b:0 "This is the great solidarity of the benelux peoples"
+ 
+ benelux_unifier_ruler:0 "Leader of the Benelux"

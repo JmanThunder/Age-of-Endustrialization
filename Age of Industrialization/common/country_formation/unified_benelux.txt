@@ -1,0 +1,21 @@
+﻿1BN = {
+	#use_culture_states = yes
+	states = {
+		STATE_FLANDERS STATE_HOLLAND STATE_WALLONIA STATE_GELRE STATE_FRIESLAND
+	}
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_benelux
+	leadership_play = dp_leadership_benelux
+
+	required_states_fraction = 0.88	#0.66
+	
+	ai_will_do = { always = no }
+
+	possible = {
+			NOT = { exists = c:1BN }
+			#has_technology_researched = multilateral_alliances
+		}
+	}
+}

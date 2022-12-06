@@ -1,0 +1,16 @@
+﻿central_banking = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/central_banking.dds"
+	category = society
+	
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.01
+		country_gold_reserve_limit_mult = 0.2
+		state_building_central_bank_max_level_add = 1
+	}	
+	
+	unlocking_technologies = {
+		banking
+	}
+}

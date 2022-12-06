@@ -114,7 +114,7 @@ pm_gas_streetlights = {
 			building_employment_engineers_add = 100
 		}
 	}
-}		
+}
 
 pm_electric_streetlights = {
 	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
@@ -138,6 +138,8 @@ pm_electric_streetlights = {
 
 pm_no_public_transport = {
 	texture = "gfx/interface/icons/production_method_icons/no_public_transport.dds"
+	
+	ai_value = 0
 }
 
 pm_public_trams = {
@@ -157,6 +159,8 @@ pm_public_trams = {
 			building_employment_laborers_add = -500
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_public_motor_carriages = {
@@ -176,6 +180,8 @@ pm_public_motor_carriages = {
 			building_employment_laborers_add = -1000	
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_state_urban_clergy = {
@@ -291,7 +297,7 @@ pm_traditional_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_aristocrats_add = 75
+			building_employment_aristocrats_add = 150
 			building_employment_academics_add = 850
 		}		
 
@@ -316,8 +322,8 @@ pm_bourgeoisie_patronage = {
 
 	building_modifiers = {		
 		level_scaled = {
-			building_employment_capitalists_add = 50
-			building_employment_aristocrats_add = 25
+			building_employment_capitalists_add = 100
+			building_employment_aristocrats_add = 50
 			building_employment_academics_add = 850
 		}		
 
@@ -378,7 +384,7 @@ pm_coal-fired_plant = {
 		workforce_scaled = {
 			building_input_engines_add = 10
 			building_input_coal_add = 50
-			building_output_electricity_add = 100
+			building_output_electricity_add = 130
 		}
 
 		level_scaled = {
@@ -399,9 +405,9 @@ pm_oil-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 15
+			building_input_engines_add = 20
 			building_input_oil_add = 50
-			building_output_electricity_add = 150
+			building_output_electricity_add = 200
 		}
 
 		level_scaled = {
@@ -426,7 +432,7 @@ pm_publicly_traded_building_power_plant = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 75
+			building_employment_capitalists_add = 150
 		}
 		unscaled = {
 			building_capitalists_shares_add = 5

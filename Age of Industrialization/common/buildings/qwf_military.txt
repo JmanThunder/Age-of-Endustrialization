@@ -7,6 +7,7 @@ building_fortifications = {
 	has_max_level = yes
 	downsizeable = yes
 	levels_per_mesh = 5
+	recruits_combat_unit = combat_unit_regular
 	
 	unlocking_technologies = {
 		standing_army
@@ -16,6 +17,9 @@ building_fortifications = {
 		pmg_fortifications_building_structure
 		pmg_fortifications_battery
 		pmg_frontline_positions
+		pmg_organization
+		pmg_guns
+		pmg_artillery
 	}
 	
 	ai_value = 500
@@ -30,11 +34,19 @@ building_stuff_headquarters = {
 	city_type = none
 	downsizeable = no
 	levels_per_mesh = 5
+	recruits_combat_unit = combat_unit_regular
 	
 	can_build = {	
 		error_check = {
 			severity = fail
 			is_capital = yes
+			owner = {
+				NOT = {
+					any_scope_state = {
+						has_building = building_stuff_headquarters
+					}
+				}
+			}
 		}
 	}
 	
@@ -46,11 +58,45 @@ building_stuff_headquarters = {
 		pmg_military_staff_system
 		pmg_war_tactical_order
 		pmg_control_of_authority
-		pmg_order_transmission_method
-		pmg_logistics_supply
+		pmg_organization
+		pmg_guns
+		pmg_artillery
 	}
 	
 	ai_value = 2000
 
 	required_construction = construction_cost_medium
+}
+
+building_local_stuff_headquarters = {
+	building_group = bg_local_stuff
+	texture = "gfx/interface/icons/building_icons/building_stuff_headquarters.dds"
+	has_max_level = yes
+	city_type = none
+	downsizeable = yes
+	levels_per_mesh = 5
+	recruits_combat_unit = combat_unit_regular
+	
+	can_build = {	
+		error_check = {
+			severity = fail
+			is_incorporated = yes
+		}
+	}
+	
+	unlocking_technologies = {
+		army_reserves
+	}
+
+	production_method_groups = {
+		pmg_independent_judgement_system
+		pmg_order_transmission_method
+		pmg_training_methods
+		pmg_organization
+		pmg_artillery
+	}
+	
+	ai_value = 500
+
+	required_construction = construction_cost_very_low
 }

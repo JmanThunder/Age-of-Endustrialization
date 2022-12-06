@@ -1,0 +1,120 @@
+﻿namespace = die_young_events
+
+die_young_events.1 = {			# Chance for ruler to die regardless of age if they have cancer trait
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		any_scope_character = {
+			AND = {
+				is_in_void = no
+				is_busy = no
+				has_trait = cancer
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_in_void = no
+				is_busy = no
+				is_character_alive = yes
+				has_trait = cancer 
+			}
+			save_scope_as = character_to_die_young
+		}
+
+	scope:character_to_die_young = { kill_character = yes }
+	debug_log = "Die Young Event 1 killed a character with cancer"
+	}
+}
+
+die_young_events.2 = { 		# Chance for character to die once they are aged over 60
+	type = country_event
+	hidden = yes
+	trigger = { 
+		any_scope_character = {
+			AND = {
+				is_in_void = no
+				is_busy = no
+				age >= 60
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_in_void = no
+				is_busy = no
+				is_character_alive = yes
+				age >= 60	
+			}
+			save_scope_as = character_to_die_young
+		}
+	
+	scope:character_to_die_young = { kill_character = yes }
+	debug_log = "Die Young Event 2 killed a character over 60"
+	}
+}
+
+die_young_events.3 = { 		# Extra chance for character to die once they are over 90
+	type = country_event
+	hidden = yes
+	trigger = { 
+		any_scope_character = {
+			AND = {
+				is_in_void = no
+				is_busy = no
+				age >= 90
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_in_void = no
+				is_busy = no
+				is_character_alive = yes
+				age >= 90						
+			}
+			save_scope_as = character_to_die_young
+		}
+	
+	scope:character_to_die_young = { kill_character = yes }
+	debug_log = "Die Young Event 3 killed a character over 90"
+	}
+}
+
+die_young_events.10 = { 	#Should never fire, just here for testing.
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		any_scope_character = {
+			AND = {
+				is_in_void = no
+				is_busy = no
+				age >= 60	
+			}
+		}	
+		
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				is_in_void = no
+				is_busy = no
+				is_character_alive = yes
+				age >= 60	
+			}
+			save_scope_as = character_to_die_young
+		}
+
+	scope:character_to_die_young = { kill_character = yes }
+	debug_log = "Die Young Event 10 killed a character"
+	}
+} 

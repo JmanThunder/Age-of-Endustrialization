@@ -96,6 +96,8 @@ romanticism = {
 	
 	modifier = {
 		country_prestige_mult = 0.05
+		interest_group_ig_landowners_pol_str_mult = 0.05
+		interest_group_ig_rural_folk_pol_str_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -137,7 +139,8 @@ banking = {
 	
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_add = -0.01
+		state_tax_waste_add = -0.1
 	}
 	
 	unlocking_technologies = {
@@ -150,6 +153,10 @@ academia = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/academia.dds"
 	category = society
+
+	modifier = {
+	country_weekly_innovation_mult = 0.02
+	}
 	
 	unlocking_technologies = {
 		rationalism
@@ -222,6 +229,7 @@ medical_degrees = {
 	
 	modifier = {
 		country_institution_health_system_max_investment_add = 1
+		state_mortality_mult = -0.02
 	}
 	
 	unlocking_technologies = {
@@ -236,6 +244,8 @@ mass_communication = {
 	
 	modifier = {
 		country_authority_mult = 0.1
+		country_tech_spread_mult = 0.1
+		state_education_access_add = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -288,6 +298,7 @@ pharmaceuticals = {
 	
 	modifier = {
 		country_institution_health_system_max_investment_add = 1
+		state_mortality_mult = -0.05
 	}
 	
 	unlocking_technologies = {
@@ -305,6 +316,9 @@ modern_sewerage = {
 		state_infrastructure_from_population_add = 0.05
 		state_infrastructure_from_population_max_add = 10
 		state_building_construction_sector_max_level_add = 5
+		state_poor_standard_of_living_add = 1
+		state_middle_standard_of_living_add = 1
+		state_rich_standard_of_living_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -314,7 +328,7 @@ modern_sewerage = {
 
 quinine = {
 	# Permits colonization of state regions with the Malaria trait
-	era = era_3
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/quinine.dds"
 	category = society
 
@@ -335,6 +349,8 @@ organized_sports = {
 	
 	modifier = {
 		country_prestige_mult = 0.1
+		country_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_discrimination_mult = -0.05
 	}
 	
 	unlocking_technologies = {
@@ -366,7 +382,9 @@ central_banking = {
 	
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_add = -0.01
+		country_gold_reserve_limit_mult = 0.2
+		state_building_central_bank_max_level_add = 1
 	}	
 	
 	unlocking_technologies = {
@@ -413,6 +431,9 @@ realism = {
 	
 	modifier = {
 		country_prestige_mult = 0.05
+		interest_group_ig_intelligentsia_pol_str_mult = 0.05
+		interest_group_ig_trade_unions_pol_str_mult = 0.05
+
 	}
 	
 	unlocking_technologies = {
@@ -428,7 +449,7 @@ nationalism = {
 	category = society
 	
 	modifier = {
-		country_authority_mult = 0.1
+		country_authority_mult = 0.10
 	}
 	
 	unlocking_technologies = {
@@ -449,6 +470,7 @@ labor_movement = {
 	modifier = {
 		state_expected_sol_from_literacy = 1
 		country_institution_workplace_safety_max_investment_add = 3
+		interest_group_ig_trade_unions_pop_attraction_mult = 0.10
 	}
 	
 	unlocking_technologies = {
@@ -464,6 +486,7 @@ postal_savings = {
 	
 	modifier = {
 		building_cash_reserves_mult = 0.2
+		state_radicals_from_sol_change_mult = -0.05
 	}
 	
 	unlocking_technologies = {
@@ -485,6 +508,7 @@ human_rights = {
 	
 	modifier = {
 		country_institution_social_security_max_investment_add = 1
+		state_migration_pull_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -497,6 +521,11 @@ feminism = {
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/feminism.dds"
 	category = society
+
+	modifier = {
+	state_birth_rate_mult = -0.02
+	state_working_adult_ratio_add = 0.03
+	}
 	
 	unlocking_technologies = {
 		human_rights
@@ -512,6 +541,7 @@ steel_frame_buildings = {
 		state_infrastructure_from_population_add = 0.05
 		state_infrastructure_from_population_max_add = 10
 		state_building_construction_sector_max_level_add = 5
+		state_construction_mult = 0.10
 	}
 	
 	unlocking_technologies = {
@@ -560,6 +590,8 @@ socialism = {
 	modifier = {
 		state_expected_sol_from_literacy = 1
 		country_institution_workplace_safety_max_investment_add = 2
+		interest_group_ig_trade_unions_pol_str_mult = 0.05
+
 	}
 	
 	unlocking_technologies = {
@@ -591,7 +623,7 @@ mutual_funds = {
 	
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_add = -0.01
 	}
 	
 	unlocking_technologies = {
@@ -608,6 +640,7 @@ camera = {
 	
 	modifier = {
 		country_prestige_mult = 0.05
+		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -640,6 +673,9 @@ identification_documents = {
 	modifier = {
 		state_tax_capacity_add = 25
 		country_institution_home_affairs_max_investment_add = 1
+		country_authority_mult = 0.05
+		country_revolution_secession_speed_mult = -0.05
+
 	}
 	
 	unlocking_technologies = {
@@ -658,6 +694,7 @@ elevator = {
 		state_infrastructure_from_population_add = 0.05
 		state_infrastructure_from_population_max_add = 10
 		state_building_construction_sector_max_level_add = 5
+		country_prestige_mult = 0.05
 	}	
 	
 	unlocking_technologies = {
@@ -736,7 +773,7 @@ international_exchange_standards = {
 	
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_add = -0.01
 	}
 	
 	unlocking_technologies = {
@@ -769,6 +806,7 @@ film = {
 	
 	modifier = {
 		country_prestige_mult = 0.05
+		interest_group_ig_industrialists_pol_str_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -817,6 +855,7 @@ antibiotics = {
 	
 	modifier = {
 		country_institution_health_system_max_investment_add = 1
+		state_mortality_mult = -0.05
 	}
 	
 	unlocking_technologies = {
@@ -849,6 +888,7 @@ mass_propaganda = {
 	modifier = {
 		country_authority_mult = 0.1
 		state_expected_sol_from_literacy = 1
+		interest_group_ig_armed_forces_pop_attraction_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -863,7 +903,7 @@ modern_financial_instruments = {
 	category = society
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02		
+		country_loan_interest_rate_add = -0.01
 	}
 	unlocking_technologies = {
 		international_exchange_standards

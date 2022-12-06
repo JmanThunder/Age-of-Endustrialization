@@ -137,7 +137,7 @@ agrarian_party = {
 	}
 	join_weight = {
 		value = {
-			value = -5
+			value = 1
 			desc = "base_value"
 		}
 		if = { # a party for powerful farmers
@@ -371,17 +371,6 @@ agrarian_party = {
 			add = {
 				value = -20
 				desc = "from_no_rural_folk_in_party" # this should probably never actually display in game because the party won't exist
-			}
-		}
-		if = { #NFM
-			limit = {
-				leader = {
-					has_variable = politically_neutral_var
-				}
-			}
-			add = {
-				value = -10
-				desc = "Politically Neutral"
 			}
 		}
 	}

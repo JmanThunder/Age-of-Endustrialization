@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Ferdinand_von_Habsburg
+				historical_figures
 				arrogant
 				psychological_affliction
 			}
@@ -28,7 +28,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Franz_Josef_von_Habsburg
+				historical_figures
 				cautious
 			}
 		}
@@ -41,7 +41,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Klemens_von_Metternich
+				historical_figures
 				meticulous
 				masterful_diplomat
 				experienced_political_operator
@@ -57,7 +57,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Ludwig_von_Habsburg
+				historical_figures
 				arrogant
 				tactful
 				pious
@@ -73,7 +73,7 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Franz_Anton_von_Kolowrat_Liebsteinsky
+				historical_figures
 				imperious
 				persistent
 			}
@@ -88,7 +88,7 @@
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				concept_wikipedia_Vincenz_Milde
+				historical_figures
 				pious
 				reserved
 			}
@@ -103,7 +103,7 @@
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Ignaz_Czapka
+				historical_figures
 				cautious
 				imperious
 			}
@@ -118,7 +118,7 @@
 			interest_group = ig_rural_folk
 			ideology = ideology_royalist
 			traits = {
-				concept_wikipedia_Anton_von_Doblhoff-Dier
+				historical_figures
 				innovative
 				reserved
 			}
@@ -132,7 +132,7 @@
 			hq = region_south_germany
 			commander_rank = commander_rank_3
 			traits = {
-				concept_wikipedia_Josef_Radetzky
+				historical_figures
 				persistent
 				surveyor
 			}
@@ -146,7 +146,7 @@
 			hq = region_poland
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_Julius_von_Haynau
+				historical_figures
 				wrathful
 				cruel
 			}
@@ -160,7 +160,7 @@
 			hq = region_danubia
 			commander_rank = commander_rank_4
 			traits = {
-				concept_wikipedia_Heinrich_von_Hess
+				historical_figures
 				meticulous
 				resupply_commander
 			}
@@ -177,7 +177,7 @@
 			hq = region_italy
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_Laval_Nugent_von_Westmeath
+				historical_figures
 				basic_offensive_planner
 				tactful
 			}
@@ -194,7 +194,7 @@
 			hq = region_balkans
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_Karl_Ludwig_von_Ficquelmont
+				historical_figures
 				experienced_diplomat
 				charismatic
 			}
@@ -211,7 +211,7 @@
 			hq = region_italy
 			commander_rank = commander_rank_2
 			traits = {
-				concept_wikipedia_Franz_von_Bandiera
+				historical_figures
 				direct
 				basic_naval_commander
 			}

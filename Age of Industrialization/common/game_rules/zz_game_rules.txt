@@ -1,0 +1,20 @@
+﻿zz_war_flags = {
+	default = allow_war_flags
+
+	no_war_flags = {
+		flag = no_war_flags
+	}
+
+	allow_war_flags = {
+	}
+}
+zz_recessions = {
+	default = allow_recessions
+
+	disallow_recessions = {
+		flag = no_economic_recessions
+	}
+
+	allow_recessions = {
+	}
+}

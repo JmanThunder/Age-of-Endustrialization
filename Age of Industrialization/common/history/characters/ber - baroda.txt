@@ -10,7 +10,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Sayaji_Rao_Gaekwad
+				historical_figures
 				arrogant
 			}
 		}	
@@ -25,7 +25,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				concept_wikipedia_Ganpat_Rao_Gaekwad
+				historical_figures
 				cautious
 			}
 		}

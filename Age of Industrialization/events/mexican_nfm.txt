@@ -22,8 +22,18 @@ mexican_nfm.1 = {
 
 	trigger = {
 		c:MEX = { has_war_with = c:USA }
-		NOT = {has_variable = bear_flag_revolt_var}
-		c:MEX = { owns_entire_state_region = STATE_CALIFORNIA}
+		NOT = {
+			has_variable = bear_flag_revolt_var
+			c:USA = {
+				OR = {
+					any_scope_state = {
+						state_region = s:STATE_CALIFORNIA
+					}
+					owns_entire_state_region = STATE_CALIFORNIA
+				}
+			}
+		}
+		owns_entire_state_region = STATE_CALIFORNIA
 	}
 
 	immediate = {
@@ -90,7 +100,7 @@ mexican_nfm.1 = {
 		activate_law = law_free_trade
 		}
 
-		c:MEX = {
+
 		create_diplomatic_play = {
 			name = bear_flag_revolt_warname
 		
@@ -103,12 +113,7 @@ mexican_nfm.1 = {
 				type = conquer_state
 				target_state = s:STATE_CALIFORNIA.region_state:MEX
 			}
-			add_war_goal = {
-				holder = c:CAL
-				type = conquer_state
-				target_state = s:STATE_NEVADA.region_state:MEX
-			}
-	}}
+	}
 }
 	option = { # perhaps another time
 		name = mexican_nfm.1.a
@@ -143,7 +148,15 @@ mexican_nfm.2 = {
 		exists = c:MEX
 		c:MEX = ROOT
 		year >= 1839
-		exists = c:TEX
+		OR = {
+			exists = c:TEX
+			s:STATE_TEXAS = {
+			any_scope_state = {
+					owner = {
+							c:USA = THIS
+					}
+				}
+			}
 		}
 		NOT = {
 				OR = {
@@ -162,12 +175,6 @@ mexican_nfm.2 = {
 				origin = this
 				state = s:STATE_RIO_GRANDE.region_state:MEX
 			}
-			s:STATE_TEXAS = {
-			set_owner_of_provinces = {
-				country = c:RIO
-				provinces = { x3751A7 x24C127 x10CA7B x951736 x871357 xD08070 xB9118E xC9D330 x5D3843 x2DA551 x760779 x4E19F4 x6958D6 x6E8169 xBB8A78 x0E125F x90CE2B x860F5A x0D192D x6BB536 xA55E5C xB16A3C x8EBCC7 x94A617 x18F9D5 x03FDD9 xE222E2 xDB3E39 x27C614 xE3F481 x08F331 x3DAE0A xC7ED1C xFDD38C xD206BC x0030C0 xED08F5 xA3A810 x91A02C x7DCECB x6363AC xE99673 x607C83 xAAFB06 x2D8E7D x601A4F x0289AA x27D689 xC369DB x1DCED1 x1E9A0F}
-			} #NOT x212F2F x00A88F xDE7B44 x9632BE xB2484A
-		}
 		s:STATE_RIO_GRANDE.region_state:RIO = {
 			create_building = {
   				building = building_barracks

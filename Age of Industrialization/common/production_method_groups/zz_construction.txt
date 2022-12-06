@@ -1,0 +1,18 @@
+pmg_automation_building_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_construction_sector
+		pm_rotary_valve_engine_building_construction_sector
+		pm_assembly_lines_building_construction_sector
+	}
+}
+pmg_ownership_capital_building_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_government_run_building_construction_sector
+		pm_privately_owned_building_construction_sector
+		pm_publicly_traded_building_construction_sector
+		pm_worker_cooperative_building_construction_sector
+	}
+}

@@ -116,6 +116,8 @@ pm_apple_orchards = {
 
 pm_tools_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/no_tool_use.dds"
+	
+	ai_value = 0
 }
 
 pm_tools = {
@@ -131,6 +133,8 @@ pm_tools = {
 			building_employment_laborers_add = -500
 		}
 	}
+	
+	ai_value = 50000
 }
 
 pm_steam_threshers = {
@@ -152,6 +156,8 @@ pm_steam_threshers = {
 			building_employment_laborers_add = -1500
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_tractors = {
@@ -173,6 +179,8 @@ pm_tractors = {
 			building_employment_laborers_add = -2500
 		}
 	}
+	
+	ai_value = 200000
 }
 
 pm_compression_ignition_tractors = {
@@ -206,12 +214,10 @@ pm_privately_owned = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 50
+			building_employment_aristocrats_add = 100
 		}
 		unscaled = {
-			building_aristocrats_shares_add = 5 
-			building_clergymen_shares_add = 2
-			building_farmers_shares_add = 1
+			building_aristocrats_shares_add = 8
 		}
 	}
 }
@@ -230,8 +236,8 @@ pm_publicly_traded = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_aristocrats_add = 100
+			building_employment_capitalists_add = 50
 		}
 		unscaled = {
 			building_aristocrats_shares_add = 5 
@@ -500,6 +506,8 @@ pm_mechanized_slaughtering = {
 
 pm_standard_fences = {
 	texture = "gfx/interface/icons/production_method_icons/standard_fences.dds"
+	
+	ai_value = 0
 }
 
 pm_barbed_wire_fences = {
@@ -516,6 +524,8 @@ pm_barbed_wire_fences = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 50000
 }		
 
 pm_electric_fencing = {
@@ -533,11 +543,14 @@ pm_electric_fencing = {
 			building_employment_laborers_add = -1800
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_unrefrigerated = {
 	texture = "gfx/interface/icons/production_method_icons/no_refrigeration.dds"
-
+	
+	ai_value = 0
 }
 
 pm_refrigerated_storage_building_livestock_ranch = {
@@ -554,6 +567,8 @@ pm_refrigerated_storage_building_livestock_ranch = {
 			building_employment_laborers_add = -1000
 		}
 	}
+	
+	ai_value = 100000
 }
 
 pm_refrigerated_rail_cars_building_livestock_ranch = {
@@ -573,4 +588,6 @@ pm_refrigerated_rail_cars_building_livestock_ranch = {
 			building_employment_laborers_add = -1800
 		}
 	}
+	
+	ai_value = 200000
 }

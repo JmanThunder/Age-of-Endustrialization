@@ -13,13 +13,6 @@
 	UNIFICATION_AGGRESSION_MULT_HIGHER_TIER = 40
 	UNIFICATION_AGGRESSION_MULT_SAME_TIER = 10 
 	START_DIPLO_PLAY_POTENTIAL_ALLY_STRENGTH_WEIGHT = 0 
-
-	DIPLO_PLAY_BACK_DOWN_CHANCE_THRESHOLD = -5000		
-	DIPLO_PLAY_BACK_DOWN_GUARANTEED_THRESHOLD = -6000	
-	DIPLO_PLAY_CONFIDENCE_VERY_LOW_THRESHOLD = -4000 		
-	DIPLO_PLAY_CONFIDENCE_LOW_THRESHOLD = -3000 			
-	DIPLO_PLAY_CONFIDENCE_HIGH_THRESHOLD = -2000 			
-	DIPLO_PLAY_CONFIDENCE_VERY_HIGH_THRESHOLD = -1000 		
 	
 	# Below data is used to determine which wargoals the AI will pick
 	WAR_GOAL_RANDOM_FACTOR = 2.0 					# The higher this is, the more random AI wargoal selection will be
@@ -69,26 +62,7 @@
 	NAVAL_INVASION_MIN_RELATIVE_LOCAL_NAVY_STRENGTH = 0.5			# AI wants at least this fraction of defending naval strength to risk a naval invasion
 	NAVAL_INVASION_MIN_RELATIVE_GLOBAL_NAVY_STRENGTH_ATTACKER = 0.5 # AI wants at least this fraction of naval strength in the overall war to risk a naval invasion as the attacking war side
 	NAVAL_INVASION_MIN_RELATIVE_GLOBAL_NAVY_STRENGTH_DEFENDER = 0.3 # AI wants at least this fraction of naval strength in the overall war to risk a naval invasion as the defending war side
-	NAVAL_INVASION_COOLDOWN_DAYS = 60 								# After launching a naval invasion, the AI will wait at least this long before launching another
+	NAVAL_INVASION_COOLDOWN_DAYS = 30 								# After launching a naval invasion, the AI will wait at least this long before launching another
 	NAVAL_INVASION_MIN_SCORE = 0									# AI won't bother launching naval invasions against theaters with a lower total state score than this
 	NAVAL_INVASION_MAX_LOCAL_FRONT_SCORE = 100						# Don't launch a naval invasion if there is a local front of at least this total score for the general		
-}
-
-
-
-NMilitary = {
-	GENERAL_TRAVEL_PIXELS_TO_DAYS_SCALE = 0     # Used to convert a travel distance from pixels to days. Example: a travel of 500px becomes 500 * 0.05 = 25 days
-	GENERAL_TRAVEL_CAP = 0                         # Limits the travel time to GENERAL_TRAVEL_CAP days. The overseas penalty (GENERAL_TRAVEL_OVERSEAS_SCALE) is still applied.
-	GENERAL_TRAVEL_OVERSEAS_SCALE = 0            # Used if a general is traveling overseas. So the total duration of the travel becomes Duration * GENERAL_TRAVEL_OVERSEAS_SCALE
-	GENERAL_TRAVEL_AUTO_REASSIGN_INSTANTLY = 0		# If General is being auto reassigned (front destruction for example) and travel time is below this number of days make them travel instantly
-	GENERAL_INVALID_TRAVEL_DAYS = 0                 # If our system fails to compute travel time due to invalid front/HQ position, then use this value as travel time instead. This p
-}
-
-
-
-NDiplomacy = {
-	INFAMY_THRESHOLD_INFAMOUS = 50			# Above this, countries are considered infamous and get related penalties
-	INFAMY_THRESHOLD_NOTORIOUS = 100			# Above this, countries are considered notorious and get related penalties
-	INFAMY_THRESHOLD_PARIAH = 150			# Above this, countries are considered pariah and get related penalties
-	BASE_YEARLY_INFAMY_DECAY_RATE = 20.0 	# Decay rate of infamy per year
 }

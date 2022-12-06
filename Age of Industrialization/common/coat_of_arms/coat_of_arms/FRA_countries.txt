@@ -1,7 +1,7 @@
 @sm_fra = 0.09
 @sm_bee = 0.09
 
-FRA_emperor_coa = {
+FRA_absolute_empire = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 	color2 = "white"
@@ -64,64 +64,21 @@ FRA_emperor_coa = {
 		instance = { scale = { 0.7 0.7 } position = { 0.46 0.5 } }
 	}	
 }
-FRA_emperor = {
+FRA_empire = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 	color2 = "white"
 	color3 = "red"
 	
 	colored_emblem = {
-		texture = "ce_tricolor_napoleon.dds"
+		texture = "ce_tricolor_vertical.dds"
 		color1 = "white"
 		color2 = "red"
 	}
-
-	colored_emblem = {
-		texture = "ce_napoleon_bee.dds"
-		color1 = "yellow_dark"
-		color2 = "yellow_dark"
-		instance = { position = { 0.07 0.10 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.23 0.10 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.46 0.10 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.70 0.10 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.92 0.10 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.15 0.20 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.37 0.20 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.56 0.20 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.81 0.20 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.07 0.30 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.23 0.30 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.46 0.30 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.70 0.30 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.92 0.30 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.15 0.40 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.37 0.40 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.56 0.40 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.81 0.40 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.07 0.50 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.23 0.50 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.46 0.50 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.70 0.50 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.92 0.50 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.15 0.60 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.37 0.60 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.56 0.60 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.81 0.60 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.07 0.70 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.23 0.70 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.46 0.70 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.70 0.70 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.92 0.70 } scale = { @sm_bee @sm_bee } }	
-		instance = { position = { 0.15 0.80 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.37 0.80 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.56 0.80 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.81 0.80 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.07 0.90 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.23 0.90 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.46 0.90 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.70 0.90 } scale = { @sm_bee @sm_bee } }
-		instance = { position = { 0.92 0.90 } scale = { @sm_bee @sm_bee } }	
-	}
+	textured_emblem = {
+		texture = "te_coa_napoleon.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}	
 }
 FRA_constitutional_monarchy = {
 	pattern = "pattern_solid.tga"

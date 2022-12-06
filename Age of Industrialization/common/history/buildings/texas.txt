@@ -1,0 +1,28 @@
+﻿BUILDINGS={
+	s:STATE_TEXAS={
+		region_state:TEX={
+			create_building={
+				building="building_maize_farm"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_vineyards_building_maize_farm" }
+			}
+			create_building={
+				building="building_barracks"
+				level=10
+				reserves=1
+				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_cannon_artillery" }
+			}	
+			create_building={
+				building="building_conscription_center"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry_conscription" "pm_cavalry_scouts_conscription" "pm_no_specialists_conscription" "pm_cannon_artillery_conscription" }
+			}				
+		}
+		region_state:MEX={
+		}
+		region_state:COM={
+		}
+	}
+}

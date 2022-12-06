@@ -7,11 +7,10 @@
 			last_name = "Boyer"
 			ruler = yes
 			age = 60
-			culture=cu:mulatto
-			dna = dna_jp_boyer
 			interest_group = ig_armed_forces
 			ideology = ideology_jingoist_leader
 			traits = {
+				historical_figures
 				ambitious
 			}
 		}	

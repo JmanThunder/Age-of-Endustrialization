@@ -12,8 +12,8 @@
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 10
-			unit_defense_add = 15
+			unit_offense_add = 15
+			unit_defense_add = 25
 		}
 	}
 	country_modifiers = {
@@ -44,8 +44,9 @@ pm_line_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 20
-			unit_defense_add = 30
+			unit_offense_add = 40
+			unit_defense_add = 60
+                             unit_recovery_rate_add = 0.1
 		}
 	}
 	country_modifiers = {
@@ -76,8 +77,9 @@ pm_skirmish_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 30
-			unit_defense_add = 35
+			unit_offense_add = 60
+			unit_defense_add = 70
+                             unit_recovery_rate_add = 0.2
 		}
 	}
 	country_modifiers = {
@@ -108,8 +110,9 @@ pm_trench_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 40
-			unit_defense_add = 60
+			unit_offense_add = 80
+			unit_defense_add = 120
+                             unit_recovery_rate_add = 0.3
 		}
 
 		unscaled = {
@@ -146,8 +149,9 @@ pm_squad_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 55
-			unit_defense_add = 65
+			unit_offense_add = 110
+			unit_defense_add = 130
+                             unit_recovery_rate_add = 0.4
 		}
 		
 		unscaled = {
@@ -188,8 +192,9 @@ pm_mechanized_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_offense_add = 150
+			unit_defense_add = 150
+                             unit_recovery_rate_add = 0.5
 		}
 
 		unscaled = {
@@ -235,7 +240,7 @@ pm_cannon_artillery = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.1
-			unit_kill_rate_add = 0.1
+			unit_kill_rate_add = 0.2
 		}
 	}
 	country_modifiers = {
@@ -266,7 +271,7 @@ pm_mobile_artillery = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.15
-			unit_kill_rate_add = 0.1
+			unit_kill_rate_add = 0.3
 			unit_provinces_captured_mult = 0.1
 		}
 	}
@@ -303,7 +308,7 @@ pm_shrapnel_artillery = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.2
-			unit_kill_rate_add = 0.3
+			unit_kill_rate_add = 0.4
 			unit_devastation_mult = 0.25
 		}
 	}
@@ -340,7 +345,7 @@ pm_siege_artillery = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.4
-			unit_kill_rate_add = 0.25
+			unit_kill_rate_add = 0.5
 			unit_devastation_mult = 0.5
 		}
 	}
@@ -376,11 +381,11 @@ pm_bicycle_messengers = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 5
+			unit_offense_add = 10
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.2
+			unit_provinces_captured_mult = 0.3
 			# should add Battle Condition chance
 		}
 	}
@@ -411,12 +416,12 @@ pm_motorized_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 10
-			unit_defense_add = 5
+			unit_offense_add = 20
+			unit_defense_add = 10
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.3
+			unit_provinces_captured_mult = 0.4
 		}
 	}
 	country_modifiers = {
@@ -445,8 +450,8 @@ pm_aerial_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 10
+			unit_offense_add = 30
+			unit_defense_add = 20
 		}
 
 		unscaled = {
@@ -619,8 +624,8 @@ pm_irregular_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 10
-			unit_defense_add = 15
+			unit_offense_add = 11
+			unit_defense_add = 19
 		}
 	}
 	timed_modifiers = {
@@ -646,8 +651,9 @@ pm_line_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 20
-			unit_defense_add = 30
+			unit_offense_add = 30
+			unit_defense_add = 45
+                             unit_recovery_rate_add = 0.1
 		}
 	}
 	timed_modifiers = {
@@ -676,8 +682,9 @@ pm_skirmish_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 30
-			unit_defense_add = 35
+			unit_offense_add = 45
+			unit_defense_add = 53
+                             unit_recovery_rate_add = 0.2
 		}
 	}
 	timed_modifiers = {
@@ -706,8 +713,9 @@ pm_trench_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 40
-			unit_defense_add = 60
+			unit_offense_add = 60
+			unit_defense_add = 90
+                             unit_recovery_rate_add = 0.3
 		}
 
 		unscaled = {
@@ -742,8 +750,9 @@ pm_squad_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 60
-			unit_defense_add = 50
+			unit_offense_add = 90
+			unit_defense_add = 75
+                             unit_recovery_rate_add = 0.4
 		}
 
 		unscaled = {
@@ -779,8 +788,9 @@ pm_mechanized_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 80
+			unit_offense_add = 120
+			unit_defense_add = 120
+                             unit_recovery_rate_add = 0.5
 		}
 
 		unscaled = {
@@ -823,7 +833,7 @@ pm_cannon_artillery_conscription = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.1
-			unit_kill_rate_add = 0.1
+			unit_kill_rate_add = 0.2
 		}
 	}
 	timed_modifiers = {
@@ -853,7 +863,7 @@ pm_mobile_artillery_conscription = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.15
-			unit_kill_rate_add = 0.1
+			unit_kill_rate_add = 0.3
 			unit_provinces_captured_mult = 0.1
 		}
 	}
@@ -885,7 +895,7 @@ pm_shrapnel_artillery_conscription = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.2
-			unit_kill_rate_add = 0.3
+			unit_kill_rate_add = 0.4
 			unit_devastation_mult = 0.25
 		}
 	}
@@ -917,7 +927,7 @@ pm_siege_artillery_conscription = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.4
-			unit_kill_rate_add = 0.25
+			unit_kill_rate_add = 0.5
 			unit_devastation_mult = 0.5
 		}
 	}
@@ -956,7 +966,7 @@ pm_bicycle_messengers_conscription = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.1
+			unit_provinces_captured_mult = 0.3
 			# should add Battle Condition chance
 		}
 	}
@@ -983,12 +993,12 @@ pm_motorized_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 5
+			unit_offense_add = 20
+			unit_defense_add = 10
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.15
+			unit_provinces_captured_mult = 0.4
 		}
 	}
 	timed_modifiers = {
@@ -1013,12 +1023,12 @@ pm_aerial_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 25
-			unit_defense_add = 10
+			unit_offense_add = 30
+			unit_defense_add = 20
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.25
+			unit_provinces_captured_mult = 0.5
 			# should add Battle Condition chance
 		}
 	}
@@ -1162,7 +1172,7 @@ pm_wound_dressing = {
 
 	building_modifiers = {
 		unscaled = {
-			unit_recovery_rate_add = 0.25
+			unit_recovery_rate_add = 0.05
 		}
 	}
 }
@@ -1179,7 +1189,7 @@ pm_first_aid = {
 		}
 
 		unscaled = {
-			unit_recovery_rate_add = 0.50
+			unit_recovery_rate_add = 0.15
 		}
 	}
 }
@@ -1197,7 +1207,7 @@ pm_field_hospitals = {
 		}
 
 		unscaled = {
-			unit_recovery_rate_add = 0.75
+			unit_recovery_rate_add = 0.3
 		}
 	}
 }
@@ -1216,8 +1226,8 @@ pm_man_o_wars = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 20
-			unit_defense_add = 20
+			unit_offense_add = 40
+			unit_defense_add = 40
 		}
 	}
 
@@ -1251,8 +1261,8 @@ pm_ironclads = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 40
-			unit_defense_add = 40
+			unit_offense_add = 80
+			unit_defense_add = 80
 		}
 	}
 
@@ -1281,6 +1291,7 @@ pm_monitors = {
 			# input goods
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 2
+			building_input_oil_add = 1
 		}
 
 		level_scaled = {
@@ -1289,8 +1300,8 @@ pm_monitors = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 50
-			unit_defense_add = 50
+			unit_offense_add = 100
+			unit_defense_add = 100
 		}
 	}
 
@@ -1320,6 +1331,7 @@ pm_dreadnoughts = {
 			building_input_ironclads_add = 4
 			building_input_ammunition_add = 4
 			building_input_radios_add = 1
+			building_input_oil_add = 2
 		}
 
 		level_scaled = {
@@ -1328,8 +1340,8 @@ pm_dreadnoughts = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 80
+			unit_offense_add = 130
+			unit_defense_add = 130
 		}
 	}
 
@@ -1359,6 +1371,7 @@ pm_battleships = {
 			building_input_ironclads_add = 5
 			building_input_ammunition_add = 6
 			building_input_radios_add = 2
+			building_input_oil_add = 3
 		}
 
 		level_scaled = {
@@ -1367,8 +1380,8 @@ pm_battleships = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 100
-			unit_defense_add = 100
+			unit_offense_add = 160
+			unit_defense_add = 160
 		}
 	}
 
@@ -1445,6 +1458,7 @@ pm_submarine = {
 			# input goods
 			building_input_ironclads_add = 1
 			building_input_ammunition_add = 1
+			building_input_oil_add = 1
 		}
 
 		level_scaled = {
@@ -1498,6 +1512,7 @@ pm_destroyers = {
 			# input goods
 			building_input_ironclads_add = 2
 			building_input_ammunition_add = 2
+			building_input_oil_add = 1
 		}
 
 		level_scaled = {
@@ -1533,6 +1548,7 @@ pm_carriers = {
 			building_input_ammunition_add = 2
 			building_input_aeroplanes_add = 2
 			building_input_radios_add = 2
+			building_input_oil_add = 2
 		}
 
 		level_scaled = {
@@ -1588,6 +1604,7 @@ pm_power_of_the_purse = {
 		throughput_scaled = {
 			unit_offense_add = 5
 			unit_defense_add = 5
+                             building_training_rate_add = 10
 		}
 
 		unscaled = {
@@ -1616,6 +1633,7 @@ pm_jeune_ecole = {
 		throughput_scaled = {
 			unit_offense_add = 10
 			unit_defense_add = 10
+                             building_training_rate_add = 20
 		}
 
 		unscaled = {
@@ -1644,6 +1662,7 @@ pm_sea_lane_strategies = {
 		throughput_scaled = {
 			unit_offense_add = 15
 			unit_defense_add = 15
+                             building_training_rate_add = 30
 		}
 
 		unscaled = {
@@ -1672,6 +1691,7 @@ pm_battlefleet_tactics = {
 		throughput_scaled = {
 			unit_offense_add = 20
 			unit_defense_add = 20
+                             building_training_rate_add = 40
 		}
 
 		unscaled = {

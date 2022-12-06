@@ -1,0 +1,5 @@
+l_braz_por:
+ notification_ruler_die_young_notification_name: "Nosso grande [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] morreu"
+ notification_ruler_die_young_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_ruler] da [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName], morreu aos [SCOPE.GetRootScope.GetCharacter.GetAge] anos. 
+Um novo governante será nomeado de acordo com as leis do país."
+ notification_ruler_die_young_notification_tooltip: "$notification_ruler_die_young_notification_name$\n$notification_ruler_die_young_notification_desc$"
