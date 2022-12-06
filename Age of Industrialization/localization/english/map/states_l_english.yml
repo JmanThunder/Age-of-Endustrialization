@@ -170,7 +170,7 @@
  STATE_BUENOS_AIRES:0 "Buenos Aires"
  STATE_PATAGONIA:0 "Patagonia"
  STATE_RIO_NEGRO:1 "Mendoza"
- STATE_LA_PAMPA:1 "La Pampa"
+ STATE_LA_PAMPA:1 "Córdoba"
  STATE_SANTA_FE:0 "Santa Fe"
  STATE_CORRIENTES:0 "Corrientes"
  STATE_TUCUMAN:0 "Tucumán"

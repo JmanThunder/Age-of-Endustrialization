@@ -11,6 +11,7 @@
 		August
 		Bernhard
 		Burkhard
+		Carl_Magnus
 		Dieter
 		Eduard
 		Edwin
@@ -127,6 +128,7 @@
 		von_Jons
 		zur_Lippe
 		von_Willich
+		von_der_Pahlen
 	}	
 	common_last_names={
 		Abegg
@@ -5491,7 +5493,9 @@ polish={
 	}	
 	noble_last_names = {
 		Bor-Komorowski
+		Czartoryski
 		Dunin
+		Drucki-Lubecki
 		Glowacki
 		Hauke-Boask
 		Iwaszkiewicz
@@ -5519,6 +5523,7 @@ polish={
 		Dabrowski
 		Dembinski
 		Drzymala
+		Drucki-Lubecki
 		Fabrycy
 		Idzikowski
 		Jasinski

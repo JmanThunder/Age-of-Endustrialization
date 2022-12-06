@@ -10,7 +10,7 @@
 }
 
 GBR = {
-	color = hsv{ 0.99  0.7  0.9 }
+	color = { 153  0 0 }
 
 	country_type = recognized
 
@@ -32,7 +32,7 @@ SCA = {
 }
 
 RUS = {
-	color = { 47 91 18 }
+	color = { 0 86 63 }
 
 	country_type = recognized
 
@@ -43,7 +43,7 @@ RUS = {
 }
 
 FRA = {
-	color = { 20  50  210 }
+	color = { 0  34  255 }
 
 	country_type = recognized
 
@@ -100,7 +100,7 @@ AUS = {
 }
 
 USA = {
-	color = { 66  94  193 }
+	color = { 69  157  208 }
 	
 	country_type = colonial
 	
@@ -253,7 +253,7 @@ NOR = {
 }
 
 SWE = {
-	color = { 87  130  199 }
+	color = { 0 127 229 }
 	
 	country_type = recognized
 
@@ -703,7 +703,7 @@ PRA = { #Gao-Para
 }
 
 SAR = {
-	color = { 117  146  167 }
+	color = { 97 209 251 }
 	
 	country_type = recognized
 
@@ -715,7 +715,7 @@ SAR = {
 }
 
 SIC = {
-	color = { 73  152  76 }
+	color = { 160  30  154 }
 	
 	country_type = recognized
 
@@ -1764,7 +1764,7 @@ CAM = {
 }
 
 CHI = {
-	color = { 252 185 61 }
+	color = { 237  152  18 }
 	
 	country_type = unrecognized
 	
@@ -2081,7 +2081,7 @@ HAI = {
 }
 
 MEX = {
-	color = { 56 143 53 }
+	color = { 173  242  175 }
 	
 	country_type = colonial
 	

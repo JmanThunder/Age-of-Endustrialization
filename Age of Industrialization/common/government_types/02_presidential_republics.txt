@@ -103,6 +103,10 @@ gov_colonial_administration = {
 				is_subject_type = subject_type_dominion
 			}
 			AND = {
+				AND = { exists = c:RUS is_subject_of = c:RUS }
+				c:UBD = ROOT
+			}
+			AND = {
 				exists = c:SPA
 				is_subject_of = c:SPA
 				is_subject_type = subject_type_puppet
@@ -173,6 +177,7 @@ gov_presidential_dictatorship = {
 			}
 		}
 		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_autocracy 
 		OR = {
 			has_variable = fra_presidential_dictatorship
 			has_law = law_type:law_peasant_levies

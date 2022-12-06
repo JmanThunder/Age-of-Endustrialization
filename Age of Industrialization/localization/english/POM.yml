@@ -1,0 +1,4 @@
+﻿l_english:
+ gov_pol_monarchy_rus:0 "Absolute Monarchy"
+ gov_pol_monarchy_rus_desc:1 "This is a [concept_government] form where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_KING$')] or [Concept('concept_ruler','$RULER_TITLE_QUEEN$')]."
+ ig_towarzystwo_rolnicze:0 "Towarzystwo Rolnicze"

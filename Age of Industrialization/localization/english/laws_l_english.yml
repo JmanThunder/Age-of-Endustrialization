@@ -160,6 +160,12 @@
 
  ideology_caudillismo:0 "Caudillismo"
  ideology_caudillismo_desc:0 "#lore This group tends to support strongman leaders with military backgrounds over constitutional rule of law.#!"
+ 
+ ideology_russian_military:0 "Russian Military"
+ ideology_russian_military_desc:0 "#lore Instead of looking out for our nation's best intrest, this group looks out for Russian intrests only.#!"
+ 
+ ideology_polish_parlamentarism:0 "Polish Parlamentarism"
+ ideology_polish_parlamentarism_desc:0 "#lore This group would preferto see the country ruled by a parliament comprised of people from the upper class.#!"
 
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
@@ -445,13 +451,11 @@
   # Migration
  lawgroup_migration:0 "Migration"
  lawgroup_migration_desc:0 "Controlling the flow of people."
-
- law_encourage_immigration:0 "Encourage Migration"
- law_encourage_immigration_desc:0 "Promote immigration into the country."
+  
  law_no_migration_controls:0 "No Migration Controls"
  law_no_migration_controls_desc:0 "The country makes no attempt to control movement across its borders."
  law_migration_controls:0 "Migration Controls"
- law_migration_controls_desc:0 "Only people of acceptable cultures and religions may migrate."
+ law_migration_controls_desc:0 "Only people of cultures and religions not discriminated against may migrate."
  law_closed_borders:0 "Closed Borders"
  law_closed_borders_desc:0 "No internal or external migration is permitted."
 
